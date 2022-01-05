@@ -1,0 +1,15 @@
+[plugin]
+name = "spaceship-prompt"
+category = "shell"
+description = "A Zsh prompt for Astronauts"
+site = "https://spaceship-prompt.sh/"
+docs = "https://spaceship-prompt.sh/getting-started/"
+repository = "https://github.com/spaceship-prompt/spaceship-prompt"
+readme = "https://raw.githubusercontent.com/spaceship-prompt/spaceship-prompt/master/README.md"
+twitter = "@SpaceshipPrompt"
+license = ["MIT"]
+shells = ["zsh"]
+tags = ["zsh", "theme"]
+
+[installation.shell]
+source = { github = "spaceship-prompt/spaceship-prompt" }

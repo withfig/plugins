@@ -1,0 +1,12 @@
+[plugin]
+name = "base16-shell"
+category = "shell"
+description = "Base16 for Shells"
+repository = "https://github.com/chriskempson/base16-shell"
+readme = "https://raw.githubusercontent.com/chriskempson/base16-shell/master/README.md"
+license = ["MIT"]
+shells = ["bash", "zsh", "fish"]
+tags = ["theme"]
+
+[installation.shell]
+source = { github = "chriskempson/base16-shell" }

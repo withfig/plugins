@@ -1,0 +1,13 @@
+[plugin]
+name = "zsh-autosuggestions"
+category = "shell"
+description = "Fish-like autosuggestions for zsh"
+repository = "https://github.com/zsh-users/zsh-autosuggestions"
+readme = "https://raw.githubusercontent.com/zsh-users/zsh-autosuggestions/master/README.md"
+license = ["MIT"]
+shells = ["zsh"]
+tags = ["fishlike", "autosuggest", "zsh"]
+
+[installation.shell]
+source = { github = "zsh-users/zsh-autosuggestions" }
+install = { use = ["{{ name }}.zsh"] }

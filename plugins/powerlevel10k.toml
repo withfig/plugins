@@ -1,0 +1,12 @@
+[plugin]
+name = "powerlevel10k"
+category = "shell"
+description = "A Zsh theme"
+repository = "https://github.com/romkatv/powerlevel10k"
+readme = "https://raw.githubusercontent.com/romkatv/powerlevel10k/master/README.md"
+license = ["MIT"]
+shells = ["zsh"]
+tags = ["zsh", "theme"]
+
+[installation.shell]
+source = { github = "romkatv/powerlevel10k" }

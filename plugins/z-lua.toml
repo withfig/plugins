@@ -1,0 +1,12 @@
+[plugin]
+name = "z.lua"
+category = "shell"
+description = "Fish-like autosuggestions for zsh"
+repository = "https://github.com/skywind3000/z.lua"
+readme = "https://raw.githubusercontent.com/skywind3000/z.lua/master/README.md"
+license = ["MIT"]
+shells = ["bash", "zsh", "fish"]
+tags = ["cd"]
+
+[installation.shell]
+source = { github = "skywind3000/z.lua" }
