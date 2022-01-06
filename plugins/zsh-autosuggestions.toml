@@ -1,6 +1,6 @@
 [plugin]
 name = "zsh-autosuggestions"
-category = "shell"
+type = "shell"
 description = "Fish-like autosuggestions for zsh"
 repository = "https://github.com/zsh-users/zsh-autosuggestions"
 readme = "https://raw.githubusercontent.com/zsh-users/zsh-autosuggestions/master/README.md"

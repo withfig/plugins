@@ -1,6 +1,6 @@
 [plugin]
 name = "blackbox"
-category = "shell"
+type = "shell"
 description = "Safely store secrets in Git/Mercurial/Subversion"
 repository = "https://github.com/StackExchange/blackbox"
 readme = "https://raw.githubusercontent.com/StackExchange/blackbox/master/README.md"

@@ -1,6 +1,6 @@
 [plugin]
 name = "autojump"
-category = "shell"
+type = "shell"
 description = "A cd command that learns"
 repository = "https://github.com/wting/autojump"
 readme = "https://raw.githubusercontent.com/wting/autojump/master/README.md"

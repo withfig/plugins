@@ -1,6 +1,6 @@
 [plugin]
 name = "spaceship-prompt"
-category = "shell"
+type = "shell"
 description = "A Zsh prompt for Astronauts"
 site = "https://spaceship-prompt.sh/"
 docs = "https://spaceship-prompt.sh/getting-started/"

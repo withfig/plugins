@@ -1,6 +1,6 @@
 [plugin]
 name = "oh-my-zsh"
-category = "shell"
+type = "shell"
 description = "A community-driven framework for managing your zsh configuration"
 site = "https://ohmyz.sh/"
 docs = "https://github.com/ohmyzsh/ohmyzsh/wiki"

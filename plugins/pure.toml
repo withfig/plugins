@@ -1,6 +1,6 @@
 [plugin]
 name = "pure"
-category = "shell"
+type = "shell"
 description = "Pretty, minimal and fast ZSH prompt"
 repository = "https://github.com/sindresorhus/pure"
 readme = "https://raw.githubusercontent.com/sindresorhus/pure/master/README.md"

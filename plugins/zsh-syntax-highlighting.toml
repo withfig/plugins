@@ -1,6 +1,6 @@
 [plugin]
 name = "zsh-syntax-highlighting"
-category = "shell"
+type = "shell"
 description = "Fish shell like syntax highlighting for Zsh"
 repository = "https://github.com/zsh-users/zsh-syntax-highlighting"
 readme = "https://raw.githubusercontent.com/zsh-users/zsh-syntax-highlighting/master/README.md"
