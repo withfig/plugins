@@ -4,13 +4,12 @@ type = "shell"
 description = "A community-driven framework for managing your zsh configuration"
 site = "https://ohmyz.sh/"
 docs = "https://github.com/ohmyzsh/ohmyzsh/wiki"
-repository = "https://github.com/ohmyzsh/ohmyzsh"
-readme = "https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/README.md"
-twitter = "@ohmyzsh"
+github = "ohmyzsh/ohmyzsh"
+twitter = "ohmyzsh"
 license = ["MIT"]
 shells = ["zsh"]
 tags = ["framework", "zsh"]
 
 [installation.shell]
-source = { github = "ohmyzsh/ohmyzsh" }
+source = { github = true }
 install = { pre = "export ZSH=\"$HOME/.sheldon/repos/github.com/ohmyzsh/ohmyzsh\"" }

@@ -2,12 +2,11 @@
 name = "zsh-autosuggestions"
 type = "shell"
 description = "Fish-like autosuggestions for zsh"
-repository = "https://github.com/zsh-users/zsh-autosuggestions"
-readme = "https://raw.githubusercontent.com/zsh-users/zsh-autosuggestions/master/README.md"
+github = "zsh-users/zsh-autosuggestions"
 license = ["MIT"]
 shells = ["zsh"]
 tags = ["fishlike", "autosuggest", "zsh"]
 
 [installation.shell]
-source = { github = "zsh-users/zsh-autosuggestions" }
+source = { github = true }
 install = { use = ["{{ name }}.zsh"] }

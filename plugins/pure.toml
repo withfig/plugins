@@ -2,13 +2,12 @@
 name = "pure"
 type = "shell"
 description = "Pretty, minimal and fast ZSH prompt"
-repository = "https://github.com/sindresorhus/pure"
-readme = "https://raw.githubusercontent.com/sindresorhus/pure/master/README.md"
-authors = [ { name = "Sindre Sorhus", twitter = "@sindresorhus", github = "sindresorhus" } ]
+github = "sindresorhus/pure"
+authors = [ { name = "Sindre Sorhus", twitter = "sindresorhus", github = "sindresorhus" } ]
 license = ["MIT"]
 shells = ["zsh"]
 tags = ["zsh", "theme"]
 
 [installation.shell]
-source = { github = "sindresorhus/pure" }
+source = { github = true }
 install = { use = ["async.zsh", "pure.zsh"] }

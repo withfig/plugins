@@ -2,11 +2,10 @@
 name = "blackbox"
 type = "shell"
 description = "Safely store secrets in Git/Mercurial/Subversion"
-repository = "https://github.com/StackExchange/blackbox"
-readme = "https://raw.githubusercontent.com/StackExchange/blackbox/master/README.md"
+github = "StackExchange/blackbox"
 license = ["MIT"]
 shells = ["bash", "zsh", "fish"]
 tags = ["git", "secrets"]
 
 [installation.shell]
-source = { github = "StackExchange/blackbox" }
+source = { github = true }

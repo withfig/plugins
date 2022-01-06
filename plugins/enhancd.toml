@@ -2,12 +2,11 @@
 name = "enhancd"
 type = "shell"
 description = "A next-generation cd command with your interactive filter"
-repository = "https://github.com/b4b4r07/enhancd"
-readme = "https://raw.githubusercontent.com/b4b4r07/enhancd/master/README.md"
-authors = [ { name = "b4b4r07", github = "b4b4r07", twitter = "@b4b4r07" } ]
+github = "b4b4r07/enhancd"
+authors = [ { name = "b4b4r07", github = "b4b4r07", twitter = "b4b4r07" } ]
 license = ["MIT"]
 shells = ["bash", "zsh", "fish"]
 tags = ["cd"]
 
 [installation.shell]
-source = { github = "b4b4r07/enhancd" }
+source = { github = true }

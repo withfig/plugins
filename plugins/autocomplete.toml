@@ -3,8 +3,7 @@ name = "autocomplete"
 type = "special"
 description = "Fig Autocomplete"
 site = "https://fig.io"
-repository = "https://github.com/withfig/autocomplete"
-readme = "https://raw.githubusercontent.com/withfig/autocomplete/master/README.md"
+github = "withfig/autocomplete"
 shells = ["bash", "zsh", "fish"]
 
 [installation.special]

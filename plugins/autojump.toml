@@ -2,12 +2,11 @@
 name = "autojump"
 type = "shell"
 description = "A cd command that learns"
-repository = "https://github.com/wting/autojump"
-readme = "https://raw.githubusercontent.com/wting/autojump/master/README.md"
+github = "wting/autojump"
 license = ["GPL3"]
 shells = ["bash", "zsh", "fish"]
 tags = ["cd"]
 
 [installation.shell]
-source = { github = "wting/autojump" }
+source = { github = true }
 install = { dir = "bin", apply = ["PATH", "source"] }
