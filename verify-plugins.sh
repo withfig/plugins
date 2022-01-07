@@ -3,7 +3,7 @@
 BASE_DIR=`dirname $0`
 
 PLUGIN_DIR="$BASE_DIR/plugins"
-FIG_PLUGIN="$BASE_DIR/fig-plugin"
+FIG_PLUGIN="fig-plugin"
 
 FAILED=0
 

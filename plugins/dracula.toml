@@ -1,23 +1,21 @@
 [plugin]
 name = "Dracula"
 type = "theme"
-description = "🧛‍♂️ Dark theme for your terminal"
+description = "🧛 Dark theme for your terminal"
 icon = "https://avatars.githubusercontent.com/u/19436447"
 banner = "https://example.com/banner.png"
 site = "https://draculatheme.com/"
 github = "dracula/dracula-theme"
-authors = [
-    { name = "Zeno Rocha", twitter = "zenorocha", github = "zenorocha" }, 
-]
+authors = [ { name = "Zeno Rocha", twitter = "zenorocha", github = "zenorocha" } ]
 license = ["MIT"]
 terminal = [ "iterm", "terminal-app", "hyper", "alacritty", "kitty" ]
 category = "theme"
 tags = ["dark"]
 
 [installation.theme]
-iterm.github = "dracula/iterm"
-terminal-app.github = "dracula/terminal-app"
-hyper.github = "dracula/hyper"
-alacritty.github = "dracula/alacritty"
-kitty.github = "dracula/kitty"
-vscode.extention = { extension_id = "dracula-theme.theme-dracula", theme-name = "Dracula" }
+iterm = { github = "dracula/iterm" }
+terminal-app = { github = "dracula/terminal-app" }
+hyper = { github = "dracula/hyper" }
+alacritty = { github = "dracula/alacritty" }
+kitty = { github = "dracula/kitty" }
+vscode = { vs-extention = { extension_id = "dracula-theme.theme-dracula", theme-name = "Dracula" } }
