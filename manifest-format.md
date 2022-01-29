@@ -43,11 +43,13 @@ describes the plugin.
 
 ### `name`
 
-The name of the plugin, this should be unique and follow the following regex: `^[a-zA-Z0-9_\.]+$`
+The name of the plugin, this should be unique and follow the following regex: `^[a-zA-Z0-9_-\.]+$`
+
+This field is required.
 
 ### `type`
 
-Valid values are:
+This is required and must be one of the following:
 
   - `shell` - A shell plugin, currently the only supported type.
 
@@ -63,9 +65,28 @@ A version number for the plugin. Preferablly in the format `x.y.z`
 
 A link to a small square image that represents the plugin
 
+Example: 
+
+```toml
+[plugin]
+...
+icon = "https://raw.githubusercontent.com/user/repo/master/icon.png"
+```
+
 ### `images`
 
 A list of links to images of the plugin
+
+Example:
+
+```toml
+[plugin]
+...
+images = [
+  "https://raw.githubusercontent.com/user/repo/master/image.png",
+  "https://raw.githubusercontent.com/user/repo/master/image2.png",
+]
+```
 
 ### `site`
 
@@ -93,6 +114,8 @@ A link to the plugin's readme (not needed if `github` is provided)
 
 The `@username` for the plugin's Twitter account
 
+Example: `@ohmyzsh` for the Oh My Zsh Twitter account
+
 ### `authors`
 
 The authors should be a list of strings or the format:
@@ -109,12 +132,12 @@ Example:
 authors = [
   "Grant Gurvis",
   {
-    "name": "Grant Gurvis",
-    "twitter": "@grantgurvis",
-    "github": "grantgurvis"
+    name = "Grant Gurvis",
+    twitter = "@grantgurvis",
+    github = "grantgurvis"
   },
   {
-    "name": "Grant Gurvis",
+    name = "Grant Gurvis",
   }
 ]
 ```
@@ -139,7 +162,9 @@ license = ["MIT", "Apache-2.0"]
 
 ### `shells`
 
-The shells that the plugin is compatible with
+The shells that the plugin is compatible with.
+
+This field is required for `type = "shell"`.
 
 The valid values are:
 
@@ -213,7 +238,7 @@ Note: This should only be used for local development and not for production.
 #### `gist`
 
   - `gist` - (REQUIRED) The ID of the Gist
-  - `checksum` - The SHA-256 checksum of the Gist data
+  - `checksum` - The SHA-256 checksum of the Gist data, this can be generated with `sha256sum`
 
 Example:
 
@@ -232,7 +257,7 @@ source = { gist = "12345", checksum = "12345" }
 #### `remote`
 
   - `remote` - (REQUIRED) The URL of the remote file
-  - `checksum` - The SHA-256 checksum of the remote file
+  - `checksum` - The SHA-256 checksum of the remote file, this can be generated with `sha256sum`
 
 Example:
 
@@ -250,11 +275,11 @@ source = { remote = "https://example.com/example.zsh", checksum = "12345" }
 
 ### Git Reference
 
-Both `git` and `github` can take a git reference. The git reference can be any of the following:
+Both `git` and `github` can take a Git reference. The Git reference can be any of the following:
 
-  - `commit` - A commit hash
-  - `tag` - A tag
-  - `branch` - A branch
+  - `commit` - A Commit hash
+  - `tag` - A Tag
+  - `branch` - A Branch
 
 Example:
 

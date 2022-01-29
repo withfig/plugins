@@ -3,12 +3,12 @@
 BASE_DIR=`dirname $0`
 
 PLUGIN_DIR="$BASE_DIR/plugins"
-FIG_PLUGIN="fig-plugin"
+FIG_PLUGIN="dotfiles"
 
 FAILED=0
 
 for plugin in $(ls $PLUGIN_DIR); do
-    RESULT="$($FIG_PLUGIN verify-toml $PLUGIN_DIR/$plugin)"
+    RESULT="$($FIG_PLUGIN plugins info $PLUGIN_DIR/$plugin)"
     if [ $? -ne 0 ]; then
         echo "Plugin $plugin failed validation"
         echo "$RESULT"
