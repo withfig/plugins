@@ -9,4 +9,4 @@ tags = ["fishlike", "autosuggest", "zsh"]
 
 [installation.shell]
 source = { github = true }
-install = { use = ["{{ name }}.zsh"] }
+use = ["{{ name }}.zsh"]

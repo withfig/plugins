@@ -9,4 +9,5 @@ tags = ["cd"]
 
 [installation.shell]
 source = { github = true }
-install = { dir = "bin", apply = ["PATH", "source"] }
+dir = "bin"
+apply = ["PATH", "source"]

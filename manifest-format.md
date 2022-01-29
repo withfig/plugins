@@ -31,11 +31,13 @@ describes the plugin.
       - `{path: <path>}` - A local path
       - `{gist: <id>}` - A Gist
       - `{remote: <url>}` - A file from a remote URL
-    - [`install`](#install) - The method of sourcing/installing the plugin
+    - The default values for defining how to install the shell plugin:
       - `source` - Files/glob to source in the shell
       - `apply` - A list of templates to apply using the plugin
       - `pre` - A list of commands to run before sourcing the plugin
       - `post` - A list of commands to run after sourcing the plugin
+  - [`[installation.shell.$SHELL]`](#installationshellSHELL) - Overrides the default installation instructions for a shell
+    - This takes the `source`, `apply`, `pre` and `post` fields from the `installation.shell` section
 
 ---
 

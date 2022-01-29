@@ -10,4 +10,5 @@ tags = ["zsh", "theme"]
 
 [installation.shell]
 source = { github = true }
-install = { use = ["async.zsh", "pure.zsh"] }
+use = ["async.zsh", "pure.zsh"]
+
