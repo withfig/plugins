@@ -34,7 +34,7 @@ describes the plugin.
     - [`install`](#install) - The method of sourcing/installing the plugin
       - `source` - Files/glob to source in the shell
       - `apply` - A list of templates to apply using the plugin
-      - `pre` - A list of commands to run before sourcing the pluging
+      - `pre` - A list of commands to run before sourcing the plugin
       - `post` - A list of commands to run after sourcing the plugin
 
 ---
@@ -59,7 +59,7 @@ A short description of the plugin. Should be less than 80 characters.
 
 ### `version`
 
-A version number for the plugin. Preferablly in the format `x.y.z`
+A version number for the plugin. Preferably in the format `x.y.z`
 
 ### `icon`
 
@@ -133,8 +133,8 @@ authors = [
   "Grant Gurvis",
   {
     name = "Grant Gurvis",
-    twitter = "@grantgurvis",
-    github = "grantgurvis"
+    twitter = "@gurgrant",
+    github = "grant0417"
   },
   {
     name = "Grant Gurvis",
@@ -336,7 +336,7 @@ install = { apply = ["PATH"] }
 
 #### `pre`
 
-A list of commands to run before sourcing the pluging
+A list of commands to run before sourcing the plugin
 
 Example:
 
@@ -349,7 +349,7 @@ install = { pre = ["command1", "command2"] }
 
 #### `post`
 
-A list of commands to run after sourcing the pluging
+A list of commands to run after sourcing the plugin
 
 ```toml
 [installation.shell]
