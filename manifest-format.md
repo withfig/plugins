@@ -65,14 +65,20 @@ A version number for the plugin. Preferably in the format `x.y.z`
 
 ### `icon`
 
-A link to a small square image that represents the plugin
+A link to a small square image that represents the plugin or an emoji that represents the plugin
 
-Example: 
+Examples: 
 
 ```toml
 [plugin]
 ...
 icon = "https://raw.githubusercontent.com/user/repo/master/icon.png"
+```
+
+```toml
+[plugin]
+...
+icon = "🚀"
 ```
 
 ### `images`
