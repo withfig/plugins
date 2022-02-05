@@ -1,0 +1,11 @@
+[plugin]
+name = "Hydro"
+type = "shell"
+description = "Ultra-pure, lag-free prompt with async Git status. Designed for Fish."
+github = "jorgebucaran/hydro"
+license = ["MIT"]
+shells = ["fish"]
+tags = ["fish", "theme", "prompt", "async"]
+
+[installation.shell]
+source = { github = true }

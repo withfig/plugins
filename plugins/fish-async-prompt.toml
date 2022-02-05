@@ -1,0 +1,11 @@
+[plugin]
+name = "fish-async-prompt"
+type = "shell"
+description = "Make your prompt asynchronous to improve the reactivity."
+github = "acomagu/fish-async-prompt"
+license = ["MIT"]
+shells = ["fish"]
+tags = ["fish", "prompt"]
+
+[installation.shell]
+source = { github = true }

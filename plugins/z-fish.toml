@@ -1,0 +1,11 @@
+[plugin]
+name = "z"
+type = "shell"
+description = "Pure-fish z directory jumping"
+github = "jethrokuan/z"
+license = ["MIT"]
+shells = ["fish"]
+tags = ["fish", "z"]
+
+[installation.shell]
+source = { github = true }
