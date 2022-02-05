@@ -1,0 +1,11 @@
+[plugin]
+name = "fish-apple-touchbar"
+type = "shell"
+description = "Supercharge your touchbar with fish"
+github = "rodrigobdz/fish-apple-touchbar"
+license = ["MIT"]
+shells = ["fish"]
+tags = ["fish", "iterm2", "touchbar"]
+
+[installation.shell]
+source = { github = true }

@@ -1,0 +1,11 @@
+[plugin]
+name = "fish-abbreviation-tips"
+type = "shell"
+description = "Helps you remember your abbreviations"
+github = "Gazorby/fish-abbreviation-tips"
+license = ["MIT"]
+shells = ["fish"]
+tags = ["fish"]
+
+[installation.shell]
+source = { github = true }

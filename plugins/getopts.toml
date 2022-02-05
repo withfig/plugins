@@ -1,0 +1,11 @@
+[plugin]
+name = "getopts.fish"
+type = "shell"
+description = "Parse CLI options in Fish"
+github = "jorgebucaran/getopts.fish"
+license = ["MIT"]
+shells = ["fish"]
+tags = ["fish", "fish-plugin", "cli-parser"]
+
+[installation.shell]
+source = { github = true }

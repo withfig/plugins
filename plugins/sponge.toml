@@ -1,0 +1,11 @@
+[plugin]
+name = "sponge"
+type = "shell"
+description = "Clean fish shell command history from typos automatically"
+github = "andreiborisov/sponge"
+license = ["MIT"]
+shells = ["fish"]
+tags = ["fish", "fisher", "command-history"]
+
+[installation.shell]
+source = { github = true }

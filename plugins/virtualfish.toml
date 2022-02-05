@@ -1,0 +1,11 @@
+[plugin]
+name = "virtualfish"
+type = "shell"
+description = "Fish shell tool for managing Python virtual environments"
+github = "justinmayer/virtualfish"
+license = ["MIT"]
+shells = ["fish"]
+tags = ["fish", "venv", "python"]
+
+[installation.shell]
+source = { github = true }

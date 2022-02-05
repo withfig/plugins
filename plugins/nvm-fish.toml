@@ -1,0 +1,11 @@
+[plugin]
+name = "nvm.fish"
+type = "shell"
+description = "Node.js version manager lovingly made for Fish."
+github = "jorgebucaran/nvm.fish"
+license = ["MIT"]
+shells = ["fish"]
+tags = ["fish", "node", "nodejs", "nvm"]
+
+[installation.shell]
+source = { github = true }

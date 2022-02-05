@@ -1,0 +1,11 @@
+[plugin]
+name = "GitNow"
+type = "shell"
+description = "Speed up your Git workflow."
+github = "joseluisq/gitnow"
+license = ["MIT"]
+shells = ["fish"]
+tags = ["fish", "git", "keybindings"]
+
+[installation.shell]
+source = { github = true }

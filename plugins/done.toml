@@ -1,0 +1,11 @@
+[plugin]
+name = "done"
+type = "shell"
+description = "A fish-shell package to automatically receive notifications when long processes finish."
+github = "franciscolourenco/done"
+license = ["MIT"]
+shells = ["fish"]
+tags = ["fish", "shell", "notifications"]
+
+[installation.shell]
+source = { github = true }
