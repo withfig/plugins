@@ -32,7 +32,7 @@ describes the plugin.
       - `{gist: <id>}` - A Gist
       - `{remote: <url>}` - A file from a remote URL
     - The default values for defining how to install the shell plugin:
-      - `source` - Files/glob to source in the shell
+      - `use` - Files/glob to source in the shell
       - `apply` - A list of templates to apply using the plugin
       - `pre` - A list of commands to run before sourcing the plugin
       - `post` - A list of commands to run after sourcing the plugin
