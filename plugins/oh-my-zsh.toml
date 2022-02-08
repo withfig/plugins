@@ -12,4 +12,4 @@ tags = ["framework", "zsh"]
 
 [installation.shell]
 source = { github = true }
-pre = "export ZSH=\"$HOME/.sheldon/repos/github.com/ohmyzsh/ohmyzsh\""
+pre = "export ZSH=\"{{ dir }}\""
