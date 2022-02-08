@@ -9,3 +9,21 @@ tags = ["theme"]
 
 [installation.shell]
 source = { github = true }
+use = []
+
+[installation.shell.bash]
+post = """
+[ -n "$PS1" ] && [ -s "{{ dir }}/profile_helper.sh" ] && eval "$("{{ dir }}/profile_helper.sh")" 
+"""
+
+[installation.shell.zsh]
+post = """
+[ -n "$PS1" ] && [ -s "{{ dir }}/profile_helper.sh" ] && eval "$("{{ dir }}/profile_helper.sh")" 
+"""
+
+[installation.shell.fish]
+post = """
+if status --is-interactive
+    source "{{ dir }}/profile_helper.fish"
+end 
+"""
