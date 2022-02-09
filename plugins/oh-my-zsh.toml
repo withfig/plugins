@@ -2,6 +2,7 @@
 name = "oh-my-zsh"
 type = "shell"
 description = "A community-driven framework for managing your zsh configuration"
+icon = "https://avatars.githubusercontent.com/u/22552083"
 site = "https://ohmyz.sh/"
 docs = "https://github.com/ohmyzsh/ohmyzsh/wiki"
 github = "ohmyzsh/ohmyzsh"

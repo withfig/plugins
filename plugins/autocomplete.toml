@@ -2,6 +2,7 @@
 name = "autocomplete"
 type = "special"
 description = "Fig Autocomplete"
+icon = "https://avatars.githubusercontent.com/u/68212401"
 site = "https://fig.io"
 github = "withfig/autocomplete"
 shells = ["bash", "zsh", "fish"]
