@@ -1,9 +1,7 @@
 {
-  "name": "plugins",
+  "name": "@fig/plugins",
   "version": "0.1.0",
   "description": "",
-  "main": "./build/index",
-  "types": "./build/index.d.ts",
   "type": "module",
   "scripts": {
     "test": "tsc --noEmit",
@@ -13,12 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/withfig/plugins.git"
   },
-  "author": "",
+  "author": "Fig",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/withfig/plugins/issues"
   },
-  "homepage": "https://github.com/withfig/plugins#readme",
+  "homepage": "https://github.com/withfig/plugins",
   "devDependencies": {
     "typescript": "^3.5.3"
   }
