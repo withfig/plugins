@@ -3,6 +3,9 @@
   "version": "0.1.2",
   "description": "",
   "type": "module",
+  "files": [
+    "build/**/*.js"
+  ],
   "scripts": {
     "test": "tsc --noEmit",
     "build": "tsc --build"

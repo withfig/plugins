@@ -1,4 +1,4 @@
-import { listFolder } from "../generators";
+import listFolder from "../generators/listFolder";
 
 const plugin: Fig.Plugin = {
   name: "oh-my-zsh",
