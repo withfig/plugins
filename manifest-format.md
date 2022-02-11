@@ -1,11 +1,14 @@
 # Plugin Manifest
 
+## THIS IS OUTDATES SINCE PLUGINS ARE NOW IN TYPESCRIPT
+
 Every Fig plugin must have a manifest file. This file is a TOML file that
-describes the plugin. 
+describes the plugin.
 
 - [`[plugin]`](#plugin) - (REQUIRED) This section is required
   - [`name`](#name) - (REQUIRED) The name of the plugin.
-  - [`type`](#type) -  (REQUIRED) The type of plugin. This must be one of the following:
+  - [`type`](#type) - (REQUIRED) The type of plugin. This must be one of the
+    following:
     - `shell` - A shell plugin, currently the only supported type.
   - [`description`](#description) - A short description of the plugin.
   - [`version`](#version) - The version of the plugin.
@@ -14,20 +17,28 @@ describes the plugin.
   - [`site`](#site) - A link to the plugin's website
   - [`docs`](#docs) - A link to the plugin's documentation
   - [`github`](#github) - The `owner/repo` for the plugin's GitHub repository
-  - [`repository`](#repository) - A link to the plugin's repository (not needed if `github` is provided)
-  - [`readme`](#readme) - A link to the plugin's readme (not needed if `github` is provided)
+  - [`repository`](#repository) - A link to the plugin's repository (not needed
+    if `github` is provided)
+  - [`readme`](#readme) - A link to the plugin's readme (not needed if `github`
+    is provided)
   - [`twitter`](#twitter) - The `@username` for the plugin's Twitter account
-  - [`authors`](#authors) - A list of authors for the plugin, either strings or the format:
-    - `name` - The name of the author, this is the only required field for the author section
+  - [`authors`](#authors) - A list of authors for the plugin, either strings or
+    the format:
+    - `name` - The name of the author, this is the only required field for the
+      author section
     - `twitter` - The `@username` for the author's Twitter account
     - `github` - The username for the author's GitHub account
   - [`license`](#license) - A the license(s) the plugin is released under
-  - [`shells`](#shells) - A list of the shells that the plugin is compatible with
+  - [`shells`](#shells) - A list of the shells that the plugin is compatible
+    with
 - [`[installation]`](#installation) (REQUIRED) based on the `type`
-  - [`[installation.shell]`](#installationshell) - This defines how to install the plugin
-    - [`source`](#source) - (REQUIRED) The source of the plugin, this can take one of the following:
+  - [`[installation.shell]`](#installationshell) - This defines how to install
+    the plugin
+    - [`source`](#source) - (REQUIRED) The source of the plugin, this can take
+      one of the following:
       - `{git: <url>}` - A remote git repository
-      - `{github: <true or owner/repo>}` - A GitHub repository, if true uses the `plugin.github` field
+      - `{github: <true or owner/repo>}` - A GitHub repository, if true uses the
+        `plugin.github` field
       - `{path: <path>}` - A local path
       - `{gist: <id>}` - A Gist
       - `{remote: <url>}` - A file from a remote URL
@@ -36,8 +47,10 @@ describes the plugin.
       - `apply` - A list of templates to apply using the plugin
       - `pre` - A list of commands to run before sourcing the plugin
       - `post` - A list of commands to run after sourcing the plugin
-  - [`[installation.shell.$SHELL]`](#installationshellSHELL) - Overrides the default installation instructions for a shell
-    - This takes the `source`, `apply`, `pre` and `post` fields from the `installation.shell` section
+  - [`[installation.shell.$SHELL]`](#installationshellSHELL) - Overrides the
+    default installation instructions for a shell
+    - This takes the `source`, `apply`, `pre` and `post` fields from the
+      `installation.shell` section
 
 ---
 
@@ -45,7 +58,8 @@ describes the plugin.
 
 ### `name`
 
-The name of the plugin, this should be unique and follow the following regex: `^[a-zA-Z0-9_-\.]+$`
+The name of the plugin, this should be unique and follow the following regex:
+`^[a-zA-Z0-9_-\.]+$`
 
 This field is required.
 
@@ -53,7 +67,7 @@ This field is required.
 
 This is required and must be one of the following:
 
-  - `shell` - A shell plugin, currently the only supported type.
+- `shell` - A shell plugin, currently the only supported type.
 
 ### `description`
 
@@ -65,9 +79,10 @@ A version number for the plugin. Preferably in the format `x.y.z`
 
 ### `icon`
 
-A link to a small square image that represents the plugin or an emoji that represents the plugin
+A link to a small square image that represents the plugin or an emoji that
+represents the plugin
 
-Examples: 
+Examples:
 
 ```toml
 [plugin]
@@ -128,11 +143,12 @@ Example: `@ohmyzsh` for the Oh My Zsh Twitter account
 
 The authors should be a list of strings or the format:
 
-  - `name` - The name of the author, this is the only required field for the author section
-  - `twitter` - The `@username` for the author's Twitter account
-  - `github` - The username for the author's GitHub account
+- `name` - The name of the author, this is the only required field for the
+  author section
+- `twitter` - The `@username` for the author's Twitter account
+- `github` - The username for the author's GitHub account
 
-Example: 
+Example:
 
 ```toml
 [plugin]
@@ -176,16 +192,16 @@ This field is required for `type = "shell"`.
 
 The valid values are:
 
-  - `bash`
-  - `zsh`
-  - `fish`
+- `bash`
+- `zsh`
+- `fish`
 
 Example: `["bash", "zsh"]`
 
 ## `[installation]`
 
-The installation section is based on the `type` field. This section is required and
-tells how the plugin should be installed.
+The installation section is based on the `type` field. This section is required
+and tells how the plugin should be installed.
 
 ## `[installation.shell]`
 
@@ -197,10 +213,10 @@ The source can be any of the following types
 
 The two fields are:
 
-  - `git` - (REQUIRED) The URL of the git repository
-  - [A git reference](#git-reference)
+- `git` - (REQUIRED) The URL of the git repository
+- [A git reference](#git-reference)
 
-Example: 
+Example:
 
 ```toml
 [installation.shell]
@@ -212,8 +228,9 @@ source = { git = "https://example.com/example.git" }
 
 The two fields are:
 
-  - `github` - (REQUIRED) The `owner/repo` for the GitHub repository, if true uses the `plugin.github` field
-  - [A git reference](#git-reference)
+- `github` - (REQUIRED) The `owner/repo` for the GitHub repository, if true uses
+  the `plugin.github` field
+- [A git reference](#git-reference)
 
 Example:
 
@@ -231,7 +248,7 @@ source = { github = true }
 
 #### `path`
 
-  - `path` - (REQUIRED) The path to the plugin
+- `path` - (REQUIRED) The path to the plugin
 
 Example:
 
@@ -245,8 +262,9 @@ Note: This should only be used for local development and not for production.
 
 #### `gist`
 
-  - `gist` - (REQUIRED) The ID of the Gist
-  - `checksum` - The SHA-256 checksum of the Gist data, this can be generated with `sha256sum`
+- `gist` - (REQUIRED) The ID of the Gist
+- `checksum` - The SHA-256 checksum of the Gist data, this can be generated with
+  `sha256sum`
 
 Example:
 
@@ -264,8 +282,9 @@ source = { gist = "12345", checksum = "12345" }
 
 #### `remote`
 
-  - `remote` - (REQUIRED) The URL of the remote file
-  - `checksum` - The SHA-256 checksum of the remote file, this can be generated with `sha256sum`
+- `remote` - (REQUIRED) The URL of the remote file
+- `checksum` - The SHA-256 checksum of the remote file, this can be generated
+  with `sha256sum`
 
 Example:
 
@@ -283,11 +302,12 @@ source = { remote = "https://example.com/example.zsh", checksum = "12345" }
 
 ### Git Reference
 
-Both `git` and `github` can take a Git reference. The Git reference can be any of the following:
+Both `git` and `github` can take a Git reference. The Git reference can be any
+of the following:
 
-  - `commit` - A Commit hash
-  - `tag` - A Tag
-  - `branch` - A Branch
+- `commit` - A Commit hash
+- `tag` - A Tag
+- `branch` - A Branch
 
 Example:
 
@@ -324,7 +344,7 @@ source = {
 
 Files/glob to source in the shell
 
-Example: 
+Example:
 
 ```toml
 [installation.shell]
@@ -353,7 +373,6 @@ Example:
 ...
 install = { pre = ["command1", "command2"] }
 ```
-
 
 #### `post`
 

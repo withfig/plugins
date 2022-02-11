@@ -35,7 +35,7 @@ declare namespace Fig {
   interface Configuration<T> {
     displayName: string;
     description: string;
-    type: "multiselect" | "select" | "bool";
+    type: "multiselect" | "select" | "bool" | "number" | "string";
     default?: T | ContextGenerator<T>;
     options?: T | ContextGenerator<T>;
   }

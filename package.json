@@ -1,0 +1,25 @@
+{
+  "name": "plugins",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./build/index",
+  "types": "./build/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "test": "tsc --noEmit",
+    "build": "tsc --build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/withfig/plugins.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/withfig/plugins/issues"
+  },
+  "homepage": "https://github.com/withfig/plugins#readme",
+  "devDependencies": {
+    "typescript": "^3.5.3"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true,
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "outDir": "./build",
+    "target": "ES6",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "declaration": true
+  },
+  "exclude": ["node_modules/"],
+  "include": ["./src/**/*", "./index.d.ts"]
+}
