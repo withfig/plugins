@@ -10,6 +10,7 @@ on:
       # - a pr is merged to main
       # - we push into main
       - "main"
+  workflow_dispatch:
 
 jobs:
   build:
@@ -19,51 +20,51 @@ jobs:
         uses: actions/checkout@v2
         with:
           token: ${{ secrets.FIG_BOT_TOKEN }}
-        # Install all dependencies
+      # Install all dependencies
       - name: install
         run: npm install
-        # Transpile all plugins from ts to js
+      # Transpile all plugins from ts to js
       - name: build
         run: npm run build
-        # Zip the transpiled files into the plugins.zip file
-      - name: bundle files
-        run: |
-          mv build/ plugins/
-          zip -r plugins.zip plugins/
-          mv plugins/ build/
-        # Bump the version and create a git tag with the new version
-      - name: Bump version and push tag
-        id: tag_version
-        uses: mathieudutour/github-tag-action@v5.4
-        with:
-          tag_prefix: plugin-build-number-
-          # Bump versions in full numbers (1.0.0 -> 2.0.0)
-          default_bump: minor
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-        # Create a new github release with the newly created plugins.zip file
-      - name: Release
-        uses: softprops/action-gh-release@59c3b4891632ff9a897f99a91d7bc557467a3a22
-        with:
-          files: plugins.zip
-          tag_name: ${{ steps.tag_version.outputs.new_tag }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Checkout Cache
-        uses: actions/checkout@v2
-        with:
-          repository: "withfig/core-backend"
-          token: ${{ secrets.CACHE_PLUGINS_TOKEN }}
-          ref: main
-          path: backend
-      - name: Add @latest to cache
-        run: |
-          cp ./plugins.zip ./backend/src/public/plugins.zip
-          cd backend
-          git config user.name "Build Action"
-          git config user.email "noreply@fig.io"
-          git add .
-          git commit -m "Updates plugins to latest"
-          git push origin main
+      # # Zip the transpiled files into the plugins.zip file
+      # - name: bundle files
+      #   run: |
+      #     mv build/ plugins/
+      #     zip -r plugins.zip plugins/
+      #     mv plugins/ build/
+      # # Bump the version and create a git tag with the new version
+      # - name: Bump version and push tag
+      #   id: tag_version
+      #   uses: mathieudutour/github-tag-action@v5.4
+      #   with:
+      #     tag_prefix: plugin-build-number-
+      #     # Bump versions in full numbers (1.0.0 -> 2.0.0)
+      #     default_bump: minor
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      # # Create a new github release with the newly created plugins.zip file
+      # - name: Release
+      #   uses: softprops/action-gh-release@59c3b4891632ff9a897f99a91d7bc557467a3a22
+      #   with:
+      #     files: plugins.zip
+      #     tag_name: ${{ steps.tag_version.outputs.new_tag }}
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Checkout Cache
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: "withfig/core-backend"
+      #     token: ${{ secrets.CACHE_PLUGINS_TOKEN }}
+      #     ref: main
+      #     path: backend
+      # - name: Add @latest to cache
+      #   run: |
+      #     cp ./plugins.zip ./backend/src/public/plugins.zip
+      #     cd backend
+      #     git config user.name "Build Action"
+      #     git config user.email "noreply@fig.io"
+      #     git add .
+      #     git commit -m "Updates plugins to latest"
+      #     git push origin main
       - name: "Automated Version Bump"
         uses: "phips28/gh-action-bump-version@master"
         env:
