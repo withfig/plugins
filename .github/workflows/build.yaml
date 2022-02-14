@@ -35,7 +35,7 @@ jobs:
         with:
           repository: "withfig/core-backend"
           token: ${{ secrets.CACHE_SPECS_TOKEN }}
-          ref: main
+          ref: master
           path: backend
       - name: Add @latest to cache
         run: |
@@ -45,7 +45,7 @@ jobs:
           git config user.email "noreply@fig.io"
           git add .
           git commit -m "Updates plugins to latest"
-          git push origin main
+          git push origin master
       - name: "Automated Version Bump"
         id: "version-bump"
         uses: "phips28/gh-action-bump-version@master"
