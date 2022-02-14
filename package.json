@@ -3,7 +3,8 @@
   "version": "0.1.7",
   "description": "",
   "type": "module",
-  "types": "build/**/*.d.ts",
+  "main": "./build/types/index.js",
+  "types": "./build/types/index.d.ts",
   "files": [
     "build/**/*.js",
     "build/**/*.d.ts"
