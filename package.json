@@ -1,6 +1,6 @@
 {
   "name": "@fig/plugins",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "",
   "type": "module",
   "main": "./build/types/index.js",
