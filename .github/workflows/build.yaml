@@ -68,3 +68,5 @@ jobs:
           tag_name: ${{ steps.version-bump.outputs.newTag }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Rebuild Index
+        run: curl https://api.fig.io/plugins/rebuild-index
