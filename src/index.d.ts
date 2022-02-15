@@ -71,7 +71,7 @@ declare namespace Fig {
         github?: string;
       };
 
-  interface Plugin {
+  export interface Plugin {
     /** The name of the plugin */
     name: string;
     /** The plugin type */
