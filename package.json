@@ -5,12 +5,15 @@
   "type": "module",
   "types": "./build/index.d.ts",
   "files": [
-    "build/**/*.js",
-    "build/**/*.d.ts"
+    "./build/**/*.js",
+    "./build/**/*.d.ts",
+    "./build/index.js",
+    "./build/index.d.ts"
   ],
   "scripts": {
     "test": "tsc --noEmit",
-    "build": "tsc --build"
+    "build": "tsc --build",
+    "clean": "rm -rf build"
   },
   "repository": {
     "type": "git",
