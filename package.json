@@ -3,12 +3,11 @@
   "version": "0.1.11",
   "description": "",
   "type": "module",
-  "types": "build/index.d.ts",
+  "types": "index.d.ts",
   "files": [
     "build/**/*.js",
     "build/**/*.d.ts",
-    "build/index.js",
-    "build/index.d.ts"
+    "index.d.ts"
   ],
   "scripts": {
     "test": "tsc --noEmit",

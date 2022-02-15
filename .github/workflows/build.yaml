@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "src/**/*.ts"
+      - "index.d.ts"
       - "!package.json"
     branches:
       # We only want to create a new release when
