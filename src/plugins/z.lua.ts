@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
   github: "skywind3000/z.lua",
   license: ["MIT"],
   shells: ["bash", "zsh", "fish"],
-  tags: ["cd"],
+  tags: ["cd", "filesystem"],
   installation: {
     source: "github",
     post: ({ctx}) => {
