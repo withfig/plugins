@@ -2,7 +2,6 @@
   "name": "@fig/plugins",
   "version": "0.1.13",
   "description": "",
-  "type": "module",
   "types": "index.d.ts",
   "files": [
     "build/**/*.js",
