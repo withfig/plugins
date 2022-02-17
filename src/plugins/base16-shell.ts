@@ -8,15 +8,8 @@ const plugin: Fig.Plugin = {
   tags: ["theme"],
   installation: {
     source: "github",
-    use: [],
-    zsh: {
-      post: ({ ctx }) =>
-        `[ -n "$PS1" ] && [ -s "${ctx.installDirectory}/profile_helper.sh" ] && eval "$("${ctx.installDirectory}/profile_helper.sh")"`,
-    },
-    bash: {
-      post: ({ ctx }) =>
-        `[ -n "$PS1" ] && [ -s "${ctx.installDirectory}/profile_helper.sh" ] && eval "$("${ctx.installDirectory}/profile_helper.sh")"`,
-    },
+    post: ({ ctx }) =>
+    `[ -n "$PS1" ] && [ -s "${ctx.installDirectory}/profile_helper.sh" ] && eval "$("${ctx.installDirectory}/profile_helper.sh")"`,
     fish: {
       post: ({ ctx }) => [
         `if status --is-interactive`,

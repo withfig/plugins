@@ -9,6 +9,12 @@ const plugin: Fig.Plugin = {
   tags: ["cd"],
   installation: {
     source: "github",
+    post: ({ctx}) => {
+      return `eval "$(lua ${ctx.installDirectory}/z.lua --init ${ctx.shell})"`
+    },
+    fish: {
+      use: "init.fish"
+    }
   },
 };
 

@@ -9,6 +9,7 @@ const plugin: Fig.Plugin = {
   tags: ["zsh", "fishlike", "syntax-highlighting"],
   installation: {
     source: "github",
+    use: "zsh-syntax-highlighting.zsh"
   },
 };
 

@@ -3,10 +3,20 @@ declare namespace Fig {
   /** Context used to generate a plugin */
   interface PluginContext {
     installDirectory: string;
+    shell: Shell
   }
 
-  /** A function that takes a context and returns a type `T` */
-  type ContextGenerator<T> = ({ ctx }: { ctx: PluginContext }) => T;
+  /** Environment mediates queries about the local environment */
+  interface ClientEnvironment {
+    listFolder: (path: string) => Promise<string[]>;
+  }
+
+  /**  InstallationValueGenerators are run on the backend when compiling blocks to dotfiles. No direct access to users local environment */
+  type InstallationValueGenerator = ({ ctx }: { ctx: PluginContext }) => InstallationValueLiteral;
+
+  /**  ConfigurationGenerators are run on the client to provide suggestions. Access to local device is mediated through ClientEnvironment. */
+  type ConfigurationGenerator<T> = ({ ctx, env }: { ctx: PluginContext, env?: ClientEnvironment }) => Promise<T>;
+
 
   type PluginSource =
     | "github"
@@ -20,10 +30,13 @@ declare namespace Fig {
         folder: string;
       };
 
+  type InstallationValueLiteral =  string | string[]
+  type InstallationValue =  InstallationValueLiteral | InstallationValueGenerator
+
   interface PluginInstallation {
-    pre?: string | string[] | ContextGenerator<string | string[]>;
-    post?: string | string[] | ContextGenerator<string | string[]>;
-    use?: string | string[] | ContextGenerator<string | string[]>;
+    pre?: InstallationValue;
+    post?: InstallationValue;
+    use?: InstallationValue;
   }
 
   type Installation = PluginInstallation & {
@@ -36,8 +49,8 @@ declare namespace Fig {
     displayName: string;
     description: string;
     type: "multiselect" | "select" | "bool" | "number" | "string";
-    default?: T | ContextGenerator<T>;
-    options?: T | ContextGenerator<T>;
+    default?: T | ConfigurationGenerator<T>;
+    options?: T | ConfigurationGenerator<T>;
   }
 
   interface EnvironmentVariableConfiguration
@@ -97,7 +110,7 @@ declare namespace Fig {
     /** The tags for the plugin */
     tags?: string[];
     /** The installation for the plugin */
-    installation?: Installation;
+    installation: Installation;
     /** The configuration for the plugin */
     configuration?: (
       | EnvironmentVariableConfiguration

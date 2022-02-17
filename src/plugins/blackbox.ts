@@ -4,10 +4,11 @@ const plugin: Fig.Plugin = {
   description: "Safely store secrets in Git/Mercurial/Subversion",
   github: "StackExchange/blackbox",
   license: ["MIT"],
-  shells: ["bash", "zsh", "fish"],
+  shells: ["zsh"],
   tags: ["git", "secrets"],
   installation: {
     source: "github",
+    use: "blackbox.plugin.zsh"
   },
 };
 

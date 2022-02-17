@@ -13,6 +13,7 @@ const plugin: Fig.Plugin = {
   tags: ["zsh", "theme"],
   installation: {
     source: "github",
+    use: "spaceship.zsh"
   },
 };
 

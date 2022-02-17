@@ -1,5 +1,3 @@
-import listFolder from "../generators/listFolder";
-
 const plugin: Fig.Plugin = {
   name: "oh-my-zsh",
   type: "shell",
@@ -16,6 +14,7 @@ const plugin: Fig.Plugin = {
   installation: {
     source: "github",
     pre: ({ ctx }) => `export ZSH="${ctx.installDirectory}"`,
+    use: "oh-my-zsh.sh"
   },
   configuration: [
     {
@@ -23,17 +22,21 @@ const plugin: Fig.Plugin = {
       description: "Oh My Zsh plugins to load",
       type: "multiselect",
       default: [],
-      options: ({ ctx }) => listFolder(`${ctx.installDirectory}/plugins`),
+      options: async ({ ctx, env }) => { 
+        return await env?.listFolder(`${ctx.installDirectory}/plugins`) ?? []
+      },
       enviromentVariable: "plugins",
     },
     {
       displayName: "Theme",
       description: "The Oh My Zsh theme to use",
       type: "select",
-      options: ({ ctx }) =>
-        listFolder(`${ctx.installDirectory}/themes`).map((theme) =>
+      options: async ({ ctx, env }) => {
+        const themes = await env?.listFolder(`${ctx.installDirectory}/themes`) ?? []
+        return themes.map((theme) =>
           theme.replace(".zsh-theme", "")
-        ),
+        )
+      },
       enviromentVariable: "ZSH_THEME",
     },
     {

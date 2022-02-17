@@ -16,6 +16,12 @@ const plugin: Fig.Plugin = {
   tags: ["cd"],
   installation: {
     source: "github",
+    use: "init.sh",
+    fish: {
+      use: ({ ctx }) => {
+        return ["conf.d/", "functions/"].map(dir => `${ctx.installDirectory}${dir}*`) 
+      }
+    }
   },
 };
 
