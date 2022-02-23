@@ -15,7 +15,7 @@ declare namespace Fig {
   type InstallationValueGenerator = ({ ctx }: { ctx: PluginContext }) => InstallationValueLiteral;
 
   /**  ConfigurationGenerators are run on the client to provide suggestions. Access to local device is mediated through ClientEnvironment. */
-  type ConfigurationGenerator<T> = ({ ctx, env }: { ctx: PluginContext, env?: ClientEnvironment }) => Promise<T>;
+  type ConfigurationGenerator<T> = ({ ctx, env, config }: { ctx: PluginContext, env?: ClientEnvironment, config: Record<string, unknown> }) => Promise<T>;
 
 
   type PluginSource =
@@ -45,9 +45,16 @@ declare namespace Fig {
     source: PluginSource;
   };
 
-  interface Configuration<T> {
-    displayName: string;
+  interface ConfigurationInterface {
+    displayName?: string;
     description: string;
+    details?: string;
+    hidden?: ConfigurationGenerator<boolean>;
+    disabled?: ConfigurationGenerator<boolean>;
+  }
+
+  interface Configuration<T> extends ConfigurationInterface{
+    name?: string;
     type: "multiselect" | "select" | "bool" | "number" | "string";
     default?: T | ConfigurationGenerator<T>;
     options?: T | ConfigurationGenerator<T>;
@@ -67,7 +74,15 @@ declare namespace Fig {
   }) => string;
 
   interface ScriptConfiguration<T> extends Configuration<T> {
+    name: string;
     script: ScriptGenerator<T>;
+  }
+
+  type ConfigurationPrimitive = EnvironmentVariableConfiguration | ScriptConfiguration<unknown>;
+
+  interface ConfigurationGroup extends ConfigurationInterface {
+    displayName: string;
+    configuration: ConfigurationPrimitive[]
   }
 
   type PluginType = "shell";
@@ -113,8 +128,8 @@ declare namespace Fig {
     installation: Installation;
     /** The configuration for the plugin */
     configuration?: (
-      | EnvironmentVariableConfiguration
-      | ScriptConfiguration<unknown>
+      | ConfigurationPrimitive
+      | ConfigurationGroup
     )[];
   }
 }

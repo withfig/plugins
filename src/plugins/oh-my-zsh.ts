@@ -1,3 +1,6 @@
+const modes = [ "prompt", "auto", "reminder", "disabled"] as const;
+type Mode = typeof modes[number]
+
 const plugin: Fig.Plugin = {
   name: "oh-my-zsh",
   type: "shell",
@@ -40,13 +43,38 @@ const plugin: Fig.Plugin = {
       enviromentVariable: "ZSH_THEME",
     },
     {
-      displayName: "test",
-      description: "test",
+      name: "test",
+      description: "hello there",
       type: "bool",
       default: false,
       script: ({ value }) =>
         `zstyle :prompt:pure:git:stash show ${value ? "yes" : "no"}`,
     },
+    {
+      displayName: "Getting Updates",
+      description: "By default, you will be prompted to check for updates every 2 weeks.",
+      configuration: [
+        {
+          name: "mode",
+          description: "",
+          default: "prompt",
+          type: "multiselect",
+          options: modes,
+          script: ({value}) => `zstyle ':omz:update' mode ${value}`
+        },
+        {
+          name: "frequency",
+          description: "How often Oh My Zsh checks for updates",
+          type: "number",
+          default: 14,
+          script: ({value}) => `zstyle ':omz:update' frequency ${value}`,
+          disabled: async ({ config }) => {
+            const mode = config["mode"] as Mode
+            return mode !== "disabled"
+          }
+        }
+      ]
+    }
   ],
 };
 
