@@ -65,17 +65,19 @@ declare namespace Fig {
     enviromentVariable: string;
   }
 
-  type ScriptGenerator<V> = ({
+  type JsonPrimitive = null | string | boolean | number | JsonPrimitive[] | Map<string, JsonPrimitive>;
+
+  type ScriptGenerator = ({
     ctx,
     value,
   }: {
     ctx: PluginContext;
-    value: V;
+    value: JsonPrimitive;
   }) => string;
 
   interface ScriptConfiguration<T> extends Configuration<T> {
     name: string;
-    script: ScriptGenerator<T>;
+    script: ScriptGenerator;
   }
 
   type ConfigurationPrimitive = EnvironmentVariableConfiguration | ScriptConfiguration<unknown>;
