@@ -1,0 +1,12 @@
+const plugin: Fig.Plugin = {
+  name: "cd-ssh",
+  type: "shell",
+  description: "`ssh` to a server when you accidental `cd` to it",
+  github: "itsjohannawren/zsh-plugin-cd-ssh",
+  shells: ["zsh"],
+  installation: {
+    source: "github",
+  },
+};
+
+export default plugin;
