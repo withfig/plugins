@@ -52,6 +52,8 @@ jobs:
       - name: Add @fig/plugins
         env: 
           TAG_VERSION: ${{ steps.version-bump.outputs.newTag }}
+          # See https://github.com/JS-DevTools/npm-publish/issues/15
+          INPUT_TOKEN: ""
         run: |
           cd node-backend
           yarn upgrade @fig/plugins
