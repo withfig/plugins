@@ -1,6 +1,6 @@
 {
   "name": "@fig/plugins",
-  "version": "0.1.19",
+  "version": "0.1.20",
   "description": "",
   "types": "index.d.ts",
   "files": [
