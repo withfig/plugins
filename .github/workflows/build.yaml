@@ -69,4 +69,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Rebuild Index
-        run: curl https://api.fig.io/plugins/rebuild-index
+        run: npm run update-plugins -- $(git diff --name-only origin/main HEAD -- src/plugins/**/*.ts)
+        env:
+          PLUGINS_UPDATE_TOKEN: ${{ secrets.PLUGINS_UPDATE_TOKEN }}

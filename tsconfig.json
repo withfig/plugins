@@ -10,14 +10,14 @@
     "moduleResolution": "node",
     "outDir": "./build",
     "target": "ES6",
-    "module": "ESNext",
+    "module": "commonjs",
     "lib": ["ESNext", "DOM"],
     "strict": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
     "declaration": true
   },
-  "exclude": ["node_modules/"],
+  "exclude": ["node_modules/", "src/update-plugins.ts"],
   "include": ["src/**/*", "index.d.ts"],
   "types": ["index.d.ts"]
 }

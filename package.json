@@ -11,7 +11,8 @@
   "scripts": {
     "test": "tsc --noEmit",
     "build": "tsc --build",
-    "clean": "rm -rf build"
+    "clean": "rm -rf build",
+    "update-plugins": "ts-node src/update-plugins.ts"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,8 @@
   },
   "homepage": "https://github.com/withfig/plugins",
   "devDependencies": {
-    "typescript": "^3.5.3"
+    "typescript": "^3.5.3",
+    "node-fetch": "^3.2.1",
+    "ts-node": "^10.6.0"
   }
 }
