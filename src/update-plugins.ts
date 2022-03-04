@@ -1,3 +1,4 @@
+import fetch from "node-fetch";
 import { loadPlugin } from ".";
 
 const pluginNames = process.argv.slice(2)
