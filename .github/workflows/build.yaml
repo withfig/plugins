@@ -47,7 +47,8 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: "withfig/node-backend"
-          token: ${{ secrets.UPDATE_CDN_TOKEN }}
+          token: ${{ secrets.FIG_BOT_TOKEN }}
+          path: node-backend/
       - name: Add @fig/plugins
         env: 
           TAG_VERSION: ${{ steps.version-bump.outputs.newTag }}
