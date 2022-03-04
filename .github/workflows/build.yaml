@@ -54,8 +54,10 @@ jobs:
           TAG_VERSION: ${{ steps.version-bump.outputs.newTag }}
           # See https://github.com/JS-DevTools/npm-publish/issues/15
           INPUT_TOKEN: ""
+          NPM_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
         run: |
           cd node-backend
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
           yarn upgrade @fig/plugins
           git config user.name "Figbot"
           git config user.email "noreply@fig.io"
