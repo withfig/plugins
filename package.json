@@ -28,6 +28,7 @@
   "homepage": "https://github.com/withfig/plugins",
   "devDependencies": {
     "axios": "^0.26.0",
+    "dotenv": "^16.0.0",
     "ts-node": "^10.6.0",
     "typescript": "^3.5.3"
   }

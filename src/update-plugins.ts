@@ -1,4 +1,6 @@
 import axios, { AxiosError } from 'axios';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const plugins = process.argv.slice(2)
   .filter(file => file.match(/^src\/plugins\/.*\.ts$/))
