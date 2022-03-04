@@ -46,20 +46,19 @@ jobs:
       - name: Checkout Cache
         uses: actions/checkout@v2
         with:
-          repository: "withfig/core-backend"
-          token: ${{ secrets.CACHE_SPECS_TOKEN }}
-          ref: master
-          path: backend
-      - name: Add @latest to cache
+          repository: "withfig/node-backend"
+          token: ${{ secrets.UPDATE_CDN_TOKEN }}
+      - name: Add @fig/plugins
+        env: 
+          TAG_VERSION: ${{ steps.version-bump.outputs.newTag }}
         run: |
-          cp ./plugins.zip ./backend/src/public/plugins.zip
-          cd backend
-          git config user.name "Build Action"
+          cd node-backend
+          yarn upgrade @fig/plugins
+          git config user.name "Figbot"
           git config user.email "noreply@fig.io"
           git add .
-          TAG_VERSION=${{ steps.version-bump.outputs.newTag }}
-          git commit -m "Updates plugins to $TAG_VERSION"
-          git push origin master
+          git commit -m "Updates @fig/plugins to $TAG_VERSION"
+          git push
      # Create a new github release with the newly created plugins.zip file
       - name: Release
         uses: softprops/action-gh-release@59c3b4891632ff9a897f99a91d7bc557467a3a22
