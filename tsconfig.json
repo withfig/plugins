@@ -1,17 +1,11 @@
 {
-  "ts-node": {
-    "transpileOnly": true,
-    "files": true,
-    "compilerOptions": {
-      "module": "commonjs"
-    }
-  },
   "compilerOptions": {
-    "moduleResolution": "node",
     "outDir": "./build",
     "target": "ES6",
     "module": "commonjs",
     "lib": ["ESNext", "DOM"],
+    "esModuleInterop": true,
+    "moduleResolution": "node",
     "strict": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./",

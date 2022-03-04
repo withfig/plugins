@@ -1,18 +1,27 @@
-import fetch from "node-fetch";
-import { loadPlugin } from ".";
+import axios, { AxiosError } from 'axios';
 
-const pluginNames = process.argv.slice(2)
-  .filter(file => file.startsWith("src/plugins/") && file.endsWith(".ts"))
-  .map(file => file.slice("src/plugins/".length, -".ts".length));
+const plugins = process.argv.slice(2)
+  .filter(file => file.match(/^src\/plugins\/.*\.ts$/))
+  .map(file => {
+    const js = import(file.replace(/^src/, ".").replace(/\.ts$/, ".js"))
+    return js.then(plugin => plugin.default)
+  });
 
-Promise.all(pluginNames.map(name => loadPlugin(name))).then(plugins => {
-  fetch("https://api.fig.io/plugins/update", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${process.env.PLUGINS_UPDATE_TOKEN}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ plugins })
-  }).then(res => process.exit(res.ok ? 0 : 1));
+Promise.all(plugins).then(plugins => {
+  axios.post(
+    "https://api.fig.io/plugins/update",
+    { plugins },
+    {
+      headers: {
+        Authorization: `Bearer ${process.env.PLUGINS_UPDATE_TOKEN}`,
+        "Content-Type": "application/json"
+      }
+    }
+  ).then((res) => {
+    console.log("Updated successfully");
+    process.exit(0);
+  }).catch((err: AxiosError) => {
+    console.log("Failed to update:", err.message);
+    process.exit(1);
+  });
 })
-
