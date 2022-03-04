@@ -17,5 +17,4 @@ const plugin: Fig.Plugin = {
   },
 };
 
-
 export default plugin;
