@@ -59,6 +59,7 @@ jobs:
           cd node-backend
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
           yarn upgrade @fig/plugins
+          rm .npmrc
           git config user.name "Figbot"
           git config user.email "noreply@fig.io"
           git add .
