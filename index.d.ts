@@ -12,8 +12,8 @@ declare namespace Fig {
   }
 
   /** Function that compiles a context to a string/string[] result to be included in dotfiles */
-  type DotfileCompiler<T, S={}> = T extends string | string[]
-    ? (_: S & { ctx: DotfileCompilationContext }) => T
+  type DotfileCompiler<T, S> = S extends string | string[]
+    ? (_: T & { ctx: DotfileCompilationContext }) => S
     : never;
 
   /** DeviceEnvironment mediates queries about the local device environment */
@@ -22,7 +22,7 @@ declare namespace Fig {
     listFolder: (path: string) => Promise<string[]>;
   }
 
-  type InstallationScriptCompiler = DotfileCompiler<string | string[]>;
+  type InstallationScriptCompiler = DotfileCompiler<{}, string | string[]>;
   type InstallationScript =  string | string[] | InstallationScriptCompiler;
 
   interface PluginInstallation {
@@ -99,23 +99,27 @@ declare namespace Fig {
     disabled?: ConfigurationGenerator<boolean>;
   }
 
-  interface ConfigurationItemInterface<T> extends ConfigurationInterface {
+  interface ConfigurationItemInterface<T, S> extends ConfigurationInterface {
     name?: string;
-    compile?: DotfileCompiler<string, { value: T }>;
+    compile?: DotfileCompiler<{ value: T }, S>;
   }
 
   type EnvironmentVariableItemForType<T, S extends UIType = UIType> = (
-    ConfigurationItemInterface<T>
+    ConfigurationItemInterface<T, {
+      value: string,
+      concat?: boolean,
+      export?: boolean
+    } | string>
     & UI<T, S>
     & { environmentVariable: string; }
   )
 
   type ScriptItemForType<T, S extends UIType = UIType> = (
-    ConfigurationItemInterface<T>
+    ConfigurationItemInterface<T, string>
     & UI<T, S>
     & {
         name: string;
-        compile: DotfileCompiler<string, { value: T }> 
+        compile: DotfileCompiler<{ value: T }, string>
       }
   )
 
