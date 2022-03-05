@@ -11,10 +11,10 @@ declare namespace Fig {
     shell: Shell;
   }
 
-  /** Function that compiles a context to a string/string[] result to be included in dotfiles */
-  type DotfileCompiler<T, S> = S extends string | string[]
-    ? (_: T & { ctx: DotfileCompilationContext }) => S
-    : never;
+  /** Function that compiles a context to a string-like result or block to be
+    * included in dotfiles
+    */
+  type DotfileCompiler<T, S> = (_: T & { ctx: DotfileCompilationContext }) => S
 
   /** DeviceEnvironment mediates queries about the local device environment */
   interface DeviceEnvironment {
