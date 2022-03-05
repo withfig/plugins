@@ -12,7 +12,7 @@ declare namespace Fig {
   }
 
   /* Function that compiles a context to a string/string[] result to be included in dotfiles */
-  type DotfileCompiler<T, S=Record<string, never>> = T extends string | string[]
+  type DotfileCompiler<T, S={}> = T extends string | string[]
     ? (_: S & { ctx: DotfileCompilationContext }) => T
     : never;
 
@@ -43,10 +43,7 @@ declare namespace Fig {
   type ConfigurationDictionary = Record<string, ConfigurationValue>;
 
   /*  A ConfigurationGenerator dynamically computes a result based on current configuration item values. */
-  type ConfigurationGenerator<
-    T,
-    S = Record<string, never>
-  > = (_: S & { config: ConfigurationDictionary }) => T;
+  type ConfigurationGenerator<T, S={}> = (_: S & { config: ConfigurationDictionary }) => T;
 
   type DeviceConfigurationGenerator<T> = ConfigurationGenerator<T | Promise<T>, { env?: DeviceEnvironment }>
 

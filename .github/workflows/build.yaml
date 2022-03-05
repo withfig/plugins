@@ -65,14 +65,6 @@ jobs:
           git add .
           git commit -m "Updates @fig/plugins to $TAG_VERSION"
           git push
-     # Create a new github release with the newly created plugins.zip file
-      - name: Release
-        uses: softprops/action-gh-release@59c3b4891632ff9a897f99a91d7bc557467a3a22
-        with:
-          files: plugins.zip
-          tag_name: ${{ steps.version-bump.outputs.newTag }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Rebuild Index
         run: npm run update-plugins -- $(git diff --name-only origin/main HEAD -- src/plugins/**/*.ts)
         env:
