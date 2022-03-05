@@ -22,36 +22,36 @@ const plugin: Fig.Plugin = {
       displayName: "Prompt Symbol",
       description: "The symbol to use for the prompt",
       default: "❯",
-      type: "string",
-      enviromentVariable: "PURE_PROMPT_SYMBOL"
+      uiType: "text",
+      environmentVariable: "PURE_PROMPT_SYMBOL"
     },
     {
       displayName: "VI-Mode Prompt Symbol",
       description: "The symbol to use for the prompt when in vi-mode",
       default: "❮",
-      type: "string",
-      enviromentVariable: "PURE_PROMPT_VICMD_SYMBOL"
+      uiType: "text",
+      environmentVariable: "PURE_PROMPT_VICMD_SYMBOL"
     },
     {
       displayName: "Git Down Arrow Symbol",
       description: "The symbol to use for the git down arrow",
       default: "⇣",
-      type: "string",
-      enviromentVariable: "PURE_GIT_DOWN_ARROW"
+      uiType: "text",
+      environmentVariable: "PURE_GIT_DOWN_ARROW"
     },
     {
       displayName: "Git Up Arrow Symbol",
       description: "The symbol to use for the git up arrow",
       default: "⇡",
-      type: "string",
-      enviromentVariable: "PURE_GIT_UP_ARROW"
+      uiType: "text",
+      environmentVariable: "PURE_GIT_UP_ARROW"
     },
     {
       displayName: "Git Stash Symbol",
       description: "The symbol to use for the git stash symbol",
       default: "≡",
-      type: "string",
-      enviromentVariable: "PURE_GIT_STASH_SYMBOL"
+      uiType: "text",
+      environmentVariable: "PURE_GIT_STASH_SYMBOL"
     }
   ],
 };

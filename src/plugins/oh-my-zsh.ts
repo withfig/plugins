@@ -23,17 +23,18 @@ const plugin: Fig.Plugin = {
     {
       displayName: "Plugins",
       description: "Oh My Zsh plugins to load",
-      type: "multiselect",
+      uiType: "multiselect",
       default: [],
       options: async ({ env }) => env
         ? await env.listFolder(`${env.plugin.installDirectory}/plugins`)
         : [],
-      enviromentVariable: "plugins",
+      environmentVariable: "plugins",
     },
     {
       displayName: "Theme",
       description: "The Oh My Zsh theme to use",
-      type: "select",
+      uiType: "select",
+      default: "robby_russell",
       options: async ({ env }) => {
         if (!env) {
           return [];
@@ -41,7 +42,7 @@ const plugin: Fig.Plugin = {
         const themes = await env.listFolder(`${env.plugin.installDirectory}/themes`);
         return themes.map((theme) => theme.replace(".zsh-theme", ""))
       },
-      enviromentVariable: "ZSH_THEME",
+      environmentVariable: "ZSH_THEME",
     },
     {
       displayName: "Getting Updates",
@@ -50,18 +51,18 @@ const plugin: Fig.Plugin = {
         {
           name: "mode",
           description: "",
+          uiType: "multiselect",
           default: "prompt",
-          type: "multiselect",
           options: modes,
-          script: ({ value }: { value: string }) =>
+          compile: ({ value }: { value: string[] }) =>
             `zstyle ':omz:update' mode ${value}`
         },
         {
           name: "frequency",
           description: "How often Oh My Zsh checks for updates",
-          type: "number",
+          uiType: "text",
           default: 14,
-          script: ({ value }: { value: number }) =>
+          compile: ({ value }: { value: number }) =>
             `zstyle ':omz:update' frequency ${value}`,
           disabled: ({ config }) => config["mode"] !== "disabled"
         }
@@ -70,9 +71,9 @@ const plugin: Fig.Plugin = {
     {
       name: "test",
       description: "hello there",
-      type: "bool",
+      uiType: "checkbox",
       default: false,
-      script: ({ value }: { value: boolean }) =>
+      compile: ({ value }: { value: boolean }) =>
         `zstyle :prompt:pure:git:stash show ${value ? "yes" : "no"}`,
     },
   ],

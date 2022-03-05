@@ -1,22 +1,22 @@
 /** The Fig namespace */
 declare namespace Fig {
-  /* Local device context about a plugin */
+  /** Local device context about a plugin */
   interface PluginContext {
     installDirectory: string;
   }
 
-  /* Context used to generate shell source code in a dotfile  */
+  /** Context used to generate shell source code in a dotfile  */
   interface DotfileCompilationContext {
     plugin: PluginContext;
     shell: Shell;
   }
 
-  /* Function that compiles a context to a string/string[] result to be included in dotfiles */
+  /** Function that compiles a context to a string/string[] result to be included in dotfiles */
   type DotfileCompiler<T, S={}> = T extends string | string[]
     ? (_: S & { ctx: DotfileCompilationContext }) => T
     : never;
 
-  /* DeviceEnvironment mediates queries about the local device environment */
+  /** DeviceEnvironment mediates queries about the local device environment */
   interface DeviceEnvironment {
     plugin: PluginContext;
     listFolder: (path: string) => Promise<string[]>;
@@ -38,11 +38,11 @@ declare namespace Fig {
     origin: PluginOrigin;
   };
 
-  /* Current value of a field in a plugin configuration. */
+  /** Current value of a field in a plugin configuration. */
   type ConfigurationValue = unknown;
   type ConfigurationDictionary = Record<string, ConfigurationValue>;
 
-  /*  A ConfigurationGenerator dynamically computes a result based on current configuration item values. */
+  /** Dynamically computes a result based on current configuration item values. */
   type ConfigurationGenerator<T, S={}> = (_: S & { config: ConfigurationDictionary }) => T;
 
   type DeviceConfigurationGenerator<T> = ConfigurationGenerator<T | Promise<T>, { env?: DeviceEnvironment }>
@@ -50,12 +50,48 @@ declare namespace Fig {
   type UIType =
     | "multiselect"
     | "select"
-    | "bool"
-    | "number"
-    | "string"
+    | "text"
+    | "checkbox"
+    | "toggle"
+
+  /** A UI augmented with suggestions that can be static or dynamically
+   * generated from the user's environment
+   */
+  interface SuggestionUI<T> {
+    uiType: UIType;
+    options?: T[] | DeviceConfigurationGenerator<T[]>;
+  }
+
+  // Multiselect UI item type
+  interface MultiselectUI<T extends unknown[]> extends SuggestionUI<T[number]> {
+    uiType: "multiselect";
+    default: T[number] | T;
+  }
+
+  interface BasicSuggestionUI<T, U extends UIType> extends SuggestionUI<T> {
+    uiType: U;
+    default: T;
+  }
+
+  interface BasicUI<T, U extends UIType> {
+    uiType: U;
+    default: T;
+  }
+
+  // Get all ui's that support a value type of T.
+  type UIsWithValueType<T> = (
+    | T extends unknown[] ? MultiselectUI<T> : never
+    | T extends boolean ? BasicUI<T, "checkbox" | "toggle"> : never
+    | T extends string ? BasicSuggestionUI<T, "select" | "text"> : never
+    | T extends number ? BasicSuggestionUI<T, "select" | "text"> : never
+    | BasicSuggestionUI<T, "select">
+  )
+
+  // Gets all valid UIs that satisfy { value: T, uiType: S }
+  type UI<T, S extends UIType = UIType> = Extract<UIsWithValueType<T>, { uiType: S }>
 
   // Interface common to Configuration *items* and Configuration groups (which contain configuration items)
-  interface ConfigurationElementInterface {
+  interface ConfigurationInterface {
     displayName?: string;
     description: string;
     details?: string;
@@ -63,61 +99,49 @@ declare namespace Fig {
     disabled?: ConfigurationGenerator<boolean>;
   }
 
-  interface ConfigurationItemInterface extends ConfigurationElementInterface {
+  interface ConfigurationItemInterface<T> extends ConfigurationInterface {
     name?: string;
-    // Defines the UI type for an item (how to display it)
-    type: UIType;
+    compile?: DotfileCompiler<string, { value: T }>;
   }
 
-  // Multiselect UI item type
-  interface MultiselectConfigurationItem<T> extends ConfigurationItemInterface {
-    type: "multiselect";
-    default?: T | T[];
-    options?: T[] | DeviceConfigurationGenerator<T[]>;
-  }
-
-  // Select UI item type
-  interface SelectConfigurationItem<T> extends ConfigurationItemInterface {
-    type: "select";
-    default?: T;
-    options?: T[] | DeviceConfigurationGenerator<T[]>;
-  }
-
-  // Basic boolean, string, and number UI item types
-  interface BasicConfigurationItemInterface<T> extends ConfigurationItemInterface {
-    type: Extract<(
-        | { data: string, type: "string" }
-        | { data: boolean, type: "bool" }
-        | { data: number, type: "number" }
-      ), { data: T }>["type"];
-    default?: T;
-    options?: T[] | DeviceConfigurationGenerator<T[]>;
-  }
-
-  // An item that can support select, multiselect, or basic UI
-  type SelectableConfigurationItem<T> = (
-    | MultiselectConfigurationItem<T>
-    | SelectConfigurationItem<T>
-    | BasicConfigurationItemInterface<T>
+  type EnvironmentVariableItemForType<T, S extends UIType = UIType> = (
+    ConfigurationItemInterface<T>
+    & UI<T, S>
+    & { environmentVariable: string; }
   )
 
-  type EnvironmentVariableConfigurationItem<T> =
-    SelectableConfigurationItem<T> & { enviromentVariable: string };
+  type ScriptItemForType<T, S extends UIType = UIType> = (
+    ConfigurationItemInterface<T>
+    & UI<T, S>
+    & {
+        name: string;
+        compile: DotfileCompiler<string, { value: T }> 
+      }
+  )
 
-  type ScriptConfigurationItem<T = unknown> = SelectableConfigurationItem<T> & {
-    name: string;
-    script: DotfileCompiler<string, { value: T }>;
-  };
+  type ScriptItem = (
+    | ScriptItemForType<boolean[], "multiselect">
+    | ScriptItemForType<string[], "multiselect">
+    | ScriptItemForType<number[], "multiselect">
+    | ScriptItemForType<boolean>
+    | ScriptItemForType<string>
+    | ScriptItemForType<number>
+  )
+
+  type EnvironmentVariableItem = (
+    | EnvironmentVariableItemForType<boolean[], "multiselect">
+    | EnvironmentVariableItemForType<string[], "multiselect">
+    | EnvironmentVariableItemForType<number[], "multiselect">
+    | EnvironmentVariableItemForType<boolean>
+    | EnvironmentVariableItemForType<string>
+    | EnvironmentVariableItemForType<number>
+  )
 
   type ConfigurationItem =
-    | EnvironmentVariableConfigurationItem<boolean>
-    | EnvironmentVariableConfigurationItem<string>
-    | EnvironmentVariableConfigurationItem<number>
-    | ScriptConfigurationItem<boolean>
-    | ScriptConfigurationItem<string>
-    | ScriptConfigurationItem<number>;
+    | ScriptItem
+    | EnvironmentVariableItem
 
-  interface ConfigurationGroup extends ConfigurationElementInterface {
+  interface ConfigurationGroup extends ConfigurationInterface {
     displayName: string;
     configuration: ConfigurationItem[]
   }
