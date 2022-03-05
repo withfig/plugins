@@ -63,9 +63,7 @@ const plugin: Fig.Plugin = {
           default: 14,
           script: ({ value }: { value: number }) =>
             `zstyle ':omz:update' frequency ${value}`,
-          disabled: async ({ config }) => {
-            return config["mode"] !== "disabled"
-          }
+          disabled: ({ config }) => config["mode"] !== "disabled"
         }
       ]
     },
