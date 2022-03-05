@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "mango-tree/zsh-recall",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

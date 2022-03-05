@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "zuxfoucault/colored-man-pages_mod",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

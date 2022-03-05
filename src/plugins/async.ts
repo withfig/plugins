@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "asynchronous",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

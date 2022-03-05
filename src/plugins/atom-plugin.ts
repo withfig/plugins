@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "CorradoRossi/oh-my-zsh-atom-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

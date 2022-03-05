@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
     "bindkey",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

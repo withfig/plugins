@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "jimeh/zsh-peco-history",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

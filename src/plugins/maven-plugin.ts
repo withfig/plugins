@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "KyleChamberlin/zsh_maven_plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "bbenne10/goenv",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

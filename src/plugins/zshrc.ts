@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "freak2geek/zshrc",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

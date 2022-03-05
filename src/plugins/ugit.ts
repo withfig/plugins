@@ -19,7 +19,7 @@ const plugin: Fig.Plugin = {
     "git-undo",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

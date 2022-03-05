@@ -14,7 +14,7 @@ const plugin: Fig.Plugin = {
     "jump",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

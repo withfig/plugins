@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Valodim/zsh-_url-httplink",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

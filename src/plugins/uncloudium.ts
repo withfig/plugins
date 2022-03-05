@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Talon1024/omz-uncloudium",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "MenkeTechnologies/zsh-tig-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

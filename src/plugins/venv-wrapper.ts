@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
     "virtualenv-manager",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

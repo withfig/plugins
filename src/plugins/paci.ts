@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "iloginow/zsh-paci",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

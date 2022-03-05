@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "notf0und/zsh-vapor",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "primait/docker-enter-completion",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

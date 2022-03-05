@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Lowess/gumsible-oh-my-zsh-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

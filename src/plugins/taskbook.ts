@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "mastern2k3/taskbook-zsh-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

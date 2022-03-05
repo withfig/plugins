@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "zfben/zsh-npm",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

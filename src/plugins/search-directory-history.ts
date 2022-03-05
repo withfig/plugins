@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "cmaahs/search-directory-history",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

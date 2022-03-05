@@ -27,7 +27,7 @@ const plugin: Fig.Plugin = {
     "nushell",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

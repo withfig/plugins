@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "ChrisPenner/session-sauce",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

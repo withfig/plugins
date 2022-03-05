@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "chrissicool/zsh-t32",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "magento2",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

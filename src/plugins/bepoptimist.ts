@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "sheoak/zsh-bepoptimist",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

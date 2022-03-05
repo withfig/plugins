@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "odgon/traista",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "tfiala/zsh-perlbrew",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

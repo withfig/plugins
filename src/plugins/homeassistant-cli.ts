@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "frosit/zsh-plugin-homeassistant-cli",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

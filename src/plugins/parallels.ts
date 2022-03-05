@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "benclark/parallels-zsh-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

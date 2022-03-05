@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "wbingli/zsh-wakatime",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

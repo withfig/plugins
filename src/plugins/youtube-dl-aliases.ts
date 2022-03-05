@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
     "36c3",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

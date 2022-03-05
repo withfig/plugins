@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "aws-upload",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -1,5 +1,5 @@
-const modes = [ "prompt", "auto", "reminder", "disabled"] as const;
-type Mode = typeof modes[number]
+type Mode = string;
+const modes: Mode[] = ["prompt", "auto", "reminder", "disabled"];
 
 const plugin: Fig.Plugin = {
   name: "oh-my-zsh",
@@ -15,9 +15,9 @@ const plugin: Fig.Plugin = {
   shells: ["zsh"],
   tags: ["framework", "zsh"],
   installation: {
-    source: "github",
-    pre: ({ ctx }) => `export ZSH="${ctx.installDirectory}"`,
-    use: "oh-my-zsh.sh"
+    origin: "github",
+    preScript: ({ ctx }) => `export ZSH="${ctx.plugin.installDirectory}"`,
+    sourceFiles: "oh-my-zsh.sh"
   },
   configuration: [
     {
@@ -25,30 +25,23 @@ const plugin: Fig.Plugin = {
       description: "Oh My Zsh plugins to load",
       type: "multiselect",
       default: [],
-      options: async ({ ctx, env }) => { 
-        return await env?.listFolder(`${ctx.installDirectory}/plugins`) ?? []
-      },
+      options: async ({ env }) => env
+        ? await env.listFolder(`${env.plugin.installDirectory}/plugins`)
+        : [],
       enviromentVariable: "plugins",
     },
     {
       displayName: "Theme",
       description: "The Oh My Zsh theme to use",
       type: "select",
-      options: async ({ ctx, env }) => {
-        const themes = await env?.listFolder(`${ctx.installDirectory}/themes`) ?? []
-        return themes.map((theme) =>
-          theme.replace(".zsh-theme", "")
-        )
+      options: async ({ env }) => {
+        if (!env) {
+          return [];
+        }
+        const themes = await env.listFolder(`${env.plugin.installDirectory}/themes`);
+        return themes.map((theme) => theme.replace(".zsh-theme", ""))
       },
       enviromentVariable: "ZSH_THEME",
-    },
-    {
-      name: "test",
-      description: "hello there",
-      type: "bool",
-      default: false,
-      script: ({ value }) =>
-        `zstyle :prompt:pure:git:stash show ${value ? "yes" : "no"}`,
     },
     {
       displayName: "Getting Updates",
@@ -60,21 +53,30 @@ const plugin: Fig.Plugin = {
           default: "prompt",
           type: "multiselect",
           options: modes,
-          script: ({value}) => `zstyle ':omz:update' mode ${value}`
+          script: ({ value }: { value: string }) =>
+            `zstyle ':omz:update' mode ${value}`
         },
         {
           name: "frequency",
           description: "How often Oh My Zsh checks for updates",
           type: "number",
           default: 14,
-          script: ({value}) => `zstyle ':omz:update' frequency ${value}`,
+          script: ({ value }: { value: number }) =>
+            `zstyle ':omz:update' frequency ${value}`,
           disabled: async ({ config }) => {
-            const mode = config["mode"] as Mode
-            return mode !== "disabled"
+            return config["mode"] !== "disabled"
           }
         }
       ]
-    }
+    },
+    {
+      name: "test",
+      description: "hello there",
+      type: "bool",
+      default: false,
+      script: ({ value }: { value: boolean }) =>
+        `zstyle :prompt:pure:git:stash show ${value ? "yes" : "no"}`,
+    },
   ],
 };
 

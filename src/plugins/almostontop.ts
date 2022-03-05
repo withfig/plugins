@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Valiev/almostontop",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

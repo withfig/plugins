@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "norman-abramovitz/cf-zsh-autocomplete-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

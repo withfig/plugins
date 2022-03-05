@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "MohamedElashri/ls-go-zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

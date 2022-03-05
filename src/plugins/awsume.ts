@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Sordie/AWSume",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

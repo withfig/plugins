@@ -8,7 +8,7 @@ const plugin: Fig.Plugin = {
     "racket",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "rcruzper/zsh-git-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

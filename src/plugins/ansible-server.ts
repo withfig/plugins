@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "viasite-ansible/zsh-ansible-server",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

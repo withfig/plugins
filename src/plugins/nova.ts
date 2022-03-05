@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "rbirnie/oh-my-zsh-nova",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

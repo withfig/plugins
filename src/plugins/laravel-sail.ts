@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "ariaieboy/laravel-sail",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

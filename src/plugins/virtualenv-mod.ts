@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "mattcl/virtualenv-mod",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "jelek21/omz-git-smart-commands",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

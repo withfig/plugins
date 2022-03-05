@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "bobthecow/git-flow-completion",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
     "zimfw",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

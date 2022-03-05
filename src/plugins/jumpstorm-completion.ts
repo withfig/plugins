@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "netresearch/jumpstorm-zsh-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

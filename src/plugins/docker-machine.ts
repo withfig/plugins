@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "asuran/zsh-docker-machine",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

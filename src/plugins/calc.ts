@@ -15,7 +15,7 @@ const plugin: Fig.Plugin = {
     "zsh-calculator",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

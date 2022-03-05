@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "wehlando/efibootmgr-zsh-completion",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

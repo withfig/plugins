@@ -9,7 +9,7 @@ const plugin: Fig.Plugin = {
     "tmux",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "joepvd/zsh-hints",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

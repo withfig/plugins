@@ -16,7 +16,7 @@ const plugin: Fig.Plugin = {
     "registers",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

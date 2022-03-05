@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "dehlen/git-tree-zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

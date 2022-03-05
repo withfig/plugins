@@ -13,7 +13,7 @@ const plugin: Fig.Plugin = {
     "gimme",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

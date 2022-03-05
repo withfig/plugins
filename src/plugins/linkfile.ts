@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "add-shortcuts",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

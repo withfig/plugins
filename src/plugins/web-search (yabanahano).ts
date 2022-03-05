@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Yabanahano/web-search",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

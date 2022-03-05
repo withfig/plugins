@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "undollar",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

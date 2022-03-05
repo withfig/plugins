@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Zocker1999NET/zsh-gtr",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

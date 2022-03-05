@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "nviennot/zsh-vim-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

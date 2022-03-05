@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
     "tinygo",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

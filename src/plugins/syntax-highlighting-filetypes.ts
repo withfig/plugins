@@ -14,7 +14,7 @@ const plugin: Fig.Plugin = {
     "lscolors",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

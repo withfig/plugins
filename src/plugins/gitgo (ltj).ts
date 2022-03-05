@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "ltj/gitgo",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

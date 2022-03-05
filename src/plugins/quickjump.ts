@@ -13,7 +13,7 @@ const plugin: Fig.Plugin = {
     "zsh-quickjump",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

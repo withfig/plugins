@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "deyvisonrocha/pantheon-terminal-notify-zsh-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

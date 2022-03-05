@@ -13,7 +13,7 @@ const plugin: Fig.Plugin = {
     "r2d2",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

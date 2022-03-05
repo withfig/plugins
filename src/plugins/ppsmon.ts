@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "mzpqnxow/ppsmon",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

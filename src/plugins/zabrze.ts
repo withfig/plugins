@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "zle-widgets",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

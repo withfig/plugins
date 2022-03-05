@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Dabz/kafka-zsh-completions",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

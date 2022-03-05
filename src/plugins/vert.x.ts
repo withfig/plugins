@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "davidafsilva/vert.x-omz-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

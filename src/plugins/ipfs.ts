@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "hellounicorn/zsh-ipfs",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

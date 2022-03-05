@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "sheax0r/etcdctl-zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "NorthIsMirror/z-a-test",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

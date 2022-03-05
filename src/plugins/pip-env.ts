@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "tjquillan/zsh-pipenv",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

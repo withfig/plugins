@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "fuzzylogiq/autopkg-zsh-completion",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

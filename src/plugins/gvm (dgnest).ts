@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "dgnest/zsh-gvm-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

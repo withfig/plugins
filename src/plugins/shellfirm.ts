@@ -15,7 +15,7 @@ const plugin: Fig.Plugin = {
     "devops-tools",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

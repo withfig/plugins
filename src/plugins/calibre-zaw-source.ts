@@ -14,7 +14,7 @@ const plugin: Fig.Plugin = {
     "zaw",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

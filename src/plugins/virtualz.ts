@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "virtualenv",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "FreebirdRides/oh-my-zsh-aws-mfa",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

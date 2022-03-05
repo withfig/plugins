@@ -8,7 +8,7 @@ const plugin: Fig.Plugin = {
     "oh-my-zsh-plugin",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

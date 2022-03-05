@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "chriskempson/base16-shell",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

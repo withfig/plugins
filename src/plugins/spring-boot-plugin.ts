@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "linux-china/oh-my-zsh-spring-boot-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

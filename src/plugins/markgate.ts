@@ -14,7 +14,7 @@ const plugin: Fig.Plugin = {
     "mark-directories",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

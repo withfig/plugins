@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "ptcar2009/insprzsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

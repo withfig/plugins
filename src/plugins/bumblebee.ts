@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Niverton/zsh-bumblebee-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

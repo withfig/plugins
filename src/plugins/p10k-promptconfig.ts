@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "ItsDoctorDoc/p10k-promptconfig",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

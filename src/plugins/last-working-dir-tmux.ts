@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Curly-Mo/last-working-dir-tmux",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

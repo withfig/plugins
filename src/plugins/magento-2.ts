@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "dambrogia/oh-my-zsh-plugin-magento-2",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

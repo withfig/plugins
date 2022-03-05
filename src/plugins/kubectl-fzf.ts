@@ -14,7 +14,7 @@ const plugin: Fig.Plugin = {
     "kubectl",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

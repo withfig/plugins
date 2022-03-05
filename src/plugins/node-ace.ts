@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
     "adonis",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

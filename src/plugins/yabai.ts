@@ -9,7 +9,7 @@ const plugin: Fig.Plugin = {
     "yabai",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

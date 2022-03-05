@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "node-version-manager",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

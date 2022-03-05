@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "jactry/zsh_battery_state",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "amstrad/oh-my-matrix",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

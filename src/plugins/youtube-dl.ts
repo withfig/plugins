@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "joow/youtube-dl",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

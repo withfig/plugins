@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
     "pornhub",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

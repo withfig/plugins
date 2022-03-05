@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "DimitriSteyaert/Zsh-tugboat",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

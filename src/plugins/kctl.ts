@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "yzdann/kctl",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

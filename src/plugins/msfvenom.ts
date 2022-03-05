@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "metasploit",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

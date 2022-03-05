@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "jspears/worktree",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

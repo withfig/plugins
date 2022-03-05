@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "squarefrog/zsh-carthage",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

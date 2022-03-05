@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "droctothorpe/kubecolor",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

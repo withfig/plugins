@@ -13,7 +13,7 @@ const plugin: Fig.Plugin = {
     "jenv",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

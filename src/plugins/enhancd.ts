@@ -15,11 +15,11 @@ const plugin: Fig.Plugin = {
   shells: ["bash", "zsh", "fish"],
   tags: ["cd"],
   installation: {
-    source: "github",
-    use: "init.sh",
+    origin: "github",
+    sourceFiles: "init.sh",
     fish: {
-      use: ({ ctx }) => {
-        return ["conf.d/", "functions/"].map(dir => `${ctx.installDirectory}${dir}*`) 
+      sourceFiles: ({ ctx }) => {
+        return ["conf.d/", "functions/"].map(dir => `${ctx.plugin.installDirectory}${dir}*`) 
       }
     }
   },

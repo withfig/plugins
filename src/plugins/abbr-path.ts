@@ -18,7 +18,7 @@ const plugin: Fig.Plugin = {
     "agnoster-theme",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

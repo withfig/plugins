@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "sinetoami/web-search",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

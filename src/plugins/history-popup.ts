@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "lcrespom/oh-my-zsh-history-popup",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

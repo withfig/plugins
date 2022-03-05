@@ -19,7 +19,7 @@ const plugin: Fig.Plugin = {
     "bash-zsh-migration",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

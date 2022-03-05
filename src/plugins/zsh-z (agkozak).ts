@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
   shells: ["zsh"],
   tags: ["zsh", "filesystem", "command-line-tool", "zsh-plugin", "autojump"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

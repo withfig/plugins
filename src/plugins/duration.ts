@@ -9,7 +9,7 @@ const plugin: Fig.Plugin = {
     "zplug",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

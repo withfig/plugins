@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "rgeraskin/xxh-plugin-zsh-zshrc",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

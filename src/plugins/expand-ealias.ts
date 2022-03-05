@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
     "expanding-aliases",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

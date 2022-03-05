@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "ael-code/zsh-colored-man-pages",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

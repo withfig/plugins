@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "bhayward93/Linus-rants-ZSH",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

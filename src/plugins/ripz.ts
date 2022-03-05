@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "ripgrep",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "dirkk/zsh-basex",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

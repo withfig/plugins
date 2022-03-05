@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "jthat/zsh-namelink",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

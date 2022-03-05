@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "wwilsman/zsh-clean-project",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

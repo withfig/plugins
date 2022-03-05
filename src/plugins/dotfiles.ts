@@ -14,7 +14,7 @@ const plugin: Fig.Plugin = {
     "synchronization",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

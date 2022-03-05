@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "volta-plugin-zsh",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

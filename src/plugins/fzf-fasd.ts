@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
     "fasd",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

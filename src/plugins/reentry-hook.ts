@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "RobSis/zsh-reentry-hook",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

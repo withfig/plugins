@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "caarlos0-graveyard/zsh-pg",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

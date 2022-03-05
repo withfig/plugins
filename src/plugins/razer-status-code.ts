@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "michaelmcallister/razer-status-code",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "d12frosted/kitsunebook.plugin.zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "pmorillon/grid5000-zsh-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

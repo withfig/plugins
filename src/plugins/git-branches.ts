@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Schroefdop/git-branches",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

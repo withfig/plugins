@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
     "vcsh-repositories",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

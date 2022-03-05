@@ -9,7 +9,7 @@ const plugin: Fig.Plugin = {
     "prompt",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "hermitmaster/zsh-exa-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

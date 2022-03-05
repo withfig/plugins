@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "davydovanton/hanami-zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

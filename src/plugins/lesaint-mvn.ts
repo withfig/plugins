@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "lesaint/lesaint-mvn",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

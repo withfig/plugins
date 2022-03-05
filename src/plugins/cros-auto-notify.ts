@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "cros",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

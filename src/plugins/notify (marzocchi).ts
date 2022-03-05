@@ -18,7 +18,7 @@ const plugin: Fig.Plugin = {
     "zgen",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

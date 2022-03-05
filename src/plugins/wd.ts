@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
     "productivity",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

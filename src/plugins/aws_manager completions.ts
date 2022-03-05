@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "EslamElHusseiny/aws_manager_plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "enrico9034/zsh-watch-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

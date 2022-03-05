@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "pookey/zsh-aws-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

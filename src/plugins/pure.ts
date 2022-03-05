@@ -14,8 +14,8 @@ const plugin: Fig.Plugin = {
   shells: ["zsh"],
   tags: ["zsh", "theme"],
   installation: {
-    source: "github",
-    use: ["async.zsh", "pure.zsh"],
+    origin: "github",
+    sourceFiles: ["async.zsh", "pure.zsh"],
   },
   configuration: [
     {

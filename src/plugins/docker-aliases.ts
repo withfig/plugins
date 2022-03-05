@@ -18,7 +18,7 @@ const plugin: Fig.Plugin = {
     "bash-aliases",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

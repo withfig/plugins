@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "ecortinas/zsh-rbenv",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

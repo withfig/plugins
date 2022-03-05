@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "yerinle/zsh-gvm",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

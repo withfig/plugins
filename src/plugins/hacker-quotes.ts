@@ -17,7 +17,7 @@ const plugin: Fig.Plugin = {
     "hacker-quotes",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

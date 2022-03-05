@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "brokendisk/dune-quotes",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

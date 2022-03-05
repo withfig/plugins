@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "leophys/zsh-plugin-fzf-finder",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

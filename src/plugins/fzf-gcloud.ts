@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "mbhynes/fzf-gcloud",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

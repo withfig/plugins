@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "IngoMeyer441/zsh-easy-motion",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "seletskiy/zsh-zgen-compinit-tweak",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

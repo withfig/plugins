@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "virtualenvwrapper",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "mdarocha/zsh-windows-title",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

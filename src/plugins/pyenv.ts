@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "mattberther/zsh-pyenv",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

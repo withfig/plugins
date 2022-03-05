@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
     "connect",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

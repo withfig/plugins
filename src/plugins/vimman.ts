@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "yonchu/vimman",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

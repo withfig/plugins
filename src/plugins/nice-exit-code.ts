@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "bric3/nice-exit-code",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

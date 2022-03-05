@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "jimhester/per-directory-history",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

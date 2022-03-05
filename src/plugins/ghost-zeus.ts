@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "fontno/ghost_zeus",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

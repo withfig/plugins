@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "chipsenkbeil/zsh-notes",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

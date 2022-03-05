@@ -13,7 +13,7 @@ const plugin: Fig.Plugin = {
     "python-package-management",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

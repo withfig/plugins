@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "gepoch/oh-my-zsh-dirstack",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

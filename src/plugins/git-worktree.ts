@@ -21,7 +21,7 @@ const plugin: Fig.Plugin = {
     "git-interactive",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

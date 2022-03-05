@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "mtxr/zsh-change-case",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

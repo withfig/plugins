@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "willghatch/zsh-snippets",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

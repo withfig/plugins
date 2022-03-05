@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "kuoe0/zsh-depot-tools",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

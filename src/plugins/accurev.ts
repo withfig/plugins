@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "dalefukami/accurev-zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

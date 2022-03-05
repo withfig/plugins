@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "tmux-titles",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

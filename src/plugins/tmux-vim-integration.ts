@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "jsahlen/tmux-vim-integration.plugin.zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

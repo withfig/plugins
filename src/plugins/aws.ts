@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "apachler/zsh-aws",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

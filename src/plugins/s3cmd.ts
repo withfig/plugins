@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "s3cmd-zsh-plugin",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

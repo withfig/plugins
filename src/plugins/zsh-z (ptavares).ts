@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "ptavares/zsh-z",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

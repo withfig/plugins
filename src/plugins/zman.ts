@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
   shells: ["zsh"],
   tags: ["zsh", "zsh-plugin"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "vasyharan/zsh-brew-services",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

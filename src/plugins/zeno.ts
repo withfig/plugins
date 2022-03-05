@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "deno",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "mjrafferty/ztouch",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

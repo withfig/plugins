@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "wuotr/zsh-plugin-vscode",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

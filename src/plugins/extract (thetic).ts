@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "thetic/extract",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

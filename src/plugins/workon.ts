@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "bryanculver/opus.plugin.zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

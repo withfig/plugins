@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "ACmyles/pyvenv-fast",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

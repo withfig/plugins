@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "solarized-dircolors",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "gantsign/zsh-plugins",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

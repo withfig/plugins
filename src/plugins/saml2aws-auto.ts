@@ -9,7 +9,7 @@ const plugin: Fig.Plugin = {
     "saml2aws-auto",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

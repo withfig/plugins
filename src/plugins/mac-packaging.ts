@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Temikus/mac-packaging",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

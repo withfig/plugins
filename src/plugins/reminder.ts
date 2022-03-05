@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
     "displays-reminders",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

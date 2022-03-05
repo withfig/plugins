@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "gerges-zz/oh-my-zsh-jira-plus",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

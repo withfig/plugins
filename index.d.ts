@@ -1,51 +1,64 @@
 /** The Fig namespace */
 declare namespace Fig {
-  /** Context used to generate a plugin */
+  /* Local device context about a plugin */
   interface PluginContext {
     installDirectory: string;
-    shell: Shell
   }
 
-  /** Environment mediates queries about the local environment */
-  interface ClientEnvironment {
+  /* Context used to generate shell source code in a dotfile  */
+  interface DotfileCompilationContext {
+    plugin: PluginContext;
+    shell: Shell;
+  }
+
+  /* Function that compiles a context to a string/string[] result to be included in dotfiles */
+  type DotfileCompiler<T, S=Record<string, never>> = T extends string | string[]
+    ? (_: S & { ctx: DotfileCompilationContext }) => T
+    : never;
+
+  /* DeviceEnvironment mediates queries about the local device environment */
+  interface DeviceEnvironment {
+    plugin: PluginContext;
     listFolder: (path: string) => Promise<string[]>;
   }
 
-  /**  InstallationValueGenerators are run on the backend when compiling blocks to dotfiles. No direct access to users local environment */
-  type InstallationValueGenerator = ({ ctx }: { ctx: PluginContext }) => InstallationValueLiteral;
-
-  /**  ConfigurationGenerators are run on the client to provide suggestions. Access to local device is mediated through ClientEnvironment. */
-  type ConfigurationGenerator<T> = ({ ctx, env, config }: { ctx: PluginContext, env?: ClientEnvironment, config: Record<string, unknown> }) => Promise<T>;
-
-
-  type PluginSource =
-    | "github"
-    | {
-        github: string;
-      }
-    | {
-        git: string;
-      }
-    | {
-        folder: string;
-      };
-
-  type InstallationValueLiteral =  string | string[]
-  type InstallationValue =  InstallationValueLiteral | InstallationValueGenerator
+  type InstallationScriptCompiler = DotfileCompiler<string | string[]>;
+  type InstallationScript =  string | string[] | InstallationScriptCompiler;
 
   interface PluginInstallation {
-    pre?: InstallationValue;
-    post?: InstallationValue;
-    use?: InstallationValue;
+    preScript?: InstallationScript;
+    postScript?: InstallationScript;
+    sourceFiles?: InstallationScript;
   }
 
+  type PluginOrigin = "github" | { github: string; };
   type Installation = PluginInstallation & {
     [key in Shell]?: PluginInstallation;
   } & {
-    source: PluginSource;
+    origin: PluginOrigin;
   };
 
-  interface ConfigurationInterface {
+  /* Current value of a field in a plugin configuration. */
+  type ConfigurationValue = unknown;
+  type ConfigurationDictionary = Record<string, ConfigurationValue>;
+
+  /*  A ConfigurationGenerator dynamically computes a result based on current configuration item values. */
+  type ConfigurationGenerator<
+    T,
+    S = Record<string, never>
+  > = (_: S & { config: ConfigurationDictionary }) => T;
+
+  type DeviceConfigurationGenerator<T> = ConfigurationGenerator<T | Promise<T>, { env?: DeviceEnvironment }>
+
+  type UIType =
+    | "multiselect"
+    | "select"
+    | "bool"
+    | "number"
+    | "string"
+
+  // Interface common to Configuration *items* and Configuration groups (which contain configuration items)
+  interface ConfigurationElementInterface {
     displayName?: string;
     description: string;
     details?: string;
@@ -53,38 +66,63 @@ declare namespace Fig {
     disabled?: ConfigurationGenerator<boolean>;
   }
 
-  interface Configuration<T> extends ConfigurationInterface{
+  interface ConfigurationItemInterface extends ConfigurationElementInterface {
     name?: string;
-    type: "multiselect" | "select" | "bool" | "number" | "string";
-    default?: T | ConfigurationGenerator<T>;
-    options?: T | ConfigurationGenerator<T>;
+    // Defines the UI type for an item (how to display it)
+    type: UIType;
   }
 
-  interface EnvironmentVariableConfiguration
-    extends Configuration<string | string[]> {
-    enviromentVariable: string;
+  // Multiselect UI item type
+  interface MultiselectConfigurationItem<T> extends ConfigurationItemInterface {
+    type: "multiselect";
+    default?: T | T[];
+    options?: T[] | DeviceConfigurationGenerator<T[]>;
   }
 
-  type JsonPrimitive = null | string | boolean | number | JsonPrimitive[] | Map<string, JsonPrimitive>;
+  // Select UI item type
+  interface SelectConfigurationItem<T> extends ConfigurationItemInterface {
+    type: "select";
+    default?: T;
+    options?: T[] | DeviceConfigurationGenerator<T[]>;
+  }
 
-  type ScriptGenerator = ({
-    ctx,
-    value,
-  }: {
-    ctx: PluginContext;
-    value: JsonPrimitive;
-  }) => string;
+  // Basic boolean, string, and number UI item types
+  interface BasicConfigurationItemInterface<T> extends ConfigurationItemInterface {
+    type: Extract<(
+        | { data: string, type: "string" }
+        | { data: boolean, type: "bool" }
+        | { data: number, type: "number" }
+      ), { data: T }>["type"];
+    default?: T;
+    options?: T[] | DeviceConfigurationGenerator<T[]>;
+  }
 
-  interface ScriptConfiguration<T> extends Configuration<T> {
+  // An item that can support select, multiselect, or basic UI
+  type SelectableConfigurationItem<T> = (
+    | MultiselectConfigurationItem<T>
+    | SelectConfigurationItem<T>
+    | BasicConfigurationItemInterface<T>
+  )
+
+  type EnvironmentVariableConfigurationItem<T> =
+    SelectableConfigurationItem<T> & { enviromentVariable: string };
+
+  type ScriptConfigurationItem<T = unknown> = SelectableConfigurationItem<T> & {
     name: string;
-    script: ScriptGenerator;
-  }
+    script: DotfileCompiler<string, { value: T }>;
+  };
 
-  type ConfigurationPrimitive = EnvironmentVariableConfiguration | ScriptConfiguration<unknown>;
+  type ConfigurationItem =
+    | EnvironmentVariableConfigurationItem<boolean>
+    | EnvironmentVariableConfigurationItem<string>
+    | EnvironmentVariableConfigurationItem<number>
+    | ScriptConfigurationItem<boolean>
+    | ScriptConfigurationItem<string>
+    | ScriptConfigurationItem<number>;
 
-  interface ConfigurationGroup extends ConfigurationInterface {
+  interface ConfigurationGroup extends ConfigurationElementInterface {
     displayName: string;
-    configuration: ConfigurationPrimitive[]
+    configuration: ConfigurationItem[]
   }
 
   type PluginType = "shell";
@@ -129,9 +167,6 @@ declare namespace Fig {
     /** The installation for the plugin */
     installation: Installation;
     /** The configuration for the plugin */
-    configuration?: (
-      | ConfigurationPrimitive
-      | ConfigurationGroup
-    )[];
+    configuration?: (ConfigurationItem | ConfigurationGroup)[];
   }
 }

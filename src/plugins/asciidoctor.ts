@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "sparsick/asciidoctor-zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

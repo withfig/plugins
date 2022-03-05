@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Czocher/gpg-crypt",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

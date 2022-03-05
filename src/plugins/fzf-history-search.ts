@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "joshskidmore/zsh-fzf-history-search",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

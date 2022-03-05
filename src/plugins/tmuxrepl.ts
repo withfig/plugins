@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "csurfer/tmuxrepl",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

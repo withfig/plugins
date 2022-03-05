@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "corvofeng/joe-completion",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "maulding/terminal-app.zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

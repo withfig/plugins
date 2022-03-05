@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "jcxavier/oh-my-zsh-duell",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

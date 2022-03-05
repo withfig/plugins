@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "solarized-theme",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "intellij",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

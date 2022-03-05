@@ -14,7 +14,7 @@ const plugin: Fig.Plugin = {
     "docker-completion",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

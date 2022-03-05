@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "rahulsalvi/velocity-python",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

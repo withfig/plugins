@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "GuilleDF/zsh-ubuntualiases",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "aikow/zsh-auto-ls",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

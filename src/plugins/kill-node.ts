@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "vmattos/kill-node",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

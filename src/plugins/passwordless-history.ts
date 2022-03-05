@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "jgogstad/passwordless-history",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

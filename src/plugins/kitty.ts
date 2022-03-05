@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "kitty",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

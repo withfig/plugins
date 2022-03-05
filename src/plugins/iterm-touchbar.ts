@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
     "touchbar",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

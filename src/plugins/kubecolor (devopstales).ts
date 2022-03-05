@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "devopstales/kubecolor-zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

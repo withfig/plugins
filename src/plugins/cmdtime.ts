@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "tom-auger/cmdtime",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

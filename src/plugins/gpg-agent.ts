@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "axtl/gpg-agent.zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

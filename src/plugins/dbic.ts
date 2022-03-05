@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "lejeunerenard/dbic-migration-env",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

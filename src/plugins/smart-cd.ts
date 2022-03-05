@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "dbkaplun/smart-cd",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

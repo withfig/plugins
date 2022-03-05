@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "littleq0903/gcloud-zsh-completion",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Downager/zsh-helmfile",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

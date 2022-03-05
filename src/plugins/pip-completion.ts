@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "srijanshetty/zsh-pip-completion",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

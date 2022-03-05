@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "thuandt/zsh-aliyun",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

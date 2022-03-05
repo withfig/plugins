@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
     "vercel",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

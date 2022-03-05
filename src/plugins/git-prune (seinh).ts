@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "diazod/git-prune",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

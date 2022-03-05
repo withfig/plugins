@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "bigH/git-fuzzy",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

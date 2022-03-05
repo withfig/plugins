@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "knu/zsh-manydots-magic",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

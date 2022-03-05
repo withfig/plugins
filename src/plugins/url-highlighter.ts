@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "ascii-soup/zsh-url-highlighter",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

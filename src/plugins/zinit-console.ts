@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
     "zi-console",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

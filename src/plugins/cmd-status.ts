@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "BlaineEXE/zsh-cmd-status",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

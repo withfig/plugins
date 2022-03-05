@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "google-cloud-platform",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

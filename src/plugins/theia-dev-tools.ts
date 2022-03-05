@@ -9,7 +9,7 @@ const plugin: Fig.Plugin = {
     "theia",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "fabiogibson/envrc-zsh-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

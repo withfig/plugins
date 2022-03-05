@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "romkatv/zsh-defer",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

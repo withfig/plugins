@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
     "pnpm-aliases",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

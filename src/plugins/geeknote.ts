@@ -9,7 +9,7 @@ const plugin: Fig.Plugin = {
     "geeknote",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

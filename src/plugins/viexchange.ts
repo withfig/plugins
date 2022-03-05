@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "okapia/zsh-viexchange",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

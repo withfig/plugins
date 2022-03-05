@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
     "alert",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

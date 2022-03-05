@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "manlao/zsh-auto-nvm",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

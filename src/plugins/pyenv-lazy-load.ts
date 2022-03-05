@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "erikced/zsh-pyenv-lazy-load",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

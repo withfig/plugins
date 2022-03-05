@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "DarrinTisdale/zsh-aliases-exa",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

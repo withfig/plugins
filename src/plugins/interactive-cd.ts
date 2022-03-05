@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "changyuheng/zsh-interactive-cd",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

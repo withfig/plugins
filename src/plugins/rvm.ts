@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "johnhamelink/rvm-zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

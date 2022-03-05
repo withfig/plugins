@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "rutchkiwi/copyzshell",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

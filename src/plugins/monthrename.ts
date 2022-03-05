@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "NotTheDr01ds/zsh-plugin-monthrename",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

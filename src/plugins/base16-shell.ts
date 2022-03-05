@@ -7,13 +7,13 @@ const plugin: Fig.Plugin = {
   shells: ["bash", "zsh", "fish"],
   tags: ["theme"],
   installation: {
-    source: "github",
-    post: ({ ctx }) =>
-    `[ -n "$PS1" ] && [ -s "${ctx.installDirectory}/profile_helper.sh" ] && eval "$("${ctx.installDirectory}/profile_helper.sh")"`,
+    origin: "github",
+    postScript: ({ ctx }) =>
+    `[ -n "$PS1" ] && [ -s "${ctx.plugin.installDirectory}/profile_helper.sh" ] && eval "$("${ctx.plugin.installDirectory}/profile_helper.sh")"`,
     fish: {
-      post: ({ ctx }) => [
+      postScript: ({ ctx }) => [
         `if status --is-interactive`,
-        `    source "${ctx.installDirectory}/profile_helper.fish"`,
+        `    source "${ctx.plugin.installDirectory}/profile_helper.fish"`,
         `end`,
       ],
     },

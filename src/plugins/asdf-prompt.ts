@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
     "asdf-vm",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

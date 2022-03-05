@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "MisterRios/stashy",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

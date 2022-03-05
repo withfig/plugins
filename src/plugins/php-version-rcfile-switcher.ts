@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "xellos866/php-version_rcfile-switcher",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

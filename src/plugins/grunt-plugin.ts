@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "clauswitt/zsh-grunt-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

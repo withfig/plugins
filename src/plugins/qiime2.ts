@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "misialq/zsh-qiime2",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

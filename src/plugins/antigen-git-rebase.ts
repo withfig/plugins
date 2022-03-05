@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "smallhadroncollider/antigen-git-rebase",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

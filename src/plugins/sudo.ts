@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "hcgraf/zsh-sudo",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

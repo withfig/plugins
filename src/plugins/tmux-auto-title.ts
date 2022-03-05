@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "mbenford/zsh-tmux-auto-title",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "itsjohannawren/zsh-plugin-cd-ssh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

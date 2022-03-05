@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "selop/newman-autocomplete",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

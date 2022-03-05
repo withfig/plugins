@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "go/rancher-zsh-completion",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

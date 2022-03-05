@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "voronkovich/symfony.plugin.zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

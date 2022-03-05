@@ -26,7 +26,7 @@ const plugin: Fig.Plugin = {
     "switching-contexts",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

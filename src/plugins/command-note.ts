@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "KKRainbow/zsh-command-note.plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "oknowton/zsh-dwim",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

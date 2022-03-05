@@ -19,7 +19,7 @@ const plugin: Fig.Plugin = {
     "bitcoin-price",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "kalpakrg/setenv",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

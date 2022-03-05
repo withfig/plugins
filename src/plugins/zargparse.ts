@@ -13,7 +13,7 @@ const plugin: Fig.Plugin = {
     "argparse",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

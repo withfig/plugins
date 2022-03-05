@@ -13,7 +13,7 @@ const plugin: Fig.Plugin = {
     "reminders",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

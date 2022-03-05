@@ -22,7 +22,7 @@ const plugin: Fig.Plugin = {
     "developer-productivity",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -27,7 +27,7 @@ const plugin: Fig.Plugin = {
     "zinit",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

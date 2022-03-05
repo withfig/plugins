@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "esc/conda-zsh-completion",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

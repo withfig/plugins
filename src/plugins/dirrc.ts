@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "gmatheu/shell-plugins",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

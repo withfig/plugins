@@ -14,7 +14,7 @@ const plugin: Fig.Plugin = {
     "oclif-plugin",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

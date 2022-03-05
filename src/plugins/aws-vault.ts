@@ -13,7 +13,7 @@ const plugin: Fig.Plugin = {
     "aws-vault",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Meroje/zsh-rbenv",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

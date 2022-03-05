@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "le0me55i/zsh-systemd",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

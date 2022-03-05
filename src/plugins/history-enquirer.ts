@@ -16,7 +16,7 @@ const plugin: Fig.Plugin = {
     "zsh-search",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

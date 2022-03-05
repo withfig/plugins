@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "ddnexus/fav",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

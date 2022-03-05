@@ -15,7 +15,7 @@ const plugin: Fig.Plugin = {
     "directory-bookmarking",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "juanrgon/yadm-zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

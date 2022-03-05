@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
     "vscode",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

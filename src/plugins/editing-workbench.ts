@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "commiyou/zsh-editing-workbench",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

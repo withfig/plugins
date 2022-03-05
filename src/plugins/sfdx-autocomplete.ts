@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "jayree/sfdx-autocomplete-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

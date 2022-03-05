@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "eventi/noreallyjustfuckingstopalready",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "zlsun/umake",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

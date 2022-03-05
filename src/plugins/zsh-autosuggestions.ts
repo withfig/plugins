@@ -8,8 +8,8 @@ const plugin: Fig.Plugin = {
   shells: ["zsh"],
   tags: ["fishlike", "autosuggest", "zsh"],
   installation: {
-    source: "github",
-    use: "zsh-autosuggestions.zsh",
+    origin: "github",
+    sourceFiles: "zsh-autosuggestions.zsh",
   },
 };
 

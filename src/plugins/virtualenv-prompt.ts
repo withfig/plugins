@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "tonyseek/oh-my-zsh-virtualenv-prompt",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

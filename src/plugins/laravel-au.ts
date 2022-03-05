@@ -16,7 +16,7 @@ const plugin: Fig.Plugin = {
     "laravel6",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

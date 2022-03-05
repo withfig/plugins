@@ -9,7 +9,7 @@ const plugin: Fig.Plugin = {
     "history",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

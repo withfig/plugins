@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
     "zsh-widget",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

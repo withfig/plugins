@@ -13,7 +13,7 @@ const plugin: Fig.Plugin = {
     "terminal",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

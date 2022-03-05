@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
     "nomiclabs-buidler",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

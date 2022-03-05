@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
     "dagger",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

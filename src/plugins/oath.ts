@@ -9,7 +9,7 @@ const plugin: Fig.Plugin = {
     "2fa",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

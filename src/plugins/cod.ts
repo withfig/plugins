@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
     "completion",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

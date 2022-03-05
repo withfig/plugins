@@ -13,7 +13,7 @@ const plugin: Fig.Plugin = {
     "password-store",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

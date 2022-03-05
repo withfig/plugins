@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "tk7r/zsh-expressvpn",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

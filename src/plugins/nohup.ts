@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "micrenda/zsh-nohup",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

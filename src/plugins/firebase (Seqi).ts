@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Seqi/firebase-zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

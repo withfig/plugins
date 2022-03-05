@@ -14,7 +14,7 @@ const plugin: Fig.Plugin = {
     "gitstatus",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

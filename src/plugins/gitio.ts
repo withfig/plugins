@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "denysdovhan/gitio-zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

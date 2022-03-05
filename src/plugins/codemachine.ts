@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "CodeMonkeyMike/ZshTheme-CodeMachine",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

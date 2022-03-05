@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "CupricReki/zsh-bw-completion",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

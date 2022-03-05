@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "zsh-history",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

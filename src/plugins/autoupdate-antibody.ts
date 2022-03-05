@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "spikespaz/autoupdate-antibody-zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

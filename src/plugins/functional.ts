@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Tarrasch/zsh-functional",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

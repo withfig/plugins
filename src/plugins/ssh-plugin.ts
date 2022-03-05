@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "paraqles/zsh-plugin-ssh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

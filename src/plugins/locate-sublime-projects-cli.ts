@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "davidwebca/locate-sublime-projects-cli",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -16,7 +16,7 @@ const plugin: Fig.Plugin = {
     "random-riddles",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

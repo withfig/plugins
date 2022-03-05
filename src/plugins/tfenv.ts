@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "CDA0/zsh-tfenv",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "slessans/oh-my-zsh-golinks-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

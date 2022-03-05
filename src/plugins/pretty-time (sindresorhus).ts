@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "sindresorhus/pretty-time-zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

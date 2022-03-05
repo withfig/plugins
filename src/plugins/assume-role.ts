@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "weizard/assume-role",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

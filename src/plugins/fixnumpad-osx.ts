@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "zackintosh/fixnumpad-osx.plugin.zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

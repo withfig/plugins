@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "tybritten/pks-zsh-autocomplete-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

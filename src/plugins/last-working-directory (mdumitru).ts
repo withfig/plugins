@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "mdumitru/last-working-dir",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

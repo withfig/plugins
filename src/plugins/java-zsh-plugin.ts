@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Xetius/java-zsh-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

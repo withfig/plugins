@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "MenkeTechnologies/zsh-more-completions",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

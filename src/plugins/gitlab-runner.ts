@@ -9,7 +9,7 @@ const plugin: Fig.Plugin = {
     "zsh-completion",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

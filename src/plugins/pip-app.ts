@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "sharat87/pip-app",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

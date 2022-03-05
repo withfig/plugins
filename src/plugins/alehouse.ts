@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "sticklerm3/alehouse",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

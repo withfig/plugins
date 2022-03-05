@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "icatalina/zsh-navi-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

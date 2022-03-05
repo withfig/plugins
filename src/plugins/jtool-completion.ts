@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "beaugalbraith/jtool-completion",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "joepjoosten/aws-cli-mfa-oh-my-zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

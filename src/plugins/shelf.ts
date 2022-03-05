@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "ecmma/shelf",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

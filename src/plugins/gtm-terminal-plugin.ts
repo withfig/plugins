@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "git-time-metric/gtm-terminal-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

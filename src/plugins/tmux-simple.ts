@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "TBSliver/zsh-plugin-tmux-simple",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

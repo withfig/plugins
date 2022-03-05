@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "krujos/bosh-zsh-autocompletion",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "unixorn/rake-completion.zshplugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

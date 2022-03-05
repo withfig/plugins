@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
     "docker-image",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

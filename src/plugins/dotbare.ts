@@ -17,7 +17,7 @@ const plugin: Fig.Plugin = {
     "fzf-scripts",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

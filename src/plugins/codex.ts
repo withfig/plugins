@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "codex",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

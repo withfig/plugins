@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "webflo/drush_zsh_completion",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

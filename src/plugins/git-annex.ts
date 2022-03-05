@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Schnouki/git-annex-zsh-completion",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

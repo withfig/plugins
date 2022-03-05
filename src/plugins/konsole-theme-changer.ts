@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "rocknrollMarc/zsh-konsole-theme-changer",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

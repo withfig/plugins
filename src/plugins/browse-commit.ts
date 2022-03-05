@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "adolfoabegg/browse-commit",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

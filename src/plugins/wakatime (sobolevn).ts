@@ -15,7 +15,7 @@ const plugin: Fig.Plugin = {
     "time-tracking",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

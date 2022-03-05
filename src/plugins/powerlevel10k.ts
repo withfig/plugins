@@ -7,13 +7,13 @@ const plugin: Fig.Plugin = {
   shells: ["zsh"],
   tags: ["zsh", "theme"],
   installation: {
-    source: "github",
-    pre: [
+    origin: "github",
+    preScript: [
       'if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then',
       '  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh',
       "fi",
     ],
-    post: "[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh",
+    postScript: "[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh",
   },
 };
 

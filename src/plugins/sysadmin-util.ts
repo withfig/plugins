@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
     "sysadmin",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

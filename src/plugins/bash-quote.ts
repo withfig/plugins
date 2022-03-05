@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "jtprogru/bash-quote",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

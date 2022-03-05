@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "tysonwolker/iterm-tab-colors",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

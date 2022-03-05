@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "jandamm/instant-repl.zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

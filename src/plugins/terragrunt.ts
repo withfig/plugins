@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "hanjunlee/terragrunt-oh-my-zsh-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

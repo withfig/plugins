@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "or17191/going_places",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

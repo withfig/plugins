@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "pelletiermaxime/test-kitchen-zsh-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

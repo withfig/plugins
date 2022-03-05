@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "wadewegner/salesforce-cli-zsh-completion",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

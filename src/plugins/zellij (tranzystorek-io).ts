@@ -9,7 +9,7 @@ const plugin: Fig.Plugin = {
     "zellij",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

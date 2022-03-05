@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "derry96/hitokoto",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

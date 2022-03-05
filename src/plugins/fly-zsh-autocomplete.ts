@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "sbodiu-pivotal/fly-zsh-autocomplete-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

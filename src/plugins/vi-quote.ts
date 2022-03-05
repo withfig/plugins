@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
     "vi-keybinds",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

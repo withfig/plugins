@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "dominik-schwabe/zsh-fnm",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

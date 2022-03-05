@@ -14,7 +14,7 @@ const plugin: Fig.Plugin = {
     "toggl-plugin",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

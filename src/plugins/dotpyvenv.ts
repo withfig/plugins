@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "jeanpantoja/dotpyvenv",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

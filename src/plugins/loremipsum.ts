@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "pfahlr/zsh_plugin_loremipsum",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

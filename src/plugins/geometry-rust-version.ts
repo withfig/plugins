@@ -9,7 +9,7 @@ const plugin: Fig.Plugin = {
     "geometry",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

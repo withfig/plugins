@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
     "file-navigation",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

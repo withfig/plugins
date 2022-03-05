@@ -14,7 +14,7 @@ const plugin: Fig.Plugin = {
     "laradock",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

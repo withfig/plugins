@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "laurenkt/zsh-vimto",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

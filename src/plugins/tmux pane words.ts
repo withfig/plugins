@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "null/_tmux_pane_words.zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

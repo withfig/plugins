@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "marshallmick007/osx-dev-zsh-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

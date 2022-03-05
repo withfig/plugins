@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
     "alacritty-theme-changer",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

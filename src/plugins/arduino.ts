@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "raghur/zsh-arduino",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

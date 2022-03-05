@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "nichus/zsh-tmux-multisession",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

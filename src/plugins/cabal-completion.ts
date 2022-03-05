@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "ehamberg/zsh-cabal-completion",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

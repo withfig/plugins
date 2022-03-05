@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "miguefl/javaVersions",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

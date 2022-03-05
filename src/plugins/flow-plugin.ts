@@ -8,7 +8,7 @@ const plugin: Fig.Plugin = {
     "hacktoberfest",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

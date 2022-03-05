@@ -14,7 +14,7 @@ const plugin: Fig.Plugin = {
     "iterm2-utilities",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

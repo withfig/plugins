@@ -7,8 +7,8 @@ const plugin: Fig.Plugin = {
   shells: ["zsh"],
   tags: ["git", "secrets"],
   installation: {
-    source: "github",
-    use: "blackbox.plugin.zsh"
+    origin: "github",
+    sourceFiles: "blackbox.plugin.zsh"
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "perlpunk/MooseX-App-Plugin-ZshCompletion",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

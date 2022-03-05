@@ -14,7 +14,7 @@ const plugin: Fig.Plugin = {
     "shell-plugin",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "zsh-completions",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

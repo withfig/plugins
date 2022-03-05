@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "xav-b/zsh-extend-history",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

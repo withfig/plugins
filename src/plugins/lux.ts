@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
     "dark-mode",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "gryffyn/mouse-status",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -14,7 +14,7 @@ const plugin: Fig.Plugin = {
     "zshell",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

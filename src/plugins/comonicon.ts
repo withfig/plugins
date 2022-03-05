@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "comonicon/ComoniconZSHCompletion.jl",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

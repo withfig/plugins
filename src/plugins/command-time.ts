@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "zsh-command-time",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

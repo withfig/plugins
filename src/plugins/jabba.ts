@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "2m/zsh-jabba",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

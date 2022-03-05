@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "djui/alias-tips",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

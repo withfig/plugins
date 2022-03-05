@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "rmrs/firebase-zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

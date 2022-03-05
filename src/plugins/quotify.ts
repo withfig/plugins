@@ -13,7 +13,7 @@ const plugin: Fig.Plugin = {
     "philosophy",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

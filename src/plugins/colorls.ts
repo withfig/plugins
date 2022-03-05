@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Kallahan23/zsh-colorls",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

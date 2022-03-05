@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "arc",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

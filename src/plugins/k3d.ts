@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "dwaynebradley/k3d-oh-my-zsh-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

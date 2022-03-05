@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "LockonS/terminal-workload-report",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

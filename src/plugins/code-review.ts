@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "xorkevin/code-review-zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

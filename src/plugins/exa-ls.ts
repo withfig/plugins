@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "birdhackor/zsh-exa-ls-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

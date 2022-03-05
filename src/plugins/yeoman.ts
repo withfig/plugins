@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "edouard-lopez/yeoman-zsh-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

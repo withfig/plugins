@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "autojump",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

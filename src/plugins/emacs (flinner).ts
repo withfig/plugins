@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "Flinner/zsh-emacs",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

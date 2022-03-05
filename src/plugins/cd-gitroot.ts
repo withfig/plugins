@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "mollifier/cd-gitroot",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

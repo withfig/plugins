@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "david-gutierrez-mesa/liferay-zsh",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

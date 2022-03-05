@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "batect",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "brymck/print-alias",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

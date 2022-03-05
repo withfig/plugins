@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "tevren/gitfast-zsh-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

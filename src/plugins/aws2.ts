@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "drgr33n/oh-my-zsh_aws2-plugin",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

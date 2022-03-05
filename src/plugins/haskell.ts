@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
     "cabal-completion",
   ],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 

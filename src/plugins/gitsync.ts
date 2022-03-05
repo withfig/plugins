@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
   github: "washtubs/gitsync",
   shells: ["zsh"],
   installation: {
-    source: "github",
+    origin: "github",
   },
 };
 
