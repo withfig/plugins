@@ -2,6 +2,7 @@
   "name": "@fig/plugins",
   "version": "1.0.6",
   "description": "",
+  "type": "module",
   "types": "index.d.ts",
   "files": [
     "build/**/*.js",
