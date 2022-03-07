@@ -2,17 +2,17 @@
   "name": "@fig/plugins",
   "version": "1.0.7",
   "description": "",
-  "type": "module",
-  "types": "index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "files": [
-    "build/**/*.js",
-    "build/**/*.d.ts",
-    "index.d.ts"
+    "dist"
   ],
   "scripts": {
     "test": "tsc --noEmit",
-    "build": "tsc --build",
     "clean": "rm -rf build",
+    "build": "rm -rf dist && yarn build:cjs && yarn build:esm",
+    "build:cjs": "tsc --declaration --outDir dist/cjs",
+    "build:esm": "tsc --declaration --module esnext --outDir dist/esm",
     "preupdate-plugins": "tsc --build tsconfig.update.json",
     "update-plugins": "node build/update-plugins.js",
     "postupdate-plugins": "npm run clean"
