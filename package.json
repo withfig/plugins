@@ -9,12 +9,12 @@
   ],
   "scripts": {
     "test": "tsc --noEmit",
-    "clean": "rm -rf build",
-    "build": "rm -rf dist && yarn build:cjs && yarn build:esm",
+    "clean": "rm -rf dist",
+    "build": "yarn clean && yarn build:cjs && yarn build:esm",
     "build:cjs": "tsc --declaration --outDir dist/cjs",
     "build:esm": "tsc --declaration --module esnext --outDir dist/esm",
     "preupdate-plugins": "tsc --build tsconfig.update.json",
-    "update-plugins": "node build/update-plugins.js",
+    "update-plugins": "node dist/cjs/update-plugins.js",
     "postupdate-plugins": "npm run clean"
   },
   "repository": {
