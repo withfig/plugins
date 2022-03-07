@@ -27,10 +27,6 @@ jobs:
       # Transpile all plugins from ts to js
       - name: build
         run: npm run build
-      # Zip the transpiled files into the plugins.zip file
-      - name: bundle files
-        run: |
-          zip -r plugins.zip build/
       - name: "Automated Version Bump"
         id: "version-bump"
         uses: "phips28/gh-action-bump-version@master"
