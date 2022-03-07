@@ -79,13 +79,14 @@ declare namespace Fig {
   }
 
   // Get all ui's that support a value type of T.
-  type UIsWithValueType<T> = (
-    | T extends unknown[] ? MultiselectUI<T> : never
-    | T extends boolean ? BasicUI<T, "checkbox" | "toggle"> : never
-    | T extends string ? BasicSuggestionUI<T, "select" | "text"> : never
-    | T extends number ? BasicSuggestionUI<T, "select" | "text"> : never
-    | BasicSuggestionUI<T, "select">
-  )
+  // This enforces that, e.g. you can only use booleans with a toggle/checkbox UI.
+  type UIsWithValueType<T> = T extends infer A ? (
+    | A extends unknown[] ? MultiselectUI<A> : never
+    | A extends boolean ? BasicUI<A, "checkbox" | "toggle"> : never
+    | A extends string ? BasicSuggestionUI<A, "select" | "text"> : never
+    | A extends number ? BasicSuggestionUI<A, "select" | "text"> : never
+    | BasicSuggestionUI<A, "select">
+  ) : never;
 
   // Gets all valid UIs that satisfy { value: T, uiType: S }
   type UI<T, S extends UIType = UIType> = Extract<UIsWithValueType<T>, { uiType: S }>
@@ -104,7 +105,7 @@ declare namespace Fig {
     compile?: DotfileCompiler<{ value: T }, S>;
   }
 
-  type EnvironmentVariableItemForType<T, S extends UIType = UIType> = (
+  type EnvironmentVariableItemForType<T, S extends UIType> = (
     ConfigurationItemInterface<T, {
       value: string,
       concat?: boolean,
@@ -112,33 +113,31 @@ declare namespace Fig {
     } | string>
     & UI<T, S>
     & { environmentVariable: string; }
-  )
+  );
 
-  type ScriptItemForType<T, S extends UIType = UIType> = (
+  type ScriptItemForType<T, S extends UIType> = (
     ConfigurationItemInterface<T, string>
     & UI<T, S>
     & {
         name: string;
         compile: DotfileCompiler<{ value: T }, string>
       }
-  )
+  );
 
   type ScriptItem = (
-    | ScriptItemForType<boolean[], "multiselect">
     | ScriptItemForType<string[], "multiselect">
     | ScriptItemForType<number[], "multiselect">
-    | ScriptItemForType<boolean>
-    | ScriptItemForType<string>
-    | ScriptItemForType<number>
+    | ScriptItemForType<boolean, "checkbox" | "toggle">
+    | ScriptItemForType<string, "select" | "text">
+    | ScriptItemForType<number, "select" | "text">
   )
 
   type EnvironmentVariableItem = (
-    | EnvironmentVariableItemForType<boolean[], "multiselect">
     | EnvironmentVariableItemForType<string[], "multiselect">
     | EnvironmentVariableItemForType<number[], "multiselect">
-    | EnvironmentVariableItemForType<boolean>
-    | EnvironmentVariableItemForType<string>
-    | EnvironmentVariableItemForType<number>
+    | EnvironmentVariableItemForType<string, "select" | "text">
+    | EnvironmentVariableItemForType<number, "select" | "text">
+    | EnvironmentVariableItemForType<boolean, "checkbox" | "toggle">
   )
 
   type ConfigurationItem =
