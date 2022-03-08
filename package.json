@@ -1,6 +1,6 @@
 {
   "name": "@fig/plugins",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "",
   "types": "./index.d.ts",
   "files": [
@@ -19,7 +19,9 @@
   },
   "typesVersions": {
     "*": {
-      "util": ["dist/cjs/util"]
+      "util": [
+        "dist/cjs/util"
+      ]
     }
   },
   "scripts": {
