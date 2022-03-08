@@ -3,7 +3,7 @@
   "version": "1.1.4",
   "description": "",
   "main": "dist/cjs/index.js",
-  "types": "dist/cjs/index.d.ts",
+  "types": "dist/index.d.ts",
   "module": "dist/esm/index.js",
   "files": [
     "dist"
@@ -11,7 +11,7 @@
   "scripts": {
     "test": "tsc --noEmit",
     "clean": "rm -rf dist",
-    "build": "yarn clean && yarn build:cjs && yarn build:esm",
+    "build": "yarn clean && yarn build:cjs && yarn build:esm && cp index.d.ts dist/",
     "build:cjs": "tsc --declaration --outDir dist/cjs",
     "build:esm": "tsc --declaration --module esnext --outDir dist/esm",
     "preupdate-plugins": "tsc --build tsconfig.update.json",
