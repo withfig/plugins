@@ -5,10 +5,10 @@ const plugin: Fig.Plugin = {
   github: "StackExchange/blackbox",
   license: ["MIT"],
   shells: ["zsh"],
-  tags: ["git", "secrets"],
+  categories: ["Convenience Function"],
   installation: {
     origin: "github",
-    sourceFiles: "blackbox.plugin.zsh"
+    sourceFiles: "blackbox.plugin.zsh",
   },
 };
 

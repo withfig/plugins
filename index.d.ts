@@ -163,6 +163,17 @@ declare namespace Fig {
         github?: string;
       };
 
+
+  type Category =
+    | "Compleation"
+    | "Prompt"
+    | "Color"
+    | "Alias"
+    | "Convenience Function"
+    | "Productivity Hack"
+    | "Framework"
+    | "Other";
+
   export interface Plugin {
     /** The name of the plugin */
     name: string;
@@ -186,8 +197,10 @@ declare namespace Fig {
     license?: string[];
     /** The shells that the plugin supports */
     shells?: Shell[];
-    /** The tags for the plugin */
-    tags?: string[];
+    /** The categories for the plugin */
+    categories?: Category[];
+    /** The keywords for the plugin */
+    keywords?: string[];
     /** The installation for the plugin */
     installation: Installation;
     /** The configuration for the plugin */

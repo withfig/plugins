@@ -4,8 +4,15 @@ const plugin: Fig.Plugin = {
   description: "A Zsh theme",
   github: "romkatv/powerlevel10k",
   license: ["MIT"],
+  authors: [
+    {
+      name: "romkatv",
+      github: "romkatv",
+      twitter: "romkatv",
+    },
+  ],
   shells: ["zsh"],
-  tags: ["zsh", "theme"],
+  categories: ["Framework"],
   installation: {
     origin: "github",
     preScript: [

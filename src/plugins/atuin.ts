@@ -2,16 +2,21 @@ const plugin: Fig.Plugin = {
   name: "atuin",
   type: "shell",
   description: "🐢 Magical shell history",
-  github: "ellie/atuin",
-  shells: ["zsh"],
-  tags: [
-    "shell",
-    "rust",
-    "zsh",
-    "history",
+  authors: [
+    {
+      name: "ellie",
+      github: "ellie",
+      twitter: "ellie_huxtable",
+    },
   ],
+  github: "ellie/atuin",
+  license: ["MIT"],
+  shells: ["zsh"],
+  categories: ["Other"],
+  keywords: ["shell", "rust", "zsh", "history"],
   installation: {
     origin: "github",
+    sourceFiles: ["atuin.plugin.zsh"],
   },
 };
 

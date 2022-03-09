@@ -2,18 +2,20 @@ const plugin: Fig.Plugin = {
   name: "fzf-tab",
   type: "shell",
   description: "Replace zsh's default completion selection menu with fzf!",
-  github: "Aloxaf/fzf-tab",
-  shells: ["zsh"],
-  tags: [
-    "shell",
-    "zsh",
-    "tmux",
-    "fzf",
-    "completion",
-    "zsh-plugin",
+  authors: [
+    {
+      name: "Aloxaf",
+      github: "Aloxaf",
+    },
   ],
+  github: "Aloxaf/fzf-tab",
+  license: ["MIT"],
+  shells: ["zsh"],
+  categories: ["Compleation"],
+  keywords: ["zsh", "fzf", "shell", "zsh-plugin", "completion", "tmux"],
   installation: {
     origin: "github",
+    sourceFiles: ["fzf-tab.plugin.zsh"],
   },
 };
 
