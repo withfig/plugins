@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
   github: "zsh-users/zsh-autosuggestions",
   license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: [
     "shell",
     "autosuggest",

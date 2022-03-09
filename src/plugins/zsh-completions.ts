@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   github: "zsh-users/zsh-completions",
   license: ["NOASSERTION"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: ["zsh", "zsh-completions", "shell", "completion"],
   installation: {
     origin: "github",

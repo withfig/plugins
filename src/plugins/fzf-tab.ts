@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   github: "Aloxaf/fzf-tab",
   license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: ["zsh", "fzf", "shell", "zsh-plugin", "completion", "tmux"],
   installation: {
     origin: "github",

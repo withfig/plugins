@@ -165,7 +165,7 @@ declare namespace Fig {
 
 
   type Category =
-    | "Compleation"
+    | "Completion"
     | "Prompt"
     | "Color"
     | "Alias"

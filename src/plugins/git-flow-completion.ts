@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   github: "bobthecow/git-flow-completion",
   license: ["MIT"],
   shells: ["bash", "zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     bash: {
