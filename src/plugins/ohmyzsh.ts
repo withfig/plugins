@@ -2,7 +2,7 @@ type Mode = string;
 const modes: Mode[] = ["prompt", "auto", "reminder", "disabled"];
 
 const plugin: Fig.Plugin = {
-  name: "oh-my-zsh",
+  name: "ohmyzsh",
   type: "shell",
   description:
     "A community-driven framework for managing your zsh configuration",
