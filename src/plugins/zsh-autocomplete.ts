@@ -2,7 +2,8 @@ const plugin: Fig.Plugin = {
   name: "zsh-autocomplete",
   type: "shell",
   description:
-    "🤖 Real-time type-ahead completion for Zsh. Asynchronous find-as-you-type autocompletion.",
+    "Real-time type-ahead completion for Zsh. Asynchronous find-as-you-type autocompletion.",
+  icon: "🤖",
   authors: [
     {
       name: "marlonrichert",

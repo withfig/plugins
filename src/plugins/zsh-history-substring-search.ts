@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "zsh-history-substring-search",
   type: "shell",
-  description: "🐠 ZSH port of Fish history search (up arrow)",
+  description: "ZSH port of Fish history search (up arrow)",
+  icon: "🐠",
   authors: [
     {
       name: "zsh-users",

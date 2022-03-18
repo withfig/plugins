@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "atuin",
   type: "shell",
-  description: "🐢 Magical shell history",
+  description: "Magical shell history",
+  icon: "🐢",
   authors: [
     {
       name: "ellie",

@@ -2,6 +2,7 @@ const plugin: Fig.Plugin = {
   name: "k",
   type: "shell",
   description: "k is the new l, yo",
+  icon: "https://raw.githubusercontent.com/supercrabtree/k/gh-pages/k-logo.png",
   authors: [
     {
       name: "supercrabtree",
