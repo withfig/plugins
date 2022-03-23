@@ -59,7 +59,7 @@ git remote add upstream https://github.com/withfig/plugins.git
 npm install
 ```
 
-3. See the details on how to create a basic plugin [here](plugin_schema.md)
+3. See the details on how to create a basic plugin [here](docs/plugins_schema.md)
 
 <br/>
 

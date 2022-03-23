@@ -2,7 +2,7 @@
 
 ## Creating a Plugin
 
-### 1. 
+### 1. Copy template
 
 ```typescript
 const plugin: Fig.Plugin = {
@@ -29,11 +29,15 @@ It should also match the regex `[a-zA-Z][a-zA-Z0-9\.-_]*`, start with alphabetic
 
 Declaration: `name: string;`
 
+---
+
 ### `displayName`
 
 The name used for display purposes
 
 Declaration: `displayName?: string;
+
+---
 
 ### `type`
 
@@ -41,11 +45,15 @@ The type of the plugin, the only current type of plugin is a `shell` plugin
 
 Declaration: `type: "shell"`
 
+---
+
 ### `description`
 
 A short description of a plugin, this should breifly explain what the plugin is in less than 100 characters.
 
 Declaration: `description?: string`
+
+---
 
 ### `icon`
 
@@ -55,11 +63,15 @@ This should either be an emoji or a url to a square image
 
 Declaration: `icon?: string`
 
+---
+
 ### `site`
 
 A url to the offical site of a plugin
 
 Declaration: `site?: string`
+
+---
 
 ### `docs`
 
@@ -67,17 +79,23 @@ A url to the offical docs for a plugin
 
 Declaration: `docs?: string`
 
+---
+
 ### `github`
 
 The `owner/repo` of the plugin, this is both used for metadata and determining where to clone the plugin from
 
 Declaration: `github?: string`
 
+---
+
 ### `twitter`
 
 The twitter handle for the plugin
 
 Declaration: `twitter?: string`
+
+---
 
 ### `authors`
 
@@ -101,6 +119,8 @@ type Author =
 
 If the author is a string that is their name, the twitter should be their twitter handle, and github should be the github username
 
+---
+
 ### `license`
 
 The license is a list of the licences of the plugin 
@@ -108,6 +128,8 @@ The license is a list of the licences of the plugin
 The string should follow the [SPDX License syntax](https://en.wikipedia.org/wiki/Software_Package_Data_Exchange#License_syntax)
 
 Declaration: `license?: string[]`
+
+---
 
 ### `shells`
 
@@ -120,6 +142,8 @@ Declaration: `shells?: Shell[]`
 ```typescript
 type Shell = "bash" | "zsh" | "fish";
 ```
+
+---
 
 ### `categories`
 
@@ -141,17 +165,23 @@ type Category =
   | "Other";
 ```
 
+---
+
 ### `keywords`
 
 Keywords act as additional metadata for a plugin that is fully user definable
 
 Declaration: `keywords?: string[]`
 
+---
+
 ### `installation`
 
-See Installation
+See [Installation](installation_schema.md)
+
+---
 
 ### `configuration`
 
-See Configuration
+See [Configuration](configuration_schema.md)
 
