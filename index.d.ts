@@ -177,6 +177,8 @@ declare namespace Fig {
   export interface Plugin {
     /** The name of the plugin */
     name: string;
+    /** The name of the plugin used in UI if defined */
+    displayName?: strin;
     /** The plugin type */
     type: PluginType;
     /** A description of the plugin */
@@ -205,5 +207,5 @@ declare namespace Fig {
     installation: Installation;
     /** The configuration for the plugin */
     configuration?: (ConfigurationItem | ConfigurationGroup)[];
-  }
+ }
 }
