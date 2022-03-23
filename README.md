@@ -59,11 +59,7 @@ git remote add upstream https://github.com/withfig/plugins.git
 npm install
 ```
 
-#### Other things to know
-
-- Edit your spec in typescript in the `src/` folder
-- On save, specs are compiled to the `build/` folder
-- In **dev mode** specs are read from the `build` folders. 
+3. See the details on how to create a basic plugin [here](plugin_schema.md)
 
 <br/>
 
