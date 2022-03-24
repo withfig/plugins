@@ -1,25 +1,8 @@
 # Plugin Schema
 
-## Creating a Plugin
+The plugin schema defines metadata, installation, and configuration details about a plugin. 
 
-### 1. Copy template
-
-```typescript
-const plugin: Fig.Plugin = {
-  name: "abc",
-  type: "shell",
-  github: "abc/abc",
-  installation: {
-    origin: "github",
-  },
-};
-```
-
-### 2. Determine the file that needs to be sourced
-
-For a shell plugin to work there is a
-
-## `Fig.Plugin` Scheme In Depth
+## Plugin Fields
 
 ### `name`
 
