@@ -50,7 +50,7 @@ export default plugin;
 For a shell plugin to work there is typically a file(s) that needs
 to be sourced in the .bashrc/.zshrc, you will need to determine the
 relative path of this file in the plugin repo. For more details go to
-the [`sourceFiles` docs](installation_schema.md#sourcediles).
+the [`sourceFiles` docs](installation_schema.md#sourcefiles).
 
 
 ```typescript
