@@ -12,9 +12,7 @@
 ![Discord](https://img.shields.io/discord/837809111248535583?color=768ad4&label=discord)
 [![Twitter](https://img.shields.io/twitter/follow/fig.svg?style=social&label=Follow)](https://twitter.com/intent/follow?screen_name=fig)
 
-**[Fig](https://fig.io?ref=github_plugins) reimagines the terminal.** 
-
-Fig adds shell plugins to your terminal
+**[Fig](https://fig.io?ref=github_plugins) helps you discover, install and configure shell plugins.** 
 
 <br/>
 
@@ -81,8 +79,7 @@ We would love contributions for:
 * errors with existing plugins (e.g. wrong sourced file, outdated config, etc)
 * new configs so plugins can be easily configured
 
-If you aren't able to contribute, please feel free to open an [issue](https://github.com/withfig/plugins/issues/new/choose). Most people think that contributing will be too hard, but you'd be surprised, we have deliberately made contributing very very easy. Give it a go! 
-
+If you aren't able to contribute, please feel free to open an [issue](https://github.com/withfig/plugins/issues/new/choose).
 
 ## 😊 Need Help?
 
