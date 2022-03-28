@@ -39,28 +39,6 @@ jobs:
         with:
           access: public
           token: ${{ secrets.NPM_PUBLISH_TOKEN }}
-      - name: Checkout Cache
-        uses: actions/checkout@v2
-        with:
-          repository: "withfig/node-backend"
-          token: ${{ secrets.FIG_BOT_TOKEN }}
-          path: node-backend/
-      - name: Add @fig/plugins
-        env: 
-          TAG_VERSION: ${{ steps.version-bump.outputs.newTag }}
-          # See https://github.com/JS-DevTools/npm-publish/issues/15
-          INPUT_TOKEN: ""
-          NPM_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
-        run: |
-          cd node-backend
-          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
-          yarn upgrade @fig/plugins
-          rm .npmrc
-          git config user.name "Figbot"
-          git config user.email "noreply@fig.io"
-          git add .
-          git commit -m "Updates @fig/plugins to $TAG_VERSION"
-          git push
       - name: Rebuild Index
         run: npm run update-plugins -- $(git diff --name-only origin/main HEAD -- src/plugins/**/*.ts)
         env:
