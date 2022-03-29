@@ -2,12 +2,14 @@
 declare namespace Fig {
   /** Local device context about a plugin */
   interface PluginContext {
+    /** The directory the plugin was installed in */
     installDirectory: string;
   }
 
   /** Context used to generate shell source code in a dotfile  */
   interface DotfileCompilationContext {
     plugin: PluginContext;
+    /** The shell the plugin is being compiled for */
     shell: Shell;
   }
 
@@ -19,6 +21,7 @@ declare namespace Fig {
   /** DeviceEnvironment mediates queries about the local device environment */
   interface DeviceEnvironment {
     plugin: PluginContext;
+    /** A function to list the directories in a folder */
     listFolder: (path: string) => Promise<string[]>;
   }
 
@@ -93,9 +96,10 @@ declare namespace Fig {
 
   // Interface common to Configuration *items* and Configuration groups (which contain configuration items)
   interface ConfigurationInterface {
+    /** */
     displayName?: string;
-    description: string;
-    details?: string;
+    description?: string;
+    additionalDetails?: string;
     hidden?: ConfigurationGenerator<boolean>;
     disabled?: ConfigurationGenerator<boolean>;
   }
@@ -145,7 +149,9 @@ declare namespace Fig {
     | EnvironmentVariableItem
 
   interface ConfigurationGroup extends ConfigurationInterface {
+    /** The name of the group to display in the interface */
     displayName: string;
+    /** The children configuration items that are a part of the group */
     configuration: ConfigurationItem[]
   }
 

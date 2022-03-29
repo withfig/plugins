@@ -11,7 +11,7 @@
     "baseUrl": "./",
     "declaration": true
   },
-  "exclude": ["node_modules/", "src/update-plugins.ts"],
-  "include": ["src/**/*", "index.d.ts"],
+  "exclude": ["node_modules/", "util/update-plugins.ts"],
+  "include": ["plugins/**/*", "util/**/*", "index.d.ts"],
   "types": ["index.d.ts"]
 }
