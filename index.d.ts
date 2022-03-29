@@ -35,10 +35,20 @@ declare namespace Fig {
   }
 
   type PluginOrigin = "github" | { github: string; };
+
+  type BinaryDependency = {
+    type: "binary";
+    name: string;
+  };
+  type Dependency = BinaryDependency;
+
   type Installation = PluginInstallation & {
     [key in Shell]?: PluginInstallation;
   } & {
+    /** The origin of the plugin */
     origin: PluginOrigin;
+    /** Specify any dependencies the plugin has */
+    dependencies?: Dependency[];
   };
 
   /** Current value of a field in a plugin configuration. */

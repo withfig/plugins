@@ -12,6 +12,6 @@
     "declaration": true
   },
   "exclude": ["node_modules/", "util/update-plugins.ts"],
-  "include": ["plugins/**/*", "util/**/*", "index.d.ts"],
+  "include": ["index.d.ts", "plugins/**/*", "util/**/*"],
   "types": ["index.d.ts"]
 }
