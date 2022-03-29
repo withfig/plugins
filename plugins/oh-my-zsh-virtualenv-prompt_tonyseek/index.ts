@@ -1,0 +1,20 @@
+const plugin: Fig.Plugin = {
+  name: "oh-my-zsh-virtualenv-prompt_tonyseek",
+  type: "shell",
+  description: "Yet another virtualenv prompt plugin of oh-my-zsh.",
+  authors: [
+    {
+      name: "tonyseek",
+      github: "tonyseek",
+    }
+  ],
+  github: "tonyseek/oh-my-zsh-virtualenv-prompt",
+  shells: ["zsh"],
+  categories: ["Other"],
+  installation: {
+    origin: "github",
+    sourceFiles: ["virtualenv-prompt.plugin.zsh"],
+  },
+};
+
+export default plugin;

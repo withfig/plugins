@@ -1,0 +1,21 @@
+const plugin: Fig.Plugin = {
+  name: "rake-completion.zshplugin_unixorn",
+  type: "shell",
+  description: "rake task tab completion plugin for zsh, suitable for use with zgen and other oh-my-zsh compatible frameworks",
+  authors: [
+    {
+      name: "unixorn",
+      github: "unixorn",
+      twitter: "curiousbiped",
+    }
+  ],
+  github: "unixorn/rake-completion.zshplugin",
+  shells: ["zsh"],
+  categories: ["Compleation"],
+  installation: {
+    origin: "github",
+    sourceFiles: ["rake_completion.plugin.zsh"],
+  },
+};
+
+export default plugin;

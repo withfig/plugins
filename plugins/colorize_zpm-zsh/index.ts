@@ -1,0 +1,21 @@
+const plugin: Fig.Plugin = {
+  name: "colorize_zpm-zsh",
+  type: "shell",
+  description: "Colorize the output of various programs",
+  authors: [
+    {
+      name: "zpm-zsh",
+      github: "zpm-zsh",
+    }
+  ],
+  github: "zpm-zsh/colorize",
+  license: ["GPL-3.0"],
+  shells: ["zsh"],
+  categories: ["Other"],
+  installation: {
+    origin: "github",
+    sourceFiles: ["colorize.plugin.zsh"],
+  },
+};
+
+export default plugin;

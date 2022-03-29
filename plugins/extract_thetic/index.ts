@@ -1,0 +1,20 @@
+const plugin: Fig.Plugin = {
+  name: "extract_thetic",
+  type: "shell",
+  description: "fork of the oh-my-zsh extract plugin",
+  authors: [
+    {
+      name: "thetic",
+      github: "thetic",
+    }
+  ],
+  github: "thetic/extract",
+  shells: ["zsh"],
+  categories: ["Compleation"],
+  installation: {
+    origin: "github",
+    sourceFiles: ["extract.plugin.zsh"],
+  },
+};
+
+export default plugin;
