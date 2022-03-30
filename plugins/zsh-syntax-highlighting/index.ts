@@ -24,15 +24,17 @@ const plugin: Fig.Plugin = {
   configuration: [
     {
       displayName: "Max Length",
+      type: "environmentVariable",
       description: "Prevent highlighting for commands greater than this length",
-      uiType: "text",
+      interface: "text",
       default: 512,
       environmentVariable: "ZSH_HIGHLIGHT_MAXLENGTH",
     },
     {
       displayName: "Highlighters",
+      type: "environmentVariable",
       description: "Choose which higlighters you want to use (default is all of them)",
-      uiType: "text",
+      interface: "text",
       default: "(main brackets pattern cursor)",
       environmentVariable: "ZSH_HIGHLIGHT_HIGHLIGHTERS",
     }
