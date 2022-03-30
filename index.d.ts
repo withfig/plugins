@@ -114,7 +114,7 @@ declare namespace Fig {
       value: string,
       concat?: boolean,
       export?: boolean
-    } | string>
+    } | string | string[]>
     & UI<T, S>
     & { environmentVariable: string; }
   );
