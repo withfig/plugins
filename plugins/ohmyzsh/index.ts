@@ -35,7 +35,7 @@ const plugin: Fig.Plugin = {
       displayName: "Theme",
       description: "The Oh My Zsh theme to use",
       uiType: "select",
-      default: "robby_russell",
+      default: "robbyrussell",
       options: async ({ env }) => {
         if (!env) {
           return [];
