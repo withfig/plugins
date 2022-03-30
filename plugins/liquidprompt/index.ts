@@ -55,7 +55,7 @@ const plugin: Fig.Plugin = {
           type: "environmentVariable",
           environmentVariable: "LP_ENABLE_ERROR",
           description: "Display the last command error code if it is not `0`.",
-          uiType: "toggle",
+          interface: "toggle",
           default: true,
         },
         {
@@ -66,7 +66,7 @@ const plugin: Fig.Plugin = {
             "Display the status of the battery, if there is one, using color and marks.",
           additionalDetails:
             "Will be disabled if `acpi` is not found on Linux, or `pmset` is not found on MacOS.",
-          uiType: "toggle",
+          interface: "toggle",
           default: true,
         },
         {
@@ -74,7 +74,7 @@ const plugin: Fig.Plugin = {
           type: "environmentVariable",
           environmentVariable: "LP_ENABLE_RUNTIME",
           description: "Display the runtime of the last command.",
-          uiType: "toggle",
+          interface: "toggle",
           default: true,
         },
         {
@@ -84,7 +84,7 @@ const plugin: Fig.Plugin = {
           description: "Display the number of detached multiplexer sessions.",
           additionalDetails:
             "Will be disabled if neither `screen` nor `tmux` are found.",
-          uiType: "toggle",
+          interface: "toggle",
           default: true,
         },
         {
@@ -93,7 +93,7 @@ const plugin: Fig.Plugin = {
           environmentVariable: "LP_ENABLE_DIRSTACK",
           description:
             "Display the size of the directory stack if it is greater than `1`.",
-          uiType: "toggle",
+          interface: "toggle",
           default: false,
         },
         {
@@ -102,7 +102,7 @@ const plugin: Fig.Plugin = {
           environmentVariable: "LP_ENABLE_FQDN",
           description:
             "Display the fully qualified hostname instead of the short hostname.",
-          uiType: "toggle",
+          interface: "toggle",
           default: false,
         },
         {
@@ -111,7 +111,7 @@ const plugin: Fig.Plugin = {
           environmentVariable: "LP_ENABLE_COLOR",
           description: "Use terminal formatting when displaying the prompt.",
           additionalDetails: "Will be disabled if tput is not found.",
-          uiType: "toggle",
+          interface: "toggle",
           default: true,
         },
         {
@@ -119,7 +119,7 @@ const plugin: Fig.Plugin = {
           type: "environmentVariable",
           environmentVariable: "LP_ENABLE_JOBS",
           description: "Display the number of running and sleeping shell jobs.",
-          uiType: "toggle",
+          interface: "toggle",
           default: true,
         },
       ],
@@ -133,7 +133,7 @@ const plugin: Fig.Plugin = {
           environmentVariable: "LP_ENABLE_GIT",
           description: "Display VCS information inside Git repositories.",
           additionalDetails: "Will be disabled if `git` is not found.",
-          uiType: "toggle",
+          interface: "toggle",
           default: true,
         },
         {
@@ -142,7 +142,7 @@ const plugin: Fig.Plugin = {
           description:
             "Mark used to indicate that the current directory is inside of a Git repository.",
           default: "±",
-          uiType: "text",
+          interface: "text",
           environmentVariable: "LP_MARK_GIT",
           hidden: ({ config }) => !config["LP_ENABLE_GIT"],
         },
@@ -152,7 +152,7 @@ const plugin: Fig.Plugin = {
           description: "Display VCS information inside Mercurial repositories.",
           additionalDetails: "Will be disabled if `hg` is not found.",
           default: true,
-          uiType: "toggle",
+          interface: "toggle",
           environmentVariable: "LP_ENABLE_HG",
         },
         {
@@ -161,7 +161,7 @@ const plugin: Fig.Plugin = {
           description:
             "Mark used to indicate that the current directory is inside of a Mercurial repository.",
           default: "☿",
-          uiType: "text",
+          interface: "text",
           environmentVariable: "LP_MARK_HG",
           hidden: ({ config }) => !config["LP_ENABLE_HG"],
         },
@@ -172,7 +172,7 @@ const plugin: Fig.Plugin = {
             "Display VCS information inside Subversion repositories.",
           additionalDetails: "Will be disabled if `svn` is not found.",
           default: true,
-          uiType: "toggle",
+          interface: "toggle",
           environmentVariable: "LP_ENABLE_SVN",
         },
         {
@@ -181,7 +181,7 @@ const plugin: Fig.Plugin = {
           description:
             "Mark used to indicate that the current directory is inside of a Subversion repository.",
           default: "‡",
-          uiType: "text",
+          interface: "text",
           environmentVariable: "LP_MARK_SVN",
           hidden: ({ config }) => !config["LP_ENABLE_SVN"],
         },
@@ -191,7 +191,7 @@ const plugin: Fig.Plugin = {
           description: "Display VCS information inside Fossil repositories.",
           additionalDetails: "Will be disabled if `fossil` is not found.",
           default: true,
-          uiType: "toggle",
+          interface: "toggle",
           environmentVariable: "LP_ENABLE_FOSSIL",
         },
         {
@@ -200,7 +200,7 @@ const plugin: Fig.Plugin = {
           description:
             "Mark used to indicate that the current directory is inside of a Fossil repository.",
           default: "⌘",
-          uiType: "text",
+          interface: "text",
           environmentVariable: "LP_MARK_FOSSIL",
           hidden: ({ config }) => !config["LP_ENABLE_FOSSIL"],
         },
@@ -210,7 +210,7 @@ const plugin: Fig.Plugin = {
           description: "Display VCS information inside Bazaar repositories.",
           additionalDetails: "Will be disabled if `bzr` is not found.",
           default: true,
-          uiType: "toggle",
+          interface: "toggle",
           environmentVariable: "LP_ENABLE_BZR",
         },
         {
@@ -219,7 +219,7 @@ const plugin: Fig.Plugin = {
           description:
             "Mark used to indicate that the current directory is inside of a Bazaar repository.",
           default: "⚯",
-          uiType: "text",
+          interface: "text",
           environmentVariable: "LP_MARK_BZR",
           hidden: ({ config }) => !config["LP_ENABLE_BZR"],
         },
@@ -234,7 +234,7 @@ const plugin: Fig.Plugin = {
           description:
             "Use the shorten path feature if the path is too long to fit in the prompt line.",
           default: true,
-          uiType: "toggle",
+          interface: "toggle",
           environmentVariable: "LP_ENABLE_SHORTEN_PATH",
         },
         {
@@ -243,7 +243,7 @@ const plugin: Fig.Plugin = {
           description:
             "The number of characters to save at the start and possibly the end of a directory name when shortening the path.",
           default: 3,
-          uiType: "text",
+          interface: "text",
           environmentVariable: "LP_PATH_CHARACTER_KEEP",
           hidden: ({ config }) => !config["LP_ENABLE_SHORTEN_PATH"],
         },
@@ -255,7 +255,7 @@ const plugin: Fig.Plugin = {
           additionalDetails:
             "Set to `1`, will display only root. Set to `0`, will keep nothing from the beginning of the path.",
           default: 2,
-          uiType: "text",
+          interface: "text",
           environmentVariable: "LP_PATH_KEEP",
           hidden: ({ config }) => !config["LP_ENABLE_SHORTEN_PATH"],
         },
@@ -265,7 +265,7 @@ const plugin: Fig.Plugin = {
           description:
             "The maximum percentage of the terminal width used to display the path before removing the center portion of the path and replacing with `LP_MARK_SHORTEN_PATH`.",
           default: 35,
-          uiType: "text",
+          interface: "text",
           environmentVariable: "LP_PATH_LENGTH",
           hidden: ({ config }) => !config["LP_ENABLE_SHORTEN_PATH"],
         },
@@ -275,7 +275,7 @@ const plugin: Fig.Plugin = {
           description:
             "Sets the method used for shortening the path display when it exceeds the maximum length set by `LP_PATH_LENGTH`.",
           default: "truncate_chars_from_path_left",
-          uiType: "select",
+          interface: "select",
           options: [
             "truncate_chars_from_path_left",
             "truncate_chars_from_dir_right",
@@ -297,7 +297,7 @@ const plugin: Fig.Plugin = {
           description:
             "Display the root directory of the current VCS repository with special formatting, set by LP_COLOR_PATH_VCS_ROOT. If LP_ENABLE_SHORTEN_PATH is enabled, also prevent the path shortening from shortening or hidding the VCS root directory.",
           default: true,
-          uiType: "toggle",
+          interface: "toggle",
           environmentVariable: "LP_PATH_VCS_ROOT",
         },
         {
@@ -306,7 +306,7 @@ const plugin: Fig.Plugin = {
           description:
             "String added directly before `LP_MARK_DEFAULT`, after all other parts of the prompt. Can be used to tag the prompt in a way that is less intrusive than `LP_PS1_PREFIX`, or add a newline before the prompt mark.",
           default: "",
-          uiType: "text",
+          interface: "text",
           environmentVariable: "LP_MARK_PREFIX",
         },
         {
@@ -314,7 +314,7 @@ const plugin: Fig.Plugin = {
           type: "environmentVariable",
           description: "A string displayed at the start of the prompt.",
           default: "",
-          uiType: "text",
+          interface: "text",
           environmentVariable: "LP_PS1_PREFIX",
         },
         {
@@ -323,7 +323,7 @@ const plugin: Fig.Plugin = {
           description:
             "A string displayed at the very end of the prompt, after even the prompt mark.",
           default: "",
-          uiType: "text",
+          interface: "text",
           environmentVariable: "LP_PS1_POSTFIX",
         },
       ],

@@ -26,7 +26,7 @@ const plugin: Fig.Plugin = {
       description: "Configure the style that the suggestion is shown with.",
       environmentVariable: "ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE",
       default: "fg=8",
-      uiType: "text",
+      interface: "text",
       additionalDetails: "For more info, read the Character Highlighting section of the zsh manual: `man zshzle` or [online](http://zsh.sourceforge.net/Doc/Release/Zsh-Line-Editor.html#Character-Highlighting)."
     },
     {
@@ -35,7 +35,7 @@ const plugin: Fig.Plugin = {
       description: "Specify how suggestions should be generated. The strategies in the array are tried successively until a suggestion is found.",
       environmentVariable: "ZSH_AUTOSUGGEST_STRATEGY",
       default: "history",
-      uiType: "multiselect",
+      interface: "multiselect",
       options: [
         "history",
         "completion",
@@ -54,7 +54,7 @@ const plugin: Fig.Plugin = {
       description: "Suggestions are fetched asynchronously by default in zsh versions 5.0.8 and greater.",
       environmentVariable: "ZSH_AUTOSUGGEST_USE_ASYNC",
       default: true,
-      uiType: "toggle"
+      interface: "toggle"
     },
     {
       displayName: "Disabling suggestion for large buffers",
@@ -62,7 +62,7 @@ const plugin: Fig.Plugin = {
       description: "By default, autosuggestion will be tried for any buffer size. Recommended value is 20. This can be useful when pasting large amount of text in the terminal, to avoid triggering autosuggestion for strings that are too long.",
       environmentVariable: "ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE",
       default: 20,
-      uiType: "text",
+      interface: "text",
     },
     {
       displayName: "Ignoring history suggestions that match a pattern",
@@ -70,7 +70,7 @@ const plugin: Fig.Plugin = {
       description: "A glob pattern to prevent offering suggestions for history entries that match the pattern.",
       environmentVariable: "ZSH_AUTOSUGGEST_HISTORY_IGNORE",
       default: "",
-      uiType: "text",
+      interface: "text",
       disabled: ({ config }) => {
         const strategy = config["ZSH_AUTOSUGGEST_STRATEGY"] as string[]
         return strategy.includes("match_prev_cmd") || strategy.includes("history")
@@ -86,7 +86,7 @@ const plugin: Fig.Plugin = {
       description: "A glob pattern to prevent offering completion suggestions when the buffer matches that pattern.",
       environmentVariable: "ZSH_AUTOSUGGEST_COMPLETION_IGNORE",
       default: "",
-      uiType: "text",
+      interface: "text",
       disabled: ({ config }) => {
         const strategy = config["ZSH_AUTOSUGGEST_STRATEGY"] as string[]
         return strategy.includes("match_prev_cmd") || strategy.includes("history")
@@ -106,7 +106,7 @@ const plugin: Fig.Plugin = {
           description: "A comma-separated list of widgets that will clear the suggestion when invoked.",
           environmentVariable: "ZSH_AUTOSUGGEST_CLEAR_WIDGETS",
           default: "",
-          uiType: "text",
+          interface: "text",
           compile: ({ value }) => {
             return value.split(",").map(v => v.trim())
           },
@@ -117,7 +117,7 @@ const plugin: Fig.Plugin = {
           description: "A comma-separated list of widgets that will accept the suggestion when invoked.",
           environmentVariable: "ZSH_AUTOSUGGEST_ACCEPT_WIDGETS",
           default: "",
-          uiType: "text",
+          interface: "text",
           compile: ({ value }) => {
             return value.split(",").map(v => v.trim())
           },
@@ -128,7 +128,7 @@ const plugin: Fig.Plugin = {
           description: "A comma-separated list of widgets that will execute the suggestion when invoked.",
           environmentVariable: "ZSH_AUTOSUGGEST_EXECUTE_WIDGETS",
           default: "",
-          uiType: "text",
+          interface: "text",
           compile: ({ value }) => value.split(",").map(v => v.trim()),
         },
         {
@@ -137,7 +137,7 @@ const plugin: Fig.Plugin = {
           description: "A comma-separated list of widgets that will partially accept the suggestion when invoked.",
           environmentVariable: "ZSH_AUTOSUGGEST_PARTIAL_ACCEPT_WIDGETS",
           default: "",
-          uiType: "text",
+          interface: "text",
           compile: ({ value }) => value.split(",").map(v => v.trim()),
         },
         {
@@ -146,7 +146,7 @@ const plugin: Fig.Plugin = {
           description: "A comma-separated list of widgets that will not trigger any custom behavior.",
           environmentVariable: "ZSH_AUTOSUGGEST_IGNORE_WIDGETS",
           default: "",
-          uiType: "text",
+          interface: "text",
           compile: ({ value }) => {
             return value.split(",").map(v => v.trim())
           },

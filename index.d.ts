@@ -72,14 +72,14 @@ declare namespace Fig {
 
   // Multiselect UI item type
   type MultiselectUI<T> = T extends unknown[] ? {
-    uiType: "multiselect";
+    interface: "multiselect";
     default: T[number] | T;
     options: Suggestions<T>;
     value: T;
   } : never;
 
   type SelectUI<T> = {
-    uiType: "select";
+    interface: "select";
     value: T;
   } & (
     | { default: T; options: Suggestions<T[]> }
@@ -87,7 +87,7 @@ declare namespace Fig {
   )
 
   type TextUI<T> = {
-    uiType: "text";
+    interface: "text";
     value: T;
   } & (
     | { default: T; options?: Suggestions<T[]> }
@@ -95,21 +95,21 @@ declare namespace Fig {
   )
 
   interface BasicUI<T, U extends UIType> {
-    uiType: U;
+    interface: U;
     default: T;
     value: T;
   }
 
   // Get all ui's that support a value type of T.
   // This enforces that, e.g. you can only use booleans with a toggle/checkbox UI.
-  // Gets all valid UIs that satisfy { value: T, uiType: S }
+  // Gets all valid UIs that satisfy { value: T, interface: S }
   type UI<V, U extends UIType = UIType> = Omit<Extract<
     | MultiselectUI<V>
     | SelectUI<V>
     | BasicUI<boolean, "checkbox" | "toggle">
     | TextUI<string>
     | TextUI<number>,
-    { value: V, uiType: U }
+    { value: V, interface: U }
   >, "value">
 
   // Interface common to Configuration *items* and Configuration groups (which contain configuration items)

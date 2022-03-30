@@ -22,9 +22,9 @@ const plugin: Fig.Plugin = {
   configuration: [
     {
       displayName: "Plugins",
-      description: "Oh My Zsh plugins to load",
       type: "environmentVariable",
-      uiType: "multiselect",
+      description: "Oh My Zsh plugins to load",
+      interface: "multiselect",
       default: [],
       options: async ({ env }) =>
         env
@@ -36,7 +36,7 @@ const plugin: Fig.Plugin = {
       displayName: "Theme",
       description: "The Oh My Zsh theme to use",
       type: "environmentVariable",
-      uiType: "select",
+      interface: "select",
       default: "robbyrussell",
       options: async ({ env }) => {
         if (!env) {
@@ -58,7 +58,7 @@ const plugin: Fig.Plugin = {
           name: "mode",
           type: "script",
           description: "",
-          uiType: "multiselect",
+          interface: "multiselect",
           default: "prompt",
           options: modes,
           compile: ({ value }) =>
@@ -68,9 +68,9 @@ const plugin: Fig.Plugin = {
           name: "frequency",
           type: "script",
           description: "How often Oh My Zsh checks for updates",
-          uiType: "text",
+          interface: "text",
           default: 14,
-          compile: ({ value }: { value: number }) =>
+          compile: ({ value }) =>
             `zstyle ':omz:update' frequency ${value}`,
           disabled: ({ config }) => config["mode"] !== "disabled",
         },
@@ -80,9 +80,9 @@ const plugin: Fig.Plugin = {
       name: "test",
       type: "script",
       description: "hello there",
-      uiType: "checkbox",
+      interface: "checkbox",
       default: false,
-      compile: ({ value }: { value: boolean }) =>
+      compile: ({ value }) =>
         `zstyle :prompt:pure:git:stash show ${value ? "yes" : "no"}`,
     },
   ],
