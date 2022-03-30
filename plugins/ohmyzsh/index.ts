@@ -23,6 +23,7 @@ const plugin: Fig.Plugin = {
     {
       displayName: "Plugins",
       description: "Oh My Zsh plugins to load",
+      type: "environmentVariable",
       uiType: "multiselect",
       default: [],
       options: async ({ env }) =>
@@ -34,6 +35,7 @@ const plugin: Fig.Plugin = {
     {
       displayName: "Theme",
       description: "The Oh My Zsh theme to use",
+      type: "environmentVariable",
       uiType: "select",
       default: "robbyrussell",
       options: async ({ env }) => {
@@ -54,15 +56,17 @@ const plugin: Fig.Plugin = {
       configuration: [
         {
           name: "mode",
+          type: "script",
           description: "",
           uiType: "multiselect",
           default: "prompt",
           options: modes,
-          compile: ({ value }: { value: string[] }) =>
+          compile: ({ value }) =>
             `zstyle ':omz:update' mode ${value}`,
         },
         {
           name: "frequency",
+          type: "script",
           description: "How often Oh My Zsh checks for updates",
           uiType: "text",
           default: 14,
@@ -74,6 +78,7 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "test",
+      type: "script",
       description: "hello there",
       uiType: "checkbox",
       default: false,

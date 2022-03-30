@@ -67,42 +67,50 @@ declare namespace Fig {
     | "checkbox"
     | "toggle"
 
-  /** A UI augmented with suggestions that can be static or dynamically
-   * generated from the user's environment
-   */
-  interface SuggestionUI<T> {
-    uiType: UIType;
-    options?: T[] | DeviceConfigurationGenerator<T[]>;
-  }
+  type NonEmpty<T extends unknown[]> = T & { 0: T[number] };
+  type Suggestions<T extends unknown[]> = T | DeviceConfigurationGenerator<T>;
 
   // Multiselect UI item type
-  interface MultiselectUI<T extends unknown[]> extends SuggestionUI<T[number]> {
+  type MultiselectUI<T> = T extends unknown[] ? {
     uiType: "multiselect";
     default: T[number] | T;
-  }
+    options: Suggestions<T>;
+    value: T;
+  } : never;
 
-  interface BasicSuggestionUI<T, U extends UIType> extends SuggestionUI<T> {
-    uiType: U;
-    default: T;
-  }
+  type SelectUI<T> = {
+    uiType: "select";
+    value: T;
+  } & (
+    | { default: T; options: Suggestions<T[]> }
+    | { default?: T; options: Suggestions<NonEmpty<T[]>> }
+  )
+
+  type TextUI<T> = {
+    uiType: "text";
+    value: T;
+  } & (
+    | { default: T; options?: Suggestions<T[]> }
+    | { default?: T; options: Suggestions<NonEmpty<T[]>> }
+  )
 
   interface BasicUI<T, U extends UIType> {
     uiType: U;
     default: T;
+    value: T;
   }
 
   // Get all ui's that support a value type of T.
   // This enforces that, e.g. you can only use booleans with a toggle/checkbox UI.
-  type UIsWithValueType<T> = T extends infer A ? (
-    | A extends unknown[] ? MultiselectUI<A> : never
-    | A extends boolean ? BasicUI<A, "checkbox" | "toggle"> : never
-    | A extends string ? BasicSuggestionUI<A, "select" | "text"> : never
-    | A extends number ? BasicSuggestionUI<A, "select" | "text"> : never
-    | BasicSuggestionUI<A, "select">
-  ) : never;
-
   // Gets all valid UIs that satisfy { value: T, uiType: S }
-  type UI<T, S extends UIType = UIType> = Extract<UIsWithValueType<T>, { uiType: S }>
+  type UI<V, U extends UIType = UIType> = Omit<Extract<
+    | MultiselectUI<V>
+    | SelectUI<V>
+    | BasicUI<boolean, "checkbox" | "toggle">
+    | TextUI<string>
+    | TextUI<number>,
+    { value: V, uiType: U }
+  >, "value">
 
   // Interface common to Configuration *items* and Configuration groups (which contain configuration items)
   interface ConfigurationInterface {
@@ -114,27 +122,28 @@ declare namespace Fig {
     disabled?: ConfigurationGenerator<boolean>;
   }
 
-  interface ConfigurationItemInterface<T, S> extends ConfigurationInterface {
+  interface ConfigurationItemInterface<V, CompilationResult> extends ConfigurationInterface {
     name?: string;
-    compile?: DotfileCompiler<{ value: T }, S>;
+    compile?: DotfileCompiler<{ value: V }, CompilationResult>;
   }
 
-  type EnvironmentVariableItemForType<T, S extends UIType> = (
-    ConfigurationItemInterface<T, {
-      value: string,
+  type EnvironmentVariableItemForType<V, U extends UIType> = (
+    ConfigurationItemInterface<V, {
+      value: string | string[],
       concat?: boolean,
       export?: boolean
     } | string | string[]>
-    & UI<T, S>
-    & { environmentVariable: string; }
+    & UI<V, U>
+    & { environmentVariable: string, type: "environmentVariable" }
   );
 
-  type ScriptItemForType<T, S extends UIType> = (
-    ConfigurationItemInterface<T, string>
-    & UI<T, S>
+  type ScriptItemForType<V, U extends UIType> = (
+    & ConfigurationItemInterface<V, string>
+    & UI<V, U>
     & {
         name: string;
-        compile: DotfileCompiler<{ value: T }, string>
+        type: "script";
+        compile: DotfileCompiler<{ value: V }, string>
       }
   );
 

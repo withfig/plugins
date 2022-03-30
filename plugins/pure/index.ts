@@ -82,6 +82,7 @@ const createConfigurationOptionForColorComponent = (component: ColorComponent): 
 
   return {
     name,
+    type: "script",
     displayName: `[Color] ${title}`,
     description: `Color of ${description}`,
     default: component.default,
@@ -126,6 +127,7 @@ const plugin: Fig.Plugin = {
     {
       displayName: "Prompt Symbol",
       description: "The symbol to use for the prompt",
+      type: "environmentVariable",
       default: "❯",
       uiType: "text",
       environmentVariable: "PURE_PROMPT_SYMBOL",
@@ -133,6 +135,7 @@ const plugin: Fig.Plugin = {
     {
       displayName: "Git Down Arrow Symbol",
       description: "The symbol to use for the git down arrow",
+      type: "environmentVariable",
       default: "⇣",
       uiType: "text",
       environmentVariable: "PURE_GIT_DOWN_ARROW",
@@ -140,6 +143,7 @@ const plugin: Fig.Plugin = {
     {
       displayName: "Git Up Arrow Symbol",
       description: "The symbol to use for the git up arrow",
+      type: "environmentVariable",
       default: "⇡",
       uiType: "text",
       environmentVariable: "PURE_GIT_UP_ARROW",
@@ -147,6 +151,7 @@ const plugin: Fig.Plugin = {
     {
       displayName: "Git Stash Symbol",
       description: "The symbol to use for the git stash symbol",
+      type: "environmentVariable",
       default: "≡",
       uiType: "text",
       environmentVariable: "PURE_GIT_STASH_SYMBOL",
@@ -154,12 +159,14 @@ const plugin: Fig.Plugin = {
     {
       displayName: "VI-Mode Prompt Symbol",
       description: "The symbol to use for the prompt when in vi-mode",
+      type: "environmentVariable",
       default: "❮",
       uiType: "text",
       environmentVariable: "PURE_PROMPT_VICMD_SYMBOL",
     },
     {
       displayName: "Command Max Execution Time",
+      type: "environmentVariable",
       description: "The max execution time (in seconds) of a process before its run time is shown when it exits.",
       default: 5,
       uiType: "text",
@@ -167,6 +174,7 @@ const plugin: Fig.Plugin = {
     },
     {
       displayName: "Enable Git Pull",
+      type: "environmentVariable",
       description: "Allow Pure to check whether the current Git remote has been updated.",
       default: false,
       uiType: "toggle",
@@ -175,6 +183,7 @@ const plugin: Fig.Plugin = {
     {
       displayName: "Include Untracked Files in Git Dirty Check",
       description: "Include untracked files in Git dirtiness check. Mostly useful on large repos (like WebKit).",
+      type: "environmentVariable",
       default: false,
       uiType: "toggle",
       environmentVariable: "PURE_GIT_UNTRACKED_DIRTY",
@@ -182,6 +191,7 @@ const plugin: Fig.Plugin = {
     {
       displayName: "Git Dirty Check Delay",
       description: "Time in seconds to delay git dirty checking when `git status` takes > 5 seconds.",
+      type: "environmentVariable",
       default: 1800,
       uiType: "text",
       environmentVariable: "PURE_GIT_DELAY_DIRTY_CHECK",
@@ -189,6 +199,7 @@ const plugin: Fig.Plugin = {
     {
       name: "show-git-stash-status",
       displayName: "Show Git Stash Status",
+      type: "script",
       description: "Show git stash status as part of the prompt. Off by default.",
       default: false,
       uiType: "toggle",
@@ -200,6 +211,7 @@ const plugin: Fig.Plugin = {
       name: "only-fetch-upstream",
       displayName: "Only Fetch Upstream",
       description: "Set Pure to only `git fetch` the upstream branch of the current local branch. In some cases, this can result in faster updates for Git arrows, but for most users, it's better to leave this setting disabled.",
+      type: "script",
       default: false,
       uiType: "toggle",
       compile: ({ value }: { value: boolean }) => value
@@ -210,6 +222,7 @@ const plugin: Fig.Plugin = {
       name: "nix-shell-in-prompt",
       displayName: "[Nix Shell] Enable Shell Name In Prompt",
       description: "When using nix-shell integration, add the shell name to the prompt.",
+      type: "script",
       default: true,
       uiType: "toggle",
       compile: ({ value }: { value: boolean }) => !value
@@ -219,6 +232,7 @@ const plugin: Fig.Plugin = {
     {
       name: "nix-shell-in-prompt",
       displayName: "[Nix Shell] Enable Shell Name In Prompt",
+      type: "script",
       description: "When using nix-shell integration, add the shell name to the prompt.",
       default: true,
       uiType: "toggle",
@@ -227,17 +241,21 @@ const plugin: Fig.Plugin = {
         : "",
     },
     {
-      name: "load-zsh-nearcolor",
-      displayName: "[Color] Load zsh/nearcolor",
-      description: "Enable use of RGB colors with hexidecimal format for Pure prompt color configuration. If you are unable to use a [terminal that support 24-bit colors](https://gist.github.com/XVilka/8346728), you can enable this option to load the module [`zsh/nearcolor`](http://zsh.sourceforge.net/Doc/Release/Zsh-Modules.html#The-zsh_002fnearcolor-Module). It will map any hexadecimal color to the nearest color in the 88 or 256 color palettes of your terminal, but without using the first 16 colors, since their values can be modified by the user. Keep in mind that when using this module you won't be able to display true RGB colors. It only allows you to specify colors in a more convenient way.",
-      default: false,
-      uiType: "toggle",
-      compile: ({ value }: { value: boolean }) => value
-        ? "zmodload zsh/nearcolor"
-        : "",
-    },
-    ...colorComponents.map(createConfigurationOptionForColorComponent),
-  ],
+      displayName: "Color",
+      configuration: [{
+        name: "load-zsh-nearcolor",
+        displayName: "[Color] Load zsh/nearcolor",
+        type: "script",
+        description: "Enable use of RGB colors with hexidecimal format for Pure prompt color configuration if you are unable to use a terminal with 24-bit color support",
+        additionalDetails: "If you are unable to use a [terminal that support 24-bit colors](https://gist.github.com/XVilka/8346728), you can enable this option to load the module [`zsh/nearcolor`](http://zsh.sourceforge.net/Doc/Release/Zsh-Modules.html#The-zsh_002fnearcolor-Module). It will map any hexadecimal color to the nearest color in the 88 or 256 color palettes of your terminal, but without using the first 16 colors, since their values can be modified by the user. Keep in mind that when using this module you won't be able to display true RGB colors. It only allows you to specify colors in a more convenient way.",
+        default: false,
+        uiType: "toggle",
+        compile: ({ value }: { value: boolean }) => value
+          ? "zmodload zsh/nearcolor"
+          : "",
+      }, ...colorComponents.map(createConfigurationOptionForColorComponent)]
+    }
+  ]
 };
 
 export default plugin;
