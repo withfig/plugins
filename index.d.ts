@@ -210,6 +210,8 @@ declare namespace Fig {
     description?: string;
     /** The icon for the plugin */
     icon?: string;
+    /** Screenshots displayed in carousel in Fig plugin store */
+    screenshots?: string[];
     /** The site for the plugin */
     site?: string;
     /** The docs for the plugin */
