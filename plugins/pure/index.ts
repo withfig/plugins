@@ -1,3 +1,96 @@
+type ColorComponent = {
+  name: string;
+  default: string;
+  componentDescription: string;
+}
+
+const colorComponents: ColorComponent[] = [{
+  name: "execution_time",
+  default: "yellow",
+  componentDescription: "The execution time of the last command when exceeding 'Command Max Execution Time'."
+}, {
+  name: "git:arrow",
+  default: "cyan",
+  componentDescription: "The 'Git Up Arrow Symbol' and 'Git Down Arrow Symbol'."
+}, {
+  name: "git:stash",
+  default: "cyan",
+  componentDescription: "The 'Git Stash Symbol'."
+}, {
+  name: "git:branch",
+  default: "242",
+  componentDescription: "The name of the current branch when in a Git repository."
+}, {
+  name: "git:branch:cached",
+  default: "red",
+  componentDescription: "The name of the current branch when the data isn't fresh."
+}, {
+  name: "git:action",
+  default: "242",
+  componentDescription: "The current action in progress (cherry-pick, rebase, etc.) when in a Git repository."
+}, {
+  name: "git:dirty",
+  default: "218",
+  componentDescription: "The asterisk showing the branch is dirty."
+}, {
+  name: "host",
+  default: "242",
+  componentDescription: "The hostname when on a remote machine."
+}, {
+  name: "path",
+  default: "blue",
+  componentDescription: "The current path, for example, `PWD`."
+}, {
+  name: "prompt:error",
+  default: "red",
+  componentDescription: "The 'Prompt Symbol' when the previous command has *failed*."
+}, {
+  name: "prompt:success",
+  default: "magenta",
+  componentDescription: "The 'Prompt Symbol' when the previous command has *succeeded*."
+}, {
+  name: "prompt:continuation",
+  default: "242",
+  componentDescription: "The state of the parser in the continuation prompt (PS2). It's the pink part in [this screenshot](https://user-images.githubusercontent.com/147409/70068574-ebc74800-15f8-11ea-84c0-8b94a4b57ff4.png), it appears in the same spot as `virtualenv`. You could for example matching both colors so that Pure has a uniform look."
+}, {
+  name: "suspended_jobs",
+  default: "red",
+  componentDescription: "The `✦` symbol that indicates that jobs are running in the background."
+}, {
+  name: "user",
+  default: "242",
+  componentDescription: "The username when on a remote machine."
+}, {
+  name: "user:root",
+  default: "default",
+  componentDescription: "The username when the user is root."
+}, {
+  name: "virtualenv",
+  default: "242",
+  componentDescription: "The name of the Python `virtualenv` when in use."
+}]
+
+const createConfigurationOptionForColorComponent = (component: ColorComponent): Fig.ScriptItem => {
+  const nameRegex = /[:_\s]+/;
+  const title = component.name.split(nameRegex)
+    .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(" ");
+  const name = component.name.replace(nameRegex, "-");
+  const description =
+    component.componentDescription.charAt(0).toLowerCase() +
+    component.componentDescription.slice(1);
+
+  return {
+    name,
+    displayName: `[Color] ${title}`,
+    description: `Color of ${description}`,
+    default: component.default,
+    uiType: "text",
+    compile: ({ value }: { value: string }) =>
+      `zstyle :prompt:pure:${component.name} color ${value}`
+  };
+}
+
 const plugin: Fig.Plugin = {
   name: "pure",
   type: "shell",
@@ -38,13 +131,6 @@ const plugin: Fig.Plugin = {
       environmentVariable: "PURE_PROMPT_SYMBOL",
     },
     {
-      displayName: "VI-Mode Prompt Symbol",
-      description: "The symbol to use for the prompt when in vi-mode",
-      default: "❮",
-      uiType: "text",
-      environmentVariable: "PURE_PROMPT_VICMD_SYMBOL",
-    },
-    {
       displayName: "Git Down Arrow Symbol",
       description: "The symbol to use for the git down arrow",
       default: "⇣",
@@ -65,6 +151,92 @@ const plugin: Fig.Plugin = {
       uiType: "text",
       environmentVariable: "PURE_GIT_STASH_SYMBOL",
     },
+    {
+      displayName: "VI-Mode Prompt Symbol",
+      description: "The symbol to use for the prompt when in vi-mode",
+      default: "❮",
+      uiType: "text",
+      environmentVariable: "PURE_PROMPT_VICMD_SYMBOL",
+    },
+    {
+      displayName: "Command Max Execution Time",
+      description: "The max execution time (in seconds) of a process before its run time is shown when it exits.",
+      default: 5,
+      uiType: "text",
+      environmentVariable: "PURE_CMD_MAX_EXEC_TIME",
+    },
+    {
+      displayName: "Enable Git Pull",
+      description: "Allow Pure to check whether the current Git remote has been updated.",
+      default: false,
+      uiType: "toggle",
+      environmentVariable: "PURE_GIT_PULL",
+    },
+    {
+      displayName: "Include Untracked Files in Git Dirty Check",
+      description: "Include untracked files in Git dirtiness check. Mostly useful on large repos (like WebKit).",
+      default: false,
+      uiType: "toggle",
+      environmentVariable: "PURE_GIT_UNTRACKED_DIRTY",
+    },
+    {
+      displayName: "Git Dirty Check Delay",
+      description: "Time in seconds to delay git dirty checking when `git status` takes > 5 seconds.",
+      default: 1800,
+      uiType: "text",
+      environmentVariable: "PURE_GIT_DELAY_DIRTY_CHECK",
+    },
+    {
+      name: "show-git-stash-status",
+      displayName: "Show Git Stash Status",
+      description: "Show git stash status as part of the prompt. Off by default.",
+      default: false,
+      uiType: "toggle",
+      compile: ({ value }: { value: boolean }) => value
+        ? "zstyle :prompt:pure:git:stash show yes"
+        : "",
+    },
+    {
+      name: "only-fetch-upstream",
+      displayName: "Only Fetch Upstream",
+      description: "Set Pure to only `git fetch` the upstream branch of the current local branch. In some cases, this can result in faster updates for Git arrows, but for most users, it's better to leave this setting disabled.",
+      default: false,
+      uiType: "toggle",
+      compile: ({ value }: { value: boolean }) => value
+        ? "zstyle :prompt:pure:git:fetch only_upstream yes"
+        : "",
+    },
+    {
+      name: "nix-shell-in-prompt",
+      displayName: "[Nix Shell] Enable Shell Name In Prompt",
+      description: "When using nix-shell integration, add the shell name to the prompt.",
+      default: true,
+      uiType: "toggle",
+      compile: ({ value }: { value: boolean }) => !value
+        ? "zstyle :prompt:pure:environment:nix-shell show no"
+        : "",
+    },
+    {
+      name: "nix-shell-in-prompt",
+      displayName: "[Nix Shell] Enable Shell Name In Prompt",
+      description: "When using nix-shell integration, add the shell name to the prompt.",
+      default: true,
+      uiType: "toggle",
+      compile: ({ value }: { value: boolean }) => !value
+        ? "zstyle :prompt:pure:environment:nix-shell show no"
+        : "",
+    },
+    {
+      name: "load-zsh-nearcolor",
+      displayName: "[Color] Load zsh/nearcolor",
+      description: "Enable use of RGB colors with hexidecimal format for Pure prompt color configuration. If you are unable to use a [terminal that support 24-bit colors](https://gist.github.com/XVilka/8346728), you can enable this option to load the module [`zsh/nearcolor`](http://zsh.sourceforge.net/Doc/Release/Zsh-Modules.html#The-zsh_002fnearcolor-Module). It will map any hexadecimal color to the nearest color in the 88 or 256 color palettes of your terminal, but without using the first 16 colors, since their values can be modified by the user. Keep in mind that when using this module you won't be able to display true RGB colors. It only allows you to specify colors in a more convenient way.",
+      default: false,
+      uiType: "toggle",
+      compile: ({ value }: { value: boolean }) => value
+        ? "zmodload zsh/nearcolor"
+        : "",
+    },
+    ...colorComponents.map(createConfigurationOptionForColorComponent),
   ],
 };
 
