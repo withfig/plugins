@@ -4,6 +4,7 @@
 </p>
 
 ---
+# The Fig Plugin Store
 
 ![os](https://img.shields.io/badge/os-%20macOS-light)
 [![Signup](https://img.shields.io/badge/signup-public%20beta-blueviolet)](https://fig.io?ref=github_autocomplete)
@@ -12,94 +13,84 @@
 ![Discord](https://img.shields.io/discord/837809111248535583?color=768ad4&label=discord)
 [![Twitter](https://img.shields.io/twitter/follow/fig.svg?style=social&label=Follow)](https://twitter.com/intent/follow?screen_name=fig)
 
-**[Fig](https://fig.io?ref=github_plugins) helps you discover, install and configure shell plugins.** 
-
-<br/>
-
+The **Fig Plugin Store** makes it easy to add 3rd-party shell plugins to your terminal.
+ 
 ## ⚡️ Installation
 
-* **[Homebrew](https://brew.sh)**: `brew install fig`
-* **Manual**: Download the macOS app at [fig.io](https://fig.io/download)
-
-<br/>
-
-## 👋 What are "Plugins"?
-
-A plugin is a _declarative_ schema that defines how shell plugins are installed and configured using the Fig Plugin Store.
-
+* **macOS**: 
+    * **Homebrew**: `brew install fig`
+    * **DMG**: Download from our website: [fig.io](https://fig.io/download)
+* **Windows/Linux**: 
+    * Join the [waitlist](https://withfig.typeform.com/linux)
 <br/>
 
 
-## 😎 Contribute your first plugin in < 3 minutes
 
-**Prerequisites:**
+https://user-images.githubusercontent.com/4949076/160755285-ac39d330-8354-4936-9102-2580d5615550.mp4
 
-- Download Fig for macOS
-- Node and NPM (or Yarn).
 
-<br/>
+## 👋 What is the Plugin Store?
 
-**Steps**
+The Fig Plugin Store makes it easy for developers to discover and install 3rd-party shell plugins then sync them across your devices.
 
-1. Click [here](https://GitHub.com/withfig/plugins/fork/) to fork this repo.
+Currently we 
+* have > 1,000 plugins (and would love your support adding more)
+* support plugins for `bash`, `zsh`, and `fish`
+* let you configure plugins after installing them (see above video)
+* auto-sync your plugins across your devices
 
-2. Clone your forked repo and create a plugin
-
-```bash
-# Replace `YOUR_GITHUB_USERNAME` with your own github username
-git clone https://github.com/YOUR_GITHUB_USERNAME/plugins.git fig-plugins
-cd fig-plugins
-
-# Add withfig/plugins as a remote
-git remote add upstream https://github.com/withfig/plugins.git
-
-# Install packages
-npm install
-```
-
-3. See the details on how to create a basic plugin [here](docs/plugins_schema.md)
 
 <br/>
 
-## 📦 Other available package.json commands
 
-```bash
+## 😎 Contribute
 
-# Typecheck all plugins in the src/ folder
-npm test
+Plugins are a simple _declarative_ schema that define
+* metadata (e.g. name, description, URLs, images,...)
+* installation instructions (e.g. relevant files and GitHub repo)
+* available configurations (e.g. env variables to customise settings)
 
-# Compile typescripts specs from src/ folder to dist/ folder
-npm run build
+You can contribute your first plugin to the store in < 2 minutes (we make it really easy)
 
-```
+👉 Check out our [Plugin Contribution Getting Started Guide](./docs/getting_started.md) to get started
 
-## 🔥 Contributions
-We would love contributions for:
-* new shell plugins
-* errors with existing plugins (e.g. wrong sourced file, outdated config, etc)
-* new configs so plugins can be easily configured
 
-If you aren't able to contribute, please feel free to open an [issue](https://github.com/withfig/plugins/issues/new/choose).
+
+
+<br />
 
 ## 😊 Need Help?
 
-<p align="center">
+<table align="center">
+<tbody>
+<tr>
+<td align="center" style="padding: 10px;">
+    Create GitHub Issue 
+<br/>
+<a href="https://github.com/withfig/plugins/issues/new">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="80px" height="80px" /> 
+</a>
+</td>
+
+<td align="center" style="padding: 10px;">
     Join our community
 <br/>
 <a href="https://fig.io/community">
     <img src="http://fig.io/icons/discord-logo-square.png" width="80px" height="80px" /> 
 </a>
-</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## 🙋‍♀️ FAQ
 
-#### What shells do plugins work with?
-
-Currently plugins support Bash, ZSH, and Fish. If there is a shell we don't support please create an feature request at [withfig/fig](https://github.com/withfig/fig)
+#### What is Fig?
+[Fig](https://fig.io) makes developers more productive in the terminal. We build apps like [autocomplete](https://github.com/withfig/autocomplete), [dotfiles](desktop.fig.io/dotfiles.gif) (coming soon), and now Plugins.
 
 #### How do plugins work?
 
-When you install Fig there are lines added to your shell config files that add the plugins in when your shell starts.
+Plugins are installed to a directory on your local device. When you install Fig, we add lines to your shell config that sources files in this directory.
 
 #### Do Plugins work on Windows or Linux?
 
@@ -108,6 +99,7 @@ Currently, Plugins is only available on MacOS, there is a beta for Linux coming 
 #### How can I download Fig?
 
 Run `brew install fig` or by downloading the app at [fig.io/download](https://fig.io/download).
+
 
 #### Did we miss something?
 
