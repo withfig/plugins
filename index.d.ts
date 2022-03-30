@@ -127,12 +127,13 @@ declare namespace Fig {
     compile?: DotfileCompiler<{ value: V }, CompilationResult>;
   }
 
+  type EnvironmentVariableValue = string | string[];
   type EnvironmentVariableItemForType<V, U extends UIType> = (
     ConfigurationItemInterface<V, {
-      value: string | string[],
+      value: EnvironmentVariableValue,
       concat?: boolean,
       export?: boolean
-    } | string | string[]>
+    } | EnvironmentVariableValue>
     & UI<V, U>
     & { environmentVariable: string, type: "environmentVariable" }
   );
