@@ -81,18 +81,16 @@ declare namespace Fig {
   type SelectUI<T> = {
     interface: "select";
     value: T;
-  } & (
-    | { default: T; options: Suggestions<T[]> }
-    | { default?: T; options: Suggestions<NonEmpty<T[]>> }
-  )
+    default: T;
+    options: Suggestions<T[]>;
+  }
 
   type TextUI<T> = {
     interface: "text";
     value: T;
-  } & (
-    | { default: T; options?: Suggestions<T[]> }
-    | { default?: T; options: Suggestions<NonEmpty<T[]>> }
-  )
+    default: T;
+    options?: Suggestions<T[]>;
+  }
 
   interface BasicUI<T, U extends UIType> {
     interface: U;
@@ -103,18 +101,18 @@ declare namespace Fig {
   // Get all ui's that support a value type of T.
   // This enforces that, e.g. you can only use booleans with a toggle/checkbox UI.
   // Gets all valid UIs that satisfy { value: T, interface: S }
-  type UI<V, U extends UIType = UIType> = Omit<Extract<
+  type UI<V, U extends UIType = UIType> =
+    Omit<Extract<
     | MultiselectUI<V>
     | SelectUI<V>
     | BasicUI<boolean, "checkbox" | "toggle">
-    | TextUI<string>
-    | TextUI<number>,
+    | TextUI<number>
+    | TextUI<string>,
     { value: V, interface: U }
   >, "value">
 
   // Interface common to Configuration *items* and Configuration groups (which contain configuration items)
   interface ConfigurationInterface {
-    /** */
     displayName?: string;
     description?: string;
     additionalDetails?: string;
@@ -122,31 +120,24 @@ declare namespace Fig {
     disabled?: ConfigurationGenerator<boolean>;
   }
 
-  interface ConfigurationItemInterface<V, CompilationResult> extends ConfigurationInterface {
+  type EnvironmentVariableValue = string | string[];
+  type CompiledEnvironmentVariable = {
+    value: EnvironmentVariableValue,
+    concat?: boolean,
+    export?: boolean
+  } | EnvironmentVariableValue;
+  type EnvironmentVariableItemForType<V, U extends UIType> = ConfigurationInterface & UI<V, U> & {
+    type: "environmentVariable";
+    environmentVariable: string;
     name?: string;
-    compile?: DotfileCompiler<{ value: V }, CompilationResult>;
+    compile?: DotfileCompiler<{ value: V }, CompiledEnvironmentVariable>
   }
 
-  type EnvironmentVariableValue = string | string[];
-  type EnvironmentVariableItemForType<V, U extends UIType> = (
-    ConfigurationItemInterface<V, {
-      value: EnvironmentVariableValue,
-      concat?: boolean,
-      export?: boolean
-    } | EnvironmentVariableValue>
-    & UI<V, U>
-    & { environmentVariable: string, type: "environmentVariable" }
-  );
-
-  type ScriptItemForType<V, U extends UIType> = (
-    & ConfigurationItemInterface<V, string>
-    & UI<V, U>
-    & {
-        name: string;
-        type: "script";
-        compile: DotfileCompiler<{ value: V }, string>
-      }
-  );
+  type ScriptItemForType<V, U extends UIType> = ConfigurationInterface & UI<V, U> & {
+    name: string;
+    type: "script";
+    compile: DotfileCompiler<{ value: V }, string>
+  }
 
   type ScriptItem = (
     | ScriptItemForType<string[], "multiselect">

@@ -230,17 +230,6 @@ const plugin: Fig.Plugin = {
         : "",
     },
     {
-      name: "nix-shell-in-prompt",
-      displayName: "[Nix Shell] Enable Shell Name In Prompt",
-      type: "script",
-      description: "When using nix-shell integration, add the shell name to the prompt.",
-      default: true,
-      interface: "toggle",
-      compile: ({ value }: { value: boolean }) => !value
-        ? "zstyle :prompt:pure:environment:nix-shell show no"
-        : "",
-    },
-    {
       displayName: "Color",
       configuration: [{
         name: "load-zsh-nearcolor",
