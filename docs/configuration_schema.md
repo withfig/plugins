@@ -13,34 +13,44 @@ Declaration: `configuration?: (ConfigurationItem | ConfigurationGroup)[];
 
 ## `ConfigurationItem`
 
-A `ConfigurationItem` can be one of two varients, `ScriptItem` or 
-`EnvironmentVariableItem`, they both also have the elements of [`Ui`](#ui) and
+A `ConfigurationItem` can be one of two varients, `EnvironmentVariableItem` or 
+`ScriptItem`, they both also have the elements of [`Ui`](#ui) and
 [`ConfigurationInterface`](#configurationinterface)
 
+### `EnvironmentVariableItem`
 
-```typescript
 
-```
+      value: string,
+      concat?: boolean,
+      export?: boolean
+ 
 
 ### `ScriptItem`
-
-
-### `EnvironmentVariableItem`
 
 
 ---
 
 ## `ConfigurationInterface`
 
+- `displayName`: The name of the configuration item, this is what is displayed
+  to the user
+
+- `description`: A description of the configuration item, this should be relatively short
+
+- `additionalDetails`: Additional information about the configuration item
+
+- `hidden`: Whether or not the configuration item is hidden based on a [`ConfigurationGenerator<bool>`](#configurationgenerator)
+
+- `disabled`: Whether or not the configuration item is disabled based on a [`ConfigurationGenerator<bool>`](#configurationgenerator)
+
 ```typescript
 interface ConfigurationInterface {
   displayName?: string;
-  description: string;
-  details?: string;
+  description?: string;
+  additionalDetails?: string;
   hidden?: ConfigurationGenerator<boolean>;
   disabled?: ConfigurationGenerator<boolean>;
 }
-
 ```
 
 ---

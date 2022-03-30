@@ -2,12 +2,14 @@
 declare namespace Fig {
   /** Local device context about a plugin */
   interface PluginContext {
+    /** The directory the plugin was installed in */
     installDirectory: string;
   }
 
   /** Context used to generate shell source code in a dotfile  */
   interface DotfileCompilationContext {
     plugin: PluginContext;
+    /** The shell the plugin is being compiled for */
     shell: Shell;
   }
 
@@ -19,6 +21,7 @@ declare namespace Fig {
   /** DeviceEnvironment mediates queries about the local device environment */
   interface DeviceEnvironment {
     plugin: PluginContext;
+    /** A function to list the directories in a folder */
     listFolder: (path: string) => Promise<string[]>;
   }
 
@@ -32,10 +35,20 @@ declare namespace Fig {
   }
 
   type PluginOrigin = "github" | { github: string; };
+
+  type BinaryDependency = {
+    type: "binary";
+    name: string;
+  };
+  type Dependency = BinaryDependency;
+
   type Installation = PluginInstallation & {
     [key in Shell]?: PluginInstallation;
   } & {
+    /** The origin of the plugin */
     origin: PluginOrigin;
+    /** Specify any dependencies the plugin has */
+    dependencies?: Dependency[];
   };
 
   /** Current value of a field in a plugin configuration. */
@@ -54,73 +67,84 @@ declare namespace Fig {
     | "checkbox"
     | "toggle"
 
-  /** A UI augmented with suggestions that can be static or dynamically
-   * generated from the user's environment
-   */
-  interface SuggestionUI<T> {
-    uiType: UIType;
-    options?: T[] | DeviceConfigurationGenerator<T[]>;
-  }
+  type NonEmpty<T extends unknown[]> = T & { 0: T[number] };
+  type Suggestions<T extends unknown[]> = T | DeviceConfigurationGenerator<T>;
 
   // Multiselect UI item type
-  interface MultiselectUI<T extends unknown[]> extends SuggestionUI<T[number]> {
-    uiType: "multiselect";
+  type MultiselectUI<T> = T extends unknown[] ? {
+    interface: "multiselect";
     default: T[number] | T;
-  }
+    options: Suggestions<T>;
+    value: T;
+  } : never;
 
-  interface BasicSuggestionUI<T, U extends UIType> extends SuggestionUI<T> {
-    uiType: U;
-    default: T;
-  }
+  type SelectUI<T> = {
+    interface: "select";
+    value: T;
+  } & (
+    | { default: T; options: Suggestions<T[]> }
+    | { default?: T; options: Suggestions<NonEmpty<T[]>> }
+  )
+
+  type TextUI<T> = {
+    interface: "text";
+    value: T;
+  } & (
+    | { default: T; options?: Suggestions<T[]> }
+    | { default?: T; options: Suggestions<NonEmpty<T[]>> }
+  )
 
   interface BasicUI<T, U extends UIType> {
-    uiType: U;
+    interface: U;
     default: T;
+    value: T;
   }
 
   // Get all ui's that support a value type of T.
   // This enforces that, e.g. you can only use booleans with a toggle/checkbox UI.
-  type UIsWithValueType<T> = T extends infer A ? (
-    | A extends unknown[] ? MultiselectUI<A> : never
-    | A extends boolean ? BasicUI<A, "checkbox" | "toggle"> : never
-    | A extends string ? BasicSuggestionUI<A, "select" | "text"> : never
-    | A extends number ? BasicSuggestionUI<A, "select" | "text"> : never
-    | BasicSuggestionUI<A, "select">
-  ) : never;
-
-  // Gets all valid UIs that satisfy { value: T, uiType: S }
-  type UI<T, S extends UIType = UIType> = Extract<UIsWithValueType<T>, { uiType: S }>
+  // Gets all valid UIs that satisfy { value: T, interface: S }
+  type UI<V, U extends UIType = UIType> = Omit<Extract<
+    | MultiselectUI<V>
+    | SelectUI<V>
+    | BasicUI<boolean, "checkbox" | "toggle">
+    | TextUI<string>
+    | TextUI<number>,
+    { value: V, interface: U }
+  >, "value">
 
   // Interface common to Configuration *items* and Configuration groups (which contain configuration items)
   interface ConfigurationInterface {
+    /** */
     displayName?: string;
-    description: string;
-    details?: string;
+    description?: string;
+    additionalDetails?: string;
     hidden?: ConfigurationGenerator<boolean>;
     disabled?: ConfigurationGenerator<boolean>;
   }
 
-  interface ConfigurationItemInterface<T, S> extends ConfigurationInterface {
+  interface ConfigurationItemInterface<V, CompilationResult> extends ConfigurationInterface {
     name?: string;
-    compile?: DotfileCompiler<{ value: T }, S>;
+    compile?: DotfileCompiler<{ value: V }, CompilationResult>;
   }
 
-  type EnvironmentVariableItemForType<T, S extends UIType> = (
-    ConfigurationItemInterface<T, {
-      value: string,
+  type EnvironmentVariableValue = string | string[];
+  type EnvironmentVariableItemForType<V, U extends UIType> = (
+    ConfigurationItemInterface<V, {
+      value: EnvironmentVariableValue,
       concat?: boolean,
       export?: boolean
-    } | string>
-    & UI<T, S>
-    & { environmentVariable: string; }
+    } | EnvironmentVariableValue>
+    & UI<V, U>
+    & { environmentVariable: string, type: "environmentVariable" }
   );
 
-  type ScriptItemForType<T, S extends UIType> = (
-    ConfigurationItemInterface<T, string>
-    & UI<T, S>
+  type ScriptItemForType<V, U extends UIType> = (
+    & ConfigurationItemInterface<V, string>
+    & UI<V, U>
     & {
         name: string;
-        compile: DotfileCompiler<{ value: T }, string>
+        type: "script";
+        compile: DotfileCompiler<{ value: V }, string>
       }
   );
 
@@ -145,7 +169,9 @@ declare namespace Fig {
     | EnvironmentVariableItem
 
   interface ConfigurationGroup extends ConfigurationInterface {
+    /** The name of the group to display in the interface */
     displayName: string;
+    /** The children configuration items that are a part of the group */
     configuration: ConfigurationItem[]
   }
 
@@ -185,6 +211,8 @@ declare namespace Fig {
     description?: string;
     /** The icon for the plugin */
     icon?: string;
+    /** Screenshots displayed in carousel in Fig plugin store */
+    screenshots?: string[];
     /** The site for the plugin */
     site?: string;
     /** The docs for the plugin */

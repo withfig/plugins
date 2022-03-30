@@ -9,9 +9,10 @@
     "strict": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
-    "declaration": true
+    "declaration": true,
+    "noErrorTruncation":true
   },
-  "exclude": ["node_modules/", "src/update-plugins.ts"],
-  "include": ["src/**/*", "index.d.ts"],
+  "exclude": ["node_modules/", "util/update-plugins.ts"],
+  "include": ["index.d.ts", "plugins/**/*", "util/**/*"],
   "types": ["index.d.ts"]
 }
