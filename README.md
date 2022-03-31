@@ -4,8 +4,6 @@
 </p>
 
 ---
-# The Fig Plugin Store
-
 ![os](https://img.shields.io/badge/os-%20macOS-light)
 [![Signup](https://img.shields.io/badge/signup-public%20beta-blueviolet)](https://fig.io?ref=github_autocomplete)
 [![Documentation](https://img.shields.io/badge/documentation-black)](https://fig.io/docs/)
