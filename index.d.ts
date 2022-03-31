@@ -197,7 +197,7 @@ declare namespace Fig {
     /** The name of the plugin used in UI if defined */
     displayName?: string;
     /** The plugin type */
-    type: PluginType;
+    type?: PluginType;
     /** A description of the plugin */
     description?: string;
     /** The icon for the plugin */
