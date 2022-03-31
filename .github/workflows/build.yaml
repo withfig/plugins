@@ -40,6 +40,9 @@ jobs:
           access: public
           token: ${{ secrets.NPM_PUBLISH_TOKEN }}
       - name: Rebuild Index
-        run: npm run update-plugins -- $(git diff --name-only origin/main HEAD -- src/plugins/**/*.ts)
+        run: |
+          npm run update-plugins -- \
+            $(git diff --name-only origin/main HEAD -- plugins/**/*.ts) \
+            $(git diff --name-only origin/main HEAD -- plugins/**/*.md)
         env:
           PLUGINS_UPDATE_TOKEN: ${{ secrets.PLUGINS_UPDATE_TOKEN }}
