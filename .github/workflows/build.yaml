@@ -3,7 +3,7 @@ name: Build and release plugins
 on:
   push:
     paths:
-      - "src/**/*.ts"
+      - "plugins/**/*"
       - "index.d.ts"
       - "!package.json"
     branches:
