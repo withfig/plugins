@@ -5,12 +5,11 @@ const plugin: Fig.Plugin = {
     license: ["MIT"],
     description: "Type git open to open the repo website (GitHub, GitLab, Bitbucket) in your browser",
     shells: ["zsh"],
-    keywords: [
-        "git"
-      ],
+    keywords: ["git"],
+    categories: ["Convenience Function"],
     installation: {
         origin: "github",
-        sourceFiles: "git-open",
-  },
+        sourceFiles: "git-open.plugin.zsh,
+    },
 }
 export default plugin;
