@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
   github: "g-plane/zsh-yarn-autocompletions",
   license: ["MIT"],
   shells: ["bash", "zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: [
     "zsh-plugin",
     "yarn",

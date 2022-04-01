@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
   ],
   github: "Dabz/kafka-zsh-completions",
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["kafka.plugin.zsh"],

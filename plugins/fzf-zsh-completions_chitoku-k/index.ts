@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   github: "chitoku-k/fzf-zsh-completions",
   license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: [
     "fzf",
     "zsh-plugin",

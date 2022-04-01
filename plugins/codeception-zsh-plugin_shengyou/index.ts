@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
   github: "shengyou/codeception-zsh-plugin",
   license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["codeception.plugin.zsh"],

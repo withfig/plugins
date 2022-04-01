@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   github: "coot/zsh-haskell",
   license: ["MPL-2.0"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: [
     "zsh-completions",
     "zsh",

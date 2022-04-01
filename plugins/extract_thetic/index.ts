@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
   ],
   github: "thetic/extract",
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["extract.plugin.zsh"],

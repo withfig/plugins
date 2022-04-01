@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   github: "sirhc/op.plugin.zsh",
   license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["op.plugin.zsh"],

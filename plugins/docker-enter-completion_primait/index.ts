@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   github: "primait/docker-enter-completion",
   license: ["ISC"],
   shells: ["bash", "zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     bash: {

@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   ],
   github: "Schnouki/git-annex-zsh-completion",
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["git-annex.plugin.zsh"],

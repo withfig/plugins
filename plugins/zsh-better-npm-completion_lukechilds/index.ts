@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
   github: "lukechilds/zsh-better-npm-completion",
   license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: [
     "zsh",
     "zsh-plugin",

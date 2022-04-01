@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   github: "dim-an/cod",
   license: ["Apache-2.0"],
   shells: ["bash", "zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: [
     "shell",
     "completion",

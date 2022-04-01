@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
   ],
   github: "felixr/docker-zsh-completion",
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["docker-zsh-completion.plugin.zsh"],

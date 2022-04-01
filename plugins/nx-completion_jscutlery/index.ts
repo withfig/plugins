@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
   github: "jscutlery/nx-completion",
   license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: [
     "zsh",
     "zsh-plugin",

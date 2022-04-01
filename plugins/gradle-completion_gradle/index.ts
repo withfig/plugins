@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
   github: "gradle/gradle-completion",
   license: ["MIT"],
   shells: ["bash", "zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: [
     "zsh-completion",
     "bash-completion",

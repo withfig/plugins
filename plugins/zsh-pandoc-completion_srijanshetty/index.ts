@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
   github: "srijanshetty/zsh-pandoc-completion",
   license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: [
     "pandoc",
     "pandoc-completion",

@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
   ],
   github: "ninrod/pass-zsh-completion",
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: [
     "zsh",
     "plugin",

@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
   github: "MenkeTechnologies/zsh-cargo-completion",
   license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-cargo-completion.plugin.zsh"],

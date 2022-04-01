@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   github: "wadewegner/salesforce-cli-zsh-completion",
   license: ["Apache-2.0"],
   shells: ["bash", "zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     bash: {

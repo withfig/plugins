@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   github: "le0me55i/zsh-extract",
   license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["extract.plugin.zsh"],

@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   github: "mbhynes/fzf-gcloud",
   license: ["GPL-3.0"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["fzf-gcloud.plugin.zsh"],

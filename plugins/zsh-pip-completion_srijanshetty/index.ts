@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
   github: "srijanshetty/zsh-pip-completion",
   license: ["NOASSERTION"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-pip-completion.plugin.zsh"],

@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
   ],
   github: "gangleri/pipenv",
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: [
     "oh-my-zsh-plugin",
     "pipenv",

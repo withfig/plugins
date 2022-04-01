@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   github: "vasyharan/zsh-brew-services",
   license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-brew-services.plugin.zsh"],

@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
   license: ["GPL-3.0"],
   site: "https://github.com/horosgrisa/zsh-dropbox",
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: [
     "zsh",
     "dropbox-plugin",

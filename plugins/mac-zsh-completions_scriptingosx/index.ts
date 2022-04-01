@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   github: "scriptingosx/mac-zsh-completions",
   license: ["Apache-2.0"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: [
     "zsh",
     "zsh-completions",

@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   github: "owenstranathan/pipenv.zsh",
   license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["pipenv.plugin.zsh"],

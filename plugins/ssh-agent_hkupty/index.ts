@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   ],
   github: "hkupty/ssh-agent",
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: [
     "ssh-agent",
     "zsh-plugin",

@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
   github: "MenkeTechnologies/zsh-more-completions",
   license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-more-completions.plugin.zsh"],

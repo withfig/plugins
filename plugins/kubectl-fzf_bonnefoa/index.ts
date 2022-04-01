@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   github: "bonnefoa/kubectl-fzf",
   license: ["MIT"],
   shells: ["bash", "zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: [
     "fzf",
     "kubernetes",

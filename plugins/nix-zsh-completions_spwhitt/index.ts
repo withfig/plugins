@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   github: "spwhitt/nix-zsh-completions",
   license: ["BSD-3-Clause"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["nix-zsh-completions.plugin.zsh"],

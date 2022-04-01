@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
   license: ["Apache-2.0"],
   site: "https://github.com/graalvm/mx",
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: [
     "mx",
     "zsh",

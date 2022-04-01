@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
   ],
   github: "berkshelf/berkshelf-zsh-plugin",
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["berkshelf.plugin.zsh"],

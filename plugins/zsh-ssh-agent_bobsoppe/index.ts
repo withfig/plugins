@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   github: "bobsoppe/zsh-ssh-agent",
   license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: [
     "zsh",
     "zsh-plugin",

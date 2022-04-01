@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
   ],
   github: "pkulev/zsh-rustup-completion",
   shells: ["bash", "zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: [
     "zsh",
     "zsh-completion",

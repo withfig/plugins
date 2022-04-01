@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   ],
   github: "srijanshetty/gulp-autocompletion-zsh",
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["gulp-autocompletion.plugin.zsh"],

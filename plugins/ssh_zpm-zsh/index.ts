@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   github: "zpm-zsh/ssh",
   license: ["GPL-3.0"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["ssh.plugin.zsh"],

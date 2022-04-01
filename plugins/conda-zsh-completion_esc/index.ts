@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
   github: "esc/conda-zsh-completion",
   license: ["WTFPL"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["conda-zsh-completion.plugin.zsh"],

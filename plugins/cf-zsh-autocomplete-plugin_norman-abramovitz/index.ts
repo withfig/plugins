@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   github: "norman-abramovitz/cf-zsh-autocomplete-plugin",
   license: ["Apache-2.0"],
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["cf-zsh-autocomplete-plugin.plugin.zsh"],

@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
   ],
   github: "akoenig/gulp.plugin.zsh",
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["gulp.plugin.zsh"],

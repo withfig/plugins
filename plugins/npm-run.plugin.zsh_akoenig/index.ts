@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
   ],
   github: "akoenig/npm-run.plugin.zsh",
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["npm-run.plugin.zsh"],

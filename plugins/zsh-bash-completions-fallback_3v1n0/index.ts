@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   github: "3v1n0/zsh-bash-completions-fallback",
   license: ["LGPL-3.0"],
   shells: ["bash", "zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   keywords: [
     "zsh",
     "bash",

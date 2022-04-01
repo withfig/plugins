@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
   ],
   github: "CodeMonkeyMike/ZshTheme-CodeMachine",
   shells: ["zsh"],
-  categories: ["Compleation"],
+  categories: ["Completion"],
   installation: {
     origin: "github",
     sourceFiles: ["codemachine.zsh-theme"],
