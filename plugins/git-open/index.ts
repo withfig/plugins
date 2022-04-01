@@ -9,7 +9,7 @@ const plugin: Fig.Plugin = {
     categories: ["Convenience Function"],
     installation: {
         origin: "github",
-        sourceFiles: "git-open.plugin.zsh,
+        sourceFiles: "git-open.plugin.zsh",
     },
 }
 export default plugin;
