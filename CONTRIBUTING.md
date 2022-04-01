@@ -1,62 +1,88 @@
-# Overview
+# Contributing Guide
+This guide will help you set up the Fig development environment & write your first plugin spec in < 2 minutes.
+
+## Overview
 
 A plugin spec is comprised of three components:
 
-1. **Metadata**: any information that should be displayed in the Plugin Store. This includes details like the plugin author, a title, a description, screenshots, keywords and more.
-2. **Installation**. Fig manages installing plugins on behalf of the user. Therefore, a plugin must define how to download the plugin and what changes need to be made to a user's dotfiles.
-3. **Configuration**: Plugins are often customizable. A plugin spec defines all of the options that can be modified by a user, how they should be displayed and how they should be 'compiled' to a shell script. 
+1. **[Metadata](plugins_schema.md)**: Information that is displayed in the "Summary" tab of a Plugin's preview page. This includes details like the plugin author, title, description, screenshots, keywords etc
+2. **[Installation](installation_schema.md)**:  The steps that Fig must take to download and install a plugin on behalf a user. This includes where the plugin should be installed from (e.g. which GitHub repo), which specific files should be downloaded, and what information needs to be soruced in a user's dotfiles.
+3. **[Configuration](configuration_schema.md)**: All of the settings/options for a plugin that can be modified by a user. Each configuration lets you customize how it should be displayed (e.g. an input box, checkbox, or multiselect), what the default is, and how it should be compiled to a shell script. These configurations are displayed in the "Configuration" tab of the Plugin's preview page. 
 
 
-
-# Getting Started
-
-**Prerequisites:**
-
--  Fork, clone & configure Plugins upstream
-
-  - Click on the _Fork_ button on GitHub
-  - Clone your fork
-  - Add the upstream repository as a new remote
-
-  ```sh
-  # Clone repository
-  git clone https://github.com/$YOUR_GITHUB_USER/plugins.git
-  
-  # Add upstream origin
-  git remote add upstream git@github.com:withfig/plugins.git
-  ```
-
-- `node` & `npm` or`yarn`
+Please click on the links above for the full schema and descriptions for each
 
 
+## Getting Started
 
-**Adding a new plugin**:
+**Prerequisites**
 
-1. Create a new folder with the name of your plugin
+- Node.js and `npm` or `yarn`
 
-   > Make sure to review [these guidelines]() when naming your plugin.
 
-2. Change directories into that folder. 
+### Set up repository
 
-3. Create a `README.md`. 
-
-   > This document will appear in the Plugin Store. It should summarize what the plugin does and highlight any important features.
-   >
-   > **It should not** include instructions on how to install the plugin as this is handled by Fig.
-
-4. Create an `index.ts`. 
-
-   > This `index.ts` is the entrypoint to your plugin. 
+<p>1. Create your own copy of <a href="https://github.com/withfig/plugins">withfig/plugins</a> by forking the repository. <iframe className="ml-1 mt-4" src="https://ghbtns.com/github-btn.html?user=withfig&repo=plugins&type=fork&count=false&size=large" frameBorder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
+</p>
 
 ---
 
-#### Metadata
+2. Once you have created your own fork, clone the repo to your local machine.
 
-All metadata is defined at the top-level of the Plugin spec.
+Make sure to replace `YOUR_GITHUB_USERNAME` with your actual username.
+
+```bash
+git clone https://github.com/YOUR_GITHUB_USERNAME/plugins.git fig-plugins
+```
+
+3. Link your fork back to the upstream repo so you can pull the latest updates and contribute changes back.
+
+```bash
+cd fig-plugins
+git remote add upstream https://github.com/withfig/plugins.git
+```
+
+4. Finally, you'll need to install dependencies.
+
+```bash
+npm install
+```
+
+
+
+### Adding a new plugin
+
+1. Go to the `plugins/` directory and create a new folder. Name the folder the same name as your plugin
+
+   > Make sure the name is unique, descriptive, and not 
+
+2. In that folder: 
+  1. Create an `index.ts` file 
+
+   > This `index.ts` is the schema for your plugin.
+
+  2. Create a `README.md`
+
+   > This document will appear in the Plugin Store under the "Summary" tab. It should summarize what the plugin does and highlight any important features.
+   >
+   > **It should not** include instructions on how to install the plugin as this is handled by Fig.
+
+  3. Create an `images/` directory
+
+   > This where you will store images and screenshots of your plugin in action
+
+---
+
+### Add Metadata to your Plugin
+
+All metadata is defined at the top-level of the Plugin spec. You can see all the metadata fields and their descriptions [here](plugins_schema.md)
+
+Here is a dummy example
 
 ```tsx
 const plugin: Fig.Plugin = {
     name: "my-new-plugin",
+    displayName: "My New Plugin",
     github: "withfig/my-new-plugin",
     description: "A one-line description of what this plugin does",
  		screenshots: ["images/example.png", "images/another-example.png"]
@@ -72,20 +98,17 @@ export default plugin;
 **Note:** the value of `name` must match the folder that contains the `index.ts` file.
 
 
+### Adding `Installation` to a Plugin
 
-> See "Reference" for documentation on all of the possible metadata fields that can be added to a plugin.
+When a user installs a plugin using Fig, the relevant scripts are downloaded to the user's device and changes are made to the user's dotfiles. Fig handles the downloading and sourcing, you just need to tell us where to download from and what we need to source!
 
-
-
-#### Installation
-
-When a user installs a plugin using Fig, the relevant scripts are downloaded to the user's device and changes are made to the user's dotfiles.
+You can see everything related to installation in our [installation docs](installation_schema.md) or follow the dummy example below.
 
 ##### Downloading Plugin Scripts
 
 If your plugin is hosted on GitHub, add the name of the repo to the `github` field. Then in the `installation`  block, set `origin` to `"github"`.
 
-You can then specify what files from this repo should be sourced, using the `sourceFiles` field.
+You can then specify what files from this repo should be sourced, using the `sourceFiles` field. Most of the time this is the main `.sh`, `.zsh` or `.bash` file in the repo.
 
 ```tsx
 const plugin: Fig.Plugin = {
@@ -104,13 +127,15 @@ export default plugin;
 >
 >  Alternatively, you can include any necessary shell scripts inline in your `index.ts` file.
 
-##### Modifying Dotfiles
+##### Modifying a User's Dotfiles
 
 Sometimes plugins must add other inline shell script directly to files like `~/.bashrc` and `~/.zshrc`. 
 
 For example, `oh-my-zsh` sets the `ZSH` environment variable to the directory where it was installed. (Normally, ~/.oh-my-zsh).
 
-This behavior can be preserved by defining `postScript` using a function, rather than a static script.
+You can add such shell scripts to the user's dotfiles before the plugin is sourced using `preScript` and after it is sourced using the `postScript` prop. 
+
+Both `preScript` and `postScript` can be strings, an array of strings, or a function that takes one argument of type [DotfileCompilationContext](installation_schema.md#dotfilecompilationcontext)
 
 ```tsx
 const plugin: Fig.Plugin = {
@@ -126,9 +151,6 @@ const plugin: Fig.Plugin = {
 }
 ```
 
-Note that `sourceFiles`, `preScript` and `postScript` can all be defined statically or using a function.
-
-The context value includes other information
 
 ##### Shell-specific Installation
 
@@ -154,10 +176,14 @@ Installation fields included at the top-level are overridden if the same field i
 
 
 
-#### Configuration
+### Configuration
 
-Fig provides a user interface that allows users to customize the behavior of shell plugins without editing their dotfiles. This interface is defined by a list of configuration items. 
+Fig provides a UI that allows users to customize the behavior of shell plugins all from within the Fig app. This interface is defined by a list of configuration items. 
 
+You can see everything related to configuration in our [configuration docs](configuration_schema.md) or follow the dummy example below.
+
+
+#### Understanding Configuration Items
 For every option that a user can customize, the plugin should define a corresponding configuration item.
 
 You can think of a configuration item as a **mediator between a frontend UI component and a shell script.** You will specify:
@@ -175,6 +201,7 @@ You can think of a configuration item as a **mediator between a frontend UI comp
 2. How this item should be converted to a shell script or environment variable?
 
 
+#### Configuration Types
 
 ##### Environment Variables
 
@@ -201,7 +228,6 @@ const plugin: Fig.Plugin = {
     ]
 }
 ```
-
 
 
 Here we've defined a configuration item that represents an environment variable. It will compile down to a line of text that looks something like this:
@@ -245,3 +271,11 @@ Since scripts have much more variety than environment variables, we need to defi
 
 
 
+
+## Contribute
+Once you've made your changes, Contribute!!
+
+While we flesh out our docs for withfig/plugins, we recommend you follow the contribution page for our autocomplete repo: https://fig.io/docs/getting-started/contributing (just replace `autocomplete` with `plugins`)
+
+
+This repo is still early. If you have any feedback, please create an issue or join our Discord: fig.io/community 

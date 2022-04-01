@@ -50,7 +50,7 @@ Plugins are a simple _declarative_ schema that define
 
 You can contribute your first plugin to the store in < 2 minutes (we make it really easy)
 
-👉 Check out our [Plugin Contribution Getting Started Guide](./docs/getting_started.md) to get started
+👉 Check out our [Plugin Contribution Getting Started Guide](./CONTRIBUTING.md) to get started
 
 
 
