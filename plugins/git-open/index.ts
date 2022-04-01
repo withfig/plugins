@@ -8,7 +8,6 @@ const plugin: Fig.Plugin = {
     keywords: [
         "git"
       ],
-		/* ... */
     installation: {
         origin: "github",
         sourceFiles: "git-open",
