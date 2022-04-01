@@ -6,9 +6,9 @@ This guide will help you set up the Fig development environment, write your firs
 
 A plugin spec is a _declarative_ schema comprised of three components:
 
-1. **[Metadata](plugins_schema.md)**: Information that is displayed in the "Summary" tab of a Plugin's preview page. This includes details like the plugin author, title, description, screenshots, keywords etc
-2. **[Installation](installation_schema.md)**:  The steps that Fig must take to download and install a plugin on behalf a user. This includes where the plugin should be installed from (e.g. which GitHub repo), which specific files should be downloaded, and what information needs to be soruced in a user's dotfiles.
-3. **[Configuration](configuration_schema.md)**: All of the settings/options for a plugin that can be modified by a user. Each configuration lets you customize how it should be displayed (e.g. an input box, checkbox, or multiselect), what the default is, and how it should be compiled to a shell script. These configurations are displayed in the "Configuration" tab of the Plugin's preview page. 
+1. **[Metadata](docs/plugins_schema.md)**: Information that is displayed in the "Summary" tab of a Plugin's preview page. This includes details like the plugin author, title, description, screenshots, keywords etc
+2. **[Installation](docs/installation_schema.md)**:  The steps that Fig must take to download and install a plugin on behalf a user. This includes where the plugin should be installed from (e.g. which GitHub repo), which specific files should be downloaded, and what information needs to be soruced in a user's dotfiles.
+3. **[Configuration](docs/configuration_schema.md)**: All of the settings/options for a plugin that can be modified by a user. Each configuration lets you customize how it should be displayed (e.g. an input box, checkbox, or multiselect), what the default is, and how it should be compiled to a shell script. These configurations are displayed in the "Configuration" tab of the Plugin's preview page. 
 
 
 Please click on the links above for the full schema and descriptions for each.
@@ -78,7 +78,7 @@ npm install
 
 ### Add Metadata to your Plugin
 
-All metadata is defined at the top-level of the Plugin spec. You can see all the metadata fields and their descriptions [here](plugins_schema.md)
+All metadata is defined at the top-level of the Plugin spec. You can see all the metadata fields and their descriptions [here](docs/plugins_schema.md)
 
 Here is a dummy example
 
@@ -106,7 +106,7 @@ export default plugin;
 
 When a user installs a plugin using Fig, the relevant scripts are downloaded to the user's device and changes are made to the user's dotfiles. Fig handles the downloading and sourcing, you just need to tell us where to download from and what we need to source!
 
-You can see everything related to installation in our [installation docs](installation_schema.md) or follow the dummy example below.
+You can see everything related to installation in our [installation docs](docs/installation_schema.md) or follow the dummy example below.
 
 ##### Downloading Plugin Scripts
 
@@ -186,7 +186,7 @@ Installation fields included at the top-level are overridden if the same field i
 
 Fig provides a UI that allows users to customize the behavior of shell plugins all from within the Fig app. This interface is defined by a list of configuration items. 
 
-You can see everything related to configuration in our [configuration docs](configuration_schema.md) or follow the dummy example below.
+You can see everything related to configuration in our [configuration docs](docs/configuration_schema.md) or follow the dummy example below.
 
 
 #### Understanding Configuration Items
