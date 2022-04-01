@@ -1,16 +1,17 @@
-# Contributing Guide
-This guide will help you set up the Fig development environment & write your first plugin spec in < 2 minutes.
+# 😎 Contributing Guide
 
-## Overview
+This guide will help you set up the Fig development environment, write your first plugin spec, and contribute it! 🚀
 
-A plugin spec is comprised of three components:
+## Plugin Spec Overview
+
+A plugin spec is a _declarative_ schema comprised of three components:
 
 1. **[Metadata](plugins_schema.md)**: Information that is displayed in the "Summary" tab of a Plugin's preview page. This includes details like the plugin author, title, description, screenshots, keywords etc
 2. **[Installation](installation_schema.md)**:  The steps that Fig must take to download and install a plugin on behalf a user. This includes where the plugin should be installed from (e.g. which GitHub repo), which specific files should be downloaded, and what information needs to be soruced in a user's dotfiles.
 3. **[Configuration](configuration_schema.md)**: All of the settings/options for a plugin that can be modified by a user. Each configuration lets you customize how it should be displayed (e.g. an input box, checkbox, or multiselect), what the default is, and how it should be compiled to a shell script. These configurations are displayed in the "Configuration" tab of the Plugin's preview page. 
 
 
-Please click on the links above for the full schema and descriptions for each
+Please click on the links above for the full schema and descriptions for each.
 
 
 ## Getting Started
@@ -22,10 +23,12 @@ Please click on the links above for the full schema and descriptions for each
 
 ### Set up repository
 
-<p>1. Create your own copy of <a href="https://github.com/withfig/plugins">withfig/plugins</a> by forking the repository. <iframe className="ml-1 mt-4" src="https://ghbtns.com/github-btn.html?user=withfig&repo=plugins&type=fork&count=false&size=large" frameBorder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
+<p>1. Create your own copy of <a href="https://github.com/withfig/plugins">withfig/plugins</a> by forking the repository. 
+	
+[![GitHub forks](https://img.shields.io/github/forks/withfig/plugins?style=social)](https://github.com/withfig/plugins/fork)
+	
 </p>
 
----
 
 2. Once you have created your own fork, clone the repo to your local machine.
 
@@ -52,12 +55,12 @@ npm install
 
 ### Adding a new plugin
 
-1. Go to the `plugins/` directory and create a new folder. Name the folder the same name as your plugin
+1. Go to the `plugins/` directory and create a new folder
 
-   > Make sure the name is unique, descriptive, and not 
+   > The folder name must be the same name as your plugin `name`. Make sure the name is unique and descriptive. 
 
 2. In that folder: 
-  1. Create an `index.ts` file 
+  1. Create an `index.ts` file. 
 
    > This `index.ts` is the schema for your plugin.
 
@@ -97,6 +100,7 @@ export default plugin;
 
 **Note:** the value of `name` must match the folder that contains the `index.ts` file.
 
+---
 
 ### Adding `Installation` to a Plugin
 
@@ -173,6 +177,8 @@ const plugin: Fig.Plugin = {
 In this example, for `bash` and `zsh`, the `script.sh` file will be sourced. While in `fish`, `script.fish` will be used instead.
 
 Installation fields included at the top-level are overridden if the same field is included in a shell-specific block.
+
+---
 
 
 
@@ -278,4 +284,4 @@ Once you've made your changes, Contribute!!
 While we flesh out our docs for withfig/plugins, we recommend you follow the contribution page for our autocomplete repo: https://fig.io/docs/getting-started/contributing (just replace `autocomplete` with `plugins`)
 
 
-This repo is still early. If you have any feedback, please create an issue or join our Discord: fig.io/community 
+This repo is still early. If you have any feedback, please create an issue or join our Discord: [fig.io/community](https://fig.io/community )
