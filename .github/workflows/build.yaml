@@ -42,8 +42,8 @@ jobs:
       - name: Rebuild Index
         run: |
           npm run update-plugins -- \
-            $(git diff --name-only origin/main HEAD -- plugins/**/*.ts) \
-            $(git diff --name-only origin/main HEAD -- plugins/**/*.md)
+            $(git diff --name-only origin/main origin/main~2 -- plugins/**/*.ts) \
+            $(git diff --name-only origin/main origin/main~2 -- plugins/**/*.md)
         env:
           PLUGINS_UPDATE_TOKEN: ${{ secrets.PLUGINS_UPDATE_TOKEN }}
       - name: Checkout Cache
