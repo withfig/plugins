@@ -26,6 +26,7 @@ const colors = [
 
 const plugin: Fig.Plugin = {
   name: "liquidprompt",
+  icon: "💧",
   type: "shell",
   description:
     "A full-featured & carefully designed adaptive prompt for Bash & Zsh",

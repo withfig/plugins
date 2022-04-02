@@ -1,5 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "powerline-shell_b-ryan",
+  displayName: "powerline-shell",
   type: "shell",
   description: "A beautiful and useful prompt for your shell",
   authors: [

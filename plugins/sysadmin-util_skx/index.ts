@@ -1,5 +1,7 @@
 const plugin: Fig.Plugin = {
   name: "sysadmin-util_skx",
+  displayName: "sysadmin-util",
+  icon: "🧑‍💻",
   type: "shell",
   description: "Tools for Linux/Unix sysadmins.",
   authors: [
