@@ -1,5 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "zimfw_zimfw",
+  displayName: "zimfw",
   type: "shell",
   description: "Zim: Modular, customizable, and blazing fast Zsh framework",
   authors: [

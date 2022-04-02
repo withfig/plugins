@@ -1,12 +1,13 @@
 const plugin: Fig.Plugin = {
   name: "base16-shell_chriskempson",
+  displayName: "base16-shell",
   type: "shell",
   description: "Base16 for Shells",
   authors: [
     {
       name: "chriskempson",
       github: "chriskempson",
-    }
+    },
   ],
   github: "chriskempson/base16-shell",
   license: ["NOASSERTION"],
@@ -16,14 +17,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"profile_helper.sh"
-      ],
+      sourceFiles: ["profile_helper.sh"],
     },
     zsh: {
-      sourceFiles: [
-"base16-shell.plugin.zsh"
-      ],
+      sourceFiles: ["base16-shell.plugin.zsh"],
     },
   },
 };

@@ -1,12 +1,14 @@
 const plugin: Fig.Plugin = {
   name: "powerline-go_justjanne",
+  displayName: "powerline-go",
   type: "shell",
-  description: " A beautiful and useful low-latency prompt for your shell, written in go",
+  description:
+    " A beautiful and useful low-latency prompt for your shell, written in go",
   authors: [
     {
       name: "justjanne",
       github: "justjanne",
-    }
+    },
   ],
   github: "justjanne/powerline-go",
   license: ["GPL-3.0"],
@@ -26,14 +28,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"generatePreview.sh"
-      ],
+      sourceFiles: ["generatePreview.sh"],
     },
     zsh: {
-      sourceFiles: [
-"generatePreview.sh"
-      ],
+      sourceFiles: ["generatePreview.sh"],
     },
   },
 };

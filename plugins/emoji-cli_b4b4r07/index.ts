@@ -1,13 +1,15 @@
 const plugin: Fig.Plugin = {
   name: "emoji-cli_b4b4r07",
+  displayName: "emoji-cli",
+  icon: "😱",
   type: "shell",
-  description: ":scream: Emoji completion on the command line",
+  description: "Emoji completion on the command line",
   authors: [
     {
       name: "b4b4r07",
       github: "b4b4r07",
       twitter: "b4b4r07",
-    }
+    },
   ],
   github: "b4b4r07/emoji-cli",
   shells: ["zsh"],

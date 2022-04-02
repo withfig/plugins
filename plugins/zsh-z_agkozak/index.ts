@@ -1,13 +1,15 @@
 const plugin: Fig.Plugin = {
   name: "zsh-z_agkozak",
+  displayName: "zsh-z",
   type: "shell",
-  description: "Jump quickly to directories that you have visited \"frecently.\" A native Zsh port of z.sh.",
+  description:
+    'Jump quickly to directories that you have visited "frecently." A native Zsh port of z.sh.',
   authors: [
     {
       name: "agkozak",
       github: "agkozak",
       twitter: "agkozak",
-    }
+    },
   ],
   github: "agkozak/zsh-z",
   license: ["MIT"],
