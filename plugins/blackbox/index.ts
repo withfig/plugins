@@ -1,5 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "blackbox",
+  displayName: "BlackBox",
   type: "shell",
   description: "Safely store secrets in Git/Mercurial/Subversion",
   icon: "🔒",

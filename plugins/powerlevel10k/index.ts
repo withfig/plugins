@@ -1,7 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "powerlevel10k",
   displayName: "Powerlevel10k",
-  icon: "💪",
   type: "shell",
   description: "A Zsh theme",
   github: "romkatv/powerlevel10k",
