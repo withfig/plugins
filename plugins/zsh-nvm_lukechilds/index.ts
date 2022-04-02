@@ -1,5 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "zsh-nvm_lukechilds",
+  displayName: "zsh-nvm",
   type: "shell",
   description: "Zsh plugin for installing, updating and loading nvm",
   authors: [

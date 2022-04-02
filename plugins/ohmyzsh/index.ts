@@ -463,6 +463,7 @@ const modes: Mode[] = ["prompt", "auto", "reminder", "disabled"];
 
 const plugin: Fig.Plugin = {
   name: "ohmyzsh",
+  displayName: "Oh My Zsh",
   type: "shell",
   description:
     "A community-driven framework for managing your zsh configuration",
@@ -522,6 +523,7 @@ const plugin: Fig.Plugin = {
           default: "prompt",
           options: modes,
           compile: ({ value }) => `zstyle ':omz:update' mode ${value}`,
+          hidden: () => true,
         },
         {
           name: "frequency",
@@ -531,17 +533,9 @@ const plugin: Fig.Plugin = {
           default: 14,
           compile: ({ value }) => `zstyle ':omz:update' frequency ${value}`,
           disabled: ({ config }) => config["mode"] !== "disabled",
+          hidden: () => true,
         },
       ],
-    },
-    {
-      name: "test",
-      type: "script",
-      description: "hello there",
-      interface: "checkbox",
-      default: false,
-      compile: ({ value }) =>
-        `zstyle :prompt:pure:git:stash show ${value ? "yes" : "no"}`,
     },
   ],
 };

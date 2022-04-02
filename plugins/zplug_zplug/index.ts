@@ -1,8 +1,9 @@
 const plugin: Fig.Plugin = {
   name: "zplug_zplug",
   displayName: "zplug",
+  icon: "🌺",
   type: "shell",
-  description: ":hibiscus: A next-generation plugin manager for zsh",
+  description: "A next-generation plugin manager for zsh",
   authors: [
     {
       name: "zplug",

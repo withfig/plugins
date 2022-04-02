@@ -1,33 +1,26 @@
 const plugin: Fig.Plugin = {
   name: "wd_mfaerevaag",
+  displayName: "wd",
   type: "shell",
-  description: ":rocket: Jump to custom directories in zsh",
+  description: "Jump to custom directories in zsh",
   authors: [
     {
       name: "mfaerevaag",
       github: "mfaerevaag",
-    }
+    },
   ],
   github: "mfaerevaag/wd",
   license: ["MIT"],
   shells: ["bash", "zsh"],
   categories: ["Other"],
-  keywords: [
-    "shell",
-    "zsh",
-    "productivity",
-  ],
+  keywords: ["shell", "zsh", "productivity"],
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"wd.sh"
-      ],
+      sourceFiles: ["wd.sh"],
     },
     zsh: {
-      sourceFiles: [
-"wd.plugin.zsh"
-      ],
+      sourceFiles: ["wd.plugin.zsh"],
     },
   },
 };

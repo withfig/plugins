@@ -1,5 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "spaceship-prompt",
+  displayName: "Spaceship Prompt",
   type: "shell",
   description: "A Zsh prompt for Astronauts",
   icon: "https://spaceship-prompt.github.io/brand/spaceship-letters-outlined.svg",

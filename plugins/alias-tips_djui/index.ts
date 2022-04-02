@@ -1,5 +1,7 @@
 const plugin: Fig.Plugin = {
   name: "alias-tips_djui",
+  displayName: "alias-tips",
+  icon: "💡",
   type: "shell",
   description: "An oh-my-zsh plugin to help remembering those aliases you defined once",
   authors: [
