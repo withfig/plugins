@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
     {
       name: "b-ryan",
       github: "b-ryan",
-    }
+    },
   ],
   github: "b-ryan/powerline-shell",
   license: ["MIT"],
@@ -27,14 +27,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"test.sh"
-      ],
+      sourceFiles: ["test.sh"],
     },
     zsh: {
-      sourceFiles: [
-"test.sh"
-      ],
+      sourceFiles: ["test.sh"],
     },
   },
 };

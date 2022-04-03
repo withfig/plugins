@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "ariaieboy",
       github: "ariaieboy",
       twitter: "smr_seddighy",
-    }
+    },
   ],
   github: "ariaieboy/laravel-sail",
   license: ["MIT"],

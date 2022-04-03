@@ -6,16 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "yous",
       github: "yous",
-    }
+    },
   ],
   github: "yous/vanilli.sh",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "config",
-  ],
+  keywords: ["zsh", "config"],
   installation: {
     origin: "github",
     sourceFiles: ["vanilli.zsh"],

@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "owenstranathan",
       github: "owenstranathan",
-    }
+    },
   ],
   github: "owenstranathan/pipenv.zsh",
   license: ["MIT"],

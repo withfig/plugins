@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "mango-tree",
       github: "mango-tree",
-    }
+    },
   ],
   github: "mango-tree/zsh-recall",
   license: ["MIT"],

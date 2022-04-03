@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "jimeh",
       github: "jimeh",
       twitter: "jimeh",
-    }
+    },
   ],
   github: "jimeh/zsh-peco-history",
   license: ["CC0-1.0"],

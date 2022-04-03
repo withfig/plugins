@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "dambrogia",
       github: "dambrogia",
-    }
+    },
   ],
   github: "dambrogia/oh-my-zsh-plugin-magento-2",
   license: ["MIT"],

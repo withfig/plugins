@@ -6,18 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "TamCore",
       github: "TamCore",
-    }
+    },
   ],
   github: "TamCore/autoupdate-oh-my-zsh-plugins",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zsh-plugins",
-    "oh-my-zsh",
-    "oh-my-zsh-plugin",
-    "autoupdate",
-  ],
+  keywords: ["zsh", "zsh-plugins", "oh-my-zsh", "oh-my-zsh-plugin", "autoupdate"],
   installation: {
     origin: "github",
     sourceFiles: ["autoupdate.plugin.zsh"],

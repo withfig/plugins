@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "mbhynes",
       github: "mbhynes",
-    }
+    },
   ],
   github: "mbhynes/fzf-gcloud",
   license: ["GPL-3.0"],

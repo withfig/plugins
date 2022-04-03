@@ -7,18 +7,13 @@ const plugin: Fig.Plugin = {
       name: "unixorn",
       github: "unixorn",
       twitter: "curiousbiped",
-    }
+    },
   ],
   github: "unixorn/warhol.plugin.zsh",
   license: ["Apache-2.0"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh-plugin",
-    "grc",
-    "lscolors",
-    "hacktoberfest",
-  ],
+  keywords: ["zsh-plugin", "grc", "lscolors", "hacktoberfest"],
   installation: {
     origin: "github",
     sourceFiles: ["warhol.plugin.zsh"],

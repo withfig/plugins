@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "marlonrichert",
       github: "marlonrichert",
       twitter: "MarlonRichert",
-    }
+    },
   ],
   github: "marlonrichert/zsh-hist",
   license: ["MIT"],

@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "0b10",
       github: "0b10",
-    }
+    },
   ],
   github: "0b10/cheatsheet",
   license: ["Unlicense"],

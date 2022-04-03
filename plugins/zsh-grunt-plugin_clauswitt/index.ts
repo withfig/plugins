@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "clauswitt",
       github: "clauswitt",
-    }
+    },
   ],
   github: "clauswitt/zsh-grunt-plugin",
   shells: ["zsh"],

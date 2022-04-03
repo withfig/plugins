@@ -1,12 +1,13 @@
 const plugin: Fig.Plugin = {
   name: "up.zsh_peterhurford",
   type: "shell",
-  description: "A zshell plugin for the \"up\" command, which can cd up an arbitrary number of directories",
+  description:
+    'A zshell plugin for the "up" command, which can cd up an arbitrary number of directories',
   authors: [
     {
       name: "peterhurford",
       github: "peterhurford",
-    }
+    },
   ],
   github: "peterhurford/up.zsh",
   shells: ["zsh"],

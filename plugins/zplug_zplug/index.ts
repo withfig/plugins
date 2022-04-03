@@ -8,27 +8,20 @@ const plugin: Fig.Plugin = {
     {
       name: "zplug",
       github: "zplug",
-    }
+    },
   ],
   github: "zplug/zplug",
   license: ["MIT"],
   shells: ["bash", "zsh"],
   categories: ["Framework"],
-  keywords: [
-    "zplug",
-    "zsh",
-  ],
+  keywords: ["zplug", "zsh"],
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"build.sh","run.sh"
-      ],
+      sourceFiles: ["build.sh", "run.sh"],
     },
     zsh: {
-      sourceFiles: [
-"init.zsh"
-      ],
+      sourceFiles: ["init.zsh"],
     },
   },
 };

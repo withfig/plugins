@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "MikeDacre",
       github: "MikeDacre",
-    }
+    },
   ],
   github: "MikeDacre/careful_rm",
   license: ["MIT"],
@@ -31,14 +31,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"careful_rm.alias.sh"
-      ],
+      sourceFiles: ["careful_rm.alias.sh"],
     },
     zsh: {
-      sourceFiles: [
-"careful_rm.plugin.zsh"
-      ],
+      sourceFiles: ["careful_rm.plugin.zsh"],
     },
   },
 };

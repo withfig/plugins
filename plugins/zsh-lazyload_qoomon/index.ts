@@ -7,19 +7,12 @@ const plugin: Fig.Plugin = {
       name: "qoomon",
       github: "qoomon",
       twitter: "qoomon1",
-    }
+    },
   ],
   github: "qoomon/zsh-lazyload",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "lazyload",
-    "lazy",
-    "load",
-    "zsh",
-    "speedup",
-    "plugin",
-  ],
+  keywords: ["lazyload", "lazy", "load", "zsh", "speedup", "plugin"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-lazyload.plugin.zsh"],

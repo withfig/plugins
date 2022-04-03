@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "yw9381",
       github: "yw9381",
-    }
+    },
   ],
   github: "yw9381/oh-my-zsh_theme_line",
   license: ["WTFPL"],
@@ -15,14 +15,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"one_key_install_zsh_gitee.sh","one_key_install_zsh_github.sh"
-      ],
+      sourceFiles: ["one_key_install_zsh_gitee.sh", "one_key_install_zsh_github.sh"],
     },
     zsh: {
-      sourceFiles: [
-"one_key_install_zsh_gitee.sh","one_key_install_zsh_github.sh"
-      ],
+      sourceFiles: ["one_key_install_zsh_gitee.sh", "one_key_install_zsh_github.sh"],
     },
   },
 };

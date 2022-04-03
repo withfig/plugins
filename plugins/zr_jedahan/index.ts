@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "jedahan",
       github: "jedahan",
-    }
+    },
   ],
   github: "jedahan/zr",
   license: ["MPL-2.0"],

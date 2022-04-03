@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
     {
       name: "zdharma-continuum",
       github: "zdharma-continuum",
-    }
+    },
   ],
   github: "zdharma-continuum/history-search-multi-word",
   license: ["NOASSERTION"],

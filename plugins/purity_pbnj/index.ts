@@ -7,19 +7,12 @@ const plugin: Fig.Plugin = {
       name: "pbnj",
       github: "pbnj",
       twitter: "petermbenjamin",
-    }
+    },
   ],
   github: "pbnj/purity",
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh",
-    "zsh-theme",
-    "oh-my-zsh",
-    "pure",
-    "purity",
-    "minimal",
-  ],
+  keywords: ["zsh", "zsh-theme", "oh-my-zsh", "pure", "purity", "minimal"],
   installation: {
     origin: "github",
     sourceFiles: ["purity.zsh-theme"],

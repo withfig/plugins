@@ -6,17 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "gretzky",
       github: "gretzky",
-    }
+    },
   ],
   github: "gretzky/n.zsh",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zsh-plugin",
-    "node-version-manager",
-    "n",
-  ],
+  keywords: ["zsh", "zsh-plugin", "node-version-manager", "n"],
   installation: {
     origin: "github",
     sourceFiles: ["n.plugin.zsh"],

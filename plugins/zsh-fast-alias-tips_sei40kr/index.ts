@@ -6,16 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "sei40kr",
       github: "sei40kr",
-    }
+    },
   ],
   github: "sei40kr/zsh-fast-alias-tips",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zsh-plugin",
-  ],
+  keywords: ["zsh", "zsh-plugin"],
   installation: {
     origin: "github",
     sourceFiles: ["fast-alias-tips.plugin.zsh"],

@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "le0me55i",
       github: "le0me55i",
-    }
+    },
   ],
   github: "le0me55i/zsh-systemd",
   license: ["Unlicense"],

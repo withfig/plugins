@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "fabiokiatkowski",
       github: "fabiokiatkowski",
       twitter: "kiatkowski",
-    }
+    },
   ],
   github: "fabiokiatkowski/exercism.plugin.zsh",
   license: ["MIT"],

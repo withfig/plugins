@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "vmattos",
       github: "vmattos",
-    }
+    },
   ],
   github: "vmattos/kill-node",
   shells: ["zsh"],

@@ -7,32 +7,20 @@ const plugin: Fig.Plugin = {
       name: "alexbarton",
       github: "alexbarton",
       twitter: "alexbarton",
-    }
+    },
   ],
   github: "alexbarton/ax-zsh",
   license: ["MIT"],
   shells: ["bash", "zsh"],
   categories: ["Framework"],
-  keywords: [
-    "zsh",
-    "plugin-manager",
-    "configuration",
-    "manager",
-    "ax-zsh",
-    "shell",
-    "plugin",
-  ],
+  keywords: ["zsh", "plugin-manager", "configuration", "manager", "ax-zsh", "shell", "plugin"],
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"install.sh"
-      ],
+      sourceFiles: ["install.sh"],
     },
     zsh: {
-      sourceFiles: [
-"ax.zsh"
-      ],
+      sourceFiles: ["ax.zsh"],
     },
   },
 };

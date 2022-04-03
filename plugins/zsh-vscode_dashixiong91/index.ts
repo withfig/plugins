@@ -6,15 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "dashixiong91",
       github: "dashixiong91",
-    }
+    },
   ],
   github: "dashixiong91/zsh-vscode",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "oh-my-zsh-plugin",
-    "vscode",
-  ],
+  keywords: ["oh-my-zsh-plugin", "vscode"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-vscode.plugin.zsh"],

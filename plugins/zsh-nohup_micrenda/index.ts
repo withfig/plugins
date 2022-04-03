@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "micrenda",
       github: "micrenda",
-    }
+    },
   ],
   github: "micrenda/zsh-nohup",
   shells: ["zsh"],

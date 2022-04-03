@@ -1,13 +1,14 @@
 const plugin: Fig.Plugin = {
   name: "per-directory-history_jimhester",
   type: "shell",
-  description: "Per directory history for zsh, as well as global history, and the ability to toggle between them with ^G.",
+  description:
+    "Per directory history for zsh, as well as global history, and the ability to toggle between them with ^G.",
   authors: [
     {
       name: "jimhester",
       github: "jimhester",
       twitter: "jimhester_",
-    }
+    },
   ],
   github: "jimhester/per-directory-history",
   license: ["Zlib"],

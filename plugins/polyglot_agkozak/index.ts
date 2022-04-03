@@ -1,13 +1,14 @@
 const plugin: Fig.Plugin = {
   name: "polyglot_agkozak",
   type: "shell",
-  description: "Color, ASCII-only Git prompt for zsh, bash, ksh93, mksh, pdksh, dash, and busybox ash",
+  description:
+    "Color, ASCII-only Git prompt for zsh, bash, ksh93, mksh, pdksh, dash, and busybox ash",
   authors: [
     {
       name: "agkozak",
       github: "agkozak",
       twitter: "agkozak",
-    }
+    },
   ],
   github: "agkozak/polyglot",
   license: ["MIT"],
@@ -30,14 +31,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"polyglot.sh"
-      ],
+      sourceFiles: ["polyglot.sh"],
     },
     zsh: {
-      sourceFiles: [
-"polyglot.plugin.zsh"
-      ],
+      sourceFiles: ["polyglot.plugin.zsh"],
     },
   },
 };

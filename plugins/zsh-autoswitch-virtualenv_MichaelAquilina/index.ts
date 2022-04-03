@@ -15,14 +15,7 @@ const plugin: Fig.Plugin = {
   license: ["GPL-3.0"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh-plugins",
-    "virtualenv",
-    "shell-script",
-    "python",
-    "virtualenvwrapper",
-    "zsh",
-  ],
+  keywords: ["zsh-plugins", "virtualenv", "shell-script", "python", "virtualenvwrapper", "zsh"],
   installation: {
     origin: "github",
     sourceFiles: ["autoswitch_virtualenv.plugin.zsh"],

@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "MikeDacre",
       github: "MikeDacre",
-    }
+    },
   ],
   github: "MikeDacre/tmux-zsh-vim-titles",
   license: ["MIT"],
@@ -26,14 +26,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"bash-titles.plugin.sh"
-      ],
+      sourceFiles: ["bash-titles.plugin.sh"],
     },
     zsh: {
-      sourceFiles: [
-"unified-titles.plugin.zsh"
-      ],
+      sourceFiles: ["unified-titles.plugin.zsh"],
     },
   },
 };

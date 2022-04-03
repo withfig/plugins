@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "Valodim",
       github: "Valodim",
-    }
+    },
   ],
   github: "Valodim/zsh-prompt-powerline",
   shells: ["zsh"],

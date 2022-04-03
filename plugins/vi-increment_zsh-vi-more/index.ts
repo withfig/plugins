@@ -6,17 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "zsh-vi-more",
       github: "zsh-vi-more",
-    }
+    },
   ],
   github: "zsh-vi-more/vi-increment",
   license: ["ISC"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh-plugin",
-    "vi-mode",
-    "vi-keybinds",
-  ],
+  keywords: ["zsh-plugin", "vi-mode", "vi-keybinds"],
   installation: {
     origin: "github",
     sourceFiles: ["vi-increment.plugin.zsh"],

@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "alejandromume",
       github: "alejandromume",
-    }
+    },
   ],
   github: "alejandromume/ubunly-zsh-theme",
   license: ["MIT"],
@@ -15,14 +15,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"INSTALL.sh"
-      ],
+      sourceFiles: ["INSTALL.sh"],
     },
     zsh: {
-      sourceFiles: [
-"INSTALL.sh"
-      ],
+      sourceFiles: ["INSTALL.sh"],
     },
   },
 };

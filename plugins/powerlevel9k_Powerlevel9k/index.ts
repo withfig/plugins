@@ -15,14 +15,7 @@ const plugin: Fig.Plugin = {
   site: "https://github.com/romkatv/powerlevel10k",
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh",
-    "powerline-fonts",
-    "terminal",
-    "terminal-themes",
-    "tools",
-    "eye-candy",
-  ],
+  keywords: ["zsh", "powerline-fonts", "terminal", "terminal-themes", "tools", "eye-candy"],
   installation: {
     origin: "github",
     sourceFiles: ["powerlevel9k.zsh-theme"],

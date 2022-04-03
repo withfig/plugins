@@ -6,17 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "gretzky",
       github: "gretzky",
-    }
+    },
   ],
   github: "gretzky/auto-color-ls",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zsh-plugin",
-    "colorls",
-    "auto-ls",
-  ],
+  keywords: ["zsh", "zsh-plugin", "colorls", "auto-ls"],
   installation: {
     origin: "github",
     sourceFiles: ["auto-color-ls.plugin.zsh"],

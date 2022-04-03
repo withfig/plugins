@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "RobSis",
       github: "RobSis",
-    }
+    },
   ],
   github: "RobSis/zsh-reentry-hook",
   license: ["GPL-2.0"],

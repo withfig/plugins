@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "tymm",
       github: "tymm",
-    }
+    },
   ],
   github: "tymm/zsh-directory-history",
   shells: ["zsh"],

@@ -6,19 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "ninrod",
       github: "ninrod",
-    }
+    },
   ],
   github: "ninrod/pass-zsh-completion",
   shells: ["zsh"],
   categories: ["Completion"],
-  keywords: [
-    "zsh",
-    "plugin",
-    "password-store",
-    "pass",
-    "password",
-    "password-manager",
-  ],
+  keywords: ["zsh", "plugin", "password-store", "pass", "password", "password-manager"],
   installation: {
     origin: "github",
     sourceFiles: ["pass-zsh-completion.plugin.zsh"],

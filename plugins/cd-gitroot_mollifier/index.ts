@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "mollifier",
       github: "mollifier",
-    }
+    },
   ],
   github: "mollifier/cd-gitroot",
   license: ["NOASSERTION"],

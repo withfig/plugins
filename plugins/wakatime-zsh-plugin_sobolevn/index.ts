@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "sobolevn",
       github: "sobolevn",
-    }
+    },
   ],
   github: "sobolevn/wakatime-zsh-plugin",
   license: ["MIT"],

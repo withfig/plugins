@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "joepvd",
       github: "joepvd",
-    }
+    },
   ],
   github: "joepvd/grep2awk",
   license: ["NOASSERTION"],

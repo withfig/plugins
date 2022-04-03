@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "blyndusk",
       github: "blyndusk",
-    }
+    },
   ],
   github: "blyndusk/sm-prompt",
   license: ["MIT"],
@@ -27,14 +27,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"sm.theme.bash"
-      ],
+      sourceFiles: ["sm.theme.bash"],
     },
     zsh: {
-      sourceFiles: [
-"sm.theme.zsh"
-      ],
+      sourceFiles: ["sm.theme.zsh"],
     },
   },
 };

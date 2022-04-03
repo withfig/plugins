@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "git-time-metric",
       github: "git-time-metric",
-    }
+    },
   ],
   github: "git-time-metric/gtm-terminal-plugin",
   shells: ["bash", "zsh"],
@@ -14,14 +14,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"gtm-plugin.sh"
-      ],
+      sourceFiles: ["gtm-plugin.sh"],
     },
     zsh: {
-      sourceFiles: [
-"gtm-plugin.sh"
-      ],
+      sourceFiles: ["gtm-plugin.sh"],
     },
   },
 };

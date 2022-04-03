@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "bhayward93",
       github: "bhayward93",
-    }
+    },
   ],
   github: "bhayward93/Linus-rants-ZSH",
   license: ["GPL-2.0"],

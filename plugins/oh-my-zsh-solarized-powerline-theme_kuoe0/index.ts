@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "kuoe0",
       github: "kuoe0",
-    }
+    },
   ],
   github: "kuoe0/oh-my-zsh-solarized-powerline-theme",
   shells: ["zsh"],

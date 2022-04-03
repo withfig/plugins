@@ -6,21 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "decayofmind",
       github: "decayofmind",
-    }
+    },
   ],
   github: "decayofmind/zsh-iterm2-utilities",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zplugin",
-    "iterm2",
-    "proxy",
-    "sync",
-    "zinit",
-    "iterm2-utilities",
-  ],
+  keywords: ["zsh", "zplugin", "iterm2", "proxy", "sync", "zinit", "iterm2-utilities"],
   installation: {
     origin: "github",
     sourceFiles: ["iterm2-utils.plugin.zsh"],

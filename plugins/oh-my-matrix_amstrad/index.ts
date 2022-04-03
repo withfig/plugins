@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "amstrad",
       github: "amstrad",
-    }
+    },
   ],
   github: "amstrad/oh-my-matrix",
   shells: ["zsh"],

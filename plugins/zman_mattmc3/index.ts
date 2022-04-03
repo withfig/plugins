@@ -6,16 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "mattmc3",
       github: "mattmc3",
-    }
+    },
   ],
   github: "mattmc3/zman",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zsh-plugin",
-  ],
+  keywords: ["zsh", "zsh-plugin"],
   installation: {
     origin: "github",
     sourceFiles: ["zman.plugin.zsh"],

@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "akoenig",
       github: "akoenig",
-    }
+    },
   ],
   github: "akoenig/gulp.plugin.zsh",
   shells: ["zsh"],

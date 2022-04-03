@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "zpm-zsh",
       github: "zpm-zsh",
-    }
+    },
   ],
   github: "zpm-zsh/zpm",
   license: ["LGPL-3.0"],

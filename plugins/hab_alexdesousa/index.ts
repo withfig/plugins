@@ -7,16 +7,13 @@ const plugin: Fig.Plugin = {
       name: "alexdesousa",
       github: "alexdesousa",
       twitter: "thebroken_link",
-    }
+    },
   ],
   github: "alexdesousa/hab",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh-plugin",
-    "environment-variables",
-  ],
+  keywords: ["zsh-plugin", "environment-variables"],
   installation: {
     origin: "github",
     sourceFiles: ["hab.plugin.zsh"],

@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "caarlos0-graveyard",
       github: "caarlos0-graveyard",
-    }
+    },
   ],
   github: "caarlos0-graveyard/zsh-open-pr",
   license: ["MIT"],
@@ -15,14 +15,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"git-open-pr.sh"
-      ],
+      sourceFiles: ["git-open-pr.sh"],
     },
     zsh: {
-      sourceFiles: [
-"git-open-pr.plugin.zsh"
-      ],
+      sourceFiles: ["git-open-pr.plugin.zsh"],
     },
   },
 };

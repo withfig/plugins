@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "matthieusb",
       github: "matthieusb",
       twitter: "sbmatthieu",
-    }
+    },
   ],
   github: "matthieusb/zsh-sdkman",
   license: ["Apache-2.0"],
@@ -16,14 +16,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"_zsh-sdkman.sh"
-      ],
+      sourceFiles: ["_zsh-sdkman.sh"],
     },
     zsh: {
-      sourceFiles: [
-"zsh-sdkman.plugin.zsh"
-      ],
+      sourceFiles: ["zsh-sdkman.plugin.zsh"],
     },
   },
 };

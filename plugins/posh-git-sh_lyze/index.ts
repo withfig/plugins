@@ -6,26 +6,20 @@ const plugin: Fig.Plugin = {
     {
       name: "lyze",
       github: "lyze",
-    }
+    },
   ],
   github: "lyze/posh-git-sh",
   license: ["GPL-3.0"],
   shells: ["bash", "zsh"],
   categories: ["Other"],
-  keywords: [
-    "hacktoberfest",
-  ],
+  keywords: ["hacktoberfest"],
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"git-prompt-test.sh","git-prompt.sh"
-      ],
+      sourceFiles: ["git-prompt-test.sh", "git-prompt.sh"],
     },
     zsh: {
-      sourceFiles: [
-"git-prompt-test.sh","git-prompt.sh"
-      ],
+      sourceFiles: ["git-prompt-test.sh", "git-prompt.sh"],
     },
   },
 };

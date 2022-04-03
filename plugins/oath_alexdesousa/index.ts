@@ -7,16 +7,13 @@ const plugin: Fig.Plugin = {
       name: "alexdesousa",
       github: "alexdesousa",
       twitter: "thebroken_link",
-    }
+    },
   ],
   github: "alexdesousa/oath",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh-plugin",
-    "2fa",
-  ],
+  keywords: ["zsh-plugin", "2fa"],
   installation: {
     origin: "github",
     sourceFiles: ["oath.plugin.zsh"],

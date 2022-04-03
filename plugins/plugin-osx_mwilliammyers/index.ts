@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "mwilliammyers",
       github: "mwilliammyers",
       twitter: "mwilliammyers",
-    }
+    },
   ],
   github: "mwilliammyers/plugin-osx",
   license: ["MIT"],

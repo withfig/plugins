@@ -7,17 +7,13 @@ const plugin: Fig.Plugin = {
       name: "h3poteto",
       github: "h3poteto",
       twitter: "h3_poteto",
-    }
+    },
   ],
   github: "h3poteto/zsh-ec2ssh",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh-plugins",
-    "ec2",
-    "ssh",
-  ],
+  keywords: ["zsh-plugins", "ec2", "ssh"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-ec2ssh.plugin.zsh"],

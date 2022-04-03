@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "caarlos0-graveyard",
       github: "caarlos0-graveyard",
-    }
+    },
   ],
   github: "caarlos0-graveyard/zsh-git-sync",
   license: ["MIT"],
@@ -15,14 +15,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"git-sync.sh"
-      ],
+      sourceFiles: ["git-sync.sh"],
     },
     zsh: {
-      sourceFiles: [
-"git-sync.plugin.zsh"
-      ],
+      sourceFiles: ["git-sync.plugin.zsh"],
     },
   },
 };

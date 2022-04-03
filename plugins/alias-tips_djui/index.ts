@@ -8,7 +8,7 @@ const plugin: Fig.Plugin = {
     {
       name: "djui",
       github: "djui",
-    }
+    },
   ],
   github: "djui/alias-tips",
   shells: ["zsh"],

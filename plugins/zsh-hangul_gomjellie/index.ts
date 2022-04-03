@@ -6,16 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "gomjellie",
       github: "gomjellie",
-    }
+    },
   ],
   github: "gomjellie/zsh-hangul",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "korean",
-    "zsh-plugin",
-  ],
+  keywords: ["korean", "zsh-plugin"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-hangul.plugin.zsh"],

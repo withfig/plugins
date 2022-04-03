@@ -6,19 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "sobolevn",
       github: "sobolevn",
-    }
+    },
   ],
   github: "sobolevn/sobole-zsh-theme",
   site: "http://sobolevn.me/sobole-zsh-theme/",
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh",
-    "zsh-theme",
-    "terminal",
-    "terminal-theme",
-    "theme",
-  ],
+  keywords: ["zsh", "zsh-theme", "terminal", "terminal-theme", "theme"],
   installation: {
     origin: "github",
     sourceFiles: ["sobole.zsh-theme"],

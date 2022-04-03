@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "leonjza",
       github: "leonjza",
       twitter: "leonjza",
-    }
+    },
   ],
   github: "leonjza/history-here",
   license: ["MIT"],

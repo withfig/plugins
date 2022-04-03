@@ -7,18 +7,13 @@ const plugin: Fig.Plugin = {
       name: "torifat",
       github: "torifat",
       twitter: "rifat",
-    }
+    },
   ],
   github: "torifat/npms",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zsh-plugin",
-    "zinit-plugin",
-    "fzf",
-  ],
+  keywords: ["zsh", "zsh-plugin", "zinit-plugin", "fzf"],
   installation: {
     origin: "github",
     sourceFiles: ["npms.plugin.zsh"],

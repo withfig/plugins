@@ -6,17 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "wookayin",
       github: "wookayin",
-    }
+    },
   ],
   github: "wookayin/fzf-fasd",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "fzf",
-    "zsh",
-    "fasd",
-  ],
+  keywords: ["fzf", "zsh", "fasd"],
   installation: {
     origin: "github",
     sourceFiles: ["fzf-fasd.plugin.zsh"],

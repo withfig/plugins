@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "jtprogru",
       github: "jtprogru",
       twitter: "jtprogru",
-    }
+    },
   ],
   github: "jtprogru/bash-quote",
   license: ["WTFPL"],

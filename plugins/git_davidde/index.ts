@@ -6,20 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "davidde",
       github: "davidde",
-    }
+    },
   ],
   github: "davidde/git",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "git",
-    "zsh",
-    "oh-my-zsh",
-    "shell",
-    "terminal",
-    "productivity",
-  ],
+  keywords: ["git", "zsh", "oh-my-zsh", "shell", "terminal", "productivity"],
   installation: {
     origin: "github",
     sourceFiles: ["git.plugin.zsh"],

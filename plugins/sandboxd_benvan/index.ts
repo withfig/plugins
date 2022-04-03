@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "benvan",
       github: "benvan",
-    }
+    },
   ],
   github: "benvan/sandboxd",
   license: ["MIT"],

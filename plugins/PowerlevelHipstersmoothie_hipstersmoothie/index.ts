@@ -7,20 +7,12 @@ const plugin: Fig.Plugin = {
       name: "hipstersmoothie",
       github: "hipstersmoothie",
       twitter: "hipstersmoothie",
-    }
+    },
   ],
   github: "hipstersmoothie/PowerlevelHipstersmoothie",
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "oh-my-zsh",
-    "theme",
-    "zsh",
-    "powerlevel9k",
-    "nerd-fonts",
-    "weed",
-    "420",
-  ],
+  keywords: ["oh-my-zsh", "theme", "zsh", "powerlevel9k", "nerd-fonts", "weed", "420"],
   installation: {
     origin: "github",
     sourceFiles: ["PowerlevelHipstersmoothie.zsh-theme"],

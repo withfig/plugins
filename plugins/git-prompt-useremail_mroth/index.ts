@@ -7,17 +7,12 @@ const plugin: Fig.Plugin = {
       name: "mroth",
       github: "mroth",
       twitter: "mroth",
-    }
+    },
   ],
   github: "mroth/git-prompt-useremail",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zsh-plugin",
-    "emoji",
-    "prompt",
-  ],
+  keywords: ["zsh", "zsh-plugin", "emoji", "prompt"],
   installation: {
     origin: "github",
     sourceFiles: ["git-prompt-useremail.plugin.zsh"],

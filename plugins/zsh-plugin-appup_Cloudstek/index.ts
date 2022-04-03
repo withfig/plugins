@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "Cloudstek",
       github: "Cloudstek",
-    }
+    },
   ],
   github: "Cloudstek/zsh-plugin-appup",
   license: ["MIT"],

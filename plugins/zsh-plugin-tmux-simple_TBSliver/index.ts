@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "TBSliver",
       github: "TBSliver",
-    }
+    },
   ],
   github: "TBSliver/zsh-plugin-tmux-simple",
   shells: ["zsh"],

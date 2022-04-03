@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "laggardkernel",
       github: "laggardkernel",
-    }
+    },
   ],
   github: "laggardkernel/zsh-iterm2",
   license: ["GPL-2.0"],

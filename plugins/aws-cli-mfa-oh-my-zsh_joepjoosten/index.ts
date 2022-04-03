@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "joepjoosten",
       github: "joepjoosten",
-    }
+    },
   ],
   github: "joepjoosten/aws-cli-mfa-oh-my-zsh",
   license: ["GPL-2.0"],

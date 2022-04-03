@@ -6,17 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "zpm-zsh",
       github: "zpm-zsh",
-    }
+    },
   ],
   github: "zpm-zsh/undollar",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "undollar",
-    "zsh",
-    "zpm",
-    "zsh-plugin",
-  ],
+  keywords: ["undollar", "zsh", "zpm", "zsh-plugin"],
   installation: {
     origin: "github",
     sourceFiles: ["undollar.plugin.zsh"],

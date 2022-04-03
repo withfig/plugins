@@ -6,17 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "halfo",
       github: "halfo",
-    }
+    },
   ],
   github: "halfo/lambda-mod-zsh-theme",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh-theme",
-    "oh-my-zsh-theme",
-    "minimalistic",
-  ],
+  keywords: ["zsh-theme", "oh-my-zsh-theme", "minimalistic"],
   installation: {
     origin: "github",
     sourceFiles: ["lambda-mod.zsh-theme"],

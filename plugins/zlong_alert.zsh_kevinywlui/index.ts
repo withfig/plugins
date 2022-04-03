@@ -6,17 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "kevinywlui",
       github: "kevinywlui",
-    }
+    },
   ],
   github: "kevinywlui/zlong_alert.zsh",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "plugin",
-    "alert",
-  ],
+  keywords: ["zsh", "plugin", "alert"],
   installation: {
     origin: "github",
     sourceFiles: ["zlong_alert.plugin.zsh"],

@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "laggardkernel",
       github: "laggardkernel",
-    }
+    },
   ],
   github: "laggardkernel/git-ignore",
   license: ["MIT"],

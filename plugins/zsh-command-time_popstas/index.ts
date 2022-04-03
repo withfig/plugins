@@ -6,17 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "popstas",
       github: "popstas",
-    }
+    },
   ],
   github: "popstas/zsh-command-time",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "oh-my-zsh",
-    "zsh-command-time",
-    "powerlevel9k",
-  ],
+  keywords: ["zsh", "oh-my-zsh", "zsh-command-time", "powerlevel9k"],
   installation: {
     origin: "github",
     sourceFiles: ["command-time.plugin.zsh"],

@@ -6,21 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "maxrodrigo",
       github: "maxrodrigo",
-    }
+    },
   ],
   github: "maxrodrigo/uz",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Framework"],
-  keywords: [
-    "zsh",
-    "zshrc",
-    "zsh-plugin",
-    "framework",
-    "plugin-manager",
-    "cli",
-    "command-line",
-  ],
+  keywords: ["zsh", "zshrc", "zsh-plugin", "framework", "plugin-manager", "cli", "command-line"],
   installation: {
     origin: "github",
     sourceFiles: ["uz.zsh"],

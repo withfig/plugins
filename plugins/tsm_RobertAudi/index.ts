@@ -6,16 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "RobertAudi",
       github: "RobertAudi",
-    }
+    },
   ],
   github: "RobertAudi/tsm",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "tmux",
-    "zsh",
-  ],
+  keywords: ["tmux", "zsh"],
   installation: {
     origin: "github",
     sourceFiles: ["tsm.plugin.zsh"],

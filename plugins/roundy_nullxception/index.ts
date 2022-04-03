@@ -7,17 +7,13 @@ const plugin: Fig.Plugin = {
       name: "nullxception",
       github: "nullxception",
       twitter: "nullxception",
-    }
+    },
   ],
   github: "nullxception/roundy",
   license: ["BSD-3-Clause"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh-theme",
-    "zsh-prompt",
-    "zsh",
-  ],
+  keywords: ["zsh-theme", "zsh-prompt", "zsh"],
   installation: {
     origin: "github",
     sourceFiles: ["roundy.plugin.zsh"],

@@ -7,20 +7,14 @@ const plugin: Fig.Plugin = {
       name: "eendroroy",
       github: "eendroroy",
       twitter: "eendroroy",
-    }
+    },
   ],
   github: "eendroroy/zed-zsh",
   license: ["MIT"],
   site: "https://github.com/rupa/z",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "z",
-    "zsh",
-    "jumparound",
-    "zsh-plugin",
-    "z-zsh",
-  ],
+  keywords: ["z", "zsh", "jumparound", "zsh-plugin", "z-zsh"],
   installation: {
     origin: "github",
     sourceFiles: ["zed.zsh"],

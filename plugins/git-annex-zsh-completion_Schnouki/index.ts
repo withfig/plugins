@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "Schnouki",
       github: "Schnouki",
       twitter: "Schnouki",
-    }
+    },
   ],
   github: "Schnouki/git-annex-zsh-completion",
   shells: ["zsh"],

@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "kiurchv",
       github: "kiurchv",
-    }
+    },
   ],
   github: "kiurchv/asdf.plugin.zsh",
   license: ["MIT"],

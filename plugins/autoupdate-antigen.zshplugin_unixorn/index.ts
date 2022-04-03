@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "unixorn",
       github: "unixorn",
       twitter: "curiousbiped",
-    }
+    },
   ],
   github: "unixorn/autoupdate-antigen.zshplugin",
   shells: ["zsh"],

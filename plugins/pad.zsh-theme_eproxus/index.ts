@@ -6,16 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "eproxus",
       github: "eproxus",
-    }
+    },
   ],
   github: "eproxus/pad.zsh-theme",
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh",
-    "shell",
-    "theme",
-  ],
+  keywords: ["zsh", "shell", "theme"],
   installation: {
     origin: "github",
     sourceFiles: ["pad.zsh-theme"],

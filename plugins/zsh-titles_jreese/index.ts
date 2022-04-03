@@ -7,18 +7,13 @@ const plugin: Fig.Plugin = {
       name: "jreese",
       github: "jreese",
       twitter: "n7cmdr",
-    }
+    },
   ],
   github: "jreese/zsh-titles",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zsh-plugin",
-    "zsh-titles",
-    "tmux-titles",
-  ],
+  keywords: ["zsh", "zsh-plugin", "zsh-titles", "tmux-titles"],
   installation: {
     origin: "github",
     sourceFiles: ["titles.plugin.zsh"],

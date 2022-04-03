@@ -7,18 +7,13 @@ const plugin: Fig.Plugin = {
       name: "thiagokokada",
       github: "thiagokokada",
       twitter: "k0kada",
-    }
+    },
   ],
   github: "thiagokokada/zit",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Framework"],
-  keywords: [
-    "zsh",
-    "plugin-manager",
-    "shell",
-    "zit",
-  ],
+  keywords: ["zsh", "plugin-manager", "shell", "zit"],
   installation: {
     origin: "github",
     sourceFiles: ["zit.zsh"],

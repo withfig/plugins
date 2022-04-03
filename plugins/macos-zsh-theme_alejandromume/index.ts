@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
     {
       name: "alejandromume",
       github: "alejandromume",
-    }
+    },
   ],
   github: "alejandromume/macos-zsh-theme",
   license: ["MIT"],

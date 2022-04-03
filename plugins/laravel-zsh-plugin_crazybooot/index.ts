@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "crazybooot",
       github: "crazybooot",
-    }
+    },
   ],
   github: "crazybooot/laravel-zsh-plugin",
   license: ["MIT"],

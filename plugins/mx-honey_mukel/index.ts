@@ -6,20 +6,14 @@ const plugin: Fig.Plugin = {
     {
       name: "mukel",
       github: "mukel",
-    }
+    },
   ],
   github: "mukel/mx-honey",
   license: ["Apache-2.0"],
   site: "https://github.com/graalvm/mx",
   shells: ["zsh"],
   categories: ["Completion"],
-  keywords: [
-    "mx",
-    "zsh",
-    "plugin",
-    "graal",
-    "graalvm",
-  ],
+  keywords: ["mx", "zsh", "plugin", "graal", "graalvm"],
   installation: {
     origin: "github",
     sourceFiles: ["mx.plugin.zsh"],

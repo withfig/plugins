@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "trapd00r",
       github: "trapd00r",
-    }
+    },
   ],
   github: "trapd00r/zsh-syntax-highlighting-filetypes",
   shells: ["zsh"],

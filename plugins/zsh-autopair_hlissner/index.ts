@@ -7,17 +7,13 @@ const plugin: Fig.Plugin = {
       name: "hlissner",
       github: "hlissner",
       twitter: "henriklissner",
-    }
+    },
   ],
   github: "hlissner/zsh-autopair",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zsh-plugins",
-    "delimiters",
-  ],
+  keywords: ["zsh", "zsh-plugins", "delimiters"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-autopair.plugin.zsh"],

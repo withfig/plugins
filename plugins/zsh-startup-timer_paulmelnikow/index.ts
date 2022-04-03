@@ -6,16 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "paulmelnikow",
       github: "paulmelnikow",
-    }
+    },
   ],
   github: "paulmelnikow/zsh-startup-timer",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zsh-plugin",
-  ],
+  keywords: ["zsh", "zsh-plugin"],
   installation: {
     origin: "github",
     sourceFiles: ["startup-timer.plugin.zsh"],

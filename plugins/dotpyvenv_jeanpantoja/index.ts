@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "jeanpantoja",
       github: "jeanpantoja",
-    }
+    },
   ],
   github: "jeanpantoja/dotpyvenv",
   license: ["MIT"],
@@ -15,14 +15,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"install.sh","online_installer.sh"
-      ],
+      sourceFiles: ["install.sh", "online_installer.sh"],
     },
     zsh: {
-      sourceFiles: [
-"dotpyvenv.plugin.zsh"
-      ],
+      sourceFiles: ["dotpyvenv.plugin.zsh"],
     },
   },
 };

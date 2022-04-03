@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "MichaelAquilina",
       github: "MichaelAquilina",
-    }
+    },
   ],
   github: "MichaelAquilina/zsh-emojis",
   license: ["MIT"],

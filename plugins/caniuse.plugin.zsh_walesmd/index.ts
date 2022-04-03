@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "walesmd",
       github: "walesmd",
-    }
+    },
   ],
   github: "walesmd/caniuse.plugin.zsh",
   license: ["MIT"],

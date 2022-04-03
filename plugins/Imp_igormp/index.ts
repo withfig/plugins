@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "igormp",
       github: "igormp",
-    }
+    },
   ],
   github: "igormp/Imp",
   shells: ["zsh"],

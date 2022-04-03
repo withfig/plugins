@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "aranasaurus",
       github: "aranasaurus",
       twitter: "aranasaurus",
-    }
+    },
   ],
   github: "aranasaurus/zemm-blinks.zsh-theme",
   shells: ["zsh"],

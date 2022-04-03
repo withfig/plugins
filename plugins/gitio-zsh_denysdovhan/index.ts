@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "denysdovhan",
       github: "denysdovhan",
       twitter: "denysdovhan",
-    }
+    },
   ],
   github: "denysdovhan/gitio-zsh",
   license: ["MIT"],

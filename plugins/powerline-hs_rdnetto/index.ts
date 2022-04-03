@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "rdnetto",
       github: "rdnetto",
-    }
+    },
   ],
   github: "rdnetto/powerline-hs",
   license: ["Apache-2.0"],
@@ -15,14 +15,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"test-case.sh"
-      ],
+      sourceFiles: ["test-case.sh"],
     },
     zsh: {
-      sourceFiles: [
-"test-case.sh"
-      ],
+      sourceFiles: ["test-case.sh"],
     },
   },
 };

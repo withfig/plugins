@@ -6,17 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "elstgav",
       github: "elstgav",
-    }
+    },
   ],
   github: "elstgav/branch-manager",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "oh-my-zsh-plugin",
-    "oh-my-zsh",
-    "zsh-plugins",
-    "git",
-  ],
+  keywords: ["oh-my-zsh-plugin", "oh-my-zsh", "zsh-plugins", "git"],
   installation: {
     origin: "github",
     sourceFiles: ["branch-manager.plugin.zsh"],

@@ -6,17 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "jedahan",
       github: "jedahan",
-    }
+    },
   ],
   github: "jedahan/ripz",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zsh-plugin",
-    "ripgrep",
-    "aliases",
-  ],
+  keywords: ["zsh", "zsh-plugin", "ripgrep", "aliases"],
   installation: {
     origin: "github",
     sourceFiles: ["ripz.plugin.zsh"],

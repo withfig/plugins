@@ -7,21 +7,13 @@ const plugin: Fig.Plugin = {
       name: "qoomon",
       github: "qoomon",
       twitter: "qoomon1",
-    }
+    },
   ],
   github: "qoomon/zjump",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "fzf",
-    "jump",
-    "cd",
-    "terminal",
-    "console",
-    "shell",
-  ],
+  keywords: ["zsh", "fzf", "jump", "cd", "terminal", "console", "shell"],
   installation: {
     origin: "github",
     sourceFiles: ["zjump.plugin.zsh"],

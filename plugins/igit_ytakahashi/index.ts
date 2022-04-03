@@ -6,18 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "ytakahashi",
       github: "ytakahashi",
-    }
+    },
   ],
   github: "ytakahashi/igit",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "git",
-    "zsh",
-    "fzf",
-    "zsh-plugin",
-  ],
+  keywords: ["git", "zsh", "fzf", "zsh-plugin"],
   installation: {
     origin: "github",
     sourceFiles: ["igit.plugin.zsh"],

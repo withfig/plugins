@@ -6,19 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "zsh-vi-more",
       github: "zsh-vi-more",
-    }
+    },
   ],
   github: "zsh-vi-more/evil-registers",
   license: ["ISC"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh-plugin",
-    "vi-mode",
-    "clipboard-sync",
-    "wayland-client",
-    "clipboard-copy",
-  ],
+  keywords: ["zsh-plugin", "vi-mode", "clipboard-sync", "wayland-client", "clipboard-copy"],
   installation: {
     origin: "github",
     sourceFiles: ["evil-registers.plugin.zsh"],

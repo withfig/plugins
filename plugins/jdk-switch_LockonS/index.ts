@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "LockonS",
       github: "LockonS",
-    }
+    },
   ],
   github: "LockonS/jdk-switch",
   shells: ["zsh"],

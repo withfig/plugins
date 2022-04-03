@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "Dbz",
       github: "Dbz",
-    }
+    },
   ],
   github: "Dbz/kube-aliases",
   license: ["MIT"],

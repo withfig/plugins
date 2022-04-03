@@ -7,17 +7,13 @@ const plugin: Fig.Plugin = {
       name: "jreese",
       github: "jreese",
       twitter: "n7cmdr",
-    }
+    },
   ],
   github: "jreese/zsh-opt-path",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zsh-plugin",
-    "paths",
-  ],
+  keywords: ["zsh", "zsh-plugin", "paths"],
   installation: {
     origin: "github",
     sourceFiles: ["opt-path.plugin.zsh"],

@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "ecbrodie",
       github: "ecbrodie",
-    }
+    },
   ],
   github: "ecbrodie/robbyrussell-WIP-theme",
   license: ["MIT"],

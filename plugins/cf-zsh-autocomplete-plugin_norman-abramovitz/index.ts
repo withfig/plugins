@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "norman-abramovitz",
       github: "norman-abramovitz",
-    }
+    },
   ],
   github: "norman-abramovitz/cf-zsh-autocomplete-plugin",
   license: ["Apache-2.0"],

@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "spwhitt",
       github: "spwhitt",
-    }
+    },
   ],
   github: "spwhitt/nix-zsh-completions",
   license: ["BSD-3-Clause"],

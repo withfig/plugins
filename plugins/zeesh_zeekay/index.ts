@@ -7,17 +7,13 @@ const plugin: Fig.Plugin = {
       name: "zeekay",
       github: "zeekay",
       twitter: "zeekay",
-    }
+    },
   ],
   github: "zeekay/zeesh",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Framework"],
-  keywords: [
-    "zsh",
-    "shell",
-    "zeesh",
-  ],
+  keywords: ["zsh", "shell", "zeesh"],
   installation: {
     origin: "github",
     sourceFiles: ["zeesh.zsh"],

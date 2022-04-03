@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "smallhadroncollider",
       github: "smallhadroncollider",
-    }
+    },
   ],
   github: "smallhadroncollider/antigen-git-rebase",
   license: ["MIT"],

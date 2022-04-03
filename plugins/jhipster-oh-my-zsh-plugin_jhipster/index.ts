@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "jhipster",
       github: "jhipster",
-    }
+    },
   ],
   github: "jhipster/jhipster-oh-my-zsh-plugin",
   license: ["Apache-2.0"],

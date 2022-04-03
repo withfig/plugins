@@ -465,8 +465,7 @@ const plugin: Fig.Plugin = {
   name: "ohmyzsh",
   displayName: "Oh My Zsh",
   type: "shell",
-  description:
-    "A community-driven framework for managing your zsh configuration",
+  description: "A community-driven framework for managing your zsh configuration",
   icon: "https://avatars.githubusercontent.com/u/22552083",
   site: "https://ohmyz.sh/",
   docs: "https://github.com/ohmyzsh/ohmyzsh/wiki",
@@ -488,9 +487,7 @@ const plugin: Fig.Plugin = {
       interface: "multiselect",
       default: [],
       options: async ({ env }) =>
-        env
-          ? await env.listFolder(`${env.plugin.installDirectory}/plugins`)
-          : PLUGINS,
+        env ? env.listFolder(`${env.plugin.installDirectory}/plugins`) : PLUGINS,
       environmentVariable: "plugins",
     },
     {
@@ -503,17 +500,14 @@ const plugin: Fig.Plugin = {
         if (!env) {
           return THEMES;
         }
-        const themes = await env.listFolder(
-          `${env.plugin.installDirectory}/themes`
-        );
+        const themes = await env.listFolder(`${env.plugin.installDirectory}/themes`);
         return themes.map((theme) => theme.replace(".zsh-theme", ""));
       },
       environmentVariable: "ZSH_THEME",
     },
     {
       displayName: "Getting Updates",
-      description:
-        "By default, you will be prompted to check for updates every 2 weeks.",
+      description: "By default, you will be prompted to check for updates every 2 weeks.",
       configuration: [
         {
           name: "mode",
@@ -532,7 +526,7 @@ const plugin: Fig.Plugin = {
           interface: "text",
           default: 14,
           compile: ({ value }) => `zstyle ':omz:update' frequency ${value}`,
-          disabled: ({ config }) => config["mode"] !== "disabled",
+          disabled: ({ config }) => config.mode !== "disabled",
           hidden: () => true,
         },
       ],

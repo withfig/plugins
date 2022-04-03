@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "oz",
       github: "oz",
       twitter: "ephoz",
-    }
+    },
   ],
   github: "oz/safe-paste",
   shells: ["zsh"],

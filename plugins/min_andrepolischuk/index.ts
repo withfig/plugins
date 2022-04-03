@@ -7,19 +7,13 @@ const plugin: Fig.Plugin = {
       name: "andrepolischuk",
       github: "andrepolischuk",
       twitter: "andrepolischuk",
-    }
+    },
   ],
   github: "andrepolischuk/min",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "minimal",
-    "zsh",
-    "prompt",
-    "theme",
-    "shell",
-  ],
+  keywords: ["minimal", "zsh", "prompt", "theme", "shell"],
   installation: {
     origin: "github",
     sourceFiles: ["min.plugin.zsh"],

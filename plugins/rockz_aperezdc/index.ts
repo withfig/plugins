@@ -6,18 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "aperezdc",
       github: "aperezdc",
-    }
+    },
   ],
   github: "aperezdc/rockz",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "luarocks",
-    "lua",
-    "luajit",
-    "environment",
-    "profile-manager",
-  ],
+  keywords: ["luarocks", "lua", "luajit", "environment", "profile-manager"],
   installation: {
     origin: "github",
     sourceFiles: ["rockz.plugin.zsh"],

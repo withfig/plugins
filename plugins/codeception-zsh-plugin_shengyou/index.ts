@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "shengyou",
       github: "shengyou",
       twitter: "shengyou",
-    }
+    },
   ],
   github: "shengyou/codeception-zsh-plugin",
   license: ["MIT"],

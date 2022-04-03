@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "igor9silva",
       github: "igor9silva",
-    }
+    },
   ],
   github: "igor9silva/zsh-theme",
   license: ["NOASSERTION"],

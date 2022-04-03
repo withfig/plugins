@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "vincentdnl",
       github: "vincentdnl",
-    }
+    },
   ],
   github: "vincentdnl/zsh-crypto-prices",
   license: ["MIT"],

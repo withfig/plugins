@@ -7,18 +7,13 @@ const plugin: Fig.Plugin = {
       name: "olets",
       github: "olets",
       twitter: "oletsdev",
-    }
+    },
   ],
   github: "olets/zsh-window-title",
   license: ["NOASSERTION"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zsh-plugin",
-    "terminal",
-    "command-line",
-  ],
+  keywords: ["zsh", "zsh-plugin", "terminal", "command-line"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-window-title.plugin.zsh"],

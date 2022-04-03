@@ -7,16 +7,13 @@ const plugin: Fig.Plugin = {
       name: "ZYSzys",
       github: "ZYSzys",
       twitter: "ZYSzys_",
-    }
+    },
   ],
   github: "ZYSzys/zys-zsh-theme",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh",
-    "zsh-theme",
-  ],
+  keywords: ["zsh", "zsh-theme"],
   installation: {
     origin: "github",
     sourceFiles: ["zys.zsh-theme"],

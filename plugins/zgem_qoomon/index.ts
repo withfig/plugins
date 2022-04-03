@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "qoomon",
       github: "qoomon",
       twitter: "qoomon1",
-    }
+    },
   ],
   github: "qoomon/zgem",
   shells: ["zsh"],

@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "sindresorhus",
       github: "sindresorhus",
       twitter: "sindresorhus",
-    }
+    },
   ],
   github: "sindresorhus/pretty-time-zsh",
   license: ["MIT"],

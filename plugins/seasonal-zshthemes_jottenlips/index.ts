@@ -1,13 +1,14 @@
 const plugin: Fig.Plugin = {
   name: "seasonal-zshthemes_jottenlips",
   type: "shell",
-  description: "🛷 Seasonal ZSH Themes w/ git status ~ Impress your friends ~ Automatic theming for each season",
+  description:
+    "🛷 Seasonal ZSH Themes w/ git status ~ Impress your friends ~ Automatic theming for each season",
   authors: [
     {
       name: "jottenlips",
       github: "jottenlips",
       twitter: "JOttenlips",
-    }
+    },
   ],
   github: "jottenlips/seasonal-zshthemes",
   license: ["MIT"],
@@ -38,14 +39,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"get_theme_season.sh"
-      ],
+      sourceFiles: ["get_theme_season.sh"],
     },
     zsh: {
-      sourceFiles: [
-"get_theme_season.sh"
-      ],
+      sourceFiles: ["get_theme_season.sh"],
     },
   },
 };

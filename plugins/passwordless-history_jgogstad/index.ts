@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "jgogstad",
       github: "jgogstad",
-    }
+    },
   ],
   github: "jgogstad/passwordless-history",
   shells: ["zsh"],

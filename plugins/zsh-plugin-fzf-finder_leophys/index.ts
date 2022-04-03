@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "leophys",
       github: "leophys",
-    }
+    },
   ],
   github: "leophys/zsh-plugin-fzf-finder",
   license: ["GPL-3.0"],

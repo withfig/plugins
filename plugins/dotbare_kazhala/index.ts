@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "kazhala",
       github: "kazhala",
-    }
+    },
   ],
   github: "kazhala/dotbare",
   license: ["MIT"],
@@ -28,14 +28,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"dotbare.plugin.bash"
-      ],
+      sourceFiles: ["dotbare.plugin.bash"],
     },
     zsh: {
-      sourceFiles: [
-"dotbare.plugin.zsh"
-      ],
+      sourceFiles: ["dotbare.plugin.zsh"],
     },
   },
 };

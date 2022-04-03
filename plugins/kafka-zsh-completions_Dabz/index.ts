@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "Dabz",
       github: "Dabz",
-    }
+    },
   ],
   github: "Dabz/kafka-zsh-completions",
   shells: ["zsh"],

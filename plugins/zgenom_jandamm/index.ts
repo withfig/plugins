@@ -7,21 +7,13 @@ const plugin: Fig.Plugin = {
       name: "jandamm",
       github: "jandamm",
       twitter: "jandammm",
-    }
+    },
   ],
   github: "jandamm/zgenom",
   license: ["BSD-2-Clause"],
   shells: ["zsh"],
   categories: ["Framework"],
-  keywords: [
-    "zgen",
-    "zsh",
-    "prezto",
-    "shell",
-    "ohmyzsh",
-    "plugin-manager",
-    "zgenom",
-  ],
+  keywords: ["zgen", "zsh", "prezto", "shell", "ohmyzsh", "plugin-manager", "zgenom"],
   installation: {
     origin: "github",
     sourceFiles: ["zgenom.zsh"],

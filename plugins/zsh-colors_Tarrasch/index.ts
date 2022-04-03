@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "Tarrasch",
       github: "Tarrasch",
-    }
+    },
   ],
   github: "Tarrasch/zsh-colors",
   license: ["GPL-3.0"],

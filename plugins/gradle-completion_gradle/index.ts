@@ -8,28 +8,20 @@ const plugin: Fig.Plugin = {
       name: "gradle",
       github: "gradle",
       twitter: "gradle",
-    }
+    },
   ],
   github: "gradle/gradle-completion",
   license: ["MIT"],
   shells: ["bash", "zsh"],
   categories: ["Completion"],
-  keywords: [
-    "zsh-completion",
-    "bash-completion",
-    "gradle",
-  ],
+  keywords: ["zsh-completion", "bash-completion", "gradle"],
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"gradle-completion.bash"
-      ],
+      sourceFiles: ["gradle-completion.bash"],
     },
     zsh: {
-      sourceFiles: [
-"gradle-completion.plugin.zsh"
-      ],
+      sourceFiles: ["gradle-completion.plugin.zsh"],
     },
   },
 };

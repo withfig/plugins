@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "Saleh7",
       github: "Saleh7",
       twitter: "iGeek_io",
-    }
+    },
   ],
   github: "Saleh7/laravel-au-zsh-plugin",
   license: ["MIT"],

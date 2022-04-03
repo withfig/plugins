@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "bryanculver",
       github: "bryanculver",
       twitter: "bryanculver",
-    }
+    },
   ],
   github: "bryanculver/opus.plugin.zsh",
   shells: ["zsh"],

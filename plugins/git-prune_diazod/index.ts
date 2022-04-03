@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "diazod",
       github: "diazod",
-    }
+    },
   ],
   github: "diazod/git-prune",
   license: ["GPL-3.0"],

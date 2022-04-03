@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "tysonwolker",
       github: "tysonwolker",
-    }
+    },
   ],
   github: "tysonwolker/iterm-tab-colors",
   license: ["MIT"],

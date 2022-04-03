@@ -6,17 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "viko16",
       github: "viko16",
-    }
+    },
   ],
   github: "viko16/gitcd.plugin.zsh",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "oh-my-zsh-plugin",
-    "zsh",
-    "gitcd",
-  ],
+  keywords: ["oh-my-zsh-plugin", "zsh", "gitcd"],
   installation: {
     origin: "github",
     sourceFiles: ["gitcd.plugin.zsh"],

@@ -6,17 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "simnalamburt",
       github: "simnalamburt",
-    }
+    },
   ],
   github: "simnalamburt/shellder",
   license: ["NOASSERTION"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "fish",
-    "zsh",
-    "shell-theme",
-  ],
+  keywords: ["fish", "zsh", "shell-theme"],
   installation: {
     origin: "github",
     sourceFiles: ["shellder.zsh-theme"],

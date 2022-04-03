@@ -1,12 +1,13 @@
 const plugin: Fig.Plugin = {
   name: "zsh-fzf-history-search_joshskidmore",
   type: "shell",
-  description: "A simple zsh plugin that replaces Ctrl+R with an fzf-driven select which includes date/times.",
+  description:
+    "A simple zsh plugin that replaces Ctrl+R with an fzf-driven select which includes date/times.",
   authors: [
     {
       name: "joshskidmore",
       github: "joshskidmore",
-    }
+    },
   ],
   github: "joshskidmore/zsh-fzf-history-search",
   license: ["MIT"],

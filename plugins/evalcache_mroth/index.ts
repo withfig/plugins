@@ -7,15 +7,12 @@ const plugin: Fig.Plugin = {
       name: "mroth",
       github: "mroth",
       twitter: "mroth",
-    }
+    },
   ],
   github: "mroth/evalcache",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zsh-plugin",
-  ],
+  keywords: ["zsh", "zsh-plugin"],
   installation: {
     origin: "github",
     sourceFiles: ["evalcache.plugin.zsh"],

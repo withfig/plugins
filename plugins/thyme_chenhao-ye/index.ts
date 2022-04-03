@@ -6,28 +6,20 @@ const plugin: Fig.Plugin = {
     {
       name: "chenhao-ye",
       github: "chenhao-ye",
-    }
+    },
   ],
   github: "chenhao-ye/thyme",
   license: ["MIT"],
   shells: ["bash", "zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh",
-    "theme",
-    "starship",
-  ],
+  keywords: ["zsh", "theme", "starship"],
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"install.sh"
-      ],
+      sourceFiles: ["install.sh"],
     },
     zsh: {
-      sourceFiles: [
-"install.sh"
-      ],
+      sourceFiles: ["install.sh"],
     },
   },
 };

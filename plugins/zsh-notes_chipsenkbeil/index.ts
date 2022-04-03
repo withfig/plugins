@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "chipsenkbeil",
       github: "chipsenkbeil",
       twitter: "ChipSenkbeil",
-    }
+    },
   ],
   github: "chipsenkbeil/zsh-notes",
   license: ["GPL-3.0"],

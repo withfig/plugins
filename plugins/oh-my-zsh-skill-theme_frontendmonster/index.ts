@@ -7,28 +7,20 @@ const plugin: Fig.Plugin = {
       name: "frontendmonster",
       github: "frontendmonster",
       twitter: "ASafaeirad",
-    }
+    },
   ],
   github: "frontendmonster/oh-my-zsh-skill-theme",
   license: ["MIT"],
   shells: ["bash", "zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh",
-    "theme",
-    "s-kill",
-  ],
+  keywords: ["zsh", "theme", "s-kill"],
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"install.sh"
-      ],
+      sourceFiles: ["install.sh"],
     },
     zsh: {
-      sourceFiles: [
-"install.sh"
-      ],
+      sourceFiles: ["install.sh"],
     },
   },
 };

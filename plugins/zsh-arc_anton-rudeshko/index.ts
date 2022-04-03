@@ -6,18 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "anton-rudeshko",
       github: "anton-rudeshko",
-    }
+    },
   ],
   github: "anton-rudeshko/zsh-arc",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "arc",
-    "yandex",
-    "shell",
-  ],
+  keywords: ["zsh", "arc", "yandex", "shell"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-arc.plugin.zsh"],

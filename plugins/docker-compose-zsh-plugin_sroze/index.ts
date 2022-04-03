@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "sroze",
       github: "sroze",
-    }
+    },
   ],
   github: "sroze/docker-compose-zsh-plugin",
   shells: ["zsh"],

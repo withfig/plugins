@@ -7,17 +7,12 @@ const plugin: Fig.Plugin = {
       name: "b4b4r07",
       github: "b4b4r07",
       twitter: "b4b4r07",
-    }
+    },
   ],
   github: "b4b4r07/zsh-history",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "golang",
-    "go",
-    "zsh-plugin",
-  ],
+  keywords: ["zsh", "golang", "go", "zsh-plugin"],
   installation: {
     origin: "github",
     sourceFiles: ["init.zsh"],

@@ -15,13 +15,7 @@ const plugin: Fig.Plugin = {
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "autojump",
-    "zsh",
-    "zsh-plugin",
-    "filesystem",
-    "command-line-tool",
-  ],
+  keywords: ["autojump", "zsh", "zsh-plugin", "filesystem", "command-line-tool"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-z.plugin.zsh"],

@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "yonchu",
       github: "yonchu",
-    }
+    },
   ],
   github: "yonchu/vimman",
   shells: ["zsh"],

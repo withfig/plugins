@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "cal2195",
       github: "cal2195",
-    }
+    },
   ],
   github: "cal2195/q",
   license: ["MIT"],
@@ -26,14 +26,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"q.sh"
-      ],
+      sourceFiles: ["q.sh"],
     },
     zsh: {
-      sourceFiles: [
-"q.plugin.zsh"
-      ],
+      sourceFiles: ["q.plugin.zsh"],
     },
   },
 };

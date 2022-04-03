@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "eventi",
       github: "eventi",
-    }
+    },
   ],
   github: "eventi/noreallyjustfuckingstopalready",
   shells: ["bash", "zsh"],
@@ -14,14 +14,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"flu.sh"
-      ],
+      sourceFiles: ["flu.sh"],
     },
     zsh: {
-      sourceFiles: [
-"noreallyjustfuckingstopalready.plugin.zsh"
-      ],
+      sourceFiles: ["noreallyjustfuckingstopalready.plugin.zsh"],
     },
   },
 };

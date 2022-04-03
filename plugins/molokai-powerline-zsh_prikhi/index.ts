@@ -6,18 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "prikhi",
       github: "prikhi",
-    }
+    },
   ],
   github: "prikhi/molokai-powerline-zsh",
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "molokai",
-    "zsh",
-    "powerline",
-    "theme",
-    "zsh-theme",
-  ],
+  keywords: ["molokai", "zsh", "powerline", "theme", "zsh-theme"],
   installation: {
     origin: "github",
     sourceFiles: ["molokai-powerline.zsh-theme"],

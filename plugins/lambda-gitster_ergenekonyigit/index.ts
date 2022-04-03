@@ -7,16 +7,12 @@ const plugin: Fig.Plugin = {
       name: "ergenekonyigit",
       github: "ergenekonyigit",
       twitter: "ergenekonyigit",
-    }
+    },
   ],
   github: "ergenekonyigit/lambda-gitster",
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh",
-    "oh-my-zsh",
-    "theme",
-  ],
+  keywords: ["zsh", "oh-my-zsh", "theme"],
   installation: {
     origin: "github",
     sourceFiles: ["lambda-gitster.zsh-theme"],

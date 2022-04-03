@@ -6,20 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "marszall87",
       github: "marszall87",
-    }
+    },
   ],
   github: "marszall87/nodeys-zsh-theme",
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh",
-    "terminal",
-    "terminal-themes",
-    "theme",
-    "git",
-    "nodejs",
-    "prompt",
-  ],
+  keywords: ["zsh", "terminal", "terminal-themes", "theme", "git", "nodejs", "prompt"],
   installation: {
     origin: "github",
     sourceFiles: ["nodeys.zsh-theme"],

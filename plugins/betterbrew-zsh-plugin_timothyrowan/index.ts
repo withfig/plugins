@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "timothyrowan",
       github: "timothyrowan",
-    }
+    },
   ],
   github: "timothyrowan/betterbrew-zsh-plugin",
   shells: ["zsh"],

@@ -6,14 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "sandstorm",
       github: "sandstorm",
-    }
+    },
   ],
   github: "sandstorm/oh-my-zsh-flow-plugin",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "hacktoberfest",
-  ],
+  keywords: ["hacktoberfest"],
   installation: {
     origin: "github",
     sourceFiles: ["flow.plugin.zsh"],

@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "romkatv",
       github: "romkatv",
       twitter: "romkatv",
-    }
+    },
   ],
   github: "romkatv/zsh-defer",
   license: ["GPL-3.0"],

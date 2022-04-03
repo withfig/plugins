@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "brymck",
       github: "brymck",
-    }
+    },
   ],
   github: "brymck/print-alias",
   license: ["MIT"],

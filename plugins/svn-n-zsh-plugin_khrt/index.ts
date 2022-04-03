@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "khrt",
       github: "khrt",
-    }
+    },
   ],
   github: "khrt/svn-n-zsh-plugin",
   license: ["BSD-3-Clause"],

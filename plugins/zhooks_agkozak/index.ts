@@ -7,18 +7,13 @@ const plugin: Fig.Plugin = {
       name: "agkozak",
       github: "agkozak",
       twitter: "agkozak",
-    }
+    },
   ],
   github: "agkozak/zhooks",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "hooks",
-    "zsh-plugin",
-    "zsh-configuration",
-  ],
+  keywords: ["zsh", "hooks", "zsh-plugin", "zsh-configuration"],
   installation: {
     origin: "github",
     sourceFiles: ["zhooks.plugin.zsh"],

@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "jenssegers",
       github: "jenssegers",
       twitter: "jenssegers",
-    }
+    },
   ],
   github: "jenssegers/palenight.zsh-theme",
   license: ["MIT"],

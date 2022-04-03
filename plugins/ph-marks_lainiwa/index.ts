@@ -6,19 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "lainiwa",
       github: "lainiwa",
-    }
+    },
   ],
   github: "lainiwa/ph-marks",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zsh-plugin",
-    "pornhub",
-    "bookmarks",
-    "cli",
-  ],
+  keywords: ["zsh", "zsh-plugin", "pornhub", "bookmarks", "cli"],
   installation: {
     origin: "github",
     sourceFiles: ["ph-marks.plugin.zsh"],

@@ -6,19 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "laggardkernel",
       github: "laggardkernel",
-    }
+    },
   ],
   github: "laggardkernel/zsh-thefuck",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh-plugin",
-    "zsh",
-    "thefuck",
-    "prezto",
-    "zplugin",
-  ],
+  keywords: ["zsh-plugin", "zsh", "thefuck", "prezto", "zplugin"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-thefuck.plugin.zsh"],

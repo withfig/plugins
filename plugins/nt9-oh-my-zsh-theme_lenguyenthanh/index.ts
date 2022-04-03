@@ -6,18 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "lenguyenthanh",
       github: "lenguyenthanh",
-    }
+    },
   ],
   github: "lenguyenthanh/nt9-oh-my-zsh-theme",
   license: ["Apache-2.0"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "theme",
-    "zsh-theme",
-    "oh-my-zsh-theme",
-    "oh-my-zsh",
-  ],
+  keywords: ["theme", "zsh-theme", "oh-my-zsh-theme", "oh-my-zsh"],
   installation: {
     origin: "github",
     sourceFiles: ["nt9.zsh-theme"],

@@ -7,16 +7,12 @@ const plugin: Fig.Plugin = {
     {
       name: "Tarrasch",
       github: "Tarrasch",
-    }
+    },
   ],
   github: "Tarrasch/zsh-autoenv",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zshrc",
-    "autoenv",
-  ],
+  keywords: ["zsh", "zshrc", "autoenv"],
   installation: {
     origin: "github",
     sourceFiles: ["autoenv.plugin.zsh"],

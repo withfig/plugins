@@ -1,12 +1,12 @@
 const plugin: Fig.Plugin = {
   name: "zsh-sudo_hcgraf",
   type: "shell",
-  description: "Extracted \"sudo\" plugin from oh-my-zsh",
+  description: 'Extracted "sudo" plugin from oh-my-zsh',
   authors: [
     {
       name: "hcgraf",
       github: "hcgraf",
-    }
+    },
   ],
   github: "hcgraf/zsh-sudo",
   shells: ["zsh"],

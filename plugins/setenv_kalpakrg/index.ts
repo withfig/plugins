@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "kalpakrg",
       github: "kalpakrg",
-    }
+    },
   ],
   github: "kalpakrg/setenv",
   license: ["Apache-2.0"],

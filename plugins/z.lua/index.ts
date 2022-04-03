@@ -1,8 +1,7 @@
 const plugin: Fig.Plugin = {
   name: "z.lua",
   type: "shell",
-  description:
-    "A new cd command that helps you navigate faster by learning your habits.",
+  description: "A new cd command that helps you navigate faster by learning your habits.",
   icon: "⚡",
   github: "skywind3000/z.lua",
   license: ["MIT"],
@@ -34,9 +33,8 @@ const plugin: Fig.Plugin = {
   ],
   installation: {
     origin: "github",
-    postScript: ({ ctx }) => {
-      return `eval "$(lua ${ctx.plugin.installDirectory}/z.lua --init ${ctx.shell})"`;
-    },
+    postScript: ({ ctx }) =>
+      `eval "$(lua ${ctx.plugin.installDirectory}/z.lua --init ${ctx.shell})"`,
     fish: {
       sourceFiles: "init.fish",
     },

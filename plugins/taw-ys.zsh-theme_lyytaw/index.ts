@@ -6,15 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "lyytaw",
       github: "lyytaw",
-    }
+    },
   ],
   github: "lyytaw/taw-ys.zsh-theme",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh-theme",
-  ],
+  keywords: ["zsh-theme"],
   installation: {
     origin: "github",
     sourceFiles: ["taw-ys-conda.zsh-theme", "taw-ys-virtualenv.zsh-theme"],

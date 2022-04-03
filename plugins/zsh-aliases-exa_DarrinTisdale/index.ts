@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "DarrinTisdale",
       github: "DarrinTisdale",
       twitter: "DarrinTisdale",
-    }
+    },
   ],
   github: "DarrinTisdale/zsh-aliases-exa",
   license: ["MIT"],

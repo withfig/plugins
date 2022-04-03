@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "chrissicool",
       github: "chrissicool",
       twitter: "chrissicool",
-    }
+    },
   ],
   github: "chrissicool/zsh-256color",
   license: ["MIT"],

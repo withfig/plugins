@@ -6,18 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "Nyquase",
       github: "Nyquase",
-    }
+    },
   ],
   github: "Nyquase/vi-mode",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zsh-plugins",
-    "vim",
-    "oh-my-zsh",
-  ],
+  keywords: ["zsh", "zsh-plugins", "vim", "oh-my-zsh"],
   installation: {
     origin: "github",
     sourceFiles: ["vi-mode.plugin.zsh"],

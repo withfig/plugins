@@ -7,17 +7,13 @@ const plugin: Fig.Plugin = {
       name: "carcruz",
       github: "carcruz",
       twitter: "_crcruz",
-    }
+    },
   ],
   github: "carcruz/susi-zsh-iterm",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "oh-my-zsh-theme",
-    "oh-my-zsh",
-    "bash",
-  ],
+  keywords: ["oh-my-zsh-theme", "oh-my-zsh", "bash"],
   installation: {
     origin: "github",
     sourceFiles: ["susi.zsh-theme"],

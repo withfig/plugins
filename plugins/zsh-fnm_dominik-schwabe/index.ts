@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "dominik-schwabe",
       github: "dominik-schwabe",
-    }
+    },
   ],
   github: "dominik-schwabe/zsh-fnm",
   license: ["MIT"],

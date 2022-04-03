@@ -6,17 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "AlexisBRENON",
       github: "AlexisBRENON",
-    }
+    },
   ],
   github: "AlexisBRENON/oh-my-zsh-reminder",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "ohmyzsh-plugin",
-    "displays-reminders",
-    "shell",
-  ],
+  keywords: ["ohmyzsh-plugin", "displays-reminders", "shell"],
   installation: {
     origin: "github",
     sourceFiles: ["reminder.plugin.zsh"],

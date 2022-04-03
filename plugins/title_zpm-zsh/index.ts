@@ -6,18 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "zpm-zsh",
       github: "zpm-zsh",
-    }
+    },
   ],
   github: "zpm-zsh/title",
   license: ["GPL-3.0"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh-plugin",
-    "zsh",
-    "zpm",
-    "shell",
-  ],
+  keywords: ["zsh-plugin", "zsh", "zpm", "shell"],
   installation: {
     origin: "github",
     sourceFiles: ["title.plugin.zsh"],

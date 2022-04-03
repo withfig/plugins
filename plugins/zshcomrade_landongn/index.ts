@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "landongn",
       github: "landongn",
       twitter: "landongn",
-    }
+    },
   ],
   github: "landongn/zshcomrade",
   shells: ["zsh"],

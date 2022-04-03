@@ -1,12 +1,13 @@
 const plugin: Fig.Plugin = {
   name: "ansible-role-zsh_viasite-ansible",
   type: "shell",
-  description: "Setup antigen with oh-my-zsh, powerlevel10k theme, fzf, autosuggestions, syntax-highlighting",
+  description:
+    "Setup antigen with oh-my-zsh, powerlevel10k theme, fzf, autosuggestions, syntax-highlighting",
   authors: [
     {
       name: "viasite-ansible",
       github: "viasite-ansible",
-    }
+    },
   ],
   github: "viasite-ansible/ansible-role-zsh",
   site: "https://habrahabr.ru/post/323496/",
@@ -26,14 +27,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"install.sh"
-      ],
+      sourceFiles: ["install.sh"],
     },
     zsh: {
-      sourceFiles: [
-"install.sh"
-      ],
+      sourceFiles: ["install.sh"],
     },
   },
 };

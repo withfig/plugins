@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "dogrocker",
       github: "dogrocker",
-    }
+    },
   ],
   github: "dogrocker/oh-my-zsh-powerline-cute-theme",
   shells: ["zsh"],

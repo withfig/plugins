@@ -7,19 +7,13 @@ const plugin: Fig.Plugin = {
       name: "owenvoke",
       github: "owenvoke",
       twitter: "owenvoke",
-    }
+    },
   ],
   github: "owenvoke/quoter-zsh",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "plugin",
-    "zsh-plugins",
-    "quotes",
-    "cli",
-  ],
+  keywords: ["zsh", "plugin", "zsh-plugins", "quotes", "cli"],
   installation: {
     origin: "github",
     sourceFiles: ["quoter-zsh.plugin.zsh"],

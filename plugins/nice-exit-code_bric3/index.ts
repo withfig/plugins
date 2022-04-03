@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "bric3",
       github: "bric3",
       twitter: "BriceDutheil",
-    }
+    },
   ],
   github: "bric3/nice-exit-code",
   license: ["MIT"],

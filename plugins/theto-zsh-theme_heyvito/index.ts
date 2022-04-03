@@ -7,17 +7,13 @@ const plugin: Fig.Plugin = {
       name: "heyvito",
       github: "heyvito",
       twitter: "heyvito",
-    }
+    },
   ],
   github: "heyvito/theto-zsh-theme",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh",
-    "zsh-theme",
-    "minimalistic-theme",
-  ],
+  keywords: ["zsh", "zsh-theme", "minimalistic-theme"],
   installation: {
     origin: "github",
     sourceFiles: ["theto.zsh-theme"],

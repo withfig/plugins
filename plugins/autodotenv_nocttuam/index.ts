@@ -6,16 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "nocttuam",
       github: "nocttuam",
-    }
+    },
   ],
   github: "nocttuam/autodotenv",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "oh-my-zsh",
-  ],
+  keywords: ["zsh", "oh-my-zsh"],
   installation: {
     origin: "github",
     sourceFiles: ["autoenv.plugin.zsh"],

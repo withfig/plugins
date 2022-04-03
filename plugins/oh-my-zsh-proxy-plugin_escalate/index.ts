@@ -6,18 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "escalate",
       github: "escalate",
-    }
+    },
   ],
   github: "escalate/oh-my-zsh-proxy-plugin",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "oh-my-zsh-plugin",
-    "proxy",
-    "oh-my-zsh",
-    "zsh",
-  ],
+  keywords: ["oh-my-zsh-plugin", "proxy", "oh-my-zsh", "zsh"],
   installation: {
     origin: "github",
     sourceFiles: ["proxy.plugin.zsh"],

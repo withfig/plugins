@@ -1,13 +1,14 @@
 const plugin: Fig.Plugin = {
   name: "project_gko",
   type: "shell",
-  description: "☕️ Create node, rust, python or ruby project locally and on github (private or public)",
+  description:
+    "☕️ Create node, rust, python or ruby project locally and on github (private or public)",
   authors: [
     {
       name: "gko",
       github: "gko",
       twitter: "konstantin",
-    }
+    },
   ],
   github: "gko/project",
   license: ["MIT"],
@@ -31,14 +32,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"project.sh"
-      ],
+      sourceFiles: ["project.sh"],
     },
     zsh: {
-      sourceFiles: [
-"project.sh"
-      ],
+      sourceFiles: ["project.sh"],
     },
   },
 };

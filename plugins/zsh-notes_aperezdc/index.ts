@@ -6,16 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "aperezdc",
       github: "aperezdc",
-    }
+    },
   ],
   github: "aperezdc/zsh-notes",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "plugin",
-    "notes-tool",
-  ],
+  keywords: ["zsh", "plugin", "notes-tool"],
   installation: {
     origin: "github",
     sourceFiles: ["notes.plugin.zsh"],

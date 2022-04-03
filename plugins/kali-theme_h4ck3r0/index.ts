@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "h4ck3r0",
       github: "h4ck3r0",
-    }
+    },
   ],
   github: "h4ck3r0/kali-theme",
   license: ["GPL-3.0"],
@@ -28,14 +28,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"os.sh"
-      ],
+      sourceFiles: ["os.sh"],
     },
     zsh: {
-      sourceFiles: [
-"os.sh"
-      ],
+      sourceFiles: ["os.sh"],
     },
   },
 };

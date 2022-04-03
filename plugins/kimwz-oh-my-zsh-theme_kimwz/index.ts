@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "kimwz",
       github: "kimwz",
-    }
+    },
   ],
   github: "kimwz/kimwz-oh-my-zsh-theme",
   shells: ["bash", "zsh"],
@@ -14,14 +14,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"install.sh"
-      ],
+      sourceFiles: ["install.sh"],
     },
     zsh: {
-      sourceFiles: [
-"install.sh"
-      ],
+      sourceFiles: ["install.sh"],
     },
   },
 };

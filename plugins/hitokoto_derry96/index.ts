@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "derry96",
       github: "derry96",
-    }
+    },
   ],
   github: "derry96/hitokoto",
   license: ["Apache-2.0"],

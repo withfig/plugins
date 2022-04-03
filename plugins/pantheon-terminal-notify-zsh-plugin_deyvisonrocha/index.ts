@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "deyvisonrocha",
       github: "deyvisonrocha",
       twitter: "deyvisonrocha",
-    }
+    },
   ],
   github: "deyvisonrocha/pantheon-terminal-notify-zsh-plugin",
   license: ["MIT"],

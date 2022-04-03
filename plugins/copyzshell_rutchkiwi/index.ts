@@ -1,12 +1,13 @@
 const plugin: Fig.Plugin = {
   name: "copyzshell_rutchkiwi",
   type: "shell",
-  description: "A plugin for oh-my-zsh to copy your shell configuration to another machine over ssh.",
+  description:
+    "A plugin for oh-my-zsh to copy your shell configuration to another machine over ssh.",
   authors: [
     {
       name: "rutchkiwi",
       github: "rutchkiwi",
-    }
+    },
   ],
   github: "rutchkiwi/copyzshell",
   license: ["MIT"],

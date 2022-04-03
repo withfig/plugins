@@ -1,35 +1,8 @@
-const colors = [
-  "BOLD",
-  "BLACK",
-  "BOLD_GRAY",
-  "RED",
-  "BOLD_RED",
-  "GREEN",
-  "BOLD_GREEN",
-  "YELLOW",
-  "BOLD_YELLOW",
-  "BLUE",
-  "BOLD_BLUE",
-  "PURPLE",
-  "MAGENTA",
-  "BOLD_PURPLE",
-  "BOLD_MAGENTA",
-  "PINK",
-  "CYAN",
-  "BOLD_CYAN",
-  "WHITE",
-  "BOLD_WHITE",
-  "WARN_RED",
-  "CRIT_RED",
-  "DANGER_RED",
-];
-
 const plugin: Fig.Plugin = {
   name: "liquidprompt",
   icon: "💧",
   type: "shell",
-  description:
-    "A full-featured & carefully designed adaptive prompt for Bash & Zsh",
+  description: "A full-featured & carefully designed adaptive prompt for Bash & Zsh",
   authors: [
     {
       name: "nojhan",
@@ -63,8 +36,7 @@ const plugin: Fig.Plugin = {
           displayName: "Enable Battery Status",
           type: "environmentVariable",
           environmentVariable: "LP_ENABLE_BATT",
-          description:
-            "Display the status of the battery, if there is one, using color and marks.",
+          description: "Display the status of the battery, if there is one, using color and marks.",
           additionalDetails:
             "Will be disabled if `acpi` is not found on Linux, or `pmset` is not found on MacOS.",
           interface: "toggle",
@@ -83,8 +55,7 @@ const plugin: Fig.Plugin = {
           type: "environmentVariable",
           environmentVariable: "LP_ENABLE_DETACHED_SESSIONS",
           description: "Display the number of detached multiplexer sessions.",
-          additionalDetails:
-            "Will be disabled if neither `screen` nor `tmux` are found.",
+          additionalDetails: "Will be disabled if neither `screen` nor `tmux` are found.",
           interface: "toggle",
           default: true,
         },
@@ -92,8 +63,7 @@ const plugin: Fig.Plugin = {
           displayName: "Enable Dirstack",
           type: "environmentVariable",
           environmentVariable: "LP_ENABLE_DIRSTACK",
-          description:
-            "Display the size of the directory stack if it is greater than `1`.",
+          description: "Display the size of the directory stack if it is greater than `1`.",
           interface: "toggle",
           default: false,
         },
@@ -101,8 +71,7 @@ const plugin: Fig.Plugin = {
           displayName: "Fully Qualified Hostname",
           type: "environmentVariable",
           environmentVariable: "LP_ENABLE_FQDN",
-          description:
-            "Display the fully qualified hostname instead of the short hostname.",
+          description: "Display the fully qualified hostname instead of the short hostname.",
           interface: "toggle",
           default: false,
         },
@@ -145,7 +114,7 @@ const plugin: Fig.Plugin = {
           default: "±",
           interface: "text",
           environmentVariable: "LP_MARK_GIT",
-          hidden: ({ config }) => !config["LP_ENABLE_GIT"],
+          hidden: ({ config }) => !config.LP_ENABLE_GIT,
         },
         {
           displayName: "Enable Mercurial",
@@ -164,13 +133,12 @@ const plugin: Fig.Plugin = {
           default: "☿",
           interface: "text",
           environmentVariable: "LP_MARK_HG",
-          hidden: ({ config }) => !config["LP_ENABLE_HG"],
+          hidden: ({ config }) => !config.LP_ENABLE_HG,
         },
         {
           displayName: "Enable Subversion",
           type: "environmentVariable",
-          description:
-            "Display VCS information inside Subversion repositories.",
+          description: "Display VCS information inside Subversion repositories.",
           additionalDetails: "Will be disabled if `svn` is not found.",
           default: true,
           interface: "toggle",
@@ -184,7 +152,7 @@ const plugin: Fig.Plugin = {
           default: "‡",
           interface: "text",
           environmentVariable: "LP_MARK_SVN",
-          hidden: ({ config }) => !config["LP_ENABLE_SVN"],
+          hidden: ({ config }) => !config.LP_ENABLE_SVN,
         },
         {
           displayName: "Enable Fossil",
@@ -203,7 +171,7 @@ const plugin: Fig.Plugin = {
           default: "⌘",
           interface: "text",
           environmentVariable: "LP_MARK_FOSSIL",
-          hidden: ({ config }) => !config["LP_ENABLE_FOSSIL"],
+          hidden: ({ config }) => !config.LP_ENABLE_FOSSIL,
         },
         {
           displayName: "Enable Bazaar",
@@ -222,7 +190,7 @@ const plugin: Fig.Plugin = {
           default: "⚯",
           interface: "text",
           environmentVariable: "LP_MARK_BZR",
-          hidden: ({ config }) => !config["LP_ENABLE_BZR"],
+          hidden: ({ config }) => !config.LP_ENABLE_BZR,
         },
       ],
     },
@@ -246,7 +214,7 @@ const plugin: Fig.Plugin = {
           default: 3,
           interface: "text",
           environmentVariable: "LP_PATH_CHARACTER_KEEP",
-          hidden: ({ config }) => !config["LP_ENABLE_SHORTEN_PATH"],
+          hidden: ({ config }) => !config.LP_ENABLE_SHORTEN_PATH,
         },
         {
           displayName: "Path Keep",
@@ -258,7 +226,7 @@ const plugin: Fig.Plugin = {
           default: 2,
           interface: "text",
           environmentVariable: "LP_PATH_KEEP",
-          hidden: ({ config }) => !config["LP_ENABLE_SHORTEN_PATH"],
+          hidden: ({ config }) => !config.LP_ENABLE_SHORTEN_PATH,
         },
         {
           displayName: "Path Length Max Width",
@@ -268,7 +236,7 @@ const plugin: Fig.Plugin = {
           default: 35,
           interface: "text",
           environmentVariable: "LP_PATH_LENGTH",
-          hidden: ({ config }) => !config["LP_ENABLE_SHORTEN_PATH"],
+          hidden: ({ config }) => !config.LP_ENABLE_SHORTEN_PATH,
         },
         {
           displayName: "Path Length Max Width",
@@ -285,7 +253,7 @@ const plugin: Fig.Plugin = {
             "truncate_to_last_dir",
           ],
           environmentVariable: "LP_PATH_METHOD",
-          hidden: ({ config }) => !config["LP_ENABLE_SHORTEN_PATH"],
+          hidden: ({ config }) => !config.LP_ENABLE_SHORTEN_PATH,
         },
       ],
     },

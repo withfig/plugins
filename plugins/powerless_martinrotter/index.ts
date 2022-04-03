@@ -6,18 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "martinrotter",
       github: "martinrotter",
-    }
+    },
   ],
   github: "martinrotter/powerless",
   license: ["GPL-3.0"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh",
-    "agnoster",
-    "powerline",
-    "prompt",
-  ],
+  keywords: ["zsh", "agnoster", "powerline", "prompt"],
   installation: {
     origin: "github",
     sourceFiles: ["powerless.zsh"],

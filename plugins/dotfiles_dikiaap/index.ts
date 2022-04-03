@@ -1,12 +1,13 @@
 const plugin: Fig.Plugin = {
   name: "dotfiles_dikiaap",
   type: "shell",
-  description: "Get ready for dotfiles. Contains i3, i3blocks, rofi, dunst, picom, vim, tmux, and zsh.",
+  description:
+    "Get ready for dotfiles. Contains i3, i3blocks, rofi, dunst, picom, vim, tmux, and zsh.",
   authors: [
     {
       name: "dikiaap",
       github: "dikiaap",
-    }
+    },
   ],
   github: "dikiaap/dotfiles",
   license: ["MIT"],
@@ -34,14 +35,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"install.sh"
-      ],
+      sourceFiles: ["install.sh"],
     },
     zsh: {
-      sourceFiles: [
-".zsh"
-      ],
+      sourceFiles: [".zsh"],
     },
   },
 };

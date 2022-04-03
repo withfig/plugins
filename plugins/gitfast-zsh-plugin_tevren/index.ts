@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "tevren",
       github: "tevren",
-    }
+    },
   ],
   github: "tevren/gitfast-zsh-plugin",
   shells: ["bash", "zsh"],
@@ -14,14 +14,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"git-completion.bash"
-      ],
+      sourceFiles: ["git-completion.bash"],
     },
     zsh: {
-      sourceFiles: [
-"gitfast.plugin.zsh"
-      ],
+      sourceFiles: ["gitfast.plugin.zsh"],
     },
   },
 };

@@ -6,18 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "aperezdc",
       github: "aperezdc",
-    }
+    },
   ],
   github: "aperezdc/zsh-fzy",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "plugin",
-    "fuzzy-finder",
-    "fzy",
-  ],
+  keywords: ["zsh", "plugin", "fuzzy-finder", "fzy"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-fzy.plugin.zsh"],

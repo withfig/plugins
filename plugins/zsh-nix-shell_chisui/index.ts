@@ -6,18 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "chisui",
       github: "chisui",
-    }
+    },
   ],
   github: "chisui/zsh-nix-shell",
   license: ["BSD-3-Clause"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "nix",
-    "nix-shell",
-    "zsh-nix",
-  ],
+  keywords: ["zsh", "nix", "nix-shell", "zsh-nix"],
   installation: {
     origin: "github",
     sourceFiles: ["nix-shell.plugin.zsh"],

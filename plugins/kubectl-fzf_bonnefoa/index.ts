@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "bonnefoa",
       github: "bonnefoa",
-    }
+    },
   ],
   github: "bonnefoa/kubectl-fzf",
   license: ["MIT"],
@@ -24,14 +24,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"kubectl_fzf.bash"
-      ],
+      sourceFiles: ["kubectl_fzf.bash"],
     },
     zsh: {
-      sourceFiles: [
-"kubectl_fzf.plugin.zsh"
-      ],
+      sourceFiles: ["kubectl_fzf.plugin.zsh"],
     },
   },
 };

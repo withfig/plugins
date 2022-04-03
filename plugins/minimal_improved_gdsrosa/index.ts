@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "gdsrosa",
       github: "gdsrosa",
       twitter: "gabrieldsrosa",
-    }
+    },
   ],
   github: "gdsrosa/minimal_improved",
   license: ["MIT"],
