@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "zsh-abbrev-alias_momo-lab",
   type: "shell",
-  description: "This zsh plugin provides functionality similar to Vim's abbreviation expansion.",
+  description:
+    "This zsh plugin provides functionality similar to Vim's abbreviation expansion.",
   authors: [
     {
       name: "momo-lab",

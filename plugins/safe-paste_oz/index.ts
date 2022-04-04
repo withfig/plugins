@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "safe-paste_oz",
   type: "shell",
-  description: "Zsh safe-paste plugin for antigen. See http://cirw.in/blog/bracketed-paste",
+  description:
+    "Zsh safe-paste plugin for antigen. See http://cirw.in/blog/bracketed-paste",
   authors: [
     {
       name: "oz",

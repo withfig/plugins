@@ -15,10 +15,16 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: ["one_key_install_zsh_gitee.sh", "one_key_install_zsh_github.sh"],
+      sourceFiles: [
+        "one_key_install_zsh_gitee.sh",
+        "one_key_install_zsh_github.sh",
+      ],
     },
     zsh: {
-      sourceFiles: ["one_key_install_zsh_gitee.sh", "one_key_install_zsh_github.sh"],
+      sourceFiles: [
+        "one_key_install_zsh_gitee.sh",
+        "one_key_install_zsh_github.sh",
+      ],
     },
   },
 };

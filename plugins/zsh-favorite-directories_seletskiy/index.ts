@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "zsh-favorite-directories_seletskiy",
   type: "shell",
-  description: "zsh plugin for cd to list of favorite directories lightning fast",
+  description:
+    "zsh plugin for cd to list of favorite directories lightning fast",
   authors: [
     {
       name: "seletskiy",

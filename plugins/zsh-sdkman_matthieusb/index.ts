@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "zsh-sdkman_matthieusb",
   type: "shell",
-  description: "Zsh plugin to provide aliases and completion scripts for sdkman",
+  description:
+    "Zsh plugin to provide aliases and completion scripts for sdkman",
   authors: [
     {
       name: "matthieusb",

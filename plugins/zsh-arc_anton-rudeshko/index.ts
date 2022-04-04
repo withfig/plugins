@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "zsh-arc_anton-rudeshko",
   type: "shell",
-  description: "zsh plugin with aliases for Yandex version control system `arc`",
+  description:
+    "zsh plugin with aliases for Yandex version control system `arc`",
   authors: [
     {
       name: "anton-rudeshko",

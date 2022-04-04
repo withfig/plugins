@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "undollar_zpm-zsh",
   type: "shell",
-  description: "Zsh plugin who strips the dollar sign from the beginning of the terminal command",
+  description:
+    "Zsh plugin who strips the dollar sign from the beginning of the terminal command",
   authors: [
     {
       name: "zpm-zsh",

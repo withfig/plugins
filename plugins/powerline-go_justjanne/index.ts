@@ -2,7 +2,8 @@ const plugin: Fig.Plugin = {
   name: "powerline-go_justjanne",
   displayName: "powerline-go",
   type: "shell",
-  description: " A beautiful and useful low-latency prompt for your shell, written in go",
+  description:
+    " A beautiful and useful low-latency prompt for your shell, written in go",
   authors: [
     {
       name: "justjanne",

@@ -14,7 +14,8 @@ const colorComponents: ColorComponent[] = [
   {
     name: "git:arrow",
     default: "cyan",
-    componentDescription: "The 'Git Up Arrow Symbol' and 'Git Down Arrow Symbol'.",
+    componentDescription:
+      "The 'Git Up Arrow Symbol' and 'Git Down Arrow Symbol'.",
   },
   {
     name: "git:stash",
@@ -24,12 +25,14 @@ const colorComponents: ColorComponent[] = [
   {
     name: "git:branch",
     default: "242",
-    componentDescription: "The name of the current branch when in a Git repository.",
+    componentDescription:
+      "The name of the current branch when in a Git repository.",
   },
   {
     name: "git:branch:cached",
     default: "red",
-    componentDescription: "The name of the current branch when the data isn't fresh.",
+    componentDescription:
+      "The name of the current branch when the data isn't fresh.",
   },
   {
     name: "git:action",
@@ -55,12 +58,14 @@ const colorComponents: ColorComponent[] = [
   {
     name: "prompt:error",
     default: "red",
-    componentDescription: "The 'Prompt Symbol' when the previous command has *failed*.",
+    componentDescription:
+      "The 'Prompt Symbol' when the previous command has *failed*.",
   },
   {
     name: "prompt:success",
     default: "magenta",
-    componentDescription: "The 'Prompt Symbol' when the previous command has *succeeded*.",
+    componentDescription:
+      "The 'Prompt Symbol' when the previous command has *succeeded*.",
   },
   {
     name: "prompt:continuation",
@@ -71,7 +76,8 @@ const colorComponents: ColorComponent[] = [
   {
     name: "suspended_jobs",
     default: "red",
-    componentDescription: "The `✦` symbol that indicates that jobs are running in the background.",
+    componentDescription:
+      "The `✦` symbol that indicates that jobs are running in the background.",
   },
   {
     name: "user",
@@ -90,7 +96,9 @@ const colorComponents: ColorComponent[] = [
   },
 ];
 
-const createConfigurationOptionForColorComponent = (component: ColorComponent): Fig.ScriptItem => {
+const createConfigurationOptionForColorComponent = (
+  component: ColorComponent
+): Fig.ScriptItem => {
   const nameRegex = /[:_\s]+/;
   const title = component.name
     .split(nameRegex)
@@ -198,7 +206,8 @@ const plugin: Fig.Plugin = {
     {
       displayName: "Enable Git Pull",
       type: "environmentVariable",
-      description: "Allow Pure to check whether the current Git remote has been updated.",
+      description:
+        "Allow Pure to check whether the current Git remote has been updated.",
       default: false,
       interface: "toggle",
       environmentVariable: "PURE_GIT_PULL",
@@ -225,7 +234,8 @@ const plugin: Fig.Plugin = {
       name: "show-git-stash-status",
       displayName: "Show Git Stash Status",
       type: "script",
-      description: "Show git stash status as part of the prompt. Off by default.",
+      description:
+        "Show git stash status as part of the prompt. Off by default.",
       default: false,
       interface: "toggle",
       compile: ({ value }: { value: boolean }) =>
@@ -245,7 +255,8 @@ const plugin: Fig.Plugin = {
     {
       name: "nix-shell-in-prompt",
       displayName: "[Nix Shell] Enable Shell Name In Prompt",
-      description: "When using nix-shell integration, add the shell name to the prompt.",
+      description:
+        "When using nix-shell integration, add the shell name to the prompt.",
       type: "script",
       default: true,
       interface: "toggle",
@@ -265,7 +276,8 @@ const plugin: Fig.Plugin = {
             "If you are unable to use a [terminal that support 24-bit colors](https://gist.github.com/XVilka/8346728), you can enable this option to load the module [`zsh/nearcolor`](http://zsh.sourceforge.net/Doc/Release/Zsh-Modules.html#The-zsh_002fnearcolor-Module). It will map any hexadecimal color to the nearest color in the 88 or 256 color palettes of your terminal, but without using the first 16 colors, since their values can be modified by the user. Keep in mind that when using this module you won't be able to display true RGB colors. It only allows you to specify colors in a more convenient way.",
           default: false,
           interface: "toggle",
-          compile: ({ value }: { value: boolean }) => (value ? "zmodload zsh/nearcolor" : ""),
+          compile: ({ value }: { value: boolean }) =>
+            value ? "zmodload zsh/nearcolor" : "",
         },
         ...colorComponents.map(createConfigurationOptionForColorComponent),
       ],

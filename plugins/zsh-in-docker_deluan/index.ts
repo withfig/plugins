@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "zsh-in-docker_deluan",
   type: "shell",
-  description: "Install Zsh, Oh-My-Zsh and plugins inside a Docker container with one line!",
+  description:
+    "Install Zsh, Oh-My-Zsh and plugins inside a Docker container with one line!",
   authors: [
     {
       name: "deluan",

@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "oh-my-zsh-reminder_AlexisBRENON",
   type: "shell",
-  description: "A very very simple OhMyZsh plugin which displays reminders above every prompt",
+  description:
+    "A very very simple OhMyZsh plugin which displays reminders above every prompt",
   authors: [
     {
       name: "AlexisBRENON",

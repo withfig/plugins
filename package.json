@@ -34,8 +34,9 @@
     "preupdate-plugins": "tsc --build tsconfig.update.json",
     "update-plugins": "node dist/cjs/util/update-plugins.js",
     "postupdate-plugins": "npm run clean",
-    "lint": "eslint '**/*.ts' && npx prettier --check '**/*.ts'",
-    "lint:fix": "eslint '**/*.ts' --fix && npx prettier --write '**/*.ts'"
+    "lint": "eslint '**/*.ts'",
+    "lint:fix": "eslint '**/*.ts' --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -48,11 +49,10 @@
   },
   "homepage": "https://github.com/withfig/plugins",
   "devDependencies": {
+    "@fig/eslint-config-fig": "^1.0.0",
     "@types/finalhandler": "^1.1.1",
     "@types/node": "^17.0.23",
     "@types/serve-static": "^1.13.10",
-    "@typescript-eslint/eslint-plugin": "^5.17.0",
-    "@typescript-eslint/parser": "^5.17.0",
     "axios": "^0.26.0",
     "chalk": "^4.1.2",
     "child_process": "^1.0.2",
@@ -61,17 +61,21 @@
     "dotenv": "^16.0.0",
     "esbuild": "^0.14.29",
     "eslint": "^8.12.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-prettier": "^4.0.0",
     "fast-glob": "^3.2.11",
     "finalhandler": "^1.2.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
     "prettier": "^2.6.2",
     "serve-static": "^1.15.0",
     "ts-node": "^10.6.0"
   },
   "dependencies": {
     "typescript": "^4.6.3"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix"
+    ]
   }
 }

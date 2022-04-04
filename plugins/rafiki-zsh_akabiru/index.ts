@@ -12,7 +12,14 @@ const plugin: Fig.Plugin = {
   github: "akabiru/rafiki-zsh",
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: ["zsh", "zsh-theme", "theme", "oh-my-zsh-theme", "rafiki-zsh", "emoji"],
+  keywords: [
+    "zsh",
+    "zsh-theme",
+    "theme",
+    "oh-my-zsh-theme",
+    "rafiki-zsh",
+    "emoji",
+  ],
   installation: {
     origin: "github",
     sourceFiles: ["rafiki.zsh-theme"],

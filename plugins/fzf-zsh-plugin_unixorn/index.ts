@@ -14,7 +14,14 @@ const plugin: Fig.Plugin = {
   license: ["Apache-2.0"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: ["zsh-plugin", "command-history", "hacktoberfest", "fzf", "fzf-scripts", "zsh"],
+  keywords: [
+    "zsh-plugin",
+    "command-history",
+    "hacktoberfest",
+    "fzf",
+    "fzf-scripts",
+    "zsh",
+  ],
   installation: {
     origin: "github",
     sourceFiles: ["fzf-zsh-plugin.plugin.zsh"],

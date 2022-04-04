@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "Linus-rants-ZSH_bhayward93",
   type: "shell",
-  description: "Picks a random Linus Torvalds quote to display every time you load your shell",
+  description:
+    "Picks a random Linus Torvalds quote to display every time you load your shell",
   authors: [
     {
       name: "bhayward93",

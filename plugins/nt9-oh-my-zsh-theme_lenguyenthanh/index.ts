@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "nt9-oh-my-zsh-theme_lenguyenthanh",
   type: "shell",
-  description: "A clean, distraction free and git focused development theme for Oh-my-zsh",
+  description:
+    "A clean, distraction free and git focused development theme for Oh-my-zsh",
   authors: [
     {
       name: "lenguyenthanh",

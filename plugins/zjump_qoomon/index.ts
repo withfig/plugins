@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "zjump_qoomon",
   type: "shell",
-  description: "Simplify zsh directory navigation; jump to already visited, parent or sub folders.",
+  description:
+    "Simplify zsh directory navigation; jump to already visited, parent or sub folders.",
   authors: [
     {
       name: "qoomon",

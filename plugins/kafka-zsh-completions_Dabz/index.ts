@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "kafka-zsh-completions_Dabz",
   type: "shell",
-  description: "ZSH plugin to have Kafka automatic completion for most CLI tools",
+  description:
+    "ZSH plugin to have Kafka automatic completion for most CLI tools",
   authors: [
     {
       name: "Dabz",

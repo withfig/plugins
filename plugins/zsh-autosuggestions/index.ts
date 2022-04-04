@@ -7,7 +7,14 @@ const plugin: Fig.Plugin = {
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Completion"],
-  keywords: ["shell", "autosuggest", "zsh", "zsh-autosuggestions", "fish", "autocomplete"],
+  keywords: [
+    "shell",
+    "autosuggest",
+    "zsh",
+    "zsh-autosuggestions",
+    "fish",
+    "autocomplete",
+  ],
   installation: {
     origin: "github",
     sourceFiles: "zsh-autosuggestions.zsh",
@@ -66,7 +73,9 @@ const plugin: Fig.Plugin = {
       interface: "text",
       disabled: ({ config }) => {
         const strategy = config.ZSH_AUTOSUGGEST_STRATEGY as string[];
-        return strategy.includes("match_prev_cmd") || strategy.includes("history");
+        return (
+          strategy.includes("match_prev_cmd") || strategy.includes("history")
+        );
       },
       additionalDetails: `
       **Note:** This only affects the *history* and *match_prev_cmd* suggestion strategies.
@@ -82,7 +91,9 @@ const plugin: Fig.Plugin = {
       interface: "text",
       disabled: ({ config }) => {
         const strategy = config.ZSH_AUTOSUGGEST_STRATEGY as string[];
-        return strategy.includes("match_prev_cmd") || strategy.includes("history");
+        return (
+          strategy.includes("match_prev_cmd") || strategy.includes("history")
+        );
       },
       additionalDetails: `
       **Note:** This only affects the *completion* suggestion strategies.
@@ -143,7 +154,8 @@ const plugin: Fig.Plugin = {
           compile: ({ value }) => value.split(",").map((v) => v.trim()),
         },
       ],
-      additionalDetails: "Note: A widget shouldn't belong to more than one of the above arrays.",
+      additionalDetails:
+        "Note: A widget shouldn't belong to more than one of the above arrays.",
     },
   ],
 };

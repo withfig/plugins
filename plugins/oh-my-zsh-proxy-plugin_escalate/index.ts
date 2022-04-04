@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "oh-my-zsh-proxy-plugin_escalate",
   type: "shell",
-  description: "An oh-my-zsh plugin to quickly enable and disable proxy shell environment settings",
+  description:
+    "An oh-my-zsh plugin to quickly enable and disable proxy shell environment settings",
   authors: [
     {
       name: "escalate",

@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "powerline-hs_rdnetto",
   type: "shell",
-  description: "A lightning fast reimplementation of the Powerline prompt generator in Haskell.",
+  description:
+    "A lightning fast reimplementation of the Powerline prompt generator in Haskell.",
   authors: [
     {
       name: "rdnetto",

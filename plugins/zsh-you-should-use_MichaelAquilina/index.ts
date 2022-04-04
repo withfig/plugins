@@ -3,7 +3,8 @@ const plugin: Fig.Plugin = {
   displayName: "zsh-you-should-use",
   icon: "📎",
   type: "shell",
-  description: "ZSH plugin that reminds you to use existing aliases for commands you just typed",
+  description:
+    "ZSH plugin that reminds you to use existing aliases for commands you just typed",
   authors: [
     {
       name: "MichaelAquilina",
@@ -14,7 +15,14 @@ const plugin: Fig.Plugin = {
   license: ["GPL-3.0"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: ["zsh", "zsh-plugin", "aliases", "productivity", "alias", "reminders"],
+  keywords: [
+    "zsh",
+    "zsh-plugin",
+    "aliases",
+    "productivity",
+    "alias",
+    "reminders",
+  ],
   installation: {
     origin: "github",
     sourceFiles: ["you-should-use.plugin.zsh"],

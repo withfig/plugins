@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "z.lua",
   type: "shell",
-  description: "A new cd command that helps you navigate faster by learning your habits.",
+  description:
+    "A new cd command that helps you navigate faster by learning your habits.",
   icon: "⚡",
   github: "skywind3000/z.lua",
   license: ["MIT"],

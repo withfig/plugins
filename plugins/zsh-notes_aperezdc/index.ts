@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "zsh-notes_aperezdc",
   type: "shell",
-  description: "Quick selection widget for Markdown notes, inspired by terminal_velocity",
+  description:
+    "Quick selection widget for Markdown notes, inspired by terminal_velocity",
   authors: [
     {
       name: "aperezdc",

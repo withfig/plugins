@@ -12,7 +12,15 @@ const plugin: Fig.Plugin = {
   license: ["Apache-2.0"],
   shells: ["zsh"],
   categories: ["Completion"],
-  keywords: ["zsh", "zsh-completions", "zsh-completion", "macos", "mac", "terminal", "macadmin"],
+  keywords: [
+    "zsh",
+    "zsh-completions",
+    "zsh-completion",
+    "macos",
+    "mac",
+    "terminal",
+    "macadmin",
+  ],
   installation: {
     origin: "github",
     sourceFiles: ["mac-zsh-completions.plugin.zsh"],

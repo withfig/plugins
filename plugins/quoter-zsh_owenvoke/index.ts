@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "quoter-zsh_owenvoke",
   type: "shell",
-  description: "A ZSH plugin for displaying random quotes when opening a terminal.",
+  description:
+    "A ZSH plugin for displaying random quotes when opening a terminal.",
   authors: [
     {
       name: "owenvoke",

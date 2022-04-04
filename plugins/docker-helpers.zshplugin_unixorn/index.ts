@@ -13,7 +13,14 @@ const plugin: Fig.Plugin = {
   license: ["Apache-2.0"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: ["docker", "zsh", "docker-helpers", "zsh-plugin", "shell-scripts", "hacktoberfest"],
+  keywords: [
+    "docker",
+    "zsh",
+    "docker-helpers",
+    "zsh-plugin",
+    "shell-scripts",
+    "hacktoberfest",
+  ],
   installation: {
     origin: "github",
     sourceFiles: ["docker-helpers.plugin.zsh"],

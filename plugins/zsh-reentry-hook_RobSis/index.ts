@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "zsh-reentry-hook_RobSis",
   type: "shell",
-  description: "ZSH plugin that re-enters working directory if it has been removed and re-created.",
+  description:
+    "ZSH plugin that re-enters working directory if it has been removed and re-created.",
   authors: [
     {
       name: "RobSis",

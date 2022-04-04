@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "autodotenv_nocttuam",
   type: "shell",
-  description: "autodotenv is a oh-my-zsh plugin inspired in official dotenv plugin",
+  description:
+    "autodotenv is a oh-my-zsh plugin inspired in official dotenv plugin",
   authors: [
     {
       name: "nocttuam",

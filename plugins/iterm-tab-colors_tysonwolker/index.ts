@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "iterm-tab-colors_tysonwolker",
   type: "shell",
-  description: "Tabs automatically change colors depending on the folder you are in.",
+  description:
+    "Tabs automatically change colors depending on the folder you are in.",
   authors: [
     {
       name: "tysonwolker",

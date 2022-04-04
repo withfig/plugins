@@ -15,7 +15,15 @@ const plugin: Fig.Plugin = {
   site: "https://github.com/natterstefan/toggl-zsh-plugin/blob/master/README.md",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: ["toggl", "zsh", "toggl-plugin", "zsh-plugin", "timetracking", "timetracker", "cli"],
+  keywords: [
+    "toggl",
+    "zsh",
+    "toggl-plugin",
+    "zsh-plugin",
+    "timetracking",
+    "timetracker",
+    "cli",
+  ],
   installation: {
     origin: "github",
     sourceFiles: ["toggl.plugin.zsh"],

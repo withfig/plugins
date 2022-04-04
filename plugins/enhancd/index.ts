@@ -38,7 +38,9 @@ const plugin: Fig.Plugin = {
     sourceFiles: "init.sh",
     fish: {
       sourceFiles: ({ ctx }) =>
-        ["conf.d/", "functions/"].map((dir) => `${ctx.plugin.installDirectory}${dir}*`),
+        ["conf.d/", "functions/"].map(
+          (dir) => `${ctx.plugin.installDirectory}${dir}*`
+        ),
     },
   },
 };

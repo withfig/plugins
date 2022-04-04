@@ -13,7 +13,15 @@ const plugin: Fig.Plugin = {
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: ["listbox", "listbox-element", "zshrc", "zsh", "bash", "bashrc", "list"],
+  keywords: [
+    "listbox",
+    "listbox-element",
+    "zshrc",
+    "zsh",
+    "bash",
+    "bashrc",
+    "list",
+  ],
   installation: {
     origin: "github",
     sourceFiles: ["listbox.plugin.zsh"],

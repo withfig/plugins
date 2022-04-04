@@ -12,7 +12,16 @@ const plugin: Fig.Plugin = {
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: ["zsh", "prompt", "theme", "git", "nodejs", "lambda", "terminal", "shell-theme"],
+  keywords: [
+    "zsh",
+    "prompt",
+    "theme",
+    "git",
+    "nodejs",
+    "lambda",
+    "terminal",
+    "shell-theme",
+  ],
   installation: {
     origin: "github",
     sourceFiles: ["lambda-pure.plugin.zsh"],

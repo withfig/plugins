@@ -14,7 +14,13 @@ const plugin: Fig.Plugin = {
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: ["zsh", "oh-my-zsh", "oh-my-zsh-plugin", "zsh-plugin", "proxy-configuration"],
+  keywords: [
+    "zsh",
+    "oh-my-zsh",
+    "oh-my-zsh-plugin",
+    "zsh-plugin",
+    "proxy-configuration",
+  ],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-osx-autoproxy.plugin.zsh"],

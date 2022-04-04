@@ -12,7 +12,14 @@ const plugin: Fig.Plugin = {
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: ["oh-my-zsh", "oh-my-zsh-plugin", "aws-vault", "zsh-plugin", "zsh", "prompt"],
+  keywords: [
+    "oh-my-zsh",
+    "oh-my-zsh-plugin",
+    "aws-vault",
+    "zsh-plugin",
+    "zsh",
+    "prompt",
+  ],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-aws-vault.plugin.zsh"],

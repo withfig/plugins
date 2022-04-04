@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "title_zpm-zsh",
   type: "shell",
-  description: "A zsh plugin that allows you to set a terminal header like any of PROMPT",
+  description:
+    "A zsh plugin that allows you to set a terminal header like any of PROMPT",
   authors: [
     {
       name: "zpm-zsh",

@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "zsh-abbr_olets",
   type: "shell",
-  description: "The zsh manager for auto-expanding abbreviations, inspired by fish shell.",
+  description:
+    "The zsh manager for auto-expanding abbreviations, inspired by fish shell.",
   authors: [
     {
       name: "olets",
@@ -13,7 +14,14 @@ const plugin: Fig.Plugin = {
   license: ["NOASSERTION"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: ["zsh", "zsh-plugin", "abbreviations", "shell", "command-line", "cli"],
+  keywords: [
+    "zsh",
+    "zsh-plugin",
+    "abbreviations",
+    "shell",
+    "command-line",
+    "cli",
+  ],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-abbr.plugin.zsh"],

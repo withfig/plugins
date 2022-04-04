@@ -14,7 +14,14 @@ const plugin: Fig.Plugin = {
   site: "https://zimfw.sh",
   shells: ["zsh"],
   categories: ["Framework"],
-  keywords: ["zim", "zsh", "framework", "zsh-configuration", "zimfw", "zsh-plugin-manager"],
+  keywords: [
+    "zim",
+    "zsh",
+    "framework",
+    "zsh-configuration",
+    "zimfw",
+    "zsh-plugin-manager",
+  ],
   installation: {
     origin: "github",
     sourceFiles: ["zimfw.zsh"],

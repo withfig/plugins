@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "sandboxd_benvan",
   type: "shell",
-  description: "speeds up your bashrc by running (slow) setup commands on the fly",
+  description:
+    "speeds up your bashrc by running (slow) setup commands on the fly",
   authors: [
     {
       name: "benvan",

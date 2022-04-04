@@ -11,7 +11,15 @@ const plugin: Fig.Plugin = {
   github: "vladmyr/dotfiles-plugin",
   shells: ["bash", "zsh"],
   categories: ["Other"],
-  keywords: ["git", "shell", "dotfiles", "oh-my-zsh", "plugin", "sync", "synchronization"],
+  keywords: [
+    "git",
+    "shell",
+    "dotfiles",
+    "oh-my-zsh",
+    "plugin",
+    "sync",
+    "synchronization",
+  ],
   installation: {
     origin: "github",
     bash: {

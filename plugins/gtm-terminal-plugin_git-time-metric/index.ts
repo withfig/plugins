@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "gtm-terminal-plugin_git-time-metric",
   type: "shell",
-  description: "Plugin for Bash or ZSH to be used with the Git Time Metric platform",
+  description:
+    "Plugin for Bash or ZSH to be used with the Git Time Metric platform",
   authors: [
     {
       name: "git-time-metric",

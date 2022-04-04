@@ -12,7 +12,15 @@ const plugin: Fig.Plugin = {
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: ["minimal", "customizable", "zsh", "prompt", "theme", "async", "git"],
+  keywords: [
+    "minimal",
+    "customizable",
+    "zsh",
+    "prompt",
+    "theme",
+    "async",
+    "git",
+  ],
   installation: {
     origin: "github",
     sourceFiles: ["slimline.plugin.zsh"],

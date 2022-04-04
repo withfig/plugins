@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "zsh-clean-project_wwilsman",
   type: "shell",
-  description: "ZSH plugin to remove files from projects (automatically by default)",
+  description:
+    "ZSH plugin to remove files from projects (automatically by default)",
   authors: [
     {
       name: "wwilsman",

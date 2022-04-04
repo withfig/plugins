@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "evalcache_mroth",
   type: "shell",
-  description: ":hatching_chick: zsh plugin to cache eval loads to improve shell startup time",
+  description:
+    ":hatching_chick: zsh plugin to cache eval loads to improve shell startup time",
   authors: [
     {
       name: "mroth",

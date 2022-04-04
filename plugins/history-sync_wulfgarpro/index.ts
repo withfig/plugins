@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "history-sync_wulfgarpro",
   type: "shell",
-  description: "An oh-my-zsh plugin for GPG encrypted internet synchronised Zsh history, with Git.",
+  description:
+    "An oh-my-zsh plugin for GPG encrypted internet synchronised Zsh history, with Git.",
   authors: [
     {
       name: "wulfgarpro",

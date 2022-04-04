@@ -13,7 +13,15 @@ const plugin: Fig.Plugin = {
   license: ["MIT"],
   shells: ["bash", "zsh"],
   categories: ["Framework"],
-  keywords: ["zsh", "plugin-manager", "configuration", "manager", "ax-zsh", "shell", "plugin"],
+  keywords: [
+    "zsh",
+    "plugin-manager",
+    "configuration",
+    "manager",
+    "ax-zsh",
+    "shell",
+    "plugin",
+  ],
   installation: {
     origin: "github",
     bash: {

@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "zeesh_zeekay",
   type: "shell",
-  description: "🐚 Putting the zee in your shell. A plugin-based framework for Zsh.",
+  description:
+    "🐚 Putting the zee in your shell. A plugin-based framework for Zsh.",
   authors: [
     {
       name: "zeekay",

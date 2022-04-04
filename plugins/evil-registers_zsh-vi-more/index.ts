@@ -12,7 +12,13 @@ const plugin: Fig.Plugin = {
   license: ["ISC"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: ["zsh-plugin", "vi-mode", "clipboard-sync", "wayland-client", "clipboard-copy"],
+  keywords: [
+    "zsh-plugin",
+    "vi-mode",
+    "clipboard-sync",
+    "wayland-client",
+    "clipboard-copy",
+  ],
   installation: {
     origin: "github",
     sourceFiles: ["evil-registers.plugin.zsh"],

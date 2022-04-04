@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "noreallyjustfuckingstopalready_eventi",
   type: "shell",
-  description: "Please OS X (or whatever your name is) just fucking reset your DNS cache please",
+  description:
+    "Please OS X (or whatever your name is) just fucking reset your DNS cache please",
   authors: [
     {
       name: "eventi",

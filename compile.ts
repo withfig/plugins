@@ -49,7 +49,7 @@ const compile = async (files: string[]) => {
       bundle: true,
       format: "esm",
       minify: true,
-      sourcemap: "inline",
+      sourcemap: "inline"
     }).catch((e: Error) => console.log(`Error building ${fileName}: ${e.message}`));
     console.log(`Built ${fileName}`);
   }
@@ -139,7 +139,7 @@ async function runProgram() {
 
     const serve = serveStatic("./plugins/");
 
-    const server = http.createServer(function (req, res) {
+    const server = http.createServer((req, res) => {
       serve(req, res, () => {
         finalhandler(req, res)("");
       });

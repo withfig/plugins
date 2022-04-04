@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "gitio-zsh_denysdovhan",
   type: "shell",
-  description: ":scissors: A zsh plugin for generating a GitHub short URL using git.io.",
+  description:
+    ":scissors: A zsh plugin for generating a GitHub short URL using git.io.",
   authors: [
     {
       name: "denysdovhan",

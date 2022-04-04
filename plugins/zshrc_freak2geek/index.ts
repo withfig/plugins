@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "zshrc_freak2geek",
   type: "shell",
-  description: 'A zsh plugin to load local ".zshrc" files from your project scopes.',
+  description:
+    'A zsh plugin to load local ".zshrc" files from your project scopes.',
   authors: [
     {
       name: "freak2geek",

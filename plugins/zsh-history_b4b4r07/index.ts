@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "zsh-history_b4b4r07",
   type: "shell",
-  description: "A plugin for zsh history extended by golang, dealing it like SQL",
+  description:
+    "A plugin for zsh history extended by golang, dealing it like SQL",
   authors: [
     {
       name: "b4b4r07",

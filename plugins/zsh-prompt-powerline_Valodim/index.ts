@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "zsh-prompt-powerline_Valodim",
   type: "shell",
-  description: "A ZSH prompt based on the powerline font from the popular vim plugin",
+  description:
+    "A ZSH prompt based on the powerline font from the popular vim plugin",
   authors: [
     {
       name: "Valodim",

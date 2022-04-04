@@ -13,7 +13,15 @@ const plugin: Fig.Plugin = {
   license: ["Apache-2.0"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: ["kubernetes", "zsh", "zsh-plugin", "k8s", "k3s", "kubectx", "hacktoberfest"],
+  keywords: [
+    "kubernetes",
+    "zsh",
+    "zsh-plugin",
+    "k8s",
+    "k3s",
+    "kubectx",
+    "hacktoberfest",
+  ],
   installation: {
     origin: "github",
     sourceFiles: ["kubectx.plugin.zsh"],

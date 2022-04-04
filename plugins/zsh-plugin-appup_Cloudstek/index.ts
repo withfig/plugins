@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "zsh-plugin-appup_Cloudstek",
   type: "shell",
-  description: "The command that can save you typing 15 characters or more, each time!",
+  description:
+    "The command that can save you typing 15 characters or more, each time!",
   authors: [
     {
       name: "Cloudstek",

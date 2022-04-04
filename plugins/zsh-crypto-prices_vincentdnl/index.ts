@@ -1,7 +1,8 @@
 const plugin: Fig.Plugin = {
   name: "zsh-crypto-prices_vincentdnl",
   type: "shell",
-  description: "Oh My Zsh plugin adding a Powerlevel9k segment to display crypto prices in Zsh",
+  description:
+    "Oh My Zsh plugin adding a Powerlevel9k segment to display crypto prices in Zsh",
   authors: [
     {
       name: "vincentdnl",

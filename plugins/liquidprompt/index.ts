@@ -2,7 +2,8 @@ const plugin: Fig.Plugin = {
   name: "liquidprompt",
   icon: "💧",
   type: "shell",
-  description: "A full-featured & carefully designed adaptive prompt for Bash & Zsh",
+  description:
+    "A full-featured & carefully designed adaptive prompt for Bash & Zsh",
   authors: [
     {
       name: "nojhan",
@@ -36,7 +37,8 @@ const plugin: Fig.Plugin = {
           displayName: "Enable Battery Status",
           type: "environmentVariable",
           environmentVariable: "LP_ENABLE_BATT",
-          description: "Display the status of the battery, if there is one, using color and marks.",
+          description:
+            "Display the status of the battery, if there is one, using color and marks.",
           additionalDetails:
             "Will be disabled if `acpi` is not found on Linux, or `pmset` is not found on MacOS.",
           interface: "toggle",
@@ -55,7 +57,8 @@ const plugin: Fig.Plugin = {
           type: "environmentVariable",
           environmentVariable: "LP_ENABLE_DETACHED_SESSIONS",
           description: "Display the number of detached multiplexer sessions.",
-          additionalDetails: "Will be disabled if neither `screen` nor `tmux` are found.",
+          additionalDetails:
+            "Will be disabled if neither `screen` nor `tmux` are found.",
           interface: "toggle",
           default: true,
         },
@@ -63,7 +66,8 @@ const plugin: Fig.Plugin = {
           displayName: "Enable Dirstack",
           type: "environmentVariable",
           environmentVariable: "LP_ENABLE_DIRSTACK",
-          description: "Display the size of the directory stack if it is greater than `1`.",
+          description:
+            "Display the size of the directory stack if it is greater than `1`.",
           interface: "toggle",
           default: false,
         },
@@ -71,7 +75,8 @@ const plugin: Fig.Plugin = {
           displayName: "Fully Qualified Hostname",
           type: "environmentVariable",
           environmentVariable: "LP_ENABLE_FQDN",
-          description: "Display the fully qualified hostname instead of the short hostname.",
+          description:
+            "Display the fully qualified hostname instead of the short hostname.",
           interface: "toggle",
           default: false,
         },
@@ -138,7 +143,8 @@ const plugin: Fig.Plugin = {
         {
           displayName: "Enable Subversion",
           type: "environmentVariable",
-          description: "Display VCS information inside Subversion repositories.",
+          description:
+            "Display VCS information inside Subversion repositories.",
           additionalDetails: "Will be disabled if `svn` is not found.",
           default: true,
           interface: "toggle",
