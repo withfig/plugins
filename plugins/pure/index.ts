@@ -112,7 +112,7 @@ const createConfigurationOptionForColorComponent = (
   return {
     name,
     type: "script",
-    displayName: `[Color] ${title}`,
+    displayName: `${title}`,
     description: `Color of ${description}`,
     default: component.default,
     interface: "text",
@@ -133,6 +133,7 @@ const plugin: Fig.Plugin = {
       github: "sindresorhus",
     },
   ],
+  screenshots: ["images/screenshot.png"],
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Prompt"],
@@ -264,7 +265,7 @@ const plugin: Fig.Plugin = {
       configuration: [
         {
           name: "load-zsh-nearcolor",
-          displayName: "[Color] Load zsh/nearcolor",
+          displayName: "Load zsh/nearcolor",
           type: "script",
           description:
             "Enable use of RGB colors with hexidecimal format for Pure prompt color configuration if you are unable to use a terminal with 24-bit color support",
