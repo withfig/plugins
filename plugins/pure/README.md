@@ -1,5 +1,3 @@
-# Pure
-
 > Pretty, minimal and fast ZSH prompt
 
 ![](./images/screenshot.png)

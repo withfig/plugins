@@ -1,5 +1,5 @@
 const plugin: Fig.Plugin = {
-  name: "prezto_sorin-ionescu",
+  name: "prezto",
   displayName: "prezto",
   type: "shell",
   description: "The configuration framework for Zsh",

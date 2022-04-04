@@ -21,7 +21,7 @@ const plugin: Fig.Plugin = {
   },
   configuration: [
     {
-      displayName: "Suggestion Highlight Style",
+      displayName: "Highlight Style",
       type: "environmentVariable",
       description: "Configure the style that the suggestion is shown with.",
       environmentVariable: "ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE",
@@ -55,7 +55,7 @@ const plugin: Fig.Plugin = {
       interface: "toggle",
     },
     {
-      displayName: "Disabling suggestion for large buffers",
+      displayName: "Disable suggestion for large buffers",
       type: "environmentVariable",
       description:
         "By default, autosuggestion will be tried for any buffer size. Recommended value is 20. This can be useful when pasting large amount of text in the terminal, to avoid triggering autosuggestion for strings that are too long.",
@@ -64,7 +64,7 @@ const plugin: Fig.Plugin = {
       interface: "text",
     },
     {
-      displayName: "Ignoring history suggestions that match a pattern",
+      displayName: "Ignore history suggestions that match a pattern",
       type: "environmentVariable",
       description:
         "A glob pattern to prevent offering suggestions for history entries that match the pattern.",
@@ -82,7 +82,7 @@ const plugin: Fig.Plugin = {
       `,
     },
     {
-      displayName: "Skipping completion suggestions for certain cases",
+      displayName: "Skip completion suggestions for certain cases",
       type: "environmentVariable",
       description:
         "A glob pattern to prevent offering completion suggestions when the buffer matches that pattern.",
@@ -152,6 +152,17 @@ const plugin: Fig.Plugin = {
           default: "",
           interface: "text",
           compile: ({ value }) => value.split(",").map((v) => v.trim()),
+        },
+        /* TODO: This is enabled if set. add support for env variables like this */
+        {
+          displayName: "Disable Automatic Widget Re-binding",
+          name: "ZSH_AUTOSUGGEST_MANUAL_REBIND",
+          type: "script",
+          description: "Disable automatic widget re-binding on each precmd. This can be a big boost to performance, but you'll need to handle re-binding yourself if any of the widget lists change or if you or another plugin wrap any of the autosuggest widgets. To re-bind widgets, run `_zsh_autosuggest_bind_widgets`.",
+          default: false,
+          interface: "toggle",
+          compile: ({ value }) =>
+            value ? "export ZSH_AUTOSUGGEST_MANUAL_REBIND=1" : ""
         },
       ],
       additionalDetails:
