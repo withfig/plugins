@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "hlohm",
       github: "hlohm",
-    }
+    },
   ],
   github: "hlohm/mfunc",
   license: ["GPL-2.0"],

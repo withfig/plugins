@@ -6,15 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "TyWR",
       github: "TyWR",
-    }
+    },
   ],
   github: "TyWR/Nord-zsh",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh-theme",
-  ],
+  keywords: ["zsh-theme"],
   installation: {
     origin: "github",
     sourceFiles: ["tywr.zsh-theme"],

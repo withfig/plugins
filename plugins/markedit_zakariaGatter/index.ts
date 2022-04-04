@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "zakariaGatter",
       github: "zakariaGatter",
-    }
+    },
   ],
   github: "zakariaGatter/markedit",
   license: ["MIT"],

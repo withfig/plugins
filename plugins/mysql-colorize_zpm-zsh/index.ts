@@ -6,29 +6,20 @@ const plugin: Fig.Plugin = {
     {
       name: "zpm-zsh",
       github: "zpm-zsh",
-    }
+    },
   ],
   github: "zpm-zsh/mysql-colorize",
   license: ["GPL-3.0"],
   shells: ["bash", "zsh"],
   categories: ["Other"],
-  keywords: [
-    "mysql-colorize",
-    "zsh",
-    "mysql",
-    "mysql-client",
-  ],
+  keywords: ["mysql-colorize", "zsh", "mysql", "mysql-client"],
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"mysql-colorize.bash"
-      ],
+      sourceFiles: ["mysql-colorize.bash"],
     },
     zsh: {
-      sourceFiles: [
-"mysql-colorize.plugin.zsh"
-      ],
+      sourceFiles: ["mysql-colorize.plugin.zsh"],
     },
   },
 };

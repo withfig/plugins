@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "subnixr",
       github: "subnixr",
-    }
+    },
   ],
   github: "subnixr/minimal",
   license: ["GPL-3.0"],

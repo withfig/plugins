@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "onyxraven",
       github: "onyxraven",
       twitter: "onyxraven",
-    }
+    },
   ],
   github: "onyxraven/zsh-saml2aws",
   license: ["MIT"],

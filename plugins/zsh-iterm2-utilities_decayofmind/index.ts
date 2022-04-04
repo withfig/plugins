@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "decayofmind",
       github: "decayofmind",
-    }
+    },
   ],
   github: "decayofmind/zsh-iterm2-utilities",
   license: ["MIT"],

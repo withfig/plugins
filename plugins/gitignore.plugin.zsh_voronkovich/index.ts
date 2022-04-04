@@ -6,17 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "voronkovich",
       github: "voronkovich",
-    }
+    },
   ],
   github: "voronkovich/gitignore.plugin.zsh",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh-plugin",
-    "gitignore",
-    "zsh",
-  ],
+  keywords: ["zsh-plugin", "gitignore", "zsh"],
   installation: {
     origin: "github",
     sourceFiles: ["gitignore.plugin.zsh"],

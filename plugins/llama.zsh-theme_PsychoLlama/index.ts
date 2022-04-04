@@ -6,15 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "PsychoLlama",
       github: "PsychoLlama",
-    }
+    },
   ],
   github: "PsychoLlama/llama.zsh-theme",
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh",
-    "theme",
-  ],
+  keywords: ["zsh", "theme"],
   installation: {
     origin: "github",
     sourceFiles: ["llama.zsh-theme"],

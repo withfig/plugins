@@ -7,15 +7,13 @@ const plugin: Fig.Plugin = {
       name: "eendroroy",
       github: "eendroroy",
       twitter: "eendroroy",
-    }
+    },
   ],
   github: "eendroroy/nothing",
   license: ["WTFPL"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh-theme",
-  ],
+  keywords: ["zsh-theme"],
   installation: {
     origin: "github",
     sourceFiles: ["nothing.plugin.zsh"],

@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "eendroroy",
       github: "eendroroy",
       twitter: "eendroroy",
-    }
+    },
   ],
   github: "eendroroy/theta",
   license: ["MIT"],

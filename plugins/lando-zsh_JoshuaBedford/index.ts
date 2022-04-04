@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "JoshuaBedford",
       github: "JoshuaBedford",
-    }
+    },
   ],
   github: "JoshuaBedford/lando-zsh",
   license: ["MIT"],

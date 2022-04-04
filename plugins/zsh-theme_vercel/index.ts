@@ -6,19 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "vercel",
       github: "vercel",
-    }
+    },
   ],
   github: "vercel/zsh-theme",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh",
-    "oh-my-zsh",
-    "shell",
-    "hyper",
-    "vercel",
-  ],
+  keywords: ["zsh", "oh-my-zsh", "shell", "hyper", "vercel"],
   installation: {
     origin: "github",
     sourceFiles: ["vercel.zsh-theme"],

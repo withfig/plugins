@@ -7,20 +7,13 @@ const plugin: Fig.Plugin = {
       name: "luismayta",
       github: "luismayta",
       twitter: "slovacus",
-    }
+    },
   ],
   github: "luismayta/zsh-notify",
   license: ["LGPL-3.0"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "r2d2",
-    "autoinstall",
-    "notify",
-    "automation",
-    "peru",
-  ],
+  keywords: ["zsh", "r2d2", "autoinstall", "notify", "automation", "peru"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-notify.zsh"],

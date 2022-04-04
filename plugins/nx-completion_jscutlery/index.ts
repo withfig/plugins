@@ -7,17 +7,13 @@ const plugin: Fig.Plugin = {
       name: "jscutlery",
       github: "jscutlery",
       twitter: "jscutlery",
-    }
+    },
   ],
   github: "jscutlery/nx-completion",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Completion"],
-  keywords: [
-    "zsh",
-    "zsh-plugin",
-    "nx",
-  ],
+  keywords: ["zsh", "zsh-plugin", "nx"],
   installation: {
     origin: "github",
     sourceFiles: ["nx-completion.plugin.zsh"],

@@ -6,16 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "gangleri",
       github: "gangleri",
-    }
+    },
   ],
   github: "gangleri/pipenv",
   shells: ["zsh"],
   categories: ["Completion"],
-  keywords: [
-    "oh-my-zsh-plugin",
-    "pipenv",
-    "python",
-  ],
+  keywords: ["oh-my-zsh-plugin", "pipenv", "python"],
   installation: {
     origin: "github",
     sourceFiles: ["pipenv.plugin.zsh"],

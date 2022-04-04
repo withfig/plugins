@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "marszall87",
       github: "marszall87",
-    }
+    },
   ],
   github: "marszall87/nodeys-zsh-theme",
   shells: ["zsh"],

@@ -1,13 +1,14 @@
 const plugin: Fig.Plugin = {
   name: "zsh-abbr_olets",
   type: "shell",
-  description: "The zsh manager for auto-expanding abbreviations, inspired by fish shell.",
+  description:
+    "The zsh manager for auto-expanding abbreviations, inspired by fish shell.",
   authors: [
     {
       name: "olets",
       github: "olets",
       twitter: "oletsdev",
-    }
+    },
   ],
   github: "olets/zsh-abbr",
   license: ["NOASSERTION"],

@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "scriptingosx",
       github: "scriptingosx",
-    }
+    },
   ],
   github: "scriptingosx/mac-zsh-completions",
   license: ["Apache-2.0"],

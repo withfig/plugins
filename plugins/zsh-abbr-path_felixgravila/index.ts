@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "felixgravila",
       github: "felixgravila",
-    }
+    },
   ],
   github: "felixgravila/zsh-abbr-path",
   license: ["MIT"],

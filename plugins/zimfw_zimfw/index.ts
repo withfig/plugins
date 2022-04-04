@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
     {
       name: "zimfw",
       github: "zimfw",
-    }
+    },
   ],
   github: "zimfw/zimfw",
   license: ["MIT"],

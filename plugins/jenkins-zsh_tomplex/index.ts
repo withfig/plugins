@@ -6,16 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "tomplex",
       github: "tomplex",
-    }
+    },
   ],
   github: "tomplex/jenkins-zsh",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "oh-my-zsh",
-    "jenkins",
-  ],
+  keywords: ["zsh", "oh-my-zsh", "jenkins"],
   installation: {
     origin: "github",
     sourceFiles: ["jenkins.plugin.zsh"],

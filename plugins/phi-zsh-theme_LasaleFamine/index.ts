@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "LasaleFamine",
       github: "LasaleFamine",
       twitter: "lasalefamine",
-    }
+    },
   ],
   github: "LasaleFamine/phi-zsh-theme",
   license: ["MIT"],

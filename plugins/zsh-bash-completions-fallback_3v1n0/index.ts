@@ -1,12 +1,13 @@
 const plugin: Fig.Plugin = {
   name: "zsh-bash-completions-fallback_3v1n0",
   type: "shell",
-  description: "Simple zsh plugin to support bash completions for a command if no native one is available",
+  description:
+    "Simple zsh plugin to support bash completions for a command if no native one is available",
   authors: [
     {
       name: "3v1n0",
       github: "3v1n0",
-    }
+    },
   ],
   github: "3v1n0/zsh-bash-completions-fallback",
   license: ["LGPL-3.0"],
@@ -29,14 +30,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"bash-completions-getter.sh"
-      ],
+      sourceFiles: ["bash-completions-getter.sh"],
     },
     zsh: {
-      sourceFiles: [
-"zsh-bash-completions-fallback.plugin.zsh"
-      ],
+      sourceFiles: ["zsh-bash-completions-fallback.plugin.zsh"],
     },
   },
 };

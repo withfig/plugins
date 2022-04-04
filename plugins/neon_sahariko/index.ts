@@ -6,27 +6,19 @@ const plugin: Fig.Plugin = {
     {
       name: "sahariko",
       github: "sahariko",
-    }
+    },
   ],
   github: "sahariko/neon",
   shells: ["bash", "zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh",
-    "terminal",
-    "theme",
-  ],
+  keywords: ["zsh", "terminal", "theme"],
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"installation.sh"
-      ],
+      sourceFiles: ["installation.sh"],
     },
     zsh: {
-      sourceFiles: [
-"neon.zsh-theme"
-      ],
+      sourceFiles: ["neon.zsh-theme"],
     },
   },
 };

@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "changyuheng",
       github: "changyuheng",
-    }
+    },
   ],
   github: "changyuheng/zsh-interactive-cd",
   license: ["MPL-2.0"],

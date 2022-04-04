@@ -6,16 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "Mellbourn",
       github: "Mellbourn",
-    }
+    },
   ],
   github: "Mellbourn/zabb",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "z",
-  ],
+  keywords: ["zsh", "z"],
   installation: {
     origin: "github",
     sourceFiles: ["zabb.plugin.zsh"],

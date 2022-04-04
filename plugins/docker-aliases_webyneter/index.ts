@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "webyneter",
       github: "webyneter",
-    }
+    },
   ],
   github: "webyneter/docker-aliases",
   license: ["MIT"],

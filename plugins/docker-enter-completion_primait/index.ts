@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "primait",
       github: "primait",
-    }
+    },
   ],
   github: "primait/docker-enter-completion",
   license: ["ISC"],
@@ -15,14 +15,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"docker-enter-completion.bash"
-      ],
+      sourceFiles: ["docker-enter-completion.bash"],
     },
     zsh: {
-      sourceFiles: [
-"_docker-enter-completion.zsh"
-      ],
+      sourceFiles: ["_docker-enter-completion.zsh"],
     },
   },
 };

@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "Valiev",
       github: "Valiev",
-    }
+    },
   ],
   github: "Valiev/almostontop",
   license: ["MIT"],

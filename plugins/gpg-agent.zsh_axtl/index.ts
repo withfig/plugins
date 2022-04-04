@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "axtl",
       github: "axtl",
-    }
+    },
   ],
   github: "axtl/gpg-agent.zsh",
   shells: ["zsh"],

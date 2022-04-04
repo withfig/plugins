@@ -6,18 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "fALKENdk",
       github: "fALKENdk",
-    }
+    },
   ],
   github: "fALKENdk/mylocation",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zsh-plugins",
-    "oh-my-zsh",
-    "oh-my-zsh-plugin",
-    "vpn",
-  ],
+  keywords: ["zsh", "zsh-plugins", "oh-my-zsh", "oh-my-zsh-plugin", "vpn"],
   installation: {
     origin: "github",
     sourceFiles: ["mylocation.plugin.zsh"],

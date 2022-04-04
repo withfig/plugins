@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "wbingli",
       github: "wbingli",
-    }
+    },
   ],
   github: "wbingli/zsh-wakatime",
   license: ["MIT"],

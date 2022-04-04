@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "arlimus",
       github: "arlimus",
-    }
+    },
   ],
   github: "arlimus/zero.zsh",
   license: ["Apache-2.0"],
@@ -15,14 +15,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"bootstrap.sh","install.sh"
-      ],
+      sourceFiles: ["bootstrap.sh", "install.sh"],
     },
     zsh: {
-      sourceFiles: [
-"bootstrap.sh","install.sh"
-      ],
+      sourceFiles: ["bootstrap.sh", "install.sh"],
     },
   },
 };

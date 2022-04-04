@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "sticklerm3",
       github: "sticklerm3",
-    }
+    },
   ],
   github: "sticklerm3/alehouse",
   license: ["WTFPL"],

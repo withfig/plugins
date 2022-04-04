@@ -6,15 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "ChesterYue",
       github: "ChesterYue",
-    }
+    },
   ],
   github: "ChesterYue/ohmyzsh-theme-passion",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh-theme",
-  ],
+  keywords: ["zsh-theme"],
   installation: {
     origin: "github",
     sourceFiles: ["passion.zsh-theme"],

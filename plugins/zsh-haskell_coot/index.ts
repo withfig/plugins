@@ -6,18 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "coot",
       github: "coot",
-    }
+    },
   ],
   github: "coot/zsh-haskell",
   license: ["MPL-2.0"],
   shells: ["zsh"],
   categories: ["Completion"],
-  keywords: [
-    "zsh-completions",
-    "zsh",
-    "cabal-completion",
-    "ghc",
-  ],
+  keywords: ["zsh-completions", "zsh", "cabal-completion", "ghc"],
   installation: {
     origin: "github",
     sourceFiles: ["haskell.plugin.zsh"],

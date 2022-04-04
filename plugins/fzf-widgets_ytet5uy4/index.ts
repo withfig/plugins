@@ -6,18 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "ytet5uy4",
       github: "ytet5uy4",
-    }
+    },
   ],
   github: "ytet5uy4/fzf-widgets",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "fzf",
-    "zle-widgets",
-    "zsh",
-    "zsh-plugin",
-  ],
+  keywords: ["fzf", "zle-widgets", "zsh", "zsh-plugin"],
   installation: {
     origin: "github",
     sourceFiles: ["init.zsh"],

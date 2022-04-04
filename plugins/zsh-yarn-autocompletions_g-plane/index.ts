@@ -7,27 +7,20 @@ const plugin: Fig.Plugin = {
       name: "g-plane",
       github: "g-plane",
       twitter: "g3plane",
-    }
+    },
   ],
   github: "g-plane/zsh-yarn-autocompletions",
   license: ["MIT"],
   shells: ["bash", "zsh"],
   categories: ["Completion"],
-  keywords: [
-    "zsh-plugin",
-    "yarn",
-  ],
+  keywords: ["zsh-plugin", "yarn"],
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"install.sh"
-      ],
+      sourceFiles: ["install.sh"],
     },
     zsh: {
-      sourceFiles: [
-"yarn-autocompletions.plugin.zsh"
-      ],
+      sourceFiles: ["yarn-autocompletions.plugin.zsh"],
     },
   },
 };

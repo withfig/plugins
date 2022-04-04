@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "KKRainbow",
       github: "KKRainbow",
-    }
+    },
   ],
   github: "KKRainbow/zsh-command-note.plugin",
   shells: ["zsh"],

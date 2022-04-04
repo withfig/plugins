@@ -1,12 +1,13 @@
 const plugin: Fig.Plugin = {
   name: "careful_rm_MikeDacre",
   type: "shell",
-  description: "A safe wrapper for rm that adds useful warnings and an optional recycle/trash mode",
+  description:
+    "A safe wrapper for rm that adds useful warnings and an optional recycle/trash mode",
   authors: [
     {
       name: "MikeDacre",
       github: "MikeDacre",
-    }
+    },
   ],
   github: "MikeDacre/careful_rm",
   license: ["MIT"],
@@ -31,14 +32,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"careful_rm.alias.sh"
-      ],
+      sourceFiles: ["careful_rm.alias.sh"],
     },
     zsh: {
-      sourceFiles: [
-"careful_rm.plugin.zsh"
-      ],
+      sourceFiles: ["careful_rm.plugin.zsh"],
     },
   },
 };

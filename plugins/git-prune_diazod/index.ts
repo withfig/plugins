@@ -1,12 +1,13 @@
 const plugin: Fig.Plugin = {
   name: "git-prune_diazod",
   type: "shell",
-  description: "Plugin of oh-my-zsh for deleting branches already merged in your git repositories",
+  description:
+    "Plugin of oh-my-zsh for deleting branches already merged in your git repositories",
   authors: [
     {
       name: "diazod",
       github: "diazod",
-    }
+    },
   ],
   github: "diazod/git-prune",
   license: ["GPL-3.0"],

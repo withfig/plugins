@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "esc",
       github: "esc",
       twitter: "esc___",
-    }
+    },
   ],
   github: "esc/conda-zsh-completion",
   license: ["WTFPL"],

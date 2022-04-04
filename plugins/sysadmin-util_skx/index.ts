@@ -8,19 +8,13 @@ const plugin: Fig.Plugin = {
     {
       name: "skx",
       github: "skx",
-    }
+    },
   ],
   github: "skx/sysadmin-util",
   license: ["NOASSERTION"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "sysadmin",
-    "perl",
-    "bash",
-    "c",
-    "utilities",
-  ],
+  keywords: ["sysadmin", "perl", "bash", "c", "utilities"],
   installation: {
     origin: "github",
     sourceFiles: ["sysadmin-util.plugin.zsh"],

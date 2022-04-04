@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "srijanshetty",
       github: "srijanshetty",
       twitter: "srijanshetty",
-    }
+    },
   ],
   github: "srijanshetty/node.plugin.zsh",
   license: ["NOASSERTION"],

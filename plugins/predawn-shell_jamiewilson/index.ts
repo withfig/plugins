@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "jamiewilson",
       github: "jamiewilson",
-    }
+    },
   ],
   github: "jamiewilson/predawn-shell",
   license: ["MIT"],

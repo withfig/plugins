@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
     {
       name: "MenkeTechnologies",
       github: "MenkeTechnologies",
-    }
+    },
   ],
   github: "MenkeTechnologies/zsh-more-completions",
   license: ["MIT"],

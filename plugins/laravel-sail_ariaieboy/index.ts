@@ -1,13 +1,14 @@
 const plugin: Fig.Plugin = {
   name: "laravel-sail_ariaieboy",
   type: "shell",
-  description: "a laravel-sail plugin for oh my zsh to add aliases for laravel sail commands",
+  description:
+    "a laravel-sail plugin for oh my zsh to add aliases for laravel sail commands",
   authors: [
     {
       name: "ariaieboy",
       github: "ariaieboy",
       twitter: "smr_seddighy",
-    }
+    },
   ],
   github: "ariaieboy/laravel-sail",
   license: ["MIT"],

@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "arzzen",
       github: "arzzen",
       twitter: "arzzen",
-    }
+    },
   ],
   github: "arzzen/calc.plugin.zsh",
   license: ["GPL-2.0"],

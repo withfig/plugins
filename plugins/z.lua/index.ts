@@ -34,9 +34,8 @@ const plugin: Fig.Plugin = {
   ],
   installation: {
     origin: "github",
-    postScript: ({ ctx }) => {
-      return `eval "$(lua ${ctx.plugin.installDirectory}/z.lua --init ${ctx.shell})"`;
-    },
+    postScript: ({ ctx }) =>
+      `eval "$(lua ${ctx.plugin.installDirectory}/z.lua --init ${ctx.shell})"`,
     fish: {
       sourceFiles: "init.fish",
     },

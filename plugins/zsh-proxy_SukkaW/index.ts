@@ -7,18 +7,13 @@ const plugin: Fig.Plugin = {
       name: "SukkaW",
       github: "SukkaW",
       twitter: "isukkaw",
-    }
+    },
   ],
   github: "SukkaW/zsh-proxy",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "oh-my-zsh",
-    "oh-my-zsh-plugin",
-    "proxy",
-  ],
+  keywords: ["zsh", "oh-my-zsh", "oh-my-zsh-plugin", "proxy"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-proxy.plugin.zsh"],

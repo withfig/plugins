@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
     {
       name: "zdharma-continuum",
       github: "zdharma-continuum",
-    }
+    },
   ],
   github: "zdharma-continuum/ztrace",
   license: ["NOASSERTION"],

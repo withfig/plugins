@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "hipstersmoothie",
       github: "hipstersmoothie",
       twitter: "hipstersmoothie",
-    }
+    },
   ],
   github: "hipstersmoothie/PowerlevelHipstersmoothie",
   shells: ["zsh"],

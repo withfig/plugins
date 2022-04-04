@@ -6,16 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "chitoku-k",
       github: "chitoku-k",
-    }
+    },
   ],
   github: "chitoku-k/fzf-zsh-completions",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Completion"],
-  keywords: [
-    "fzf",
-    "zsh-plugin",
-  ],
+  keywords: ["fzf", "zsh-plugin"],
   installation: {
     origin: "github",
     sourceFiles: ["fzf-zsh-completions.plugin.zsh"],

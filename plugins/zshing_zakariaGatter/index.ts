@@ -6,19 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "zakariaGatter",
       github: "zakariaGatter",
-    }
+    },
   ],
   github: "zakariaGatter/zshing",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Framework"],
-  keywords: [
-    "zsh",
-    "zsh-plugins",
-    "shell",
-    "shell-script",
-    "plugin",
-  ],
+  keywords: ["zsh", "zsh-plugins", "shell", "shell-script", "plugin"],
   installation: {
     origin: "github",
     sourceFiles: ["zshing.zsh"],

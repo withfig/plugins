@@ -1,12 +1,13 @@
 const plugin: Fig.Plugin = {
   name: "pip-app_sharat87",
   type: "shell",
-  description: "A set of shell functions to make it easy to install small apps and utilities distributed with pip.",
+  description:
+    "A set of shell functions to make it easy to install small apps and utilities distributed with pip.",
   authors: [
     {
       name: "sharat87",
       github: "sharat87",
-    }
+    },
   ],
   github: "sharat87/pip-app",
   shells: ["bash", "zsh"],
@@ -14,14 +15,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"pip-app.sh"
-      ],
+      sourceFiles: ["pip-app.sh"],
     },
     zsh: {
-      sourceFiles: [
-"pip-app.sh"
-      ],
+      sourceFiles: ["pip-app.sh"],
     },
   },
 };

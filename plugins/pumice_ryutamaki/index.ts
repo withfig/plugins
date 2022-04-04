@@ -6,17 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "ryutamaki",
       github: "ryutamaki",
-    }
+    },
   ],
   github: "ryutamaki/pumice",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Framework"],
-  keywords: [
-    "shell",
-    "package-manager",
-    "zsh",
-  ],
+  keywords: ["shell", "package-manager", "zsh"],
   installation: {
     origin: "github",
     sourceFiles: ["pumice.zsh"],

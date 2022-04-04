@@ -6,17 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "aperezdc",
       github: "aperezdc",
-    }
+    },
   ],
   github: "aperezdc/virtualz",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "python",
-    "virtualenv",
-    "plugin",
-  ],
+  keywords: ["zsh", "python", "virtualenv", "plugin"],
   installation: {
     origin: "github",
     sourceFiles: ["virtualz.plugin.zsh"],

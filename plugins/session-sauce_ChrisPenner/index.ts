@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "ChrisPenner",
       github: "ChrisPenner",
       twitter: "chrislpenner",
-    }
+    },
   ],
   github: "ChrisPenner/session-sauce",
   license: ["MIT"],

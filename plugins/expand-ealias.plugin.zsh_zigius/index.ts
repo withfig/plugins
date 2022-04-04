@@ -6,16 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "zigius",
       github: "zigius",
-    }
+    },
   ],
   github: "zigius/expand-ealias.plugin.zsh",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zsh-plugins",
-    "expanding-aliases",
-  ],
+  keywords: ["zsh", "zsh-plugins", "expanding-aliases"],
   installation: {
     origin: "github",
     sourceFiles: ["expand-ealias.plugin.zsh"],

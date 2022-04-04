@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "akoenig",
       github: "akoenig",
-    }
+    },
   ],
   github: "akoenig/npm-run.plugin.zsh",
   shells: ["zsh"],

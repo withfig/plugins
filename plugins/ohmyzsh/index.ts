@@ -489,7 +489,7 @@ const plugin: Fig.Plugin = {
       default: [],
       options: async ({ env }) =>
         env
-          ? await env.listFolder(`${env.plugin.installDirectory}/plugins`)
+          ? env.listFolder(`${env.plugin.installDirectory}/plugins`)
           : PLUGINS,
       environmentVariable: "plugins",
     },
@@ -532,7 +532,7 @@ const plugin: Fig.Plugin = {
           interface: "text",
           default: 14,
           compile: ({ value }) => `zstyle ':omz:update' frequency ${value}`,
-          disabled: ({ config }) => config["mode"] !== "disabled",
+          disabled: ({ config }) => config.mode !== "disabled",
           hidden: () => true,
         },
       ],

@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "voronkovich",
       github: "voronkovich",
-    }
+    },
   ],
   github: "voronkovich/apache2.plugin.zsh",
   license: ["LGPL-3.0"],

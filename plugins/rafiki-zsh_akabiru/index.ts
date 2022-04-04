@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "akabiru",
       github: "akabiru",
       twitter: "_akabiru",
-    }
+    },
   ],
   github: "akabiru/rafiki-zsh",
   shells: ["zsh"],

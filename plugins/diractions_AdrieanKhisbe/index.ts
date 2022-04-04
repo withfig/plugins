@@ -7,18 +7,13 @@ const plugin: Fig.Plugin = {
       name: "AdrieanKhisbe",
       github: "AdrieanKhisbe",
       twitter: "AdrieanKhisbe",
-    }
+    },
   ],
   github: "AdrieanKhisbe/diractions",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "shell",
-    "navigation",
-    "hacktoberfest",
-  ],
+  keywords: ["zsh", "shell", "navigation", "hacktoberfest"],
   installation: {
     origin: "github",
     sourceFiles: ["diractions.plugin.zsh"],

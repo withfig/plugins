@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "marzocchi",
       github: "marzocchi",
-    }
+    },
   ],
   github: "marzocchi/zsh-notify",
   license: ["MIT"],

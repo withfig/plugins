@@ -6,15 +6,13 @@ const plugin: Fig.Plugin = {
       name: "ChrisPenner",
       github: "ChrisPenner",
       twitter: "chrislpenner",
-    }
+    },
   ],
   github: "ChrisPenner/copy-pasta",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "hacktoberfest",
-  ],
+  keywords: ["hacktoberfest"],
   installation: {
     origin: "github",
     sourceFiles: ["copy-pasta.plugin.zsh"],

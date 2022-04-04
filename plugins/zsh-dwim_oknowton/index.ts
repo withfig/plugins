@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "oknowton",
       github: "oknowton",
-    }
+    },
   ],
   github: "oknowton/zsh-dwim",
   site: "http://blog.patshead.com/2012/10/cleanup-of-zsh-dwim.html",

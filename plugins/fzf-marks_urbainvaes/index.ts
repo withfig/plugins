@@ -6,29 +6,20 @@ const plugin: Fig.Plugin = {
     {
       name: "urbainvaes",
       github: "urbainvaes",
-    }
+    },
   ],
   github: "urbainvaes/fzf-marks",
   license: ["MIT"],
   shells: ["bash", "zsh"],
   categories: ["Other"],
-  keywords: [
-    "fzf",
-    "zsh-plugin",
-    "shell-script",
-    "bookmarks",
-  ],
+  keywords: ["fzf", "zsh-plugin", "shell-script", "bookmarks"],
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"fzf-marks.plugin.bash"
-      ],
+      sourceFiles: ["fzf-marks.plugin.bash"],
     },
     zsh: {
-      sourceFiles: [
-"fzf-marks.plugin.zsh"
-      ],
+      sourceFiles: ["fzf-marks.plugin.zsh"],
     },
   },
 };

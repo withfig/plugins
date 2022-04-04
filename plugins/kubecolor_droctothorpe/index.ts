@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "droctothorpe",
       github: "droctothorpe",
-    }
+    },
   ],
   github: "droctothorpe/kubecolor",
   shells: ["bash", "zsh"],
@@ -14,14 +14,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"kubecolor.bash"
-      ],
+      sourceFiles: ["kubecolor.bash"],
     },
     zsh: {
-      sourceFiles: [
-"kubecolor.plugin.zsh"
-      ],
+      sourceFiles: ["kubecolor.plugin.zsh"],
     },
   },
 };

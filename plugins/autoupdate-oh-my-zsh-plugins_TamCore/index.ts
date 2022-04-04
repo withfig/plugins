@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "TamCore",
       github: "TamCore",
-    }
+    },
   ],
   github: "TamCore/autoupdate-oh-my-zsh-plugins",
   shells: ["zsh"],

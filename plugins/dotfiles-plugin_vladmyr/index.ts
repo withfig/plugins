@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "vladmyr",
       github: "vladmyr",
-    }
+    },
   ],
   github: "vladmyr/dotfiles-plugin",
   shells: ["bash", "zsh"],
@@ -23,14 +23,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"install.sh"
-      ],
+      sourceFiles: ["install.sh"],
     },
     zsh: {
-      sourceFiles: [
-"dotfiles.plugin.zsh"
-      ],
+      sourceFiles: ["dotfiles.plugin.zsh"],
     },
   },
 };

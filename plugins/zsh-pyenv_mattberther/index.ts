@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "mattberther",
       github: "mattberther",
-    }
+    },
   ],
   github: "mattberther/zsh-pyenv",
   license: ["MIT"],

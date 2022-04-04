@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "z-shell",
       github: "z-shell",
       twitter: "zshell_zi",
-    }
+    },
   ],
   github: "z-shell/zi",
   license: ["MIT"],

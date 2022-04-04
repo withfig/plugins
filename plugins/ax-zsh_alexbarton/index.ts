@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "alexbarton",
       github: "alexbarton",
       twitter: "alexbarton",
-    }
+    },
   ],
   github: "alexbarton/ax-zsh",
   license: ["MIT"],
@@ -25,14 +25,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"install.sh"
-      ],
+      sourceFiles: ["install.sh"],
     },
     zsh: {
-      sourceFiles: [
-"ax.zsh"
-      ],
+      sourceFiles: ["ax.zsh"],
     },
   },
 };

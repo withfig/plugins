@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "ael-code",
       github: "ael-code",
-    }
+    },
   ],
   github: "ael-code/zsh-colored-man-pages",
   license: ["GPL-3.0"],

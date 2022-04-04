@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "0532",
       github: "0532",
-    }
+    },
   ],
   github: "0532/wang-iterm-zsh",
   shells: ["zsh"],

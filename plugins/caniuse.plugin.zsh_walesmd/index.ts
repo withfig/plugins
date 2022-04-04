@@ -1,12 +1,13 @@
 const plugin: Fig.Plugin = {
   name: "caniuse.plugin.zsh_walesmd",
   type: "shell",
-  description: "This oh-my-zsh plugin brings CanIUse (http://caniuse.com) to your terminal.",
+  description:
+    "This oh-my-zsh plugin brings CanIUse (http://caniuse.com) to your terminal.",
   authors: [
     {
       name: "walesmd",
       github: "walesmd",
-    }
+    },
   ],
   github: "walesmd/caniuse.plugin.zsh",
   license: ["MIT"],

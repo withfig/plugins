@@ -6,16 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "bernardop",
       github: "bernardop",
-    }
+    },
   ],
   github: "bernardop/iterm-tab-color-oh-my-zsh",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "oh-my-zsh-plugin",
-    "oh-my-zsh",
-  ],
+  keywords: ["zsh", "oh-my-zsh-plugin", "oh-my-zsh"],
   installation: {
     origin: "github",
     sourceFiles: ["iterm-tab-color.plugin.zsh"],

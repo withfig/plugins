@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "keithhamilton",
       github: "keithhamilton",
       twitter: "blackmaas",
-    }
+    },
   ],
   github: "keithhamilton/oh-my-dogesh",
   license: ["BSD-3-Clause"],

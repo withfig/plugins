@@ -5,7 +5,7 @@ const plugin: Fig.Plugin = {
     {
       name: "GetAmbush",
       github: "GetAmbush",
-    }
+    },
   ],
   github: "GetAmbush/deepx-zsh-plugin",
   license: ["MIT"],

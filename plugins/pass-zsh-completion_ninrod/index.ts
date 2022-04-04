@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "ninrod",
       github: "ninrod",
-    }
+    },
   ],
   github: "ninrod/pass-zsh-completion",
   shells: ["zsh"],

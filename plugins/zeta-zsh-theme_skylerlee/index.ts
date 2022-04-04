@@ -6,17 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "skylerlee",
       github: "skylerlee",
-    }
+    },
   ],
   github: "skylerlee/zeta-zsh-theme",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh",
-    "oh-my-zsh",
-    "theme",
-  ],
+  keywords: ["zsh", "oh-my-zsh", "theme"],
   installation: {
     origin: "github",
     sourceFiles: ["zeta.zsh-theme"],

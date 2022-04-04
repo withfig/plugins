@@ -7,16 +7,12 @@ const plugin: Fig.Plugin = {
       name: "rawkode",
       github: "rawkode",
       twitter: "rawkode",
-    }
+    },
   ],
   github: "rawkode/zsh-docker-run",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "docker",
-    "docker-image",
-  ],
+  keywords: ["zsh", "docker", "docker-image"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-docker-run.plugin.zsh"],

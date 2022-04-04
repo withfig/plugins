@@ -6,16 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "yuki-torii",
       github: "yuki-torii",
-    }
+    },
   ],
   github: "yuki-torii/yuki-zsh-theme",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "yuki",
-    "zsh-theme",
-  ],
+  keywords: ["yuki", "zsh-theme"],
   installation: {
     origin: "github",
     sourceFiles: ["yuki.zsh-theme"],

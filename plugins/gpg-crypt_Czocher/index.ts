@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "Czocher",
       github: "Czocher",
-    }
+    },
   ],
   github: "Czocher/gpg-crypt",
   license: ["MIT"],

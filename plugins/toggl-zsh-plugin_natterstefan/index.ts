@@ -1,13 +1,14 @@
 const plugin: Fig.Plugin = {
   name: "toggl-zsh-plugin_natterstefan",
   type: "shell",
-  description: "⌚️A oh-my-zsh plugin, printing the working hours of the current week tracked in toggl.com (for OSX).",
+  description:
+    "⌚️A oh-my-zsh plugin, printing the working hours of the current week tracked in toggl.com (for OSX).",
   authors: [
     {
       name: "natterstefan",
       github: "natterstefan",
       twitter: "natterstefan",
-    }
+    },
   ],
   github: "natterstefan/toggl-zsh-plugin",
   license: ["Apache-2.0"],

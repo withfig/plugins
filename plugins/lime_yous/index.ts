@@ -6,17 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "yous",
       github: "yous",
-    }
+    },
   ],
   github: "yous/lime",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh",
-    "zsh-theme",
-    "config",
-  ],
+  keywords: ["zsh", "zsh-theme", "config"],
   installation: {
     origin: "github",
     sourceFiles: ["lime.plugin.zsh"],

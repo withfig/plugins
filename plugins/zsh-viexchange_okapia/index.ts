@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "okapia",
       github: "okapia",
-    }
+    },
   ],
   github: "okapia/zsh-viexchange",
   license: ["ISC"],

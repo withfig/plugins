@@ -6,30 +6,20 @@ const plugin: Fig.Plugin = {
     {
       name: "dim-an",
       github: "dim-an",
-    }
+    },
   ],
   github: "dim-an/cod",
   license: ["Apache-2.0"],
   shells: ["bash", "zsh"],
   categories: ["Completion"],
-  keywords: [
-    "shell",
-    "completion",
-    "zsh",
-    "bash",
-    "fish",
-  ],
+  keywords: ["shell", "completion", "zsh", "bash", "fish"],
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"wc.sh"
-      ],
+      sourceFiles: ["wc.sh"],
     },
     zsh: {
-      sourceFiles: [
-"cod.plugin.zsh"
-      ],
+      sourceFiles: ["cod.plugin.zsh"],
     },
   },
 };

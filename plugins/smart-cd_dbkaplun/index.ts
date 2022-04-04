@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "dbkaplun",
       github: "dbkaplun",
-    }
+    },
   ],
   github: "dbkaplun/smart-cd",
   license: ["MIT"],

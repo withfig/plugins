@@ -6,19 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "ELLIOTTCABLE",
       github: "ELLIOTTCABLE",
-    }
+    },
   ],
   github: "ELLIOTTCABLE/rbenv.plugin.zsh",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "ruby",
-    "rbenv",
-    "zsh-plugin",
-    "fork",
-    "fast",
-  ],
+  keywords: ["zsh", "ruby", "rbenv", "zsh-plugin", "fork", "fast"],
   installation: {
     origin: "github",
     sourceFiles: ["rbenv.plugin.zsh"],

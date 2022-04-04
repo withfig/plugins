@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "IngoMeyer441",
       github: "IngoMeyer441",
       twitter: "IngoMeyer441",
-    }
+    },
   ],
   github: "IngoMeyer441/zsh-easy-motion",
   license: ["MIT"],

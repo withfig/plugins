@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "zsh-vi-more",
       github: "zsh-vi-more",
-    }
+    },
   ],
   github: "zsh-vi-more/evil-registers",
   license: ["ISC"],

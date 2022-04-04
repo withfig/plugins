@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "blimmer",
       github: "blimmer",
-    }
+    },
   ],
   github: "blimmer/zsh-aws-vault",
   license: ["MIT"],

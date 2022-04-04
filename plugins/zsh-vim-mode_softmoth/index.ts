@@ -6,19 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "softmoth",
       github: "softmoth",
-    }
+    },
   ],
   github: "softmoth/zsh-vim-mode",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "vi-mode",
-    "bindkey",
-    "prompt",
-    "cursor",
-  ],
+  keywords: ["zsh", "vi-mode", "bindkey", "prompt", "cursor"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-vim-mode.plugin.zsh"],

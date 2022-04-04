@@ -3,12 +3,13 @@ const plugin: Fig.Plugin = {
   displayName: "alias-tips",
   icon: "💡",
   type: "shell",
-  description: "An oh-my-zsh plugin to help remembering those aliases you defined once",
+  description:
+    "An oh-my-zsh plugin to help remembering those aliases you defined once",
   authors: [
     {
       name: "djui",
       github: "djui",
-    }
+    },
   ],
   github: "djui/alias-tips",
   shells: ["zsh"],

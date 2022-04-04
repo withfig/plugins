@@ -6,15 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "s7anley",
       github: "s7anley",
-    }
+    },
   ],
   github: "s7anley/zsh-geeknote",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "geeknote",
-    "zsh",
-  ],
+  keywords: ["geeknote", "zsh"],
   installation: {
     origin: "github",
     sourceFiles: ["geeknote.plugin.zsh"],

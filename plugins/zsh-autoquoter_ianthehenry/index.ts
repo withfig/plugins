@@ -7,18 +7,13 @@ const plugin: Fig.Plugin = {
       name: "ianthehenry",
       github: "ianthehenry",
       twitter: "ianthehenry",
-    }
+    },
   ],
   github: "ianthehenry/zsh-autoquoter",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "zsh-plugin",
-    "zle-widgets",
-    "zle",
-  ],
+  keywords: ["zsh", "zsh-plugin", "zle-widgets", "zle"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-autoquoter.plugin.zsh"],

@@ -6,17 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "joel-porquet",
       github: "joel-porquet",
-    }
+    },
   ],
   github: "joel-porquet/zsh-dircolors-solarized",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh",
-    "solarized-dircolors",
-    "solarized-theme",
-    "antigen",
-  ],
+  keywords: ["zsh", "solarized-dircolors", "solarized-theme", "antigen"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-dircolors-solarized.plugin.zsh"],

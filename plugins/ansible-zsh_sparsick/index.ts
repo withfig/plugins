@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
       name: "sparsick",
       github: "sparsick",
       twitter: "SandraParsick",
-    }
+    },
   ],
   github: "sparsick/ansible-zsh",
   license: ["MIT"],

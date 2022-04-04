@@ -14,9 +14,9 @@ declare namespace Fig {
   }
 
   /** Function that compiles a context to a string-like result or block to be
-    * included in dotfiles
-    */
-  type DotfileCompiler<T, S> = (_: T & { ctx: DotfileCompilationContext }) => S
+   * included in dotfiles
+   */
+  type DotfileCompiler<T, S> = (_: T & { ctx: DotfileCompilationContext }) => S;
 
   /** DeviceEnvironment mediates queries about the local device environment */
   interface DeviceEnvironment {
@@ -26,7 +26,7 @@ declare namespace Fig {
   }
 
   type InstallationScriptCompiler = DotfileCompiler<{}, string | string[]>;
-  type InstallationScript =  string | string[] | InstallationScriptCompiler;
+  type InstallationScript = string | string[] | InstallationScriptCompiler;
 
   interface PluginInstallation {
     preScript?: InstallationScript;
@@ -34,7 +34,7 @@ declare namespace Fig {
     sourceFiles?: InstallationScript;
   }
 
-  type PluginOrigin = "github" | { github: string; };
+  type PluginOrigin = "github" | { github: string };
 
   type BinaryDependency = {
     type: "binary";
@@ -56,41 +56,41 @@ declare namespace Fig {
   type ConfigurationDictionary = Record<string, ConfigurationValue>;
 
   /** Dynamically computes a result based on current configuration item values. */
-  type ConfigurationGenerator<T, S={}> = (_: S & { config: ConfigurationDictionary }) => T;
+  type ConfigurationGenerator<T, S = {}> = (_: S & { config: ConfigurationDictionary }) => T;
 
-  type DeviceConfigurationGenerator<T> = ConfigurationGenerator<T | Promise<T>, { env?: DeviceEnvironment }>
+  type DeviceConfigurationGenerator<T> = ConfigurationGenerator<
+    T | Promise<T>,
+    { env?: DeviceEnvironment }
+  >;
 
-  type UIType =
-    | "multiselect"
-    | "select"
-    | "text"
-    | "checkbox"
-    | "toggle"
+  type UIType = "multiselect" | "select" | "text" | "checkbox" | "toggle";
 
   type NonEmpty<T extends unknown[]> = T & { 0: T[number] };
   type Suggestions<T extends unknown[]> = T | DeviceConfigurationGenerator<T>;
 
   // Multiselect UI item type
-  type MultiselectUI<T> = T extends unknown[] ? {
-    interface: "multiselect";
-    default: T[number] | T;
-    options: Suggestions<T>;
-    value: T;
-  } : never;
+  type MultiselectUI<T> = T extends unknown[]
+    ? {
+        interface: "multiselect";
+        default: T[number] | T;
+        options: Suggestions<T>;
+        value: T;
+      }
+    : never;
 
   type SelectUI<T> = {
     interface: "select";
     value: T;
     default: T;
     options: Suggestions<T[]>;
-  }
+  };
 
   type TextUI<T> = {
     interface: "text";
     value: T;
     default: T;
     options?: Suggestions<T[]>;
-  }
+  };
 
   interface BasicUI<T, U extends UIType> {
     interface: U;
@@ -101,15 +101,17 @@ declare namespace Fig {
   // Get all ui's that support a value type of T.
   // This enforces that, e.g. you can only use booleans with a toggle/checkbox UI.
   // Gets all valid UIs that satisfy { value: T, interface: S }
-  type UI<V, U extends UIType = UIType> =
-    Omit<Extract<
-    | MultiselectUI<V>
-    | SelectUI<V>
-    | BasicUI<boolean, "checkbox" | "toggle">
-    | TextUI<number>
-    | TextUI<string>,
-    { value: V, interface: U }
-  >, "value">
+  type UI<V, U extends UIType = UIType> = Omit<
+    Extract<
+      | MultiselectUI<V>
+      | SelectUI<V>
+      | BasicUI<boolean, "checkbox" | "toggle">
+      | TextUI<number>
+      | TextUI<string>,
+      { value: V; interface: U }
+    >,
+    "value"
+  >;
 
   // Interface common to Configuration *items* and Configuration groups (which contain configuration items)
   interface ConfigurationInterface {
@@ -121,49 +123,49 @@ declare namespace Fig {
   }
 
   type EnvironmentVariableValue = string | string[];
-  type CompiledEnvironmentVariable = {
-    value: EnvironmentVariableValue,
-    concat?: boolean,
-    export?: boolean
-  } | EnvironmentVariableValue;
-  type EnvironmentVariableItemForType<V, U extends UIType> = ConfigurationInterface & UI<V, U> & {
-    type: "environmentVariable";
-    environmentVariable: string;
-    name?: string;
-    compile?: DotfileCompiler<{ value: V }, CompiledEnvironmentVariable>
-  }
+  type CompiledEnvironmentVariable =
+    | {
+        value: EnvironmentVariableValue;
+        concat?: boolean;
+        export?: boolean;
+      }
+    | EnvironmentVariableValue;
+  type EnvironmentVariableItemForType<V, U extends UIType> = ConfigurationInterface &
+    UI<V, U> & {
+      type: "environmentVariable";
+      environmentVariable: string;
+      name?: string;
+      compile?: DotfileCompiler<{ value: V }, CompiledEnvironmentVariable>;
+    };
 
-  type ScriptItemForType<V, U extends UIType> = ConfigurationInterface & UI<V, U> & {
-    name: string;
-    type: "script";
-    compile: DotfileCompiler<{ value: V }, string>
-  }
+  type ScriptItemForType<V, U extends UIType> = ConfigurationInterface &
+    UI<V, U> & {
+      name: string;
+      type: "script";
+      compile: DotfileCompiler<{ value: V }, string>;
+    };
 
-  type ScriptItem = (
+  type ScriptItem =
     | ScriptItemForType<string[], "multiselect">
     | ScriptItemForType<number[], "multiselect">
     | ScriptItemForType<boolean, "checkbox" | "toggle">
     | ScriptItemForType<string, "select" | "text">
-    | ScriptItemForType<number, "select" | "text">
-  )
+    | ScriptItemForType<number, "select" | "text">;
 
-  type EnvironmentVariableItem = (
+  type EnvironmentVariableItem =
     | EnvironmentVariableItemForType<string[], "multiselect">
     | EnvironmentVariableItemForType<number[], "multiselect">
     | EnvironmentVariableItemForType<string, "select" | "text">
     | EnvironmentVariableItemForType<number, "select" | "text">
-    | EnvironmentVariableItemForType<boolean, "checkbox" | "toggle">
-  )
+    | EnvironmentVariableItemForType<boolean, "checkbox" | "toggle">;
 
-  type ConfigurationItem =
-    | ScriptItem
-    | EnvironmentVariableItem
+  type ConfigurationItem = ScriptItem | EnvironmentVariableItem;
 
   interface ConfigurationGroup extends ConfigurationInterface {
     /** The name of the group to display in the interface */
     displayName: string;
     /** The children configuration items that are a part of the group */
-    configuration: ConfigurationItem[]
+    configuration: ConfigurationItem[];
   }
 
   type PluginType = "shell";
@@ -179,7 +181,6 @@ declare namespace Fig {
         /** The GitHub username of the author */
         github?: string;
       };
-
 
   type Category =
     | "Completion"
@@ -226,5 +227,5 @@ declare namespace Fig {
     installation: Installation;
     /** The configuration for the plugin */
     configuration?: (ConfigurationItem | ConfigurationGroup)[];
- }
+  }
 }

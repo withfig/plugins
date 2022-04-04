@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "xav-b",
       github: "xav-b",
       twitter: "XavierBruhiere",
-    }
+    },
   ],
   github: "xav-b/zsh-extend-history",
   shells: ["zsh"],

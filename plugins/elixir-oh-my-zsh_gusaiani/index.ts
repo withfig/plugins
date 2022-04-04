@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "gusaiani",
       github: "gusaiani",
       twitter: "gusaiani",
-    }
+    },
   ],
   github: "gusaiani/elixir-oh-my-zsh",
   license: ["MIT"],

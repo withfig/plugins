@@ -7,18 +7,13 @@ const plugin: Fig.Plugin = {
       name: "yuki-yano",
       github: "yuki-yano",
       twitter: "yuki_ycino",
-    }
+    },
   ],
   github: "yuki-yano/zeno.zsh",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "typescript",
-    "deno",
-    "zsh",
-    "fzf",
-  ],
+  keywords: ["typescript", "deno", "zsh", "fzf"],
   installation: {
     origin: "github",
     sourceFiles: ["zeno-plugin.zsh", "zeno.zsh"],

@@ -7,18 +7,13 @@ const plugin: Fig.Plugin = {
       name: "PatTheMav",
       github: "PatTheMav",
       twitter: "patthemav",
-    }
+    },
   ],
   github: "PatTheMav/minimal2",
   license: ["GPL-3.0"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh",
-    "zsh-theme",
-    "zim",
-    "zimfw",
-  ],
+  keywords: ["zsh", "zsh-theme", "zim", "zimfw"],
   installation: {
     origin: "github",
     sourceFiles: ["minimal2.zsh-theme"],

@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "cowboyd",
       github: "cowboyd",
       twitter: "cowboyd",
-    }
+    },
   ],
   github: "cowboyd/zsh-volta",
   license: ["MIT"],

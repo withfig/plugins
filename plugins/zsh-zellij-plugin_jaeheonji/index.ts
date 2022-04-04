@@ -6,16 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "jaeheonji",
       github: "jaeheonji",
-    }
+    },
   ],
   github: "jaeheonji/zsh-zellij-plugin",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zellij",
-    "zsh",
-  ],
+  keywords: ["zellij", "zsh"],
   installation: {
     origin: "github",
     sourceFiles: ["zellij.plugin.zsh"],

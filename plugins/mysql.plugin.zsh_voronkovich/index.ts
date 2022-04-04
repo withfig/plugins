@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "voronkovich",
       github: "voronkovich",
-    }
+    },
   ],
   github: "voronkovich/mysql.plugin.zsh",
   license: ["Unlicense"],

@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "caarlos0-graveyard",
       github: "caarlos0-graveyard",
-    }
+    },
   ],
   github: "caarlos0-graveyard/git-add-remote",
   license: ["MIT"],
@@ -15,14 +15,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"add-remote.sh"
-      ],
+      sourceFiles: ["add-remote.sh"],
     },
     zsh: {
-      sourceFiles: [
-"add-remote.plugin.zsh"
-      ],
+      sourceFiles: ["add-remote.plugin.zsh"],
     },
   },
 };

@@ -6,19 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "tjquillan",
       github: "tjquillan",
-    }
+    },
   ],
   github: "tjquillan/pastel",
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh",
-    "zsh-theme",
-    "pastel",
-    "zplug",
-    "theme",
-    "dark-theme",
-  ],
+  keywords: ["zsh", "zsh-theme", "pastel", "zplug", "theme", "dark-theme"],
   installation: {
     origin: "github",
     sourceFiles: ["pastel.zsh-theme"],

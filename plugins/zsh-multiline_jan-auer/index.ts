@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "jan-auer",
       github: "jan-auer",
-    }
+    },
   ],
   github: "jan-auer/zsh-multiline",
   license: ["MIT"],

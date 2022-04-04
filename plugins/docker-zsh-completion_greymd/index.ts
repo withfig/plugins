@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "greymd",
       github: "greymd",
-    }
+    },
   ],
   github: "greymd/docker-zsh-completion",
   license: ["MIT"],
@@ -15,14 +15,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"execute.sh"
-      ],
+      sourceFiles: ["execute.sh"],
     },
     zsh: {
-      sourceFiles: [
-"docker-zsh-completion.plugin.zsh"
-      ],
+      sourceFiles: ["docker-zsh-completion.plugin.zsh"],
     },
   },
 };

@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "felixr",
       github: "felixr",
-    }
+    },
   ],
   github: "felixr/docker-zsh-completion",
   shells: ["zsh"],

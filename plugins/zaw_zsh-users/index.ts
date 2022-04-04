@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
     {
       name: "zsh-users",
       github: "zsh-users",
-    }
+    },
   ],
   github: "zsh-users/zaw",
   license: ["NOASSERTION"],

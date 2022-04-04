@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "gko",
       github: "gko",
       twitter: "konstantin",
-    }
+    },
   ],
   github: "gko/listbox",
   license: ["MIT"],

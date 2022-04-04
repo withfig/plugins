@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "jandamm",
       github: "jandamm",
       twitter: "jandammm",
-    }
+    },
   ],
   github: "jandamm/zgenom",
   license: ["BSD-2-Clause"],

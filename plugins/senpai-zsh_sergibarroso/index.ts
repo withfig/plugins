@@ -7,17 +7,13 @@ const plugin: Fig.Plugin = {
       name: "sergibarroso",
       github: "sergibarroso",
       twitter: "sergibarroso",
-    }
+    },
   ],
   github: "sergibarroso/senpai-zsh",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh-theme",
-    "zsh",
-    "prompt",
-  ],
+  keywords: ["zsh-theme", "zsh", "prompt"],
   installation: {
     origin: "github",
     sourceFiles: ["senpai.zsh-theme"],

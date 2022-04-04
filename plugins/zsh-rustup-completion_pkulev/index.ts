@@ -6,27 +6,19 @@ const plugin: Fig.Plugin = {
     {
       name: "pkulev",
       github: "pkulev",
-    }
+    },
   ],
   github: "pkulev/zsh-rustup-completion",
   shells: ["bash", "zsh"],
   categories: ["Completion"],
-  keywords: [
-    "zsh",
-    "zsh-completion",
-    "oh-my-zsh",
-  ],
+  keywords: ["zsh", "zsh-completion", "oh-my-zsh"],
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"gen-completion.sh"
-      ],
+      sourceFiles: ["gen-completion.sh"],
     },
     zsh: {
-      sourceFiles: [
-"rustup.plugin.zsh"
-      ],
+      sourceFiles: ["rustup.plugin.zsh"],
     },
   },
 };

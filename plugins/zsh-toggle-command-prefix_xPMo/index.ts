@@ -6,17 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "xPMo",
       github: "xPMo",
-    }
+    },
   ],
   github: "xPMo/zsh-toggle-command-prefix",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh-widget",
-    "sudo",
-    "zsh-plugin",
-  ],
+  keywords: ["zsh-widget", "sudo", "zsh-plugin"],
   installation: {
     origin: "github",
     sourceFiles: ["toggle-command-prefix.plugin.zsh"],

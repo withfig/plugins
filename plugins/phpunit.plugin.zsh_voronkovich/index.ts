@@ -6,16 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "voronkovich",
       github: "voronkovich",
-    }
+    },
   ],
   github: "voronkovich/phpunit.plugin.zsh",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "phpunit",
-    "zsh-plugin",
-  ],
+  keywords: ["phpunit", "zsh-plugin"],
   installation: {
     origin: "github",
     sourceFiles: ["phpunit.plugin.zsh"],

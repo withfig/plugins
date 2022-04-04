@@ -6,16 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "zpm-zsh",
       github: "zpm-zsh",
-    }
+    },
   ],
   github: "zpm-zsh/clipboard",
   license: ["GPL-3.0"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zpm",
-    "zsh",
-  ],
+  keywords: ["zpm", "zsh"],
   installation: {
     origin: "github",
     sourceFiles: ["clipboard.plugin.zsh"],

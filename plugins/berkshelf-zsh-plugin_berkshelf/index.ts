@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "berkshelf",
       github: "berkshelf",
-    }
+    },
   ],
   github: "berkshelf/berkshelf-zsh-plugin",
   shells: ["zsh"],

@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "KidoThunder",
       github: "KidoThunder",
-    }
+    },
   ],
   github: "KidoThunder/kido-zsh-theme",
   license: ["MIT"],

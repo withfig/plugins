@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "bobsoppe",
       github: "bobsoppe",
-    }
+    },
   ],
   github: "bobsoppe/zsh-ssh-agent",
   license: ["MIT"],

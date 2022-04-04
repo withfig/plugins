@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "unixorn",
       github: "unixorn",
       twitter: "curiousbiped",
-    }
+    },
   ],
   github: "unixorn/kubectx-zshplugin",
   license: ["Apache-2.0"],

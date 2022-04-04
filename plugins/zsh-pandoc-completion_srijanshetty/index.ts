@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "srijanshetty",
       github: "srijanshetty",
       twitter: "srijanshetty",
-    }
+    },
   ],
   github: "srijanshetty/zsh-pandoc-completion",
   license: ["MIT"],

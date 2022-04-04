@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "Seqi",
       github: "Seqi",
-    }
+    },
   ],
   github: "Seqi/firebase-zsh",
   license: ["MIT"],

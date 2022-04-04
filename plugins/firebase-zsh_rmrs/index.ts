@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "rmrs",
       github: "rmrs",
-    }
+    },
   ],
   github: "rmrs/firebase-zsh",
   license: ["MIT"],

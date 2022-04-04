@@ -6,18 +6,13 @@ const plugin: Fig.Plugin = {
     {
       name: "zsh-vi-more",
       github: "zsh-vi-more",
-    }
+    },
   ],
   github: "zsh-vi-more/vi-motions",
   license: ["ISC"],
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: [
-    "zsh-plugin",
-    "vi-mode",
-    "vi-keybinds",
-    "vi-motions",
-  ],
+  keywords: ["zsh-plugin", "vi-mode", "vi-keybinds", "vi-motions"],
   installation: {
     origin: "github",
     sourceFiles: ["motions.plugin.zsh"],

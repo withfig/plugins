@@ -6,15 +6,12 @@ const plugin: Fig.Plugin = {
     {
       name: "folixg",
       github: "folixg",
-    }
+    },
   ],
   github: "folixg/kinda-fishy-theme",
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh-theme",
-    "oh-my-zsh-theme",
-  ],
+  keywords: ["zsh-theme", "oh-my-zsh-theme"],
   installation: {
     origin: "github",
     sourceFiles: ["kinda-fishy.zsh-theme"],

@@ -7,18 +7,13 @@ const plugin: Fig.Plugin = {
       name: "lukechilds",
       github: "lukechilds",
       twitter: "lukechilds",
-    }
+    },
   ],
   github: "lukechilds/zsh-better-npm-completion",
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Completion"],
-  keywords: [
-    "zsh",
-    "zsh-plugin",
-    "npm",
-    "completion",
-  ],
+  keywords: ["zsh", "zsh-plugin", "npm", "completion"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-better-npm-completion.plugin.zsh"],

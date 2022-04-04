@@ -33,12 +33,21 @@ const plugin: Fig.Plugin = {
     {
       displayName: "Highlighters",
       type: "environmentVariable",
-      description: "Choose which higlighters you want to use (default is all of them)",
+      description:
+        "Choose which higlighters you want to use (default is all of them)",
       interface: "multiselect",
       default: ["main", "brackets", "pattern", "cursor"],
-      options: ["main", "brackets", "pattern", "cursor", "regexp", "root", "line"],
+      options: [
+        "main",
+        "brackets",
+        "pattern",
+        "cursor",
+        "regexp",
+        "root",
+        "line",
+      ],
       environmentVariable: "ZSH_HIGHLIGHT_HIGHLIGHTERS",
-    }
+    },
   ],
 };
 

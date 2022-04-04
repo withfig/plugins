@@ -8,7 +8,7 @@ const plugin: Fig.Plugin = {
       name: "lukechilds",
       github: "lukechilds",
       twitter: "lukechilds",
-    }
+    },
   ],
   github: "lukechilds/zsh-nvm",
   license: ["MIT"],

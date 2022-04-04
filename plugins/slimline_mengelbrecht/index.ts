@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "mengelbrecht",
       github: "mengelbrecht",
-    }
+    },
   ],
   github: "mengelbrecht/slimline",
   license: ["MIT"],

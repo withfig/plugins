@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "seletskiy",
       github: "seletskiy",
-    }
+    },
   ],
   github: "seletskiy/zsh-git-smart-commands",
   shells: ["zsh"],

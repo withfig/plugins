@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "Tarrasch",
       github: "Tarrasch",
-    }
+    },
   ],
   github: "Tarrasch/zsh-functional",
   shells: ["bash", "zsh"],
@@ -14,14 +14,10 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: [
-"install.sh"
-      ],
+      sourceFiles: ["install.sh"],
     },
     zsh: {
-      sourceFiles: [
-"functional.plugin.zsh"
-      ],
+      sourceFiles: ["functional.plugin.zsh"],
     },
   },
 };

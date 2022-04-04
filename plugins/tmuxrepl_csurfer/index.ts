@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
     {
       name: "csurfer",
       github: "csurfer",
-    }
+    },
   ],
   github: "csurfer/tmuxrepl",
   license: ["MIT"],

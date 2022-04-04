@@ -6,18 +6,14 @@ const plugin: Fig.Plugin = {
     {
       name: "elboletaire",
       github: "elboletaire",
-    }
+    },
   ],
   github: "elboletaire/zsh-theme-racotecnic",
   license: ["GPL-3.0"],
   site: "http://www.racotecnic.com/2013/12/tema-de-oh-my-zsh-inspirado-en-af-magic-y-posh-git/",
   shells: ["zsh"],
   categories: ["Prompt"],
-  keywords: [
-    "zsh",
-    "zsh-theme",
-    "theme",
-  ],
+  keywords: ["zsh", "zsh-theme", "theme"],
   installation: {
     origin: "github",
     sourceFiles: ["racotecnic.zsh-theme"],

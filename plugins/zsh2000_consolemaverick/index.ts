@@ -7,7 +7,7 @@ const plugin: Fig.Plugin = {
       name: "consolemaverick",
       github: "consolemaverick",
       twitter: "consolemaverick",
-    }
+    },
   ],
   github: "consolemaverick/zsh2000",
   shells: ["zsh"],
