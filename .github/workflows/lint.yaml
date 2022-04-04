@@ -1,4 +1,4 @@
-name: Typecheck Files
+name: Lint Files
 
 on: [push, pull_request]
 jobs:
@@ -10,4 +10,4 @@ jobs:
         with:
           node-version: 14.x
       - run: npm install
-      - run: npm test
+      - run: npm run lint
