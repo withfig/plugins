@@ -83,7 +83,7 @@ const createConfigurationOptionForColorComponent = (component: ColorComponent): 
   return {
     name,
     type: "script",
-    displayName: `[Color] ${title}`,
+    displayName: `${title}`,
     description: `Color of ${description}`,
     default: component.default,
     interface: "text",
@@ -105,6 +105,7 @@ const plugin: Fig.Plugin = {
       github: "sindresorhus",
     },
   ],
+  screenshots: ["images/screenshot.png"],
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Prompt"],
@@ -234,7 +235,7 @@ const plugin: Fig.Plugin = {
       displayName: "Color",
       configuration: [{
         name: "load-zsh-nearcolor",
-        displayName: "[Color] Load zsh/nearcolor",
+        displayName: "Load zsh/nearcolor",
         type: "script",
         description: "Enable use of RGB colors with hexidecimal format for Pure prompt color configuration if you are unable to use a terminal with 24-bit color support",
         additionalDetails: "If you are unable to use a [terminal that support 24-bit colors](https://gist.github.com/XVilka/8346728), you can enable this option to load the module [`zsh/nearcolor`](http://zsh.sourceforge.net/Doc/Release/Zsh-Modules.html#The-zsh_002fnearcolor-Module). It will map any hexadecimal color to the nearest color in the 88 or 256 color palettes of your terminal, but without using the first 16 colors, since their values can be modified by the user. Keep in mind that when using this module you won't be able to display true RGB colors. It only allows you to specify colors in a more convenient way.",
