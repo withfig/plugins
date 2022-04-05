@@ -473,7 +473,13 @@ const plugin: Fig.Plugin = {
   github: "ohmyzsh/ohmyzsh",
   twitter: "ohmyzsh",
   community: "https://discord.gg/ohmyzsh",
-  screenshots: ["images/omz.png", "images/af-magic.jpeg", "images/daveverwer.jpeg", "images/eastwood.jpeg", "images/nebirhos.jpeg" ],
+  screenshots: [
+    "images/omz.png",
+    "images/af-magic.jpeg",
+    "images/daveverwer.jpeg",
+    "images/eastwood.jpeg",
+    "images/nebirhos.jpeg",
+  ],
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Framework"],
@@ -522,7 +528,8 @@ const plugin: Fig.Plugin = {
           displayName: "Update mode",
           type: "script",
           description: "Choose which update mode Oh My Zsh uses",
-          additionalDetails: "**disabled**: disables all automatic updates; **auto**: automatically updates Oh My Zsh when a new version is available, without asking for confirmation; **reminder**: only checks if there are updates available and shows a reminder to update Oh My Zsh. **prompt** (default): ask for confirmation before updating Oh My Zsh.",
+          additionalDetails:
+            "**disabled**: disables all automatic updates; **auto**: automatically updates Oh My Zsh when a new version is available, without asking for confirmation; **reminder**: only checks if there are updates available and shows a reminder to update Oh My Zsh. **prompt** (default): ask for confirmation before updating Oh My Zsh.",
           interface: "multiselect",
           default: "prompt",
           options: modes,
@@ -532,11 +539,12 @@ const plugin: Fig.Plugin = {
           name: "frequency",
           displayName: "Update Frequency",
           type: "script",
-          description: "Choose how frequently Oh My Zsh checks for updates. The value is in days. The default value is 13 days",
+          description:
+            "Choose how frequently Oh My Zsh checks for updates. The value is in days. The default value is 13 days",
           interface: "text",
           default: 13,
           compile: (value) => `zstyle ':omz:update' frequency ${value}`,
-          disabled: ({ config }) => config["mode"] !== "disabled",
+          disabled: ({ config }) => config.mode !== "disabled",
         },
       ],
     },
@@ -552,9 +560,7 @@ const plugin: Fig.Plugin = {
           type: "environmentVariable",
           interface: "multiselect",
           default: "robbyrussell",
-          disabled: ({config}) => {
-            return config.ZSH_THEME !== "random" 
-          },
+          disabled: ({ config }) => config.ZSH_THEME !== "random",
           options: async ({ env }) => {
             if (!env) {
               return THEMES;
@@ -572,9 +578,7 @@ const plugin: Fig.Plugin = {
           type: "environmentVariable",
           interface: "multiselect",
           default: "robbyrussell",
-          disabled: ({config}) => {
-            return config.ZSH_THEME !== "random" 
-          },
+          disabled: ({ config }) => config.ZSH_THEME !== "random",
           options: async ({ env }) => {
             if (!env) {
               return THEMES;
@@ -588,17 +592,17 @@ const plugin: Fig.Plugin = {
         },
         {
           displayName: "Random Quiet",
-          description: "If true, the random theme will not show a startup message indicating which theme was chosen",
-          additionalDetails: "You can always run `echo $RANDOM_THEME` to show the current theme name",
+          description:
+            "If true, the random theme will not show a startup message indicating which theme was chosen",
+          additionalDetails:
+            "You can always run `echo $RANDOM_THEME` to show the current theme name",
           type: "environmentVariable",
           interface: "toggle",
           default: false,
-          disabled: ({config}) => {
-            return config.ZSH_THEME !== "random" 
-          },
+          disabled: ({ config }) => config.ZSH_THEME !== "random",
           environmentVariable: "ZSH_THEME_RANDOM_IGNORED",
         },
-      ]
+      ],
     },
 
     // Completion settings
@@ -609,7 +613,8 @@ const plugin: Fig.Plugin = {
         {
           displayName: "Case Sensitive",
           description: "Set to true to force case sensitive completion.",
-          additionalDetails: "e.g. if there are two files beginning with file, one lowercase (file-one), one uppercase (FILE-TWO), the completion system will offer both as entries when trying to complete file, unless this setting is true applied.",
+          additionalDetails:
+            "e.g. if there are two files beginning with file, one lowercase (file-one), one uppercase (FILE-TWO), the completion system will offer both as entries when trying to complete file, unless this setting is true applied.",
           type: "environmentVariable",
           interface: "toggle",
           default: false,
@@ -618,18 +623,18 @@ const plugin: Fig.Plugin = {
         {
           displayName: "Hyphen Sensitive",
           description: "Let hyphens and underscores be interchangeable",
-          additionalDetails: "Only available if case sensitive completion is off",
+          additionalDetails:
+            "Only available if case sensitive completion is off",
           type: "environmentVariable",
           interface: "toggle",
           default: false,
-          disabled: ({config}) => {
-            return config["CASE_SENSITIVE"] === true 
-          },
+          disabled: ({ config }) => config.CASE_SENSITIVE === true,
           environmentVariable: "HYPHEN_INSENSITIVE",
         },
         {
           displayName: "Completion Waiting Dots",
-          description: "Show ellipses after pressing tab while waiting for completions to load",
+          description:
+            "Show ellipses after pressing tab while waiting for completions to load",
           type: "environmentVariable",
           interface: "toggle",
           default: true,
@@ -637,30 +642,32 @@ const plugin: Fig.Plugin = {
         },
         {
           displayName: "Hide Insecure Completions Warning",
-          description: "Show a warning if sourcing completions from a potentially insecure folder which could contain malicious code.",
+          description:
+            "Show a warning if sourcing completions from a potentially insecure folder which could contain malicious code.",
           type: "environmentVariable",
           interface: "toggle",
           default: false,
           environmentVariable: "ZSH_DISABLE_COMPFIX",
         },
-      ]
+      ],
     },
-
 
     // Automatic title
     {
       displayName: "Window and Tab Title",
-      description: "Customize the text displayed at the top of the terminal window and eah terminal tab",
+      description:
+        "Customize the text displayed at the top of the terminal window and eah terminal tab",
       configuration: [
         {
           displayName: "Disable Auto Title",
-          description: "Oh My Zsh automatically sets the title of your terminal and tabs when running a command or printing the prompt. Use this setting if you want to disable that.",
+          description:
+            "Oh My Zsh automatically sets the title of your terminal and tabs when running a command or printing the prompt. Use this setting if you want to disable that.",
           type: "environmentVariable",
           interface: "toggle",
           default: false,
           environmentVariable: "DISABLE_AUTO_TITLE",
         },
-      ]
+      ],
     },
 
     // Library settings
@@ -670,7 +677,8 @@ const plugin: Fig.Plugin = {
       configuration: [
         {
           displayName: "Disable Magic Functions",
-          description: "`bracketed-paste-magic` and `url-quote-magic` are two Zsh utilities that are known buggy in some Zsh versions or user setups. If you're having problems when pasting URLs or pasting anything at all, use this setting to disable them.",
+          description:
+            "`bracketed-paste-magic` and `url-quote-magic` are two Zsh utilities that are known buggy in some Zsh versions or user setups. If you're having problems when pasting URLs or pasting anything at all, use this setting to disable them.",
           type: "environmentVariable",
           interface: "toggle",
           default: false,
@@ -678,7 +686,8 @@ const plugin: Fig.Plugin = {
         },
         {
           displayName: "Disable ls Colors",
-          description: "Use this setting to disable the Oh My Zsh logic to automatically set `ls` color output based on the system you're running and which ls commands are available.",
+          description:
+            "Use this setting to disable the Oh My Zsh logic to automatically set `ls` color output based on the system you're running and which ls commands are available.",
           type: "environmentVariable",
           interface: "toggle",
           default: false,
@@ -686,8 +695,10 @@ const plugin: Fig.Plugin = {
         },
         {
           displayName: "Enable Correction",
-          description: "Tell Zsh to try to correct command names and filenames passed as arguments.",
-          additionalDetails: "Only the following commands will be prevented to have filename correction: cp, ebuild, gist, heroku, hpodder, man, mkdir, mv, mysql, sudo.",
+          description:
+            "Tell Zsh to try to correct command names and filenames passed as arguments.",
+          additionalDetails:
+            "Only the following commands will be prevented to have filename correction: cp, ebuild, gist, heroku, hpodder, man, mkdir, mv, mysql, sudo.",
           type: "environmentVariable",
           interface: "toggle",
           default: false,
@@ -695,13 +706,14 @@ const plugin: Fig.Plugin = {
         },
         {
           displayName: "Disable Marking Untracked Files as Dirty",
-          description: "Use this setting if you want to disable marking untracked files under VCS as dirty. This makes repository status checks for large repositories much, much faster.",
+          description:
+            "Use this setting if you want to disable marking untracked files under VCS as dirty. This makes repository status checks for large repositories much, much faster.",
           type: "environmentVariable",
           interface: "toggle",
           default: false,
           environmentVariable: "DISABLE_UNTRACKED_FILES_DIRTY",
         },
-      ]
+      ],
     },
     {
       displayName: "Additional Configuration",
@@ -709,16 +721,16 @@ const plugin: Fig.Plugin = {
         {
           name: "additionalConfiguration",
           displayName: "Shell Code",
-          description: "Blank space for you to provide additional shell code to be sourced before the Oh My Zsh plugin is soruced.",
+          description:
+            "Blank space for you to provide additional shell code to be sourced before the Oh My Zsh plugin is soruced.",
           type: "script",
           interface: "text",
           default: "",
           // Take input and source it
-          compile: (value) => value
+          compile: (value) => value,
         },
-      ]
+      ],
     },
-
 
     // Folder Paths
     // {
@@ -753,15 +765,10 @@ const plugin: Fig.Plugin = {
     //     },
     //   ]
     // },
-  
   ],
 };
 
 export default plugin;
-
-
-
-
 
 /* 
 Todo: Brendan
@@ -776,5 +783,3 @@ Settings that are deliberately missing
 
 
 */
-
-
