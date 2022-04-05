@@ -6,7 +6,7 @@ const plugin: Fig.Plugin = {
   icon: "⚡",
   github: "skywind3000/z.lua",
   license: ["MIT"],
-  screenshots: ["images/1.png"],it
+  screenshots: ["images/1.png"],
   authors: [
     {
       name: "skywind3000",
