@@ -2,7 +2,7 @@ import {
   setZstyle,
   compileZstyleBool,
   compileZstyleList,
-  DEFAULT_MODULES
+  DEFAULT_MODULES,
 } from "./utils";
 
 import autosuggestions from "./modules/autosuggestions";
@@ -36,7 +36,7 @@ const modules = [
   syntaxHighlighting,
   terminal,
   tmux,
-  utility
+  utility,
 ];
 
 const plugin: Fig.Plugin = {
@@ -58,112 +58,127 @@ const plugin: Fig.Plugin = {
     origin: "github",
     sourceFiles: ["init.zsh"],
   },
-  configuration: [{
-    displayName: "General",
-    configuration: [{
-        displayName: "Case Sensitivity",
-        name: "case-sensitive",
-        description: "Set case-sensitivity for completion, history lookup, etc.",
-        type: "script",
-        interface: "toggle",
-        default: true,
-        compile: compileZstyleBool(':prezto:*:*', 'case-sensitive'),
-      }, {
-        displayName: "Color Output",
-        name: "color",
-        description: "Whether or not to color output (auto set to 'no' on dumb terminals).",
-        type: "script",
-        interface: "toggle",
-        default: true,
-        compile: compileZstyleBool(':prezto:*:*', 'color'),
-      }, {
-        displayName: "Module directories",
-        name: "pmodule-dirs",
-        description: "List of directories to load prezto modules from",
-        type: "script",
-        interface: "multi-text",
-        default: ["$HOME/.zprezto-contrib"],
-        compile: compileZstyleList(':prezto:load', 'pmodule-dirs'),
-      }, {
-        displayName: "Allow Module Overrides",
-        name: "pmodule-allow-overrides",
-        description: "Allow module overrides when pmodule-dirs causes module name collisions",
-        type: "script",
-        interface: "toggle",
-        default: true,
-        compile: compileZstyleBool(':prezto:load', 'pmodule-allow-overrides'),
-      }, {
-        displayName: "Zsh Modules",
-        name: "zsh-modules",
-        description: "Comma separated list of Zsh modules to load (man zshmodules)",
-        type: "script",
-        // TODO: add options, disable user created options.
-        interface: "multiselect",
-        allowUserCreatedOptions: true,
-        default: ["attr", "stat"],
-        options: ["attr", "stat"],
-        compile: compileZstyleList(':prezto:load', 'pmodule-allow-overrides'),
-      }, {
-        displayName: "Zsh Functions",
-        name: "zsh-functions",
-        description: "Comma separated list of Zsh functions to load (man zshcontrib)",
-        type: "script",
-        // TODO: add options, disable user created options.
-        interface: "multiselect",
-        default: ["zargs", "zmv"],
-        options: ["zargs", "zmv"],
-        compile: compileZstyleList(':prezto:load', 'zfunction'),
-      }, {
-        displayName: "Modules",
-        name: "modules",
-        description: "Set the Prezto modules to load",
-        interface: "multiselect",
-        type: "script",
-        default: [
-            'environment',
-            'terminal',
-            'editor',
-            'history',
-            'directory',
-            'spectrum',
-            'utility',
-            'completion',
-            'history-substring-search',
-            'prompt',
-        ],
-        options: async ({ env, config }) => {
-          if (!env) {
-            return DEFAULT_MODULES;
-          }
-          // TODO: we should look in ${ZPREZTODIR} (default is
-          // ${ZDOTDIR:-HOME}/.zprezto). Need to add this functionality to env.
-          const preztoDir = `~/.zprezto/`;
-          const moduleDirs = config["pmodule-dirs"] as string;
-          const modules = await Promise.all([
-            env.listFolder(`~/.zprezto/modules/`),
-            ...moduleDirs.split(",").map(dir => env.listFolder(dir)),
-          ].map(p => p.catch(() => [])));
-          return [...new Set(modules.flat())];
+  configuration: [
+    {
+      displayName: "General",
+      configuration: [
+        {
+          displayName: "Case Sensitivity",
+          name: "case-sensitive",
+          description:
+            "Set case-sensitivity for completion, history lookup, etc.",
+          type: "script",
+          interface: "toggle",
+          default: true,
+          compile: compileZstyleBool(":prezto:*:*", "case-sensitive"),
         },
-        compile: (value: string[]) => setZstyle(
-          ':prezto:load',
-          "pmodule",
-          value.map(x => `'${x}'`).join(" ")
-        ),
-      }
-    ]
-  }, 
-  ...modules.map(module => ({
-    displayName: `Module: ${module.name}`,
-    hidden: ({ config }: { config: Fig.ConfigurationDictionary }) =>
-      !(config["modules"] as string[]).includes(module.name),
-    configuration: module.items.map(item => (
-      // Remap names to avoid name conflicts across different plugins.
-      item.name
-        ? ({ ...item, name: `${module.name}-${item.name}`, })
-        : item
-    )),
-  }))]
+        {
+          displayName: "Color Output",
+          name: "color",
+          description:
+            "Whether or not to color output (auto set to 'no' on dumb terminals).",
+          type: "script",
+          interface: "toggle",
+          default: true,
+          compile: compileZstyleBool(":prezto:*:*", "color"),
+        },
+        {
+          displayName: "Module directories",
+          name: "pmodule-dirs",
+          description: "List of directories to load prezto modules from",
+          type: "script",
+          interface: "multi-text",
+          default: ["$HOME/.zprezto-contrib"],
+          compile: compileZstyleList(":prezto:load", "pmodule-dirs"),
+        },
+        {
+          displayName: "Allow Module Overrides",
+          name: "pmodule-allow-overrides",
+          description:
+            "Allow module overrides when pmodule-dirs causes module name collisions",
+          type: "script",
+          interface: "toggle",
+          default: true,
+          compile: compileZstyleBool(":prezto:load", "pmodule-allow-overrides"),
+        },
+        {
+          displayName: "Zsh Modules",
+          name: "zsh-modules",
+          description:
+            "Comma separated list of Zsh modules to load (man zshmodules)",
+          type: "script",
+          // TODO: add options, disable user created options.
+          interface: "multiselect",
+          allowUserCreatedOptions: true,
+          default: ["attr", "stat"],
+          options: ["attr", "stat"],
+          compile: compileZstyleList(":prezto:load", "pmodule-allow-overrides"),
+        },
+        {
+          displayName: "Zsh Functions",
+          name: "zsh-functions",
+          description:
+            "Comma separated list of Zsh functions to load (man zshcontrib)",
+          type: "script",
+          // TODO: add options, disable user created options.
+          interface: "multiselect",
+          default: ["zargs", "zmv"],
+          options: ["zargs", "zmv"],
+          compile: compileZstyleList(":prezto:load", "zfunction"),
+        },
+        {
+          displayName: "Modules",
+          name: "modules",
+          description: "Set the Prezto modules to load",
+          interface: "multiselect",
+          type: "script",
+          default: [
+            "environment",
+            "terminal",
+            "editor",
+            "history",
+            "directory",
+            "spectrum",
+            "utility",
+            "completion",
+            "history-substring-search",
+            "prompt",
+          ],
+          options: async ({ env, config }) => {
+            if (!env) {
+              return DEFAULT_MODULES;
+            }
+            // TODO: we should look in ${ZPREZTODIR} (default is
+            // ${ZDOTDIR:-HOME}/.zprezto). Need to add this functionality to env.
+            const preztoDir = `~/.zprezto/`;
+            const moduleDirs = config["pmodule-dirs"] as string;
+            const modules = await Promise.all(
+              [
+                env.listFolder(`~/.zprezto/modules/`),
+                ...moduleDirs.split(",").map((dir) => env.listFolder(dir)),
+              ].map((p) => p.catch(() => []))
+            );
+            return [...new Set(modules.flat())];
+          },
+          compile: (value: string[]) =>
+            setZstyle(
+              ":prezto:load",
+              "pmodule",
+              value.map((x) => `'${x}'`).join(" ")
+            ),
+        },
+      ],
+    },
+    ...modules.map((module) => ({
+      displayName: `Module: ${module.name}`,
+      hidden: ({ config }: { config: Fig.ConfigurationDictionary }) =>
+        !(config.modules as string[]).includes(module.name),
+      configuration: module.items.map((item) =>
+        // Remap names to avoid name conflicts across different plugins.
+        item.name ? { ...item, name: `${module.name}-${item.name}` } : item
+      ),
+    })),
+  ],
 };
 
 export default plugin;
