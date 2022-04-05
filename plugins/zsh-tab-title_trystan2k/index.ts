@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🧑‍💻",
   name: "zsh-tab-title_trystan2k",
   type: "shell",
   description:

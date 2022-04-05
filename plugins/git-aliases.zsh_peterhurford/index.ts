@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🧑‍💻",
   name: "git-aliases.zsh_peterhurford",
   type: "shell",
   description: "Useful aliases for interacting with GitHub more quickly.",

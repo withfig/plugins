@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "history-sync_wulfgarpro",
   type: "shell",
   description:

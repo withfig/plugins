@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "zsh-vim-plugin_nviennot",
   type: "shell",
   authors: [

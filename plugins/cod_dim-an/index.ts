@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🌟",
   name: "cod_dim-an",
   type: "shell",
   description: "cod is a completion daemon for bash/fish/zsh",

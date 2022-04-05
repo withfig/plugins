@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "git-annex-zsh-completion_Schnouki",
   type: "shell",
   description: "zsh completion for git-annex",

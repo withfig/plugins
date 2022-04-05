@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🧑‍💻",
   name: "ztrace_zdharma-continuum",
   type: "shell",
   authors: [

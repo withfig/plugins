@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "evalcache_mroth",
   type: "shell",
   description:

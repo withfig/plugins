@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "phi-zsh-theme_LasaleFamine",
   type: "shell",
   description: "Clean and simple theme for ZSH.",

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😎",
   name: "tmux_zpm-zsh",
   type: "shell",
   description: "zsh plugin for tmux",

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💾",
   name: "cd-reminder_bartboy011",
   type: "shell",
   description:

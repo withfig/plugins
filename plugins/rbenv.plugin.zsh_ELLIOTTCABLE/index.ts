@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "rbenv.plugin.zsh_ELLIOTTCABLE",
   type: "shell",
   description: "A faster fork of rbenv.plugin.zsh",

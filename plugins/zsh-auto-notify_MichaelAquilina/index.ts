@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "zsh-auto-notify_MichaelAquilina",
   type: "shell",
   description:

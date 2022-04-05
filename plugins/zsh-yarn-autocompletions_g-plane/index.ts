@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "☀️",
   name: "zsh-yarn-autocompletions_g-plane",
   type: "shell",
   description: "Zsh plugin for Yarn autocompletions.",

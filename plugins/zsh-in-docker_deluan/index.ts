@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "zsh-in-docker_deluan",
   type: "shell",
   description:

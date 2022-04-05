@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "☀️",
   name: "listbox_gko",
   type: "shell",
   description: "💬 listbox element for bash",

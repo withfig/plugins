@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🌟",
   name: "sandboxd_benvan",
   type: "shell",
   description:

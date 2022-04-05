@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "zsh-abbrev-alias_momo-lab",
   type: "shell",
   description:

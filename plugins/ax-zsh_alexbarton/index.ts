@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "👾",
   name: "ax-zsh_alexbarton",
   type: "shell",
   description: "Modular configuration system for the Z shell (ZSH)",

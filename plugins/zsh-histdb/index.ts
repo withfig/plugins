@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "zsh-histdb",
   type: "shell",
   description: "A slightly better history for zsh",

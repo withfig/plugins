@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔥",
   name: "zsh-bd_Tarrasch",
   type: "shell",
   description: "Jump back to a specific directory, without doing `cd ../../..`",

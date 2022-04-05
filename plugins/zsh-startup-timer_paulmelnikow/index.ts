@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "☀️",
   name: "zsh-startup-timer_paulmelnikow",
   type: "shell",
   description:

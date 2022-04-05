@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😎",
   name: "q_cal2195",
   type: "shell",
   description: "q - vim like macro registers for your bash and zsh shell!",

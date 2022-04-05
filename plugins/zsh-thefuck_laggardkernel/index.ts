@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "zsh-thefuck_laggardkernel",
   type: "shell",
   description: "ZSH plugin with thefuck initialization and useful functions",

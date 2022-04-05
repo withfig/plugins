@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "zsh-aliases-exa_DarrinTisdale",
   type: "shell",
   description: "zsh plugin adding aliases for the exa command-line tool",

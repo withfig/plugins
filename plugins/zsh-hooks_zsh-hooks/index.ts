@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💥",
   name: "zsh-hooks_zsh-hooks",
   type: "shell",
   description: "Add zsh's missing hooks, and support for user-defined hooks",

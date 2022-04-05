@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "goenv_bbenne10",
   type: "shell",
   description:

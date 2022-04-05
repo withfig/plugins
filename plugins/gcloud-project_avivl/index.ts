@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💾",
   name: "gcloud-project_avivl",
   type: "shell",
   description:

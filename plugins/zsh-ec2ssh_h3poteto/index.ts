@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🌟",
   name: "zsh-ec2ssh_h3poteto",
   type: "shell",
   description:

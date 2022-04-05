@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "zsh-ssh-agent_bobsoppe",
   type: "shell",
   description: "Ssh-agent management for zsh",

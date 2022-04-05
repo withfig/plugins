@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💾",
   name: "pip-app_sharat87",
   type: "shell",
   description:

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "firebase-zsh_rmrs",
   type: "shell",
   description: "Firebase zsh plugin",

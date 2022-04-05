@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "terminal-app.zsh_maulding",
   type: "shell",
   description:

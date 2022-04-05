@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💾",
   name: "zsh-command-time_popstas",
   type: "shell",
   description: "Show execution time for long commands in zsh",

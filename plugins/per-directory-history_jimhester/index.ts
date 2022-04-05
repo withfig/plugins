@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "☀️",
   name: "per-directory-history_jimhester",
   type: "shell",
   description:

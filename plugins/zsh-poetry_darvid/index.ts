@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "zsh-poetry_darvid",
   type: "shell",
   description:

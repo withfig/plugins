@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "gpg-agent.zsh_axtl",
   type: "shell",
   description: "very simple gpg-agent plugin for zsh",

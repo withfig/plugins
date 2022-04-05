@@ -472,6 +472,14 @@ const plugin: Fig.Plugin = {
   docs: "https://github.com/ohmyzsh/ohmyzsh/wiki",
   github: "ohmyzsh/ohmyzsh",
   twitter: "ohmyzsh",
+  community: "https://discord.gg/ohmyzsh",
+  screenshots: [
+    "images/omz.png",
+    "images/af-magic.jpeg",
+    "images/daveverwer.jpeg",
+    "images/eastwood.jpeg",
+    "images/nebirhos.jpeg",
+  ],
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Framework"],
@@ -517,27 +525,261 @@ const plugin: Fig.Plugin = {
       configuration: [
         {
           name: "mode",
+          displayName: "Update mode",
           type: "script",
-          description: "",
+          description: "Choose which update mode Oh My Zsh uses",
+          additionalDetails:
+            "**disabled**: disables all automatic updates; **auto**: automatically updates Oh My Zsh when a new version is available, without asking for confirmation; **reminder**: only checks if there are updates available and shows a reminder to update Oh My Zsh. **prompt** (default): ask for confirmation before updating Oh My Zsh.",
           interface: "multiselect",
           default: "prompt",
           options: modes,
-          compile: ({ value }) => `zstyle ':omz:update' mode ${value}`,
-          hidden: () => true,
+          compile: (value) => `zstyle ':omz:update' mode ${value}`,
         },
         {
           name: "frequency",
+          displayName: "Update Frequency",
           type: "script",
-          description: "How often Oh My Zsh checks for updates",
+          description:
+            "Choose how frequently Oh My Zsh checks for updates. The value is in days. The default value is 13 days",
           interface: "text",
-          default: 14,
-          compile: ({ value }) => `zstyle ':omz:update' frequency ${value}`,
+          default: 13,
+          compile: (value) => `zstyle ':omz:update' frequency ${value}`,
           disabled: ({ config }) => config.mode !== "disabled",
-          hidden: () => true,
         },
       ],
     },
+
+    // Random theme
+    {
+      displayName: "Random Theme",
+      description: "These settings only work if the `Random` theme is selected",
+      configuration: [
+        {
+          displayName: "Random Theme Candidates",
+          description: "Limit the themes that random can pick from",
+          type: "environmentVariable",
+          interface: "multiselect",
+          default: "robbyrussell",
+          disabled: ({ config }) => config.ZSH_THEME !== "random",
+          options: async ({ env }) => {
+            if (!env) {
+              return THEMES;
+            }
+            const themes = await env.listFolder(
+              `${env.plugin.installDirectory}/themes`
+            );
+            return themes.map((theme) => theme.replace(".zsh-theme", ""));
+          },
+          environmentVariable: "ZSH_THEME_RANDOM_CANDIDATES",
+        },
+        {
+          displayName: "Ignored Theme Candidates",
+          description: "Themes random should ignore",
+          type: "environmentVariable",
+          interface: "multiselect",
+          default: "robbyrussell",
+          disabled: ({ config }) => config.ZSH_THEME !== "random",
+          options: async ({ env }) => {
+            if (!env) {
+              return THEMES;
+            }
+            const themes = await env.listFolder(
+              `${env.plugin.installDirectory}/themes`
+            );
+            return themes.map((theme) => theme.replace(".zsh-theme", ""));
+          },
+          environmentVariable: "ZSH_THEME_RANDOM_IGNORED",
+        },
+        {
+          displayName: "Random Quiet",
+          description:
+            "If true, the random theme will not show a startup message indicating which theme was chosen",
+          additionalDetails:
+            "You can always run `echo $RANDOM_THEME` to show the current theme name",
+          type: "environmentVariable",
+          interface: "toggle",
+          default: false,
+          disabled: ({ config }) => config.ZSH_THEME !== "random",
+          environmentVariable: "ZSH_THEME_RANDOM_IGNORED",
+        },
+      ],
+    },
+
+    // Completion settings
+    {
+      displayName: "Tab Completion Settings",
+      description: "Settings for completions",
+      configuration: [
+        {
+          displayName: "Case Sensitive",
+          description: "Set to true to force case sensitive completion.",
+          additionalDetails:
+            "e.g. if there are two files beginning with file, one lowercase (file-one), one uppercase (FILE-TWO), the completion system will offer both as entries when trying to complete file, unless this setting is true applied.",
+          type: "environmentVariable",
+          interface: "toggle",
+          default: false,
+          environmentVariable: "CASE_SENSITIVE",
+        },
+        {
+          displayName: "Hyphen Sensitive",
+          description: "Let hyphens and underscores be interchangeable",
+          additionalDetails:
+            "Only available if case sensitive completion is off",
+          type: "environmentVariable",
+          interface: "toggle",
+          default: false,
+          disabled: ({ config }) => config.CASE_SENSITIVE === true,
+          environmentVariable: "HYPHEN_INSENSITIVE",
+        },
+        {
+          displayName: "Completion Waiting Dots",
+          description:
+            "Show ellipses after pressing tab while waiting for completions to load",
+          type: "environmentVariable",
+          interface: "toggle",
+          default: true,
+          environmentVariable: "COMPLETION_WAITING_DOTS",
+        },
+        {
+          displayName: "Hide Insecure Completions Warning",
+          description:
+            "Show a warning if sourcing completions from a potentially insecure folder which could contain malicious code.",
+          type: "environmentVariable",
+          interface: "toggle",
+          default: false,
+          environmentVariable: "ZSH_DISABLE_COMPFIX",
+        },
+      ],
+    },
+
+    // Automatic title
+    {
+      displayName: "Window and Tab Title",
+      description:
+        "Customize the text displayed at the top of the terminal window and eah terminal tab",
+      configuration: [
+        {
+          displayName: "Disable Auto Title",
+          description:
+            "Oh My Zsh automatically sets the title of your terminal and tabs when running a command or printing the prompt. Use this setting if you want to disable that.",
+          type: "environmentVariable",
+          interface: "toggle",
+          default: false,
+          environmentVariable: "DISABLE_AUTO_TITLE",
+        },
+      ],
+    },
+
+    // Library settings
+    {
+      displayName: "Library Settings",
+      // description: "",
+      configuration: [
+        {
+          displayName: "Disable Magic Functions",
+          description:
+            "`bracketed-paste-magic` and `url-quote-magic` are two Zsh utilities that are known buggy in some Zsh versions or user setups. If you're having problems when pasting URLs or pasting anything at all, use this setting to disable them.",
+          type: "environmentVariable",
+          interface: "toggle",
+          default: false,
+          environmentVariable: "DISABLE_MAGIC_FUNCTIONS",
+        },
+        {
+          displayName: "Disable ls Colors",
+          description:
+            "Use this setting to disable the Oh My Zsh logic to automatically set `ls` color output based on the system you're running and which ls commands are available.",
+          type: "environmentVariable",
+          interface: "toggle",
+          default: false,
+          environmentVariable: "DISABLE_LS_COLORS",
+        },
+        {
+          displayName: "Enable Correction",
+          description:
+            "Tell Zsh to try to correct command names and filenames passed as arguments.",
+          additionalDetails:
+            "Only the following commands will be prevented to have filename correction: cp, ebuild, gist, heroku, hpodder, man, mkdir, mv, mysql, sudo.",
+          type: "environmentVariable",
+          interface: "toggle",
+          default: false,
+          environmentVariable: "ENABLE_CORRECTION",
+        },
+        {
+          displayName: "Disable Marking Untracked Files as Dirty",
+          description:
+            "Use this setting if you want to disable marking untracked files under VCS as dirty. This makes repository status checks for large repositories much, much faster.",
+          type: "environmentVariable",
+          interface: "toggle",
+          default: false,
+          environmentVariable: "DISABLE_UNTRACKED_FILES_DIRTY",
+        },
+      ],
+    },
+    {
+      displayName: "Additional Configuration",
+      configuration: [
+        {
+          name: "additionalConfiguration",
+          displayName: "Shell Code",
+          description:
+            "Blank space for you to provide additional shell code to be sourced before the Oh My Zsh plugin is soruced.",
+          type: "script",
+          interface: "text",
+          default: "",
+          // Take input and source it
+          compile: (value) => value,
+        },
+      ],
+    },
+
+    // Folder Paths
+    // {
+    //   displayName: "Folder Paths",
+    //   // description: "Paths for files and folders",
+    //   configuration: [
+    //     {
+    //       displayName: "Path to Oh My Zsh Folder",
+    //       description: "This is the $ZSH env variable. As this is part of the installation, Fig handles this for you and does not let you edit it.",
+    //       type: "environmentVariable",
+    //       interface: "text",
+    //       default: "$FIG_PLUGIN_HOME/.oh-my-zsh",
+    //       disabled: () => true,
+    //       environmentVariable: "ZSH",
+    //     },
+    //     {
+    //       displayName: "Path to Custom Folder",
+    //       description: "The custom folder is where custom plugins are installed and sourced",
+    //       type: "environmentVariable",
+    //       interface: "text",
+    //       default: "$FIG_PLUGIN_HOME/.oh-my-zsh/custom",
+    //       environmentVariable: "ZSH_CUSTOM",
+    //     },
+    //     {
+    //       displayName: "Path to Cache Folder",
+    //       description: "The folder where plugin and completion spec cache data is stored",
+    //       type: "environmentVariable",
+    //       interface: "text",
+    //       default: "$FIG_PLUGIN_HOME//.oh-my-zsh/cache",
+    //       disabled: () => true,
+    //       environmentVariable: "ZSH_CACHE_DIR",
+    //     },
+    //   ]
+    // },
   ],
 };
 
 export default plugin;
+
+/* 
+Todo: Brendan
+Settings that are deliberately missing
+
+* ZSH_COMPDUMP // path involves knowing fig variable
+
+// can't source after an env variable has been sourced
+* ZSH_THEME_TERM_TITLE_IDLE 
+* ZSH_THEME_TERM_TAB_TITLE_IDLE
+
+
+
+*/

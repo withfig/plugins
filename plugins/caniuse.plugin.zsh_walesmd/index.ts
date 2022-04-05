@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🧑‍💻",
   name: "caniuse.plugin.zsh_walesmd",
   type: "shell",
   description:

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "aws-cli-mfa-oh-my-zsh_joepjoosten",
   type: "shell",
   description: "oh-my-zsh plugin for easy aws mfa access",

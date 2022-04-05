@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "ugit_Bhupesh-V",
   type: "shell",
   description:

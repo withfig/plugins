@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "👾",
   name: "oh-my-via_badouralix",
   type: "shell",
   description: "Custom theme for ZSH",

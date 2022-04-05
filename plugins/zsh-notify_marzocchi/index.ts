@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "zsh-notify_marzocchi",
   type: "shell",
   description: "Desktop notifications for long-running commands in zsh.",

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "gradle-completion_gradle",
   displayName: "gradle-completion",
   type: "shell",

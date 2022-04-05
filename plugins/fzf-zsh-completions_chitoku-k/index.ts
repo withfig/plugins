@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "fzf-zsh-completions_chitoku-k",
   type: "shell",
   description: "Fuzzy completions for fzf and Zsh",

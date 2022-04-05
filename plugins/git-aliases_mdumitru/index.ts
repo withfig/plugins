@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😎",
   name: "git-aliases_mdumitru",
   type: "shell",
   description:

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "☀️",
   name: "zsh-colors_Tarrasch",
   type: "shell",
   description: "Imagine a shell where `red ERROR` just works",

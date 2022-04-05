@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "kube-aliases_Dbz",
   type: "shell",
   description: "Kubernetes Aliases and Bash Functions",

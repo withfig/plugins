@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🧑‍💻",
   name: "zsh-fast-alias-tips_sei40kr",
   type: "shell",
   description: "Help remembering the aliases you defined once",

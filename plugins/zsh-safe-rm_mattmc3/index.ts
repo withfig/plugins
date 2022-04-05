@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "zsh-safe-rm_mattmc3",
   type: "shell",
   description:

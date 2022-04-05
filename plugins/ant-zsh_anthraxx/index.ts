@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "ant-zsh_anthraxx",
   type: "shell",
   description:

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "undollar_zpm-zsh",
   type: "shell",
   description:

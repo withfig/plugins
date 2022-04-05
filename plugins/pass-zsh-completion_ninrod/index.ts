@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🧑‍💻",
   name: "pass-zsh-completion_ninrod",
   type: "shell",
   description: "pass zsh completion plugin",

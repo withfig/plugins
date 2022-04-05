@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "dotzsh_dotphiles",
   type: "shell",
   description: "A community driven framework for zsh",
