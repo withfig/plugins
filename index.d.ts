@@ -89,7 +89,7 @@ declare namespace Fig {
     interface: "select";
     allowUserCreatedOptions?: true;
     default: T;
-    options: Suggestions<T>;
+    options: Suggestions<T | { option: T, description: string }>;
   };
 
   type TextUI<T> = {
@@ -168,7 +168,9 @@ declare namespace Fig {
     | EnvironmentVariableItemForType<string[], "multi-text">
     | EnvironmentVariableItemForType<boolean, "checkbox" | "toggle">
     | EnvironmentVariableItemForType<null | string, "select" | "text" | "textarea">
+    | EnvironmentVariableItemForType<string, "select" | "text" | "textarea">
     | EnvironmentVariableItemForType<null | number, "select" | "text" | "textarea">
+    | EnvironmentVariableItemForType<number, "select" | "text" | "textarea">
 
   type ConfigurationItem = ScriptItem | EnvironmentVariableItem;
 
