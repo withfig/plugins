@@ -1,6 +1,6 @@
 const plugin: Fig.Plugin = {
-  name: "sysadmin-util_skx",
-  displayName: "sysadmin-util",
+  name: "sysadmin-utils",
+  displayName: "sysadmin-utils",
   icon: "🧑‍💻",
   type: "shell",
   description: "Tools for Linux/Unix sysadmins.",
