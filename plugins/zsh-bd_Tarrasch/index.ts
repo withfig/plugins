@@ -14,7 +14,7 @@ const plugin: Fig.Plugin = {
   categories: ["Other"],
   installation: {
     origin: "github",
-    sourceFiles: ["bd.plugin.zsh"],
+    sourceFiles: ["bd.zsh"],
   },
 };
 

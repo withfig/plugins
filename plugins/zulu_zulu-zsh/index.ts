@@ -1,5 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "zulu_zulu-zsh",
+  displayName: "Zulu",
   type: "shell",
   description: "Total environment manager for ZSH",
   authors: [

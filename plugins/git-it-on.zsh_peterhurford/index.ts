@@ -1,5 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "git-it-on.zsh_peterhurford",
+  displayName: "Git It On",
   type: "shell",
   description: "Quickly navigate GitHub from the command line.",
   authors: [
@@ -10,7 +11,7 @@ const plugin: Fig.Plugin = {
   ],
   github: "peterhurford/git-it-on.zsh",
   shells: ["zsh"],
-  categories: ["Other"],
+  categories: ["Convenience Function"],
   installation: {
     origin: "github",
     sourceFiles: ["git-it-on.plugin.zsh"],
