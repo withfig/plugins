@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "ssh-agent_hkupty",
   type: "shell",
   description: "zsh ssh agent plugin",

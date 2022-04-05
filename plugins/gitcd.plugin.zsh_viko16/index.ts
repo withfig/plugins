@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "gitcd.plugin.zsh_viko16",
   type: "shell",
   description:

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "zsh-sudo_hcgraf",
   type: "shell",
   description: 'Extracted "sudo" plugin from oh-my-zsh',

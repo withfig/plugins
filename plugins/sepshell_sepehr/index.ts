@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔗",
   name: "sepshell_sepehr",
   type: "shell",
   description:

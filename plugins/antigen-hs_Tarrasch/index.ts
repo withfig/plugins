@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🧑‍💻",
   name: "antigen-hs_Tarrasch",
   type: "shell",
   description: "A fast zsh plugin manager",

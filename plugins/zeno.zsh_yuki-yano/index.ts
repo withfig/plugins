@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💾",
   name: "zeno.zsh_yuki-yano",
   type: "shell",
   description: "zsh fuzzy completion and utility plugin with Deno.",

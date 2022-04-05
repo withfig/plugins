@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "☀️",
   name: "rake-completion.zshplugin_unixorn",
   type: "shell",
   description:

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔗",
   name: "kubecolor_droctothorpe",
   type: "shell",
   description: "Simplify and colorize the output of kubectl get events -w",

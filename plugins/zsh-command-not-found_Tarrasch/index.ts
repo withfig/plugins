@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "zsh-command-not-found_Tarrasch",
   type: "shell",
   description:

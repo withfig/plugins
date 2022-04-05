@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "zsh-plugin-appup_Cloudstek",
   type: "shell",
   description:

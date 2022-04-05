@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "👾",
   name: "pctl_ytet5uy4",
   type: "shell",
   description: "zsh plugin for proxy",

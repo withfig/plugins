@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "pipenv.zsh_owenstranathan",
   type: "shell",
   description: "a zsh plugin for pipenv",

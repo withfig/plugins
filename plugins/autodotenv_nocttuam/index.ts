@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "autodotenv_nocttuam",
   type: "shell",
   description:

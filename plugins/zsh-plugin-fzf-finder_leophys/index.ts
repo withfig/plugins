@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔗",
   name: "zsh-plugin-fzf-finder_leophys",
   type: "shell",
   description:

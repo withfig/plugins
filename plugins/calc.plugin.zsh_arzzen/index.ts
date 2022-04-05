@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔗",
   name: "calc.plugin.zsh_arzzen",
   type: "shell",
   description: "zsh calculator - with support for basic math",

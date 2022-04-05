@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "docker-aliases_webyneter",
   type: "shell",
   description: "zsh Docker aliases",

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔗",
   name: "dropbox_zpm-zsh",
   type: "shell",
   description: "Zsh dropbox plugin",

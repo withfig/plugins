@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💥",
   name: "zsh-completion-generator_RobSis",
   type: "shell",
   description:

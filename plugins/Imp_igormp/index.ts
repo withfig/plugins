@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "Imp_igormp",
   type: "shell",
   description: "Imp theme for zsh",

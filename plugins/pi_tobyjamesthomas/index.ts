@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "pi_tobyjamesthomas",
   type: "shell",
   description: "A minimalist zsh theme with git status decorations",

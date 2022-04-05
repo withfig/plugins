@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "copyzshell_rutchkiwi",
   type: "shell",
   description:

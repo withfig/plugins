@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💥",
   name: "zsh-notes_aperezdc",
   type: "shell",
   description:

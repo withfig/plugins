@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🌟",
   name: "zjump_qoomon",
   type: "shell",
   description:

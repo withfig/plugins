@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💥",
   name: "zsh2000_consolemaverick",
   type: "shell",
   description: "Pretty sweet zsh theme",

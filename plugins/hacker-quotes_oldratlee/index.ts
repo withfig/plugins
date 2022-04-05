@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💾",
   name: "hacker-quotes_oldratlee",
   type: "shell",
   description:

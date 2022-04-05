@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "vi-motions_zsh-vi-more",
   type: "shell",
   description: "All the motions you could ask for and more for Zsh's vi mode.",

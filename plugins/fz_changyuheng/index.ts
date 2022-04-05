@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "fz_changyuheng",
   type: "shell",
   description:

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "grep2awk_joepvd",
   type: "shell",
   description: "zsh/zle widget to transform grep commands to awk commands",

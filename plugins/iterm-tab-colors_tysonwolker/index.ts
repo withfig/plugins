@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "iterm-tab-colors_tysonwolker",
   type: "shell",
   description:

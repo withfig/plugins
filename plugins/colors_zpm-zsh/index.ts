@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "☀️",
   name: "colors_zpm-zsh",
   type: "shell",
   description: "Enhanced colors for zsh",

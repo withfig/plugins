@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "docker-zsh-completion_felixr",
   type: "shell",
   description: "zsh completion for docker",

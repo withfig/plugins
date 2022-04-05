@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🌟",
   name: "Nord-zsh_TyWR",
   type: "shell",
   description: "Custom theme for ZSH terminal",

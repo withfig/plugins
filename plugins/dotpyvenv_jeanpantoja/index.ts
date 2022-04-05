@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "dotpyvenv_jeanpantoja",
   type: "shell",
   description: "A simple oh-my-zsh plugin",

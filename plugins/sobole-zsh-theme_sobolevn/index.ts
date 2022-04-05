@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "sobole-zsh-theme_sobolevn",
   type: "shell",
   description: "Minimalistic zsh theme inspired by the old-fashioned hobbies",

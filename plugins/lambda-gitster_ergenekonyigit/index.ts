@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "lambda-gitster_ergenekonyigit",
   type: "shell",
   description: "oh-my-zsh theme",

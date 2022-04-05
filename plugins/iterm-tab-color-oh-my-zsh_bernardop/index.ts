@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔥",
   name: "iterm-tab-color-oh-my-zsh_bernardop",
   type: "shell",
   description: "Oh My Zsh plugin for setting iTerm2's custom tab colors",

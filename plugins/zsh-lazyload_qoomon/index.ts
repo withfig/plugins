@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "zsh-lazyload_qoomon",
   type: "shell",
   description:

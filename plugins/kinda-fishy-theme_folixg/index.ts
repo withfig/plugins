@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "kinda-fishy-theme_folixg",
   type: "shell",
   description: "oh-my-zsh theme based on fishy theme",

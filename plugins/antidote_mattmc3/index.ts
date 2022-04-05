@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💾",
   name: "antidote_mattmc3",
   type: "shell",
   description: "The fast, native, Zsh plugin manager",

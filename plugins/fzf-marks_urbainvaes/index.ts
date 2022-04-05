@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "fzf-marks_urbainvaes",
   type: "shell",
   description: "Plugin to manage bookmarks in bash and zsh",

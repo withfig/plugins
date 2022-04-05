@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔥",
   name: "zr_jedahan",
   type: "shell",
   description: "zsh plugin manager written in rust",

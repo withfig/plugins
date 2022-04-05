@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "laravel-au-zsh-plugin_Saleh7",
   type: "shell",
   description: " Laravel 6 Artisan/PHPUnit commands aliases plugin for zsh",

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🌟",
   name: "theto-zsh-theme_heyvito",
   type: "shell",
   description: "🎨 A Minimal ZSH theme",

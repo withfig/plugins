@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💾",
   name: "betterbrew-zsh-plugin_timothyrowan",
   type: "shell",
   description:

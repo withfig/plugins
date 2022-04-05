@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💥",
   name: "php-version_rcfile-switcher_xellos866",
   type: "shell",
   description:

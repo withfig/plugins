@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😎",
   name: "minimal2_PatTheMav",
   type: "shell",
   description: "Adaption of subnixr's minimal zsh theme for zimfw",

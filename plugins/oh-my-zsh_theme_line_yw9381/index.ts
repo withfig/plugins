@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔗",
   name: "oh-my-zsh_theme_line_yw9381",
   type: "shell",
   description: "Oh My Zsh Theme line.zsh-theme",

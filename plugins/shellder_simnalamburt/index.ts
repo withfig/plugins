@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "shellder_simnalamburt",
   type: "shell",
   description: ":shell: Featured zsh/fish shell theme",

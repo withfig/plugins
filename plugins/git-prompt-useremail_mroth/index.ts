@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "👾",
   name: "git-prompt-useremail_mroth",
   type: "shell",
   description:

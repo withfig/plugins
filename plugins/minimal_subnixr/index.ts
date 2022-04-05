@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "👾",
   name: "minimal_subnixr",
   type: "shell",
   description: "A minimal zsh theme",

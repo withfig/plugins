@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔥",
   name: "last-working-dir_mdumitru",
   type: "shell",
   description:

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "apache2.plugin.zsh_voronkovich",
   type: "shell",
   description: "ZSH plugin for Apache 2.",

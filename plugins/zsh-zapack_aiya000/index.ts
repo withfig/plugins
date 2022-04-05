@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "zsh-zapack_aiya000",
   type: "shell",
   description: "The basic minimum zsh plugin **loader** :+1:",

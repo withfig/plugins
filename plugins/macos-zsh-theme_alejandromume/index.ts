@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🧑‍💻",
   name: "macos-zsh-theme_alejandromume",
   type: "shell",
   authors: [

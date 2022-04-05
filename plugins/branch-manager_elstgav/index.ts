@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "branch-manager_elstgav",
   type: "shell",
   description: "oh-my-zsh plugin for managing branches",

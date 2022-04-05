@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "powerlevel10k",
   displayName: "Powerlevel10k",
   type: "shell",

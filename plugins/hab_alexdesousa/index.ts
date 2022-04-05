@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "hab_alexdesousa",
   type: "shell",
   description: "Oh My ZSH plugin for loading OS environment automatically",

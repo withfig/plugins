@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "svn-n-zsh-plugin_khrt",
   type: "shell",
   description: "Improved version of SVN plugin provided with the oh-my-zsh.",

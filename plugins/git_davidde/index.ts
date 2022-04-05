@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "git_davidde",
   type: "shell",
   description: "Custom oh-my-zsh git plugin",

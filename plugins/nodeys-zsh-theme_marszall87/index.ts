@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💥",
   name: "nodeys-zsh-theme_marszall87",
   type: "shell",
   description: "Just ys zsh theme with NodeJS version.",

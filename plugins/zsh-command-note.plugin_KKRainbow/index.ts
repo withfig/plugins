@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "zsh-command-note.plugin_KKRainbow",
   type: "shell",
   description: "OH-MY-ZSH Plugin: A simple command reminder tool",

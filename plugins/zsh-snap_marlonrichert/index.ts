@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "zsh-snap_marlonrichert",
   type: "shell",
   description:

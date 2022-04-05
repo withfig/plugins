@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "git-it-on.zsh_peterhurford",
   type: "shell",
   description: "Quickly navigate GitHub from the command line.",

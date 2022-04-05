@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "☀️",
   name: "yadm-zsh_juanrgon",
   type: "shell",
   description: "yadm zsh plugin",

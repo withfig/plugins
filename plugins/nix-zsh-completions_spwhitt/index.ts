@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "nix-zsh-completions_spwhitt",
   type: "shell",
   description: "ZSH Completions for Nix",

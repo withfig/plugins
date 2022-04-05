@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "☀️",
   name: "zsh-fuzzy-search-and-edit_seletskiy",
   type: "shell",
   description: "Find and open editor on matched line lightning-fast",

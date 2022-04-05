@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "☀️",
   name: "zaw_zsh-users",
   displayName: "zaw",
   type: "shell",

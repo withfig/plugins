@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "dotbare_kazhala",
   type: "shell",
   description: "Manage dotfiles and any git directories interactively with fzf",

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "vox.plugin.zsh_andrewbonnington",
   type: "shell",
   description:

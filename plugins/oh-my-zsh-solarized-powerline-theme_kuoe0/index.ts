@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "oh-my-zsh-solarized-powerline-theme_kuoe0",
   type: "shell",
   description: "oh-my-zsh Powerline style Theme - Solarized Color Scheme",
