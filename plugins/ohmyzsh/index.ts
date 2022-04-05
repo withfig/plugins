@@ -472,7 +472,11 @@ const plugin: Fig.Plugin = {
   docs: "https://github.com/ohmyzsh/ohmyzsh/wiki",
   github: "ohmyzsh/ohmyzsh",
   twitter: "ohmyzsh",
+<<<<<<< HEAD
   community: "https://discord.gg/ohmyzsh",
+=======
+  discord: "https://discord.gg/ohmyzsh",
+>>>>>>> 57ca486963c98892efbe0c100397ad32d8d41f67
   screenshots: ["images/omz.png", "images/af-magic.jpeg", "images/daveverwer.jpeg", "images/eastwood.jpeg", "images/nebirhos.jpeg" ],
   license: ["MIT"],
   shells: ["zsh"],
@@ -526,7 +530,11 @@ const plugin: Fig.Plugin = {
           interface: "multiselect",
           default: "prompt",
           options: modes,
+<<<<<<< HEAD
           compile: (value) => `zstyle ':omz:update' mode ${value}`,
+=======
+          compile: ({ value }) => `zstyle ':omz:update' mode ${value}`,
+>>>>>>> 57ca486963c98892efbe0c100397ad32d8d41f67
         },
         {
           name: "frequency",
@@ -535,7 +543,11 @@ const plugin: Fig.Plugin = {
           description: "Choose how frequently Oh My Zsh checks for updates. The value is in days. The default value is 13 days",
           interface: "text",
           default: 13,
+<<<<<<< HEAD
           compile: (value) => `zstyle ':omz:update' frequency ${value}`,
+=======
+          compile: ({ value }) => `zstyle ':omz:update' frequency ${value}`,
+>>>>>>> 57ca486963c98892efbe0c100397ad32d8d41f67
           disabled: ({ config }) => config["mode"] !== "disabled",
         },
       ],
@@ -714,7 +726,11 @@ const plugin: Fig.Plugin = {
           interface: "text",
           default: "",
           // Take input and source it
+<<<<<<< HEAD
           compile: (value) => value
+=======
+          compile: ({value}) => value
+>>>>>>> 57ca486963c98892efbe0c100397ad32d8d41f67
         },
       ]
     },
