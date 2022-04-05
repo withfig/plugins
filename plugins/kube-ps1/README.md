@@ -9,8 +9,6 @@ Inspired by several tools used to simplify usage of `kubectl`.
 
 ![prompt_img](https://raw.githubusercontent.com/jonmosco/kube-ps1/master/img/screenshot-img.png)
 
-![prompt demo](https://raw.githubusercontent.com/jonmosco/kube-ps1/master/img/kube-ps1.gif)
-
 
 ## Requirements
 
@@ -84,34 +82,6 @@ kubeoff    : turn off kube-ps1 status for this shell. Takes precedence over
 kubeoff -g : turn off kube-ps1 status globally
 ```
 
-## Customization
-
-The default settings can be overridden in `~/.bashrc` or `~/.zshrc` by setting
-the following environment variables:
-
-| Variable | Default | Meaning |
-| :------- | :-----: | ------- |
-| `KUBE_PS1_BINARY` | `kubectl` | Default Kubernetes binary |
-| `KUBE_PS1_NS_ENABLE` | `true` | Display the namespace. If set to `false`, this will also disable `KUBE_PS1_DIVIDER` |
-| `KUBE_PS1_PREFIX` | `(` | Prompt opening character  |
-| `KUBE_PS1_SYMBOL_ENABLE` | `true ` | Display the prompt Symbol. If set to `false`, this will also disable `KUBE_PS1_SEPARATOR` |
-| `KUBE_PS1_SYMBOL_PADDING` | `true` | Adds a space (padding) after the symbol to prevent clobbering prompt characters |
-| `KUBE_PS1_SYMBOL_DEFAULT` | `⎈ ` | Default prompt symbol. Unicode `\u2388` |
-| `KUBE_PS1_SYMBOL_USE_IMG` | `false` | ☸️  ,  Unicode `\u2638` as the prompt symbol |
-| `KUBE_PS1_SEPARATOR` | &#124; | Separator between symbol and context name |
-| `KUBE_PS1_DIVIDER` | `:` | Separator between context and namespace |
-| `KUBE_PS1_SUFFIX` | `)` | Prompt closing character |
-| `KUBE_PS1_CLUSTER_FUNCTION` | No default, must be user supplied | Function to customize how cluster is displayed |
-| `KUBE_PS1_NAMESPACE_FUNCTION` | No default, must be user supplied | Function to customize how namespace is displayed |
-
-For terminals that do not support UTF-8, the symbol will be replaced with the
-string `k8s`.
-
-To disable a feature, set it to an empty string:
-
-```
-KUBE_PS1_SEPARATOR=''
-```
 
 ## Colors
 
