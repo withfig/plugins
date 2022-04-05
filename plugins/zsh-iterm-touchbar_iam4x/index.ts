@@ -20,6 +20,17 @@ const plugin: Fig.Plugin = {
     origin: "github",
     sourceFiles: ["zsh-iterm-touchbar.plugin.zsh"],
   },
+  configuration: [
+    {
+      name: "Enable Git",
+      description: "Enable Git status in the Touchbar",
+      type: "environmentVariable",
+      environmentVariable: "TOUCHBAR_GIT_ENABLED",
+      interface: "toggle",
+      default: true,
+      compile: (value) => (value ? "true" : "false"),
+    },
+  ],
 };
 
 export default plugin;

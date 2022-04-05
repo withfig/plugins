@@ -114,8 +114,7 @@ const plugin: Fig.Plugin = {
         {
           displayName: "Accept Widgets",
           type: "environmentVariable",
-          description:
-            "Widgets that will accept the suggestion when invoked.",
+          description: "Widgets that will accept the suggestion when invoked.",
           environmentVariable: "ZSH_AUTOSUGGEST_ACCEPT_WIDGETS",
           default: [],
           interface: "multi-text",
@@ -123,8 +122,7 @@ const plugin: Fig.Plugin = {
         {
           displayName: "Execute Widgets",
           type: "environmentVariable",
-          description:
-            "Widgets that will execute the suggestion when invoked.",
+          description: "Widgets that will execute the suggestion when invoked.",
           environmentVariable: "ZSH_AUTOSUGGEST_EXECUTE_WIDGETS",
           default: [],
           interface: "multi-text",
@@ -151,10 +149,11 @@ const plugin: Fig.Plugin = {
           displayName: "Disable Automatic Widget Re-binding",
           environmentVariable: "ZSH_AUTOSUGGEST_MANUAL_REBIND",
           type: "environmentVariable",
-          description: "Disable automatic widget re-binding on each precmd. This can be a big boost to performance, but you'll need to handle re-binding yourself if any of the widget lists change or if you or another plugin wrap any of the autosuggest widgets. To re-bind widgets, run `_zsh_autosuggest_bind_widgets`.",
+          description:
+            "Disable automatic widget re-binding on each precmd. This can be a big boost to performance, but you'll need to handle re-binding yourself if any of the widget lists change or if you or another plugin wrap any of the autosuggest widgets. To re-bind widgets, run `_zsh_autosuggest_bind_widgets`.",
           default: false,
           interface: "toggle",
-          compile: (value) => value ? "1" : null
+          compile: (value) => (value ? "1" : null),
         },
       ],
       additionalDetails:

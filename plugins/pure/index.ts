@@ -116,7 +116,7 @@ const createConfigurationOptionForColorComponent = (
     description: `Color of ${description}`,
     default: component.default,
     interface: "text",
-    compile: value => `zstyle :prompt:pure:${component.name} color ${value}`,
+    compile: (value) => `zstyle :prompt:pure:${component.name} color ${value}`,
   };
 };
 
@@ -237,7 +237,8 @@ const plugin: Fig.Plugin = {
         "Show git stash status as part of the prompt. Off by default.",
       default: false,
       interface: "toggle",
-      compile: value => value ? "zstyle :prompt:pure:git:stash show yes" : "",
+      compile: (value) =>
+        value ? "zstyle :prompt:pure:git:stash show yes" : "",
     },
     {
       name: "only-fetch-upstream",
@@ -247,7 +248,8 @@ const plugin: Fig.Plugin = {
       type: "script",
       default: false,
       interface: "toggle",
-      compile: value => value ? "zstyle :prompt:pure:git:fetch only_upstream yes" : "",
+      compile: (value) =>
+        value ? "zstyle :prompt:pure:git:fetch only_upstream yes" : "",
     },
     {
       name: "nix-shell-in-prompt",
@@ -257,7 +259,8 @@ const plugin: Fig.Plugin = {
       type: "script",
       default: true,
       interface: "toggle",
-      compile: (value) => value ? "" : "zstyle :prompt:pure:environment:nix-shell show no"
+      compile: (value) =>
+        value ? "" : "zstyle :prompt:pure:environment:nix-shell show no",
     },
     {
       displayName: "Color",
@@ -272,7 +275,7 @@ const plugin: Fig.Plugin = {
             "If you are unable to use a [terminal that support 24-bit colors](https://gist.github.com/XVilka/8346728), you can enable this option to load the module [`zsh/nearcolor`](http://zsh.sourceforge.net/Doc/Release/Zsh-Modules.html#The-zsh_002fnearcolor-Module). It will map any hexadecimal color to the nearest color in the 88 or 256 color palettes of your terminal, but without using the first 16 colors, since their values can be modified by the user. Keep in mind that when using this module you won't be able to display true RGB colors. It only allows you to specify colors in a more convenient way.",
           default: false,
           interface: "toggle",
-          compile: (value) => value ? "zmodload zsh/nearcolor" : "",
+          compile: (value) => (value ? "zmodload zsh/nearcolor" : ""),
         },
         ...colorComponents.map(createConfigurationOptionForColorComponent),
       ],
