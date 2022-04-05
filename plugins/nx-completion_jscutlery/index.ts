@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "nx-completion_jscutlery",
   type: "shell",
   description: "Nx Devtools completion plugin for Zsh.",

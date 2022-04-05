@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "wade.zsh-theme_wadehammes",
   type: "shell",
   description:

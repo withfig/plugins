@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "cd-gitroot_mollifier",
   type: "shell",
   description: "zsh plugin to cd to git repository root directory.",

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💥",
   name: "zsh-autopair_hlissner",
   type: "shell",
   description: "Auto-close and delete matching delimiters in zsh",

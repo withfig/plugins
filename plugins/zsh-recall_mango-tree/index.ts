@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "👾",
   name: "zsh-recall_mango-tree",
   type: "shell",
   description: "zsh plugin for history UI ",

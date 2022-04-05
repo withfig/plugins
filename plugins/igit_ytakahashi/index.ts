@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🌟",
   name: "igit_ytakahashi",
   type: "shell",
   description: "Interactive git commands using fzf, available as zsh plugin",

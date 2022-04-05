@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🌟",
   name: "osx-dev-zsh-plugin_marshallmick007",
   type: "shell",
   description:

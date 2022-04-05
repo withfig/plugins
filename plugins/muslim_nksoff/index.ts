@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "muslim_nksoff",
   type: "shell",
   description: "zsh prompt theme called muslim",

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "zsh-terraform_macunha1",
   type: "shell",
   description:

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "oh-my-zsh-plugin-magento-2_dambrogia",
   type: "shell",
   description: "Magento 2 auto complete plugin for oh-my-zsh",

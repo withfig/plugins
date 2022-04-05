@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😎",
   name: "zsh-pyenv-lazy_davidparsson",
   type: "shell",
   description: "A zsh plugin for lazy loading of pyenv",

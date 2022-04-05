@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "mage2docker_lukaszolszewski",
   type: "shell",
   description: "Mage2Docker - Plugin for Oh-My-Zsh",

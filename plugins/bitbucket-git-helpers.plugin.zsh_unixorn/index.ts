@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💥",
   name: "bitbucket-git-helpers.plugin.zsh_unixorn",
   type: "shell",
   description:

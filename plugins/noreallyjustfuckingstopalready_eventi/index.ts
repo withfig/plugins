@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "☀️",
   name: "noreallyjustfuckingstopalready_eventi",
   type: "shell",
   description:

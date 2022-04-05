@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🧑‍💻",
   name: "zsh-proxy_SukkaW",
   type: "shell",
   description: ":nut_and_bolt: An oh-my-zsh plugin to configure proxy",

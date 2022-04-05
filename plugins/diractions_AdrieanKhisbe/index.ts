@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "diractions_AdrieanKhisbe",
   type: "shell",
   description: "👨‍💻 Doing Anything, Anywhere, from Here [zsh] 🚏",

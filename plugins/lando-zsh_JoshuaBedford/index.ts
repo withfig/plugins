@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "lando-zsh_JoshuaBedford",
   type: "shell",
   description: "A simple zsh plugin for lando commands.",

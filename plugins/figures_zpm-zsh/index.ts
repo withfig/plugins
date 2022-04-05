@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "☀️",
   name: "figures_zpm-zsh",
   type: "shell",
   description: "Unicode symbols for ZSH",

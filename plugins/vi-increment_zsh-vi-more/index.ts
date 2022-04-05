@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🧑‍💻",
   name: "vi-increment_zsh-vi-more",
   type: "shell",
   description: "Zsh: Vim-style increment/decrement in vicmd, visual keymaps",

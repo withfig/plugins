@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "👾",
   name: "lambda-mod-zsh-theme_halfo",
   type: "shell",
   description: "A simple zsh theme.",

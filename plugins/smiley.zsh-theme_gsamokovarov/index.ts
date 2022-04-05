@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "smiley.zsh-theme_gsamokovarov",
   type: "shell",
   description: "Awesome prompt with happy and sad faces.",

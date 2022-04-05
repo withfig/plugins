@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🌟",
   name: "zsh-bash_chrissicool",
   type: "shell",
   description: "Bash compatibility plugin for ZSH",

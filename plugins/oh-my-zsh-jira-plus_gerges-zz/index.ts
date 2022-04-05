@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔥",
   name: "oh-my-zsh-jira-plus_gerges-zz",
   type: "shell",
   description:

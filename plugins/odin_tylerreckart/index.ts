@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔗",
   name: "odin_tylerreckart",
   type: "shell",
   description: "A git flavored zsh prompt",

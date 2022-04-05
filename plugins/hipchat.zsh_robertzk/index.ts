@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔗",
   name: "hipchat.zsh_robertzk",
   type: "shell",
   description: "A zsh plugin to send hipchat messages through shell",

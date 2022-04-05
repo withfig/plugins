@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "zsh-history-filter_MichaelAquilina",
   type: "shell",
   description:

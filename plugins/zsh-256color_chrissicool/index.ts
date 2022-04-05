@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "zsh-256color_chrissicool",
   type: "shell",
   description: "ZSH plugin to enhance the terminal environment with 256 colors",

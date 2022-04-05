@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "safe-paste_oz",
   type: "shell",
   description:

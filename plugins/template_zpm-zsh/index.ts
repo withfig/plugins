@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "template_zpm-zsh",
   type: "shell",
   description: "ZSH plugin who create file from template ",

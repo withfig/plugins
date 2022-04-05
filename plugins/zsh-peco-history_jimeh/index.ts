@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "zsh-peco-history_jimeh",
   type: "shell",
   description: "Search shell history with peco when pressing ctrl+r.",

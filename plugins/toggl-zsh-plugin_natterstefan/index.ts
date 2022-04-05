@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "👾",
   name: "toggl-zsh-plugin_natterstefan",
   type: "shell",
   description:

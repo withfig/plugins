@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "☀️",
   name: "git-prune_diazod",
   type: "shell",
   description:

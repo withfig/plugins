@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔗",
   name: "zit_thiagokokada",
   type: "shell",
   description: "minimal plugin manager for ZSH",

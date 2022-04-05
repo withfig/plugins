@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "zsh-abbr-path_felixgravila",
   type: "shell",
   description: "theme_title_use_abbreviated_path equivalent for zsh on osx",

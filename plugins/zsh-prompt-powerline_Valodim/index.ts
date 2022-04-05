@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔗",
   name: "zsh-prompt-powerline_Valodim",
   type: "shell",
   description:

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🧑‍💻",
   name: "zsh-iterm2-utilities_decayofmind",
   type: "shell",
   description: "Lightweight ZSH plugin (Zinit) to sync iTerm2 utilities",

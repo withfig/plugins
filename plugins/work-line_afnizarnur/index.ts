@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "👾",
   name: "work-line_afnizarnur",
   type: "shell",
   description: "An oh-my-zsh shell theme with nice emojis to use at work ⚡️",

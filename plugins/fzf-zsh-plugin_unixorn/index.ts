@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "fzf-zsh-plugin_unixorn",
   type: "shell",
   description:

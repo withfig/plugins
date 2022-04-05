@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "👾",
   name: "rafiki-zsh_akabiru",
   type: "shell",
   description: "👀👻 A zsh friend to watch over you.",

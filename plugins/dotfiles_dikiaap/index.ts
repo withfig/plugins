@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🧑‍💻",
   name: "dotfiles_dikiaap",
   type: "shell",
   description:

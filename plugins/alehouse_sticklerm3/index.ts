@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💥",
   name: "alehouse_sticklerm3",
   type: "shell",
   description: "zsh-plugin for my brew aliases",

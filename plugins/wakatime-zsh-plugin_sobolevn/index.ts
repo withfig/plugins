@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔗",
   name: "wakatime-zsh-plugin_sobolevn",
   type: "shell",
   description: "🕒Track how much time you have spent in your terminal!",

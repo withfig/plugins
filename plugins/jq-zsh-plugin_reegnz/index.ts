@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "☀️",
   name: "jq-zsh-plugin_reegnz",
   type: "shell",
   description: "jq zsh plugin",

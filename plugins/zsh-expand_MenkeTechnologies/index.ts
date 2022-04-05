@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "zsh-expand_MenkeTechnologies",
   type: "shell",
   authors: [

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "ls_zpm-zsh",
   type: "shell",
   description: "Zsh plugin for ls",

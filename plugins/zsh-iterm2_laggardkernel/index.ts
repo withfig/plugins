@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😎",
   name: "zsh-iterm2_laggardkernel",
   type: "shell",
   description: "Pack iTerm2 shell integration scripts as a ZSH plugin",

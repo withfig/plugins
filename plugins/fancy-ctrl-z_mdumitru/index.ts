@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "fancy-ctrl-z_mdumitru",
   type: "shell",
   description:

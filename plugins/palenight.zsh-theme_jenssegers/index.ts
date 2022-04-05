@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💾",
   name: "palenight.zsh-theme_jenssegers",
   type: "shell",
   description: "My custom zsh theme",

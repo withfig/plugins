@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🧑‍💻",
   name: "powerline-hs_rdnetto",
   type: "shell",
   description:

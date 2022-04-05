@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "pad.zsh-theme_eproxus",
   type: "shell",
   description: "A concise and colorful ZSH theme",
