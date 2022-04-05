@@ -225,7 +225,7 @@ const plugin: Fig.Plugin = {
       description:
         "Time in seconds to delay git dirty checking when `git status` takes > 5 seconds.",
       type: "environmentVariable",
-      default: 1800,
+      default: "1800",
       interface: "text",
       environmentVariable: "PURE_GIT_DELAY_DIRTY_CHECK",
     },

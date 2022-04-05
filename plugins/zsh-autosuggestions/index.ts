@@ -36,7 +36,7 @@ const plugin: Fig.Plugin = {
       description:
         "Specify how suggestions should be generated. The strategies in the array are tried successively until a suggestion is found.",
       environmentVariable: "ZSH_AUTOSUGGEST_STRATEGY",
-      default: "history",
+      default: ["history"],
       interface: "multiselect",
       options: ["history", "completion", "match_prev_cmd"],
       additionalDetails: `
@@ -147,16 +147,14 @@ const plugin: Fig.Plugin = {
           default: [],
           interface: "multi-text",
         },
-        /* TODO: This is enabled if set. add support for env variables like this */
         {
           displayName: "Disable Automatic Widget Re-binding",
-          name: "ZSH_AUTOSUGGEST_MANUAL_REBIND",
-          type: "script",
+          environmentVariable: "ZSH_AUTOSUGGEST_MANUAL_REBIND",
+          type: "environmentVariable",
           description: "Disable automatic widget re-binding on each precmd. This can be a big boost to performance, but you'll need to handle re-binding yourself if any of the widget lists change or if you or another plugin wrap any of the autosuggest widgets. To re-bind widgets, run `_zsh_autosuggest_bind_widgets`.",
           default: false,
           interface: "toggle",
-          compile: (value) =>
-            value ? "export ZSH_AUTOSUGGEST_MANUAL_REBIND=1" : ""
+          compile: (value) => value ? "1" : null
         },
       ],
       additionalDetails:

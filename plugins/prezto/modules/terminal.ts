@@ -12,7 +12,6 @@ const terminal: ModuleConfiguration = {
     name: "auto-title",
     description: "Auto set the tab and window titles",
     type: "script",
-    // TODO: support multiselect-text.
     interface: "toggle",
     default: true,
     compile: compileZstyleBool(":prezto:module:terminal", "auto-title"),
@@ -21,7 +20,6 @@ const terminal: ModuleConfiguration = {
     name: "window-title-format",
     description: "Set the window title format",
     type: "script",
-    // TODO: support multiselect-text.
     interface: "text",
     default: "%n@%m: %s",
     compile: compileZstyle(":prezto:module:terminal:window-title", "format"),
@@ -30,7 +28,6 @@ const terminal: ModuleConfiguration = {
     name: "tab-title-format",
     description: "Set the tab title format",
     type: "script",
-    // TODO: support multiselect-text.
     interface: "text",
     default: "%m: %s",
     compile: compileZstyle(":prezto:module:terminal:tab-title", "format"),
@@ -39,7 +36,6 @@ const terminal: ModuleConfiguration = {
     name: "multiplexer-title-format",
     description: "Set the terminal multiplexer title format",
     type: "script",
-    // TODO: support multiselect-text.
     interface: "text",
     default: "%s",
     compile: compileZstyle(":prezto:module:terminal:multiplexer-title", "format"),

@@ -10,9 +10,8 @@ const ssh: ModuleConfiguration = {
     name: "identities",
     description: "Set the SSH identities to load into the agent",
     type: "script",
-    // TODO: support multiselect-text.
-    interface: "text",
-    default: "id_rsa,id_rsa2,id_github",
+    interface: "multi-text",
+    default: ["id_rsa", "id_rsa2", "id_github"],
     compile: compileZstyleList(":prezto:module:ssh:load", "identities"),
   }]
 }
