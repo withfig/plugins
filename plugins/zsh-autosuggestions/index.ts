@@ -106,42 +106,37 @@ const plugin: Fig.Plugin = {
         {
           displayName: "Clear Widgets",
           type: "environmentVariable",
-          description:
-            "A comma-separated list of widgets that will clear the suggestion when invoked.",
+          description: "Widgets that will clear the suggestion when invoked.",
           environmentVariable: "ZSH_AUTOSUGGEST_CLEAR_WIDGETS",
-          default: "",
-          interface: "text",
-          compile: ({ value }) => value.split(",").map((v) => v.trim()),
+          default: [],
+          interface: "multi-text",
         },
         {
           displayName: "Accept Widgets",
           type: "environmentVariable",
           description:
-            "A comma-separated list of widgets that will accept the suggestion when invoked.",
+            "Widgets that will accept the suggestion when invoked.",
           environmentVariable: "ZSH_AUTOSUGGEST_ACCEPT_WIDGETS",
-          default: "",
-          interface: "text",
-          compile: ({ value }) => value.split(",").map((v) => v.trim()),
+          default: [],
+          interface: "multi-text",
         },
         {
           displayName: "Execute Widgets",
           type: "environmentVariable",
           description:
-            "A comma-separated list of widgets that will execute the suggestion when invoked.",
+            "Widgets that will execute the suggestion when invoked.",
           environmentVariable: "ZSH_AUTOSUGGEST_EXECUTE_WIDGETS",
-          default: "",
-          interface: "text",
-          compile: ({ value }) => value.split(",").map((v) => v.trim()),
+          default: [],
+          interface: "multi-text",
         },
         {
           displayName: "Partial Accept Widgets",
           type: "environmentVariable",
           description:
-            "A comma-separated list of widgets that will partially accept the suggestion when invoked.",
+            "List of widgets that will partially accept the suggestion when invoked.",
           environmentVariable: "ZSH_AUTOSUGGEST_PARTIAL_ACCEPT_WIDGETS",
-          default: "",
-          interface: "text",
-          compile: ({ value }) => value.split(",").map((v) => v.trim()),
+          default: [],
+          interface: "multi-text",
         },
         {
           displayName: "Ignore Widgets",
@@ -149,9 +144,8 @@ const plugin: Fig.Plugin = {
           description:
             "A comma-separated list of widgets that will not trigger any custom behavior.",
           environmentVariable: "ZSH_AUTOSUGGEST_IGNORE_WIDGETS",
-          default: "",
-          interface: "text",
-          compile: ({ value }) => value.split(",").map((v) => v.trim()),
+          default: [],
+          interface: "multi-text",
         },
         /* TODO: This is enabled if set. add support for env variables like this */
         {
@@ -161,7 +155,7 @@ const plugin: Fig.Plugin = {
           description: "Disable automatic widget re-binding on each precmd. This can be a big boost to performance, but you'll need to handle re-binding yourself if any of the widget lists change or if you or another plugin wrap any of the autosuggest widgets. To re-bind widgets, run `_zsh_autosuggest_bind_widgets`.",
           default: false,
           interface: "toggle",
-          compile: ({ value }) =>
+          compile: (value) =>
             value ? "export ZSH_AUTOSUGGEST_MANUAL_REBIND=1" : ""
         },
       ],

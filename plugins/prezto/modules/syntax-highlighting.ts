@@ -23,7 +23,7 @@ const syntaxHighlighting: ModuleConfiguration = {
       "root",
       "line",
     ],
-    compile: ({ value }: { value: string[] }) => setZstyle(
+    compile: (value: string[]) => setZstyle(
       ":prezto:module:syntax-highlighting",
       "highlighters",
       value.map(value => `'${value}'`).join(" ")
