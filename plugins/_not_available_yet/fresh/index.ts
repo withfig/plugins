@@ -1,5 +1,5 @@
 const plugin: Fig.Plugin = {
-  name: "fresh_freshshell",
+  name: "fresh",
   displayName: "fresh",
   type: "shell",
   description: "Keep your dotfiles fresh.",
