@@ -478,7 +478,7 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     preScript: ({ ctx }) => `export ZSH="${ctx.plugin.installDirectory}"`,
-    sourceFiles: "oh-my-zsh.sh",
+    sourceFiles: ["oh-my-zsh.sh"],
   },
   configuration: [
     {

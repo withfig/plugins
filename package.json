@@ -75,7 +75,8 @@
   },
   "lint-staged": {
     "*.ts": [
-      "eslint --fix"
+      "eslint --fix",
+      "tsc --noEmit -p tsconfig.json"
     ]
   }
 }

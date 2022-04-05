@@ -19,7 +19,7 @@ const plugin: Fig.Plugin = {
 
   installation: {
     origin: "github",
-    sourceFiles: "zsh-syntax-highlighting.zsh",
+    sourceFiles: ["zsh-syntax-highlighting.zsh"],
   },
   configuration: [
     {

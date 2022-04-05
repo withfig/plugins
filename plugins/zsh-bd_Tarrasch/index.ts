@@ -1,5 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "zsh-bd_Tarrasch",
+  displayName: "zsh-bd",
   type: "shell",
   description: "Jump back to a specific directory, without doing `cd ../../..`",
   authors: [

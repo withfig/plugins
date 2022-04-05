@@ -40,7 +40,7 @@ const plugin: Fig.Plugin = {
   ],
   installation: {
     origin: "github",
-    sourceFiles: "spaceship.zsh",
+    sourceFiles: ["spaceship.zsh"],
   },
   configuration: [
     {

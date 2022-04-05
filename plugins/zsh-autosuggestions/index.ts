@@ -17,7 +17,7 @@ const plugin: Fig.Plugin = {
   ],
   installation: {
     origin: "github",
-    sourceFiles: "zsh-autosuggestions.zsh",
+    sourceFiles: ["zsh-autosuggestions.zsh"],
   },
   configuration: [
     {
