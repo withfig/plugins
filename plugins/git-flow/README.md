@@ -1,0 +1,131 @@
+A collection of Git extensions to provide high-level repository operations
+for Vincent Driessen's [branching model](http://nvie.com/git-model "original
+blog post").
+
+
+Getting started
+---------------
+For the best introduction to get started with `git flow`, please read Jeff
+Kreeftmeijer's blog post:
+
+[http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/](http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/)
+
+Or have a look at one of these screen casts:
+
+* [How to use a scalable Git branching model called git-flow](http://buildamodule.com/video/change-management-and-version-control-deploying-releases-features-and-fixes-with-git-how-to-use-a-scalable-git-branching-model-called-gitflow) (by Build a Module)
+* [A short introduction to git-flow](http://vimeo.com/16018419) (by Mark Derricutt)
+* [On the path with git-flow](http://codesherpas.com/screencasts/on_the_path_gitflow.mov) (by Dave Bock)
+
+
+FAQ
+---
+See the [FAQ](http://github.com/nvie/gitflow/wiki/FAQ) section of the project
+Wiki.
+
+
+Please help out
+---------------
+This project is still under development. Feedback and suggestions are very
+welcome and I encourage you to use the [Issues
+list](http://github.com/nvie/gitflow/issues) on Github to provide that
+feedback.
+
+Feel free to fork this repo and to commit your additions. For a list of all
+contributors, please see the [AUTHORS](AUTHORS) file.
+
+Any questions, tips, or general discussion can be posted to our Google group:
+[http://groups.google.com/group/gitflow-users](http://groups.google.com/group/gitflow-users)
+
+Contributing
+------------
+Fork the repository.  Then, run:
+
+    git clone --recursive git@github.com:<username>/gitflow.git
+    cd gitflow
+    git branch master origin/master
+    git flow init -d
+    git flow feature start <your feature>
+
+Then, do work and commit your changes.  **Hint**: ``export PATH=`pwd`:$PATH``
+from within the gitflow directory makes sure you're using the version of
+gitflow you're currently developing.
+
+    git flow feature publish <your feature>
+
+When done, open a pull request to your feature branch.
+
+License terms
+-------------
+git-flow is published under the liberal terms of the BSD License, see the
+[LICENSE](LICENSE) file. Although the BSD License does not require you to share
+any modifications you make to the source code, you are very much encouraged and
+invited to contribute back your modifications to the community, preferably
+in a Github fork, of course.
+
+
+### Initialization
+
+To initialize a new repo with the basic branch structure, use:
+  
+		git flow init [-d]
+  
+This will then interactively prompt you with some questions on which branches
+you would like to use as development and production branches, and how you
+would like your prefixes be named. You may simply press Return on any of
+those questions to accept the (sane) default suggestions.
+
+The ``-d`` flag will accept all defaults.
+
+
+### Creating feature/release/hotfix/support branches
+
+* To list/start/finish feature branches, use:
+  
+  		git flow feature
+  		git flow feature start <name> [<base>]
+  		git flow feature finish <name>
+  
+  For feature branches, the `<base>` arg must be a commit on `develop`.
+
+* To push/pull a feature branch to the remote repository, use:
+
+  		git flow feature publish <name>
+		  git flow feature pull <remote> <name>
+
+* To list/start/finish release branches, use:
+  
+  		git flow release
+  		git flow release start <release> [<base>]
+  		git flow release finish <release>
+  
+  For release branches, the `<base>` arg must be a commit on `develop`.
+  
+* To list/start/finish hotfix branches, use:
+  
+  		git flow hotfix
+  		git flow hotfix start <release> [<base>]
+  		git flow hotfix finish <release>
+  
+  For hotfix branches, the `<base>` arg must be a commit on `master`.
+
+* To list/start support branches, use:
+  
+  		git flow support
+  		git flow support start <release> <base>
+  
+  For support branches, the `<base>` arg must be a commit on `master`.
+
+
+Showing your appreciation
+=========================
+A few people already requested it, so now it's here: a Flattr button.
+
+Of course, the best way to show your appreciation for the original
+[blog post](http://nvie.com/posts/a-successful-git-branching-model/) or the git-flow tool itself remains
+contributing to the community.  If you'd like to show your appreciation in
+another way, however, consider Flattr'ing me:
+
+[![Flattr this][2]][1]
+
+[1]: http://flattr.com/thing/53771/git-flow
+[2]: http://api.flattr.com/button/button-static-50x60.png
