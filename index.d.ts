@@ -80,54 +80,47 @@ declare namespace Fig {
     ? {
         interface: "multiselect";
         allowUserCreatedOptions?: true;
-        default: S | T;
+        default: T;
         options: Suggestions<S | { option: S, description: string }>;
-        value: T;
       }
     : never;
 
   type SelectUI<T> = {
     interface: "select";
     allowUserCreatedOptions?: true;
-    value: T;
     default: T;
     options: Suggestions<T>;
   };
 
   type TextUI<T> = {
     interface: "text";
-    value: T;
     default: T;
   };
 
   type MultiTextUI = {
     interface: "multi-text";
-    value: string[];
     default: string[];
   };
 
   interface BasicUI<T, U extends UIType> {
     interface: U;
     default: T;
-    value: T;
   }
 
   // Get all ui's that support a value type of T.
   // This enforces that, e.g. you can only use booleans with a toggle/checkbox UI.
   // Gets all valid UIs that satisfy { value: T, interface: S }
-  type UI<V, U extends UIType = UIType> = Omit<
-    Extract<
-      | MultiselectUI<V>
-      | SelectUI<V>
-      | BasicUI<boolean, "toggle">
-      | TextUI<number>
-      | TextUI<string>
-      | MultiTextUI
-      | BasicUI<string, "textarea">,
-      { value: V; interface: U }
-    >,
-    "value"
-  >;
+  type UI<V, U extends UIType = UIType> = Extract<
+    | MultiselectUI<V>
+    | SelectUI<V>
+    | BasicUI<boolean, "toggle">
+    | TextUI<string>
+    | TextUI<number>
+    | TextUI<string | null>
+    | TextUI<number | null>
+    | MultiTextUI
+    | BasicUI<string, "textarea">,
+  { default: V; interface: U }>
 
   // Interface common to Configuration *items* and Configuration groups (which contain configuration items)
   interface ConfigurationInterface {
@@ -165,25 +158,17 @@ declare namespace Fig {
 
   type ScriptItem =
     | ScriptItemForType<string[], "multiselect">
-    | ScriptItemForType<number[], "multiselect">
     | ScriptItemForType<string[], "multi-text">
     | ScriptItemForType<boolean, "checkbox" | "toggle">
-    | ScriptItemForType<string, "select">
-    | ScriptItemForType<string, "text">
-    | ScriptItemForType<string, "textarea">
-    | ScriptItemForType<number, "select">
-    | ScriptItemForType<number, "text">;
+    | ScriptItemForType<string, "select" | "text" | "textarea">
+    | ScriptItemForType<number, "select" | "text" | "textarea">
 
   type EnvironmentVariableItem =
     | EnvironmentVariableItemForType<string[], "multiselect">
-    | EnvironmentVariableItemForType<number[], "multiselect">
     | EnvironmentVariableItemForType<string[], "multi-text">
     | EnvironmentVariableItemForType<boolean, "checkbox" | "toggle">
-    | EnvironmentVariableItemForType<null | string, "select">
-    | EnvironmentVariableItemForType<null | string, "text">
-    | EnvironmentVariableItemForType<null | string, "textarea">
-    | EnvironmentVariableItemForType<null | number, "select">
-    | EnvironmentVariableItemForType<null | number, "text">;
+    | EnvironmentVariableItemForType<null | string, "select" | "text" | "textarea">
+    | EnvironmentVariableItemForType<null | number, "select" | "text" | "textarea">
 
   type ConfigurationItem = ScriptItem | EnvironmentVariableItem;
 
