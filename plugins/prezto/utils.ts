@@ -6,8 +6,8 @@ export const compileZstyleBool = (namespace: string, key: string) => (value: boo
 export const compileZstyle = (namespace: string, key: string) => (value: unknown) =>
   setZstyle(namespace, key, `${value}`);
 
-export const compileZstyleList = (namespace: string, key: string) => (value: string) =>
-  setZstyle(namespace, key, value.split(",").map(item => `"${item}"`).join(" "));
+export const compileZstyleList = (namespace: string, key: string) => (value: string[]) =>
+  setZstyle(namespace, key, value.map(item => `"${item}"`).join(" "));
 
 export type ModuleConfiguration = {
   name: string,

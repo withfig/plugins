@@ -79,11 +79,10 @@ const plugin: Fig.Plugin = {
       }, {
         displayName: "Module directories",
         name: "pmodule-dirs",
-        description: "Comma separated list of directories to load prezto modules from",
+        description: "List of directories to load prezto modules from",
         type: "script",
-        // TODO: support multiselect-text
-        interface: "text",
-        default: "$HOME/.zprezto-contrib",
+        interface: "multi-text",
+        default: ["$HOME/.zprezto-contrib"],
         compile: compileZstyleList(':prezto:load', 'pmodule-dirs'),
       }, {
         displayName: "Allow Module Overrides",
@@ -98,20 +97,21 @@ const plugin: Fig.Plugin = {
         name: "zsh-modules",
         description: "Comma separated list of Zsh modules to load (man zshmodules)",
         type: "script",
-        // TODO: support multiselect-text.
-        // TODO: add options.
-        interface: "text",
-        default: "attr,stat",
+        // TODO: add options, disable user created options.
+        interface: "multiselect",
+        allowUserCreatedOptions: true,
+        default: ["attr", "stat"],
+        options: ["attr", "stat"],
         compile: compileZstyleList(':prezto:load', 'pmodule-allow-overrides'),
       }, {
         displayName: "Zsh Functions",
         name: "zsh-functions",
         description: "Comma separated list of Zsh functions to load (man zshcontrib)",
         type: "script",
-        // TODO: support multiselect-text.
-        // TODO: add options.
-        interface: "text",
-        default: "zargs,zmv",
+        // TODO: add options, disable user created options.
+        interface: "multiselect",
+        default: ["zargs", "zmv"],
+        options: ["zargs", "zmv"],
         compile: compileZstyleList(':prezto:load', 'zfunction'),
       }, {
         displayName: "Modules",
