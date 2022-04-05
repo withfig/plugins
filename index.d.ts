@@ -16,7 +16,7 @@ declare namespace Fig {
   /** Function that compiles a context to a string-like result or block to be
    * included in dotfiles
    */
-  type DotfileCompiler<T, S> = (_: T & { ctx: DotfileCompilationContext }) => S;
+  type DotfileCompiler<T, S> = (_: T, __: { ctx: DotfileCompilationContext }) => S;
 
   /** DeviceEnvironment mediates queries about the local device environment */
   interface DeviceEnvironment {
@@ -25,7 +25,7 @@ declare namespace Fig {
     listFolder: (path: string) => Promise<string[]>;
   }
 
-  type InstallationScriptCompiler = DotfileCompiler<{}, string | string[]>;
+  type InstallationScriptCompiler = (_: { ctx: DotfileCompilationContext }) => string | string[];
   type InstallationScript = string | string[] | InstallationScriptCompiler;
 
   interface PluginInstallation {
@@ -63,33 +63,47 @@ declare namespace Fig {
     { env?: DeviceEnvironment }
   >;
 
-  type UIType = "multiselect" | "select" | "text" | "checkbox" | "toggle";
+  type UIType =
+    | "multiselect"
+    | "select"
+    | "multi-text"
+    | "text"
+    | "textarea"
+    | "checkbox"
+    | "toggle";
 
   type NonEmpty<T extends unknown[]> = T & { 0: T[number] };
-  type Suggestions<T extends unknown[]> = T | DeviceConfigurationGenerator<T>;
+  type Suggestions<T> = T[] | DeviceConfigurationGenerator<T[]>;
 
   // Multiselect UI item type
-  type MultiselectUI<T> = T extends unknown[]
+  type MultiselectUI<T> = T extends (infer S)[]
     ? {
         interface: "multiselect";
-        default: T[number] | T;
-        options: Suggestions<T>;
+        allowUserCreatedOptions?: true;
+        default: S | T;
+        options: Suggestions<S | { option: S, description: string }>;
         value: T;
       }
     : never;
 
   type SelectUI<T> = {
     interface: "select";
+    allowUserCreatedOptions?: true;
     value: T;
     default: T;
-    options: Suggestions<T[]>;
+    options: Suggestions<T>;
   };
 
   type TextUI<T> = {
     interface: "text";
     value: T;
     default: T;
-    options?: Suggestions<T[]>;
+  };
+
+  type MultiTextUI = {
+    interface: "multi-text";
+    value: string[];
+    default: string[];
   };
 
   interface BasicUI<T, U extends UIType> {
@@ -105,9 +119,11 @@ declare namespace Fig {
     Extract<
       | MultiselectUI<V>
       | SelectUI<V>
-      | BasicUI<boolean, "checkbox" | "toggle">
+      | BasicUI<boolean, "toggle">
       | TextUI<number>
-      | TextUI<string>,
+      | TextUI<string>
+      | MultiTextUI
+      | BasicUI<string, "textarea">,
       { value: V; interface: U }
     >,
     "value"
@@ -122,7 +138,7 @@ declare namespace Fig {
     disabled?: ConfigurationGenerator<boolean>;
   }
 
-  type EnvironmentVariableValue = string | string[];
+  type EnvironmentVariableValue = null | string | string[];
   type CompiledEnvironmentVariable =
     | {
         value: EnvironmentVariableValue;
@@ -135,29 +151,39 @@ declare namespace Fig {
       type: "environmentVariable";
       environmentVariable: string;
       name?: string;
-      compile?: DotfileCompiler<{ value: V }, CompiledEnvironmentVariable>;
+      compile?: DotfileCompiler<V, CompiledEnvironmentVariable>;
+      // Syntactic sugar to compile as environment variable vs shell variable.
+      export?: boolean;
     };
 
   type ScriptItemForType<V, U extends UIType> = ConfigurationInterface &
     UI<V, U> & {
       name: string;
       type: "script";
-      compile: DotfileCompiler<{ value: V }, string>;
+      compile: DotfileCompiler<V, string>;
     };
 
   type ScriptItem =
     | ScriptItemForType<string[], "multiselect">
     | ScriptItemForType<number[], "multiselect">
+    | ScriptItemForType<string[], "multi-text">
     | ScriptItemForType<boolean, "checkbox" | "toggle">
-    | ScriptItemForType<string, "select" | "text">
-    | ScriptItemForType<number, "select" | "text">;
+    | ScriptItemForType<string, "select">
+    | ScriptItemForType<string, "text">
+    | ScriptItemForType<string, "textarea">
+    | ScriptItemForType<number, "select">
+    | ScriptItemForType<number, "text">;
 
   type EnvironmentVariableItem =
     | EnvironmentVariableItemForType<string[], "multiselect">
     | EnvironmentVariableItemForType<number[], "multiselect">
-    | EnvironmentVariableItemForType<string, "select" | "text">
-    | EnvironmentVariableItemForType<number, "select" | "text">
-    | EnvironmentVariableItemForType<boolean, "checkbox" | "toggle">;
+    | EnvironmentVariableItemForType<string[], "multi-text">
+    | EnvironmentVariableItemForType<boolean, "checkbox" | "toggle">
+    | EnvironmentVariableItemForType<null | string, "select">
+    | EnvironmentVariableItemForType<null | string, "text">
+    | EnvironmentVariableItemForType<null | string, "textarea">
+    | EnvironmentVariableItemForType<null | number, "select">
+    | EnvironmentVariableItemForType<null | number, "text">;
 
   type ConfigurationItem = ScriptItem | EnvironmentVariableItem;
 
@@ -213,6 +239,8 @@ declare namespace Fig {
     github?: string;
     /** The twitter for the plugin */
     twitter?: string;
+    /** Link to community page for plugin (e.g. discord, slack) */
+    community?: string;
     /** The authors for the plugin */
     authors?: Author[];
     /** The license for the plugin */

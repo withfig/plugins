@@ -145,7 +145,7 @@ const plugin: Fig.Plugin = {
           ].map(p => p.catch(() => [])));
           return [...new Set(modules.flat())];
         },
-        compile: ({ value }: { value: string[] }) => setZstyle(
+        compile: (value: string[]) => setZstyle(
           ':prezto:load',
           "pmodule",
           value.map(x => `'${x}'`).join(" ")

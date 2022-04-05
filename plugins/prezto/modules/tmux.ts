@@ -39,7 +39,7 @@ const tmux: ModuleConfiguration = {
     type: "script",
     interface: "text",
     default: "",
-    compile: ({ value }) => value
+    compile: value => value
       ? setZstyle(":prezto:module:tmux:session", "name", value)
       : "",
   }]
