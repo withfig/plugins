@@ -14,7 +14,15 @@ const plugin: Fig.Plugin = {
   github: "marlonrichert/zsh-autocomplete",
   license: ["MIT"],
   shells: ["zsh"],
-  screenshots: ["images/alias-expansion.png",  "images/history-lines.png", "images/history-menu.png", "images/multi-select.png", "images/recent-dirs.png", "images/requoted.png", "images/unambiguous.png"],
+  screenshots: [
+    "images/alias-expansion.png",
+    "images/history-lines.png",
+    "images/history-menu.png",
+    "images/multi-select.png",
+    "images/recent-dirs.png",
+    "images/requoted.png",
+    "images/unambiguous.png",
+  ],
   categories: ["Other"],
   keywords: [
     "zsh",
@@ -41,62 +49,55 @@ const plugin: Fig.Plugin = {
       type: "script",
 
       interface: "select",
-      options: [
-        "Autocompletion",
-        "History Search"
-      ],
+      options: ["Autocompletion", "History Search"],
       default: "Completions",
       compile: (value) => {
         const kv: Record<string, string> = {
-          "Autocompletion": `''`,
-          "History Search": `history-incremental-search-backward`
-        }
-        return `zstyle ':autocomplete:*' default-context ${kv[value]}`
-      }
+          Autocompletion: `''`,
+          "History Search": `history-incremental-search-backward`,
+        };
+        return `zstyle ':autocomplete:*' default-context ${kv[value]}`;
+      },
     },
     {
       name: "Minimum Delay",
-      description: "Wait this many seconds for typing to stop, before showing completions.",
+      description:
+        "Wait this many seconds for typing to stop, before showing completions.",
       type: "script",
 
       interface: "text",
       default: 0.05,
-      compile: (value) => {
-        return `zstyle ':autocomplete:*' min-delay ${value}`
-      }
+      compile: (value) => `zstyle ':autocomplete:*' min-delay ${value}`,
     },
     {
       name: "Minimum Input",
-      description: "Wait until this many characters have been typed, before showing completions.",
+      description:
+        "Wait until this many characters have been typed, before showing completions.",
       type: "script",
 
       interface: "text",
       default: 0,
-      compile: (value) => {
-        return `zstyle ':autocomplete:*' min-input ${value}`
-      }
+      compile: (value) => `zstyle ':autocomplete:*' min-input ${value}`,
     },
     {
       name: "Ignored Input",
-      description: "Do not show completions for commands that match this extended glob pattern.",
+      description:
+        "Do not show completions for commands that match this extended glob pattern.",
       type: "script",
 
       interface: "text",
-      default: '',
-      compile: (value) => {
-        return `zstyle ':autocomplete:*' min-input '${value}'`
-      }
+      default: "",
+      compile: (value) => `zstyle ':autocomplete:*' min-input '${value}'`,
     },
     {
       name: "List Lines",
-      description: "If there are fewer than this many lines below the prompt, move the prompt up to make room for showing this many lines of completions (approximately).",
+      description:
+        "If there are fewer than this many lines below the prompt, move the prompt up to make room for showing this many lines of completions (approximately).",
       type: "script",
 
       interface: "text",
       default: 16,
-      compile: (value) => {
-        return `zstyle ':autocomplete:*' list-lines ${value}`
-      }
+      compile: (value) => `zstyle ':autocomplete:*' list-lines ${value}`,
     },
     {
       name: "Number of history search suggestions",
@@ -105,9 +106,8 @@ const plugin: Fig.Plugin = {
 
       interface: "text",
       default: 16,
-      compile: (value) => {
-        return `zstyle ':autocomplete:history-search:*' list-lines ${value}`
-      }
+      compile: (value) =>
+        `zstyle ':autocomplete:history-search:*' list-lines ${value}`,
     },
     {
       name: "Number of incremental history search suggestions",
@@ -116,9 +116,8 @@ const plugin: Fig.Plugin = {
 
       interface: "text",
       default: 16,
-      compile: (value) => {
-        return `zstyle ':autocomplete:history-search:*' list-lines ${value}`
-      }
+      compile: (value) =>
+        `zstyle ':autocomplete:history-search:*' list-lines ${value}`,
     },
     {
       displayName: "List Recent Directories",
@@ -128,44 +127,32 @@ const plugin: Fig.Plugin = {
       type: "script",
 
       interface: "toggle",
-      default:  true,
-      compile: (value) => {
-        return value ? '' : "zstyle ':autocomplete:*' recent-dirs off"
-      }
+      default: true,
+      compile: (value) =>
+        value ? "" : "zstyle ':autocomplete:*' recent-dirs off",
     },
     {
       name: "Recent Directories Tool",
-      description: "What tool should be used to generate the list of recent directories.",
+      description:
+        "What tool should be used to generate the list of recent directories.",
       type: "script",
 
       interface: "select",
       default: "cdr",
-      options: [
-        "cdr",
-        "zsh-z",
-        "zoxide",
-        "z.lua",
-        "z.sh",
-        "autojump",
-        "fasd",
-      ],
-      hidden: ({ config }) => {
-        return config["recent-dirs"] !== true
-      },
-      compile: (value) => {
-        return `zstyle ':autocomplete:*' recent-dirs ${value}`
-      }
+      options: ["cdr", "zsh-z", "zoxide", "z.lua", "z.sh", "autojump", "fasd"],
+      hidden: ({ config }) => config["recent-dirs"] !== true,
+      compile: (value) => `zstyle ':autocomplete:*' recent-dirs ${value}`,
     },
     {
       name: "Insert Unambiguous",
-      description: "When disabled, tab inserts the top completion. When enabled, tab first inserts a substring common to all listed completions, if any.",
+      description:
+        "When disabled, tab inserts the top completion. When enabled, tab first inserts a substring common to all listed completions, if any.",
       type: "script",
 
       interface: "toggle",
-      default:  false,
-      compile: (value) => {
-        return `zstyle ':autocomplete:*' insert-unambiguous ${value ? "yes": "no"}`
-      }
+      default: false,
+      compile: (value) =>
+        `zstyle ':autocomplete:*' insert-unambiguous ${value ? "yes" : "no"}`,
     },
     {
       name: "Widget Style",
@@ -178,27 +165,21 @@ const plugin: Fig.Plugin = {
 
       interface: "select",
       default: "complete-word",
-      options: [
-        "complete-word",
-        "menu-complete",
-        "menu-select",
-      ],
+      options: ["complete-word", "menu-complete", "menu-select"],
 
-      compile: (value) => {
-        return `zstyle ':autocomplete:*' widget-style ${value}`
-      }
+      compile: (value) => `zstyle ':autocomplete:*' widget-style ${value}`,
     },
     {
       name: "Use Fzf completions",
       description: "Tab first tries Fzf's completion, then falls back to Zsh's",
-      additionalDetails: " This setting can NOT be changed at runtime and requires that you have installed Fzf's shell extensions.",
+      additionalDetails:
+        " This setting can NOT be changed at runtime and requires that you have installed Fzf's shell extensions.",
       type: "script",
 
       interface: "toggle",
-      default:  false,
-      compile: (value) => {
-        return`zstyle ':autocomplete:*' fzf-completion ${value ? "on" : "off"}`
-      }
+      default: false,
+      compile: (value) =>
+        `zstyle ':autocomplete:*' fzf-completion ${value ? "on" : "off"}`,
     },
     {
       name: "Add space after...",
@@ -212,14 +193,13 @@ const plugin: Fig.Plugin = {
         "functions",
         "builtins",
         "reserved-words",
-        "commands"
+        "commands",
       ],
       default: "executables aliases functions builtins reserved-words commands",
-      compile: (value) => {
-        return`zstyle ':autocomplete:*' add-space ${value.join(" ")}`
-      }
+      compile: (value) =>
+        `zstyle ':autocomplete:*' add-space ${value.join(" ")}`,
     },
-  ]
+  ],
 };
 
 export default plugin;
