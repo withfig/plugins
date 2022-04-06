@@ -1,8 +1,10 @@
 const plugin: Fig.Plugin = {
-  icon: "😀",
+  icon: "🌅",
   name: "predawn-shell_jamiewilson",
+  displayName: "Predawn Shell",
+  description: "Predawn ZSH prompt",
+  screenshots: ["https://i.imgur.com/lJ34FpJ.png"],
   type: "shell",
-  description: "Predawn themes for iTerm, Terminal, and a ZSH prompt",
   authors: [
     {
       name: "jamiewilson",
