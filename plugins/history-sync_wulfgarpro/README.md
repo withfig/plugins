@@ -1,25 +1,6 @@
 # history-sync
 > An Oh My Zsh plugin for GPG encrypted, Internet synchronized Zsh history using Git.
 
-## Installation
-```bash
-sudo apt install gpg git
-git clone git@github.com:wulfgarpro/history-sync.git
-cp -r history-sync ~/.oh-my-zsh/plugins
-```
-
-Then open .zshrc file and append history-sync to the plugin line:
-
-```bash
-plugins=(... history-sync)
-```
-
-And finally, reload zsh:
-
-```bash
-zsh
-```
-
 ## Usage
 Before history-sync can be useful, you need two things:
 

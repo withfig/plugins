@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
-  icon: "⭐️",
+  icon: "📜",
   name: "history-sync_wulfgarpro",
+  displayName: "History Sync",
   type: "shell",
   description:
     "An oh-my-zsh plugin for GPG encrypted internet synchronised Zsh history, with Git.",
