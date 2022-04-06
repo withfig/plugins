@@ -17,6 +17,8 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     sourceFiles: ["nix-zsh-completions.plugin.zsh"],
+    postScript: ({ ctx }) =>
+      `fpath+=(${ctx.plugin.installDirectory})\nautoload -U compinit && compinit`,
   },
 };
 
