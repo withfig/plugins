@@ -1,7 +1,12 @@
 const plugin: Fig.Plugin = {
-  icon: "⚡️",
+  icon: "🙈",
   name: "ugit_Bhupesh-V",
+  displayName: "ugit",
   type: "shell",
+  screenshots: [
+    "https://user-images.githubusercontent.com/34342551/135706491-0e987e0c-3a6d-4da6-bd16-d69bb36c42a9.gif",
+    "https://user-images.githubusercontent.com/34342551/115037937-a608d800-9eec-11eb-88a9-252da7d6f507.png",
+  ],
   description:
     "🚨️ ugit helps undo git commands. Your damage control git buddy. Undo from 17+ git scenarios.",
   authors: [
