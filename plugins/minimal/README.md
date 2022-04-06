@@ -1,32 +1,7 @@
 # MINIMAL
 A minimal and extensible zsh theme.
 
-# Screencast
-[![asciicast](https://asciinema.org/a/RZthpXkg9b7KdKRGjySsC83wx.png)](https://asciinema.org/a/RZthpXkg9b7KdKRGjySsC83wx)
-
-# Installation
-[Zgen](https://github.com/tarjoilija/zgen):
-```sh
-zgen load subnixr/minimal
-```
-
-[Antigen](https://github.com/zsh-users/antigen):
-```sh
-antigen bundle subnixr/minimal
-```
-
-[Oh My Zsh](https://ohmyz.sh/):
-```sh
-git clone https://github.com/subnixr/minimal.git  ${ZSH_CUSTOM}/themes/minimal
-
-ln -s ${ZSH_CUSTOM}/themes/minimal/minimal.zsh ${ZSH_CUSTOM}/themes/minimal.zsh-theme
-# then update `ZSH_THEME` to `minimal` in your .zshrc 
-```
-
-
-Otherwise, you can always clone the repo and source `minimal.zsh`.
-
-# Customization and extension
+#
 ## Architecture
 Minimal is mostly a collection of *components* (shell functions) on top of a thin layer to ease customization.
 
@@ -36,38 +11,6 @@ There are 3 areas where a component can be rendered:
 - infoline (shown when there is no command and user presses `Enter`)
 
 A component should work in any of the three areas (left, right, info)
-
-## Override default settings
-Different components can use these (global) settings:
-
-- `MNML_OK_COLOR`: Color for successful things (default: `2`)
-- `MNML_ERR_COLOR`: Color for failures (default: `1`)
-- `MNML_BGJOB_MODE`: Mode applied when there are background jobs (default: `4`)
-- `MNML_USER_CHAR`: Character used for unprivileged users (default: `λ`)
-- `MNML_INSERT_CHAR`: Character used for vi insert mode (default: `›`)
-- `MNML_NORMAL_CHAR`: Character used for vi normal mode (default: `·`)
-- `MNML_ELLIPSIS_CHAR`: Character used when truncating long words (default: `..`)
-
-Three global arrays handle the definition and rendering position of the components:
-
-```
-# Components on the left prompt
-MNML_PROMPT=(mnml_ssh mnml_pyenv mnml_status mnml_keymap)
-
-# Components on the right prompt
-MNML_RPROMPT=('mnml_cwd 2 0' mnml_git)
-
-# Components shown on info line
-MNML_INFOLN=(mnml_err mnml_jobs mnml_uhp mnml_files)
-```
-
-An additional array is used to configure magic enter's behavior:
-
-```
-MNML_MAGICENTER=(mnml_me_dirs mnml_me_ls mnml_me_git)
-```
-
-These values can be changed interactively or in any of the init files.
 
 `PROMPT` and `RPROMPT` should be left untouched, as minimal already takes care of them.
 
@@ -217,41 +160,4 @@ MNML_MAGICENTER+=awesome_magicenter
 
 Due to minimal's architecture, if you need the value of the last command exit status (`$?`), `$MNML_LAST_ERR` must be used. `$?` can  still be used to check for errors inside the component.
 
-# Congiguration examples:
-## no UTF-8
-
-```
-MNML_USER_CHAR='$'
-MNML_NOMRAL_CHAR='-'
-MNML_INSERT_CHAR='>'
-source minimal.zsh
-```
-
-Result (right omitted): `$ >`
-
-## classic bash's prompt
-
-```
-MNML_PROMPT=(mnml_uhp mnml_status mnml_keymap)
-MNML_RPROMPT=()
-source minimal.zsh
-```
-
-Result: `user@host:~ λ ›          `
-
-## good old days
-
-```
-MNML_PROMPT=(mnml_status)
-MNML_RPROMPT=()
-MNML_INFOLN=()
-MNML_MAGICENTER=()
-source minimal.zsh
-```
-
-Result: `λ                        `
-
-# Transition from 0.1.0
-
-Check this [gist](https://gist.github.com/subnixr/ea5a5180ab2c193e6ca1238b4dbbc8bd)
 
