@@ -1,32 +1,7 @@
-[![Build Status][travis-status-png]][travis-status]
-
 # ZSH higher order functions
 
 You can look at [yogsototh's blogpost] for the idea of higher order functions
 in zsh.
-
-## Install
-
-If you are lazy just paste the following lines in your terminal:
-
-    cd /tmp && \
-    curl -O https://raw.github.com/Tarrasch/zsh-functional/master/install.sh && \
-    chmod u+x install.sh && . ./install.sh && \rm -f ./install.sh
-
-If you want to do it manually, clone this repo to
-`~/.zsh/functional` and add
-
-    . ~/.zsh/functional/functional.plugin.zsh
-
-to your `.zshrc`
-
-### Antigen
-
-If you use [antigen], you can simply add
-
-    antigen-bundle Tarrasch/zsh-functional
-
-Among your other `antigen-bundle` commands.
 
 ## Examples and usage
 
