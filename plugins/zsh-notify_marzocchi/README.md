@@ -1,7 +1,4 @@
-zsh-notify
-===
-
-Desktop notifications for long-running commands in ZSH.
+> Desktop notifications for long-running commands in ZSH.
 
 Supported terminals
 ---
@@ -28,17 +25,8 @@ _When using `tmux` on Yosemite:_
 
 Install `notify-send` (default*) -- available in [libnotify][libnotify]
 
----
 
-\* _usage of custom notifiers is described in [Configuration](#configuration)_
-
-### Installation
-
-Just clone this repository and source `notify.plugin.zsh` in your `~/.zshrc`,
-or see below for instructions on installing with some popular package managers.
-
-Configuration
----
+### Configuration
 
 The behavior of zsh-notify can be modified by using `zstyle` **after**
 sourcing `notify.plugin.zsh`.
@@ -134,29 +122,3 @@ sourcing `notify.plugin.zsh`.
 [iterm2]: http://www.iterm2.com/
 [dogefy.sh]: https://gist.github.com/marzocchi/14c47a49643389029a2026b4d4fec7ae
 [issue115]: https://github.com/julienXX/terminal-notifier/issues/115
-
-## Installation with package managers
-
-### [Antigen](https://github.com/zsh-users/antigen)
-
-Add `antigen bundle marzocchi/zsh-notify` to your `.zshrc` with your other
-bundle commands.
-
-Antigen will handle cloning the plugin for you automatically the next time you
-start zsh. You can also add the plugin to a running zsh with `antigen bundle
-marzocchi/zsh-notify` for testing before adding it to your `.zshrc`.
-
-### [Oh-My-Zsh](http://ohmyz.sh/)
-
-1. `git clone git@github.com:marzocchi/zsh-notify.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/notify`
-2. Add zsh-notify to your plugin list - edit `~./zshrc` and change `plugins=(...)` to `plugins=(... notify)`
-
-**Note:** when cloning, specify the target directory as `notify` since
-Oh-My-Zsh expects the plugin's initialization file to have the same name as
-it's directory.
-
-### [Zgen](https://github.com/tarjoilija/zgen)
-
-Add `zgen load marzocchi/zsh-notify` to your .zshrc file in the same function
-you're doing your other `zgen load` calls in.
-
