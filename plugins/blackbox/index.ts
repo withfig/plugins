@@ -8,13 +8,7 @@ const plugin: Fig.Plugin = {
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Convenience Function"],
-  keywords: [
-    "security",
-    "gpg",
-    "version control",
-    "VCS",
-    "secret management"
-  ],
+  keywords: ["security", "gpg", "version control", "VCS", "secret management"],
   installation: {
     origin: "github",
     sourceFiles: ["blackbox.plugin.zsh"],
