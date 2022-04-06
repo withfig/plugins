@@ -31,12 +31,7 @@ const plugin: Fig.Plugin = {
   ],
   installation: {
     origin: "github",
-    bash: {
-      sourceFiles: ["polyglot.sh"],
-    },
-    zsh: {
-      sourceFiles: ["polyglot.plugin.zsh"],
-    },
+    sourceFiles: ["polyglot.sh"],
   },
 };
 

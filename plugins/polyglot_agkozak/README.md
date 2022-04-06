@@ -24,7 +24,6 @@ The **Polyglot Prompt** is a dynamic prompt for `zsh`, `bash`, `ksh93`, `mksh`, 
 ## Table of Contents
 
 - [Basics](#basics)
-- [Installation](#installation)
 - [Local and Remote Sessions](#local-and-remote-sessions)
 - [Abbreviated Paths](#abbreviated-paths)
 - [Git Branch and Status](#git-branch-and-status)
@@ -45,14 +44,6 @@ Additionally, in `zsh` and in `bash` v4.3 and higher, the Polyglot Prompt indica
 ![`zsh` line editing](img/zsh-line-editing.png)
 
 [See below](#enabling-vi-editing-mode-in-zsh-and-bash) for instructions on how to enable `vi` mode in your shell.
-
-## Installation
-
-The Polyglot Prompt uses one script (`polyglot.sh`) that can be sourced from the *rc* file (`.zshrc`, `.bashrc`, `.kshrc`, `.shrc`, or `.mkshrc`) of any supported shell:
-
-    . /path/to/polyglot.sh
-
-Although no framework is required, a shim (`polyglot.plugin.zsh`) is provided to help with certain `zsh` frameworks.
 
 ## Local and Remote Sessions
 
