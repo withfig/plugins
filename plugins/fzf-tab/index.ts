@@ -18,6 +18,24 @@ const plugin: Fig.Plugin = {
     origin: "github",
     sourceFiles: ["fzf-tab.plugin.zsh"],
   },
+  configuration: [
+    {
+      displayName: "Command",
+      name: "fzf-command",
+      type: "script",
+      interface: "text",
+      default: "fzf",
+      compile: (value) => `zstyle ':fzf-tab:*' fzf-command ${value}`,
+    },
+    {
+      displayName: "Padding",
+      name: "fzf-pad",
+      type: "script",
+      interface: "text",
+      default: 2,
+      compile: (value) => `zstyle ':fzf-tab:*' fzf-pad ${value}`,
+    },
+  ],
 };
 
 export default plugin;

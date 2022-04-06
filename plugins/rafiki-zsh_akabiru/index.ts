@@ -1,7 +1,11 @@
 const plugin: Fig.Plugin = {
-  icon: "👾",
+  icon: "🐵",
   name: "rafiki-zsh_akabiru",
+  displayName: "Rafiki Zsh",
   type: "shell",
+  screenshots: [
+    "https://www.dropbox.com/s/u08c2zofducjvh9/rafiki-zsh-2.png?raw=1",
+  ],
   description: "👀👻 A zsh friend to watch over you.",
   authors: [
     {
