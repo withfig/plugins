@@ -2,7 +2,6 @@ import {
   ModuleConfiguration,
   compileZstyleBool,
   compileZstyle,
-  compileZstyleList,
 } from "../utils";
 
 const terminal: ModuleConfiguration = {

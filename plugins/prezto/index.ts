@@ -151,7 +151,6 @@ const plugin: Fig.Plugin = {
             }
             // TODO: we should look in ${ZPREZTODIR} (default is
             // ${ZDOTDIR:-HOME}/.zprezto). Need to add this functionality to env.
-            const preztoDir = `~/.zprezto/`;
             const moduleDirs = config["pmodule-dirs"] as string;
             const modules = await Promise.all(
               [
@@ -170,7 +169,7 @@ const plugin: Fig.Plugin = {
         },
       ],
     },
-    ...modules.map((module) => ({
+    ...MODULES.map((module) => ({
       displayName: `Module: ${module.name}`,
       hidden: ({ config }: { config: Fig.ConfigurationDictionary }) =>
         !(config.modules as string[]).includes(module.name),

@@ -2,6 +2,7 @@ const plugin: Fig.Plugin = {
   icon: "😀",
   name: "wd_mfaerevaag",
   displayName: "wd",
+  screenshots: ["images/demo.gif"],
   type: "shell",
   description: "Jump to custom directories in zsh",
   authors: [
@@ -12,14 +13,11 @@ const plugin: Fig.Plugin = {
   ],
   github: "mfaerevaag/wd",
   license: ["MIT"],
-  shells: ["bash", "zsh"],
+  shells: ["zsh"],
   categories: ["Other"],
   keywords: ["shell", "zsh", "productivity"],
   installation: {
     origin: "github",
-    bash: {
-      sourceFiles: ["wd.sh"],
-    },
     zsh: {
       sourceFiles: ["wd.plugin.zsh"],
     },
