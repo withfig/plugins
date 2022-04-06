@@ -14,7 +14,7 @@ const plugin: Fig.Plugin = {
   license: ["GPL-2.0"],
   site: "https://lukasmestan.com/simple-zsh-calculator/",
   shells: ["zsh"],
-  categories: ["Other"],
+  categories: ["Convenience Function"],
   keywords: [
     "calculator",
     "calc",
