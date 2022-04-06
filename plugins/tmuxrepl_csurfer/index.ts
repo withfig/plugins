@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "tmuxrepl_csurfer",
   type: "shell",
   description: "Stupidly simple zsh plugin to have a R-EP-L tmux session.",

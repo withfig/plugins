@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💥",
   name: "taw-ys.zsh-theme_lyytaw",
   type: "shell",
   description: "基于ys的定制化oh-my-zsh主题，支持python的prompt显示",

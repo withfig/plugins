@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "zsh-pip-completion_srijanshetty",
   type: "shell",
   description: "ZSH completions for pip",

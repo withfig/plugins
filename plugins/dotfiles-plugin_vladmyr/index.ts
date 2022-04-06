@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💥",
   name: "dotfiles-plugin_vladmyr",
   type: "shell",
   description: "Keep your dotfiles in sync using Git, a plugin for Oh My Zsh",

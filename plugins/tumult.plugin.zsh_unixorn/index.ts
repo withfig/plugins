@@ -1,8 +1,12 @@
 const plugin: Fig.Plugin = {
+  icon: "🔥",
   name: "tumult.plugin.zsh_unixorn",
-  type: "shell",
+  displayName: "Tumult",
   description:
-    "Tumult is a collection of macOS-specific functions and scripts for your shell environment. It is packaged as a ZSH plugin, but can be used in bash/fish as well.",
+    "Tumult is a collection of macOS-specific functions and scripts for your " +
+    "shell environment. It is packaged as a ZSH plugin, but can be used in " +
+    "bash/fish as well.",
+  type: "shell",
   authors: [
     {
       name: "unixorn",
@@ -12,8 +16,8 @@ const plugin: Fig.Plugin = {
   ],
   github: "unixorn/tumult.plugin.zsh",
   license: ["Apache-2.0"],
-  shells: ["zsh"],
-  categories: ["Other"],
+  shells: ["zsh", "bash"],
+  categories: ["Convenience Function"],
   keywords: [
     "zsh",
     "zsh-plugins",
@@ -28,7 +32,12 @@ const plugin: Fig.Plugin = {
   ],
   installation: {
     origin: "github",
-    sourceFiles: ["tumult.plugin.zsh"],
+    zsh: {
+      sourceFiles: ["tumult.plugin.zsh"],
+    },
+    bash: {
+      pathDirectories: ({ ctx }) => [`${ctx.plugin.installDirectory}/bin`],
+    },
   },
 };
 

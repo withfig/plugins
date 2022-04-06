@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "zsh-grunt-plugin_clauswitt",
   type: "shell",
   description: "Zsh grunt plugin",

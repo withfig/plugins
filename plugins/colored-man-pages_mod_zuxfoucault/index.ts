@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "colored-man-pages_mod_zuxfoucault",
   type: "shell",
   description:

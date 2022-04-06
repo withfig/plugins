@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "yuki-zsh-theme_yuki-torii",
   type: "shell",
   description: "⛩    yuki-zsh-theme",

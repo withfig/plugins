@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "zsh-interactive-cd_changyuheng",
   type: "shell",
   description: "Fish like interactive tab completion for cd in zsh",

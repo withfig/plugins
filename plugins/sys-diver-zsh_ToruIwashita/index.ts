@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💾",
   name: "sys-diver-zsh_ToruIwashita",
   type: "shell",
   description:

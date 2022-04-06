@@ -1,7 +1,9 @@
 const plugin: Fig.Plugin = {
+  icon: "🌟",
   name: "lambda-pure_marszall87",
+  displayName: "Lambda Pure",
   type: "shell",
-  description: "Pretty, minimal and fast ZSH prompt, with NodeJS version",
+  description: "Pretty, minimal and fast ZSH prompt based on Pure",
   authors: [
     {
       name: "marszall87",

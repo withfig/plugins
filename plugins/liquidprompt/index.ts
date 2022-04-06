@@ -17,6 +17,7 @@ const plugin: Fig.Plugin = {
   shells: ["bash", "zsh"],
   categories: ["Prompt"],
   keywords: ["zsh", "bash", "prompt", "linux-shell", "powerline"],
+  screenshots: ["images/1.png", "images/2.png", "images/3.png"],
   installation: {
     origin: "github",
     sourceFiles: ["liquidprompt"],
@@ -28,7 +29,7 @@ const plugin: Fig.Plugin = {
         {
           displayName: "Enable Error",
           type: "environmentVariable",
-          environmentVariable: "LP_ENABLE_ERROR",
+          name: "LP_ENABLE_ERROR",
           description: "Display the last command error code if it is not `0`.",
           interface: "toggle",
           default: true,
@@ -36,7 +37,7 @@ const plugin: Fig.Plugin = {
         {
           displayName: "Enable Battery Status",
           type: "environmentVariable",
-          environmentVariable: "LP_ENABLE_BATT",
+          name: "LP_ENABLE_BATT",
           description:
             "Display the status of the battery, if there is one, using color and marks.",
           additionalDetails:
@@ -47,7 +48,7 @@ const plugin: Fig.Plugin = {
         {
           displayName: "Enable Runtime",
           type: "environmentVariable",
-          environmentVariable: "LP_ENABLE_RUNTIME",
+          name: "LP_ENABLE_RUNTIME",
           description: "Display the runtime of the last command.",
           interface: "toggle",
           default: true,
@@ -55,7 +56,7 @@ const plugin: Fig.Plugin = {
         {
           displayName: "Enable Detached Session",
           type: "environmentVariable",
-          environmentVariable: "LP_ENABLE_DETACHED_SESSIONS",
+          name: "LP_ENABLE_DETACHED_SESSIONS",
           description: "Display the number of detached multiplexer sessions.",
           additionalDetails:
             "Will be disabled if neither `screen` nor `tmux` are found.",
@@ -65,7 +66,7 @@ const plugin: Fig.Plugin = {
         {
           displayName: "Enable Dirstack",
           type: "environmentVariable",
-          environmentVariable: "LP_ENABLE_DIRSTACK",
+          name: "LP_ENABLE_DIRSTACK",
           description:
             "Display the size of the directory stack if it is greater than `1`.",
           interface: "toggle",
@@ -74,7 +75,7 @@ const plugin: Fig.Plugin = {
         {
           displayName: "Fully Qualified Hostname",
           type: "environmentVariable",
-          environmentVariable: "LP_ENABLE_FQDN",
+          name: "LP_ENABLE_FQDN",
           description:
             "Display the fully qualified hostname instead of the short hostname.",
           interface: "toggle",
@@ -83,7 +84,7 @@ const plugin: Fig.Plugin = {
         {
           displayName: "Enable Color",
           type: "environmentVariable",
-          environmentVariable: "LP_ENABLE_COLOR",
+          name: "LP_ENABLE_COLOR",
           description: "Use terminal formatting when displaying the prompt.",
           additionalDetails: "Will be disabled if tput is not found.",
           interface: "toggle",
@@ -92,7 +93,7 @@ const plugin: Fig.Plugin = {
         {
           displayName: "Enable Jobs",
           type: "environmentVariable",
-          environmentVariable: "LP_ENABLE_JOBS",
+          name: "LP_ENABLE_JOBS",
           description: "Display the number of running and sleeping shell jobs.",
           interface: "toggle",
           default: true,
@@ -105,7 +106,7 @@ const plugin: Fig.Plugin = {
         {
           displayName: "Enable Git",
           type: "environmentVariable",
-          environmentVariable: "LP_ENABLE_GIT",
+          name: "LP_ENABLE_GIT",
           description: "Display VCS information inside Git repositories.",
           additionalDetails: "Will be disabled if `git` is not found.",
           interface: "toggle",
@@ -118,7 +119,7 @@ const plugin: Fig.Plugin = {
             "Mark used to indicate that the current directory is inside of a Git repository.",
           default: "±",
           interface: "text",
-          environmentVariable: "LP_MARK_GIT",
+          name: "LP_MARK_GIT",
           hidden: ({ config }) => !config.LP_ENABLE_GIT,
         },
         {
@@ -128,7 +129,7 @@ const plugin: Fig.Plugin = {
           additionalDetails: "Will be disabled if `hg` is not found.",
           default: true,
           interface: "toggle",
-          environmentVariable: "LP_ENABLE_HG",
+          name: "LP_ENABLE_HG",
         },
         {
           displayName: "Mercurial Mark",
@@ -137,7 +138,7 @@ const plugin: Fig.Plugin = {
             "Mark used to indicate that the current directory is inside of a Mercurial repository.",
           default: "☿",
           interface: "text",
-          environmentVariable: "LP_MARK_HG",
+          name: "LP_MARK_HG",
           hidden: ({ config }) => !config.LP_ENABLE_HG,
         },
         {
@@ -148,7 +149,7 @@ const plugin: Fig.Plugin = {
           additionalDetails: "Will be disabled if `svn` is not found.",
           default: true,
           interface: "toggle",
-          environmentVariable: "LP_ENABLE_SVN",
+          name: "LP_ENABLE_SVN",
         },
         {
           displayName: "Subversion Mark",
@@ -157,7 +158,7 @@ const plugin: Fig.Plugin = {
             "Mark used to indicate that the current directory is inside of a Subversion repository.",
           default: "‡",
           interface: "text",
-          environmentVariable: "LP_MARK_SVN",
+          name: "LP_MARK_SVN",
           hidden: ({ config }) => !config.LP_ENABLE_SVN,
         },
         {
@@ -167,7 +168,7 @@ const plugin: Fig.Plugin = {
           additionalDetails: "Will be disabled if `fossil` is not found.",
           default: true,
           interface: "toggle",
-          environmentVariable: "LP_ENABLE_FOSSIL",
+          name: "LP_ENABLE_FOSSIL",
         },
         {
           displayName: "Fossil Mark",
@@ -176,7 +177,7 @@ const plugin: Fig.Plugin = {
             "Mark used to indicate that the current directory is inside of a Fossil repository.",
           default: "⌘",
           interface: "text",
-          environmentVariable: "LP_MARK_FOSSIL",
+          name: "LP_MARK_FOSSIL",
           hidden: ({ config }) => !config.LP_ENABLE_FOSSIL,
         },
         {
@@ -186,7 +187,7 @@ const plugin: Fig.Plugin = {
           additionalDetails: "Will be disabled if `bzr` is not found.",
           default: true,
           interface: "toggle",
-          environmentVariable: "LP_ENABLE_BZR",
+          name: "LP_ENABLE_BZR",
         },
         {
           displayName: "Bazaar Mark",
@@ -195,7 +196,7 @@ const plugin: Fig.Plugin = {
             "Mark used to indicate that the current directory is inside of a Bazaar repository.",
           default: "⚯",
           interface: "text",
-          environmentVariable: "LP_MARK_BZR",
+          name: "LP_MARK_BZR",
           hidden: ({ config }) => !config.LP_ENABLE_BZR,
         },
       ],
@@ -210,7 +211,7 @@ const plugin: Fig.Plugin = {
             "Use the shorten path feature if the path is too long to fit in the prompt line.",
           default: true,
           interface: "toggle",
-          environmentVariable: "LP_ENABLE_SHORTEN_PATH",
+          name: "LP_ENABLE_SHORTEN_PATH",
         },
         {
           displayName: "Shortend Path Characters",
@@ -219,7 +220,7 @@ const plugin: Fig.Plugin = {
             "The number of characters to save at the start and possibly the end of a directory name when shortening the path.",
           default: 3,
           interface: "text",
-          environmentVariable: "LP_PATH_CHARACTER_KEEP",
+          name: "LP_PATH_CHARACTER_KEEP",
           hidden: ({ config }) => !config.LP_ENABLE_SHORTEN_PATH,
         },
         {
@@ -231,7 +232,7 @@ const plugin: Fig.Plugin = {
             "Set to `1`, will display only root. Set to `0`, will keep nothing from the beginning of the path.",
           default: 2,
           interface: "text",
-          environmentVariable: "LP_PATH_KEEP",
+          name: "LP_PATH_KEEP",
           hidden: ({ config }) => !config.LP_ENABLE_SHORTEN_PATH,
         },
         {
@@ -241,7 +242,7 @@ const plugin: Fig.Plugin = {
             "The maximum percentage of the terminal width used to display the path before removing the center portion of the path and replacing with `LP_MARK_SHORTEN_PATH`.",
           default: 35,
           interface: "text",
-          environmentVariable: "LP_PATH_LENGTH",
+          name: "LP_PATH_LENGTH",
           hidden: ({ config }) => !config.LP_ENABLE_SHORTEN_PATH,
         },
         {
@@ -258,7 +259,7 @@ const plugin: Fig.Plugin = {
             "truncate_chars_to_unique_dir",
             "truncate_to_last_dir",
           ],
-          environmentVariable: "LP_PATH_METHOD",
+          name: "LP_PATH_METHOD",
           hidden: ({ config }) => !config.LP_ENABLE_SHORTEN_PATH,
         },
       ],
@@ -273,7 +274,7 @@ const plugin: Fig.Plugin = {
             "Display the root directory of the current VCS repository with special formatting, set by LP_COLOR_PATH_VCS_ROOT. If LP_ENABLE_SHORTEN_PATH is enabled, also prevent the path shortening from shortening or hidding the VCS root directory.",
           default: true,
           interface: "toggle",
-          environmentVariable: "LP_PATH_VCS_ROOT",
+          name: "LP_PATH_VCS_ROOT",
         },
         {
           displayName: "Mark Prefix",
@@ -282,7 +283,7 @@ const plugin: Fig.Plugin = {
             "String added directly before `LP_MARK_DEFAULT`, after all other parts of the prompt. Can be used to tag the prompt in a way that is less intrusive than `LP_PS1_PREFIX`, or add a newline before the prompt mark.",
           default: "",
           interface: "text",
-          environmentVariable: "LP_MARK_PREFIX",
+          name: "LP_MARK_PREFIX",
         },
         {
           displayName: "Prompt Prefix",
@@ -290,7 +291,7 @@ const plugin: Fig.Plugin = {
           description: "A string displayed at the start of the prompt.",
           default: "",
           interface: "text",
-          environmentVariable: "LP_PS1_PREFIX",
+          name: "LP_PS1_PREFIX",
         },
         {
           displayName: "Prompt Postfix",
@@ -299,7 +300,7 @@ const plugin: Fig.Plugin = {
             "A string displayed at the very end of the prompt, after even the prompt mark.",
           default: "",
           interface: "text",
-          environmentVariable: "LP_PS1_POSTFIX",
+          name: "LP_PS1_POSTFIX",
         },
       ],
     },

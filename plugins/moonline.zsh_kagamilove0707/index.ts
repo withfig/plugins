@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔥",
   name: "moonline.zsh_kagamilove0707",
   type: "shell",
   description: "moonline.zsh provides a modern prompt for zsh",

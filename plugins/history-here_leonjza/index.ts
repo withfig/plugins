@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🧑‍💻",
   name: "history-here_leonjza",
   type: "shell",
   description: "A zsh plugin to quickly isolate shell history recording.",

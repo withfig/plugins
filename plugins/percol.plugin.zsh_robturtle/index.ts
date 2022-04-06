@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔥",
   name: "percol.plugin.zsh_robturtle",
   type: "shell",
   description:

@@ -112,11 +112,11 @@ const createConfigurationOptionForColorComponent = (
   return {
     name,
     type: "script",
-    displayName: `[Color] ${title}`,
+    displayName: `${title}`,
     description: `Color of ${description}`,
     default: component.default,
     interface: "text",
-    compile: value => `zstyle :prompt:pure:${component.name} color ${value}`,
+    compile: (value) => `zstyle :prompt:pure:${component.name} color ${value}`,
   };
 };
 
@@ -133,6 +133,7 @@ const plugin: Fig.Plugin = {
       github: "sindresorhus",
     },
   ],
+  screenshots: ["images/screenshot.png"],
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Prompt"],
@@ -159,7 +160,7 @@ const plugin: Fig.Plugin = {
       type: "environmentVariable",
       default: "❯",
       interface: "text",
-      environmentVariable: "PURE_PROMPT_SYMBOL",
+      name: "PURE_PROMPT_SYMBOL",
     },
     {
       displayName: "Git Down Arrow Symbol",
@@ -167,7 +168,7 @@ const plugin: Fig.Plugin = {
       type: "environmentVariable",
       default: "⇣",
       interface: "text",
-      environmentVariable: "PURE_GIT_DOWN_ARROW",
+      name: "PURE_GIT_DOWN_ARROW",
     },
     {
       displayName: "Git Up Arrow Symbol",
@@ -175,7 +176,7 @@ const plugin: Fig.Plugin = {
       type: "environmentVariable",
       default: "⇡",
       interface: "text",
-      environmentVariable: "PURE_GIT_UP_ARROW",
+      name: "PURE_GIT_UP_ARROW",
     },
     {
       displayName: "Git Stash Symbol",
@@ -183,7 +184,7 @@ const plugin: Fig.Plugin = {
       type: "environmentVariable",
       default: "≡",
       interface: "text",
-      environmentVariable: "PURE_GIT_STASH_SYMBOL",
+      name: "PURE_GIT_STASH_SYMBOL",
     },
     {
       displayName: "VI-Mode Prompt Symbol",
@@ -191,7 +192,7 @@ const plugin: Fig.Plugin = {
       type: "environmentVariable",
       default: "❮",
       interface: "text",
-      environmentVariable: "PURE_PROMPT_VICMD_SYMBOL",
+      name: "PURE_PROMPT_VICMD_SYMBOL",
     },
     {
       displayName: "Command Max Execution Time",
@@ -200,7 +201,7 @@ const plugin: Fig.Plugin = {
         "The max execution time (in seconds) of a process before its run time is shown when it exits.",
       default: 5,
       interface: "text",
-      environmentVariable: "PURE_CMD_MAX_EXEC_TIME",
+      name: "PURE_CMD_MAX_EXEC_TIME",
     },
     {
       displayName: "Enable Git Pull",
@@ -209,7 +210,7 @@ const plugin: Fig.Plugin = {
         "Allow Pure to check whether the current Git remote has been updated.",
       default: false,
       interface: "toggle",
-      environmentVariable: "PURE_GIT_PULL",
+      name: "PURE_GIT_PULL",
     },
     {
       displayName: "Include Untracked Files in Git Dirty Check",
@@ -218,16 +219,16 @@ const plugin: Fig.Plugin = {
       type: "environmentVariable",
       default: false,
       interface: "toggle",
-      environmentVariable: "PURE_GIT_UNTRACKED_DIRTY",
+      name: "PURE_GIT_UNTRACKED_DIRTY",
     },
     {
       displayName: "Git Dirty Check Delay",
       description:
         "Time in seconds to delay git dirty checking when `git status` takes > 5 seconds.",
       type: "environmentVariable",
-      default: 1800,
+      default: "1800",
       interface: "text",
-      environmentVariable: "PURE_GIT_DELAY_DIRTY_CHECK",
+      name: "PURE_GIT_DELAY_DIRTY_CHECK",
     },
     {
       name: "show-git-stash-status",
@@ -237,7 +238,8 @@ const plugin: Fig.Plugin = {
         "Show git stash status as part of the prompt. Off by default.",
       default: false,
       interface: "toggle",
-      compile: value => value ? "zstyle :prompt:pure:git:stash show yes" : "",
+      compile: (value) =>
+        value ? "zstyle :prompt:pure:git:stash show yes" : "",
     },
     {
       name: "only-fetch-upstream",
@@ -247,7 +249,8 @@ const plugin: Fig.Plugin = {
       type: "script",
       default: false,
       interface: "toggle",
-      compile: value => value ? "zstyle :prompt:pure:git:fetch only_upstream yes" : "",
+      compile: (value) =>
+        value ? "zstyle :prompt:pure:git:fetch only_upstream yes" : "",
     },
     {
       name: "nix-shell-in-prompt",
@@ -257,14 +260,15 @@ const plugin: Fig.Plugin = {
       type: "script",
       default: true,
       interface: "toggle",
-      compile: (value) => value ? "" : "zstyle :prompt:pure:environment:nix-shell show no"
+      compile: (value) =>
+        value ? "" : "zstyle :prompt:pure:environment:nix-shell show no",
     },
     {
       displayName: "Color",
       configuration: [
         {
           name: "load-zsh-nearcolor",
-          displayName: "[Color] Load zsh/nearcolor",
+          displayName: "Load zsh/nearcolor",
           type: "script",
           description:
             "Enable use of RGB colors with hexidecimal format for Pure prompt color configuration if you are unable to use a terminal with 24-bit color support",
@@ -272,7 +276,7 @@ const plugin: Fig.Plugin = {
             "If you are unable to use a [terminal that support 24-bit colors](https://gist.github.com/XVilka/8346728), you can enable this option to load the module [`zsh/nearcolor`](http://zsh.sourceforge.net/Doc/Release/Zsh-Modules.html#The-zsh_002fnearcolor-Module). It will map any hexadecimal color to the nearest color in the 88 or 256 color palettes of your terminal, but without using the first 16 colors, since their values can be modified by the user. Keep in mind that when using this module you won't be able to display true RGB colors. It only allows you to specify colors in a more convenient way.",
           default: false,
           interface: "toggle",
-          compile: (value) => value ? "zmodload zsh/nearcolor" : "",
+          compile: (value) => (value ? "zmodload zsh/nearcolor" : ""),
         },
         ...colorComponents.map(createConfigurationOptionForColorComponent),
       ],

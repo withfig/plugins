@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💾",
   name: "antigen",
   type: "shell",
   description: "The plugin manager for zsh.",

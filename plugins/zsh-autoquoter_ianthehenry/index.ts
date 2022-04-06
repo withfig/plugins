@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🧑‍💻",
   name: "zsh-autoquoter_ianthehenry",
   type: "shell",
   description: "automatically quote arguments to commands like `git commit -m`",

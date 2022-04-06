@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😎",
   name: "zsh-change-case_mtxr",
   type: "shell",
   description:

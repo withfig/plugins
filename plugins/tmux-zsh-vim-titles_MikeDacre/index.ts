@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔥",
   name: "tmux-zsh-vim-titles_MikeDacre",
   type: "shell",
   description: "Unified terminal titles in tmux, zsh, and vim/nvim",

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💥",
   name: "zsh-systemd_le0me55i",
   type: "shell",
   description:

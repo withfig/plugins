@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "nvm-auto-use.zsh_tomsquest",
   type: "shell",
   description:

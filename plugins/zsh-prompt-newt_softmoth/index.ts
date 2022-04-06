@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "👾",
   name: "zsh-prompt-newt_softmoth",
   type: "shell",
   description:

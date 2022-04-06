@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "pumice_ryutamaki",
   type: "shell",
   description: "Light weight plugin manager for zsh",

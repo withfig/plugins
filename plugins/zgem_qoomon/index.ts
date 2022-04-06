@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "zgem_qoomon",
   type: "shell",
   description: "zsh dependency manager  🐚 💎 ",

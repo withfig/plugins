@@ -1,5 +1,7 @@
 const plugin: Fig.Plugin = {
+  icon: "🔩",
   name: "zsh-osx-autoproxy_SukkaW",
+  displayName: "Zsh OSX AutoProxy",
   type: "shell",
   description:
     "An oh-my-zsh plugin that configures proxy environment variables based on macOS's system preferences automatically",

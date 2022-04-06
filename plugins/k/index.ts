@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   ],
   github: "supercrabtree/k",
   shells: ["zsh"],
-  categories: ["Other"],
+  categories: ["Other", "Color"],
   installation: {
     origin: "github",
     sourceFiles: ["k.plugin.zsh"],

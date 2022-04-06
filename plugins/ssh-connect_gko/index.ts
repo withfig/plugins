@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💾",
   name: "ssh-connect_gko",
   type: "shell",
   description: "🐙 simple ssh manager based on bash/zsh history",

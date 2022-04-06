@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "zsh-git-sync_caarlos0-graveyard",
   type: "shell",
   description: "A zsh plugin to sync git repositories and clean them up.",

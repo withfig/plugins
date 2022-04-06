@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "zsh-clean-project_wwilsman",
   type: "shell",
   description:

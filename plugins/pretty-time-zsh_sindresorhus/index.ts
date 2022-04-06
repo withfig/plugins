@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "👾",
   name: "pretty-time-zsh_sindresorhus",
   type: "shell",
   description:

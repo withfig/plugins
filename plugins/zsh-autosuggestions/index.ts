@@ -17,14 +17,14 @@ const plugin: Fig.Plugin = {
   ],
   installation: {
     origin: "github",
-    sourceFiles: "zsh-autosuggestions.zsh",
+    sourceFiles: ["zsh-autosuggestions.zsh"],
   },
   configuration: [
     {
       displayName: "Highlight Style",
       type: "environmentVariable",
       description: "Configure the style that the suggestion is shown with.",
-      environmentVariable: "ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE",
+      name: "ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE",
       default: "fg=8",
       interface: "text",
       additionalDetails:
@@ -35,8 +35,8 @@ const plugin: Fig.Plugin = {
       type: "environmentVariable",
       description:
         "Specify how suggestions should be generated. The strategies in the array are tried successively until a suggestion is found.",
-      environmentVariable: "ZSH_AUTOSUGGEST_STRATEGY",
-      default: "history",
+      name: "ZSH_AUTOSUGGEST_STRATEGY",
+      default: ["history"],
       interface: "multiselect",
       options: ["history", "completion", "match_prev_cmd"],
       additionalDetails: `
@@ -50,7 +50,7 @@ const plugin: Fig.Plugin = {
       type: "environmentVariable",
       description:
         "Suggestions are fetched asynchronously by default in zsh versions 5.0.8 and greater.",
-      environmentVariable: "ZSH_AUTOSUGGEST_USE_ASYNC",
+      name: "ZSH_AUTOSUGGEST_USE_ASYNC",
       default: true,
       interface: "toggle",
     },
@@ -59,7 +59,7 @@ const plugin: Fig.Plugin = {
       type: "environmentVariable",
       description:
         "By default, autosuggestion will be tried for any buffer size. Recommended value is 20. This can be useful when pasting large amount of text in the terminal, to avoid triggering autosuggestion for strings that are too long.",
-      environmentVariable: "ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE",
+      name: "ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE",
       default: 20,
       interface: "text",
     },
@@ -68,7 +68,7 @@ const plugin: Fig.Plugin = {
       type: "environmentVariable",
       description:
         "A glob pattern to prevent offering suggestions for history entries that match the pattern.",
-      environmentVariable: "ZSH_AUTOSUGGEST_HISTORY_IGNORE",
+      name: "ZSH_AUTOSUGGEST_HISTORY_IGNORE",
       default: "",
       interface: "text",
       disabled: ({ config }) => {
@@ -86,7 +86,7 @@ const plugin: Fig.Plugin = {
       type: "environmentVariable",
       description:
         "A glob pattern to prevent offering completion suggestions when the buffer matches that pattern.",
-      environmentVariable: "ZSH_AUTOSUGGEST_COMPLETION_IGNORE",
+      name: "ZSH_AUTOSUGGEST_COMPLETION_IGNORE",
       default: "",
       interface: "text",
       disabled: ({ config }) => {
@@ -107,25 +107,23 @@ const plugin: Fig.Plugin = {
           displayName: "Clear Widgets",
           type: "environmentVariable",
           description: "Widgets that will clear the suggestion when invoked.",
-          environmentVariable: "ZSH_AUTOSUGGEST_CLEAR_WIDGETS",
+          name: "ZSH_AUTOSUGGEST_CLEAR_WIDGETS",
           default: [],
           interface: "multi-text",
         },
         {
           displayName: "Accept Widgets",
           type: "environmentVariable",
-          description:
-            "Widgets that will accept the suggestion when invoked.",
-          environmentVariable: "ZSH_AUTOSUGGEST_ACCEPT_WIDGETS",
+          description: "Widgets that will accept the suggestion when invoked.",
+          name: "ZSH_AUTOSUGGEST_ACCEPT_WIDGETS",
           default: [],
           interface: "multi-text",
         },
         {
           displayName: "Execute Widgets",
           type: "environmentVariable",
-          description:
-            "Widgets that will execute the suggestion when invoked.",
-          environmentVariable: "ZSH_AUTOSUGGEST_EXECUTE_WIDGETS",
+          description: "Widgets that will execute the suggestion when invoked.",
+          name: "ZSH_AUTOSUGGEST_EXECUTE_WIDGETS",
           default: [],
           interface: "multi-text",
         },
@@ -134,7 +132,7 @@ const plugin: Fig.Plugin = {
           type: "environmentVariable",
           description:
             "List of widgets that will partially accept the suggestion when invoked.",
-          environmentVariable: "ZSH_AUTOSUGGEST_PARTIAL_ACCEPT_WIDGETS",
+          name: "ZSH_AUTOSUGGEST_PARTIAL_ACCEPT_WIDGETS",
           default: [],
           interface: "multi-text",
         },
@@ -143,20 +141,19 @@ const plugin: Fig.Plugin = {
           type: "environmentVariable",
           description:
             "A comma-separated list of widgets that will not trigger any custom behavior.",
-          environmentVariable: "ZSH_AUTOSUGGEST_IGNORE_WIDGETS",
+          name: "ZSH_AUTOSUGGEST_IGNORE_WIDGETS",
           default: [],
           interface: "multi-text",
         },
-        /* TODO: This is enabled if set. add support for env variables like this */
         {
           displayName: "Disable Automatic Widget Re-binding",
           name: "ZSH_AUTOSUGGEST_MANUAL_REBIND",
-          type: "script",
-          description: "Disable automatic widget re-binding on each precmd. This can be a big boost to performance, but you'll need to handle re-binding yourself if any of the widget lists change or if you or another plugin wrap any of the autosuggest widgets. To re-bind widgets, run `_zsh_autosuggest_bind_widgets`.",
+          type: "environmentVariable",
+          description:
+            "Disable automatic widget re-binding on each precmd. This can be a big boost to performance, but you'll need to handle re-binding yourself if any of the widget lists change or if you or another plugin wrap any of the autosuggest widgets. To re-bind widgets, run `_zsh_autosuggest_bind_widgets`.",
           default: false,
           interface: "toggle",
-          compile: (value) =>
-            value ? "export ZSH_AUTOSUGGEST_MANUAL_REBIND=1" : ""
+          compile: (value) => (value ? "1" : null),
         },
       ],
       additionalDetails:

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "zsh-tmux-auto-title_mbenford",
   type: "shell",
   description:

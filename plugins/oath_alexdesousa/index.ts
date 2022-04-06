@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💾",
   name: "oath_alexdesousa",
   type: "shell",
   description: "Zsh plugin to manage one-time passwords.",

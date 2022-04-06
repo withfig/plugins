@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔥",
   name: "smart-cd_dbkaplun",
   type: "shell",
   description: "zsh plugin that runs `ls` and `git status` after chpwd",

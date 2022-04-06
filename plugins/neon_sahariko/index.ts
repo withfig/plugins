@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "☀️",
   name: "neon_sahariko",
   type: "shell",
   description: "Pretty and minimal ZSH theme",

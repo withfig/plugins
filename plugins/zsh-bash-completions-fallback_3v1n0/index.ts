@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "👾",
   name: "zsh-bash-completions-fallback_3v1n0",
   type: "shell",
   description:

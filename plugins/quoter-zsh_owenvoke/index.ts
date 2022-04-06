@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "quoter-zsh_owenvoke",
   type: "shell",
   description:

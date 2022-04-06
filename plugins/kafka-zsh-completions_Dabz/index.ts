@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔥",
   name: "kafka-zsh-completions_Dabz",
   type: "shell",
   description:

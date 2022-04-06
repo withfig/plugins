@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "seasonal-zshthemes_jottenlips",
   type: "shell",
   description:

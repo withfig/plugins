@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🌟",
   name: "auto-color-ls_gretzky",
   type: "shell",
   description: "zsh plugin to automatically list directories with colorls ",

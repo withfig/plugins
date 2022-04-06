@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💥",
   name: "zsh-saneopt_willghatch",
   type: "shell",
   description: "Sane options for zsh, in the spirit of vim-sensible.",

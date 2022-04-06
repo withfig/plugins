@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "☀️",
   name: "zsh-reentry-hook_RobSis",
   type: "shell",
   description:

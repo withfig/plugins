@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😎",
   name: "extract_thetic",
   type: "shell",
   description: "fork of the oh-my-zsh extract plugin",

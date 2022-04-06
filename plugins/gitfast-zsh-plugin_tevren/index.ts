@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💾",
   name: "gitfast-zsh-plugin_tevren",
   type: "shell",
   description:

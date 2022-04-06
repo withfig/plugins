@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🌟",
   name: "zsh-volta_cowboyd",
   type: "shell",
   description: "Zsh plugin to seamlessly install and configure volta",

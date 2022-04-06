@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔗",
   name: "theta_eendroroy",
   type: "shell",
   description: "A fast and verbose zsh prompt",

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "multi-shell-repo-prompt_dotcode",
   type: "shell",
   description:

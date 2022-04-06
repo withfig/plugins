@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "ssh_zpm-zsh",
   type: "shell",
   description: "Zsh plugin for ssh",

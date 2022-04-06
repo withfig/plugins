@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "auto-ls_desyncr",
   type: "shell",
   description: "zsh plugin for auto-ls",

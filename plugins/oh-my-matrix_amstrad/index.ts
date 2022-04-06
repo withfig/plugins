@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "oh-my-matrix_amstrad",
   type: "shell",
   description:

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🌟",
   name: "autoupdate-antigen.zshplugin_unixorn",
   type: "shell",
   description: "Add automatic updating to antigen",

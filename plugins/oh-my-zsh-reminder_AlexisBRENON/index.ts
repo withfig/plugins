@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "oh-my-zsh-reminder_AlexisBRENON",
   type: "shell",
   description:

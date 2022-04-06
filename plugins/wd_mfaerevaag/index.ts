@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "wd_mfaerevaag",
   displayName: "wd",
   screenshots: ["images/demo.gif"],

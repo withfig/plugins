@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔗",
   name: "zsh-cargo-completion_MenkeTechnologies",
   type: "shell",
   authors: [

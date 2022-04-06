@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "purity_pbnj",
   type: "shell",
   description: "Oh-My-ZSH prompt inspired by robbyrussell theme + pure prompt",

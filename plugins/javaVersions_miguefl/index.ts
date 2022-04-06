@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💥",
   name: "javaVersions_miguefl",
   type: "shell",
   description:

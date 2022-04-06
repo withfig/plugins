@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔥",
   name: "git-ignore_laggardkernel",
   type: "shell",
   description:

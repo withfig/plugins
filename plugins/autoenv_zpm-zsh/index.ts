@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔗",
   name: "autoenv_zpm-zsh",
   type: "shell",
   description: "Autoenv for zsh",
@@ -11,7 +12,7 @@ const plugin: Fig.Plugin = {
   github: "zpm-zsh/autoenv",
   license: ["GPL-3.0"],
   shells: ["zsh"],
-  categories: ["Other"],
+  categories: ["Productivity Hack"],
   keywords: [
     "zsh",
     "plugin",

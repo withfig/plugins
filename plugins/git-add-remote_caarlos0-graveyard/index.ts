@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔗",
   name: "git-add-remote_caarlos0-graveyard",
   type: "shell",
   description: "ZSH plugin to easily add the upstream remote to your git fork.",

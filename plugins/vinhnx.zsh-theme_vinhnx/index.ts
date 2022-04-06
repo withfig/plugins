@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💥",
   name: "vinhnx.zsh-theme_vinhnx",
   type: "shell",
   description:

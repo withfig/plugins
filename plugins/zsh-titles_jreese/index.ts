@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "zsh-titles_jreese",
   type: "shell",
   description: "Terminal/tmux titles based on current location and task",

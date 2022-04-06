@@ -222,7 +222,7 @@ const plugin: Fig.Plugin = {
     	{
     		// How should this appear in ~/.zshrc?
     		type: "environmentVariable",
-    		environmentVariable: "ZSH_THEME",
+    		name: "ZSH_THEME",
 
 				// How should this appear for the end user?
     		displayName: "Theme"

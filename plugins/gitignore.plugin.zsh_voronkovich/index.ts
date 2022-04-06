@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "☀️",
   name: "gitignore.plugin.zsh_voronkovich",
   type: "shell",
   description: "ZSH plugin for creating .gitignore files.",
