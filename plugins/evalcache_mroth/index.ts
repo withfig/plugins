@@ -1,9 +1,10 @@
 const plugin: Fig.Plugin = {
   icon: "😀",
   name: "evalcache_mroth",
+  displayName: "Eval Cache for zsh",
   type: "shell",
   description:
-    ":hatching_chick: zsh plugin to cache eval loads to improve shell startup time",
+    "🐣 zsh plugin to cache eval loads to improve shell startup time",
   authors: [
     {
       name: "mroth",
