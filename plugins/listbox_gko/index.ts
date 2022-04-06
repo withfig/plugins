@@ -1,8 +1,10 @@
 const plugin: Fig.Plugin = {
-  icon: "☀️",
+  icon: "💬",
   name: "listbox_gko",
+  displayName: "Listbox",
+  screenshots: ["https://github.com/gko/listbox/raw/master/demo.gif"],
   type: "shell",
-  description: "💬 listbox element for bash",
+  description: "Listbox element for bash and zsh",
   authors: [
     {
       name: "gko",
@@ -12,8 +14,8 @@ const plugin: Fig.Plugin = {
   ],
   github: "gko/listbox",
   license: ["MIT"],
-  shells: ["zsh"],
-  categories: ["Other"],
+  shells: ["zsh", "bash"],
+  categories: ["Convenience Function"],
   keywords: [
     "listbox",
     "listbox-element",
@@ -25,7 +27,7 @@ const plugin: Fig.Plugin = {
   ],
   installation: {
     origin: "github",
-    sourceFiles: ["listbox.plugin.zsh"],
+    sourceFiles: ["listbox.zsh"],
   },
 };
 

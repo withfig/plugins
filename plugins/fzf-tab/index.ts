@@ -21,6 +21,7 @@ const plugin: Fig.Plugin = {
   configuration: [
     {
       displayName: "Command",
+      description: "The command to run fzf with",
       name: "fzf-command",
       type: "script",
       interface: "text",
@@ -29,6 +30,7 @@ const plugin: Fig.Plugin = {
     },
     {
       displayName: "Padding",
+      description: "The number of spaces to pad the completion menu",
       name: "fzf-pad",
       type: "script",
       interface: "text",

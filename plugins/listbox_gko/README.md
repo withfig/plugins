@@ -1,50 +1,3 @@
-# Listbox
-
-💬 listbox element for bash
-
-![demo](https://github.com/gko/listbox/raw/master/demo.gif)
-
-Simple bash listbox to choose from options
-
-## Installation
-
-### Manually
-
-```bash
-git clone https://github.com/gko/listbox
-```
-
-then in .bashrc or .zshrc:
-
-```bash
-source ./listbox/listbox.sh
-```
-
-### With [antigen](https://github.com/zsh-users/antigen)
-
-In your .zshrc
-
-```sh
-antigen bundle gko/listbox
-```
-
-### With [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-
-```sh
-git clone https://github.com/gko/listbox.git ~/.oh-my-zsh/custom/plugins/listbox
-
-```
-
-then in your .zshrc
-
-```bash
-plugins=(
-  ...
-  listbox
-  ...
-)
-```
-
 ## Usage
 
 ```bash
@@ -116,13 +69,8 @@ output:
 user chose: option 2
 ```
 
-## Like it?
-
-:star: this repo
-
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
 
 Copyright (c) 2012-2016 Konstantin Gorodinskiy
-

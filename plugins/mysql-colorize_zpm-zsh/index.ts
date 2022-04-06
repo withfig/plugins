@@ -1,8 +1,12 @@
 const plugin: Fig.Plugin = {
-  icon: "🔥",
+  icon: "🖍",
   name: "mysql-colorize_zpm-zsh",
-  type: "shell",
+  displayName: "mysql-colorize",
   description: "Adds color for mysql tables",
+  type: "shell",
+  screenshots: [
+    "https://raw.githubusercontent.com/horosgrisa/mysql-colorize/master/screenshot.png",
+  ],
   authors: [
     {
       name: "zpm-zsh",
@@ -12,7 +16,7 @@ const plugin: Fig.Plugin = {
   github: "zpm-zsh/mysql-colorize",
   license: ["GPL-3.0"],
   shells: ["bash", "zsh"],
-  categories: ["Other"],
+  categories: ["Color"],
   keywords: ["mysql-colorize", "zsh", "mysql", "mysql-client"],
   installation: {
     origin: "github",

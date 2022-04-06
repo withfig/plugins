@@ -12,6 +12,8 @@ declare namespace Fig {
     plugin: PluginContext;
     /** The shell the plugin is being compiled for */
     shell: Shell;
+    /** The operating system the plugin is being compiled for */
+    os: Os;
   }
 
   /** 
@@ -62,7 +64,7 @@ declare namespace Fig {
     /** The origin of the plugin */
     origin: PluginOrigin;
     /** Specify any dependencies the plugin has */
-    dependencies?: Dependency[];
+    dependencies?: InstallationScript<Dependency[]>;
   };
 
   /** Current value of a field in a plugin configuration. */
@@ -221,6 +223,7 @@ declare namespace Fig {
 
   type PluginType = "shell";
   type Shell = "zsh" | "bash" | "fish";
+  type Os = "linux" | "macos" | "windows" | "unknown";
 
   type Author =
     | string
