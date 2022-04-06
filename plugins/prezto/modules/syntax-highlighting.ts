@@ -1,9 +1,4 @@
-import {
-  ModuleConfiguration,
-  compileZstyle,
-  compileZstyleBool,
-  setZstyle,
-} from "../utils";
+import { ModuleConfiguration, setZstyle } from "../utils";
 
 const syntaxHighlighting: ModuleConfiguration = {
   name: "syntax-highlighting",
@@ -29,7 +24,7 @@ const syntaxHighlighting: ModuleConfiguration = {
         setZstyle(
           ":prezto:module:syntax-highlighting",
           "highlighters",
-          value.map((value) => `'${value}'`).join(" ")
+          value.map((item) => `'${item}'`).join(" ")
         ),
     },
   ],

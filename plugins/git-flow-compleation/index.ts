@@ -1,8 +1,8 @@
 const plugin: Fig.Plugin = {
   icon: "🌟",
   name: "git-flow-completion",
-  type: "shell",
   description: "Bash, Zsh and fish completion support for git-flow.",
+  type: "shell",
   authors: [
     {
       name: "bobthecow",
@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   ],
   github: "bobthecow/git-flow-completion",
   license: ["MIT"],
-  shells: ["bash", "zsh"],
+  shells: ["bash", "zsh", "fish"],
   categories: ["Completion"],
   installation: {
     origin: "github",
@@ -20,6 +20,9 @@ const plugin: Fig.Plugin = {
     },
     zsh: {
       sourceFiles: ["git-flow-completion.plugin.zsh"],
+    },
+    fish: {
+      sourceFiles: ["git.fish"],
     },
   },
 };

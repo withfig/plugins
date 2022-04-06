@@ -29,37 +29,6 @@ Currently it shows:
 
 **Into iterm2:** Go into `View -> Customize Tool Bar...` and drag & drop the `Fn` module
 
-### Installing plugin
-
-#### For oh-my-zsh users
-
-Clone the repo in your plugins directory:
-
-* `$ cd ${ZSH_CUSTOM1:-$ZSH/custom}/plugins`
-* `$ git clone https://github.com/iam4x/zsh-iterm-touchbar.git`
-
-Then add the plugin into your `~/.zshrc`:
-
-```
-plugins=(... zsh-iterm-touchbar)
-```
-
-#### For antigen users
-
-Add the following snippet `~/.zshrc` after the line antigen use oh-my-zsh:
-
-```
-antigen theme https://github.com/iam4x/zsh-iterm-touchbar
-```
-
-#### For Zgen users
-
-Add the following line to your `~/.zshrc` where you're adding your other zsh plugins:
-
-```
-zgen load iam4x/zsh-iterm-touchbar
-```
-
 ### Customize
 
 ENV variables to enable or disable git:
@@ -88,4 +57,3 @@ YARN_ENABLED=true
 
 * [Original iTerm2 issue for TouchBar support](https://gitlab.com/gnachman/iterm2/issues/5281)
 * [Thank's to spaceship-zsh-theme for git functions](https://github.com/denysdovhan/spaceship-zsh-theme/blob/9dbaee2cc6cfe0ac407cf901ebb97894ed279660/spaceship.zsh#L143-L173)
-

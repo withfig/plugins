@@ -185,7 +185,6 @@ const plugin: Fig.Plugin = {
       name: "Add space after...",
       description: " Add a space after these completions",
       type: "script",
-
       interface: "multiselect",
       options: [
         "executables",
@@ -195,7 +194,14 @@ const plugin: Fig.Plugin = {
         "reserved-words",
         "commands",
       ],
-      default: "executables aliases functions builtins reserved-words commands",
+      default: [
+        "executables",
+        "aliases",
+        "functions",
+        "builtins",
+        "reserved-words",
+        "commands",
+      ],
       compile: (value) =>
         `zstyle ':autocomplete:*' add-space ${value.join(" ")}`,
     },

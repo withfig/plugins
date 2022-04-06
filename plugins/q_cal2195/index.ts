@@ -1,8 +1,10 @@
 const plugin: Fig.Plugin = {
   icon: "😎",
   name: "q_cal2195",
+  displayName: "Q",
   type: "shell",
-  description: "q - vim like macro registers for your bash and zsh shell!",
+  description:
+    "q implements vim like macro registers in your bash and zsh shell!",
   authors: [
     {
       name: "cal2195",
@@ -12,7 +14,7 @@ const plugin: Fig.Plugin = {
   github: "cal2195/q",
   license: ["MIT"],
   shells: ["bash", "zsh"],
-  categories: ["Other"],
+  categories: ["Convenience Function"],
   keywords: [
     "zsh",
     "vim",

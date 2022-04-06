@@ -10,15 +10,12 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
 
-- [About](#about)
-- [License](#license)
-- [Included scripts](#included-scripts)
-- [Other Useful macOS tools](#other-useful-macos-tools)
-- [Installation](#installation)
-  - [Bash / not using a framework](#bash--not-using-a-framework)
-  - [Antigen](#antigen)
-  - [Oh-My-Zsh](#oh-my-zsh)
-  - [Zgenom](#zgenom)
+- [Tumult](#tumult)
+  - [Table of Contents](#table-of-contents)
+  - [About](#about)
+  - [License](#license)
+  - [Included scripts](#included-scripts)
+  - [Other Useful macOS tools](#other-useful-macos-tools)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -148,28 +145,3 @@ The Tumult collection is Apache 2.0 licensed. Some scripts in the `bin` director
 - [desktoppr](https://github.com/scriptingosx/desktoppr) - A command-line tool which can read and set the desktop picture.
 - [Platypus](https://github.com/sveinbjornt/Platypus) - Allows you to wrap a script inside a Mac GUI wrapper.
 - [sekey](https://github.com/ntrippar/sekey) - Allows you to use Touch ID / Secure Enclave for SSH Authentication.
-
-## Installation
-
-Tumult is packaged as a ZSH plugin to make it easier to use if you're already using a ZSH framework. If you don't already use a framework, I recommend [Zgenom](https://github.com/jandamm/zgenom), because it is wicked fast and also supports using [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)'s internal plugins.
-
-### Bash / not using a framework
-
-If you're using `bash`, or aren't using a framework, you can install it by cloning this repository and adding its bin directory to your `$PATH`.
-
-### [Antigen](https://github.com/zsh-users/antigen)
-
-Add `antigen bundle unixorn/tumult.plugin.zsh` to your `.zshrc` with your other bundle commands.
-
-Antigen will handle cloning the plugin for you automatically the next time you start `zsh`. You can also add the plugin to a running ZSH with `antigen bundle unixorn/tumult.plugin.zsh` for testing before adding it to your `.zshrc`.
-
-### [Oh-My-Zsh](http://ohmyz.sh/)
-
-1. `cd ~/.oh-my-zsh/custom/plugins`
-2. `git clone git@github.com:unixorn/tumult.plugin.zsh.git tumult`
-3. Add tumult to your plugin list - edit `~.zshrc` and change `plugins=(...)` to `plugins=(... tumult)`
-
-### [Zgenom](https://github.com/jandamm/zgenom)
-
-Add `zgenom load unixorn/tumult.plugin.zsh` to your `.zshrc` file in the same function you're doing your other `zgenom load` calls in. Zgenom will handle automatically cloning the plugin for you the next time you do a `zgenom save`.
-

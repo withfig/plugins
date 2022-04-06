@@ -3,7 +3,8 @@ const plugin: Fig.Plugin = {
   name: "zsh-poetry_darvid",
   type: "shell",
   description:
-    "🐚 Simple ZSH plugin for automatically activating and deactivating Poetry-created virtualenvs. 🐍",
+    "🐚 Simple ZSH plugin for automatically activating and deactivating " +
+    "Poetry-created virtualenvs. 🐍",
   authors: [
     {
       name: "darvid",

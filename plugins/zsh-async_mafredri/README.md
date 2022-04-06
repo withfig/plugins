@@ -1,13 +1,3 @@
-# zsh-async
-
-![Test](https://github.com/mafredri/zsh-async/workflows/Test/badge.svg)
-
-```
-Because your terminal should be able to perform tasks asynchronously without external tools!
-```
-
-## Intro (TL;DR)
-
 With `zsh-async` you can run multiple asynchronous jobs, enforce unique jobs (multiple instances of the same job will not run), flush all currently running jobs and create multiple workers (each with their own jobs). For each worker you can register a callback-function through which you will be notified about the job results (job name, return code, output and execution time).
 
 ## Overview
@@ -21,20 +11,6 @@ This library bridges the gap between spawning child processes and disowning them
 The async worker is a separate environment (think web worker). You send it a job (command + parameters) to execute and it returns the result of that execution through a callback function. If you find that you need to stop/start a worker to update global state (variables) you should consider refactoring so that state is passed during the `async_job` call (e.g. `async_job my_worker my_function $state1 $state2`).
 
 Note that because the worker is a separate forked environment, any functions you want to use as jobs in the worker need to be defined before the worker is started, otherwise you will get a `command not found` error when you try to launch the job.
-
-### Installation
-
-#### Manual
-
-You can either source the `async.zsh` script directly or insert under your `$fpath` as async and autoload it through `autoload -Uz async && async`.
-
-#### Integration
-
-##### zplug
-
-```
-zplug "mafredri/zsh-async", from:"github", use:"async.zsh"
-```
 
 ### Functions
 
@@ -105,79 +81,3 @@ Unregister the callback for a specific worker.
 #### `async_flush_jobs <worker_name>`
 
 Flush all current jobs running on a worker. This will terminate any and all running processes under the worker by sending a `SIGTERM` to the entire process group, use with caution.
-
-## Example code
-
-```zsh
-#!/usr/bin/env zsh
-source ./async.zsh
-async_init
-
-# Initialize a new worker (with notify option)
-async_start_worker my_worker -n
-
-# Create a callback function to process results
-COMPLETED=0
-completed_callback() {
-	COMPLETED=$(( COMPLETED + 1 ))
-	print $@
-}
-
-# Register callback function for the workers completed jobs
-async_register_callback my_worker completed_callback
-
-# Give the worker some tasks to perform
-async_job my_worker print hello
-async_job my_worker sleep 0.3
-
-# Wait for the two tasks to be completed
-while (( COMPLETED < 2 )); do
-	print "Waiting..."
-	sleep 0.1
-done
-
-print "Completed $COMPLETED tasks!"
-
-# Output:
-#	Waiting...
-#	print 0 hello 0.001583099365234375
-#	Waiting...
-#	Waiting...
-#	sleep 0 0.30631208419799805
-#	Completed 2 tasks!
-```
-
-## Testing
-
-Tests are located in `*_test.zsh` and can be run by executing the test runner: `./test.zsh`.
-
-Example:
-
-```console
-$ ./test.zsh
-ok	./async_test.zsh	2.334s
-```
-
-The test suite can also run specific tasks that match a pattern, for example:
-
-```console
-$ ./test.zsh -v -run zle
-=== RUN   test_zle_watcher
---- PASS: test_zle_watcher (0.07s)
-PASS
-ok	./async_test.zsh	0.070s
-```
-
-## Limitations
-
-* A NULL-character (`$'\0'`) is used by `async_job` to signify the end of the command, it is recommended not to pass them as arguments, although they should work when passing multiple arguments to `async_job` (because of quoting).
-* Tell me? :)
-
-## Tips
-
-If you do not wish to use the `notify` feature, you can couple `zsh-async` with `zsh/sched` or the zsh `periodic` function for scheduling the worker results to be processed.
-
-## Why did I make this?
-
-I found a great theme for zsh, [Pure](https://github.com/sindresorhus/pure) by Sindre Sorhus. After using it for a while I noticed some graphical glitches due to the terminal being updated by a disowned process. Thus, I became inspired to get my hands dirty and find a solution. I tried many things, coprocesses (seemed too limited by themselves), different combinations of trapping kill-signals, etc. I also had problems with the zsh process ending up in a deadlock due to some zsh bug. After working out the kinks, I ended up with this and thought, hey, why not make it a library.
-

@@ -1,45 +1,3 @@
-# q - registers for your bash and zsh shell
-**q** implements vim like macro registers in your bash and zsh shell!
-
-[![asciicast](https://asciinema.org/a/aIMmhJ2ayudv65d7eDWJZtSmi.png)](https://asciinema.org/a/aIMmhJ2ayudv65d7eDWJZtSmi)
-
-*Dynamic Terminal Aliases and Bookmarks On The Go!*
-
-## Maintainers
-
-:small_orange_diamond: [Cal Martin](https://github.com/cal2195) - Initial implemenation
-
-:small_orange_diamond: [Oisin Johnston](https://github.com/DaJuice) - Reconfigurable <kbd>key</kbd> bindings :)
-
-## Installation
-
-### Bash
-
-#### Manual
-
-Download `q.sh` to somewhere, and place this line in your `.bashrc`:
-```
-source /path/to/q.sh
-```
-
-### ZSH
-
-#### Antigen
-
-Simply place this line in your `.antigenrc`:
-```
-antigen bundle cal2195/q
-```
-
-**NB:** if you use `zsh-users/zsh-syntax-highlighting`, make sure you place `antigen bundle cal2195/q` below it! :)
-
-#### Manual
-
-Download `q.plugin.zsh` to somewhere and place this line in your `.zshrc`:
-```
-source /path/to/q.plugin.zsh
-```
-
 ## Usage
 
 **q** commands start with the prefix <kbd>Q</kbd> for setting registers, <kbd>q</kbd> for executing registers, and <kbd>U</kbd> for unsetting registers.
@@ -170,4 +128,10 @@ Registers:
  g: cd /home/cal/data/git
  x: cd /home/cal/data/college/fyp/experiments
 ```
+
+## Maintainers
+
+🔸 [Cal Martin](https://github.com/cal2195) - Initial implemenation
+
+🔸 [Oisin Johnston](https://github.com/DaJuice) - Reconfigurable <kbd>key</kbd> bindings :)
 

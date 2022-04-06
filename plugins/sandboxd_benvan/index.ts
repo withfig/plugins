@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🌟",
   name: "sandboxd_benvan",
+  displayName: "sandboxd",
   type: "shell",
   description:
     "speeds up your bashrc by running (slow) setup commands on the fly",

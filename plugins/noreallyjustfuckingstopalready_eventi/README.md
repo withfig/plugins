@@ -1,35 +1,5 @@
 Please OS X (or whatever your name is) just fucking reset your DNS cache please
 
-Installation:
-=====
-From source:
------
-    git clone https://github.com/eventi/noreallyjustfuckingstopalready.git
-    cd noreallyjustfuckingstopalready
-    install -b flu.sh ${PREFIX:-/usr/local}/bin/flu.sh
-    sudo flu.sh
-
-With https://github.com/bpkg/bpkg do:
-
-`bpkg install -g eventi/noreallyjustfuckingstopalready`
-
-Antigen
------
-Add `antigen bundle eventi/noreallyjustfuckingstopalready` to your `.zshrc` with your other bundle commands.
-
-Antigen will handle cloning the plugin for you automatically the next time you start zsh. You can also add the plugin to a running zsh with `antigen bundle eventi/noreallyjustfuckingstopalready` for testing before adding it to your `.zshrc`.
-
-Oh-My-Zsh
------
-    cd ~/.oh-my-zsh/custom/plugins
-    git clone git@github.com:eventi/noreallyjustfuckingstopalready.git
-
-Then add the repo to your plugin list
-
-Zgen
------
-Add `zgen load eventi/noreallyjustfuckingstopalready` to your .zshrc file in the same function you're doing your other `zgen load` calls in. zgen will take care of cloning the repository and adding it to your `$PATH`.
-
 F.A.Q
 =====
 **Q) What? Why?**
@@ -48,4 +18,3 @@ Contributors:
 * https://github.com/jwerle
 * https://github.com/unixorn
 * https://github.com/kenahoo
-

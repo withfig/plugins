@@ -29,7 +29,6 @@ const plugin: Fig.Plugin = {
   configuration: [
     {
       name: "KUBE_PS1_BINARY",
-      environmentVariable: "KUBE_PS1_BINARY",
       default: "kubectl",
       description: "Default Kubernetes binary",
       type: "environmentVariable",
@@ -37,7 +36,6 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "KUBE_PS1_NS_ENABLE",
-      environmentVariable: "KUBE_PS1_NS_ENABLE",
       default: true,
       description:
         "Display the namespace. If set to false, this will also disable KUBE_PS1_DIVIDER",
@@ -46,7 +44,6 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "KUBE_PS1_PREFIX",
-      environmentVariable: "KUBE_PS1_PREFIX",
       default: "(",
       description: "Prompt opening character",
       type: "environmentVariable",
@@ -54,7 +51,6 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "KUBE_PS1_SYMBOL_ENABLE",
-      environmentVariable: "KUBE_PS1_SYMBOL_ENABLE",
       default: true,
       description:
         "Display the prompt Symbol. If set to false, this will also disable KUBE_PS1_SEPARATOR",
@@ -63,7 +59,6 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "KUBE_PS1_SYMBOL_PADDING",
-      environmentVariable: "KUBE_PS1_SYMBOL_PADDING",
       default: true,
       description:
         "Adds a space (padding) after the symbol to prevent clobbering prompt characters",
@@ -72,7 +67,6 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "KUBE_PS1_SYMBOL_DEFAULT",
-      environmentVariable: "KUBE_PS1_SYMBOL_DEFAULT",
       default: "⎈",
       description: "Default prompt symbol. Unicode \u2388",
       type: "environmentVariable",
@@ -80,7 +74,6 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "KUBE_PS1_SYMBOL_USE_IMG",
-      environmentVariable: "KUBE_PS1_SYMBOL_USE_IMG",
       default: false,
       description: "☸️ , Unicode \u2638 as the prompt symbol",
       type: "environmentVariable",
@@ -88,7 +81,6 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "KUBE_PS1_SEPARATOR",
-      environmentVariable: "KUBE_PS1_SEPARATOR",
       default: "|",
       description: "Separator between symbol and context name",
       type: "environmentVariable",
@@ -96,7 +88,6 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "KUBE_PS1_DIVIDER",
-      environmentVariable: "KUBE_PS1_DIVIDER",
       default: ":",
       description: "Separator between context and namespace",
       type: "environmentVariable",
@@ -104,23 +95,21 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "KUBE_PS1_SUFFIX",
-      environmentVariable: "KUBE_PS1_SUFFIX",
       default: ")",
       description: "Prompt closing character",
       type: "environmentVariable",
       interface: "text",
     },
-    // { name: "KUBE_PS1_CLUSTER_FUNCTION", environmentVariable: "KUBE_PS1_CLUSTER_FUNCTION", default:	"", description: "Function to customize how cluster is displayed", type: "function", interface: "text"},
-    // { name: "KUBE_PS1_NAMESPACE_FUNCTION", environmentVariable: "KUBE_PS1_NAMESPACE_FUNCTION", default:	"", description: "Function to customize how namespace is displayed", type: "environmentVariable", interface: "text"},
+    // { name: "KUBE_PS1_CLUSTER_FUNCTION", name: "KUBE_PS1_CLUSTER_FUNCTION", default:	"", description: "Function to customize how cluster is displayed", type: "function", interface: "text"},
+    // { name: "KUBE_PS1_NAMESPACE_FUNCTION", name: "KUBE_PS1_NAMESPACE_FUNCTION", default:	"", description: "Function to customize how namespace is displayed", type: "environmentVariable", interface: "text"},
     {
       displayName: "Colors",
       description:
         "Colors must be black, red, green, yellow, blue, magenta, cyan or a number between 0 and 256. Set the variable to an empty string if you do not want color for each prompt section",
       configuration: [
-        // { name: "KUBE_PS1_PREFIX_COLOR", environmentVariable: "KUBE_PS1_PREFIX_COLOR", default:	null, description: "Set default color of the prompt prefix", type: "environmentVariable", interface: "text"},
+        // { name: "KUBE_PS1_PREFIX_COLOR", name: "KUBE_PS1_PREFIX_COLOR", default:	null, description: "Set default color of the prompt prefix", type: "environmentVariable", interface: "text"},
         {
           name: "KUBE_PS1_SYMBOL_COLOR",
-          environmentVariable: "KUBE_PS1_SYMBOL_COLOR",
           default: "blue",
           description: "Set default color of the Kubernetes symbol",
           type: "environmentVariable",
@@ -128,22 +117,20 @@ const plugin: Fig.Plugin = {
         },
         {
           name: "KUBE_PS1_CTX_COLOR",
-          environmentVariable: "KUBE_PS1_CTX_COLOR",
           default: "red",
           description: "Set default color of the context",
           type: "environmentVariable",
           interface: "text",
         },
-        // { name: "KUBE_PS1_SUFFIX_COLOR", environmentVariable: "KUBE_PS1_SUFFIX_COLOR", default:	null, description: "Set default color of the prompt suffix", type: "environmentVariable", interface: "text"},
+        // { name: "KUBE_PS1_SUFFIX_COLOR", name: "KUBE_PS1_SUFFIX_COLOR", default:	null, description: "Set default color of the prompt suffix", type: "environmentVariable", interface: "text"},
         {
           name: "KUBE_PS1_NS_COLOR",
-          environmentVariable: "KUBE_PS1_NS_COLOR",
           default: "cyan",
           description: "Set default color of the namespace",
           type: "environmentVariable",
           interface: "text",
         },
-        // { name: "KUBE_PS1_BG_COLOR", environmentVariable: "KUBE_PS1_BG_COLOR", default:	null, description: "Set default color of the prompt background", type: "environmentVariable", interface: "text"},
+        // { name: "KUBE_PS1_BG_COLOR", name: "KUBE_PS1_BG_COLOR", default:	null, description: "Set default color of the prompt background", type: "environmentVariable", interface: "text"},
       ],
     },
     {
