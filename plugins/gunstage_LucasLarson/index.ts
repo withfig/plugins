@@ -1,9 +1,9 @@
 const plugin: Fig.Plugin = {
-  icon: "😎",
+  icon: "🔫",
   name: "gunstage_LucasLarson",
+  displayName: "gunstage",
   type: "shell",
-  description:
-    "🔫  `git unstage` as a service: a Git plugin for the shell that automagically remembers all the different commands there are to remove files from staging and when to use each",
+  description: "`git unstage` as a service",
   authors: [
     {
       name: "LucasLarson",
