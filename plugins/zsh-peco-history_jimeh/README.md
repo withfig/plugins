@@ -1,5 +1,3 @@
-# zsh-peco-history
-
 Search shell history with [peco](https://github.com/peco/peco) when pressing
 ctrl+r.
 
@@ -22,61 +20,6 @@ snippet from [percol](https://github.com/mooz/percol).
 - `tac`, or `tail` with support for `-r` option.
 - `perl`, `awk`, or `uniq` if de-duplication is turned on.
 
-## Installation
-
-### Manual
-
-1. Clone this repo to your machine. This guide uses `~/.zsh/zsh-peco-history`:
-
-    ```sh
-    git clone https://github.com/jimeh/zsh-peco-history.git ~/.zsh/zsh-peco-history
-    ```
-
-2. Add the following to the end of your `.zshrc`:
-
-    ```sh
-    source ~/.zsh/zsh-peco-history/zsh-peco-history.zsh
-    ```
-
-3. Start a new terminal session.
-
-### [Zplug](https://github.com/b4b4r07/zplug)
-
-1. Add a zplug definition for zsh-peco-history to your `.zshrc`:
-
-    ```sh
-    zplug "jimeh/zsh-peco-history", defer:2
-    ```
-
-2. Start a new terminal session.
-
-### [Antigen](https://github.com/zsh-users/antigen)
-
-1. Add a antigen bundle definition for zsh-peco-history to the end of the
-   antigen setup in your `.zshrc`:
-
-    ```sh
-    antigen bundle jimeh/zsh-peco-history
-    ```
-
-2. Start a new terminal session.
-
-### [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
-
-1. Clone this repository into `$ZSH_CUSTOM/plugins` (by default
-   `~/.oh-my-zsh/custom/plugins`)
-
-    ```sh
-    git clone https://github.com/jimeh/zsh-peco-history.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-peco-history
-    ```
-
-2. Add the plugin to the list of plugins for Oh My Zsh to load:
-
-    ```sh
-    plugins=(zsh-peco-history)
-    ```
-
-3. Start a new terminal session.
 
 ## Configuration Options
 
