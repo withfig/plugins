@@ -13,7 +13,7 @@ const plugin: Fig.Plugin = {
   github: "changyuheng/zsh-interactive-cd",
   license: ["MPL-2.0"],
   shells: ["zsh"],
-  categories: ["Other"],
+  categories: ["Completion"],
   keywords: ["fzf", "cd", "interactive"],
   installation: {
     origin: "github",
