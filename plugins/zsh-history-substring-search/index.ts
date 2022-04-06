@@ -29,7 +29,7 @@ const plugin: Fig.Plugin = {
       compile: (value: string) => value,
     },
     {
-      name: "Found Hightlight Style",
+      displayName: "Found Hightlight Style",
       additionalDetails:
         "A global variable that defines how the query should be highlighted " +
         "inside a matching command. Its default value causes this script to " +
@@ -37,12 +37,12 @@ const plugin: Fig.Plugin = {
         '"Character Highlighting" section in the `zshzle(1)` man page to ' +
         "learn about the kinds of values you may assign to this variable.",
       type: "environmentVariable",
-      environmentVariable: "HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND",
+      name: "HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND",
       interface: "text",
       default: "",
     },
     {
-      name: "Not Found Hightlight Style",
+      displayName: "Not Found Hightlight Style",
       additionalDetails:
         "a global variable that defines how the query should be highlighted " +
         "when no commands in the history match it. Its default value causes " +
@@ -51,24 +51,24 @@ const plugin: Fig.Plugin = {
         "`zshzle(1)` man page to learn about the kinds of values you may " +
         "assign to this variable.",
       type: "environmentVariable",
-      environmentVariable: "HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND",
+      name: "HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND",
       interface: "text",
       default: "",
     },
     {
-      name: "Fuzzy Search",
+      displayName: "Fuzzy Search",
       additionalDetails:
         "A global variable that defines how the command history will be " +
         "searched for your query. If true, causes this script to perform a " +
         "fuzzy search by words, matching in given order e.g. `ab c` will " +
         "match `*ab*c*`.",
       type: "environmentVariable",
-      environmentVariable: "HISTORY_SUBSTRING_SEARCH_FUZZY",
+      name: "HISTORY_SUBSTRING_SEARCH_FUZZY",
       interface: "toggle",
       default: false,
     },
     {
-      name: "Search Prefixed",
+      displayName: "Search Prefixed",
       additionalDetails:
         "A global variable that defines how the command history will be " +
         "searched for your query. If true, your query will " +
@@ -76,18 +76,18 @@ const plugin: Fig.Plugin = {
         "this variable is empty, `ls` will match `ls -l` and `echo ls;` if " +
         "it is non-empty, `ls` will only match `ls -l`.",
       type: "environmentVariable",
-      environmentVariable: "HISTORY_SUBSTRING_SEARCH_PREFIXED",
+      name: "HISTORY_SUBSTRING_SEARCH_PREFIXED",
       interface: "toggle",
       default: false,
     },
     {
-      name: "Ensure Unique",
+      displayName: "Ensure Unique",
       additionalDetails:
         "A global variable that defines whether all search results returned " +
         "are unique. If true, then only unique search results are presented. " +
         "This behaviour is off by default.",
       type: "environmentVariable",
-      environmentVariable: "HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE",
+      name: "HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE",
       interface: "toggle",
       default: false,
     },

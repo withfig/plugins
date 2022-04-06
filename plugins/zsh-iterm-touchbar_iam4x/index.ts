@@ -22,10 +22,10 @@ const plugin: Fig.Plugin = {
   },
   configuration: [
     {
-      name: "Enable Git",
+      displayName: "Enable Git",
       description: "Enable Git status in the Touchbar",
       type: "environmentVariable",
-      environmentVariable: "TOUCHBAR_GIT_ENABLED",
+      name: "TOUCHBAR_GIT_ENABLED",
       interface: "toggle",
       default: true,
       compile: (value) => (value ? "true" : "false"),

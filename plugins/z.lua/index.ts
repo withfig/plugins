@@ -44,7 +44,6 @@ const plugin: Fig.Plugin = {
   configuration: [
     {
       name: "_ZL_CMD",
-      environmentVariable: "_ZL_CMD",
       description: "Change the command",
       type: "environmentVariable",
       interface: "text",
@@ -52,7 +51,6 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "_ZL_DATA",
-      environmentVariable: "_ZL_DATA",
       description: "Change the datafile (default ~/.zlua).",
       type: "environmentVariable",
       interface: "text",
@@ -60,7 +58,6 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "_ZL_NO_PROMPT_COMMAND",
-      environmentVariable: "_ZL_NO_PROMPT_COMMAND",
       description: "if you're handling PROMPT_COMMAND yourself.",
       type: "environmentVariable",
       interface: "toggle",
@@ -68,7 +65,6 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "_ZL_EXCLUDE_DIRS",
-      environmentVariable: "_ZL_EXCLUDE_DIRS",
       description: "to a comma separated list of dirs to exclude.",
       type: "environmentVariable",
       interface: "text",
@@ -76,7 +72,6 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "_ZL_ADD_ONCE",
-      environmentVariable: "_ZL_ADD_ONCE",
       description: "to '1' to update database only if `$PWD` changed.",
       type: "environmentVariable",
       interface: "toggle",
@@ -84,7 +79,6 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "_ZL_MAXAGE",
-      environmentVariable: "_ZL_MAXAGE",
       description: "to define a aging threshold (default is 5000).",
       type: "environmentVariable",
       interface: "text",
@@ -92,7 +86,6 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "_ZL_CD",
-      environmentVariable: "_ZL_CD",
       description:
         "to specify your own cd command (default is `builtin cd` in Unix shells).",
       type: "environmentVariable",
@@ -101,7 +94,6 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "_ZL_ECHO",
-      environmentVariable: "_ZL_ECHO",
       description: "to 1 to display new directory name after cd.",
       type: "environmentVariable",
       interface: "toggle",
@@ -109,7 +101,6 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "_ZL_MATCH_MODE",
-      environmentVariable: "_ZL_MATCH_MODE",
       description: "to 1 to enable enhanced matching.",
       type: "environmentVariable",
       interface: "toggle",
@@ -117,7 +108,6 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "_ZL_NO_CHECK",
-      environmentVariable: "_ZL_NO_CHECK",
       description: "to 1 to disable path validation, use `z --purge` to clean",
       type: "environmentVariable",
       interface: "toggle",
@@ -125,7 +115,6 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "_ZL_HYPHEN",
-      environmentVariable: "_ZL_HYPHEN",
       description:
         "to 1 to treat hyphon (-) as a normal character not a lua regexp keyword.",
       type: "environmentVariable",
@@ -134,7 +123,6 @@ const plugin: Fig.Plugin = {
     },
     {
       name: "_ZL_CLINK_PROMPT_PRIORITY",
-      environmentVariable: "_ZL_CLINK_PROMPT_PRIORITY",
       description: "change clink prompt register priority (default 99).",
       type: "environmentVariable",
       interface: "text",

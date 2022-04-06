@@ -28,7 +28,7 @@ const plugin: Fig.Plugin = {
       description: "Prevent highlighting for commands greater than this length",
       interface: "text",
       default: 512,
-      environmentVariable: "ZSH_HIGHLIGHT_MAXLENGTH",
+      name: "ZSH_HIGHLIGHT_MAXLENGTH",
     },
     {
       displayName: "Highlighters",
@@ -46,7 +46,7 @@ const plugin: Fig.Plugin = {
         "root",
         "line",
       ],
-      environmentVariable: "ZSH_HIGHLIGHT_HIGHLIGHTERS",
+      name: "ZSH_HIGHLIGHT_HIGHLIGHTERS",
     },
   ],
 };

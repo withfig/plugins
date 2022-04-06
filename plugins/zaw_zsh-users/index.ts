@@ -88,7 +88,7 @@ const plugin: Fig.Plugin = {
       displayName: "Editor",
       description: "Editor to use for editing files",
       type: "environmentVariable",
-      environmentVariable: "ZAW_EDITOR",
+      name: "ZAW_EDITOR",
       interface: "text",
       default: "",
     },

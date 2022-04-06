@@ -98,7 +98,7 @@ declare namespace Fig {
         /** The default value of the multiselect field */
         default: T;
         /** A list of options to display in the multiselect field */
-        options: Suggestions<S | { option: S, description: string }>;
+        options: Suggestions<S | { option: S, displayName?: string, description?: string }>;
       }
     : never;
 
@@ -109,7 +109,7 @@ declare namespace Fig {
     /** The default value of the select field */
     default: T;
     /** A list of options to display in the select field */
-    options: Suggestions<T | { option: T, description: string }>;
+    options: Suggestions<T | { option: T, displayName?: string; description?: string }>;
   };
 
   type TextUI<T> = {
@@ -175,8 +175,7 @@ declare namespace Fig {
   type EnvironmentVariableItemForType<V, U extends UIType> = ConfigurationInterface &
     UI<V, U> & {
       type: "environmentVariable";
-      environmentVariable: string;
-      name?: string;
+      name: string;
       compile?: DotfileCompiler<V, CompiledEnvironmentVariable>;
       // Syntactic sugar to compile as environment variable vs shell variable.
       export?: boolean;

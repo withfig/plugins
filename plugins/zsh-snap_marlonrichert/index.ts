@@ -3,7 +3,8 @@ const plugin: Fig.Plugin = {
   name: "zsh-snap_marlonrichert",
   type: "shell",
   description:
-    "⚡️ Znap! The fast & light-weight Zsh plugin manager that's easy to grok. Also functions as a generic Git repo manager.",
+    "⚡️ Znap! The fast & light-weight Zsh plugin manager that's easy to grok. " +
+    "Also functions as a generic Git repo manager.",
   authors: [
     {
       name: "marlonrichert",
