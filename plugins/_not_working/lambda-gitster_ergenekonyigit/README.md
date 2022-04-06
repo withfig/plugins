@@ -1,7 +1,5 @@
 <h1 align="center">lambda-gitster</h1>
 
-<p align="center"><img src="demo.gif"></img></p1>
-
 ### How to install
 * Clone project `git clone https://github.com/ergenekonyigit/lambda-gitster.git`
 * Go to directory `cd lambda-gitster`
