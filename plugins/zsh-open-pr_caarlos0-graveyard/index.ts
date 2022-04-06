@@ -1,7 +1,11 @@
 const plugin: Fig.Plugin = {
-  icon: "💥",
+  icon: "🎋",
   name: "zsh-open-pr_caarlos0-graveyard",
+  displayName: "open-pr",
   type: "shell",
+  screenshots: [
+    "https://github.com/caarlos0-graveyard/zsh-open-pr/raw/master/git-open-pr.mov.gif",
+  ],
   description: "Open pull requests from the command line.",
   authors: [
     {

@@ -1,13 +1,11 @@
-open-pr [![Build Status](https://travis-ci.org/caarlos0/zsh-open-pr.svg?branch=master)](https://travis-ci.org/caarlos0/zsh-open-pr)
-==================
 
-Open pull requests from command line.
+> Open pull requests from command line.
 
-![gif showing open-pr in action](/git-open-pr.mov.gif)
+Just use the command: `open-pr`
 
 ## What it does
 
-Basically, when you call `git open-pr`, the function will verify if you are working
+When you call `open-pr`, the function will verify if you are working
 on a fork (by convention, you have an `upstream` remote), then, it will open
 your browser in the correct URL so you can just hit the `Create Pull Request`
 button.
@@ -60,7 +58,7 @@ $ touch this-file-is-important
 $ git add -A
 $ git commit -m 'did some stuff'
 $ git push
-$ git open-pr
+$ open-pr
 # will browse https://github.com/caarlos0/open-pr/compare/master...random-feature
 ```
 
@@ -81,26 +79,20 @@ $ touch this-file-is-important
 $ git add -A
 $ git commit -m 'did some stuff'
 $ git push
-$ git open-pr
+$ open-pr
 # will browse https://github.com/caarlos0/open-pr/compare/master...random-user:random-feature
 ```
 
 Previous example, but to a `develop` branch, for instance:
 
 ```console
-$ git open-pr develop
+$ open-pr develop
 # will browse https://github.com/caarlos0/open-pr/compare/develop...random-user:random-feature
 ```
 
-## Install using [antibody](http://getantibody.github.io/)
+## More Usage
 
-```console
-$ antibody bundle caarlos0/open-pr kind:path
-```
-
-## Usage
-
-Just hit `git open-pr` on your repositories.
+Just hit `open-pr` on your repositories.
 
 You can also alias it:
 
@@ -113,11 +105,11 @@ But I like the following approach more:
 
 ```console
 gpr() {
-  git push origin HEAD && git open-pr "$@"
+  git push origin HEAD && open-pr "$@"
 }
 ```
 
-So I can `git push` and `git open-pr` in a single, three letters command:
+So I can `git push` and `open-pr` in a single, three letters command:
 
 ```console
 $ gpr
