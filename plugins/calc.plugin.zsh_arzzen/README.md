@@ -6,31 +6,6 @@
 ![calc demo](https://cloud.githubusercontent.com/assets/6382002/13583451/b1e44d30-e4b1-11e5-9efa-804f397c1181.gif)
 
 
-### Installation
-
-1. Clone this repository to your favorite path (e.g. `~/.oh-my-zsh/plugins/calc/calc.plugin.zsh`)
-2. `source` the file in your `.zshrc`
-3. Restart your `zsh`
-
-```sh
-# Your .zshrc
-source $HOME/.oh-my-zsh/plugins/calc/calc.plugin.zsh
-```
-
-#### Via [antigen](http://antigen.sharats.me/)
-
-Add to `.zshrc` 
-```sh
-antigen bundle arzzen/calc.plugin.zsh
-```
-
-#### Via [zplug](https://github.com/zplug/zplug)
-
-Add to `.zshrc`
-```sh
-zplug "arzzen/calc.plugin.zsh"
-```
-
 ### Usage
 ```bash
 # addition
