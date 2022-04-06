@@ -9,40 +9,6 @@ There are many `auto-ls`s out there but this one is mine.
 - Auto `ls` on `enter-key` (with empty buffer)
 - Git status on a git work tree
 
-# Install
-
-- Manual
-
-      curl -L https://git.io/auto-ls > /path/to/auto-ls.zsh
-      source /path/to/auto-ls.zsh
-
-- [Antigen](https://github.com/zsh-users/antigen)
-
-      antigen bundle desyncr/auto-ls
-
-- [zplugin](https://github.com/zdharma/zplugin)
-
-      zplugin ice wait'0' lucid
-      zplugin load desyncr/auto-ls
-
-# Configuration
-
-- `AUTO_LS_COMMANDS`: Use this configuration option to define the functions to run on cwd/enter-key.
-
-Example: `AUTO_LS_COMMANDS=(ls git-status)`
-
-- `AUTO_LS_NEWLINE`: Configure `ls` to put a newline (Default: true).
-
-Example: `AUTO_LS_NEWLINE=false`
-
-- `AUTO_LS_PATH`: Detect command full path to execute (Default: true).
-
-Example: `AUTO_LS_PATH=false`
-
--  `AUTO_LS_CHPWD`: Enable/disable auto-ls on directory change (Default: true)
-
-Example: `AUTO_LS_CHPWD=false`
-
 # Customization
 
 You can configure commands in order to execute on `cwd`/`ls`, example:

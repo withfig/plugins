@@ -1,8 +1,12 @@
 const plugin: Fig.Plugin = {
   icon: "⌨️",
   name: "nx-completion_jscutlery",
-  type: "shell",
+  displayName: "Nx Completion",
   description: "Nx Devtools completion plugin for Zsh.",
+  screenshots: [
+    "https://user-images.githubusercontent.com/8522558/111908149-67e8d780-8a58-11eb-9343-691f6d664163.gif",
+  ],
+  type: "shell",
   authors: [
     {
       name: "jscutlery",
@@ -18,6 +22,16 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     sourceFiles: ["nx-completion.plugin.zsh"],
+    dependencies: [
+      {
+        type: "binary",
+        name: "nx",
+      },
+      {
+        type: "binary",
+        name: "jq",
+      },
+    ],
   },
 };
 

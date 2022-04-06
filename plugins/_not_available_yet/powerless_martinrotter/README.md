@@ -1,7 +1,4 @@
-# powerless
 Tiny &amp; minimalistic/responsive ZSH prompt inspired by powerline.
-
-![alt text](https://raw.githubusercontent.com/martinrotter/powerless/master/screenshots/powerless.gif)
 
 ## What is this stuff?
 This is fast and tiny set of ZSH scripts providing some nice ZSH setup, including powerline-inspired prompt and some other enhancements. The prompt offers some nice visual experience and information, including Git repositories metadata.

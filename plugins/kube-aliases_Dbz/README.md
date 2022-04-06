@@ -1,5 +1,3 @@
-# kube-aliases
-
 This is an oh-my-zsh plugin (or source `kube-aliases.plugin.zsh` for bash) to
 make working with kubernetes easier. It provides a bunch of bash aliases and
 zsh functions. Docs can be found
@@ -55,35 +53,6 @@ Not everything is currently implemented, but more and more is being added to
 the list. If something is missing that is desired, feel free to submit a pull
 request.
 
-
-## Installation
-
-### Oh-My-Zsh
-
-```
-git clone https://github.com/Dbz/kube-aliases.git ~/.oh-my-zsh/custom/plugins/kube-aliases
-echo "plugins+=(kube-aliases)" >> ~/.zshrc
-```
-
-You can also manually place `zsh-kuberenetes` inside of `plugins=(...)`
-
-If you have set the `ZSH_CUSTOM` environment variable in your zshrc, then you should modify the git clone directory to be `$ZSH_CUSTOM/plugins/kube-aliases`.
-
-### Antigen
-
-Add `antigen bundle dbz/kube-aliases` to your antigen bundles in your `.zshrc`
-
-### Zgen
-
-Add `zgen load dbz/kube-aliases` to your zgen plugins in your `.zshrc`
-
-### Zinit
-
-Add `zinit load Dbz/kube-aliases` to your zinit plugins in your `.zshrc`
-
-### Bash
-
-Source `kube-aliases.plugin.zsh` in your `.bashrc`.
 
 ### Aliases for Kubernetes Extensions
 

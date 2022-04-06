@@ -12,9 +12,12 @@ declare namespace Fig {
     plugin: PluginContext;
     /** The shell the plugin is being compiled for */
     shell: Shell;
+    /** The operating system the plugin is being compiled for */
+    os: Os;
   }
 
-  /** Function that compiles a context to a string-like result or block to be
+  /** 
+   * Function that compiles a context to a string-like result or block to be
    * included in dotfiles
    */
   type DotfileCompiler<T, S> = (_: T, __: { ctx: DotfileCompilationContext }) => S;
@@ -31,9 +34,9 @@ declare namespace Fig {
   type InstallationScript<T> = T | InstallationScriptCompiler<T>;
 
   interface PluginInstallation {
-    /** Script to run before the plugin is sourced */
+    /** Script to run before the plugin is sourced and before the configuration */
     preScript?: InstallationScript<string>;
-    /** Script to run after the plugin is sourced */
+    /** Script to run after the plugin is sourced and after the configuration */
     postScript?: InstallationScript<string>;
     /** A list of files to source in the shell */
     sourceFiles?: InstallationScript<string[]>;
@@ -61,7 +64,7 @@ declare namespace Fig {
     /** The origin of the plugin */
     origin: PluginOrigin;
     /** Specify any dependencies the plugin has */
-    dependencies?: Dependency[];
+    dependencies?: InstallationScript<Dependency[]>;
   };
 
   /** Current value of a field in a plugin configuration. */
@@ -89,7 +92,7 @@ declare namespace Fig {
   type NonEmpty<T extends unknown[]> = T & { 0: T[number] };
   type Suggestions<T> = T[] | DeviceConfigurationGenerator<T[]>;
 
-  // Multiselect UI item type
+  /** Multiselect UI item type */
   type MultiselectUI<T> = T extends (infer S)[]
     ? {
         interface: "multiselect";
@@ -130,9 +133,11 @@ declare namespace Fig {
     default: T;
   }
 
-  // Get all ui's that support a value type of T.
-  // This enforces that, e.g. you can only use booleans with a toggle/checkbox UI.
-  // Gets all valid UIs that satisfy { value: T, interface: S }
+  /** 
+   * Get all ui's that support a value type of `T`.
+   * This enforces that, e.g. you can only use booleans with a toggle/checkbox UI.
+   * Gets all valid UIs that satisfy `{ value: T, interface: S }`
+   */
   type UI<V, U extends UIType = UIType> = Extract<
     | MultiselectUI<V>
     | SelectUI<V>
@@ -150,7 +155,10 @@ declare namespace Fig {
     }
   >;
 
-  // Interface common to Configuration *items* and Configuration groups (which contain configuration items)
+  /** 
+   * Interface common to Configuration *items* and Configuration groups 
+   * (which contain configuration items) 
+   */
   interface ConfigurationInterface {
     /** The name of the configuration to display in the interface */
     displayName?: string;
@@ -177,7 +185,7 @@ declare namespace Fig {
       type: "environmentVariable";
       name: string;
       compile?: DotfileCompiler<V, CompiledEnvironmentVariable>;
-      // Syntactic sugar to compile as environment variable vs shell variable.
+      /** Syntactic sugar to compile as environment variable vs shell variable. */
       export?: boolean;
     };
 
@@ -215,6 +223,7 @@ declare namespace Fig {
 
   type PluginType = "shell";
   type Shell = "zsh" | "bash" | "fish";
+  type Os = "linux" | "macos" | "windows" | "unknown";
 
   type Author =
     | string

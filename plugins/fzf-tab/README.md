@@ -1,76 +1,21 @@
-# fzf-tab
-
+<!--
 [![CI](https://github.com/Aloxaf/fzf-tab/workflows/ci/badge.svg)](https://github.com/Aloxaf/fzf-tab/actions?query=workflow%3Aci)
 [![GitHub license](https://img.shields.io/github/license/Aloxaf/fzf-tab)](https://github.com/Aloxaf/fzf-tab/blob/master/LICENSE)
-
-Replace zsh's default completion selection menu with fzf!
+-->
 
 [![asciicast](https://asciinema.org/a/293849.svg)](https://asciinema.org/a/293849)
 
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
 **Table of Contents**
 
-- [fzf-tab](#fzf-tab)
-- [Install](#install)
-    - [Manual](#manual)
-    - [Antigen](#antigen)
-    - [Zinit](#zinit)
-    - [Oh-My-Zsh](#oh-my-zsh)
-    - [Prezto](#prezto)
 - [Usage](#usage)
-    - [Configure](#configure)
-    - [Binary module](#binary-module)
+  - [Configure](#configure)
+  - [Binary module](#binary-module)
 - [Difference from other plugins](#difference-from-other-plugins)
 - [Compatibility with other plugins](#compatibility-with-other-plugins)
 - [Related projects](#related-projects)
 
 <!-- markdown-toc end -->
-
-# Install
-
-**NOTE: fzf-tab needs to be loaded after `compinit`, but before plugins which will wrap widgets, such as [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) or [fast-syntax-highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting)!!**
-
-### Manual
-
-First, clone this repository.
-
-```zsh
-git clone https://github.com/Aloxaf/fzf-tab ~/somewhere
-```
-
-Then add the following line to your `~/.zshrc`.
-
-```zsh
-source ~/somewhere/fzf-tab.plugin.zsh
-```
-
-### Antigen
-
-```zsh
-antigen bundle Aloxaf/fzf-tab
-```
-
-### Zinit
-
-```zsh
-zinit light Aloxaf/fzf-tab
-```
-
-### Oh-My-Zsh
-
-Clone this repository to your custom directory and then add `fzf-tab` to your plugin list.
-
-```zsh
-git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
-```
-
-### Prezto
-
-Clone this repository to your contrib directory and then add `fzf-tab` to your module list in `.zpreztorc`.
-
-```zsh
-git clone https://github.com/Aloxaf/fzf-tab $ZPREZTODIR/contrib/fzf-tab
-```
 
 # Usage
 

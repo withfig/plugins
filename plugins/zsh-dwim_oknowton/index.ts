@@ -1,8 +1,9 @@
 const plugin: Fig.Plugin = {
   icon: "⭐️",
   name: "zsh-dwim_oknowton",
-  type: "shell",
+  displayName: "zsh-dwim",
   description: "ZSH Do What I Mean",
+  type: "shell",
   authors: [
     {
       name: "oknowton",
@@ -12,10 +13,10 @@ const plugin: Fig.Plugin = {
   github: "oknowton/zsh-dwim",
   site: "http://blog.patshead.com/2012/10/cleanup-of-zsh-dwim.html",
   shells: ["zsh"],
-  categories: ["Other"],
+  categories: ["Productivity Hack"],
   installation: {
     origin: "github",
-    sourceFiles: ["zsh-dwim.plugin.zsh"],
+    sourceFiles: ["init.zsh"],
   },
 };
 

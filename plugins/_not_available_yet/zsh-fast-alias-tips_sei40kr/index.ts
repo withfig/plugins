@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
-  icon: "🧑‍💻",
   name: "zsh-fast-alias-tips_sei40kr",
+  displayName: "zsh-fast-alias-tips",
+  icon: "💨",
   type: "shell",
   description: "Help remembering the aliases you defined once",
   authors: [
@@ -12,7 +13,7 @@ const plugin: Fig.Plugin = {
   github: "sei40kr/zsh-fast-alias-tips",
   license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Other"],
+  categories: ["Alias", "Productivity Hack"],
   keywords: ["zsh", "zsh-plugin"],
   installation: {
     origin: "github",

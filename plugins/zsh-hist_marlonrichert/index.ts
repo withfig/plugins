@@ -1,8 +1,9 @@
 const plugin: Fig.Plugin = {
-  icon: "☀️",
+  icon: "📝",
   name: "zsh-hist_marlonrichert",
+  displayName: "zsh-hist",
   type: "shell",
-  description: "📝 Edit your Zsh history from the command line.",
+  description: "Edit your Zsh history from the command line.",
   authors: [
     {
       name: "marlonrichert",
@@ -13,7 +14,7 @@ const plugin: Fig.Plugin = {
   github: "marlonrichert/zsh-hist",
   license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Other"],
+  categories: ["Convenience Function"],
   keywords: [
     "zsh",
     "history",
@@ -29,6 +30,32 @@ const plugin: Fig.Plugin = {
     origin: "github",
     sourceFiles: ["zsh-hist.plugin.zsh"],
   },
+  configuration: [
+    {
+      displayName: "Automatic alias expansion",
+      description:
+        "zsh-hist can automatically expand your aliases before each command " +
+        "line is saved to history.",
+      type: "script",
+      name: "zsh-hist-expand-aliases",
+      interface: "toggle",
+      default: false,
+      compile: (value) =>
+        `zstyle ':hist:*' expand-aliases ${value ? "on" : "off"}`,
+    },
+    {
+      displayName: "Automatic code formatting",
+      description:
+        "Whenever you finish your command line, `zsh-hist` will " +
+        "automatically format it for you, before it is saved to history.",
+      type: "script",
+      name: "zsh-hist-auto-format",
+      interface: "toggle",
+      default: true,
+      compile: (value) =>
+        `zstyle ':hist:*' auto-format ${value ? "on" : "off"}`,
+    },
+  ],
 };
 
 export default plugin;

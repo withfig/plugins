@@ -1,4 +1,6 @@
+<!--
 ## Git Aliases <a href="https://github.com/peterhurford/git-aliases.zsh/tags"><img src="https://img.shields.io/github/tag/peterhurford/git-aliases.zsh.svg"></a>
+-->
 
 Shorten various frequently used git aliases:
 
@@ -34,46 +36,6 @@ Create new omnibus commands by merging things together:
 * `release <tag>` will automatically release (`git tag` + `git push`) with that tag.
 
 No changes are made to anything involving `git commit`, `git push`, or `git pull`, because these functionalities are turbocharged by [Send.zsh](https://github.com/robertzk/send.zsh) and [Send.vim](https://github.com/peterhurford/send.vim).
-
-
-## Installation
-
-### Oh-My-Zsh
-
-Assuming you have [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), you can
-simply write:
-
-```bash
-git clone git@github.com:peterhurford/git-aliases.zsh.git ~/.oh-my-zsh/custom/plugins/git-aliases
-echo "plugins+=(git-aliases)" >> ~/.zshrc
-```
-
-(Alternatively, you can place the `git-aliases` plugin in the `plugins=(...)` local in your `~/.zshrc` manually.)
-
-(Once you have this plugin, you can clone this plugin via `clone peterhurford git-aliases.zsh` instead.  Much better!)
-
-### Antigen
-If you're using the [Antigen](https://github.com/zsh-users/antigen) framework for ZSH, all you have to do is add `antigen bundle peterhurford/git-aliases.zsh` to your `.zshrc` wherever you're adding your other antigen bundles. Antigen will automatically clone the repo and add it to your antigen configuration the next time you open a new shell.
-
-### Bash
-If you use the non-recommended alternative, bash, you can install this directly to you
-r `~/.bash_profile`:
-
-```bash
-curl -s https://raw.githubusercontent.com/peterhurford/git-aliases.zsh/master/git-aliases.plugin.zsh >>
-~/.bash_profile
-```
-
-
-## Customization
-
-* If you don't want to run `git status` with every branch change, put `GIT_ALIASES_SILENCE_GIT_STATUS=1` into your `.zshrc` (or `.bash_profile`).
-
-* If you want to automatically push a new branch upon branch creation (e.g., commit "Started <branchname>" with the creation of branch <branchname>), use `GIT_ALIASES_AUTO PUSH_NEW_BRANCH=1`.
-
-* If you want to use [icdiff](https://github.com/jeffkaufman/icdiff) instead of `diff`, use `GIT_ALIASES_ICDIFF=1`.
-
-* If you want to use the shorter, prettier version of `git status`, set `GIT_ALIASES_SHORTER_GIT_STATUS=1`.
 
 
 ## Why use this instead of the "git" plugin?

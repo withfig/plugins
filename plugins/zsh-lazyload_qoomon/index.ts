@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⭐️",
   name: "zsh-lazyload_qoomon",
+  displayName: "zsh-lazyload",
   type: "shell",
   description:
     "zsh plugin for lazy load commands and speed up start up time of zsh",
@@ -13,7 +14,7 @@ const plugin: Fig.Plugin = {
   ],
   github: "qoomon/zsh-lazyload",
   shells: ["zsh"],
-  categories: ["Other"],
+  categories: ["Convenience Function"],
   keywords: ["lazyload", "lazy", "load", "zsh", "speedup", "plugin"],
   installation: {
     origin: "github",

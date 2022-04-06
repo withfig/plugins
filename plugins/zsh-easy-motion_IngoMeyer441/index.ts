@@ -1,8 +1,12 @@
 const plugin: Fig.Plugin = {
   icon: "🔗",
   name: "zsh-easy-motion_IngoMeyer441",
-  type: "shell",
+  displayName: "ZSH Easy Motion",
   description: "Vim's easy-motion for zsh",
+  screenshots: [
+    "https://raw.githubusercontent.com/IngoMeyer441/zsh-easy-motion/master/demo.svg",
+  ],
+  type: "shell",
   authors: [
     {
       name: "IngoMeyer441",
@@ -17,6 +21,12 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     sourceFiles: ["easy_motion.plugin.zsh"],
+    dependencies: [
+      {
+        type: "binary",
+        name: "python",
+      },
+    ],
   },
 };
 

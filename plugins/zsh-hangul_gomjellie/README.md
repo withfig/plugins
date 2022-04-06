@@ -1,5 +1,3 @@
-# `zsh-hangul`
-
 생각해보면 터미널에서는 한글을 쓸 일이 잘 없습니다.
 
 영어를 타이핑 해야되는데 한글로 타이핑된경우 자동으로 수정합니다. 
@@ -18,10 +16,6 @@ zsh에서만 동작합니다 bash 사용자는 [bash 버전](https://github.com/
 
 > 짤 출처 마사토끼
 
-# Installation
-
-자세한 설치 가이드는 [INSTALL.md](./INSTALL.md)를 참고해주세요.
-
 # Trouble Shooting
 
 ## 한글을 입력하고 싶은데 전부 영어로 바뀌어 버려요
@@ -39,5 +33,3 @@ zsh에서만 동작합니다 bash 사용자는 [bash 버전](https://github.com/
 # Reference
 
 http://zsh.sourceforge.net/Doc/zsh_us.pdf
-
-
