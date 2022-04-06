@@ -1,4 +1,4 @@
-# zsh-defer: Deferred execution of zsh commands
+> zsh-defer: Deferred execution of zsh commands
 
 `zsh-defer` defers execution of a zsh command until zsh has nothing else to do and is waiting for
 user input. Its intended purpose is staged zsh startup. It works similarly to *Turbo mode* in
@@ -12,35 +12,6 @@ Features:
 - **Easy to use**: `source slow.zsh` => `zsh-defer source slow.zsh`.
 - **Plugin manager agnostic**: Can be used with any plugin manager or even without one.
 
-## Table of Contents
-
-1. [Installation](#installation)
-1. [Usage](#usage)
-1. [Example](#example)
-1. [Caveats](#caveats)
-1. [FAQ](#faq)
-   1. [Is it possible to autoload zsh-defer?](#is-it-possible-to-autoload-zsh-defer)
-   1. [Is it possible to find out from within a command whether it's being executed by zsh-defer?](#is-it-possible-to-find-out-from-within-a-command-whether-its-being-executed-by-zsh-defer)
-   1. [Is zsh-defer a plugin manager?](#is-zsh-defer-a-plugin-manager)
-   1. [How useful is it?](#how-useful-is-it)
-   1. [Is zsh-defer compatible with Instant Prompt in Powerlevel10k?](#is-zsh-defer-compatible-with-instant-prompt-in-powerlevel10k)
-   1. [Can I use zsh-defer together with zinit?](#can-i-use-zsh-defer-together-with-zinit)
-   1. [How does zsh-defer compare to Turbo mode in zinit?](#how-does-zsh-defer-compare-to-turbo-mode-in-zinit)
-   1. [Why so many references to and comparisons with zinit?](#why-so-many-references-to-and-comparisons-with-zinit)
-
-## Installation
-
-1. Clone the repo.
-```zsh
-git clone https://github.com/romkatv/zsh-defer.git ~/zsh-defer
-```
-2. Add the following line at the top of `~/.zshrc`:
-```zsh
-source ~/zsh-defer/zsh-defer.plugin.zsh
-```
-
-*Using a plugin manager? You can install zsh-defer the same way as any other zsh plugin hosted on
-GitHub.*
 
 ## Usage
 

@@ -1,5 +1,5 @@
 const plugin: Fig.Plugin = {
-  icon: "💾",
+  icon: "⏲️",
   name: "zsh-command-time_popstas",
   displayName: "Zsh Command Time",
   type: "shell",
