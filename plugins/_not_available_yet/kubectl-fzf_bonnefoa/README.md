@@ -4,28 +4,6 @@ kubectl-fzf provides a fast and powerful fzf autocompletion for kubectl.
 
 [![asciicast](https://asciinema.org/a/yHKY5vQ40ZaOwMQnhLfYJ5Pja.png)](https://asciinema.org/a/yHKY5vQ40ZaOwMQnhLfYJ5Pja?t=01)
 
-Table of Contents
-=================
-
-* [Kubectl-fzf](#kubectl-fzf)
-* [Table of Contents](#table-of-contents)
-* [Features](#features)
-* [Requirements](#requirements)
-* [Installation](#installation)
-  * [Cache builder](#cache-builder)
-	 * [Local installation](#local-installation)
-	 * [As a kubernetes deployment](#as-a-kubernetes-deployment)
-  * [Shell autocompletion](#shell-autocompletion)
-	 * [Using zplug](#using-zplug)
-* [Usage](#usage)
-  * [cache_builder](#cache_builder)
-	 * [Configuration](#configuration)
-  * [kubectl_fzf](#kubectl_fzf)
-	 * [Options](#options)
-* [Caveats](#caveats)
-* [Troubleshooting](#troubleshooting)
-  * [Debug logs](#debug-logs)
-  * [The normal autocompletion is used](#the-normal-autocompletion-is-used)
 
 # Features
 

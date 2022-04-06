@@ -1,6 +1,9 @@
+// Requires compiling down an executable
+
 const plugin: Fig.Plugin = {
-  icon: "💾",
+  icon: "📜",
   name: "zsh-history_b4b4r07",
+  displayName: "Zsh History Searchable by SQL",
   type: "shell",
   description:
     "A plugin for zsh history extended by golang, dealing it like SQL",
@@ -14,7 +17,7 @@ const plugin: Fig.Plugin = {
   github: "b4b4r07/zsh-history",
   shells: ["zsh"],
   categories: ["Other"],
-  keywords: ["zsh", "golang", "go", "zsh-plugin"],
+  keywords: ["zsh", "golang", "go", "zsh-plugin", "sql"],
   installation: {
     origin: "github",
     sourceFiles: ["init.zsh"],

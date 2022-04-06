@@ -1,7 +1,9 @@
 const plugin: Fig.Plugin = {
-  icon: "🚀",
+  icon: "⏲️",
   name: "zsh-auto-notify_MichaelAquilina",
+  displayName: "Zsh Auto-Notify",
   type: "shell",
+  // screenshots: ["https://github.com/MichaelAquilina/zsh-auto-notify/blob/master/img/notification-example.png?raw=true"],
   description:
     " ⏰ ZSH plugin that automatically sends out a notification when a long running task has completed.",
   authors: [

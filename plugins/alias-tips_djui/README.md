@@ -1,13 +1,7 @@
 # alias-tips
 
-[![Build Status](https://travis-ci.org/djui/alias-tips.svg)](https://travis-ci.org/djui/alias-tips)
-
 A Zsh plugin to help remembering those shell aliases and Git aliases you once
 defined.
-
-Works with [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh),
-[Antigen](http://antigen.sharats.me), [zgen](https://github.com/tarjoilija/zgen)
-or pure Zsh.
 
 It works by trying to find an shell or Git alias for the command you are
 currently executing and printing a help line reminding you about that alias.
@@ -22,106 +16,16 @@ that aliases for your daily commands even exist.
 ```sh
 $ ls -lh
 Alias tip: ll
-:
 
 $ git gui
 Alias tip: gg
-:
 
 $ git rebase --interactive master
 Alias tip: grbi master
-:
 
 $ git status
 Alias tip: g st
-:
 ```
-
-
-# Installation
-
-## oh-my-zsh
-
-1. Get it
-
-    Go to your custom plugins folder:
-
-    ```sh
-    $ cd ${ZSH_CUSTOM1:-$ZSH/custom}/plugins
-    ```
-
-    Then either clone:
-
-    ```sh
-    $ git clone https://github.com/djui/alias-tips.git
-    ```
-
-    Or download:
-
-    ```sh
-    $ wget https://github.com/djui/alias-tips/archive/master.zip
-    $ unzip master.zip && mv alias-tips-master alias-tips && rm master.zip
-    ```
-
-    Or add it as submodule:
-
-    ```sh
-    $ git submodule add https://github.com/djui/alias-tips
-    $ git submodule update --init
-    ```
-
-2. Include it
-
-    Then add the plugin to your plugin list in oh-my-zsh configuration:
-
-    ```sh
-    $ $EDITOR ~/.zshrc
-
-    # -plugins=(...)
-    # +plugins=(... alias-tips)
-    ```
-
-
-## zplug
-
-1. Add `zplug "djui/alias-tips"` to your `.zshrc`
-2. Install it with `zplug install`
-
-
-## antigen
-
-1. Add `antigen bundle djui/alias-tips` to your `.zshrc` with your other antigen
-   bundle commands.
-
-
-## zgen
-
-1. Add `zgen load djui/alias-tips` to your `.zshrc`
-2. Regenerate your `init.zsh` with `zgen save`
-
-
-## Arch Linux
-
-1. Install [`alias-tips-git`](https://aur.archlinux.org/packages/alias-tips-git/) from the [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository).
-
-2. Add the following to your `.zshrc`:
-
-    ```sh
-    source /usr/share/zsh/plugins/alias-tips/alias-tips.plugin.zsh
-    ```
-
-3. Start a new terminal session.
-
-
-## Zsh
-
-1. Get it `git clone https://github.com/djui/alias-tips.git`
-2. Add `source alias-tips/alias-tips.plugin.zsh` to your `.zshrc`.
-
-
-# Usage
-
-After installation re-source your `.zshrc`.
 
 
 ## Customizations
@@ -132,9 +36,8 @@ The help string can be configured exporting an environment variable, e.g. in
 your `.zshrc`:
 
 ```sh
-:
+
 export ZSH_PLUGINS_ALIAS_TIPS_TEXT="Alias tip: "
-:
 ```
 
 
@@ -145,9 +48,7 @@ exporting an environment variable of space separated aliases, e.g. in your
 `.zshrc`:
 
 ```sh
-:
 export ZSH_PLUGINS_ALIAS_TIPS_EXCLUDES="_ ll vi"
-:
 ```
 
 
@@ -170,9 +71,8 @@ If this may not be desired, the behaviour can be disabled by setting the
 environment variable, e.g. in your .zshrc:
 
 ```sh
-:
 export ZSH_PLUGINS_ALIAS_TIPS_EXPAND=0
-:
+
 ```
 
 
@@ -239,13 +139,6 @@ export ZSH_PLUGINS_ALIAS_TIPS_REVEAL_EXCLUDES=(_ ll vi)
 e.g. Bash, do not have this feature. There are
 workarounds[[1](https://github.com/rcaloras/bash-preexec),[2](http://www.twistedmatrix.com/users/glyph/preexec.bash.txt)]
 but integrating these is a task left for the reader.
-
-
-# Testing
-
-    $ python  -m unittest test_alias-tips
-    $ python3 -m unittest test_alias-tips
-
 
 # Contributing
 

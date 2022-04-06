@@ -1,7 +1,4 @@
-zsh-history
-===========
-
-A plugin for zsh history extended by golang, dealing it like SQL
+> A plugin for zsh history extended by golang, dealing it like SQL
 
 ![](https://cl.ly/032Z0Y2Z0Q2v/c.gif)
 
@@ -25,13 +22,6 @@ A plugin for zsh history extended by golang, dealing it like SQL
     2 directories, 2 files
     ```
 
-## Installation
-
-```console
-$ git clone https://github.com/b4b4r07/zsh-history && cd zsh-history
-$ make && sudo make install
-$ source init.zsh
-```
 
 ## Usage
 

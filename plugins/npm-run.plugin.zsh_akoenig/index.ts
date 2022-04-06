@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
-  icon: "🚀",
+  icon: "⌨️",
   name: "npm-run.plugin.zsh_akoenig",
+  displayName: "Npm Run Completions",
   type: "shell",
   description: "Autocompletion support for `npm run`.",
   authors: [
@@ -14,6 +15,7 @@ const plugin: Fig.Plugin = {
   categories: ["Completion"],
   installation: {
     origin: "github",
+    preScript: "autoload -Uz compinit; compinit",
     sourceFiles: ["npm-run.plugin.zsh"],
   },
 };

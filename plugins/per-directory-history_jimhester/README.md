@@ -1,4 +1,4 @@
-[Per-Directory-History][6]
+[Per-Directory-History]
 =========================
 
 Per directory history for zsh, as well as global history, and the
@@ -51,6 +51,5 @@ implementation is by [Jim Hester][5] in September 2012.
 [3]: http://www.zsh.org/mla/users/1997/msg00226.html
 [4]: https://github.com/robbyrussell/oh-my-zsh
 [5]: http://jimhester.com
-[6]: http://github.com/jimhester/per-directory-history
 
 

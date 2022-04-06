@@ -5,6 +5,7 @@ const plugin: Fig.Plugin = {
   type: "shell",
   description:
     "An oh-my-zsh plugin to help remembering those aliases you defined once",
+  screenshots: ["images/1.png", "images/2.png"],
   authors: [
     {
       name: "djui",

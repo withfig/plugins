@@ -3,6 +3,9 @@ const plugin: Fig.Plugin = {
   name: "lambda-gitster_ergenekonyigit",
   type: "shell",
   description: "oh-my-zsh theme",
+  screenshots: [
+    "https://github.com/ergenekonyigit/lambda-gitster/raw/main/demo.gif",
+  ],
   authors: [
     {
       name: "ergenekonyigit",

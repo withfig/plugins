@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🚀",
   name: "zsh-defer_romkatv",
+  displayName: "Zsh Defer",
   type: "shell",
   description: "Deferred execution of Zsh commands",
   authors: [

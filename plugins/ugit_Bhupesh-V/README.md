@@ -1,24 +1,6 @@
-<h1 align="center">ugit</h1>
-<p align="center"><img align="center" alt="ugit logo" height="100px" src="https://user-images.githubusercontent.com/34342551/115037937-a608d800-9eec-11eb-88a9-252da7d6f507.png"></p>
 <h3 align="center"><code>Undo your last oopsie 🙈️ in git</code></h4>
-<p align="center">
-  <a href="https://github.com/Bhupesh-V/ugit/actions/workflows/build.yml">
-    <img alt="build ugit" src="https://github.com/Bhupesh-V/ugit/actions/workflows/build.yml/badge.svg">
-  </a>
-  <a href="https://github.com/Bhupesh-V/ugit/blob/master/LICENSE">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/Bhupesh-V/ugit" target="_blank" />
-  </a>
-  <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/Bhupesh-V/ugit/total?color=purple">
-  <a href="">
-    <img alt="platform support linux and macos" src="https://img.shields.io/badge/platform-GNU/Linux %7C MacOS-blue">
-  </a>
-  <a href="https://twitter.com/bhupeshimself">
-    <img alt="Twitter: bhupeshimself" src="https://img.shields.io/twitter/follow/bhupeshimself.svg?style=social" target="_blank" />
-  </a><br><br>
-  <img align="center" title="ugit demo: restore file to a previous commit" alt="ugit demo: restore file gif" src="https://user-images.githubusercontent.com/34342551/135706491-0e987e0c-3a6d-4da6-bd16-d69bb36c42a9.gif"><br>
-</p>
 
-<h2><details><summary>More Video Demos ✨️</summary>
+<h2><details><summary>See video demos ✨️</summary>
 
 <h4>Undo <code>git add</code></h4>
 
@@ -89,55 +71,6 @@ Have any other ideas/suggestions? [**Hop in to ugit discussions 💬️**](https
 - **Git** >= `2.23.0`
 - [**fzf**](https://github.com/junegunn/fzf) >= `0.21.0` - [Installation guide](https://github.com/junegunn/fzf#installation)
 - GNU utils like `awk`, `grep`, `tput` etc
-
-### Installation
-
-#### Linux
-
-```bash
-curl -fsSL https://github.com/Bhupesh-V/ugit/releases/latest/download/ugit -o ugit && chmod +x ugit && mv ugit $HOME/.local/bin/
-```
-
-Or Arch Linux users can install [**ugit via AUR**](https://aur.archlinux.org/packages/ugit).
-
-#### Mac
-
-```bash
-brew install ugit
-```
-
-### ZSH Frameworks
-
-#### Zgenom
-
-If you're using [Zgenom](https://github.com/jandamm/zgenom):
-
-1. Add `zgenom load Bhupesh-V/ugit` to your `.zshrc` along with your other `zgenom load` commands.
-2. `zgenom reset && zgenom save`
-
-#### Antigen
-
-If you're using [Antigen](https://github.com/zsh-users/antigen):
-
-1. Add `antigen bundle Bhupesh-V/ugit` to your `.zshrc` where you've listed your other plugins.
-2. Close and reopen your Terminal/iTerm window to **refresh context** and use the plugin. Alternatively, you can run `antigen bundle Bhupesh-V/ugit` in a running shell to have `antigen` load the new plugin.
-
-#### Oh-My-ZSH
-
-If you're using [oh-my-zsh](github.com/robbyrussell/oh-my-zsh):
-
-1. Clone the repository into a new `ugit` directory in oh-my-zsh's plugin folder:
-
-    `git clone https://github.com/Bhupesh-V/ugit.git $ZSH_CUSTOM/plugins/ugit`
-
-2. Edit your `~/.zshrc` and add `ugit` – same as clone directory – to the list of plugins to enable:
-
-    `plugins=( ... ugit )`
-
-3. Then, restart your terminal application to **refresh context** and use the plugin. Alternatively, you can source your current shell configuration:
-
-    `source ~/.zshrc`
-
 
 
 ## Please read ⚠️

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
-  icon: "🚀",
+  icon: "⌨️",
   name: "nix-zsh-completions_spwhitt",
+  displayName: "Nix Zsh Completions",
   type: "shell",
   description: "ZSH Completions for Nix",
   authors: [
@@ -16,6 +17,8 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     sourceFiles: ["nix-zsh-completions.plugin.zsh"],
+    postScript: ({ ctx }) =>
+      `fpath+=(${ctx.plugin.installDirectory})\nautoload -U compinit && compinit`,
   },
 };
 

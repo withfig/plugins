@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
-  icon: "☀️",
+  icon: "📜",
   name: "per-directory-history_jimhester",
+  displayName: "Per Directory History",
   type: "shell",
   description:
     "Per directory history for zsh, as well as global history, and the ability to toggle between them with ^G.",

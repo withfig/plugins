@@ -1,7 +1,11 @@
 const plugin: Fig.Plugin = {
   icon: "🔗",
   name: "odin_tylerreckart",
+  displayName: "Odin Prompt",
   type: "shell",
+  screenshots: [
+    "https://github.com/tylerreckart/odin/raw/master/images/hero_screenshot.png",
+  ],
   description: "A git flavored zsh prompt",
   authors: [
     {
