@@ -11,7 +11,7 @@ const plugin: Fig.Plugin = {
   ],
   github: "Tarrasch/zsh-functional",
   shells: ["bash", "zsh"],
-  categories: ["Other"],
+  categories: ["Convenience Function"],
   installation: {
     origin: "github",
     bash: {
