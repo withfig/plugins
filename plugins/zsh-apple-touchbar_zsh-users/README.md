@@ -12,41 +12,6 @@ Make your touchbar more powerful.
 
 **In iterm2:** Go to `View -> Customize Tool Bar...` and drag & drop the `Fn` module
 
-## Installation
-
-### Manual
-
-1. Clone this repository somewhere on your machine. This guide will assume `~/.zsh/zsh-apple-touchbar`.
-
-```sh
-git clone https://github.com/zsh-users/zsh-apple-touchbar ~/.zsh/zsh-apple-touchbar
-```
-
-2. Add the following to your `.zshrc`:
-
-```sh
-source ~/.zsh/zsh-apple-touchbar/zsh-apple-touchbar.zsh
-```
-
-3. Start a new terminal session.
-
-
-### Oh My Zsh
-
-1. Clone this repository into `$ZSH_CUSTOM/plugins` (by default `~/.oh-my-zsh/custom/plugins`)
-
-```sh
-git clone https://github.com/zsh-users/zsh-apple-touchbar $ZSH_CUSTOM/plugins/zsh-apple-touchbar
-```
-
-2. Add the plugin to the list of plugins for Oh My Zsh to load:
-
-```sh
-plugins=(zsh-apple-touchbar)
-```
-
-3. Start a new terminal session.
-
 ## Customization
 
 ### Automatic
@@ -215,18 +180,4 @@ autoload -Uz add-zsh-hook
 
 add-zsh-hook precmd precmd_apple_touchbar
 ```
-
-## Contributing
-
-If you have some proposals how to improve this boilerplate feel free to open issues and send pull requests!
-
-1. Fork it
-2. Create your feature branch (git checkout -b my-new-feature)
-3. Commit your changes (git commit -am 'Add some feature')
-4. Push to the branch (git push origin my-new-feature)
-5. Create new Pull Request
-
-## License
-
-Available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
