@@ -16,6 +16,11 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     sourceFiles: ["anyframe.plugin.zsh"],
+    dependencies: [
+      { type: "binary", name: "fzf" },
+      { type: "binary", name: "peco" },
+      { type: "binary", name: "percol" },
+    ],
   },
 };
 

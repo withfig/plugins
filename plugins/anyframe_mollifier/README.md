@@ -6,39 +6,6 @@
 
 First of all, you need to install [peco](https://github.com/peco/peco), [percol](https://github.com/mooz/percol), or [fzf](https://github.com/junegunn/fzf) (, or fzf-tmux)
 
-### Manually install
-
-Put all files somewhere in your $fpath, and add the following lines to your .zshrc:
-
-```
-autoload -Uz anyframe-init
-anyframe-init
-```
-
-#### For example
-
-```
-# download all files
-% cd /path/to/dir
-% git clone https://github.com/mollifier/anyframe
-```
-
-And add the following lines to your .zshrc:
-
-```
-fpath=(/path/to/dir/anyframe(N-/) $fpath)
-
-autoload -Uz anyframe-init
-anyframe-init
-```
-
-### Installing using Antigen
-If you use [Antigen](https://github.com/zsh-users/antigen), add the following line to your .zshrc:
-
-```
-antigen bundle mollifier/anyframe
-```
-
 ### keybind
 You can map anyframe widgets to whatever key you like.
 
