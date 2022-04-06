@@ -1,6 +1,3 @@
-ZSH2000
-======
-
 ![alt tag](https://raw.githubusercontent.com/maverick9000/zsh2000/master/demo.png)
 
 ![alt tag](https://raw.githubusercontent.com/maverick9000/zsh2000/master/demo2.png)
@@ -11,23 +8,12 @@ Influenced heavily by [agnoster's theme](https://gist.github.com/3712874) and [j
 
 ### Prerequisites
 
-Install your favorite version of
+1. Oh-my-zsh
+2. Your favorite version of
 [Powerline-patched fonts](https://github.com/Lokaltog/powerline-fonts)
 
-### Installation
-
-    git clone https://github.com/maverick9000/zsh2000.git
-    ln -s zsh2000.zsh-theme ~/.oh-my-zsh/themes/zsh2000.zsh-theme
-
-Modify ~/.zshrc setting
-
-    ZSH_THEME="zsh2000"
 
 ### Configuration
-
-Place these above this line in your ~/.zshrc:
-
-    ZSH_THEME="zsh2000"
 
 Disable the right hand side prompt entirely
 
