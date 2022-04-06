@@ -1,9 +1,10 @@
 const plugin: Fig.Plugin = {
   icon: "⚡️",
   name: "jovial_zthxxx",
+  displayName: "Jovial Theme",
   type: "shell",
   description:
-    "Jovial - A lovely zsh theme with responsive-design, it's pretty fast, keep simple but useful",
+    "A lovely zsh theme that's fast and has responsive design. Simple but useful",
   authors: [
     {
       name: "zthxxx",
