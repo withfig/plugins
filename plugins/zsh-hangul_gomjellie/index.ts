@@ -1,8 +1,12 @@
 const plugin: Fig.Plugin = {
-  icon: "💾",
+  icon: "🇰🇷",
   name: "zsh-hangul_gomjellie",
-  type: "shell",
+  displayName: "zsh-hangul",
   description: "한영 전환의 지옥에서 벗어나서 광명찾자!",
+  screenshots: [
+    "https://raw.githubusercontent.com/gomjellie/zsh-hangul/master/.github/zsh-hangul.gif",
+  ],
+  type: "shell",
   authors: [
     {
       name: "gomjellie",

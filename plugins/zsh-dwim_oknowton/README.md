@@ -1,5 +1,3 @@
-# zsh-dwim - A "Do What I Mean" Key
-
 `zsh-dwim` attempts to predict what you will want to do next.  It provides a key binding (control-u) that will replace the current (or previous) command line with the command you will want to run next.
 
 ## Some examples
@@ -18,50 +16,6 @@ There are some short screencasts on my blog demonstrating `zsh-dwim`:
 
  * [Demonstration of a few of zsh-dwim's oldest features](http://blog.patshead.com/2012/10/cleanup-of-zsh-dwim.html)
  * [Demonstration of zsh-dwim's remote filename completion](http://blog.patshead.com/2013/01/zsh-dwim-most-recent-remote-file-completion.html)
-
-
-## Installation
-
-Since I am using [Prezto](https://github.com/sorin-ionescu/prezto) to manage my `zsh` configuration this repository is set up to work with it.  `zsh-dwim` is a simple enough script, though, so it should be easily loaded into any `zsh` configuration.
-
-### Installing under [Prezto](https://github.com/sorin-ionescu/prezto)
-
-    cd .zprezto
-    git submodule add https://github.com/oknowton/zsh-dwim.git modules/dwim
-
-Add `dwim` to your `.zpreztorc` file:
-
-    # Set the Prezto modules to load (browse modules).
-    # The order matters.
-    zstyle ':prezto:load' pmodule \
-      'environment' \
-      'terminal' \
-      'editor' \
-      'history' \
-      'directory' \
-      'spectrum' \
-      'utility' \
-      'completion' \
-      'prompt' \
-      'dwim'
-
-### Installing under oh-my-zsh
-
-You should be able to install the `zsh-dwim` script under `oh-my-zsh` with the following command:
-
-    wget https://raw.github.com/oknowton/zsh-dwim/master/init.zsh -O $HOME/.oh-my-zsh/custom/zsh-dwim.zsh
-
-It should start working the next time you open a new shell.
-
-### Installing using [Antigen](https://github.com/zsh-users/antigen)
-
-If you use [Antigen](https://github.com/zsh-users/antigen), I am told that adding the following line to your `.zshrc` will work:
-
-    antigen-bundle oknowton/zsh-dwim
-    
-### Using `zsh-dwim` anywhere else
-
-Anyone running `zsh` should only need to `source` the `init.zsh` file (run `source init.zsh`).  If you want to permentantly "install" `zsh-dwim` just add the proper `source` command to your `.zshrc`.
 
 ## Usage
 

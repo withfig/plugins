@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🚀",
   name: "cd-gitroot_mollifier",
+  displayName: "cd-gitroot",
   type: "shell",
   description: "zsh plugin to cd to git repository root directory.",
   authors: [
@@ -10,9 +11,9 @@ const plugin: Fig.Plugin = {
     },
   ],
   github: "mollifier/cd-gitroot",
-  license: ["NOASSERTION"],
+  license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Other"],
+  categories: ["Productivity Hack"],
   installation: {
     origin: "github",
     sourceFiles: ["cd-gitroot.plugin.zsh"],

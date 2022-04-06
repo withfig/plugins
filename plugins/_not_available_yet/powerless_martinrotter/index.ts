@@ -1,8 +1,12 @@
 const plugin: Fig.Plugin = {
-  icon: "🧑‍💻",
   name: "powerless_martinrotter",
-  type: "shell",
+  displayName: "Powerless (martinrotter)",
   description: "Minimalistic/responsive ZSH prompt inspired by powerline.",
+  icon: "🧑‍💻",
+  screenshots: [
+    "https://raw.githubusercontent.com/martinrotter/powerless/master/screenshots/powerless.gif",
+  ],
+  type: "shell",
   authors: [
     {
       name: "martinrotter",
