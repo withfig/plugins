@@ -1,5 +1,6 @@
 const plugin: Fig.Plugin = {
   icon: "💡",
+  displayName: "zsh-async",
   name: "zsh-async_mafredri",
   type: "shell",
   description:
@@ -13,11 +14,12 @@ const plugin: Fig.Plugin = {
   github: "mafredri/zsh-async",
   license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Other"],
+  categories: ["Convenience Function"],
   keywords: ["shell", "zsh", "async", "asynchronous"],
   installation: {
     origin: "github",
     sourceFiles: ["async.plugin.zsh"],
+    postScript: "async_init",
   },
 };
 

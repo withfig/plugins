@@ -1,6 +1,4 @@
-# zeno.zsh
-
-zsh fuzzy completion and utility plugin with [Deno](https://deno.land/).
+> zsh fuzzy completion and utility plugin with [Deno](https://deno.land/).
 
 **WARNING**: This project is in beta stage and WIP README.
 
@@ -12,36 +10,11 @@ zsh fuzzy completion and utility plugin with [Deno](https://deno.land/).
   - User defined completion
 - ZLE utilities
 
-## Demo
-
-### Abbrev snippet
-
-![zeno](https://user-images.githubusercontent.com/5423775/119225771-e0dfda80-bb40-11eb-8001-f5b575e29707.gif "zeno")
-
-### Completion with fzf
-
-![zeno](https://user-images.githubusercontent.com/5423775/119226132-aaa35a80-bb42-11eb-9b90-1071fce1fc7d.gif "zeno")
-
 ## Requirements
 
 - [Deno](https://deno.land/) latest
 - [fzf](https://github.com/junegunn/fzf)
 
-## Installation
-
-### zinit
-
-```zsh
-zinit ice lucid depth"1" blockf
-zinit light yuki-yano/zeno.zsh
-```
-
-### git clone
-
-```sh
-$ git clone https://github.com/yuki-yano/zeno.zsh.git
-$ echo "source /path/to/dir/zeno.zsh" >> ~/.zshrc
-```
 
 ## Usage
 

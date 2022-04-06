@@ -1,16 +1,10 @@
-# zsh-interactive-cd
+`zsh-interactive-cd` provides fish-like interactive tab completion for cd in zsh.
 
-## Demo
+![demo](https://raw.githubusercontent.com/changyuheng/zsh-interactive-cd/master/demo.gif)
 
-![demo](demo.gif)
-
-## Installation
-
-1. Install [fzf](https://github.com/junegunn/fzf) by following its [installation instruction](https://github.com/junegunn/fzf#installation).
-
-2. Source `zsh-interactive-cd.plugin.zsh` in `.zshrc`.
+**Note:** Requires [fzf](https://github.com/junegunn/fzf) which can be
+installed as described [here](https://github.com/junegunn/fzf#installation).
 
 ## Usage
 
 Press tab for completion as usual, it'll launch fzf automatically. Check fzf’s [readme](https://github.com/junegunn/fzf#search-syntax) for more search syntax usage.
-

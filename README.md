@@ -24,12 +24,13 @@ The **Fig Plugin Store** makes it easy to add 3rd-party shell plugins to your te
 
 
 
-https://user-images.githubusercontent.com/4949076/160755285-ac39d330-8354-4936-9102-2580d5615550.mp4
+
+https://user-images.githubusercontent.com/4949076/162058365-ec260e6a-9728-4a34-b7c0-71c16a495d81.mp4
 
 
 ## 👋 What is the Plugin Store?
 
-The Fig Plugin Store makes it easy for developers to discover and install 3rd-party shell plugins then sync them across your devices.
+The Fig Plugin Store makes it easy for developers to discover and install 3rd-party shell plugins and have them auto-sync them across your devices.
 
 Currently we 
 * have > 1,000 plugins (and would love your support adding more)
@@ -37,6 +38,7 @@ Currently we
 * let you configure plugins after installing them (see above video)
 * auto-sync your plugins across your devices
 
+Example plugins include syntax highlighting for your shell, autocomplete, async loading for your prompt, even oh-my-zsh!
 
 <br/>
 
@@ -50,7 +52,7 @@ Plugins are a simple _declarative_ schema that define
 
 You can contribute your first plugin to the store in < 2 minutes (we make it really easy)
 
-👉 Check out our [Plugin Contribution Getting Started Guide](./CONTRIBUTING.md) to get started
+👉 Check out our **[Plugin Contribution Getting Started Guide](./CONTRIBUTING.md)** to get started
 
 
 

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⚡️",
   name: "fast-syntax-highlighting_zdharma-continuum",
+  displayName: "Fast Syntax Highlighting",
   type: "shell",
   description: "Feature-rich syntax highlighting for ZSH",
   authors: [

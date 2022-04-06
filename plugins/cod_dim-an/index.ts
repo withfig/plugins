@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🌟",
   name: "cod_dim-an",
+  displayName: "Cod Completion Daemon",
   type: "shell",
   description: "cod is a completion daemon for bash/fish/zsh",
   authors: [
@@ -16,11 +17,20 @@ const plugin: Fig.Plugin = {
   keywords: ["shell", "completion", "zsh", "bash", "fish"],
   installation: {
     origin: "github",
+    dependencies: [
+      {
+        name: "cod",
+        type: "binary",
+      },
+    ],
     bash: {
-      sourceFiles: ["wc.sh"],
+      postScript: "source <(cod init $$ bash)",
     },
     zsh: {
       sourceFiles: ["cod.plugin.zsh"],
+    },
+    fish: {
+      postScript: "cod init $fish_pid fish | source",
     },
   },
 };

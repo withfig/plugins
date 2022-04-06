@@ -1,8 +1,3 @@
-[![Made with Doom Emacs](https://img.shields.io/badge/Made_with-Doom_Emacs-blueviolet.svg?style=flat-square&logo=GNU%20Emacs&logoColor=white)](https://github.com/hlissner/doom-emacs)
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](./LICENSE)
-![ZSH 5.0.2+](https://img.shields.io/badge/zsh-v5.0.2-orange.svg?style=flat-square)
-[![Build Status](https://img.shields.io/travis/hlissner/zsh-autopair/master.svg?label=master&style=flat-square)](https://travis-ci.org/hlissner/zsh-autopair)
-
 # zsh-autopair
 A simple plugin that auto-closes, deletes and skips over matching delimiters in
 zsh intelligently. Hopefully.
@@ -33,58 +28,6 @@ Specifically, zsh-autopair does 5 things for you:
 5. Spaces between brackets are expanded and contracted.
 
    e.g. `echo [|]` => <kbd>space</kbd> => `echo [ | ]` => <kbd>backspace</kbd> => `echo [|]`
-
-
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
-**Table of Contents**
-
-- [Install](#install)
-    - [Antigen](#antigen)
-    - [zgen](#zgen)
-    - [zplug](#zplug)
-- [Configuration](#configuration)
-    - [Adding/Removing pairs](#addingremoving-pairs)
-- [Troubleshooting & compatibility issues](#troubleshooting--compatibility-issues)
-    - [zgen & prezto compatibility](#zgen--prezto-compatibility)
-    - [text on right-side of cursor interfere with completion](#text-on-right-side-of-cursor-interfere-with-completion)
-    - [zsh-autopair & isearch?](#zsh-autopair--isearch)
-    - [Midnight Commander](#midnight-commander)
-- [Other resources](#other-resources)
-
-<!-- markdown-toc end -->
-
-## Install
-Download and source `autopair.zsh`
-
-```bash
-if [[ ! -d ~/.zsh-autopair ]]; then
-  git clone https://github.com/hlissner/zsh-autopair ~/.zsh-autopair
-fi
-
-source ~/.zsh-autopair/autopair.zsh
-autopair-init
-```
-
-### Antigen
-`antigen bundle hlissner/zsh-autopair`
-
-### zgen
-```bash
-if ! zgen saved; then
-    echo "Creating a zgen save"
-
-    # ... other plugins
-    zgen load hlissner/zsh-autopair
-
-    zgen save
-fi
-```
-
-### zplug
-Load autopair _after compinit_, otherwise, the plugin won't work.
-```bash
-zplug "hlissner/zsh-autopair", defer:2
-```
 
 
 ## Configuration

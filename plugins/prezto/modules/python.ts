@@ -1,8 +1,4 @@
-import {
-  ModuleConfiguration,
-  compileZstyle,
-  compileZstyleBool,
-} from "../utils";
+import { ModuleConfiguration, compileZstyleBool } from "../utils";
 
 const python: ModuleConfiguration = {
   name: "python",

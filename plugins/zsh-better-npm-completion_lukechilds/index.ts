@@ -1,8 +1,12 @@
 const plugin: Fig.Plugin = {
   icon: "😀",
   name: "zsh-better-npm-completion_lukechilds",
+  displayName: "ZSH Completions",
   type: "shell",
   description: "Better completion for npm",
+  screenshots: [
+    "https://github.com/lukechilds/zsh-better-npm-completion/raw/master/demo.gif",
+  ],
   authors: [
     {
       name: "lukechilds",

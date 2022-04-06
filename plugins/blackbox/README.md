@@ -1,16 +1,8 @@
-BlackBox [![CircleCI](https://circleci.com/gh/StackExchange/blackbox.svg?style=shield)](https://circleci.com/gh/StackExchange/workflows/blackbox) [![Build Status](https://github.com/StackExchange/blackbox/workflows/build/badge.svg)](https://github.com/StackExchange/blackbox/actions?query=workflow%3Abuild+branch%3Amaster)
-========
-
 Safely store secrets in a VCS repo (i.e. Git, Mercurial, Subversion or Perforce). These commands make it easy for you to Gnu Privacy Guard (GPG) encrypt specific files in a repo so they are "encrypted at rest" in your repository. However, the scripts make it easy to decrypt them when you need to view or edit them, and decrypt them for use in production. Originally written for Puppet, BlackBox now works with any Git or Mercurial repository.
-
-A slide presentation about an older release [is on SlideShare](http://www.slideshare.net/TomLimoncelli/the-blackbox-project-sfae).
-
-Join our mailing list: [https://groups.google.com/d/forum/blackbox-project](https://groups.google.com/d/forum/blackbox-project)
 
 Table of Contents
 =================
 
-- [BlackBox](#blackbox)
 - [Table of Contents](#table-of-contents)
 - [Overview](#overview)
 - [Why is this important?](#why-is-this-important)
@@ -40,9 +32,7 @@ Table of Contents
 - [Some Subversion gotchas](#some-subversion-gotchas)
 - [Using Blackbox when gpg2 is installed next to gpg](#using-blackbox-when-gpg2-is-installed-next-to-gpg)
 - [How to submit bugs or ask questions?](#how-to-submit-bugs-or-ask-questions)
-- [Developer Info](#developer-info)
 - [Alternatives](#alternatives)
-- [License](#license)
 
 Overview
 ========
@@ -86,21 +76,6 @@ OBVIOUSLY we don't want secret things like SSL private keys and passwords to be 
 NOT SO OBVIOUSLY when we store "secrets" in a VCS repo like Git or Mercurial, suddenly we are less able to share our code with other people. Communication between subteams of an organization is hurt. You can't collaborate as well. Either you find yourself emailing individual files around (yuck!), making a special repo with just the files needed by your collaborators (yuck!!), or just deciding that collaboration isn't worth all that effort (yuck!!!).
 
 The ability to be open and transparent about our code, with the exception of a few specific files, is key to the kind of collaboration that DevOps and modern IT practitioners need to do.
-
-Installation Instructions
-=========================
-
-- *The hard way (manual)*: Copy all the files in "bin" to your "bin".
-- *The hard way (automatic)*: `make copy-install` will copy the bin files into $PREFIX/bin, default is /usr/local (uninstall with `make copy-uninstall`).
-- *The symlinks way*: `make symlinks-install` will make symlinks of the bin files into $PREFIX/bin, default is /usr/local (uninstall with `make copy-uninstall`) (useful when doing development)
-- *The MacPorts Way*: `sudo port install vcs_blackbox`
-- *The Homebrew Way*: `brew install blackbox`
-- *The RPM way*: Check out the repo and make an RPM via `make packages-rpm`; now you can distribute the RPM via local methods. (Requires [fpm](https://github.com/jordansissel/fpm).)
-- *The Debian/Ubuntu way*: Check out the repo and make a DEB via `make packages-deb`; now you can distribute the DEB via local methods. (Requires [fpm](https://github.com/jordansissel/fpm).)
-- *The Antigen Way*: Add `antigen bundle StackExchange/blackbox` to your .zshrc
-- *The Zgen Way*: Add `zgen load StackExchange/blackbox` to your .zshrc where you're loading your other plugins.
-- *The Nix Way*: `nix-shell -p blackbox`
-- *The Pkgsrc Way*: `pkgin in scm-blackbox`
 
 Commands
 ========
@@ -833,31 +808,6 @@ The best place to start is to join the [blackbox-project mailing list](https://g
 
 Bugs are tracked here in Github. Please feel free to [report bugs](https://github.com/StackExchange/blackbox/issues) yourself.
 
-Developer Info
-==============
-
-Code submissions are gladly welcomed! The code is fairly easy to read.
-
-Get the code:
-
-```
-git clone git@github.com:StackExchange/blackbox.git
-```
-
-Test your changes:
-
-```
-make confidence
-```
-
-This runs through a number of system tests. It creates a repo, encrypts files, decrypts files, and so on. You can run these tests to verify that the changes you made didn't break anything. You can also use these tests to verify that the system works with a new operating system.
-
-Please submit tests with code changes:
-
-The best way to change BlackBox is via Test Driven Development. First add a test to `tools/confidence.sh`. This test should fail, and demonstrate the need for the change you are about to make. Then fix the bug or add the feature you want. When you are done, `make confidence` should pass all tests. The PR you submit should include your code as well as the new test. This way the confidence tests accumulate as the system grows as we know future changes don't break old features.
-
-Note: The tests currently assume "git" and have been tested only on CentOS, Mac OS X, and Cygwin. Patches welcome!
-
 Alternatives
 ============
 
@@ -870,11 +820,3 @@ Here are other open source packages that do something similar to BlackBox. If yo
 - [git-secret](https://github.com/sobolevn/git-secret)
 
 git-crypt has the best git integration. Once set up it is nearly transparent to the users. However it only works with git.
-
-
-License
-=======
-
-This content is released under the MIT License.
-See the [LICENSE.txt](LICENSE.txt) file.
-
