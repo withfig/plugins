@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "almostontop_Valiev",
   type: "shell",
   description: "almostontop zsh plugin",

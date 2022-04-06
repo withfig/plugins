@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔥",
   name: "zsh-crypto-prices_vincentdnl",
   type: "shell",
   description:

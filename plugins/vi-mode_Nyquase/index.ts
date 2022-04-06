@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⌨️",
   name: "vi-mode_Nyquase",
   type: "shell",
   description: "Oh-my-zsh plugin for vim emulation, but actually usable",

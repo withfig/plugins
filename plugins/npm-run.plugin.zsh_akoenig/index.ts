@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "npm-run.plugin.zsh_akoenig",
   type: "shell",
   description: "Autocompletion support for `npm run`.",

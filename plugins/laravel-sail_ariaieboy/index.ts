@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "👾",
   name: "laravel-sail_ariaieboy",
   type: "shell",
   description:

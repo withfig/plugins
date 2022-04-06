@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🧑‍💻",
   name: "kubectl-fzf_bonnefoa",
   type: "shell",
   description: "A fast kubectl autocompletion with fzf",

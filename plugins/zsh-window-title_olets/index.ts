@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "zsh-window-title_olets",
   type: "shell",
   description: "A zsh plugin for informative terminal window titles",

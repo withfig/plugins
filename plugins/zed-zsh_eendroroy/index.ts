@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "zed-zsh_eendroroy",
   type: "shell",
   description: "A simple wrapper for z to install as zsh plugin.",

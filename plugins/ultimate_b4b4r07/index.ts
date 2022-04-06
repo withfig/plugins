@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "☀️",
   name: "ultimate_b4b4r07",
   type: "shell",
   description: "Ultimate is a simple theme for minimalistic zsh users",

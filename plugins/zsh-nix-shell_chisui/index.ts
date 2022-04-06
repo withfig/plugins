@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "zsh-nix-shell_chisui",
   type: "shell",
   description: "zsh plugin that lets you use zsh in nix-shell shells.",

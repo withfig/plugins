@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "☀️",
   name: "susi-zsh-iterm_carcruz",
   type: "shell",
   description: "A theme and colors for Oh My ZSH and iTerm",

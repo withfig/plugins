@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔗",
   name: "fzf-widgets_ytet5uy4",
   type: "shell",
   description: "ZLE widgets of fzf",

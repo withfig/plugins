@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🧑‍💻",
   name: "zeta-zsh-theme_skylerlee",
   type: "shell",
   description: "Another :star: theme for oh-my-zsh",

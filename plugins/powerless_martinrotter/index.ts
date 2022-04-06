@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🧑‍💻",
   name: "powerless_martinrotter",
   type: "shell",
   description: "Minimalistic/responsive ZSH prompt inspired by powerline.",

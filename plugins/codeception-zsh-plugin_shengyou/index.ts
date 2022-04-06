@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔥",
   name: "codeception-zsh-plugin_shengyou",
   type: "shell",
   description: "A oh-my-zsh plugin for codeception command completion.",

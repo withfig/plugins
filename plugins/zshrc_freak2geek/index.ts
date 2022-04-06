@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔗",
   name: "zshrc_freak2geek",
   type: "shell",
   description:

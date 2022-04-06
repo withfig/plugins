@@ -21,7 +21,7 @@ import terminal from "./modules/terminal";
 import tmux from "./modules/tmux";
 import utility from "./modules/utility";
 
-const modules = [
+const MODULES = [
   autosuggestions,
   completion,
   editor,
@@ -40,6 +40,7 @@ const modules = [
 ];
 
 const plugin: Fig.Plugin = {
+  icon: "☀️",
   name: "prezto",
   displayName: "prezto",
   type: "shell",

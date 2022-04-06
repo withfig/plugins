@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😎",
   name: "cf-zsh-autocomplete-plugin_norman-abramovitz",
   type: "shell",
   description: "Cloud Foundry CLI zsh complete plugin",

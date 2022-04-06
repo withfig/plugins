@@ -17,6 +17,7 @@ const plugin: Fig.Plugin = {
   shells: ["bash", "zsh"],
   categories: ["Prompt"],
   keywords: ["zsh", "bash", "prompt", "linux-shell", "powerline"],
+  screenshots: ["images/1.png", "images/2.png", "images/3.png"],
   installation: {
     origin: "github",
     sourceFiles: ["liquidprompt"],

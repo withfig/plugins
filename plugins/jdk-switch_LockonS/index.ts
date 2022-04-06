@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "jdk-switch_LockonS",
   type: "shell",
   description:

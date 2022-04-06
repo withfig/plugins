@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔥",
   name: "lambda-zsh-theme_cdimascio",
   type: "shell",
   description: "λ Beautiful lambda theme for Zsh",

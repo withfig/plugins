@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "timewarrior_svenXY",
   type: "shell",
   description: "zsh plugin for timewarrior",

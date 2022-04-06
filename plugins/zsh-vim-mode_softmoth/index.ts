@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "zsh-vim-mode_softmoth",
   type: "shell",
   description: "Friendly bindings for ZSH's vi mode",

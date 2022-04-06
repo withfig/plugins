@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💥",
   name: "ansible-role-zsh_viasite-ansible",
   type: "shell",
   description:

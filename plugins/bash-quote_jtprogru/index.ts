@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "bash-quote_jtprogru",
   type: "shell",
   description: "Plugin for ZSH to get random quote from Bash.im",

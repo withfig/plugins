@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "git-it-on.zsh_peterhurford",
   displayName: "Git It On",
   type: "shell",

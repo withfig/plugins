@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "zsh-autoenv_Tarrasch",
   displayName: "zsh-autoenv",
   type: "shell",

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💾",
   name: "browse-commit_adolfoabegg",
   type: "shell",
   description:

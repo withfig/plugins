@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "👾",
   name: "git-extra-commands_unixorn",
   displayName: "git-extra-commands",
   type: "shell",

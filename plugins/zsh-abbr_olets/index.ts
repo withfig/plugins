@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💥",
   name: "zsh-abbr_olets",
   type: "shell",
   description:

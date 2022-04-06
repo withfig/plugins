@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "docker-zsh-completion_greymd",
   type: "shell",
   description: "Zsh completion for docker and docker-compose.",

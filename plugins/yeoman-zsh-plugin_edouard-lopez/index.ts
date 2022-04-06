@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔥",
   name: "yeoman-zsh-plugin_edouard-lopez",
   type: "shell",
   description:

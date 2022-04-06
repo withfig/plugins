@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔗",
   name: "antigen-git-rebase_smallhadroncollider",
   type: "shell",
   description: "An Antigen/zsh script to help with rebasing",

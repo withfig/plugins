@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔥",
   name: "zsh-z_agkozak",
   displayName: "zsh-z",
   type: "shell",

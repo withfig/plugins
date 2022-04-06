@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "oh-my-zsh-proxy-plugin_escalate",
   type: "shell",
   description:

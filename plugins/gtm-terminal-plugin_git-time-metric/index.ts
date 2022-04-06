@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "gtm-terminal-plugin_git-time-metric",
   type: "shell",
   description:

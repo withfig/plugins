@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🌟",
   name: "expand-ealias.plugin.zsh_zigius",
   type: "shell",
   description: "expand specific aliases with space",

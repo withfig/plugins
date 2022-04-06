@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "n.zsh_gretzky",
   type: "shell",
   description: "zsh plugin for switching node versions automatically with n",

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💾",
   name: "zgenom_jandamm",
   type: "shell",
   description: "A lightweight and fast plugin manager for ZSH",

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "zsh-notes_chipsenkbeil",
   type: "shell",
   description:

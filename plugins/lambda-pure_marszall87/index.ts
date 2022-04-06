@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🌟",
   name: "lambda-pure_marszall87",
   displayName: "Lambda Pure",
   type: "shell",

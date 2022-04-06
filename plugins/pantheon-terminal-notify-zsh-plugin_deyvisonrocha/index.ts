@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔗",
   name: "pantheon-terminal-notify-zsh-plugin_deyvisonrocha",
   type: "shell",
   description:

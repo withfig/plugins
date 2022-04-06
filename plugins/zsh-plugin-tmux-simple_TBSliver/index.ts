@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🌟",
   name: "zsh-plugin-tmux-simple_TBSliver",
   type: "shell",
   description: "Simple plugin for using tmux with zsh",

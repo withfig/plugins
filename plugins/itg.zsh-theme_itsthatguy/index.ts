@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "itg.zsh-theme_itsthatguy",
   type: "shell",
   description: "A designer developed zsh prompt",

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "virtualz_aperezdc",
   type: "shell",
   description: "Virtualfish-alike Python virtualenv wrapper for Zsh",

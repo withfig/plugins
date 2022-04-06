@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💾",
   name: "zsh-zellij-plugin_jaeheonji",
   type: "shell",
   description: "Zsh Plugin for Zellij",

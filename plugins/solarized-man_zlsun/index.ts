@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "👾",
   name: "solarized-man_zlsun",
   type: "shell",
   description:

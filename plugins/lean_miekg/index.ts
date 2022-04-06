@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "lean_miekg",
   type: "shell",
   description: "Pretty, minimal, one-line, fast ZSH prompt",

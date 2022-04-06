@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🌟",
   name: "conda-zsh-completion_esc",
   displayName: "Conda ZSH Completion",
   type: "shell",

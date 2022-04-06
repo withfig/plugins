@@ -1,7 +1,5 @@
 > Pretty, minimal and fast ZSH prompt
 
-![](./images/screenshot.png)
-
 ## Overview
 
 Most prompts are cluttered, ugly and slow. We wanted something visually pleasing that stayed out of our way.
@@ -51,12 +49,6 @@ venv ❯
 └────────────────────────────────────────────────────── virtualenv (or prompt:continuation)
 ```
 
-## Integration
-
-### [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-
-1. Set the `ZSH_THEME` to `""` in your `oh-my-zsh` settings.
-2. Do not enable the following (incompatible) `oh-my-zsh` plugins: `vi-mode`, `virtualenv`.
 
 **NOTE:** `oh-my-zsh` overrides the prompt so Pure must be ordered *after*
 `oh-my-zsh` in your dotfiles.

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😀",
   name: "zcomet_agkozak",
   type: "shell",
   description: "zcomet - Fast, Simple Zsh Plugin Manager",

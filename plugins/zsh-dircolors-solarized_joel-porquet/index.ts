@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "zsh-dircolors-solarized_joel-porquet",
   type: "shell",
   description: "Solarized dircolors plugin for zsh",

@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔥",
   name: "copy-pasta_ChrisPenner",
   type: "shell",
   authors: [

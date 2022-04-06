@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔥",
   name: "gitio-zsh_denysdovhan",
   type: "shell",
   description:

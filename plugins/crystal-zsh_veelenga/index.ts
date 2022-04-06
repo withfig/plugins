@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⚡️",
   name: "crystal-zsh_veelenga",
   type: "shell",
   description: ".oh-my-zsh plugin for Crystal",

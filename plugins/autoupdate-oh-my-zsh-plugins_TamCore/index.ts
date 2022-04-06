@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😎",
   name: "autoupdate-oh-my-zsh-plugins_TamCore",
   type: "shell",
   description: "Plugin for oh-my-zsh to automatically update custom-plugins",

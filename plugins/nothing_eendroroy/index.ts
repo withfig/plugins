@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "💡",
   name: "nothing_eendroroy",
   type: "shell",
   description: "Nothing ZSH theme",

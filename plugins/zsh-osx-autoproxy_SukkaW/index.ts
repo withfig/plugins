@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🔥",
   name: "zsh-osx-autoproxy_SukkaW",
   type: "shell",
   description:

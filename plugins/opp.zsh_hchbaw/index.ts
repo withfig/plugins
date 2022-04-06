@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "⭐️",
   name: "opp.zsh_hchbaw",
   type: "shell",
   description: "# Vim's text-objects-ish for zsh (obsolete for zsh-5.0.8)",

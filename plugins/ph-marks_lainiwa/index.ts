@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🚀",
   name: "ph-marks_lainiwa",
   type: "shell",
   description: ":kiss: Pornhub bookmarks at your CLI",

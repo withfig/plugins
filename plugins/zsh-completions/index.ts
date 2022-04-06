@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "🧑‍💻",
   name: "zsh-completions",
   type: "shell",
   description: "Additional completion definitions for Zsh.",

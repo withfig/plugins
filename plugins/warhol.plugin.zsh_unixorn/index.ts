@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  icon: "😎",
   name: "warhol.plugin.zsh_unixorn",
   type: "shell",
   description: "Colorize command output using grc and lscolors",
