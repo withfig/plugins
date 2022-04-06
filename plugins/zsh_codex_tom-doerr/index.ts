@@ -3,6 +3,7 @@ const plugin: Fig.Plugin = {
   displayName: "Zsh Codex",
   icon: "🦾",
   type: "shell",
+  screenshots: ["https://github.com/tom-doerr/bins/raw/main/zsh_codex/zc4.gif"],
   description:
     "This is a ZSH plugin that enables you to use OpenAI's Codex AI in the command line.",
   authors: [
@@ -19,6 +20,7 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     sourceFiles: ["zsh_codex.plugin.zsh"],
+    postScript: "bindkey '^X' create_completion",
   },
 };
 
