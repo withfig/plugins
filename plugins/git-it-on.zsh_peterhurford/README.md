@@ -8,42 +8,6 @@ A lot of times we have to look at files on GitHub.  But this intrudes our ideal 
 * `gitit <folder or file>` -- opens that folder in your current branch (paths are relative)
 
 
-## Installation
-
-*Note:* This plugin is stable, but still in active development.  I do not yet consider this plugin finished.
-
-*Note:* This was built on a Mac.  Support for Linux is experimental, and has not been tested by the plugin author.
-
---
-
-### Oh-My-ZSH
-Assuming you have [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), you can simply write
-
-```bash
-git clone https://github.com/peterhurford/git-it-on.zsh ~/.oh-my-zsh/custom/plugins/git-it-on
-echo "plugins+=(git-it-on)" >> ~/.zshrc
-```
-
-(Alternatively, you can place the `git-it-on` plugin in the `plugins=(...)` local manually.)
-
---
-
-### Antigen
-Add `antigen bundle peterhurford/git-it-on.zsh` to your `.zshrc` wherever you're adding the other antigen bundles.
-
-### Zgen
-If you’re using [Zgen](https://github.com/tarjoilija/zgen), add `zgen load peterhurford/git-it-on.zsh` to your `.zshrc` wherever you're adding your other zgen plugins.
-
-### Bash
-If you're lame and use bash, you can install this directly to your `~/.bash_profile`:
-
-```bash
-curl -s https://raw.githubusercontent.com/peterhurford/git-it-on.zsh/master/git-it-on.plugin.zsh >> ~/.bash_profile
-```````
-
-![Train Divider](http://i.imgur.com/aZKcadZ.gif)
-
-
 ## That's cool... What else?
 
 ### Well, for GitHub:
@@ -120,4 +84,3 @@ If you want more git-related aliases for making your git workflow faster, also l
 * [Send.zsh](https://github.com/robertzk/send.zsh), a git command by robertzk that combines `git add .`, `git commit -a -m`, and `git push origin <branch>`.
 * [Send.vim](https://github.com/peterhurford/send.vim), a vim plugin by
  me to do the above _without leaving vim_.
-

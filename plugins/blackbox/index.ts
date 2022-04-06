@@ -10,7 +10,7 @@ const plugin: Fig.Plugin = {
   categories: ["Convenience Function"],
   installation: {
     origin: "github",
-    sourceFiles: "blackbox.plugin.zsh",
+    sourceFiles: ["blackbox.plugin.zsh"],
   },
 };
 

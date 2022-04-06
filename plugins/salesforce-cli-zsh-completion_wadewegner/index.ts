@@ -8,20 +8,26 @@ const plugin: Fig.Plugin = {
     {
       name: "wadewegner",
       github: "wadewegner",
+      twitter: "WadeWegner",
     },
   ],
   github: "wadewegner/salesforce-cli-zsh-completion",
   license: ["Apache-2.0"],
-  shells: ["bash", "zsh"],
+  shells: ["zsh"],
   categories: ["Completion"],
   installation: {
     origin: "github",
-    bash: {
-      sourceFiles: ["generate.sh"],
-    },
-    zsh: {
-      sourceFiles: ["salesforce-cli-zsh-completion.plugin.zsh"],
-    },
+    sourceFiles: ["salesforce-cli-zsh-completion.plugin.zsh"],
+    dependencies: [
+      {
+        type: "binary",
+        name: "sfdx",
+      },
+      {
+        type: "binary",
+        name: "jq",
+      },
+    ],
   },
 };
 

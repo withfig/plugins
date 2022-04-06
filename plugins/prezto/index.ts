@@ -86,12 +86,10 @@ const plugin: Fig.Plugin = {
         {
           displayName: "Module directories",
           name: "pmodule-dirs",
-          description:
-            "Comma separated list of directories to load prezto modules from",
+          description: "List of directories to load prezto modules from",
           type: "script",
-          // TODO: support multiselect-text
-          interface: "text",
-          default: "$HOME/.zprezto-contrib",
+          interface: "multi-text",
+          default: ["$HOME/.zprezto-contrib"],
           compile: compileZstyleList(":prezto:load", "pmodule-dirs"),
         },
         {
@@ -110,10 +108,11 @@ const plugin: Fig.Plugin = {
           description:
             "Comma separated list of Zsh modules to load (man zshmodules)",
           type: "script",
-          // TODO: support multiselect-text.
-          // TODO: add options.
-          interface: "text",
-          default: "attr,stat",
+          // TODO: add options, disable user created options.
+          interface: "multiselect",
+          allowUserCreatedOptions: true,
+          default: ["attr", "stat"],
+          options: ["attr", "stat"],
           compile: compileZstyleList(":prezto:load", "pmodule-allow-overrides"),
         },
         {
@@ -122,10 +121,10 @@ const plugin: Fig.Plugin = {
           description:
             "Comma separated list of Zsh functions to load (man zshcontrib)",
           type: "script",
-          // TODO: support multiselect-text.
-          // TODO: add options.
-          interface: "text",
-          default: "zargs,zmv",
+          // TODO: add options, disable user created options.
+          interface: "multiselect",
+          default: ["zargs", "zmv"],
+          options: ["zargs", "zmv"],
           compile: compileZstyleList(":prezto:load", "zfunction"),
         },
         {
@@ -152,7 +151,7 @@ const plugin: Fig.Plugin = {
             }
             // TODO: we should look in ${ZPREZTODIR} (default is
             // ${ZDOTDIR:-HOME}/.zprezto). Need to add this functionality to env.
-            // const preztoDir = `~/.zprezto/`;
+            const preztoDir = `~/.zprezto/`;
             const moduleDirs = config["pmodule-dirs"] as string;
             const modules = await Promise.all(
               [
@@ -171,7 +170,7 @@ const plugin: Fig.Plugin = {
         },
       ],
     },
-    ...MODULES.map((module) => ({
+    ...modules.map((module) => ({
       displayName: `Module: ${module.name}`,
       hidden: ({ config }: { config: Fig.ConfigurationDictionary }) =>
         !(config.modules as string[]).includes(module.name),

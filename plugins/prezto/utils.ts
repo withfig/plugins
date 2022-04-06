@@ -10,15 +10,8 @@ export const compileZstyle =
     setZstyle(namespace, key, `${value}`);
 
 export const compileZstyleList =
-  (namespace: string, key: string) => (value: string) =>
-    setZstyle(
-      namespace,
-      key,
-      value
-        .split(",")
-        .map((item) => `"${item}"`)
-        .join(" ")
-    );
+  (namespace: string, key: string) => (value: string[]) =>
+    setZstyle(namespace, key, value.map((item) => `"${item}"`).join(" "));
 
 export type ModuleConfiguration = {
   name: string;

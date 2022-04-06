@@ -74,4 +74,3 @@ plugins=(salesforce-cli-zsh-completion)
 ```
 
 Reload your shell and enjoy.
-

@@ -1,27 +1,3 @@
-> # 🇺🇦 UKRAINE NEEDS YOUR HELP NOW!
->
-> I'm the creator of this project and I'm Ukrainian.
->
-> **My country, Ukraine, [is being invaded by the Russian Federation, right now](https://www.bbc.com/news/world-europe-60504334)**. I've fled Kyiv and now I'm safe with my family in the western part of Ukraine. At least for now.
-> Russia is hitting target all over my country by ballistic missiles.
->
-> **Please, save me and help to save my country!**
->
-> Ukrainian National Bank opened [an account to Raise Funds for Ukraine’s Armed Forces](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi):
->
-> ```
-> SWIFT Code NBU: NBUA UA UX
-> JP MORGAN CHASE BANK, New York
-> SWIFT Code: CHASUS33
-> Account: 400807238
-> 383 Madison Avenue, New York, NY 10179, USA
-> IBAN: UA843000010000000047330992708
-> ```
->
-> You can also donate to [charity supporting Ukrainian army](https://savelife.in.ua/en/donate/).
->
-> **THANK YOU!**
-
 <h1 align="center">
   <a href="https://github.com/spaceship-prompt/spaceship-prompt">
     <img alt="spaceship →~ prompt" src="https://cloud.githubusercontent.com/assets/3459374/21679181/46e24706-d34b-11e6-82ee-5efb3d2ba70f.png" width="400">
@@ -33,6 +9,7 @@
   <a href="http://zsh.org" target="_blank"><code>Zsh</code></a> prompt for Astronauts.
 </h4>
 
+<!--
 <p align="center">
   <a href="https://npmjs.org/package/spaceship-prompt">
     <img src="https://img.shields.io/npm/v/spaceship-prompt.svg?style=flat-square"
@@ -66,11 +43,11 @@
       alt="Donate" />
   </a>
 </p>
+-->
 
 <div align="center">
   <h4>
     <a href="https://spaceship-prompt.sh">Website</a> |
-    <a href="https://spaceship-prompt.sh/getting-started">Installing</a> |
     <a href="#features">Features</a> |
     <a href="https://spaceship-prompt.sh/options">Options</a> |
     <a href="https://spaceship-prompt.sh/api">API</a>
@@ -84,6 +61,8 @@
 </div>
 <br>
 
+[![SWUbanner](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-direct-single.svg)](https://stand-with-ukraine.pp.ua/)
+  
 Spaceship is a minimalistic, powerful and extremely customizable [Zsh][zsh-url] prompt. It combines everything you may need for convenient work, without unnecessary complications, like a real spaceship.
 
 <p align="center">
@@ -157,189 +136,12 @@ To work correctly, you will first need:
 - [`zsh`](http://www.zsh.org/) (v5.2 or recent) must be installed.
 - [Powerline Font](https://github.com/powerline/fonts) must be installed and used in your terminal (for example, switch font to [Fira Code](https://github.com/tonsky/FiraCode)).
 
-## Installing
-
-Now that the requirements are satisfied, you can install Spaceship ZSH via any of the following tools.
-
-**💡 Tip:** If you like this project ~~and want to get some stickers and postcards~~, consider becoming a patron:
-
-<a href="https://patreon.com/denysdovhan">
-  <img alt="Become a patron" src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="150px">
-</a>
-
-### [Homebrew]
-
-```
-brew install spaceship
-```
-
-You can also add the following to your [`Brewfile`](https://github.com/Homebrew/homebrew-bundle#usage):
-
-```ruby
-brew "spaceship"
-```
-
-### [npm]
-
-```
-npm install -g spaceship-prompt
-```
-
-Done. This command should link `spaceship.zsh` as `prompt_spaceship_setup` to your `$fpath` and set `prompt spaceship` in `.zshrc`. Just reload your terminal.
-Ensure that you have enabled post-scripts in npm by `npm config set ignore-scripts false` before starting installation.
-
-**💡 Tip:** Update Spaceship to new versions as you would any other package.
-
-### [oh-my-zsh]
-
-Clone this repo:
-
-```zsh
-git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
-```
-
-Symlink `spaceship.zsh-theme` to your oh-my-zsh custom themes directory:
-
-```zsh
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-```
-
-Set `ZSH_THEME="spaceship"` in your `.zshrc`.
-
-### [prezto]
-
-- Follow [prezto-contrib#usage](https://github.com/belak/prezto-contrib#usage) to clone `prezto-contrib` to the proper location.
-- Enable the `contrib-prompt` module (before the `prompt` module).
-- Set `zstyle ':prezto:module:prompt' theme 'spaceship'` in your `.zpreztorc`.
-
-### [zim]
-
-Add `zmodule spaceship-prompt/spaceship-prompt --name spaceship` to your `.zimrc` and run `zimfw install`.
-
-### [antigen]
-
-Add the following snippet in your `.zshrc`:
-
-```
-antigen theme spaceship-prompt/spaceship-prompt
-```
-
-### [antibody]
-
-Update your `.zshrc` file with the following line:
-
-```
-antibody bundle spaceship-prompt/spaceship-prompt
-```
-
-### [zinit]
-
-Add the following line to your `.zshrc` where you're adding your other Zsh plugins:
-
-```
-zinit light spaceship-prompt/spaceship-prompt
-```
-
-### [zgen]
-
-Add the following line to your `.zshrc` where you're adding your other Zsh plugins:
-
-```
-zgen load spaceship-prompt/spaceship-prompt spaceship
-```
-
-### [zplug]
-
-Use this command in your `.zshrc` to load Spaceship as prompt theme:
-
-```
-zplug "spaceship-prompt/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
-```
-
-### Linux package manager
-
-#### Arch Linux
-
-Install the latest master from the AUR package [`spaceship-prompt-git`](https://aur.archlinux.org/packages/spaceship-prompt-git/):
-
-```
-git clone https://aur.archlinux.org/spaceship-prompt-git.git --depth=1
-cd spaceship-prompt-git
-makepkg -si
-```
-
-### Manual
-
-If you have problems with approaches above, follow these instructions:
-
-- Clone this repo `git clone https://github.com/spaceship-prompt/spaceship-prompt.git --depth=1`
-- Symlink `spaceship.zsh` to somewhere in [`$fpath`](http://www.refining-linux.org/archives/46/ZSH-Gem-12-Autoloading-functions/) as `prompt_spaceship_setup`.
-- Initialize prompt system and choose `spaceship`.
-
-#### Example
-
-Run `echo $fpath` to see possible location and link `spaceship.zsh` there, like:
-
-```zsh
-$ ln -sf "$PWD/spaceship.zsh" "/usr/local/share/zsh/site-functions/prompt_spaceship_setup"
-```
-
-For a user-specific installation, simply add a directory to `$fpath` for that user in `.zshrc`:
-
-```zsh
-fpath=( "${ZDOTDIR:-$HOME}/.zfunctions" $fpath )
-```
-
-Then install the theme like this:
-
-```zsh
-$ ln -sf "$PWD/spaceship.zsh" "${ZDOTDIR:-$HOME}/.zfunctions/prompt_spaceship_setup"
-```
-
-For initializing prompt system add this to your `.zshrc`:
-
-```zsh
-# .zshrc
-autoload -U promptinit; promptinit
-prompt spaceship
-```
-
 ## Customization
 
 Spaceship works well out of the box, but you can customize almost everything if you want.
 
 - [**Options**](./docs/options.md) — Tweak section's behavior with tons of options.
 - [**API**](./docs/api.md) — Define a custom section that will do exactly what you want.
-
-You have the ability to customize or disable specific elements of Spaceship. Set options and define new sections in your `.zshrc` file, **after** the theme. To include a custom section you have defined in your prompt, add it to the `SPACESHIP_PROMPT_ORDER`.
-
-For example:
-
-```shell
-# .zshrc
-
-# add Spaceship (differs by setup, see Installating above)
-
-section_mysection() {
-  # ...
-}
-
-SPACESHIP_PROMPT_ORDER=(<any preceding sections> mysection <any following sections>)
-```
-
-To append custom sections to the default Spaceship prompt, follow the form:
-
-```shell
-SPACESHIP_PROMPT_ORDER=($SPACESHIP_PROMPT_ORDER mysection)
-```
-
-To prepend custom sections to the default Spaceship prompt, follow the form:
-
-```shell
-SPACESHIP_PROMPT_ORDER=(mysection $SPACESHIP_PROMPT_ORDER)
-```
-
-**💡 Tip:** Take a look at popular option presets or share your own configuration on [Presets](https://github.com/spaceship-prompt/spaceship-prompt/wiki/Presets) wiki page.
 
 ## Troubleshooting
 
@@ -402,4 +204,3 @@ MIT © [Denys Dovhan](http://denysdovhan.com)
 [swiftenv]: https://github.com/kylef/swiftenv
 [powerline]: https://github.com/powerline/fonts
 [zinit]: https://github.com/zdharma/zinit
-

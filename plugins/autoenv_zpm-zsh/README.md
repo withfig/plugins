@@ -73,23 +73,3 @@ source $(dirname $0)/.env*
 
 If you don't use [zpm](https://github.com/zpm-zsh/zpm), install it manually and activate it before this plugin. 
 If you use zpm you don’t need to do anything
-
-
-## Installation
-
-### Using [zpm](https://github.com/zpm-zsh/zpm)
-
-Add `zpm load zpm-zsh/autoenv` into `.zshrc`
-
-### Using [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-
-Execute `git clone https://github.com/zpm-zsh/autoenv ~/.oh-my-zsh/custom/plugins/autoenv`. Add `autoenv` into plugins array in `.zshrc`
-
-### Using [antigen](https://github.com/zsh-users/antigen)
-
-Add `antigen bundle zpm-zsh/autoenv` into `.zshrc`
-
-### Using [zgen](https://github.com/tarjoilija/zgen)
-
-Add `zgen load zpm-zsh/autoenv` into `.zshrc`
-

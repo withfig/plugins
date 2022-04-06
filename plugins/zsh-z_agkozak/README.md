@@ -1,10 +1,9 @@
-# Zsh-z
-
-[![MIT License](img/mit_license.svg)](https://opensource.org/licenses/MIT)
+<!-- [![MIT License](img/mit_license.svg)](https://opensource.org/licenses/MIT)
 ![Zsh version 4.3.11 and higher](img/zsh_4.3.11_plus.svg)
 [![GitHub stars](https://img.shields.io/github/stars/agkozak/zsh-z.svg)](https://github.com/agkozak/zsh-z/stargazers)
 
 ![Zsh-z demo](img/demo.gif)
+-->
 
 Zsh-z is a command line tool that allows you to jump quickly to directories that you have visited frequently in the past, or recently -- but most often a combination of the two (a concept known as ["frecency"](https://en.wikipedia.org/wiki/Frecency)). It works by keeping track of when you go to directories and how much time you spend in them. It is then in the position to guess where you want to go when you type a partial string, e.g., `z src` might take you to `~/src/zsh`. `z zsh` might also get you there, and `z c/z` might prove to be even more specific -- it all depends on your habits and how much time you have been using Zsh-z to build up a database. After using Zsh-z for a little while, you will get to where you want to be by typing considerably less than you would need if you were using `cd`.
 
@@ -17,17 +16,14 @@ There are other, smaller improvements which I try to document in [Improvements a
 Zsh-z is a drop-in replacement for `rupa/z` and will, by default, use the same database (`~/.z`), so you can go on using `rupa/z` when you launch `bash`.
 
 ## Table of Contents
-- [News](#news)
-- [Installation](#installation)
-- [Command Line Options](#command-line-options)
 - [Settings](#settings)
-- [Case Sensitivity](#case-sensitivity)
-- [`ZSHZ_UNCOMMON`](#zshz_uncommon)
-- [Making `--add` work for you](#making---add-work-for-you)
-- [Other Improvements and Fixes](#other-improvements-and-fixes)
-- [Migrating from Other Tools](#migrating-from-other-tools)
-- [`COMPLETE_ALIASES`](#complete_aliases)
-- [Known Bugs](#known-bugs)
+  - [Case sensitivity](#case-sensitivity)
+  - [`ZSHZ_UNCOMMON`](#zshz_uncommon)
+  - [Making `--add` Work for You](#making---add-work-for-you)
+  - [Other Improvements and Fixes](#other-improvements-and-fixes)
+  - [Migrating from Other Tools](#migrating-from-other-tools)
+  - [`COMPLETE_ALIASES`](#complete_aliases)
+  - [Known Bugs](#known-bugs)
 
 ## News
 
@@ -90,145 +86,6 @@ Zsh-z is a drop-in replacement for `rupa/z` and will, by default, use the same d
     + Symlinked datafiles were having their symlinks overwritten; this bug has been fixed.
 
 </details>
-
-## Installation
-
-### General observations
-
-This script can be installed simply by downloading it and sourcing it from your `.zshrc`:
-
-    source /path/to/zsh-z.plugin.zsh
-
-For tab completion to work, you will want to have loaded `compinit`. The frameworks handle this themselves. If you are not using a framework, put
-
-    autoload -U compinit && compinit
-
-in your .zshrc somewhere below where you source `zsh-z.plugin.zsh`.
-
-If you add
-
-    zstyle ':completion:*' menu select
-
-to your `.zshrc`, your completion menus will look very nice. This `zstyle` invocation should work with any of the frameworks below as well.
-
-### For [antigen](https://github.com/zsh-users/antigen) users
-
-Add the line
-
-    antigen bundle agkozak/zsh-z
-
-to your `.zshrc`, somewhere above the line that says `antigen apply`.
-
-### For [oh-my-zsh](http://ohmyz.sh/) users
-
-Execute the following command:
-
-    git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
-
-and add `zsh-z` to the line of your `.zshrc` that specifies `plugins=()`, e.g., `plugins=( git zsh-z )`.
-
-### For [prezto](https://github.com/sorin-ionescu/prezto) users
-
-Execute the following command:
-
-    git clone https://github.com/agkozak/zsh-z.git ~/.zprezto-contrib/zsh-z
-
-Then edit your `~/.zpreztorc` file. Make sure the line that says
-
-    zstyle ':prezto:load' pmodule-dirs $HOME/.zprezto-contrib
-
-is uncommented. Then find the section that specifies which modules are to be loaded; it should look something like this:
-
-    zstyle ':prezto:load' pmodule \
-        'environment' \
-        'terminal' \
-        'editor' \
-        'history' \
-        'directory' \
-        'spectrum' \
-        'utility' \
-        'completion' \
-        'prompt'
-
-Add a backslash to the end of the last line add `'zsh-z'` to the list, e.g.,
-
-    zstyle ':prezto:load' pmodule \
-        'environment' \
-        'terminal' \
-        'editor' \
-        'history' \
-        'directory' \
-        'spectrum' \
-        'utility' \
-        'completion' \
-        'prompt' \
-        'zsh-z'
-
-Then relaunch `zsh`.
-
-### For [zcomet](https://github.com/agkozak/zcomet) users
-        
-Simply add
-
-    zcomet load agkozak/zsh-z
-
-to your `.zshrc` (below where you source `zcomet.zsh` and above where you run `zcomet compinit`).
-
-### For [zgen](https://github.com/tarjoilija/zgen) users
-
-Add the line
-
-    zgen load agkozak/zsh-z
-
-somewhere above the line that says `zgen save`. Then run
-
-    zgen reset
-    zsh
-
-to refresh your init script.
-
-### For [Zim](https://github.com/zimfw/zimfw)
-
-Add the following line to your `.zimrc`:
-
-    zmodule https://github.com/agkozak/zsh-z
-
-Then run
-
-    zimfw install
-
-and restart your shell.
-
-### For [Zinit](https://github.com/zdharma-continuum/zinit) users
-
-Add the line
-
-    zinit load agkozak/zsh-z
-
-to your `.zshrc`.
-
-`zsh-z` supports `zinit`'s `unload` feature; just run `zinit unload agkozak/zshz` to restore the shell to its state before `zsh-z` was loaded.
-
-### For [Znap](https://github.com/marlonrichert/zsh-snap) users
-
-Add the line
-
-    znap source agkozak/zsh-z
-
-somewhere below the line where you `source` Znap itself.
-
-### For [zplug](https://github.com/zplug/zplug) users
-
-Add the line
-
-    zplug "agkozak/zsh-z"
-
-somewhere above the line that says `zplug load`. Then run
-
-    zplug install
-    zplug load
-
-to install `zsh-z`.
 
 ## Command Line Options
 
@@ -342,4 +199,3 @@ It is possible to run a completion on a string with spaces in it, e.g., `z us bi
     z us /usr/local/bin.
 
 You get where you want to go, but the detritus on the command line is annoying. This is also a problem in `rupa/z`, but I am keen on eventually eliminating this glitch. Advice is welcome.
-

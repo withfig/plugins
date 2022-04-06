@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
-  icon: "☀️",
   name: "noreallyjustfuckingstopalready_eventi",
+  displayName: "No Really Just Stop",
+  icon: "🛑",
   type: "shell",
   description:
     "Please OS X (or whatever your name is) just fucking reset your DNS cache please",
@@ -11,13 +12,10 @@ const plugin: Fig.Plugin = {
     },
   ],
   github: "eventi/noreallyjustfuckingstopalready",
-  shells: ["bash", "zsh"],
+  shells: ["zsh"],
   categories: ["Other"],
   installation: {
     origin: "github",
-    bash: {
-      sourceFiles: ["flu.sh"],
-    },
     zsh: {
       sourceFiles: ["noreallyjustfuckingstopalready.plugin.zsh"],
     },

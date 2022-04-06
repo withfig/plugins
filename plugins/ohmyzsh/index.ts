@@ -486,7 +486,7 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     preScript: ({ ctx }) => `export ZSH="${ctx.plugin.installDirectory}"`,
-    sourceFiles: "oh-my-zsh.sh",
+    sourceFiles: ["oh-my-zsh.sh"],
   },
   configuration: [
     {
@@ -499,7 +499,7 @@ const plugin: Fig.Plugin = {
         env
           ? env.listFolder(`${env.plugin.installDirectory}/plugins`)
           : PLUGINS,
-      environmentVariable: "plugins",
+      name: "plugins",
     },
     {
       displayName: "Theme",
@@ -516,7 +516,7 @@ const plugin: Fig.Plugin = {
         );
         return themes.map((theme) => theme.replace(".zsh-theme", ""));
       },
-      environmentVariable: "ZSH_THEME",
+      name: "ZSH_THEME",
     },
     {
       displayName: "Getting Updates",
@@ -531,7 +531,7 @@ const plugin: Fig.Plugin = {
           additionalDetails:
             "**disabled**: disables all automatic updates; **auto**: automatically updates Oh My Zsh when a new version is available, without asking for confirmation; **reminder**: only checks if there are updates available and shows a reminder to update Oh My Zsh. **prompt** (default): ask for confirmation before updating Oh My Zsh.",
           interface: "multiselect",
-          default: "prompt",
+          default: ["prompt"],
           options: modes,
           compile: (value) => `zstyle ':omz:update' mode ${value}`,
         },
@@ -559,7 +559,7 @@ const plugin: Fig.Plugin = {
           description: "Limit the themes that random can pick from",
           type: "environmentVariable",
           interface: "multiselect",
-          default: "robbyrussell",
+          default: ["robbyrussell"],
           disabled: ({ config }) => config.ZSH_THEME !== "random",
           options: async ({ env }) => {
             if (!env) {
@@ -570,14 +570,14 @@ const plugin: Fig.Plugin = {
             );
             return themes.map((theme) => theme.replace(".zsh-theme", ""));
           },
-          environmentVariable: "ZSH_THEME_RANDOM_CANDIDATES",
+          name: "ZSH_THEME_RANDOM_CANDIDATES",
         },
         {
           displayName: "Ignored Theme Candidates",
           description: "Themes random should ignore",
           type: "environmentVariable",
           interface: "multiselect",
-          default: "robbyrussell",
+          default: ["robbyrussell"],
           disabled: ({ config }) => config.ZSH_THEME !== "random",
           options: async ({ env }) => {
             if (!env) {
@@ -588,7 +588,7 @@ const plugin: Fig.Plugin = {
             );
             return themes.map((theme) => theme.replace(".zsh-theme", ""));
           },
-          environmentVariable: "ZSH_THEME_RANDOM_IGNORED",
+          name: "ZSH_THEME_RANDOM_IGNORED",
         },
         {
           displayName: "Random Quiet",
@@ -600,7 +600,7 @@ const plugin: Fig.Plugin = {
           interface: "toggle",
           default: false,
           disabled: ({ config }) => config.ZSH_THEME !== "random",
-          environmentVariable: "ZSH_THEME_RANDOM_IGNORED",
+          name: "ZSH_THEME_RANDOM_IGNORED",
         },
       ],
     },
@@ -618,7 +618,7 @@ const plugin: Fig.Plugin = {
           type: "environmentVariable",
           interface: "toggle",
           default: false,
-          environmentVariable: "CASE_SENSITIVE",
+          name: "CASE_SENSITIVE",
         },
         {
           displayName: "Hyphen Sensitive",
@@ -629,7 +629,7 @@ const plugin: Fig.Plugin = {
           interface: "toggle",
           default: false,
           disabled: ({ config }) => config.CASE_SENSITIVE === true,
-          environmentVariable: "HYPHEN_INSENSITIVE",
+          name: "HYPHEN_INSENSITIVE",
         },
         {
           displayName: "Completion Waiting Dots",
@@ -638,7 +638,7 @@ const plugin: Fig.Plugin = {
           type: "environmentVariable",
           interface: "toggle",
           default: true,
-          environmentVariable: "COMPLETION_WAITING_DOTS",
+          name: "COMPLETION_WAITING_DOTS",
         },
         {
           displayName: "Hide Insecure Completions Warning",
@@ -647,7 +647,7 @@ const plugin: Fig.Plugin = {
           type: "environmentVariable",
           interface: "toggle",
           default: false,
-          environmentVariable: "ZSH_DISABLE_COMPFIX",
+          name: "ZSH_DISABLE_COMPFIX",
         },
       ],
     },
@@ -665,7 +665,7 @@ const plugin: Fig.Plugin = {
           type: "environmentVariable",
           interface: "toggle",
           default: false,
-          environmentVariable: "DISABLE_AUTO_TITLE",
+          name: "DISABLE_AUTO_TITLE",
         },
       ],
     },
@@ -682,7 +682,7 @@ const plugin: Fig.Plugin = {
           type: "environmentVariable",
           interface: "toggle",
           default: false,
-          environmentVariable: "DISABLE_MAGIC_FUNCTIONS",
+          name: "DISABLE_MAGIC_FUNCTIONS",
         },
         {
           displayName: "Disable ls Colors",
@@ -691,7 +691,7 @@ const plugin: Fig.Plugin = {
           type: "environmentVariable",
           interface: "toggle",
           default: false,
-          environmentVariable: "DISABLE_LS_COLORS",
+          name: "DISABLE_LS_COLORS",
         },
         {
           displayName: "Enable Correction",
@@ -702,7 +702,7 @@ const plugin: Fig.Plugin = {
           type: "environmentVariable",
           interface: "toggle",
           default: false,
-          environmentVariable: "ENABLE_CORRECTION",
+          name: "ENABLE_CORRECTION",
         },
         {
           displayName: "Disable Marking Untracked Files as Dirty",
@@ -711,7 +711,7 @@ const plugin: Fig.Plugin = {
           type: "environmentVariable",
           interface: "toggle",
           default: false,
-          environmentVariable: "DISABLE_UNTRACKED_FILES_DIRTY",
+          name: "DISABLE_UNTRACKED_FILES_DIRTY",
         },
       ],
     },
@@ -744,7 +744,7 @@ const plugin: Fig.Plugin = {
     //       interface: "text",
     //       default: "$FIG_PLUGIN_HOME/.oh-my-zsh",
     //       disabled: () => true,
-    //       environmentVariable: "ZSH",
+    //       name: "ZSH",
     //     },
     //     {
     //       displayName: "Path to Custom Folder",
@@ -752,7 +752,7 @@ const plugin: Fig.Plugin = {
     //       type: "environmentVariable",
     //       interface: "text",
     //       default: "$FIG_PLUGIN_HOME/.oh-my-zsh/custom",
-    //       environmentVariable: "ZSH_CUSTOM",
+    //       name: "ZSH_CUSTOM",
     //     },
     //     {
     //       displayName: "Path to Cache Folder",
@@ -761,7 +761,7 @@ const plugin: Fig.Plugin = {
     //       interface: "text",
     //       default: "$FIG_PLUGIN_HOME//.oh-my-zsh/cache",
     //       disabled: () => true,
-    //       environmentVariable: "ZSH_CACHE_DIR",
+    //       name: "ZSH_CACHE_DIR",
     //     },
     //   ]
     // },

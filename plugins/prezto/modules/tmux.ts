@@ -2,7 +2,6 @@ import {
   ModuleConfiguration,
   compileZstyleBool,
   compileZstyle,
-  compileZstyleList,
   setZstyle,
 } from "../utils";
 

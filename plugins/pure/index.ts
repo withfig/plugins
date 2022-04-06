@@ -160,7 +160,7 @@ const plugin: Fig.Plugin = {
       type: "environmentVariable",
       default: "❯",
       interface: "text",
-      environmentVariable: "PURE_PROMPT_SYMBOL",
+      name: "PURE_PROMPT_SYMBOL",
     },
     {
       displayName: "Git Down Arrow Symbol",
@@ -168,7 +168,7 @@ const plugin: Fig.Plugin = {
       type: "environmentVariable",
       default: "⇣",
       interface: "text",
-      environmentVariable: "PURE_GIT_DOWN_ARROW",
+      name: "PURE_GIT_DOWN_ARROW",
     },
     {
       displayName: "Git Up Arrow Symbol",
@@ -176,7 +176,7 @@ const plugin: Fig.Plugin = {
       type: "environmentVariable",
       default: "⇡",
       interface: "text",
-      environmentVariable: "PURE_GIT_UP_ARROW",
+      name: "PURE_GIT_UP_ARROW",
     },
     {
       displayName: "Git Stash Symbol",
@@ -184,7 +184,7 @@ const plugin: Fig.Plugin = {
       type: "environmentVariable",
       default: "≡",
       interface: "text",
-      environmentVariable: "PURE_GIT_STASH_SYMBOL",
+      name: "PURE_GIT_STASH_SYMBOL",
     },
     {
       displayName: "VI-Mode Prompt Symbol",
@@ -192,7 +192,7 @@ const plugin: Fig.Plugin = {
       type: "environmentVariable",
       default: "❮",
       interface: "text",
-      environmentVariable: "PURE_PROMPT_VICMD_SYMBOL",
+      name: "PURE_PROMPT_VICMD_SYMBOL",
     },
     {
       displayName: "Command Max Execution Time",
@@ -201,7 +201,7 @@ const plugin: Fig.Plugin = {
         "The max execution time (in seconds) of a process before its run time is shown when it exits.",
       default: 5,
       interface: "text",
-      environmentVariable: "PURE_CMD_MAX_EXEC_TIME",
+      name: "PURE_CMD_MAX_EXEC_TIME",
     },
     {
       displayName: "Enable Git Pull",
@@ -210,7 +210,7 @@ const plugin: Fig.Plugin = {
         "Allow Pure to check whether the current Git remote has been updated.",
       default: false,
       interface: "toggle",
-      environmentVariable: "PURE_GIT_PULL",
+      name: "PURE_GIT_PULL",
     },
     {
       displayName: "Include Untracked Files in Git Dirty Check",
@@ -219,16 +219,16 @@ const plugin: Fig.Plugin = {
       type: "environmentVariable",
       default: false,
       interface: "toggle",
-      environmentVariable: "PURE_GIT_UNTRACKED_DIRTY",
+      name: "PURE_GIT_UNTRACKED_DIRTY",
     },
     {
       displayName: "Git Dirty Check Delay",
       description:
         "Time in seconds to delay git dirty checking when `git status` takes > 5 seconds.",
       type: "environmentVariable",
-      default: 1800,
+      default: "1800",
       interface: "text",
-      environmentVariable: "PURE_GIT_DELAY_DIRTY_CHECK",
+      name: "PURE_GIT_DELAY_DIRTY_CHECK",
     },
     {
       name: "show-git-stash-status",
