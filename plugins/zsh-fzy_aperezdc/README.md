@@ -1,5 +1,3 @@
-# zsh-fzy
-
 zsh-fzy is a [zsh](http://www.zsh.org/) plugin that uses [fzy](https://github.com/jhawthorn/fzy) for 
 certain fuzzy matching operations. The plugin defines the following Zle
 widgets:
@@ -18,14 +16,9 @@ widgets:
   process ID in the command line.
 
 
-## Installation
+## Prerequisites
+* [fzy](https://github.com/jhawthorn/fzy)
 
-It can be installed manually, or by using a plugin manager, e.g.
-[zplug](https://github.com/zplug/zplug):
-
-```sh
-zplug aperezdc/zsh-fzy
-```
 
 
 ## Configuration
