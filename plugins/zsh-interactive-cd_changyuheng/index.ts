@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⭐️",
   name: "zsh-interactive-cd_changyuheng",
+  displayName: "Zsh Interactive cd",
   type: "shell",
   description: "Fish like interactive tab completion for cd in zsh",
   authors: [
@@ -13,8 +14,15 @@ const plugin: Fig.Plugin = {
   license: ["MPL-2.0"],
   shells: ["zsh"],
   categories: ["Other"],
+  keywords: ["fzf", "cd", "interactive"],
   installation: {
     origin: "github",
+    dependencies: [
+      {
+        name: "fzf",
+        type: "binary",
+      },
+    ],
     sourceFiles: ["zsh-interactive-cd.plugin.zsh"],
   },
 };
