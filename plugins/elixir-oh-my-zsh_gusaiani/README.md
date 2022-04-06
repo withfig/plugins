@@ -2,33 +2,6 @@
 
 Terminal shortcuts for Elixir developers.
 
-## Install and run
-
-These [shortcuts](https://github.com/gusaiani/elixir-oh-my-zsh/blob/master/elixir.plugin.zsh) have nothing exclusive to Zsh, they are basic shell commands. This means you can always copy the contents and use them with just about any shell setup.
-
-However, if you already use one of the libraries listed below, here's to any easy life:
-
-### [Antigen](https://github.com/zsh-users/antigen)
-
-Add `antigen bundle gusaiani/elixir-oh-my-zsh` to your `.zshrc` file. Antigen will handle cloning the plugin for you automatically the next time you start `zsh`. You can also add the plugin to a running ZSH with `antigen bundle gusaiani/elixir-oh-my-zsh` for testing before adding it to your `.zshrc`.
-
-### [Oh-My-Zsh](http://ohmyz.sh/)
-
-```
-cd ~/.oh-my-zsh/custom/plugins
-git clone https://github.com/gusaiani/elixir-oh-my-zsh.git elixir
-```
-
-Enable it by adding _elixir_ to the [_plugins array_](https://github.com/robbyrussell/oh-my-zsh/blob/master/templates/zshrc.zsh-template#L66).
-You have to restart your current terminal in order to use the aliases below.
-```
-# located under $HOME/.zshrc
-plugins=(git elixir)
-```
-
-### [Zgen](https://github.com/tarjoilija/zgen)
-
-Add `zgen load gusaiani/elixir-oh-my-zsh` to your `.zshrc` file in the same function you're doing your other `zgen load` calls in. Zgen will automatically clone the repository for you when you do a `zgen save`, and load it the next time you start a terminal session.
 
 ## Functions
 

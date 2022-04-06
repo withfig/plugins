@@ -13,7 +13,7 @@ const plugin: Fig.Plugin = {
   github: "gusaiani/elixir-oh-my-zsh",
   license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Other"],
+  categories: ["Alias"],
   keywords: [
     "productivity",
     "terminal",
