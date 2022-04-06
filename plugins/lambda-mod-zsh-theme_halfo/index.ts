@@ -18,6 +18,15 @@ const plugin: Fig.Plugin = {
     origin: "github",
     sourceFiles: ["lambda-mod.zsh-theme"],
   },
+  configuration: [
+    {
+      displayName: "Directory Levels in Prompt",
+      type: "environmentVariable",
+      name: "LAMBDA_MOD_N_DIR_LEVELS",
+      interface: "text",
+      default: 3,
+    },
+  ],
 };
 
 export default plugin;
