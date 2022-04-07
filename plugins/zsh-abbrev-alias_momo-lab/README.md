@@ -1,20 +1,7 @@
 # zsh-abbrev-alias
 This zsh plugin provides functionality similar to Vim's abbreviation expansion.
 
-This plugin consulted http://zshwiki.org/home/examples/zleiab .
-
-See https://github.com/momo-lab/bash-abbrev-alias for bash version.
-
-## Installation
-### Using [zplug](https://github.com/b4b4r07/zplug)
-
-```zsh
-zplug "momo-lab/zsh-abbrev-alias"
-```
-
-Alias settings are written after `zplug load`.
-
-## For Example
+## Usage
 
 ```zsh
 $ abbrev-alias -g G="| grep"

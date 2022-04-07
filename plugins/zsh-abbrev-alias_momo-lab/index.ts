@@ -13,7 +13,7 @@ const plugin: Fig.Plugin = {
   github: "momo-lab/zsh-abbrev-alias",
   license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Other"],
+  categories: ["Convenience Function"],
   keywords: ["zsh", "zsh-plugins", "zsh-plugin", "zle-widgets"],
   installation: {
     origin: "github",
