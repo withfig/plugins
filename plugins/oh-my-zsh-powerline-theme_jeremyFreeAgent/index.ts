@@ -1,9 +1,9 @@
 const plugin: Fig.Plugin = {
   icon: "🔥",
   name: "oh-my-zsh-powerline-theme_jeremyFreeAgent",
-  displayName: "oh-my-zsh-powerline-theme",
+  displayName: "Oh-my-zsh Powerline Theme",
   type: "shell",
-  description: "oh-my-zsh Powerline style Theme",
+  description: "Oh-my-zsh Powerline style Theme",
   authors: [
     {
       name: "jeremyFreeAgent",
@@ -17,8 +17,7 @@ const plugin: Fig.Plugin = {
   keywords: ["theme", "prompt", "ohmyzsh", "zsh", "bash"],
   installation: {
     origin: "github",
-    sourceFiles: ["install_in_omz.sh"],
-    postScript: `export ZSH_THEME="powerline"`,
+    sourceFiles: ["powerline.zsh-theme"],
   },
   configuration: [
     {
