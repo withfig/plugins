@@ -1,8 +1,9 @@
 const plugin: Fig.Plugin = {
-  icon: "⚡️",
+  icon: "☀️",
   name: "zsh-dircolors-solarized_joel-porquet",
-  type: "shell",
+  displayName: "zsh-dircolors-solarized",
   description: "Solarized dircolors plugin for zsh",
+  type: "shell",
   authors: [
     {
       name: "joel-porquet",
@@ -11,11 +12,27 @@ const plugin: Fig.Plugin = {
   ],
   github: "joel-porquet/zsh-dircolors-solarized",
   shells: ["zsh"],
-  categories: ["Other"],
+  categories: ["Color"],
   keywords: ["zsh", "solarized-dircolors", "solarized-theme", "antigen"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-dircolors-solarized.plugin.zsh"],
+    dependencies: ({ ctx }) =>
+      ctx.os === "macos"
+        ? [
+            {
+              type: "binary",
+              name: "gdircolors",
+            },
+          ]
+        : [
+            {
+              type: "binary",
+              name: "dircolors",
+            },
+          ],
+    preScript: ({ ctx }) =>
+      ctx.os === "macos" ? "alias dircolors='gdircolors'" : "",
   },
 };
 

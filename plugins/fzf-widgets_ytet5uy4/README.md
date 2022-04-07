@@ -1,7 +1,4 @@
-# fzf-widgets - ZLE widgets of fzf
-
 [Overview](#overview) |
-[Installation](#installation) |
 [Requirements](#requirements) |
 [Usage](#usage) |
 [Configuration](#configuration) |
@@ -24,15 +21,6 @@ Available widgets can check [here][widgets-link].
 * Can use with [zsh-autosuggestions][zsh-autosuggestions-link]
 * Show error messages with `$POSTDISPLAY`
 * All widgets are autoloaded function
-
-## Installation
-
-You can install with plugin manager.
-If use zplug, add the following to your `.zshrc`:
-
-```zsh
-zplug 'ytet5uy4/fzf-widgets'
-```
 
 ## Requirements
 

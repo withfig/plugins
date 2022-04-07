@@ -1,11 +1,3 @@
-# Vim's easy-motion for zsh
-
-## Demo
-
-![zsh-easy-motion demo](https://raw.githubusercontent.com/IngoMeyer441/zsh-easy-motion/master/demo.svg)
-
-## Introduction
-
 This plugin brings Vim's [easy-motion](https://github.com/easymotion/vim-easymotion) plugin to zsh. It is inspired by
 [zce.zsh](https://github.com/hchbaw/zce.zsh). Unfortunately, zce.zsh only supports the seek operation of easy-motion so
 I have started my own implementation that adds much more easy-motion movements. Currently, the following motions are
@@ -20,28 +12,6 @@ python --version
 ```
 
 If you are running a recent Linux distribution or macOS, an appropriate Python version should already be installed.
-
-## Installation
-
-### Using zplug
-
-1. Add `zplug "IngoMeyer441/zsh-easy-motion"` to your `.zshrc`.
-
-2. Bind a prefix key for easy-motion in `vicmd` mode, for example the `space` key:
-
-   ```zsh
-   bindkey -M vicmd ' ' vi-easy-motion
-   ```
-
-### Manual
-
-1. Clone this repository and source `easy_motion.plugin.zsh` in your `.zshrc`
-
-2. Bind a prefix key for easy-motion in `vicmd` mode, for example the `space` key:
-
-   ```zsh
-   bindkey -M vicmd ' ' vi-easy-motion
-   ```
 
 ## Usage
 

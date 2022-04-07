@@ -1,9 +1,10 @@
 const plugin: Fig.Plugin = {
   icon: "💡",
   name: "alf_psyrendust",
+  displayName: "Alf",
   type: "shell",
   description:
-    "Alf is an out of this world super fast and configurable framework for zsh; it's modeled after Prezto and Antigen while utilizing Oh My Zsh under the covers; and offers standard defaults, aliases, functions, auto completion, automated updates and installable prompt themes and plugins.",
+    "Alf is an out of this world super fast and configurable framework for zsh",
   authors: [
     {
       name: "psyrendust",

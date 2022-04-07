@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
-  icon: "⭐️",
+  icon: "🧊",
   name: "kube-aliases_Dbz",
+  displayName: "kube-aliases",
   type: "shell",
   description: "Kubernetes Aliases and Bash Functions",
   authors: [
@@ -10,9 +11,10 @@ const plugin: Fig.Plugin = {
     },
   ],
   github: "Dbz/kube-aliases",
+  docs: "https://github.com/Dbz/kube-aliases/blob/master/docs/usage",
   license: ["MIT"],
-  shells: ["zsh"],
-  categories: ["Other"],
+  shells: ["zsh", "bash"],
+  categories: ["Alias"],
   keywords: [
     "bash",
     "kubernetes",

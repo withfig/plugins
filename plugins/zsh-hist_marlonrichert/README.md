@@ -1,7 +1,6 @@
 # `zsh-hist`
 Edit your Zsh history, without ever leaving the command line.
 
-* [Installation](#installation)
 * Features:
   * Eliminate more duplicates by applying [uniform code formatting](#uniform-code-formatting).
   * (Optional) [Automatically expand aliases](#optional-automatic-alias-expansion) before each
@@ -13,15 +12,6 @@ Edit your Zsh history, without ever leaving the command line.
 * Don't know how to change your key bindings? Please [read these notes](#note-about-key-bindings).
 * [Author](#author)
 * [License](#license)
-
-## Installation
- 1. `git clone` this repo.
- 1. Add the following to your `~/.zshrc` file:
-    ```zsh
-    source path/to/zsh-hist.plugin.zsh
-    ```
-
-To update, `cd` into your clone and `git pull`.
 
 ## Uniform code formatting
 Whenever you finish your command line, `zsh-hist` will automatically format it for you, before it
@@ -38,17 +28,10 @@ is saved to history. You can also retroactively format your history with
   users don't need to worry about this. However, if you are a purist and want that the formatting
   can _never_ change the way Zsh works, then please enable the [automatic alias
   expansion](#optional-automatic-alias-expansion) feature below.
-* To disable this feature, add the following to your `.zshrc` file:
-  ```zsh
-  zstyle ':hist:*' auto-format no
-  ```
 
 ## (Optional) Automatic alias expansion
 `zsh-hist` can automatically expand your aliases before each command line is saved to history.
-This is disabled by default, but to enable it, add the following to your `.zshrc` file:
-```zsh
-zstyle ':hist:*' expand-aliases yes
-```
+This is disabled by default.
 
 ## Added Undo functionality
 On any new command line, you can now press <kbd>undo</kbd> to pop the last command from your

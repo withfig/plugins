@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔗",
   name: "zsh-prompt-powerline_Valodim",
+  displayName: "ZSH Prompt Powerline",
   type: "shell",
   description:
     "A ZSH prompt based on the powerline font from the popular vim plugin",
@@ -15,7 +16,10 @@ const plugin: Fig.Plugin = {
   categories: ["Prompt"],
   installation: {
     origin: "github",
-    sourceFiles: ["example_config.zsh"],
+    preScript: ({ ctx }) =>
+      `fpath+=("${ctx.plugin.installDirectory}")\n` +
+      `autoload promptinit ; promptinit`,
+    postScript: "prompt powerline",
   },
 };
 

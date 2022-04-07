@@ -1,17 +1,18 @@
-# jq zsh plugin
-
 Interactively build [jq](https://stedolan.github.io/jq/) expressions.
 
 This zsh plugin gives you jq superpowers!
 
 ## Table of contents
 
+- [Table of contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Key bindings](#key-bindings)
 - [Demos](#demos)
   - [Interactive jq query construction](#interactive-jq-query-construction)
   - [Insert jq query in the middle of a pipeline](#insert-jq-query-in-the-middle-of-a-pipeline)
+- [Troubleshooting](#troubleshooting)
+  - [MacOS: Pressing alt-j creates a `∆` symbol in iTerm2](#macos-pressing-alt-j-creates-a--symbol-in-iterm2)
 
 ## Installation
 
@@ -23,24 +24,6 @@ The project consists of the following components:
 - a `jq-repl` command
 - a `jq-paths` command
 - a `jq.plugin.zsh` providing line-editor feature utilizing `jq-repl`
-
-### [zplug](https://github.com/zplug/zplug)
-
-```sh
-zplug reegnz/jq-zsh-plugin
-```
-
-### [Antigen](https://github.com/zsh-users/antigen)
-
-```sh
-antigen bundle reegnz/jq-zsh-plugin
-```
-
-### [Zgen](https://github.com/tarjoilija/zgen)
-
-```sh
-zgen load reegnz/jq-zsh-plugin
-```
 
 ## Usage
 
@@ -94,13 +77,3 @@ Another option is to map to `ctrl+j` instead by putting this in your `.zshrc`:
 ```sh
 bindkey `^j` jq-complete
 ```
-
-### Disable expanding shell aliases
-
-The plugin automatically expands shell aliases in a command before passing it
-to `jq-repl`. To disable, put the following line into your `.zshrc`:
-
-```
-JQ_ZSH_PLUGIN_EXPAND_ALIASES=0
-```
-

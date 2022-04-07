@@ -1,36 +1,7 @@
-![](https://www.dropbox.com/s/u08c2zofducjvh9/rafiki-zsh-2.png?raw=1)
-
-## Rafiki-zsh
-
 Rafiki-zsh is a [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) theme that adds emojis to your zsh terminal.
-Rafiki will display a `good` emoji such as :smile: on your prompt whenever commands run smoothly and `bad` emojis
-such as :rage: whenever things go wrong.
+Rafiki will display a `good` emoji such as 😄 on your prompt whenever commands run smoothly and `bad` emojis
+such as 😡 whenever things go wrong.
 
-
-### Prerequisites
-
-* [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-
-### Setup
-
-1. Download rafiki zsh as a oh-my-zsh custom theme:
-
-```bash
- $ mkdir -p $ZSH_CUSTOM/themes && curl -o $ZSH_CUSTOM/themes/rafiki.zsh-theme https://raw.githubusercontent.com/akabiru/rafiki-zsh/develop/rafiki.zsh-theme
-```
-
-2. Set `ZSH_THEME` to `rafiki` in your `~/.zshrc`.
-
-```bash
-$ vim ~/.zshrc
- # ZSH_THEME='rafiki'
-```
-
-3. Reload your zsh configuration and Voila! Rafiki is watching over you. :sunglasses:
-
-```bash
-$ source ~/.zshrc
-```
 ### Usage
 
 Rafiki generates random emojis every time you start up your terminal. It also tells you who your pals are for the session.
@@ -75,10 +46,10 @@ Introducing _Rafiki_
 
 ### Contributing
 
-Feel free to contribute, even if it's to add an emoji. :wink: Just fork it :fork_and_knife: and raise a pull request.
+Feel free to contribute, even if it's to add an emoji. 😉 Just fork it 🍴 and raise a pull request.
 
 ### Credits
 
 This projects borrows from [Robby Russell's](https://github.com/robbyrussell/oh-my-zsh/blob/master/themes/robbyrussell.zsh-theme) theme.
-Not forgetting [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) itself. :smile:
+Not forgetting [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) itself. 😄
 
