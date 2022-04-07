@@ -75,6 +75,9 @@ Promise.all([Promise.all(plugins), Promise.all(readmes)]).then(
             );
             error = true;
           });
+
+        // Sleep for a bit to avoid hitting the API too quickly
+        await new Promise((resolve) => setTimeout(resolve, 100));
       }
 
       for (const readme of readmes) {
@@ -90,6 +93,9 @@ Promise.all([Promise.all(plugins), Promise.all(readmes)]).then(
             );
             error = true;
           });
+
+        // Sleep for a bit to avoid hitting the API too quickly
+        await new Promise((resolve) => setTimeout(resolve, 100));
       }
 
       if (error) process.exit(1);
