@@ -122,7 +122,7 @@ declare namespace Fig {
   type SelectUI<T> = {
     interface: "select";
     /** Allow the user to create new options not in the list of options */
-    allowserCreatedOptions?: true;
+    allowUserCreatedOptions?: true;
     /** The default value of the select field */
     default: T;
     /** A list of options to display in the select field */
