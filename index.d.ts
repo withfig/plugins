@@ -55,7 +55,9 @@ declare namespace Fig {
     type: "binary";
     name: string;
   };
-  type Dependency = BinaryDependency;
+
+  type Dependency = 
+    | BinaryDependency;
 
   type Installation = PluginInstallation & {
     /** Override the default installation script for the plugin with a custom one per shell */
@@ -92,6 +94,16 @@ declare namespace Fig {
   type NonEmpty<T extends unknown[]> = T & { 0: T[number] };
   type Suggestions<T> = T[] | DeviceConfigurationGenerator<T[]>;
 
+  type ValidationResult =
+    | true
+    | {
+        result: false;
+        /** The error message to display */
+        message: string;
+      };  
+
+  type ValidationFunction<T, S = {}> = (value: T, _: S & { config: ConfigurationDictionary }) => ValidationResult;
+
   /** Multiselect UI item type */
   type MultiselectUI<T> = T extends (infer S)[]
     ? {
@@ -102,29 +114,40 @@ declare namespace Fig {
         default: T;
         /** A list of options to display in the multiselect field */
         options: Suggestions<S | { option: S, displayName?: string, description?: string }>;
+        /** A value to display if no options are selected */
+        placeholder?: string;
       }
     : never;
 
   type SelectUI<T> = {
     interface: "select";
     /** Allow the user to create new options not in the list of options */
-    allowUserCreatedOptions?: true;
+    allowserCreatedOptions?: true;
     /** The default value of the select field */
     default: T;
     /** A list of options to display in the select field */
     options: Suggestions<T | { option: T, displayName?: string; description?: string }>;
+    /** A value to display if option is selected */
+    placeholder?: string;
   };
 
-  type TextUI<T> = {
-    interface: "text";
+  type TextInterfaces = "text" | "textarea";
+  type TextUI<T, I extends TextInterfaces> = {
+    interface: I;
     /** The default value of the text field */
     default: T;
+    /** A value to display if no value is inserted */
+    placeholder?: string;
+    /** A function to validate the value of the text field */
+    validate?: ValidationFunction<T>;
   };
 
-  type MultiTextUI = {
+  type MultiTextUI<T> = {
     interface: "multi-text";
     /** The default value of the multi-text field */
-    default: string[];
+    default: T;
+    /** A value to display if no values are inserted */
+    placeholder?: string;
   };
 
   interface BasicUI<T, U extends UIType> {
@@ -139,15 +162,16 @@ declare namespace Fig {
    * Gets all valid UIs that satisfy `{ value: T, interface: S }`
    */
   type UI<V, U extends UIType = UIType> = Extract<
-    | MultiselectUI<V>
-    | SelectUI<V>
     | BasicUI<boolean, "toggle">
-    | TextUI<string>
-    | TextUI<number>
-    | TextUI<string | null>
-    | TextUI<number | null>
-    | MultiTextUI
-    | BasicUI<string, "textarea">,
+    | SelectUI<V>
+    | MultiselectUI<V>
+    | MultiTextUI<V>
+    | TextUI<string, "text">
+    | TextUI<number, "text">
+    | TextUI<string | null, "text">
+    | TextUI<number | null, "text">
+    | TextUI<string, "textarea">
+    | TextUI<string | null, "textarea">,
     {
       /** The default value of the UI */
       default: V;
