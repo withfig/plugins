@@ -6,5 +6,9 @@ export const loadPlugin = (
   const source = forceLatest
     ? `https://cdn.jsdelivr.net/npm/@fig/plugins/dist/${esm ? "esm" : "cjs"}`
     : "..";
-  return import(`${source}/plugins/${name}/index.js`).then(mod => mod.default);
+  // Hacky workaround to https://github.com/evanw/esbuild/issues/532#issuecomment-1044740080 
+  // load module.default.default for cjs and module.default for esm.
+  return import(`${source}/plugins/${name}/index.js`).then(
+    mod => "default" in mod.default ? mod.default.default : mod.default
+  );
 };
