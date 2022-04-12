@@ -12,7 +12,7 @@
     "declaration": true,
     "noErrorTruncation":true
   },
-  "exclude": ["node_modules/", "util/update-plugins.ts"],
+  "exclude": ["node_modules/"],
   "include": ["index.d.ts", "plugins/**/*", "util/**/*"],
   "types": ["index.d.ts"]
 }
