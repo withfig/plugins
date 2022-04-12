@@ -15,6 +15,7 @@ import serveStatic from "serve-static";
 const SOURCE_FOLDER_NAME = "plugins";
 const DESTINATION_FOLDER_NAME = "dist";
 const SOURCE_FILE_GLOB = `${SOURCE_FOLDER_NAME}/**/*.(ts|md)`;
+const UTIL_FILE_GLOB = `util/index.ts`;
 const PORT = 3691;
 
 enum PLUGINS_DEV_STATE {
@@ -83,6 +84,11 @@ async function runProgram(options: { watch?: boolean }) {
   console.clear();
   const files = await glob(SOURCE_FILE_GLOB);
   await compile(files, Boolean(options.watch));
+
+  if (!options.watch) {
+    const utils = await glob(UTIL_FILE_GLOB);
+    await compile(utils);
+  }
 
   if (options.watch) {
     const isMacOS = os.type() === "Darwin";
