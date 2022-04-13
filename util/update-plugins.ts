@@ -14,7 +14,7 @@ const plugins = process.argv
   .filter((file) => file.match(/^plugins\/[A-Za-z0-9_\-\.]*\/index\.ts$/))
   .map((file) => file.replace(/\.ts$/, ".js"))
   .map(async (file) => {
-    const plugin = await import(`../${file}`);
+    let plugin = await import(`../dist/cjs/${file}`);
     return plugin.default;
   });
 

@@ -29,8 +29,7 @@
     "clean": "rm -rf dist",
     "dev": "ts-node compile.ts --watch",
     "build": "yarn clean && tsc --emitDeclarationOnly --declaration --outDir dist/esm/ && tsc --emitDeclarationOnly --declaration --outDir dist/cjs/ && ts-node compile.ts",
-    "update-plugins": "ts-node util/update-plugins.ts",
-    "postupdate-plugins": "npm run clean",
+    "update-plugins": "yarn build && ts-node util/update-plugins.ts",
     "lint": "eslint '**/*.ts'",
     "lint:fix": "eslint '**/*.ts' --fix",
     "prepare": "husky install"
