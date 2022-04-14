@@ -47,6 +47,7 @@ jobs:
             $(git diff --name-only origin/main origin/main~1 -- plugins/**/*.md)
         env:
           PLUGINS_UPDATE_TOKEN: ${{ secrets.PLUGINS_UPDATE_TOKEN }}
+          INPUT_TOKEN: ""
       - name: Checkout Cache
         uses: actions/checkout@v2
         with:
