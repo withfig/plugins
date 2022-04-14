@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⭐️",
   name: "minimal_improved_gdsrosa",
+  displayName: "Minimal Improved",
   type: "shell",
   description: "This repository is a theme(Minimal Improved) for Oh-my-zsh",
   authors: [

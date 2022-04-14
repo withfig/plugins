@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😎",
   name: "zlong_alert.zsh_kevinywlui",
+  displayName: "Zlong Alert",
   type: "shell",
   description: "A plugin to alert you when a long-running command has finished",
   authors: [

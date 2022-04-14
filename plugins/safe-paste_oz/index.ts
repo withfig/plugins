@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⭐️",
   name: "safe-paste_oz",
+  displayName: "Safe Paste",
   type: "shell",
   description:
     "Zsh safe-paste plugin for antigen. See http://cirw.in/blog/bracketed-paste",

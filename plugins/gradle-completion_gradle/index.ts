@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💡",
   name: "gradle-completion_gradle",
-  displayName: "gradle-completion",
+  displayName: "Gradle Completion",
   type: "shell",
   description: "Gradle tab completion for bash and zsh",
   authors: [

@@ -1,10 +1,10 @@
 const plugin: Fig.Plugin = {
-  icon: "💡",
   name: "alf_psyrendust",
   displayName: "Alf",
-  type: "shell",
   description:
     "Alf is an out of this world super fast and configurable framework for zsh",
+  icon: "🐽",
+  type: "shell",
   authors: [
     {
       name: "psyrendust",

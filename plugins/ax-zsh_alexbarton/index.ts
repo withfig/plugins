@@ -1,8 +1,9 @@
 const plugin: Fig.Plugin = {
-  icon: "👾",
   name: "ax-zsh_alexbarton",
-  type: "shell",
+  displayName: "Ax Zsh",
   description: "Modular configuration system for the Z shell (ZSH)",
+  icon: "🪓",
+  type: "shell",
   authors: [
     {
       name: "alexbarton",

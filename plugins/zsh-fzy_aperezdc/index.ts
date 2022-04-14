@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🚀",
   name: "zsh-fzy_aperezdc",
-  displayName: "zsh-fzy",
+  displayName: "Zsh Fzy",
   type: "shell",
   description: "Use the fzy fuzzy-finder in Zsh",
   authors: [

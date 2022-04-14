@@ -1,5 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "zsh-autosuggestions",
+  displayName: "Zsh Autosuggestions",
   type: "shell",
   description: "Fish-like autosuggestions for zsh",
   screenshots: ["images/2.gif"],

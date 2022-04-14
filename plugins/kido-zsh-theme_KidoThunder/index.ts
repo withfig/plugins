@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💾",
   name: "kido-zsh-theme_KidoThunder",
+  displayName: "Kido Zsh Theme",
   type: "shell",
   description: "Kido Theme for Oh My ZSH",
   authors: [

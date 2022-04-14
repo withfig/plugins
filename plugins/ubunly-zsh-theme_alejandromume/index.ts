@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😀",
   name: "ubunly-zsh-theme_alejandromume",
+  displayName: "Ubunly Zsh Theme",
   type: "shell",
   description: "The new Kali Linux console bringed to Ubuntu",
   authors: [

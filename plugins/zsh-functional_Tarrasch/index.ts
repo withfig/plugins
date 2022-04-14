@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "👾",
   name: "zsh-functional_Tarrasch",
+  displayName: "Zsh Functional",
   type: "shell",
   description: "Higher order functions for zsh",
   authors: [

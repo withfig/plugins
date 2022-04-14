@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💡",
   name: "jdk-switch_LockonS",
+  displayName: "JDK Switch",
   type: "shell",
   description:
     "An oh-my-zsh plugin for quickly switch between different jdk versions.",

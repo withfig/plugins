@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🚀",
   name: "remiii.zsh-theme_Remiii",
+  displayName: "Remiii",
   type: "shell",
   description: "remiii.zsh-theme",
   authors: [

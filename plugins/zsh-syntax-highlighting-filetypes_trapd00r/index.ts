@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⌨️",
   name: "zsh-syntax-highlighting-filetypes_trapd00r",
-  displayName: "zsh-syntax-highlighting with filetypes",
+  displayName: "Zsh Syntax Highlighting Filetypes",
   type: "shell",
   description: "zsh syntax highlighting with dircolors in realtime",
   screenshots: [

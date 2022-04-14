@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🌟",
   name: "git-flow-completion",
+  displayName: "Git Flow Completion",
   description: "Bash, Zsh and fish completion support for git-flow.",
   type: "shell",
   authors: [

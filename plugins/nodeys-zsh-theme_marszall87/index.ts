@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💥",
   name: "nodeys-zsh-theme_marszall87",
+  displayName: "Nodeys Zsh Theme",
   type: "shell",
   description: "Just ys zsh theme with NodeJS version.",
   authors: [

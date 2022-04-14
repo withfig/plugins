@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🌱",
   name: "zsh-autoenv_Tarrasch",
-  displayName: "zsh-autoenv",
+  displayName: "Zsh Autoenv",
   type: "shell",
   description: "Autoenv for zsh",
   authors: [

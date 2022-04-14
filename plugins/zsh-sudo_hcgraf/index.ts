@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💡",
   name: "zsh-sudo_hcgraf",
+  displayName: "Zsh Sudo",
   type: "shell",
   description: 'Extracted "sudo" plugin from oh-my-zsh',
   authors: [

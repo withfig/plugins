@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔗",
   name: "salesforce-cli-zsh-completion_wadewegner",
+  displayName: "Salesforce CLI Zsh Completion",
   type: "shell",
   description:
     "A Zsh completion file for the Salesforce CLI (and script for updating it)",

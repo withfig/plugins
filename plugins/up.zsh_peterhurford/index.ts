@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🚀",
   name: "up.zsh_peterhurford",
+  displayName: "Up",
   type: "shell",
   description:
     'A zshell plugin for the "up" command, which can cd up an arbitrary number of directories',

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
-  icon: "👾",
+  icon: "🦎",
   name: "zsh-prompt-newt_softmoth",
+  displayName: "Zsh Prompt Newt",
   type: "shell",
   description:
     "Fat & fast ZSH theme – beautiful inside and out, styled segments done right",

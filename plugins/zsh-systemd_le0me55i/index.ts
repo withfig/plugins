@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💥",
   name: "zsh-systemd_le0me55i",
+  displayName: "Zsh Systemd (le0me55i)",
   type: "shell",
   description:
     "forked from https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/systemd",

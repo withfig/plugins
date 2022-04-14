@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⚡️",
   name: "zsh-geeknote_s7anley",
+  displayName: "Zsh Geeknote",
   type: "shell",
   description: "Geeknote plugin for oh-my-zsh",
   authors: [

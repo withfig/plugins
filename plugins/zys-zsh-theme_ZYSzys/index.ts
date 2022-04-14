@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⭐️",
   name: "zys-zsh-theme_ZYSzys",
+  displayName: "ZYSzys",
   type: "shell",
   description: ":rainbow:A ZSH theme similar with agnoster-zsh-theme.",
   authors: [

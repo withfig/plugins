@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😎",
   name: "history-search-multi-word_zdharma-continuum",
+  displayName: "History Search Multi Word",
   type: "shell",
   authors: [
     {

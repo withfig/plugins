@@ -1,9 +1,10 @@
 const plugin: Fig.Plugin = {
-  icon: "💾",
   name: "betterbrew-zsh-plugin_timothyrowan",
-  type: "shell",
+  displayName: "BetterBrew Zsh Plugin",
   description:
-    "better command aliases for the macOS Homebrew Package Manager in zsh",
+    "Better command aliases for the macOS Homebrew Package Manager in zsh",
+  icon: "🍺",
+  type: "shell",
   authors: [
     {
       name: "timothyrowan",

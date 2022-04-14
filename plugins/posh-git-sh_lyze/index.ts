@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💥",
   name: "posh-git-sh_lyze",
+  displayName: "Posh Git Sh",
   type: "shell",
   description: "Bash/ZSH version of the posh-git command prompt",
   authors: [

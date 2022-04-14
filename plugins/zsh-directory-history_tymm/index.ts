@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🧑‍💻",
-  displayName: "Directory History",
   name: "zsh-directory-history_tymm",
+  displayName: "Zsh Directory History",
   type: "shell",
   description: "Provides directory-sensitive history features for zsh",
   authors: [

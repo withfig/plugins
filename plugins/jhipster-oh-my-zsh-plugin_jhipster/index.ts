@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😀",
   name: "jhipster-oh-my-zsh-plugin_jhipster",
+  displayName: "JHipster Oh My Zsh Plugin",
   type: "shell",
   description: "JHipster plugin for oh-my-zsh",
   authors: [

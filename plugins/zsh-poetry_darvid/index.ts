@@ -1,9 +1,10 @@
 const plugin: Fig.Plugin = {
-  icon: "😀",
+  icon: "🐚",
   name: "zsh-poetry_darvid",
+  displayName: "Zsh Poetry",
   type: "shell",
   description:
-    "🐚 Simple ZSH plugin for automatically activating and deactivating " +
+    "Simple ZSH plugin for automatically activating and deactivating " +
     "Poetry-created virtualenvs. 🐍",
   authors: [
     {

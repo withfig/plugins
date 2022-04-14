@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💾",
   name: "zsh-apple-touchbar_zsh-users",
+  displayName: "Zsh Apple Touchbar",
   type: "shell",
   description: "Make your touchbar more powerful.",
   authors: [

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😀",
   name: "colored-man-pages_mod_zuxfoucault",
+  displayName: "Colored Man Paged",
   type: "shell",
   description:
     "Fork from https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/colored-man-pages/colored-man-pages.plugin.zsh",

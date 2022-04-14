@@ -122,6 +122,7 @@ const createConfigurationOptionForColorComponent = (
 
 const plugin: Fig.Plugin = {
   name: "pure",
+  displayName: "Pure",
   icon: "🧊",
   type: "shell",
   description: "Pretty, minimal and fast ZSH prompt",

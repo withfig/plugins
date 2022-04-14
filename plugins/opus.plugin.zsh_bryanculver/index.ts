@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔗",
   name: "opus.plugin.zsh_bryanculver",
+  displayName: "Opus Plugin",
   type: "shell",
   description: "Lightly simple utility to jump between projects.",
   authors: [

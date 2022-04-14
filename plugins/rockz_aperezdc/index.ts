@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🧑‍💻",
   name: "rockz_aperezdc",
+  displayName: "Rockz (aperezdc)",
   type: "shell",
   description: "Virtualfish-alike Lua+LuaRocks “Rockenv” wrapper for Zsh",
   authors: [

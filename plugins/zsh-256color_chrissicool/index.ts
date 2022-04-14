@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🎨",
   name: "zsh-256color_chrissicool",
-  displayName: "256color zsh",
+  displayName: "256color Zsh",
   type: "shell",
   description: "ZSH plugin to enhance the terminal environment with 256 colors",
   authors: [
@@ -14,7 +14,7 @@ const plugin: Fig.Plugin = {
   github: "chrissicool/zsh-256color",
   license: ["MIT"],
   shells: ["zsh"],
-  categories: ["Other"],
+  categories: ["Color"],
   installation: {
     origin: "github",
     sourceFiles: ["zsh-256color.plugin.zsh"],

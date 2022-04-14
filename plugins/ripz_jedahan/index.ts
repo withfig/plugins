@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💾",
   name: "ripz_jedahan",
+  displayName: "Ripz",
   type: "shell",
   description: "💡 ripgrep-powered zsh plugin alias reminder",
   authors: [

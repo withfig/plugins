@@ -1,8 +1,9 @@
 const plugin: Fig.Plugin = {
-  icon: "😎",
   name: "anyframe_mollifier",
-  type: "shell",
+  displayName: "Anyframe",
   description: "peco/percol/fzf wrapper plugin for zsh",
+  icon: "🐱",
+  type: "shell",
   authors: [
     {
       name: "mollifier",

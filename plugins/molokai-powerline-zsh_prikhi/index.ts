@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🌟",
   name: "molokai-powerline-zsh_prikhi",
+  displayName: "Molokai Powerline Zsh",
   type: "shell",
   description: "A Zsh theme based off of molokai, powerline, ys and agnoster ",
   authors: [

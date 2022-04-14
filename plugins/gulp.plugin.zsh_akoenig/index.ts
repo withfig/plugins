@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🌟",
   name: "gulp.plugin.zsh_akoenig",
+  displayName: "Gulp Plugin Zsh",
   type: "shell",
   description: "Autocompletion support for your gulp.js tasks (zsh).",
   authors: [

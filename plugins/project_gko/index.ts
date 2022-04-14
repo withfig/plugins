@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😎",
   name: "project_gko",
+  displayName: "Project (gko)",
   type: "shell",
   description:
     "☕️ Create node, rust, python or ruby project locally and on github (private or public)",

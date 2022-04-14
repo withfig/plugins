@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⚡️",
   name: "zsh-saml2aws_onyxraven",
+  displayName: "Zsh SAML2AWS",
   type: "shell",
   description: "oh-my-zsh plugin for saml2aws",
   authors: [

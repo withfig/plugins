@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🧑‍💻",
   name: "docker-helpers.zshplugin_unixorn",
+  displayName: "Docker Helpers",
   type: "shell",
   description: "Miscellaneous utility scripts and aliases for use with Docker.",
   authors: [

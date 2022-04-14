@@ -1,8 +1,9 @@
 const plugin: Fig.Plugin = {
-  icon: "🔗",
   name: "autoenv_zpm-zsh",
+  displayName: "Auto Env",
+  description: "Auto Env for zsh",
+  icon: "🔗",
   type: "shell",
-  description: "Autoenv for zsh",
   authors: [
     {
       name: "zpm-zsh",

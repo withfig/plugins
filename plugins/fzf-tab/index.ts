@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💾",
   name: "fzf-tab",
+  displayName: "Fzf Tab",
   type: "shell",
   description: "Replace zsh's default completion selection menu with fzf!",
   authors: [

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🧑‍💻",
   name: "kimwz-oh-my-zsh-theme_kimwz",
+  displayName: "Kimwz Oh My Zsh Theme",
   type: "shell",
   description: "Customized oh-my-zsh theme.",
   authors: [

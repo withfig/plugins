@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💾",
   name: "zeno.zsh_yuki-yano",
-  displayName: "zeno.zsh",
+  displayName: "Zeno Zsh",
   type: "shell",
   description: "zsh fuzzy completion and utility plugin with Deno.",
   screenshots: [

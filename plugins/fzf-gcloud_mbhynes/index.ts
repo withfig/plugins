@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💡",
   name: "fzf-gcloud_mbhynes",
+  displayName: "Fzf Gcloud",
   type: "shell",
   description: "Preview the gcloud api with fzf.",
   authors: [

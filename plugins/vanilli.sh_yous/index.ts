@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💥",
   name: "vanilli.sh_yous",
+  displayName: "Vanilli",
   type: "shell",
   description: "A lightweight start point of shell configuration",
   authors: [

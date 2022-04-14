@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💡",
   name: "ozono-zsh-theme_sfabrizio",
+  displayName: "OZono Zsh Theme",
   type: "shell",
   description: "🌏 OZ0NO - Let's Breathe a clean ZSH",
   authors: [

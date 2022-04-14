@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😀",
   name: "mysql.plugin.zsh_voronkovich",
+  displayName: "MySQL Plugin (zsh_voronkovich)",
   type: "shell",
   description: "ZSH plugin for MySql.",
   authors: [

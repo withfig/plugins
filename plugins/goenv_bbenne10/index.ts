@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🚀",
   name: "goenv_bbenne10",
+  displayName: "Go Env",
   type: "shell",
   description:
     "oh-my-zsh plugin to manage $GOPATH similarly to Python's virtualenv",

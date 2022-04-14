@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "👾",
   name: "minimal",
+  displayName: "Minimal",
   type: "shell",
   description: "A minimal zsh theme",
   authors: [

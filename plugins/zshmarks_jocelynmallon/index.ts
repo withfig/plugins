@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔖",
   name: "zshmarks_jocelynmallon",
-  displayName: "zshmarks",
+  displayName: "Zshmarks",
   type: "shell",
   description:
     "A port of Bashmarks (simple bookmarking plugin by Todd Werth) for oh-my-zsh",

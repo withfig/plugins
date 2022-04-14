@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⭐️",
   name: "zsh-dwim_oknowton",
-  displayName: "zsh-dwim",
+  displayName: "Zsh Dwim",
   description: "ZSH Do What I Mean",
   type: "shell",
   authors: [

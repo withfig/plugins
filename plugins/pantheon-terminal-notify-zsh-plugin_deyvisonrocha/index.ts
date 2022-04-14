@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔗",
   name: "pantheon-terminal-notify-zsh-plugin_deyvisonrocha",
+  displayName: "Pantheon Terminal Notify",
   type: "shell",
   description:
     "background notifications for long running commands! Supports Elementary OS Freya.",

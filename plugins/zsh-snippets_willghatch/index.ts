@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😀",
   name: "zsh-snippets_willghatch",
+  displayName: "Zsh Snippets",
   type: "shell",
   description: "Snippet expansion for zsh",
   authors: [

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⚡️",
   name: "zsh-nohup_micrenda",
+  displayName: "Zsh NoHup",
   type: "shell",
   description: "Nohup plugin for ZSH shell",
   authors: [

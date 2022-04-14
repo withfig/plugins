@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔫",
   name: "gunstage_LucasLarson",
-  displayName: "gunstage",
+  displayName: "Gunstage",
   type: "shell",
   description: "`git unstage` as a service",
   authors: [

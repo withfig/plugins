@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💾",
   name: "oh-my-zsh-virtualenv-prompt_tonyseek",
+  displayName: "Oh My Zsh Virtualenv Prompt",
   type: "shell",
   description: "Yet another virtualenv prompt plugin of oh-my-zsh.",
   authors: [

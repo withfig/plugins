@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🧑‍💻",
   name: "cdc_evanthegrayt",
+  displayName: "Cdc",
   type: "shell",
   description:
     "☣️ Shell plugin for zsh/bash that allows you to cd to subdirectories of user-defined directories from anywhere, without editing CDPATH. ",

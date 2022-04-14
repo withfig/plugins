@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💥",
   name: "kill-node_vmattos",
+  displayName: "Kill Node",
   type: "shell",
   description: "zsh plugin for murdering node proc families",
   authors: [

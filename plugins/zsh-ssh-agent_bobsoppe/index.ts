@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⚡️",
   name: "zsh-ssh-agent_bobsoppe",
+  displayName: "Zsh SSH Agent",
   type: "shell",
   description: "Ssh-agent management for zsh",
   authors: [

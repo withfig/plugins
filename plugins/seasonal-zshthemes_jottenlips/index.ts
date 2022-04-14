@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💡",
   name: "seasonal-zshthemes_jottenlips",
+  displayName: "Seasonal",
   type: "shell",
   description:
     "🛷 Seasonal ZSH Themes w/ git status ~ Impress your friends ~ Automatic theming for each season",

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😎",
   name: "passwordless-history_jgogstad",
+  displayName: "Passwordless History",
   type: "shell",
   description: "Keep passwords out of your ZSH history",
   authors: [

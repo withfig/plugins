@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🌟",
   name: "wang-iterm-zsh_0532",
+  displayName: "Wang iTerm Zsh",
   type: "shell",
   description: "The theme and colors for Oh My ZSH and iTerm",
   authors: [

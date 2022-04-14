@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "👾",
   name: "punctual-zsh-theme_dannynimmo",
+  displayName: "Punctual",
   type: "shell",
   description: "Punctual, a Zsh prompt theme",
   authors: [

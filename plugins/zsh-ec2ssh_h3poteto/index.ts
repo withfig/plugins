@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🌟",
   name: "zsh-ec2ssh_h3poteto",
+  displayName: "Zsh Ec2ssh",
   type: "shell",
   description:
     "zsh plugin to list up EC2 instances and ssh login the instances.",

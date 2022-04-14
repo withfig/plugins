@@ -1,6 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "git-open",
-  displayName: "git-open",
+  displayName: "Git Open",
   icon: "📂",
   github: "paulirish/git-open",
   license: ["MIT"],

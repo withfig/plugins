@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🌟",
   name: "mylocation_fALKENdk",
+  displayName: "MyLocation",
   type: "shell",
   description: "oh-my-zsh plugin to show your current location based on ip",
   authors: [

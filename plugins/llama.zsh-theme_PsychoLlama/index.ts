@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔥",
   name: "llama.zsh-theme_PsychoLlama",
+  displayName: "Llama Zsh Theme",
   type: "shell",
   description: "The preferred ZSH theme of llamas everywhere",
   authors: [

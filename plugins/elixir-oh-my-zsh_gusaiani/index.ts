@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🌟",
   name: "elixir-oh-my-zsh_gusaiani",
+  displayName: "Elixir Oh My Zsh",
   type: "shell",
   description: "Oh My Zsh plugin for Elixir, IEX, Mix and Phoenix",
   authors: [

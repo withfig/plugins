@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🚀",
   name: "zsh-safe-rm_mattmc3",
+  displayName: "Zsh Safe rm",
   type: "shell",
   description:
     "ZSH Plugin to add safe-rm functionality so that `rm` will put files in the trash.",

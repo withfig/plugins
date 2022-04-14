@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💥",
   name: "zsh-abbr_olets",
+  displayName: "Zsh Abbr",
   type: "shell",
   description:
     "The zsh manager for auto-expanding abbreviations, inspired by fish shell.",

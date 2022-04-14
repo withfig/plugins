@@ -1,9 +1,10 @@
 const plugin: Fig.Plugin = {
   icon: "🔗",
   name: "npms_torifat",
+  displayName: "Npms (torifat)",
   type: "shell",
   description:
-    "npms is a utility tool powered by fzf for using npm scripts interactively.",
+    "A utility tool powered by fzf for using npm scripts interactively.",
   authors: [
     {
       name: "torifat",

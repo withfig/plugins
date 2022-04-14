@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔗",
   name: "zshrc_freak2geek",
+  displayName: "Zshrc Freak2Geek",
   type: "shell",
   description:
     'A zsh plugin to load local ".zshrc" files from your project scopes.',

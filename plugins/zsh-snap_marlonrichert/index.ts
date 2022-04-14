@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⌨️",
   name: "zsh-snap_marlonrichert",
+  displayName: "Zsh Snap",
   type: "shell",
   description:
     "⚡️ Znap! The fast & light-weight Zsh plugin manager that's easy to grok. " +

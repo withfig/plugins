@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⌨️",
   name: "op.plugin.zsh_sirhc",
+  displayName: "1Password Plugin",
   type: "shell",
   description: "1Password Oh-My-Zsh Plugin",
   authors: [

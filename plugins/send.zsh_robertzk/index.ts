@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⌨️",
   name: "send.zsh_robertzk",
+  displayName: "Send",
   type: "shell",
   description:
     "A zsh plugin for a command to pull, git add all files, commit, and push -- all in one command",

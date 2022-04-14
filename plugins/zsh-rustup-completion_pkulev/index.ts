@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔥",
   name: "zsh-rustup-completion_pkulev",
+  displayName: "Zsh Rustup",
   type: "shell",
   description: "Rustup completion plugin for oh-my-zsh framework",
   authors: [

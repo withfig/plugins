@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⌨️",
   name: "roundy_nullxception",
+  displayName: "Roundy",
   type: "shell",
   description: "fast, cute, and-of-course, roundy prompt-theme for Zsh",
   authors: [

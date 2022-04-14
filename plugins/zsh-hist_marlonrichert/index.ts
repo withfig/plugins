@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "📝",
   name: "zsh-hist_marlonrichert",
-  displayName: "zsh-hist",
+  displayName: "Zsh Hist",
   type: "shell",
   description: "Edit your Zsh history from the command line.",
   authors: [

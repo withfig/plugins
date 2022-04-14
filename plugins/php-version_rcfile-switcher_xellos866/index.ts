@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💥",
   name: "php-version_rcfile-switcher_xellos866",
+  displayName: "PHP Version RC File Switcher",
   type: "shell",
   description:
     'A simple zsh plugin for the shell tool "php-version" to automatically switch between php versions if an rc-file is present',

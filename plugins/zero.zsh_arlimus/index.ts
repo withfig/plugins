@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔗",
   name: "zero.zsh_arlimus",
+  displayName: "Zero",
   type: "shell",
   description: "theme and configuration plugin for zsh with oh-my-zsh",
   authors: [

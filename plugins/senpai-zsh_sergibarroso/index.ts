@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💾",
   name: "senpai-zsh_sergibarroso",
+  displayName: "Senpai",
   type: "shell",
   description: "Senpai is a Zsh clean prompt theme for Devops",
   authors: [

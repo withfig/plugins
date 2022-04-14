@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⌨️",
   name: "zsh-terraform_macunha1",
+  displayName: "Zsh Terraform",
   type: "shell",
   description:
     "Terraform plugin for ZSH with Oh-my-zsh support, including convenient aliases and autocompletion",

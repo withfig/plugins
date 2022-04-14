@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💥",
   name: "gpg-crypt_Czocher",
+  displayName: "GPG Crypt",
   type: "shell",
   description: "A simple file/directory encryption/decryption plugin for ZSH.",
   authors: [

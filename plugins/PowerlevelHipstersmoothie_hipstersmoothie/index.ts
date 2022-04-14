@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
-  icon: "🔥",
   name: "PowerlevelHipstersmoothie_hipstersmoothie",
+  displayName: "Powerlevel Hipster Smoothie",
+  icon: "🥤",
   type: "shell",
   description: "my zsh theme",
   authors: [

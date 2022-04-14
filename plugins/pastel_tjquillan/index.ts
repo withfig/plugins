@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😀",
   name: "pastel_tjquillan",
+  displayName: "Pastel",
   type: "shell",
   description: "A ZSH theme inspired by https://github.com/cbrock/sugar-free",
   authors: [

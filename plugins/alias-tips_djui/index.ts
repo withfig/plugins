@@ -1,6 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "alias-tips_djui",
-  displayName: "alias-tips",
+  displayName: "Alias Tips",
   icon: "💡",
   type: "shell",
   description:

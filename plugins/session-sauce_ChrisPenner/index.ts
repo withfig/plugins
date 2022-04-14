@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🌟",
   name: "session-sauce_ChrisPenner",
+  displayName: "Session Sauce",
   type: "shell",
   description: "Shell plugin for managing tmux sessions",
   authors: [

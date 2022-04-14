@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😀",
   name: "oh-my-zsh-proxy-plugin_escalate",
+  displayName: "Oh My Zsh Proxy Plugin",
   type: "shell",
   description:
     "An oh-my-zsh plugin to quickly enable and disable proxy shell environment settings",

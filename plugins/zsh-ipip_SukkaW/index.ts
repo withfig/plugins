@@ -1,8 +1,9 @@
 const plugin: Fig.Plugin = {
-  icon: "🔗",
+  icon: "🔩",
   name: "zsh-ipip_SukkaW",
+  displayName: "Zsh IPIP",
   type: "shell",
-  description: ":nut_and_bolt: An oh-my-zsh plugin for IPIP",
+  description: "An oh-my-zsh plugin for IPIP",
   authors: [
     {
       name: "SukkaW",

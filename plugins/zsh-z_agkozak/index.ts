@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔥",
   name: "zsh-z_agkozak",
-  displayName: "zsh-z",
+  displayName: "Zsh Z",
   type: "shell",
   description:
     'Jump quickly to directories that you have visited "frecently." A native Zsh port of z.sh.',

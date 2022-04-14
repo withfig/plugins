@@ -1,5 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "ansiweather",
+  displayName: "Ansiweather",
   type: "shell",
   description: "Weather in terminal, with ANSI colors and Unicode symbols",
   icon: "🌡",

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "👾",
   name: "oh-my-via_badouralix",
+  displayName: "Oh My Via",
   type: "shell",
   description: "Custom theme for ZSH",
   authors: [

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⭐️",
   name: "cheatsheet_0b10",
+  displayName: "Cheatsheet",
   type: "shell",
   description:
     "An oh-my-zsh plugin to create, and manage simple text cheatsheets",

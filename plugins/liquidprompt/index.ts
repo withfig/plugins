@@ -1,5 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "liquidprompt",
+  displayName: "Liquid Prompt",
   icon: "💧",
   type: "shell",
   description:

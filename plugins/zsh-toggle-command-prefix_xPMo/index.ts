@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "☀️",
   name: "zsh-toggle-command-prefix_xPMo",
+  displayName: "Zsh Toggle Command Prefix",
   type: "shell",
   description: "Zsh widget to toggle a prefix on a command",
   authors: [

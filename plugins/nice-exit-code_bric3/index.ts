@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💡",
   name: "nice-exit-code_bric3",
+  displayName: "Nice Exit Code",
   type: "shell",
   description: "ZSH plugin that maps exit status code to human readable string",
   authors: [

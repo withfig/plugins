@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔗",
   name: "zsh-plugin-fzf-finder_leophys",
+  displayName: "Zsh Plugin FZF Finder",
   type: "shell",
   description:
     "An antigen plugin to have a cool search keybinding with fzf and (optionally) bat",

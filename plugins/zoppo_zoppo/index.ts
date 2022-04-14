@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "👾",
   name: "zoppo_zoppo",
+  displayName: "Zoppo",
   type: "shell",
   description: "The crippled configuration framework for Zsh",
   authors: [

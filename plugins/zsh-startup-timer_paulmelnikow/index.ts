@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "☀️",
   name: "zsh-startup-timer_paulmelnikow",
+  displayName: "Zsh Startup Timer",
   type: "shell",
   description:
     "A zsh plugin to print the time it takes for the shell to start up",

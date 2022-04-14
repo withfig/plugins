@@ -36,6 +36,7 @@ LIMIT 1
 const plugin: Fig.Plugin = {
   icon: "💡",
   name: "zsh-histdb",
+  displayName: "Zsh Histdb",
   type: "shell",
   description: "A slightly better history for zsh",
   authors: [

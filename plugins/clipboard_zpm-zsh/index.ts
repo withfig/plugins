@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
-  icon: "👾",
+  icon: "📋",
   name: "clipboard_zpm-zsh",
+  displayName: "Clipboard",
   type: "shell",
   description: "Zsh clipboard plugin",
   authors: [

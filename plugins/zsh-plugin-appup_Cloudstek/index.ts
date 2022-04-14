@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⭐️",
   name: "zsh-plugin-appup_Cloudstek",
+  displayName: "Zsh Plugin Appup",
   type: "shell",
   description:
     "The command that can save you typing 15 characters or more, each time!",

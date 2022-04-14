@@ -1,6 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "materialshell_carloscuesta",
-  displayName: "materialshell",
+  displayName: "Material Shell",
   icon: "✨",
   type: "shell",
   description: "A material design theme for your terminal.",

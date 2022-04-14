@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "☀️",
   name: "oh-my-zsh-flow-plugin_sandstorm",
+  displayName: "Oh My Zsh Flow",
   type: "shell",
   description: "Neos Flow Plugin for Oh-my-ZSH",
   authors: [

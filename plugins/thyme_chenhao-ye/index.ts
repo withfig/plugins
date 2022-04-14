@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
-  icon: "😎",
+  icon: "🧂",
   name: "thyme_chenhao-ye",
+  displayName: "Thyme",
   type: "shell",
   description: "Seasoning for shells.",
   authors: [

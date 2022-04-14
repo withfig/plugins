@@ -1,6 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "auto-ls_desyncr",
-  displayName: "auto-ls",
+  displayName: "Auto Ls",
   description: "zsh plugin for auto-ls",
   icon: "📁",
   type: "shell",

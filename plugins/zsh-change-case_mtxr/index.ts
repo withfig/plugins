@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😎",
   name: "zsh-change-case_mtxr",
+  displayName: "Zsh Change Case",
   type: "shell",
   description:
     "Plugin for fast swap between upper and lower case in your command line. (ZSH-only)",

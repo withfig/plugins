@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😀",
   name: "quoter-zsh_owenvoke",
+  displayName: "Quoter Zsh",
   type: "shell",
   description:
     "A ZSH plugin for displaying random quotes when opening a terminal.",

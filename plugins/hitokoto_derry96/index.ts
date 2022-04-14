@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "👾",
   name: "hitokoto_derry96",
+  displayName: "Hitokoto",
   type: "shell",
   description: "oh my zsh plugin",
   authors: [

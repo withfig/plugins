@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😎",
   name: "git-aliases_mdumitru",
+  displayName: "Git Aliases (mdumitru)",
   type: "shell",
   description:
     'This is a clone of the plugin "git" present at: https://github.com/robbyrussell/oh-my-zsh',

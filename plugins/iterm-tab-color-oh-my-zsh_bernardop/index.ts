@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔥",
   name: "iterm-tab-color-oh-my-zsh_bernardop",
+  displayName: "iTerm Tab Color",
   type: "shell",
   description: "Oh My Zsh plugin for setting iTerm2's custom tab colors",
   authors: [
@@ -11,7 +12,7 @@ const plugin: Fig.Plugin = {
   ],
   github: "bernardop/iterm-tab-color-oh-my-zsh",
   shells: ["zsh"],
-  categories: ["Other"],
+  categories: ["Color"],
   keywords: ["zsh", "oh-my-zsh-plugin", "oh-my-zsh"],
   installation: {
     origin: "github",

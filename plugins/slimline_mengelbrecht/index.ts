@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "👾",
   name: "slimline_mengelbrecht",
+  displayName: "Slimline",
   type: "shell",
   description: "Minimal, customizable, fast and elegant ZSH prompt",
   authors: [

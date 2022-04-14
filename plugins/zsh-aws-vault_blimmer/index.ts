@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⭐️",
   name: "zsh-aws-vault_blimmer",
-  displayName: "zsh-aws-vault",
+  displayName: "Zsh AWS Vault",
   type: "shell",
   description: "oh-my-zsh plugin for aws-vault",
   authors: [

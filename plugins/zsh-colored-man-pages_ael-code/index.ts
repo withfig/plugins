@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⚡️",
   name: "zsh-colored-man-pages_ael-code",
+  displayName: "Zsh Colored Man Pages",
   type: "shell",
   description: "zsh plugin that colorifies man pages",
   authors: [

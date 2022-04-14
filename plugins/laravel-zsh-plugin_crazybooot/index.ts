@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🌟",
   name: "laravel-zsh-plugin_crazybooot",
+  displayName: "Laravel Zsh Plugin",
   type: "shell",
   description: "Laravel 5 artisan commands aliases plugin for zsh",
   authors: [

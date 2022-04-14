@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔗",
   name: "kubecolor_droctothorpe",
+  displayName: "Kube Color",
   type: "shell",
   description: "Simplify and colorize the output of kubectl get events -w",
   authors: [
@@ -11,7 +12,7 @@ const plugin: Fig.Plugin = {
   ],
   github: "droctothorpe/kubecolor",
   shells: ["bash", "zsh"],
-  categories: ["Other"],
+  categories: ["Color"],
   installation: {
     origin: "github",
     bash: {

@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🎩",
   name: "hacker-quotes_oldratlee",
-  displayName: "hacker-quotes",
+  displayName: "Hacker Quotes",
   screenshots: [
     "https://raw.githubusercontent.com/oldratlee/hacker-quotes/master/images/preview.png",
   ],

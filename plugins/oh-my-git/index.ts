@@ -1,5 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "oh-my-git",
+  displayName: "Oh My Git",
   type: "shell",
   icon: "images/git-icon.svg",
   screenshots: ["images/prompt.png"],

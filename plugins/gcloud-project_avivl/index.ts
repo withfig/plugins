@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💾",
   name: "gcloud-project_avivl",
+  displayName: "Gcloud Project",
   type: "shell",
   description:
     "If your are working with ,multiple gcp projects and struggle to remember which one is currently active, here is a solution for you.",

@@ -1,6 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "zsh-syntax-highlighting",
-  displayName: "zsh-syntax-highlighting",
+  displayName: "Zsh Syntax Highlighting",
   type: "shell",
   description: "Fish shell-like syntax highlighting for zsh",
   icon: "images/zsh-users-icon.png",

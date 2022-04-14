@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⌨️",
   name: "zcolors_marlonrichert",
+  displayName: "Zcolors",
   type: "shell",
   description:
     "🌈 Z Colors uses your $LS_COLORS to generate a coherent theme for Git and your Zsh prompt, command line and completions.",

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
-  icon: "👾",
+  icon: "🐧",
   name: "Linus-rants-ZSH_bhayward93",
+  displayName: "Linus Rants",
   type: "shell",
   description:
     "Picks a random Linus Torvalds quote to display every time you load your shell",

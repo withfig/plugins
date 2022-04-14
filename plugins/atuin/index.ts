@@ -1,5 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "atuin",
+  displayName: "Atuin",
   type: "shell",
   description: "Magical shell history",
   icon: "🐢",

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "👾",
   name: "gitgo_ltj",
+  displayName: "GitGo",
   type: "shell",
   description:
     "A small plugin for oh-my-zsh to launch Github/Gitlab repository from the command line",

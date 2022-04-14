@@ -1,8 +1,9 @@
 const plugin: Fig.Plugin = {
-  icon: "☀️",
+  icon: "⛓",
   name: "sm-prompt_blyndusk",
+  displayName: "Sm Prompt",
   type: "shell",
-  description: "⛓ a Simplistic & Minimalist theme for Bash and Zsh prompts.",
+  description: "Simplistic & Minimalist theme for Bash and Zsh prompts.",
   authors: [
     {
       name: "blyndusk",

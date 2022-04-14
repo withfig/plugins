@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💡",
   name: "zeesh_zeekay",
+  displayName: "Zeesh",
   type: "shell",
   description:
     "🐚 Putting the zee in your shell. A plugin-based framework for Zsh.",

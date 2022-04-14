@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "☀️",
   name: "zaw_zsh-users",
-  displayName: "zaw",
+  displayName: "Zaw",
   type: "shell",
   description: "zsh anything.el-like widget.",
   authors: [

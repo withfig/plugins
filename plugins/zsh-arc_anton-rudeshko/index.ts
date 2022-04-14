@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔗",
   name: "zsh-arc_anton-rudeshko",
+  displayName: "Zsh Arc",
   type: "shell",
   description:
     "zsh plugin with aliases for Yandex version control system `arc`",

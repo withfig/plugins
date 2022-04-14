@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔗",
   name: "zsh-theme-racotecnic_elboletaire",
+  displayName: "Zsh Theme Racotecnic",
   type: "shell",
   description: "A ZSH theme based on af-magic and posh-git",
   authors: [

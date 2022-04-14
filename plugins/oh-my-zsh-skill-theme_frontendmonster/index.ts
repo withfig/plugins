@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💡",
   name: "oh-my-zsh-skill-theme_frontendmonster",
+  displayName: "Oh My Zsh Skill Theme",
   type: "shell",
   description: "Oh-My-ZSH S-Kill theme",
   authors: [

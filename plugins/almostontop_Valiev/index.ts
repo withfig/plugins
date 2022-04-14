@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🚀",
   name: "almostontop_Valiev",
-  displayName: "almostontop zsh",
+  displayName: "Almostontop",
   type: "shell",
   description:
     "Clear previous command output every time before new command executed in shell",

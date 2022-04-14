@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⌨️",
   name: "zemm-blinks.zsh-theme_aranasaurus",
+  displayName: "Zemm Blinks",
   type: "shell",
   description: "My customization of the blinks oh-my-zsh theme",
   authors: [

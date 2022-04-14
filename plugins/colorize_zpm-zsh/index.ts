@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⚡️",
   name: "colorize_zpm-zsh",
+  displayName: "Colorize",
   type: "shell",
   description: "Colorize the output of various programs",
   authors: [

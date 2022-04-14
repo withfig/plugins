@@ -1,6 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "typewritten_reobin",
-  displayName: "typewritten-reobin",
+  displayName: "Typewritten",
   icon: "📠",
   type: "shell",
   description: "A minimal, lightweight, informative zsh prompt theme",

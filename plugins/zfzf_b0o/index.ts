@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😎",
   name: "zfzf_b0o",
+  displayName: "Zfzf",
   type: "shell",
   description:
     "zfzf is a fzf-based file picker for zsh which allows you to quickly navigate the directory hierarchy",

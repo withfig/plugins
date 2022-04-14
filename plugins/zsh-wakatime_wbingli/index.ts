@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😀",
   name: "zsh-wakatime_wbingli",
+  displayName: "Zsh Wakatime",
   type: "shell",
   description: "ZSH plugin for wakatime",
   authors: [

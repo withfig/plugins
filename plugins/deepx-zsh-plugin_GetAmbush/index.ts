@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "☀️",
   name: "deepx-zsh-plugin_GetAmbush",
+  displayName: "DeepX Zsh Plugin",
   type: "shell",
   authors: [
     {

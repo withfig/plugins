@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⭐️",
   name: "evil-registers_zsh-vi-more",
+  displayName: "Evil Registers",
   type: "shell",
   description: "Access external clipboards in vi-mode keymaps",
   authors: [

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💥",
   name: "zsh-dircycle_michaelxmcbride",
+  displayName: "Zsh Dircycle",
   type: "shell",
   description: "A Zsh plugin for cycling through the directory stack.",
   authors: [

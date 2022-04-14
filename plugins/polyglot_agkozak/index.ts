@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💾",
   name: "polyglot_agkozak",
+  displayName: "Polyglot",
   type: "shell",
   description:
     "Color, ASCII-only Git prompt for zsh, bash, ksh93, mksh, pdksh, dash, and busybox ash",

@@ -1,5 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "enhancd",
+  displayName: "Enhancd",
   type: "shell",
   description: "A next-generation cd command with your interactive filter",
   icon: "🚀",

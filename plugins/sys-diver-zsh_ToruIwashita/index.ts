@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💾",
   name: "sys-diver-zsh_ToruIwashita",
+  displayName: "Sys Diver Zsh",
   type: "shell",
   description:
     "A zsh plugin for directory change or editor startup with only key operations using widgits without typing command",

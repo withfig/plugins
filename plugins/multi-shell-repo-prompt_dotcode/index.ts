@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⌨️",
   name: "multi-shell-repo-prompt_dotcode",
+  displayName: "Multi Shell Repo Prompt",
   type: "shell",
   description:
     "A shell script to make your prompt pretty and useful. Works with bash & zsh, git & hg.",
@@ -15,12 +16,7 @@ const plugin: Fig.Plugin = {
   categories: ["Prompt"],
   installation: {
     origin: "github",
-    bash: {
-      sourceFiles: ["prompt.sh"],
-    },
-    zsh: {
-      sourceFiles: ["prompt.sh"],
-    },
+    sourceFiles: ["prompt.sh"],
   },
 };
 

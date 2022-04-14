@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😀",
   name: "wd_mfaerevaag",
-  displayName: "wd",
+  displayName: "Wd",
   screenshots: ["images/demo.gif"],
   type: "shell",
   description: "Jump to custom directories in zsh",

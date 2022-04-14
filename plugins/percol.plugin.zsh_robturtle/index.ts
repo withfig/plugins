@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔥",
   name: "percol.plugin.zsh_robturtle",
+  displayName: "Percol Plugin",
   type: "shell",
   description:
     "Allows interactively incrementally search history/checkout git branches and other stuff",

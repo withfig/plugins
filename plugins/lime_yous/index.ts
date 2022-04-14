@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⚡️",
   name: "lime_yous",
+  displayName: "Lime Theme",
   type: "shell",
   description: "Simple standalone Zsh theme",
   authors: [

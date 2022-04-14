@@ -1,5 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "kube-ps1",
+  displayName: "Kube PS1",
   type: "shell",
   icon: "⚓",
   description: "Kubernetes prompt info for bash and zsh",

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "▲",
   name: "zsh-theme_vercel",
+  displayName: "Vercel Zsh Theme",
   type: "shell",
   description: "Yet another zsh theme",
   authors: [

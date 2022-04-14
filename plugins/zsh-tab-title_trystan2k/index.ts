@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🧑‍💻",
   name: "zsh-tab-title_trystan2k",
+  displayName: "Zsh Tab Title",
   type: "shell",
   description:
     "A ZSH plugin to set the terminal tab title according to current directory or running process. It's based (forked) from Oh-My-ZSH one.",

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⭐️",
   name: "oh-my-matrix_amstrad",
+  displayName: "Oh My Matrix",
   type: "shell",
   description:
     "oh-my-zsh plugin. Turns your terminal into the Matrix just for fun ",

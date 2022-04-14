@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔥",
   name: "oh-my-zsh-jira-plus_gerges-zz",
+  displayName: "Oh My Jira Plus",
   type: "shell",
   description:
     'A plugin for oh-my-zsh that can parse the issue key out of the current branch i.e. "issue/CONF-123"',

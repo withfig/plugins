@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💡",
   name: "phpunit.plugin.zsh_voronkovich",
+  displayName: "PHPUnit Plugin",
   type: "shell",
   description: "Zsh plugin for PHPUnit",
   authors: [

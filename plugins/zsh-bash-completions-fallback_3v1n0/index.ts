@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "👾",
   name: "zsh-bash-completions-fallback_3v1n0",
+  displayName: "Zsh Bash Completions Fallback",
   type: "shell",
   description:
     "Simple zsh plugin to support bash completions for a command if no native one is available",

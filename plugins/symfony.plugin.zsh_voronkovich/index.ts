@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🚀",
   name: "symfony.plugin.zsh_voronkovich",
+  displayName: "Symfony Zsh Plugin",
   type: "shell",
   description: "Zsh plugin for Symfony",
   authors: [

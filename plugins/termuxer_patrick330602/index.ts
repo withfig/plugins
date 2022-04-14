@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💾",
   name: "termuxer_patrick330602",
+  displayName: "Termuxer Theme",
   type: "shell",
   description: "A oh-my-zsh theme for termux",
   authors: [

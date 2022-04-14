@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💡",
   name: "firebase-zsh_Seqi",
+  displayName: "Firebase Zsh (Seqi)",
   type: "shell",
   description: "A Firebase plugin for Zsh",
   authors: [

@@ -1,6 +1,6 @@
 const plugin: Fig.Plugin = {
-  name: "jq zsh plugin",
-  displayName: "jq-zsh-plugin",
+  name: "jq-zsh-plugin",
+  displayName: "Jq Zsh Plugin",
   icon: "📃",
   type: "shell",
   description: "jq zsh plugin",

@@ -1,6 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "zsh-iterm-touchbar_iam4x",
-  displayName: "zsh-iterm-touchbar",
+  displayName: "Zsh iTerm Touchbar",
   icon: "🍏",
   type: "shell",
   description: "Display feedback of terminal in the 🍏 Touchbar",

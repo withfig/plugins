@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔥",
   name: "zsh-multiline_jan-auer",
+  displayName: "Zsh Multiline",
   type: "shell",
   description: "Theme for oh-my-zsh based on Agnoster.",
   authors: [

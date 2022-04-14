@@ -1,9 +1,10 @@
 const plugin: Fig.Plugin = {
-  icon: "💥",
   name: "bitbucket-git-helpers.plugin.zsh_unixorn",
-  type: "shell",
+  displayName: "Bitbucket Git Helpers Zsh",
   description:
     "Add some git helper scripts for dealing with repos on bitbucket",
+  icon: "🪣",
+  type: "shell",
   authors: [
     {
       name: "unixorn",

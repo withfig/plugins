@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💥",
   name: "robbyrussell-WIP-theme_ecbrodie",
+  displayName: "robbyrussell-WIP (ecbrodie)",
   type: "shell",
   description: "robbyrussell oh-my-zsh theme, with WIP customizations",
   authors: [

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔥",
   name: "yeoman-zsh-plugin_edouard-lopez",
+  displayName: "Yeoman",
   type: "shell",
   description:
     " Yeoman plugin for Oh My ZSH, compatible with yeoman version ≥1.0 (options and command auto-completion).",

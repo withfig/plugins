@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🎋",
   name: "zsh-open-pr_caarlos0-graveyard",
-  displayName: "open-pr",
+  displayName: "Zsh Open PR",
   type: "shell",
   keywords: ["git", "pr", "github"],
   screenshots: [

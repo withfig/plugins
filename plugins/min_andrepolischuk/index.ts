@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🧑‍💻",
   name: "min_andrepolischuk",
+  displayName: "Min (andrepolischuk)",
   type: "shell",
   description: "Minimalistic zsh prompt",
   authors: [

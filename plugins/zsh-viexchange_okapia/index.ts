@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔥",
   name: "zsh-viexchange_okapia",
+  displayName: "Zsh Vi Exchange",
   type: "shell",
   description: "zsh plugin similar to vim-exchange",
   authors: [

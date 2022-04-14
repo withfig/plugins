@@ -1,8 +1,9 @@
 const plugin: Fig.Plugin = {
-  icon: "😀",
   name: "apache2.plugin.zsh_voronkovich",
-  type: "shell",
+  displayName: "Apache2 Plugin for Zsh",
   description: "ZSH plugin for Apache 2.",
+  icon: "🪶",
+  type: "shell",
   authors: [
     {
       name: "voronkovich",

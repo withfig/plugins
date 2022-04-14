@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⚡️",
   name: "fz_changyuheng",
+  displayName: "Fz",
   type: "shell",
   description:
     "Cli shell plugin, the missing fuzzy tab completion feature for the z jump around command.",

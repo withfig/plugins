@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🌟",
   name: "zsh-more-completions_MenkeTechnologies",
+  displayName: "Zsh More Completions",
   type: "shell",
   authors: [
     {

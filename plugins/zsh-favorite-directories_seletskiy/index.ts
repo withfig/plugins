@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😎",
   name: "zsh-favorite-directories_seletskiy",
+  displayName: "Zsh Favorite Directories",
   type: "shell",
   description:
     "zsh plugin for cd to list of favorite directories lightning fast",

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⚡️",
   name: "oh-my-zsh-reminder_AlexisBRENON",
+  displayName: "Oh My Zsh Reminder",
   type: "shell",
   description:
     "A very very simple OhMyZsh plugin which displays reminders above every prompt",

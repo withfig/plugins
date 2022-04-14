@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⌨️",
   name: "zsh-docker-run_rawkode",
+  displayName: "Zsh Docker Run",
   type: "shell",
   description: "Run your favourite commands naturally, with Docker",
   authors: [

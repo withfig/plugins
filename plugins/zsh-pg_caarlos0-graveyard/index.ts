@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🧑‍💻",
   name: "zsh-pg_caarlos0-graveyard",
+  displayName: "Zsh PG",
   type: "shell",
   description: "A ZSH plugin with utility functions to work with PostgreSQL.",
   authors: [

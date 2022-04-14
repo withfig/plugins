@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😀",
   name: "zsh-pyenv_mattberther",
+  displayName: "Zsh Pyenv",
   type: "shell",
   description: "zsh plugin for installing, updating and loading pyenv",
   authors: [

@@ -1,9 +1,10 @@
 const plugin: Fig.Plugin = {
-  icon: "⌨️",
+  icon: "🔍",
   name: "zsh-history-filter_MichaelAquilina",
+  displayName: "Zsh History Filter",
   type: "shell",
   description:
-    "🔍 Zsh plugin to filter out some commands from being added to you history",
+    "Zsh plugin to filter out some commands from being added to you history",
   authors: [
     {
       name: "MichaelAquilina",

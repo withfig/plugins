@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💡",
-  displayName: "zsh-async",
   name: "zsh-async_mafredri",
+  displayName: "Zsh Async",
   type: "shell",
   description:
     "Because your terminal should be able to perform tasks asynchronously without external tools!",

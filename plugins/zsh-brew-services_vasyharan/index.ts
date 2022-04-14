@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⭐️",
   name: "zsh-brew-services_vasyharan",
+  displayName: "Zsh Brew Services",
   type: "shell",
   description: "oh-my-zsh command completion plugin for homebrew services",
   authors: [

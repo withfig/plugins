@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔥",
   name: "zsh-vscode_dashixiong91",
+  displayName: "Zsh VSCode",
   type: "shell",
   description: "a oh-my-zsh plugin to open file in vscode",
   authors: [

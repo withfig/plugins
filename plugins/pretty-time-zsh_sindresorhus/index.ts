@@ -1,6 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "pretty-time-zsh_sindresorhus",
-  displayName: "pretty-time-zsh",
+  displayName: "Pretty Time Zsh",
   icon: "🕑",
   type: "shell",
   description:

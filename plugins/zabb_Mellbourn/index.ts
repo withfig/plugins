@@ -1,8 +1,9 @@
 const plugin: Fig.Plugin = {
   icon: "⚡️",
   name: "zabb_Mellbourn",
+  displayName: "Zabb",
   type: "shell",
-  description: "zabb - a plugin for finding z abbreviations",
+  description: "A plugin for finding z abbreviations",
   authors: [
     {
       name: "Mellbourn",

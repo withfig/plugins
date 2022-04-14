@@ -1,8 +1,9 @@
 const plugin: Fig.Plugin = {
-  icon: "💥",
+  icon: "🌸",
   name: "fzf-fasd_wookayin",
+  displayName: "Fzf Fasd",
   type: "shell",
-  description: "🌸 fzf + fasd integration",
+  description: "fzf + fasd integration",
   authors: [
     {
       name: "wookayin",

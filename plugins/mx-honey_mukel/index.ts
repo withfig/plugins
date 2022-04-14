@@ -1,8 +1,9 @@
 const plugin: Fig.Plugin = {
-  icon: "👾",
+  icon: "🍯",
   name: "mx-honey_mukel",
+  displayName: "Mx Honey",
   type: "shell",
-  description: ":honey_pot: sweet (zsh) completions for mx",
+  description: "Sweet (zsh) completions for mx",
   authors: [
     {
       name: "mukel",

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💡",
   name: "zshcomrade_landongn",
+  displayName: "Zsh Comrade",
   type: "shell",
   description: "A ZSH Theme, Comrade!",
   authors: [

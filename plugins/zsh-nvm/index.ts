@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   name: "zsh-nvm",
+  displayName: "Zsh NVM",
   icon: "🧑‍💻",
-  displayName: "zsh-nvm",
   type: "shell",
   description: "Zsh plugin for installing, updating and loading nvm",
   authors: [

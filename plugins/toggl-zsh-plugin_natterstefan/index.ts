@@ -1,9 +1,10 @@
 const plugin: Fig.Plugin = {
-  icon: "👾",
+  icon: "⌚️",
   name: "toggl-zsh-plugin_natterstefan",
+  displayName: "Toggl Zsh Plugin",
   type: "shell",
   description:
-    "⌚️A oh-my-zsh plugin, printing the working hours of the current week tracked in toggl.com (for OSX).",
+    "A oh-my-zsh plugin, printing the working hours of the current week tracked in toggl.com (for OSX).",
   authors: [
     {
       name: "natterstefan",

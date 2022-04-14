@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "☀️",
   name: "zsh-extract_le0me55i",
+  displayName: "Zsh Extract",
   type: "shell",
   description: "Plugin for Zshell that extracts the archive file you pass it",
   authors: [

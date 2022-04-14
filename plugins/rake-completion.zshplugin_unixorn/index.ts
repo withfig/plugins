@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "☀️",
   name: "rake-completion.zshplugin_unixorn",
+  displayName: "Rake Completion",
   type: "shell",
   description:
     "rake task tab completion plugin for zsh, suitable for use with zgen and other oh-my-zsh compatible frameworks",

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔥",
   name: "zsh-notify_luismayta",
+  displayName: "Zsh Notify (luismayta)",
   type: "shell",
   description: "Get notified when your command is done",
   authors: [

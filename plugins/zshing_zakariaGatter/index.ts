@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⌨️",
   name: "zshing_zakariaGatter",
+  displayName: "Zshing",
   type: "shell",
   description: "Zsh plugin manager similar to VundleVim ",
   authors: [

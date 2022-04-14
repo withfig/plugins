@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💡",
   name: "zsh-notes_chipsenkbeil",
+  displayName: "Zsh Notes (chipsenkbeil)",
   type: "shell",
   description:
     "Plugin extracted from my zshrc to provide a quick notes editing experience in zsh.",

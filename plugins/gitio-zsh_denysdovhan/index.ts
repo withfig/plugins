@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔥",
   name: "gitio-zsh_denysdovhan",
+  displayName: "Gitio Zsh",
   type: "shell",
   description:
     ":scissors: A zsh plugin for generating a GitHub short URL using git.io.",

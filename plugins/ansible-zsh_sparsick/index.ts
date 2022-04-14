@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🧑‍💻",
   name: "ansible-zsh_sparsick",
+  displayName: "Ansible Zsh",
   type: "shell",
   authors: [
     {

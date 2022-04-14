@@ -1,5 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "zsh-vi-mode",
+  displayName: "Zsh Vi Mode",
   type: "shell",
   description: "💻 A better and friendly vi(vim) mode plugin for ZSH.",
   icon: "https://user-images.githubusercontent.com/9413601/103399068-46bfcb80-4b7a-11eb-8741-86cff3d85a69.png",

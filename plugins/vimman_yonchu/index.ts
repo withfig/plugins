@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔗",
   name: "vimman_yonchu",
+  displayName: "Vimman",
   type: "shell",
   description: "View vim plugin manuals (help) like man in zsh",
   authors: [

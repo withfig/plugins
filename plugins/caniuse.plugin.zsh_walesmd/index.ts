@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🧑‍💻",
   name: "caniuse.plugin.zsh_walesmd",
+  displayName: "Caniuse",
   type: "shell",
   description:
     "This oh-my-zsh plugin brings CanIUse (http://caniuse.com) to your terminal.",

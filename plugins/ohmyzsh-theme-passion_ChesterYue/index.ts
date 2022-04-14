@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🧑‍💻",
   name: "ohmyzsh-theme-passion_ChesterYue",
-  displayName: "ohmyzsh-theme-passion",
+  displayName: "Oh My Zsh Passion Theme",
   screenshots: [
     "https://raw.githubusercontent.com/ChesterYue/ohmyzsh-theme-passion/master/passion.gif",
   ],

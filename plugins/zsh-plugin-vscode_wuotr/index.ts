@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😎",
   name: "zsh-plugin-vscode_wuotr",
+  displayName: "Zsh Plugin VSCode",
   type: "shell",
   authors: [
     {

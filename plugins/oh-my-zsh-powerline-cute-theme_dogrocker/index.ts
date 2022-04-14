@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "👾",
   name: "oh-my-zsh-powerline-cute-theme_dogrocker",
+  displayName: "Oh My Zsh Powerline Cute Theme",
   type: "shell",
   description:
     "An OSX oh-my-zsh shell theme with Cute emoji based on the Powerline Vim plugin",

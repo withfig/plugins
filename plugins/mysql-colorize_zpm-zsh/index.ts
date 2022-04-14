@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🖍",
   name: "mysql-colorize_zpm-zsh",
-  displayName: "mysql-colorize",
+  displayName: "Mysql Colorize",
   description: "Adds color for mysql tables",
   type: "shell",
   screenshots: [

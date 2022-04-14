@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔗",
   name: "zsh-easy-motion_IngoMeyer441",
-  displayName: "ZSH Easy Motion",
+  displayName: "Zsh Easy Motion",
   description: "Vim's easy-motion for zsh",
   screenshots: [
     "https://raw.githubusercontent.com/IngoMeyer441/zsh-easy-motion/master/demo.svg",

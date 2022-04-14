@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "☀️",
   name: "oh-my-zsh-seeker-theme_tonyseek",
+  displayName: "Oh My Zsh Seeker Theme",
   type: "shell",
   description: "My favored oh-my-zsh theme.",
   authors: [

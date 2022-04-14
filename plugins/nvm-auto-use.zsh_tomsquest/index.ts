@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💡",
   name: "nvm-auto-use.zsh_tomsquest",
+  displayName: "Nvm Auto Use",
   type: "shell",
   description:
     "ZSH plugin to call `nvm use` automatically whenever you enter a directory that contains an `.nvmrc` file with a string telling nvm which node to use",

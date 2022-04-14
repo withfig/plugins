@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🌟",
   name: "tsm_RobertAudi",
+  displayName: "Tsm",
   type: "shell",
   description: "Tmux Session Manager",
   authors: [

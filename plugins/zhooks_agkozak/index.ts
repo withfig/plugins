@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔗",
   name: "zhooks_agkozak",
+  displayName: "Zhooks",
   type: "shell",
   description: "Display Zsh hook functions and arrays",
   authors: [

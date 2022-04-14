@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "☀️",
   name: "pipenv_gangleri",
+  displayName: "Pipenv (gangleri)",
   type: "shell",
   description: "pipenv plugin for oh-my-zsh",
   authors: [

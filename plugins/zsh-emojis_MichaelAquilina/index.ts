@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😎",
   name: "zsh-emojis_MichaelAquilina",
+  displayName: "Zsh Emojis",
   type: "shell",
   description: "Variables for numerous ascii emojis!",
   authors: [

@@ -1,9 +1,9 @@
 const plugin: Fig.Plugin = {
-  icon: "🔥",
   name: "auto-fu.zsh_hchbaw",
+  displayName: "Auto Fu",
+  description: "Zsh automatic complete-word and list-choices",
+  icon: "🥷",
   type: "shell",
-  description:
-    "#zsh automatic complete-word and list-choices. Originally incr-0.2.zsh  by y.fujii <y-fujii at mimosa-pudica.net>",
   authors: [
     {
       name: "hchbaw",

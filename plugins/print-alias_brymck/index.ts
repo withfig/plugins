@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔥",
   name: "print-alias_brymck",
+  displayName: "Print Alias",
   type: "shell",
   description: "A Zsh plugin for printing expanded aliases",
   authors: [

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "👾",
   name: "zsh-extend-history_xav-b",
+  displayName: "Zsh Extend History",
   type: "shell",
   description: "Zsh plugin to record command history with more context",
   authors: [

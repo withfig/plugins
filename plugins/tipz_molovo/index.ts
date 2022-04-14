@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "👾",
   name: "tipz_molovo",
+  displayName: "Tipz",
   type: "shell",
   description:
     "Gives you helpful hints when you execute a command for which you have an alias defined",

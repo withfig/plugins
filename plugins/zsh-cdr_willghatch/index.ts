@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🌟",
   name: "zsh-cdr_willghatch",
+  displayName: "Zsh CDR",
   type: "shell",
   description: "Easy setup of cdr for zsh.",
   authors: [

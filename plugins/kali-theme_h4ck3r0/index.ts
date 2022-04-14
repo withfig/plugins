@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🚀",
   name: "kali-theme_h4ck3r0",
+  displayName: "Kali Theme",
   type: "shell",
   description: "Kali Linux Theme Installer , Zsh Shell , Pure Look",
   authors: [

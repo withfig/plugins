@@ -1,5 +1,7 @@
 const plugin: Fig.Plugin = {
   name: "git-flow",
+  displayName: "Git Flow",
+  icon: "🌊",
   type: "shell",
   description:
     "Git extensions to provide high-level repository operations for Vincent Driessen's branching model.",

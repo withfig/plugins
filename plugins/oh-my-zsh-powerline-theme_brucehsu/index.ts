@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🌟",
   name: "oh-my-zsh-powerline-theme_brucehsu",
+  displayName: "Oh My Zsh Powerline Theme",
   type: "shell",
   description: "oh-my-zsh Powerline style Theme",
   authors: [

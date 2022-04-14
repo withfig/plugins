@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💡",
   name: "plugin-osx_mwilliammyers",
+  displayName: "Plugin OS X (mwilliammyers)",
   type: "shell",
   description: "plugin to add some common OS X related aliases and functions.",
   authors: [

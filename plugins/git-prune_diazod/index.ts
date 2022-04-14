@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "☀️",
   name: "git-prune_diazod",
+  displayName: "Git Prune",
   type: "shell",
   description:
     "Plugin of oh-my-zsh for deleting branches already merged in your git repositories",

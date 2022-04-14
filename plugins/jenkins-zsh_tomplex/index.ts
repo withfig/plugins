@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔥",
   name: "jenkins-zsh_tomplex",
+  displayName: "Jenkins Zsh (tomplex)",
   type: "shell",
   description: "A jenkins plugin for ZSH.",
   authors: [

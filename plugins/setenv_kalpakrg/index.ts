@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😎",
   name: "setenv_kalpakrg",
+  displayName: "Setenv",
   type: "shell",
   description: "Oh my zsh plugin to run script on change directory",
   authors: [

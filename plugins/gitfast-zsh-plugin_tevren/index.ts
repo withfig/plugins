@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💾",
   name: "gitfast-zsh-plugin_tevren",
+  displayName: "Git Fast Zsh Plugin",
   type: "shell",
   description:
     "fork of gitfast plugin in ohmyzsh that fixes a bug where prompt hangs",

@@ -42,7 +42,7 @@ const MODULES = [
 const plugin: Fig.Plugin = {
   icon: "☀️",
   name: "prezto",
-  displayName: "prezto",
+  displayName: "Prezto",
   type: "shell",
   description: "The configuration framework for Zsh",
   authors: [

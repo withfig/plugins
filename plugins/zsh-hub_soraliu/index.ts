@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🧑‍💻",
   name: "zsh-hub_soraliu",
+  displayName: "Zsh Hub",
   type: "shell",
   description: "Github hub zsh plugin for forking model",
   authors: [

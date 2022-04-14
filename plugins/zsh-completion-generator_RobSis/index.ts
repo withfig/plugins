@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🦾",
   name: "zsh-completion-generator_RobSis",
+  displayName: "Zsh Completion Generator",
   type: "shell",
   description:
     "Plugin that generates completion functions automatically from getopt-style help texts",

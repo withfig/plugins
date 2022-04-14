@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔗",
   name: "mfunc_hlohm",
+  displayName: "Mfunc",
   type: "shell",
   description: "function wrapper plugin for oh-my-zsh",
   authors: [

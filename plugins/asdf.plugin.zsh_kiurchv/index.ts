@@ -1,8 +1,9 @@
 const plugin: Fig.Plugin = {
-  icon: "👾",
   name: "asdf.plugin.zsh_kiurchv",
-  type: "shell",
+  displayName: "Asdf Plugin for Zsh",
   description: "Zsh integration and completions for asdf",
+  icon: "👾",
+  type: "shell",
   authors: [
     {
       name: "kiurchv",

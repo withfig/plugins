@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⚡️",
   name: "zsh-haskell_coot",
+  displayName: "Zsh Haskell",
   type: "shell",
   description: "ghc and cabal completion for zsh shell",
   authors: [

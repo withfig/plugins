@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🚀",
   name: "zsh-pandoc-completion_srijanshetty",
+  displayName: "Zsh Pandoc Completion",
   type: "shell",
   description: "Antigen plugin for pandoc",
   authors: [

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💡",
   name: "zce.zsh_hchbaw",
+  displayName: "Zce",
   type: "shell",
   description: "# zsh EasyMotion/ace-jump-mode",
   authors: [

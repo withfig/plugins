@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔥",
   name: "zsh-fzf-history-search_joshskidmore",
+  displayName: "Zsh Fzf History Search",
   type: "shell",
   description:
     "A simple zsh plugin that replaces Ctrl+R with an fzf-driven select which includes date/times.",

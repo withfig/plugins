@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
-  icon: "⌨️",
   name: "ant-zsh_anthraxx",
+  displayName: "Ant Zsh",
+  icon: "🐜",
   type: "shell",
   description:
     "Tiny and lightweight zsh configuration environment for special customization needs. It includes plugins, themes and a basic convenient setup.",

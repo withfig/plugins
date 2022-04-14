@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💾",
   name: "docker-compose-zsh-plugin_sroze",
+  displayName: "Docker Compose Zsh Plugin",
   type: "shell",
   description: "ZSH plugin that display status of project containers",
   authors: [

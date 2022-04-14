@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⚡️",
   name: "zsh-tmux-auto-title_mbenford",
+  displayName: "Zsh Tmux Auto Title",
   type: "shell",
   description:
     "ZSH plugin for tmux that automatically sets the title of windows/panes as the current foreground command.",

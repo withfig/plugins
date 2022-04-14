@@ -1,7 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⌨️",
   name: "fzf-zsh-plugin_unixorn",
-  displayName: "fzf Automagic Install",
+  displayName: "Fzf Automagic Install",
   type: "shell",
   description:
     "ZSH plugin to enable fzf searches of a lot more stuff - docker, tmux, homebrew and more.",

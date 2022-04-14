@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💾",
   name: "pip-app_sharat87",
+  displayName: "Pip App",
   type: "shell",
   description:
     "A set of shell functions to make it easy to install small apps and utilities distributed with pip.",

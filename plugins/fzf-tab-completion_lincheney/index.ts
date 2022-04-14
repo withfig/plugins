@@ -1,6 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "fzf-tab-completion_lincheney",
-  displayName: "fzf-tab-completion",
+  displayName: "Fzf Tab Completion",
   description: "Tab completion using fzf",
   icon: "🔎",
   screenshots: [

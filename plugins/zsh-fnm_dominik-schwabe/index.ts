@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⭐️",
   name: "zsh-fnm_dominik-schwabe",
+  displayName: "Zsh Fnm",
   type: "shell",
   description: "Plugin for ZSH to install the Fast Node Manager (fnm).",
   authors: [

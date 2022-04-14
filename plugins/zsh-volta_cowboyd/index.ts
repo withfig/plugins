@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🌟",
   name: "zsh-volta_cowboyd",
+  displayName: "Volta's Zsh Theme",
   type: "shell",
   description: "Zsh plugin to seamlessly install and configure volta",
   authors: [

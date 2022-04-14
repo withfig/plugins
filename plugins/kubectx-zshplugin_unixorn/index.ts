@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😎",
   name: "kubectx-zshplugin_unixorn",
+  displayName: "Kubectx",
   type: "shell",
   description: "Loads kubectx and kubens automagically for you",
   authors: [

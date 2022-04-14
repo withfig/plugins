@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💥",
   name: "docker-enter-completion_primait",
+  displayName: "Docker Enter Completion",
   type: "shell",
   description: "docker-enter command shell completion",
   authors: [

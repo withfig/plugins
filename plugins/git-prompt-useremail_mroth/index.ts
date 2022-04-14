@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "👾",
   name: "git-prompt-useremail_mroth",
+  displayName: "Git Prompt Useremail",
   type: "shell",
   description:
     ":guardsman: zsh plugin adds prompt reminders for git user.email",

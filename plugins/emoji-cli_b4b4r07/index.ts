@@ -1,6 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "emoji-cli_b4b4r07",
-  displayName: "emoji-cli",
+  displayName: "Emoji CLI",
   icon: "😱",
   type: "shell",
   description: "Emoji completion on the command line",

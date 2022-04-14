@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💡",
   name: "careful_rm_MikeDacre",
+  displayName: "Careful rm",
   type: "shell",
   description:
     "A safe wrapper for rm that adds useful warnings and an optional recycle/trash mode",

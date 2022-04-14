@@ -1,8 +1,9 @@
 const plugin: Fig.Plugin = {
-  icon: "💡",
   name: "boss-git-zsh-plugin_bossjones",
-  type: "shell",
+  displayName: "Boss Git Zsh Plugin",
   description: "ZSH plugin for managing git",
+  icon: "💡",
+  type: "shell",
   authors: [
     {
       name: "bossjones",

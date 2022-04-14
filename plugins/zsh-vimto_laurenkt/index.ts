@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💥",
   name: "zsh-vimto_laurenkt",
+  displayName: "Zsh Vimto",
   type: "shell",
   description: "Improved zsh vim mode (bindkey -v) plugin",
   authors: [

@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😀",
   name: "ZshTheme-CodeMachine_CodeMonkeyMike",
+  displayName: "CodeMachine",
   type: "shell",
   description: "Theme for Zsh called CodeMachine, its friggen awesome",
   authors: [

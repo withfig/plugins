@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🚀",
   name: "gitcd.plugin.zsh_viko16",
+  displayName: "Gitcd Plugin",
   type: "shell",
   description:
     "👷 [oh-my-zsh plugin] git clone and change directory by a single command",

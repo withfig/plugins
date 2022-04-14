@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "⭐️",
   name: "markedit_zakariaGatter",
+  displayName: "MarkEdit",
   type: "shell",
   description: "very simple BASH ; ZSH Plugin to mark Files and Edit them",
   authors: [

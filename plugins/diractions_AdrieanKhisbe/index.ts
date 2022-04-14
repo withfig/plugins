@@ -1,8 +1,9 @@
 const plugin: Fig.Plugin = {
-  icon: "💡",
+  icon: "🚏",
   name: "diractions_AdrieanKhisbe",
+  displayName: "Diractions",
   type: "shell",
-  description: "👨‍💻 Doing Anything, Anywhere, from Here [zsh] 🚏",
+  description: "👨‍💻 Doing Anything, Anywhere, from Here [zsh]",
   authors: [
     {
       name: "AdrieanKhisbe",

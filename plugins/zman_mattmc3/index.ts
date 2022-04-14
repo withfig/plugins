@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "😀",
   name: "zman_mattmc3",
+  displayName: "Zman",
   type: "shell",
   description: "Use fzf to quickly browse Zsh manuals",
   authors: [

@@ -1,6 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "deer_vifon",
-  displayName: "deer",
+  displayName: "Deer",
   icon: "🦌",
   description: "ranger-like file navigation for zsh",
   github: "Vifon/deer",

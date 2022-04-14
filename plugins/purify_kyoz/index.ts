@@ -1,6 +1,6 @@
 const plugin: Fig.Plugin = {
   name: "purify_kyoz",
-  displayName: "purify",
+  displayName: "Purify",
   description: "Clean & vibrant prompt for zsh",
   icon: "🌈",
   screenshots: ["https://i.imgur.com/Pu3ffXL.png"],

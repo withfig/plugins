@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "👾",
   name: "laravel-sail_ariaieboy",
+  displayName: "Laravel Sail",
   type: "shell",
   description:
     "a laravel-sail plugin for oh my zsh to add aliases for laravel sail commands",

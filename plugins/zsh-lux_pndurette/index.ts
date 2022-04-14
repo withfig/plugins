@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "👾",
   name: "zsh-lux_pndurette",
+  displayName: "Zsh Lux",
   type: "shell",
   description:
     "zsh plugin to toggle light/dark modes of macOS but also of iTerm, Visual Studio Code and anything you can script/theme",

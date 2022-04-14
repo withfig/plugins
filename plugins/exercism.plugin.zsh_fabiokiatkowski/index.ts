@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔗",
   name: "exercism.plugin.zsh_fabiokiatkowski",
+  displayName: "Exercism Zsh Plugin",
   type: "shell",
   description: "A Plugin to Oh My Zsh Framework",
   authors: [

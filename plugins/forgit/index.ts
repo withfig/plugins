@@ -44,6 +44,7 @@ const commandConfiguration = [
 
 const plugin: Fig.Plugin = {
   name: "forgit",
+  displayName: "Forgit",
   type: "shell",
   description: "A utility tool powered by fzf for using git interactively.",
   icon: "💤",

@@ -1,8 +1,9 @@
 const plugin: Fig.Plugin = {
   icon: "💾",
   name: "uz_maxrodrigo",
+  displayName: "μz",
   type: "shell",
-  description: "μz - zsh micro plugin manager",
+  description: "Zsh micro plugin manager",
   authors: [
     {
       name: "maxrodrigo",

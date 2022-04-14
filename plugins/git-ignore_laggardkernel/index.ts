@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🔥",
   name: "git-ignore_laggardkernel",
+  displayName: "Git Ignore (laggardkernel)",
   type: "shell",
   description:
     "Generate .gitignore files with templates from gitignore.io offline",

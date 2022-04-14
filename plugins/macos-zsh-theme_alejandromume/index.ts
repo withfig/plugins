@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🧑‍💻",
   name: "macos-zsh-theme_alejandromume",
+  displayName: "macOS Zsh Theme (alejandromume)",
   type: "shell",
   authors: [
     {

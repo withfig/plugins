@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "🧑‍💻",
   name: "zsh-opt-path_jreese",
+  displayName: "Zsh Opt Path",
   type: "shell",
   description: "Automatically add ~/opt/*/bin to $PATH",
   authors: [

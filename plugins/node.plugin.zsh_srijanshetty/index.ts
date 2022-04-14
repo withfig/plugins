@@ -1,6 +1,7 @@
 const plugin: Fig.Plugin = {
   icon: "💾",
   name: "node.plugin.zsh_srijanshetty",
+  displayName: "Node Plugin (zsh_srijanshetty)",
   type: "shell",
   description: "Node plugin for antigen derivatives",
   authors: [
