@@ -19,8 +19,8 @@ const plugin: Fig.Plugin = {
     origin: "github",
     sourceFiles: ["powerlevel10k.zsh-theme"],
     preScript:
-      'if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then' +
-      '  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"' +
+      'if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then\n' +
+      '  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"\n' +
       "fi",
     postScript: "[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh",
   },
