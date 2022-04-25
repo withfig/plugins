@@ -32,11 +32,11 @@ https://user-images.githubusercontent.com/4949076/162058365-ec260e6a-9728-4a34-b
 
 The Fig Plugin Store makes it easy for developers to discover and install 3rd-party shell plugins and have them auto-sync them across your devices.
 
-Currently we 
-* have > 1,000 plugins (and would love your support adding more)
-* support plugins for `bash`, `zsh`, and `fish`
-* let you configure plugins after installing them (see above video)
-* auto-sync your plugins across your devices
+Fig's plugin store:
+* has 400+ plugins (and would love your support adding more)
+* supports plugins for `bash`, `zsh`, and `fish`
+* lets you configure plugins after installing them (see above video)
+* auto-syncs your plugins across your devices
 
 Example plugins include syntax highlighting for your shell, autocomplete, async loading for your prompt, even oh-my-zsh!
 
@@ -82,6 +82,12 @@ You can contribute your first plugin to the store in < 2 minutes (we make it rea
 </tr>
 </tbody>
 </table>
+
+## 🧑‍💻 Teams / Enterprise
+Want to use Fig's to share shell plugins across your team (e.g. to provide an opionated shell setup for newew engineers)? Or want to use Fig at work but have security / compliance concerns.
+
+We would love to help get you set up. Please email [enterprise@fig.io](mailto:enterprise@fig.io)
+
 
 ## 🙋‍♀️ FAQ
 
