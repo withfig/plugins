@@ -60,8 +60,8 @@ variable set or other command run.
 _Declaration:_
 
 ```typescipt 
-preScript?: InstallationScripts
-postScript?: InstallationScripts
+preScript?: InstallationScripts<string>
+postScript?: InstallationScripts<string>
 ```
 
 ---
@@ -89,25 +89,19 @@ other assests that are in the plugin directly from the script.
 Declaration:
 
 ```typescript
-type InstallationScript = string | string[] | InstallationScriptCompiler
-```
-
-Example:
-
-```typescript
-
+type InstallationScript<T> = T | InstallationScriptCompiler<T>;
 ```
 
 #### `InstallationScriptCompiler`
 
 The `InstallationScriptCompiler` is a function that takes a 
-[`DotfileCompilationContext`](#dotfilescompilationcontext) and returns a `string`
-or `string[]` that will be executed by the shell.
+[`DotfileCompilationContext`](#dotfilescompilationcontext) and returns a type `T`, 
+this is likely either a `string` or `string[]`.
 
 Declaration:
 
 ```typescript
-type InstallationScriptCompiler = ({ctx: DotfileCompilationContext}) => string | string[]
+type InstallationScriptCompiler<T> = (_: { ctx: DotfileCompilationContext }) => T;
 ```
 
 #### `DotfileCompilationContext`
@@ -121,7 +115,8 @@ Declaration:
 ```typescript
 interface DotfileCompilationContext {
   plugin: PluginContext;
-  shell: Shell;
+  shell: "zsh" | "bash" | "fish";
+  os: "linux" | "macos" | "windows" | "unknown";
 }
 ```
 

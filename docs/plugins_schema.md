@@ -48,6 +48,14 @@ Declaration: `icon?: string`
 
 ---
 
+### `screenshots`
+
+An array of screenshots that will be displayed along with the plugin.
+
+Declaration: `screenshots?: string[];`
+
+---
+
 ### `site`
 
 A url to the offical site of a plugin
