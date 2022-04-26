@@ -63,12 +63,12 @@ const plugin: Fig.Plugin = {
     origin: "github",
     bash: {
       postScript: ({ ctx }) =>
-        `export PATH="$PATH:${ctx.plugin.installDirectory}/bin`,
+        `export PATH="$PATH:${ctx.plugin.installDirectory}/bin"`,
       sourceFiles: ["forgit.plugin.sh"],
     },
     zsh: {
       postScript: ({ ctx }) =>
-        `export PATH="$PATH:${ctx.plugin.installDirectory}/bin`,
+        `export PATH="$PATH:${ctx.plugin.installDirectory}/bin"`,
       sourceFiles: ["forgit.plugin.zsh"],
     },
     fish: {
