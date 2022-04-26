@@ -41,7 +41,7 @@ const plugin: Fig.Plugin = {
     fish: {
       sourceFiles: ({ ctx }) => [`${ctx.plugin.installDirectory}/conf.d/*`],
       preScript: ({ ctx }) =>
-        `set --prepend fish_function_path '${ctx.plugin.installDirectory}/functions'`,
+        `contains '${ctx.plugin.installDirectory}/functions' $fish_function_path || set --prepend fish_function_path '${ctx.plugin.installDirectory}/functions'`,
     },
   },
   configuration: [
