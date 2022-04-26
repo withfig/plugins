@@ -39,10 +39,9 @@ const plugin: Fig.Plugin = {
     sourceFiles: ["init.sh"],
     dependencies: [{ type: "binary", name: "fzf" }],
     fish: {
-      sourceFiles: ({ ctx }) =>
-        ["conf.d/", "functions/"].map(
-          (dir) => `${ctx.plugin.installDirectory}${dir}*`
-        ),
+      sourceFiles: ({ ctx }) => [`${ctx.plugin.installDirectory}/conf.d/*`],
+      preScript: ({ ctx }) =>
+        `set --prepend fish_function_path '${ctx.plugin.installDirectory}/functions'`,
     },
   },
   configuration: [
