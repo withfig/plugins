@@ -55,13 +55,17 @@ declare namespace Fig {
     type: "binary";
     name: string;
   };
-
   type Dependency = 
     | BinaryDependency;
 
   type Installation = PluginInstallation & {
     /** Override the default installation script for the plugin with a custom one per shell */
     [key in Shell]?: PluginInstallation;
+  } & {
+    fish?: {
+      conf?: InstallationScript<string | boolean>;
+      functions?: InstallationScript<string | boolean>;
+    };
   } & {
     /** The origin of the plugin */
     origin: PluginOrigin;

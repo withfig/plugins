@@ -36,12 +36,16 @@ const plugin: Fig.Plugin = {
   ],
   installation: {
     origin: "github",
-    sourceFiles: ["init.sh"],
     dependencies: [{ type: "binary", name: "fzf" }],
+    bash: {
+      sourceFiles: ["init.sh"],
+    },
+    zsh: {
+      sourceFiles: ["init.sh"],
+    },
     fish: {
-      sourceFiles: ({ ctx }) => [`${ctx.plugin.installDirectory}/conf.d/*`],
-      preScript: ({ ctx }) =>
-        `contains '${ctx.plugin.installDirectory}/functions' $fish_function_path || set --prepend fish_function_path '${ctx.plugin.installDirectory}/functions'`,
+      conf: true,
+      functions: true,
     },
   },
   configuration: [
