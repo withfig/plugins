@@ -17,7 +17,7 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     preScript:
-      "curl -sS https://starship.rs/install.sh | sh -s -- --yes --bin-dir=$HOME/.fig/bin",
+      "curl -sS https://starship.rs/install.sh | sh -s -- --yes --bin-dir=$HOME/.local/bin",
     bash: {
       postScript: 'eval "$(starship init bash)"',
     },
