@@ -33,7 +33,37 @@ declare namespace Fig {
   type InstallationScriptCompiler<T> = (_: { ctx: DotfileCompilationContext }) => T;
   type InstallationScript<T> = T | InstallationScriptCompiler<T>;
 
+  interface OnInstall {
+    /** The command to run to install */
+    command: InstallationScript<string>;
+    /** The check to run to verify the installation */
+    check: {
+      /** Check that commands exists */
+      commandExists?: InstallationScript<string[]>;
+      /** Check that files/folders exists */
+      fileExists?: InstallationScript<string[]>;
+      /** Check a commands output */
+      commandOutput?: {
+        /** The command to run to check the output */
+        command: InstallationScript<string>;
+        /** The expected output */
+        output: InstallationScript<string>;
+      }
+    }
+  }
+
+  interface OnUninstall {
+    /** Files/folders to remove */
+    file?: InstallationScript<string[]>;
+    /** Command to run */
+    command?: InstallationScript<string>;
+  }
+
   interface PluginInstallation {
+    /** An installation script */
+    onInstall?: OnInstall;
+    /** Command to run when the plugin is uninstalled */
+    onUninstall?: OnUninstall;
     /** Script to run before the plugin is sourced and before the configuration */
     preScript?: InstallationScript<string>;
     /** Script to run after the plugin is sourced and after the configuration */
