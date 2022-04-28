@@ -16,19 +16,16 @@ const plugin: Fig.Plugin = {
 
   installation: {
     origin: "github",
-    preScript: "curl -sS https://starship.rs/install.sh | sh -s -- --yes",
-    postScript: ({ ctx }) => {
-      // Don't require a `default` case to so that this list is exhaustive.
-      // eslint-disable-next-line default-case
-      switch (ctx.shell) {
-        case "bash":
-          return 'eval "$(starship init bash)"';
-        case "fish":
-          return "starship init fish | source";
-        case "zsh":
-          return 'eval "$(starship init zsh)"';
-      }
-      throw new Error("Unsupported shell");
+    preScript:
+      "curl -sS https://starship.rs/install.sh | sh -s -- --yes --bin-dir=$HOME/.fig/bin",
+    bash: {
+      postScript: 'eval "$(starship init bash)"',
+    },
+    fish: {
+      postScript: "starship init fish | source",
+    },
+    zsh: {
+      postScript: 'eval "$(starship init zsh)"',
     },
   },
 };
