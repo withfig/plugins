@@ -16,8 +16,23 @@ const plugin: Fig.Plugin = {
 
   installation: {
     origin: "github",
-    preScript:
-      "curl -sS https://starship.rs/install.sh | sh -s -- --yes --bin-dir=$HOME/.local/bin",
+    onInstall: {
+      command: [
+        "curl -sS https://starship.rs/install.sh | sh -s -- --yes --bin-dir=$HOME/.local/bin",
+      ],
+      check: {
+        commandExists: ["starship"],
+        commandOutput: [
+          {
+            command: "starship module character",
+            output: "[1;32m❯[0m ",
+          },
+        ],
+      },
+    },
+    onUninstall: {
+      file: ["~/.local/bin/starship"],
+    },
     bash: {
       postScript: 'eval "$(starship init bash)"',
     },
