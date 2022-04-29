@@ -34,8 +34,8 @@ declare namespace Fig {
   type InstallationScript<T> = T | InstallationScriptCompiler<T>;
 
   interface OnInstall {
-    /** The command to run to install */
-    command: InstallationScript<string>;
+    /** The commands to run to install */
+    command: InstallationScript<string[]>;
     /** The check to run to verify the installation */
     check: {
       /** Check that commands exists */
@@ -48,21 +48,21 @@ declare namespace Fig {
         command: InstallationScript<string>;
         /** The expected output */
         output: InstallationScript<string>;
-      }
+      }[]
     }
   }
 
   interface OnUninstall {
-    /** Files/folders to remove */
+    /** Files/folders to remove at uninstall */
     file?: InstallationScript<string[]>;
-    /** Command to run */
-    command?: InstallationScript<string>;
+    /** Commands to run at uninstall */
+    command?: InstallationScript<string[]>;
   }
 
   interface PluginInstallation {
-    /** An installation script */
+    /** An installation script to run unless check is satisfied */
     onInstall?: OnInstall;
-    /** Command to run when the plugin is uninstalled */
+    /** Files to remove and commands to run at uninstall */
     onUninstall?: OnUninstall;
     /** Script to run before the plugin is sourced and before the configuration */
     preScript?: InstallationScript<string>;
