@@ -15,11 +15,11 @@ const plugin: Fig.Plugin = {
     sourceFiles: ["jarvis.sh", "access-json.py"],
     bash: {
       postScript: ({ ctx }) =>
-        `echo "\nexport JARVIS_LOCATION="${ctx.plugin.installDirectory}"\nsource $JARVIS_LOCATION/jarvis.sh\n" >> ~/.bashrc`,
+        `pip install openai && echo "\nexport JARVIS_LOCATION="${ctx.plugin.installDirectory}"\nsource $JARVIS_LOCATION/jarvis.sh\n" >> ~/.bashrc`,
     },
     zsh: {
       postScript: ({ ctx }) =>
-        `echo "\nexport JARVIS_LOCATION="${ctx.plugin.installDirectory}"\nsource $JARVIS_LOCATION/jarvis.sh\n" >> ~/.zshrc`,
+        `pip install openai && echo "\nexport JARVIS_LOCATION="${ctx.plugin.installDirectory}"\nsource $JARVIS_LOCATION/jarvis.sh\n" >> ~/.zshrc`,
     },
   },
   configuration: [
