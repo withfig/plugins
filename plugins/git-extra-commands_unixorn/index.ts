@@ -34,6 +34,18 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     sourceFiles: ["git-extra-commands.plugin.zsh"],
+    bash: {
+      postScript: ({ ctx }) =>
+        `export PATH="$PATH:${ctx.plugin.installDirectory}/bin"`,
+    },
+    zsh: {
+      postScript: ({ ctx }) =>
+        `export PATH="$PATH:${ctx.plugin.installDirectory}/bin"`,
+    },
+    fish: {
+      postScript: ({ ctx }) =>
+        `set -Ua fish_user_paths "${ctx.plugin.installDirectory}/bin"`,
+    },
   },
 };
 
