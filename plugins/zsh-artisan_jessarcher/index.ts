@@ -19,7 +19,10 @@ const plugin: Fig.Plugin = {
   keywords: ["zsh", "artisan", "php", "laravel"],
   installation: {
     origin: "github",
-    sourceFiles: ["artisan.plugin.zsh"],
+    zsh: {
+      preScript: "autoload -Uz compinit && compinit",
+      sourceFiles: ["artisan.plugin.zsh"],
+    },
   },
   configuration: [
     {
