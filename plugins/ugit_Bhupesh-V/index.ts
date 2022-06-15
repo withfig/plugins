@@ -37,7 +37,7 @@ const plugin: Fig.Plugin = {
   ],
   installation: {
     origin: "github",
-    sourceFiles: ["ugit", "ugit.plugin.zsh", "git-undo"],
+    sourceFiles: ["ugit.plugin.zsh"],
   },
 };
 
