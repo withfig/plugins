@@ -1,5 +1,5 @@
 const plugin: Fig.Plugin = {
-  icon: "🚨️",
+  icon: "https://user-images.githubusercontent.com/34342551/115037937-a608d800-9eec-11eb-88a9-252da7d6f507.png",
   name: "ugit_Bhupesh-V",
   displayName: "Ugit",
   type: "shell",
@@ -8,7 +8,7 @@ const plugin: Fig.Plugin = {
     "https://user-images.githubusercontent.com/34342551/115037937-a608d800-9eec-11eb-88a9-252da7d6f507.png",
   ],
   description:
-    "Ugit helps undo git commands. Your damage control git buddy. Undo from 17+ git scenarios.",
+    "Ugit helps undo git commands. Your damage control git buddy. Undo from 19+ git scenarios.",
   authors: [
     {
       name: "Bhupesh-V",
@@ -19,7 +19,7 @@ const plugin: Fig.Plugin = {
   github: "Bhupesh-V/ugit",
   license: ["MIT"],
   site: "https://bhupesh.me/undo-your-last-git-mistake-with-ugit/",
-  shells: ["zsh"],
+  shells: ["bash", "zsh"],
   categories: ["Other"],
   keywords: [
     "git-tools",
