@@ -14,7 +14,7 @@ const plugin: Fig.Plugin = {
     },
   ],
   shells: ["zsh"],
-  categories: ["Framework"],
+  categories: ["Prompt"],
   installation: {
     origin: "github",
     sourceFiles: ["powerlevel10k.zsh-theme"],
