@@ -12,6 +12,7 @@ const plugin: Fig.Plugin = {
     },
   ],
   github: "iam4x/zsh-iterm-touchbar",
+  screenshots: ["images/1.jpeg", "images/2.gif"],
   license: ["MIT"],
   shells: ["zsh"],
   categories: ["Other"],
