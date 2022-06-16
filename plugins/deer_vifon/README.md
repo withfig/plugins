@@ -22,8 +22,8 @@ Cons:
 * Offers only a small subset of `ranger's` features.
 * Needs `zsh`.
 
-[![](screenshots/2017-08-03-215440_640x364_scrot.png)](screenshots/2017-08-03-215440_640x364_scrot.png)
-[![](screenshots/2017-08-03-215509_640x364_scrot.png)](screenshots/2017-08-03-215509_640x364_scrot.png)
+[![](https://raw.githubusercontent.com/vifon/deer/master/screenshots/2017-08-03-215440_640x364_scrot.png)](https://raw.githubusercontent.com/vifon/deer/master/screenshots/2017-08-03-215440_640x364_scrot.png)
+[![](https://raw.githubusercontent.com/vifon/deer/master/screenshots/2017-08-03-215509_640x364_scrot.png)
 
 USAGE
 -----
