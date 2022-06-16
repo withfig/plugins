@@ -1,6 +1,6 @@
 # zsh-yarn-autocompletions
 
-![](./screenshot.gif)
+![](https://raw.githubusercontent.com/g-plane/zsh-yarn-autocompletions/master/screenshot.gif)
 
 [![license](https://img.shields.io/github/license/g-plane/zsh-yarn-autocompletions.svg?style=flat-square)](https://github.com/g-plane/zsh-yarn-autocompletions/blob/master/LICENSE)
 [![Github Releases](https://img.shields.io/github/downloads/g-plane/zsh-yarn-autocompletions/latest/total.svg?style=flat-square)](https://github.com/g-plane/zsh-yarn-autocompletions/releases)
