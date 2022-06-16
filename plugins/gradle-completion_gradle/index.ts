@@ -22,6 +22,7 @@ const plugin: Fig.Plugin = {
       sourceFiles: ["gradle-completion.bash"],
     },
     zsh: {
+      preScript: "autoload -Uz compinit; compinit",
       sourceFiles: ["gradle-completion.plugin.zsh"],
     },
   },
