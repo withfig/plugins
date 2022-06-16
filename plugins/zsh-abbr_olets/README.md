@@ -8,19 +8,6 @@ Like zsh's `alias`, zsh-abbr supports "regular" (i.e. command-position) and "glo
 
 Run `abbr help` for documentation; if the package is installed with Homebrew, `man abbr` is also available.
 
-## Contents
-
-1. [Crash Course](#crash-course)
-1. [Installation](#installation)
-1. [Usage](#usage)
-1. [Advanced](#advanced)
-1. [Performance](#performance)
-1. [Uninstalling](#uninstalling)
-1. [Changelog](#changelog)
-1. [Roadmap](#roadmap)
-1. [Contributing](#contributing)
-1. [License](#license)
-
 ## Crash Course
 
 ```shell

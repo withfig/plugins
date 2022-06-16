@@ -5,18 +5,6 @@
 
 [![asciicast](https://asciinema.org/a/293849.svg)](https://asciinema.org/a/293849)
 
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
-**Table of Contents**
-
-- [Usage](#usage)
-  - [Configure](#configure)
-  - [Binary module](#binary-module)
-- [Difference from other plugins](#difference-from-other-plugins)
-- [Compatibility with other plugins](#compatibility-with-other-plugins)
-- [Related projects](#related-projects)
-
-<!-- markdown-toc end -->
-
 # Usage
 
 Just press <kbd>Tab</kbd> as usual~
