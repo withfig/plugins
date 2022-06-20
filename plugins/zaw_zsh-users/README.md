@@ -77,27 +77,27 @@ press ``^R`` to access history source.
 you can get all available shortcut widgets' name using ``zaw-print-src``::
 
   $ zaw-print-src
-  source name      shortcut widget name
-  ----------------------------------------
-  ack              zaw-ack
-  applications     zaw-applications
-  bookmark         zaw-bookmark
-  git-branches     zaw-git-branches
-  git-recent-all-branches     zaw-git-recent-all-branches
-  git-recent-branches     zaw-git-recent-branches
-  git-files        zaw-git-files
-  git-files-legacy zaw-git-files-legacy
-  git-status       zaw-git-status
-  history          zaw-history
-  open-file        zaw-open-file
-  perldoc          zaw-perldoc
-  process          zaw-process
-  screens          zaw-screens
-  ssh-hosts        zaw-ssh-hosts
-  tmux             zaw-tmux
-  fasd             zaw-fasd
-  fasd-directories zaw-directories
-  fasd-files       zaw-files
+| source name | shortcut widget name |
+|------------|----------|
+| ack                |zaw-ack |
+  | applications     |zaw-applications |
+  | bookmark         |zaw-bookmark |
+  | git-branches     |zaw-git-branches |
+  | git-recent-all-branches     |zaw-git-recent-all-branches |
+  | git-recent-branches   |  zaw-git-recent-branches |
+  | git-files        |zaw-git-files |
+  | git-files-legacy |zaw-git-files-legacy |
+  | git-status       |zaw-git-status |
+  | history          |zaw-history |
+  | open-file        |zaw-open-file |
+  | perldoc          |zaw-perldoc |
+  | process          |zaw-process |
+  | screens          |zaw-screens |
+  | ssh-hosts        |zaw-ssh-hosts |
+  | tmux             |zaw-tmux |
+  | fasd             |zaw-fasd |
+  | fasd-directories |zaw-directories |
+  | fasd-files       |zaw-files |
 
 
 key binds and styles
@@ -106,43 +106,46 @@ key binds and styles
 zaw use ``filter-select`` to filter and select items.
 
 you can use these key binds::
-
-  enter:              accept-line (execute default action)
-  meta + enter:       accept-search (execute alternative action)
-  Tab:                select-action
-  ^G:                 send-break
-  ^H, backspace:      backward-delete-char
-  ^F, right key:      forward-char
-  ^B, left key:       backward-char
-  ^A:                 beginning-of-line
-  ^E:                 end-of-line
-  ^W:                 backward-kill-word
-  ^K:                 kill-line
-  ^U:                 kill-whole-line
-  ^N, down key:       down-line-or-history (select next item)
-  ^P, up key:         up-line-or-history (select previous item)
-  ^V, page up key:    forward-word (page down)
-  ^[V, page down key: backward-word (page up)
-  ^[<, home key:      beginning-of-history (select first item)
-  ^[>, end key:       end-of-history (select last item)
+| key bind | action |
+|------------|----------|
+  | enter:              | accept-line (execute default action) |
+  | meta + enter:       | accept-search (execute alternative action) |
+  | Tab:                | select-action |
+  | ^G:                 | send-break |
+  | ^H, backspace:      | backward-delete-char |
+  | ^F, right key:      | forward-char |
+  | ^B, left key:       | backward-char |
+  | ^A:                 | beginning-of-line |
+  | ^E:                 | end-of-line |
+  | ^W:                 | backward-kill-word |
+  | ^K:                 | kill-line |
+  | ^U:                 | kill-whole-line |
+  | ^N, down key:       | down-line-or-history (select next item) |
+  | ^P, up key:         | up-line-or-history (select previous item) |
+  | ^V, page up key:    | forward-word (page down) |
+  | ^[V, page down key: | backward-word (page up) |
+  | ^[<, home key:      | beginning-of-history (select first item) |
+  | ^[>, end key:       | end-of-history (select last item) |
 
 and these zstyles to customize styles::
-
-  ':filter-select:highlight' selected
-  ':filter-select:highlight' matched
-  ':filter-select:highlight' marked
-  ':filter-select:highlight' title
-  ':filter-select:highlight' error
-  ':filter-select' max-lines
-  ':filter-select' rotate-list
-  ':filter-select' case-insensitive
-  ':filter-select' extended-search
-  ':filter-select' hist-find-no-dups
-  ':filter-select' escape-descriptions
-  ':zaw:<source-name>' default <func_name>
-  ':zaw:<source-name>' alt <func_name>
+| command | zstyle |
+|------------|----------|
+  |':filter-select:highlight' | selected
+  |':filter-select:highlight' | matched
+  |':filter-select:highlight' | marked
+  |':filter-select:highlight' | title
+  |':filter-select:highlight' | error
+  |':filter-select' | max-lines
+  |':filter-select' | rotate-list
+  |':filter-select' | case-insensitive
+  |':filter-select' | extended-search
+  |':filter-select' | hist-find-no-dups
+  |':filter-select' | escape-descriptions
+  |':zaw:<source-name>' | default <func_name>
+  |':zaw:<source-name>' | alt <func_name>
 
   example:
+    
     zstyle ':filter-select:highlight' matched fg=yellow,standout
     zstyle ':filter-select' max-lines 10 # use 10 lines for filter-select
     zstyle ':filter-select' max-lines -10 # use $LINES - 10 for filter-select
