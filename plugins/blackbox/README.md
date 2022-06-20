@@ -1,38 +1,5 @@
 Safely store secrets in a VCS repo (i.e. Git, Mercurial, Subversion or Perforce). These commands make it easy for you to Gnu Privacy Guard (GPG) encrypt specific files in a repo so they are "encrypted at rest" in your repository. However, the scripts make it easy to decrypt them when you need to view or edit them, and decrypt them for use in production. Originally written for Puppet, BlackBox now works with any Git or Mercurial repository.
 
-Table of Contents
-=================
-
-- [Table of Contents](#table-of-contents)
-- [Overview](#overview)
-- [Why is this important?](#why-is-this-important)
-- [Installation Instructions](#installation-instructions)
-- [Commands](#commands)
-- [Compatibility](#compatibility)
-- [How is the encryption done?](#how-is-the-encryption-done)
-- [What does this look like to the typical user?](#what-does-this-look-like-to-the-typical-user)
-- Configuration Management
-  - [How to use the secrets with Ansible?](#how-to-use-the-secrets-with-ansible)
-  - [How to use the secrets with Puppet?](#how-to-use-the-secrets-with-puppet)
-    - [Entire files](#entire-files)
-    - [Small strings](#small-strings)
-- File Management
-  - [How to enroll a new file into the system?](#how-to-enroll-a-new-file-into-the-system)
-  - [How to remove a file from the system?](#how-to-remove-a-file-from-the-system)
-- User Management
-  - [How to indoctrinate a new user into the system?](#how-to-indoctrinate-a-new-user-into-the-system)
-  - [How to remove a user from the system?](#how-to-remove-a-user-from-the-system)
-- Repo Management
-  - [Enabling BlackBox For a Repo](#enabling-blackbox-for-a-repo)
-- [Set up automated users or &ldquo;role accounts&rdquo;](#set-up-automated-users-or-role-accounts)
-- [Replacing expired keys](#replacing-expired-keys)
-- [Some common errors](#some-common-errors)
-- [Using BlackBox on Windows](#using-blackbox-on-windows)
-- [Using BlackBox without a repo](#using-blackbox-without-a-repo)
-- [Some Subversion gotchas](#some-subversion-gotchas)
-- [Using Blackbox when gpg2 is installed next to gpg](#using-blackbox-when-gpg2-is-installed-next-to-gpg)
-- [How to submit bugs or ask questions?](#how-to-submit-bugs-or-ask-questions)
-- [Alternatives](#alternatives)
 
 Overview
 ========
