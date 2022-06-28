@@ -100,7 +100,7 @@ Plugins are installed to a directory on your local device. When you install Fig,
 
 #### Do Plugins work on Windows or Linux?
 
-Currently, Plugins is only available on MacOS, there is a beta for Linux coming soon.
+Currently, Plugins is only available on macOS, there is a beta for Linux coming soon.
 
 #### How can I download Fig?
 
