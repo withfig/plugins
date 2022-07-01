@@ -88,12 +88,12 @@ const plugin: Fig.Plugin = {
     displayName: "My New Plugin",
     github: "withfig/my-new-plugin",
     description: "A one-line description of what this plugin does",
- 		screenshots: ["images/example.png", "images/another-example.png"]
+    screenshots: ["images/example.png", "images/another-example.png"],
     shells: ["zsh"],
       
     authors: [ { name: "Fig", twitter: "@fig", github: "withfig"}]
 
-		/* ... */
+    /* ... */
 }
 export default plugin;
 ```
