@@ -39,7 +39,7 @@ const plugin: Fig.Plugin = {
       name: "ZSH_PLUGINS_ALIAS_TIPS_EXCLUDES",
     },
     {
-      displayName: "Disable Command Expansion",
+      displayName: "Command Expansion",
       type: "environmentVariable",
       description:
         "If you have several alias, e.g. for different git commands the command get expanded before looking for an alias.",
