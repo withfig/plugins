@@ -22,6 +22,17 @@ const plugin: Fig.Plugin = {
       sourceFiles: ["wd.plugin.zsh"],
     },
   },
+  configuration: [
+    {
+      displayName: "WD_CONFIG",
+      type: "environmentVariable",
+      description:
+        "Defines the path where warp points get stored.",
+      interface: "text",
+      default: "$HOME/.warprc",
+      name: "WD_CONFIG",
+    },
+  ],
 };
 
 export default plugin;
