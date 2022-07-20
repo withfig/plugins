@@ -163,7 +163,7 @@ const plugin: Fig.Plugin = {
           interface: "select",
           name: "PATH",
           default: "",
-          option: ["", "$PATH:$FORGIT_INSTALL_DIR/bin"]
+          option: ["", "$PATH:$FORGIT_INSTALL_DIR/bin"],
         },
       ],
     },
