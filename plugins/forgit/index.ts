@@ -149,6 +149,22 @@ const plugin: Fig.Plugin = {
           name: "FORGIT_LOG_FORMAT",
           default: "%C(auto)%h%d %s %C(black)%C(bold)%cr%reset",
         },
+        {
+          displayName: "Disable all aliases",
+          type: "environmentVariable",
+          interface: "toggle",
+          name: "FORGIT_NO_ALIASES",
+          default: false,
+        },
+        {
+          displayName: "Set as git sub command",
+          type: "environmentVariable",
+          description: "For example, `ga` become `git forgit add`",
+          interface: "select",
+          name: "PATH",
+          default: "",
+          option: ["", "$PATH:$FORGIT_INSTALL_DIR/bin"]
+        },
       ],
     },
   ],
