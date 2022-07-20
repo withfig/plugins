@@ -152,7 +152,7 @@ const plugin: Fig.Plugin = {
         {
           displayName: "Disable all aliases",
           type: "environmentVariable",
-          description: null,
+          description: "Disable them to use the next configuration",
           interface: "toggle",
           name: "FORGIT_NO_ALIASES",
           default: false,
