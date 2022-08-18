@@ -12,7 +12,7 @@ const plugin: Fig.Plugin = {
     },
   ],
   github: "lukechilds/zsh-nvm",
-  shells: ["zsh", "bash"],
+  shells: ["zsh"],
   categories: ["Other"],
   keywords: [
     "zsh",
