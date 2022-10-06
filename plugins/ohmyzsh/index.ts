@@ -722,7 +722,7 @@ const plugin: Fig.Plugin = {
           name: "additionalConfiguration",
           displayName: "Shell Code",
           description:
-            "Blank space for you to provide additional shell code to be sourced before the Oh My Zsh plugin is soruced.",
+            "Blank space for you to provide additional shell code to be sourced before the Oh My Zsh plugin is sourced.",
           type: "script",
           interface: "text",
           default: "",
