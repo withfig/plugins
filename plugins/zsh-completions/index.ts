@@ -17,6 +17,7 @@ const plugin: Fig.Plugin = {
   keywords: ["zsh", "zsh-completions", "shell", "completion"],
   installation: {
     origin: "github",
+    postScript: "autoload -Uz compinit; compinit;",
     sourceFiles: ["zsh-completions.plugin.zsh"],
   },
 };
