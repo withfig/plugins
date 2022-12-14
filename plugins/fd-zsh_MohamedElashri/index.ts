@@ -3,7 +3,8 @@ const plugin: Fig.Plugin = {
   name: "fd-zsh_MohamedElashri",
   displayName: "fd aliases zsh plugin",
   type: "shell",
-  description: "zsh plugin addind aliases for fd, a modern replacement for find.",
+  description:
+    "zsh plugin addind aliases for fd, a modern replacement for find.",
   authors: [
     {
       name: "MohamedElashri",
@@ -26,5 +27,5 @@ const plugin: Fig.Plugin = {
     ],
   },
 };
-  
+
 export default plugin;
