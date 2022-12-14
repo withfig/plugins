@@ -341,5 +341,12 @@ declare namespace Fig {
     installation: Installation;
     /** The configuration for the plugin */
     configuration?: (ConfigurationItem | ConfigurationGroup)[];
+    /** 
+     * The plugin is hidden from the UI, either because it is deprecated or no longer works
+     * 
+     * We keep old plugins around so that we can still generate the dotfiles for them
+     * since we don't want to break existing users' dotfiles
+     */
+    hidden?: boolean;
   }
 }

@@ -17,14 +17,14 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     bash: {
-      sourceFiles: ["git-flow-completion.bash"]
+      sourceFiles: ["git-flow-completion.bash"],
     },
     zsh: {
       sourceFiles: ["git-flow-completion.plugin.zsh"],
-      postScript: "autoload -Uz compinit; compinit;"
+      postScript: "autoload -Uz compinit; compinit;",
     },
     fish: {
-      sourceFiles: ["git.fish"]
+      sourceFiles: ["git.fish"],
     },
   },
 };

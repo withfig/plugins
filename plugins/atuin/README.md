@@ -135,48 +135,6 @@ cd atuin
 cargo install --path .
 ```
 
-## Shell plugin
-
-Once the binary is installed, the shell plugin requires installing. If you use
-the install script, this should all be done for you!
-
-### zsh
-
-```
-echo 'eval "$(atuin init zsh)"' >> ~/.zshrc
-```
-
-Or using a plugin manager:
-
-```
-zinit load ellie/atuin
-```
-
-### bash
-
-We need to setup some hooks, so first install bash-preexec:
-
-```
-curl https://raw.githubusercontent.com/rcaloras/bash-preexec/master/bash-preexec.sh -o ~/.bash-preexec.sh
-echo '[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh' >> ~/.bashrc
-```
-
-Then setup Atuin
-
-```
-echo 'eval "$(atuin init bash)"' >> ~/.bashrc
-```
-
-### fish
-
-Add
-
-```
-atuin init fish | source
-```
-
-to your `is-interactive` block in your `~/.config/fish/config.fish` file
-
 ## ...what's with the name?
 
 Atuin is named after "The Great A'Tuin", a giant turtle from Terry Pratchett's

@@ -19,6 +19,12 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     sourceFiles: ["atuin.plugin.zsh"],
+    dependencies: [
+      {
+        type: "binary",
+        name: "atuin",
+      },
+    ],
   },
 };
 

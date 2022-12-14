@@ -1,4 +1,5 @@
 const plugin: Fig.Plugin = {
+  hidden: true,
   icon: "🚀",
   name: "iterm-tab-colors_tysonwolker",
   displayName: "iTerm Tab Colors",

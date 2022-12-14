@@ -22,7 +22,7 @@ const plugin: Fig.Plugin = {
   installation: {
     origin: "github",
     sourceFiles: ["zsh-better-npm-completion.plugin.zsh"],
-    postScript: "autoload -Uz compinit; compinit;"
+    postScript: "autoload -Uz compinit; compinit;",
   },
 };
 

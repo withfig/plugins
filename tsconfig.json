@@ -10,7 +10,7 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
     "declaration": true,
-    "noErrorTruncation":true
+    "noErrorTruncation": true
   },
   "exclude": ["node_modules/"],
   "include": ["index.d.ts", "plugins/**/*", "util/**/*"],
