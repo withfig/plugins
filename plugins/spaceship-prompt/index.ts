@@ -239,7 +239,7 @@ const plugin: Fig.Plugin = {
           displayName: "12 Hour Time",
           description: "Format time using 12-hour clock (am/pm)",
           type: "environmentVariable",
-          name: "SPACESHIP_TIME_12_HOUR",
+          name: "SPACESHIP_TIME_12HR",
           interface: "toggle",
           default: false,
           compile: booleanCompile,
