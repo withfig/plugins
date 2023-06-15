@@ -652,6 +652,20 @@ const plugin: Fig.Plugin = {
         },
       ],
     },
+    {
+      displayName: "Package",
+      configuration: [
+        {
+          displayName: "Package Show",
+          description: "Show package version in prompt",
+          type: "environmentVariable",
+          name: "SPACESHIP_PACKAGE_SHOW",
+          interface: "toggle",
+          default: true,
+          compile: booleanCompile,
+        },
+      ],
+    },
     // TODO: Mercuial
     // TODO: Package
     // TODO: Node.js
