@@ -18,7 +18,7 @@ const plugin: Fig.Plugin = {
   type: "shell",
   description:
     "The minimal, blazing-fast, and infinitely customizable prompt for any shell!",
-  icon: "🌌️",
+  icon: "https://starship.rs/icon.png",
   site: "https://starship.rs/",
   docs: "https://starship.rs/guide/",
   github: "starship/starship",
