@@ -1,15 +1,3 @@
-// const colors = [
-//   "black",
-//   "red",
-//   "green",
-//   "yellow",
-//   "blue",
-//   "magenta",
-//   "cyan",
-//   "white",
-//   ...new Array(256).fill(null).map((_, i) => `${i}`),
-// ];
-
 const booleanCompile = (value: boolean) => (value ? "true" : "false");
 
 const plugin: Fig.Plugin = {
