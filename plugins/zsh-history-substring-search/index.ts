@@ -23,7 +23,7 @@ const plugin: Fig.Plugin = {
       name: "bind-keys",
       displayName: "Bind Keys",
       type: "script",
-      interface: "text",
+      interface: "textarea",
       default:
         `bindkey '...' history-substring-search-up\n` +
         `bindkey '...' history-substring-search-down`,
